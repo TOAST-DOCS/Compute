@@ -1,6 +1,6 @@
 ## Infrastructure > Compute & Network > Release Notes
 
-### 2016.11.17
+### 2016.11.24
 #### 기능 개선/변경
 
 * [Console] Load Balancer의 Listener별 세션 제한 값 노출
