@@ -1,5 +1,14 @@
 ## Infrastructure > Compute & Network > Release Notes
 
+### 2016.11.17
+#### 기능 개선/변경
+
+* [Console] Load Balancer의 Listener별 세션 제한 값 노출
+
+#### 버그 수정 
+
+* [API] 특정 Project에서 Load Balancer 생성 실패하던 문제 수정
+
 ### 2016.10.06
 #### 버그 수정
 
