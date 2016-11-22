@@ -69,7 +69,7 @@ Health check의 재시도 횟수를 입력합니다. Instance 의 응답이 없�
 - **세션 지속성**
 외부에서 들어온 요청의 session을 유지하기 위한 방법을 선택합니다. 서비스에 따라 특정 요청은 같은 Instance로 연결되어야 할 때가 있습니다. 이를 위해 TOAST Cloud에서는 Source IP, HTTP Cookie, APP Cookie 방식을 지원합니다.
 - **연결 제한**
-Load Balancer가 처리할 수 있는 최대 connection 수를 설정합니다. 아무런 값도 입력하지 않으면 무제한으로 설정됩니다.
+Load Balancer가 처리할 수 있는 최대 connection 수를 설정합니다. 아무런 값도 입력하지 않으면 2000개로 설정됩니다. 필요한 경우 Listener 정보 보기 화면에서 조정할 수 있습니다.
 
 ![[그림 3] Listener 등록](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_003.png)
 <center>[그림 3] Listener 등록</center>
