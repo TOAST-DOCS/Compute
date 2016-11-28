@@ -1,5 +1,10 @@
 ## Infrastructure > Compute & Network > Release Notes
 
+### 2016.11.29
+#### 버그 수정
+
+* [API] TERMINATED_HTTPS type의 Load Balancer 생성 실패하던 문제 수정
+
 ### 2016.11.24
 #### 기능 개선/변경
 
