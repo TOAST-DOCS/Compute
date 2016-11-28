@@ -6,6 +6,11 @@
 * [Console] Load Balancer의 Heath check url 미노출 문제 수정
 * [Console] Load Balancer/Listener 수정 버튼 클릭시 기등록한 Health Check URL이 아닌 "/"로 노출되는 문제 수정
 
+### 2016.11.29
+#### 버그 수정
+
+* [API] TERMINATED_HTTPS type의 Load Balancer 생성 실패하던 문제 수정
+
 ### 2016.11.24
 #### 기능 개선/변경
 
