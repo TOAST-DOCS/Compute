@@ -18,7 +18,7 @@ Flavor는 [표 1]과 같이 vCPU, Disk, RAM 의 세가지 하드웨어 조합으
 |Flavor|	vCPU|	Disk|	RAM|
 |---|---|---|---|
 |m2.small|	1|	20GB|	2GB|
-|m2.medium|	4|	20GB|	4GB|
+|m2.medium|	2|	20GB|	4GB|
 |m2.large|	4|	20GB|	8GB|
 |m2.xlarge|	8|	20GB|	16GB|
 |m2.2xlarge|	16|	20GB|	32GB|
