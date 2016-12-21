@@ -11,7 +11,7 @@
 #### 버그 수정
 
 ##### Load Balancer
-* [Console] Health Check Type이 TCP인 Listener 업데이트가 안되는 문제 수정
+* [Console] Health Check Protocol이 TCP인 경우 Listener 내용 수정이 안되는 문제 수정
 
 ##### Floating IP
 * [Console] Floating IP에 연결된 Load Balancer의 이름이 노출되지 않는 문제 수정
