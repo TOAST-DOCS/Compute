@@ -5,7 +5,7 @@
 #### 기능 개선/변경
 
 ##### Instance
-* [Console] Shut Off 된 Instance의 Security Group 수정이 가능하도록 변경
+* [Console] 정지된 Instance의 Security Group 수정이 가능하도록 변경
 * [Console] Instance 생성시 선택 가능한 Security Group이 하나일 경우 자동 선택되도록 변경
 
 #### 버그 수정
