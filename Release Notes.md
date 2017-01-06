@@ -1,5 +1,42 @@
 ## Infrastructure > Compute & Network > Release Notes
 
+### 2017.1.19
+
+#### 기능 개선/변경
+
+##### Instance
+
+* [Console] IP 주소란 Subnet Network명 노출 삭제
+* [Console] 인스턴스 이름 길이 및 특수문자 제한
+    * 20자 이하 영숫자와 ‘.’, ‘-‘ 문자만 허용하도록 변경
+
+##### Image
+
+* [Console] “Instance 생성” 기능을 “Image 생성” 기능으로 변경
+
+##### volume
+
+* [Console] Volume 연결관리 기능에 같은 존의 인스턴스에만 연결이 가능함을 명시
+
+#### 버그 수정
+
+##### Instance
+
+* [Console] 인스턴스 수정시 글자 제한이 걸리지 않던 문제 수정
+ 
+##### Image
+
+* [Console] 이미지 타입 변경시 이미지 선택이 해제되지 않던 문제 수정
+
+### 2016.12.08
+
+#### 버그 수정
+
+##### Load Balancer
+
+* [Console] Load Balancer의 Heath check url 미노출 문제 수정
+* [Console] Listener 수정 버튼 클릭시 기등록한 Health Check URL이 아닌 "/"로 노출되는 문제 수정
+
 ### 2016.12.22
 
 #### 기능 개선/변경
