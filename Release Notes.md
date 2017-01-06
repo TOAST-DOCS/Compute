@@ -28,15 +28,6 @@
 
 * [Console] 이미지 타입 변경시 이미지 선택이 해제되지 않던 문제 수정
 
-### 2016.12.08
-
-#### 버그 수정
-
-##### Load Balancer
-
-* [Console] Load Balancer의 Heath check url 미노출 문제 수정
-* [Console] Listener 수정 버튼 클릭시 기등록한 Health Check URL이 아닌 "/"로 노출되는 문제 수정
-
 ### 2016.12.22
 
 #### 기능 개선/변경
