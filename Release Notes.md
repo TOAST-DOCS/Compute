@@ -1,6 +1,6 @@
 ## Infrastructure > Compute & Network > Release Notes
 
-### 2017.1.19
+### 2017.01.19
 
 #### 기능 개선/변경
 
