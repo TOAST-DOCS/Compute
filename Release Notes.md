@@ -9,6 +9,7 @@
 * [Console] IP 주소란 Subnet Network명 노출 삭제
 * [Console] 인스턴스 이름 길이 및 특수문자 제한
     * 20자 이하 영숫자와 ‘.’, ‘-‘ 문자만 허용하도록 변경
+* [Volumes] Snapshot을 이용하여 Volume 생성시 간헐적으로 실패하는 문제 수정
 
 ##### Image
 
