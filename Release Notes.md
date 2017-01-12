@@ -14,7 +14,7 @@
 
 * [Console] “Instance 생성” 기능을 “Image 생성” 기능으로 변경
 
-##### volume
+##### Volume
 
 * [Console] Volume 연결관리 기능에 같은 존의 인스턴스에만 연결이 가능함을 명시
 * [API] Snapshot을 이용하여 Volume 생성시 간헐적으로 실패하는 문제 수정
