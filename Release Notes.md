@@ -17,7 +17,6 @@
 ##### Volume
 
 * [Console] Volume 연결관리 기능에 같은 존의 인스턴스에만 연결이 가능함을 명시
-* [API] Snapshot을 이용하여 Volume 생성시 간헐적으로 실패하는 문제 수정
 
 #### 버그 수정
 
@@ -28,6 +27,14 @@
 ##### Image
 
 * [Console] 이미지 타입 변경시 이미지 선택이 해제되지 않던 문제 수정
+
+##### Volume
+
+* [API] Snapshot을 이용하여 Volume 생성시 간헐적으로 실패하는 문제 수정
+
+##### Load Balancer
+
+* [API] Load Balancer 생성시 연결 제한 설정이 적용되지 않는 문제 수정
 
 ### 2016.12.22
 
