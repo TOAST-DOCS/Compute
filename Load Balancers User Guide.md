@@ -100,6 +100,8 @@ Load Balancer가 처리할 수 있는 최대 connection 수를 설정합니다. 
 
 필요한 경우 이미 생성된 Load Balancer의 속성을 변경할 수 있습니다.
 
+### Load Balancer 속성 변경
+
 1.[Infrastructure] > [Compute & Network] > [Load Balancers]에서 수정할 Load Balancer를 선택합니다.
 
 ![[그림 9] 수정할 Load Balancer 선택](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_009.png)
@@ -110,25 +112,45 @@ Load Balancer가 처리할 수 있는 최대 connection 수를 설정합니다. 
 ![[그림 10] Load Balancer 속성 수정](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_010.png)
 <center>[그림 10] Load Balancer 속성 수정</center>
 
-3.보다 세부적인 구성을 변경하기 위해 <Listener> 탭을 선택합니다.
+3.<Load Balancer 수정> 대화창에서 원하는 항목을 수정한 후, "변경사항을 저장" 버튼을 누르면 반영됩니다.
+
+### Listener 속성 변경
+
+1.보다 세부적인 구성을 변경하기 위해 <Listener> 탭을 선택합니다.
 
 ![[그림 11] Listener 탭](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_011.png)
 <center>[그림 11] Listener 탭</center>
 
-4.<Listener> 탭에서는 현재 선택된 Load Balancer에 정의된 Listener들의 설정을 확인하고 수정할 수 있습니다. 수정하기 원하는 Listener의 [수정] 버튼을 선택합니다.
+2.<Listener> 탭에서는 현재 선택된 Load Balancer에 정의된 Listener들의 설정을 확인하고 수정할 수 있습니다. 수정하기 원하는 Listener의 [수정] 버튼을 선택합니다.
 
 ![[그림 12] Listener 수정 버튼](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_012.png)
 <center>[그림 12] Listener 수정 버튼</center>
 
-5.설정을 수정한 후 [변경] 버튼을 선택합니다.
+3.설정을 수정한 후 [변경] 버튼을 선택합니다.
 
 ![[그림 13] Listener 수정 대화창](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_013.png)
 <center>[그림 13] Listener 수정 대화창</center>
 
-6.설정이 변경되었음을 확인합니다.
+4.설정이 변경되었음을 확인합니다.
 
 ![[그림 14] Listener 수정 확인](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_014.png)
 <center>[그림 14] Listener 수정 확인</center>
+
+5.새로운 Listener를 추가하려면 상단의 [+ Listener 추가] 버튼을 누릅니다.
+
+![[그림 15] Listener 추가 버튼](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_031.png)
+<center>[그림 15] Listener  추가 버튼</center>
+
+> [주의]  
+> 이미 존재하는 Listener와 동일한 Load Balancer Port를 갖는 Listener는 만들 수 없습니다.
+
+6.필요없는 Listener를 삭제하려면 Listener별 [삭제] 버튼을 누릅니다.
+
+![[그림 16] Listener 삭제 버튼](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_032.png)
+<center>[그림 16] Listener 삭제 버튼</center>
+
+> [주의]
+> Listener가 하나인 경우에는 삭제할 수 없습니다.
 
 ## Load Balancer와 Instance 연결
 
@@ -136,43 +158,43 @@ Load Balancer가 처리할 수 있는 최대 connection 수를 설정합니다. 
 
 1.[Infrastructure] > [Compute & Network] > [Load Balancers]에서 수정할 Load Balancer를 선택합니다.
 
-![[그림 15] 수정할 load Balancer](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_015.png)
-<center>[그림 15] 수정할 load Balancer</center>
+![[그림 17] 수정할 load Balancer](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_015.png)
+<center>[그림 17] 수정할 load Balancer</center>
 
-2.[그림 15]의 [Instance]탭을 선택합니다.
+2.[그림 17]의 [Instance]탭을 선택합니다.
 
-![[그림 16] Instance 탭 선택](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_016.png)
-<center>[그림 16] Instance 탭 선택</center>
+![[그림 18] Instance 탭 선택](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_016.png)
+<center>[그림 18] Instance 탭 선택</center>
 
 3.새로운 Instance를 추가하려는 경우 [+Instance 추가]버튼을 선택합니다.
 
-![[그림 17] Instance 추가](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_017.png)
-<center>[그림 17] Instance 추가</center>
+![[그림 19] Instance 추가](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_017.png)
+<center>[그림 19] Instance 추가</center>
 
 4.<Instance 추가> 대화창에서 연결할 Instance를 선택합니다.
 
-![[그림 18] Instance 추가 대화창](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_018.png)
-<center>[그림 18] Instance 추가 대화창</center>
+![[그림 20] Instance 추가 대화창](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_018.png)
+<center>[그림 20] Instance 추가 대화창</center>
 
 5.[Infrastructure] > [Compute & Network] > [Load Balancers]에서 Instance를 추가한 Load Balancer를 선택하여 [그림 17]와 같이 Instance가 정상적으로 추가되었음을 확인합니다.
 
-![[그림 19] Instance 추가 확인](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_019.png)
-<center>[그림 19] Instance 추가 확인</center>
+![[그림 21] Instance 추가 확인](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_019.png)
+<center>[그림 21] Instance 추가 확인</center>
 
 6.Instance를 삭제하기 위해서는 [Infrastructure] > [Compute & Network] > [Load Balancers]에서 Instance를 삭제할 Load Balancer를 선택합니다. 그리고 Instance탭에서 삭제할 Instance를 선택한 뒤 [Instances 연결 해제]버튼을 클릭합니다.
 
-![[그림 20] 삭제할 Instance 선택](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_020.png)
-<center>[그림 20] 삭제할 Instance 선택</center>
+![[그림 22] 삭제할 Instance 선택](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_020.png)
+<center>[그림 22] 삭제할 Instance 선택</center>
 
 7.<Instances 연결 해제를 확인하세요.> 대화창에서 [Instance연결 해제] 버튼을 클릭합니다.
 
-![[그림 21] Instance 연결 해제 대화창](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_021.png)
-<center>[그림 21] Instance 연결 해제 대화창</center>
+![[그림 23] Instance 연결 해제 대화창](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_021.png)
+<center>[그림 23] Instance 연결 해제 대화창</center>
 
-8.[그림 22]과 같이 Instance가 삭제되었음을 확인합니다.
+8.[그림 24]과 같이 Instance가 삭제되었음을 확인합니다.
 
-![[그림 22] Instance 삭제 확인](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_022.png)
-<center>[그림 22] Instance 삭제 확인</center>
+![[그림 24] Instance 삭제 확인](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_022.png)
+<center>[그림 24] Instance 삭제 확인</center>
 
 ## Floating IP 연결
 
@@ -180,38 +202,38 @@ Load Balancer가 처리할 수 있는 최대 connection 수를 설정합니다. 
 
 1.[Infrastructure] > [Compute & Network] > [Load Balancers]에서 Health Check 구성을 변경할 Load Balancer를 선택합니다.
 
-![[그림 23] Floating IP를 할당할 Load Balancer 선택](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_023.png)
-<center>[그림 23] Floating IP를 할당할 Load Balancer 선택</center>
+![[그림 25] Floating IP를 할당할 Load Balancer 선택](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_023.png)
+<center>[그림 25] Floating IP를 할당할 Load Balancer 선택</center>
 
 2.[Floating IP 연결]버튼을 클릭합니다.
 
-![[그림 24] Floating IP 연결](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_024.png)
-<center>[그림 24] Floating IP 연결</center>
+![[그림 26] Floating IP 연결](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_024.png)
+<center>[그림 26] Floating IP 연결</center>
 
 3.<Floating IP 연결> 대화창에서 IP를 할당합니다.
 
-![[그림 25] Floating IP 연결 대화창](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_025.png)
-<center>[그림 25] Floating IP 연결 대화창</center>
+![[그림 27] Floating IP 연결 대화창](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_025.png)
+<center>[그림 27] Floating IP 연결 대화창</center>
 
 4.사용 가능한 IP주소가 없는 경우, [+생성] 버튼을 클릭합니다.
 
-![[그림 26] IP Pool 항목](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_026.png)
-<center>[그림 26] IP Pool 항목</center>
+![[그림 28] IP Pool 항목](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_026.png)
+<center>[그림 28] IP Pool 항목</center>
 
-5.[그림 26]의 IP Pool 항목에서 [Floating IP 할당]버튼을 클릭합니다.
+5.[그림 28]의 IP Pool 항목에서 [Floating IP 할당]버튼을 클릭합니다.
 
-![[그림 27] 새로운 Floating IP 할당](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_027.png)
-<center>[그림 27] 새로운 Floating IP 할당</center>
+![[그림 29] 새로운 Floating IP 할당](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_027.png)
+<center>[그림 29] 새로운 Floating IP 할당</center>
 
-![[그림 28] 새로운 Floating IP 할당 확인](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_028.png)
-<center>[그림 28] 새로운 Floating IP 할당 확인</center>
+![[그림 30] 새로운 Floating IP 할당 확인](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_028.png)
+<center>[그림 30] 새로운 Floating IP 할당 확인</center>
 
 6.[확인]버튼을 눌러 Floating IP를 Load Balancer에 연결 합니다.
 
-![[그림 29] Floating IP 연결](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_029.png)
-<center>[그림 29] Floating IP 연결</center>
+![[그림 31] Floating IP 연결](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_029.png)
+<center>[그림 31] Floating IP 연결</center>
 
 7.[Infrastructure] > [Compute & Network] > [Load Balancers]에서 결과를 확인합니다.
 
-![[그림 30] Floating IP 연결 확인](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_030.png)
-<center>[그림 30] Floating IP 연결 확인</center>
+![[그림 32] Floating IP 연결 확인](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_030.png)
+<center>[그림 32] Floating IP 연결 확인</center>
