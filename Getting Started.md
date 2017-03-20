@@ -40,19 +40,19 @@ Project List화면에서 권한이 있는 프로젝트의 목록을 확인하고
 [+ Instance 생성] 클릭
 ```
 
+### Image 선택
+
+![[그림 4] Public Image 선택](http://static.toastoven.net/prod_infrastructure/compute/img_251.png)
+<center>[그림 4] Public Image 선택</center>
+
 ### 상세 정보 입력
 
-![[그림 4] 상세 정보 입력](http://static.toastoven.net/prod_infrastructure/compute/img_204.png)
-<center>[그림 4] 상세 정보 입력</center>
+![[그림 5] 상세 정보 입력](http://static.toastoven.net/prod_infrastructure/compute/img_204.png)
+<center>[그림 5] 상세 정보 입력</center>
 
 ```
 [이름]항목에서 서버 Instance명 입력
 ```
-
-### Image 선택
-
-![[그림 5] Public Image 선택](http://static.toastoven.net/prod_infrastructure/compute/img_251.png)
-<center>[그림 5] Public Image 선택</center>
 
 ### 접근 & 보안
 
@@ -134,23 +134,14 @@ Instance 생성을 위한 입력을 마쳤으므로 잠시 기다리면 Instance
 ![[그림 12] Floating IP 연결 대화창](http://static.toastoven.net/prod_infrastructure/compute/img_14.jpg)
 <center>[그림 12] Floating IP 연결 대화창</center>
 
-“현재 사용 가능한 IP 주소가 없습니다.”라고 나오고 있습니다. [+생성] 버튼을 클릭하여 Floating IP 할당 화면으로 이동합니다.
+“현재 사용 가능한 IP 주소가 없습니다.”라고 나오고 있습니다. [+생성] 버튼을 클릭하여 Floating IP를 할당합니다.
 
 ```
 [+생성] 버튼 클릭
 ```
 
-![[그림 13] Floating IP 할당](http://static.toastoven.net/prod_infrastructure/compute/img_15.jpg)
-<center>[그림 13] Floating IP 할당</center>
-
-PUBLIC_NETWORK에서 IP를 할당 받도록 합니다.
-```
-[IP Pool] 항목에서 Public Network 선택
-[Floating IP 할당] 버튼 클릭
-```
-
-![[그림 14] Floating IP 연결](http://static.toastoven.net/prod_infrastructure/compute/img_214.png)
-<center>[그림 14] Floating IP 연결</center>
+![[그림 13] Floating IP 연결](http://static.toastoven.net/prod_infrastructure/compute/img_214.png)
+<center>[그림 13] Floating IP 연결</center>
 
 할당 받은 Floating IP주소와 Instance를 연결합니다.
 
@@ -160,8 +151,8 @@ PUBLIC_NETWORK에서 IP를 할당 받도록 합니다.
 [확인]버튼 클릭
 ```
 
-![[그림 15] Floating IP 할당 확인](http://static.toastoven.net/prod_infrastructure/compute/img_215.png)
-<center>[그림 15] Floating IP 할당 확인</center>
+![[그림 14] Floating IP 할당 확인](http://static.toastoven.net/prod_infrastructure/compute/img_215.png)
+<center>[그림 14] Floating IP 할당 확인</center>
 
 이제 외부에서 접속할 수 있는 준비를 마쳤습니다.
 
@@ -189,8 +180,8 @@ Ping 133.186.132.47 32바이트 데이터 사용:
 [Infrastructure] > [Compute & Network] > [Security Groups] > “default” 선택
 ```
 
-![[그림 16] Security Group 확인](http://static.toastoven.net/prod_infrastructure/compute/img_216.png)
-<center>[그림 16] Security Group 확인</center>
+![[그림 15] Security Group 확인](http://static.toastoven.net/prod_infrastructure/compute/img_216.png)
+<center>[그림 15] Security Group 확인</center>
 
 현재 들어오는(Ingress) IP는 다 막혀있습니다. 여기에 ICMP 접속을 허용하는 보안규칙을 추가해보겠습니다.
 
@@ -198,8 +189,8 @@ Ping 133.186.132.47 32바이트 데이터 사용:
 [+ Rule 추가] 버튼 클릭
 ```
 
-![[그림 17] Rule 추가 대화창](http://static.toastoven.net/prod_infrastructure/compute/img_19.jpg)
-<center>[그림 17] Rule 추가 대화창</center>
+![[그림 16] Rule 추가 대화창](http://static.toastoven.net/prod_infrastructure/compute/img_19.jpg)
+<center>[그림 16] Rule 추가 대화창</center>
 
 ```
 [Rule] 항목에서 ALL ICMP 선택
@@ -209,10 +200,10 @@ Ping 133.186.132.47 32바이트 데이터 사용:
 [추가] 버튼 클릭
 ```
 
-![[그림 18] Rule 추가 확인](http://static.toastoven.net/prod_infrastructure/compute/img_218.png)
-<center>[그림 18] Rule 추가 확인</center>
+![[그림 17] Rule 추가 확인](http://static.toastoven.net/prod_infrastructure/compute/img_218.png)
+<center>[그림 17] Rule 추가 확인</center>
 
-[그림 16] ~ [그림 17]에서 ICMP 외부 접속을 허용하도록 Rule을 추가했으므로 ping 테스트를 다시 해봅니다.
+[그림 15] ~ [그림 16]에서 ICMP 외부 접속을 허용하도록 Rule을 추가했으므로 ping 테스트를 다시 해봅니다.
 
 ```
 [~]# ping 133.186.132.47
@@ -239,8 +230,8 @@ ping 테스트를 완료했습니다. 추가로 SSH 접속을 허용해보겠습
 [추가] 버튼 클릭
 ```
 
-![[그림 19] SSH 규칙](http://static.toastoven.net/prod_infrastructure/compute/img_219.png)
-<center>[그림 19] SSH 규칙</center>
+![[그림 18] SSH 규칙](http://static.toastoven.net/prod_infrastructure/compute/img_219.png)
+<center>[그림 18] SSH 규칙</center>
 
 SSH 접속 테스트를 수행하겠습니다. 접속을 하려면 앞서 다운로드한 Key Pair 파일(*.pem)이 필요합니다. Key Pair 파일을 통해 SSH 접속을 하려면 Key Pair 파일의 접근 속성을 변경해야 합니다.
 
@@ -264,8 +255,8 @@ Last login: Fri Oct 10 14:38:36 2014
 
 현재까지의 가상 인프라 구성은 다음과 같습니다.
 
-![[그림 20] 가상 Instance 구성도](http://static.toastoven.net/prod_infrastructure/compute/img_22.jpg)
-<center>[그림 20] 가상 Instance 구성도</center>
+![[그림 19] 가상 Instance 구성도](http://static.toastoven.net/prod_infrastructure/compute/img_22.jpg)
+<center>[그림 19] 가상 Instance 구성도</center>
 
 ## 웹 서버 구동
 
@@ -297,8 +288,8 @@ hello world!
 Serving HTTP on 0.0.0.0 port 80 ..
 ```
 
-![[그림 21] 웹브라우저 접속](http://static.toastoven.net/prod_infrastructure/compute/img_221.png)
-<center>[그림 21] 웹브라우저 접속</center>
+![[그림 20] 웹브라우저 접속](http://static.toastoven.net/prod_infrastructure/compute/img_221.png)
+<center>[그림 20] 웹브라우저 접속</center>
 
 웹서버에서 접속을 하면 다음과 같은 로그가 출력됩니다.
 
@@ -324,15 +315,15 @@ tmpfs                 499M     0  499M   0% /dev/shm
 
 ### Volume 생성
 
-![[그림 22] Volume 생성](http://static.toastoven.net/prod_infrastructure/compute/img_222.png)
-<center>[그림 22] Volume 생성</center>
+![[그림 21] Volume 생성](http://static.toastoven.net/prod_infrastructure/compute/img_222.png)
+<center>[그림 21] Volume 생성</center>
 
 ```
 [Infrastructure] > [Compute & Network] > [Volumes] > [+Volume 생성] 버튼 클릭.
 ```
 
-![[그림 23] Volume 생성 정보 입력](http://static.toastoven.net/prod_infrastructure/compute/img_25.jpg)
-<center>[그림 23] Volume 생성 정보 입력</center>
+![[그림 22] Volume 생성 정보 입력](http://static.toastoven.net/prod_infrastructure/compute/img_25.jpg)
+<center>[그림 22] Volume 생성 정보 입력</center>
 
 ```
 [Volume 이름] 항목에서 Volume명 입력
@@ -343,16 +334,16 @@ tmpfs                 499M     0  499M   0% /dev/shm
 
 Volume은 Instance와 연결해야 사용 가능합니다. [그림 24]의 [연결 관리]을 클릭하여 Volume과 연결할 Instance를 선택합니다.
 
-![[그림 24] Volume 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/img_224.png)
-<center>[그림 24] Volume 생성 확인</center>
+![[그림 23] Volume 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/img_224.png)
+<center>[그림 23] Volume 생성 확인</center>
 
 ```
 연결할 Volume 선택
 [연결관리] 버튼 클릭.
 ```
 
-![[그림 25] Volume 연결 관리 대화창](http://static.toastoven.net/prod_infrastructure/compute/img_225.png)
-<center>[그림 25] Volume 연결 관리 대화창</center>
+![[그림 24] Volume 연결 관리 대화창](http://static.toastoven.net/prod_infrastructure/compute/img_225.png)
+<center>[그림 24] Volume 연결 관리 대화창</center>
 
 ```
 <Volume 연결 관리> 대화창의 [Instance에 연결] 항목에서 Volume을 연결할 Instance 선택
@@ -360,8 +351,8 @@ Volume은 Instance와 연결해야 사용 가능합니다. [그림 24]의 [연�
 
 Instance에 Volume이 연결되었는지 리스트의 ‘연결 정보’에서 확인합니다.
 
-![[그림 26] 연결 정보 확인](http://static.toastoven.net/prod_infrastructure/compute/img_226.png)
-<center>[그림 26] 연결 정보 확인</center>
+![[그림 25] 연결 정보 확인](http://static.toastoven.net/prod_infrastructure/compute/img_226.png)
+<center>[그림 25] 연결 정보 확인</center>
 
 ### Instance 접속 및 Volume 마운트
 
@@ -441,8 +432,8 @@ Volume을 Instance에서 연결 해제합니다.
 [Volume 연결 해제] 버튼 클릭
 ```
 
-![[그림 27] Volume 연결 해제](http://static.toastoven.net/prod_infrastructure/compute/img_227.png)
-<center>[그림 27] Volume 연결 해제</center>
+![[그림 26] Volume 연결 해제](http://static.toastoven.net/prod_infrastructure/compute/img_227.png)
+<center>[그림 26] Volume 연결 해제</center>
 
 Volume 해제 최종 확인을 수행합니다.
 
@@ -450,13 +441,13 @@ Volume 해제 최종 확인을 수행합니다.
 [Volume 연결 해제] 버튼 클릭
 ```
 
-![[그림 28] Volume 연결 해제 확인](http://static.toastoven.net/prod_infrastructure/compute/img_228.png)
-<center>[그림 28] Volume 연결 해제 확인</center>
+![[그림 27] Volume 연결 해제 확인](http://static.toastoven.net/prod_infrastructure/compute/img_228.png)
+<center>[그림 27] Volume 연결 해제 확인</center>
 
 Volume 연결 해제를 마쳤습니다. [그림 29]의 Volume 리스트에서 연결 정보가 비어있는지 확인합니다.
 
-![[그림 29] Volume 연결 해제 확인](http://static.toastoven.net/prod_infrastructure/compute/img_229.png)
-<center>[그림 29] Volume 연결 해제 확인</center>
+![[그림 28] Volume 연결 해제 확인](http://static.toastoven.net/prod_infrastructure/compute/img_229.png)
+<center>[그림 28] Volume 연결 해제 확인</center>
 
 ## Image 생성하기
 
@@ -470,8 +461,8 @@ Instance 목록에서 Image를 생성할 Instance의 전원상태 확인
 
 Instance의 전원상태가 회색으로 SHUTDOWN상태인지 확인합니다.
 
-![[그림 30] Instance의 전원상태 확인](http://static.toastoven.net/prod_infrastructure/compute/img_230.png)
-<center>[그림 30] Instance의 전원상태 확인</center>
+![[그림 29] Instance의 전원상태 확인](http://static.toastoven.net/prod_infrastructure/compute/img_230.png)
+<center>[그림 29] Instance의 전원상태 확인</center>
 
 Image 생성을 수행합니다.
 
@@ -480,11 +471,11 @@ Image를 생성할 Instance를 선택
 [추가기능] > [Image 생성] 선택
 ```
 
-![[그림 31] Image 생성](http://static.toastoven.net/prod_infrastructure/compute/img_231.png)
-<center>[그림 31] Image 생성</center>
+![[그림 30] Image 생성](http://static.toastoven.net/prod_infrastructure/compute/img_231.png)
+<center>[그림 30] Image 생성</center>
 
-![[그림 32] Image 생성](http://static.toastoven.net/prod_infrastructure/compute/img_232.png)
-<center>[그림 32] Image 생성</center>
+![[그림 31] Image 생성](http://static.toastoven.net/prod_infrastructure/compute/img_232.png)
+<center>[그림 31] Image 생성</center>
 
 ```
 [이름]항목에 Image명 입력
@@ -497,23 +488,19 @@ Image를 생성할 Instance를 선택
 [Infrastructure] > [Compute & Network] > [Images] 선택
 ```
 
-![[그림 33] Image 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/img_233.png)
-<center>[그림 33] Image 생성 확인</center>
+![[그림 32] Image 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/img_233.png)
+<center>[그림 32] Image 생성 확인</center>
 
 ## Image로 Instance 생성
 
 방금 생성한 Image로 Instance를 2개 생성해 보겠습니다.
 
 ```
-[Infrastructure] > [Compute & Network] > [Images] > [프로젝트] 탭 선택
-생성한 Image 선택 후 [Instance 생성] 클릭
+[Infrastructure] > [Compute & Network] > [Instance] > [Instance 생성] 클릭
 ```
 
-![[그림 34] 생성한 Image로 Instance 생성](http://static.toastoven.net/prod_infrastructure/compute/img_234.png)
-<center>[그림 34] 생성한 Image로 Instance 생성</center>
-
-![[그림 35] Private Image 선택](http://static.toastoven.net/prod_infrastructure/compute/img_235.png)
-<center>[그림 35] Private Image 선택</center>
+![[그림 33] Private Image 선택](http://static.toastoven.net/prod_infrastructure/compute/img_235.png)
+<center>[그림 33] Private Image 선택</center>
 
 Instance 생성에 사용할 Private Image를 선택하고 나머지 Instance 정보를 입력합니다.
 
@@ -526,13 +513,13 @@ Instance 생성에 사용할 Private Image를 선택하고 나머지 Instance �
 [Instance 생성] 버튼 클릭
 ```
 
-![[그림 36] Instance 정보 입력(Instance 2개)](http://static.toastoven.net/prod_infrastructure/compute/img_236.png)
-<center>[그림 36] Instance 정보 입력(Instance 2개)</center>
+![[그림 34] Instance 정보 입력(Instance 2개)](http://static.toastoven.net/prod_infrastructure/compute/img_236.png)
+<center>[그림 34] Instance 정보 입력(Instance 2개)</center>
 
 잠시 후 Instance 2개 생성을 완료합니다. Instance 목록에서 생성한 Instance를 확인합니다.
 
-![[그림 37] Instance 2개 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/img_237.png)
-<center>[그림 37] Instance 2개 생성 확인</center>
+![[그림 35] Instance 2개 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/img_237.png)
+<center>[그림 35] Instance 2개 생성 확인</center>
 
 각 Instance에 Floating IP를 연결합니다.
 
@@ -548,8 +535,8 @@ Instance 생성에 사용할 Private Image를 선택하고 나머지 Instance �
 [확인] 버튼 클릭
 ```
 
-![[그림 38] Instance 2개 Floating IP 확인](http://static.toastoven.net/prod_infrastructure/compute/img_238.png)
-<center>[그림 38] Instance 2개 Floating IP 확인</center>
+![[그림 36] Instance 2개 Floating IP 확인](http://static.toastoven.net/prod_infrastructure/compute/img_238.png)
+<center>[그림 36] Instance 2개 Floating IP 확인</center>
 
 ## Load Balancer 붙이기
 
@@ -559,11 +546,11 @@ Instance 생성에 사용할 Private Image를 선택하고 나머지 Instance �
 [Infrastructure] > [Compute & Network] > [Load Balancers] > [+ Load Balancer 생성] 버튼 클릭
 ```
 
-![[그림 39] Load Balancer 생성](http://static.toastoven.net/prod_infrastructure/compute/img_239.png)
-<center>[그림 39] Load Balancer 생성</center>
+![[그림 37] Load Balancer 생성](http://static.toastoven.net/prod_infrastructure/compute/img_239.png)
+<center>[그림 37] Load Balancer 생성</center>
 
-![[그림 40] Load Balancer 정의](http://static.toastoven.net/prod_infrastructure/compute/img_240.png)
-<center>[그림 40] Load Balancer 정의</center>
+![[그림 38] Load Balancer 정의](http://static.toastoven.net/prod_infrastructure/compute/img_240.png)
+<center>[그림 38] Load Balancer 정의</center>
 
 ```
 [이름] 항목에서 Load Balancer 이름을 입력
@@ -583,21 +570,21 @@ Instance 생성에 사용할 Private Image를 선택하고 나머지 Instance �
 [다음] 버튼 클릭
 ```
 
-![[그림 41] Instance 연결](http://static.toastoven.net/prod_infrastructure/compute/img_241.png)
-<center>[그림 41] Instance 연결</center>
+![[그림 39] Instance 연결](http://static.toastoven.net/prod_infrastructure/compute/img_241.png)
+<center>[그림 39] Instance 연결</center>
 
 상태 확인을 위한 Health Check 구성 정보를 입력합니다.
 
-![[그림 42] Health Check 설정](http://static.toastoven.net/prod_infrastructure/compute/img_242.png)
-<center>[그림 42] Health Check 설정</center>
+![[그림 40] Health Check 설정](http://static.toastoven.net/prod_infrastructure/compute/img_242.png)
+<center>[그림 40] Health Check 설정</center>
 
 ```
 [Health Port] 항목에 “80”입력
 [다음] 버튼 클릭
 ```
 
-![[그림 43] 고급 연결 옵션](http://static.toastoven.net/prod_infrastructure/compute/img_243.png)
-<center>[그림 43] 고급 연결 옵션</center>
+![[그림 41] 고급 연결 옵션](http://static.toastoven.net/prod_infrastructure/compute/img_243.png)
+<center>[그림 41] 고급 연결 옵션</center>
 
 ```
 [추가] 버튼 클릭
@@ -605,8 +592,8 @@ Instance 생성에 사용할 Private Image를 선택하고 나머지 Instance �
 
 리스트에서 생성 완료한 Load Balancer를 확인합니다.
 
-![[그림 44] Load Balancer 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/img_244.png)
-<center>[그림 44] Load Balancer 생성 확인</center>
+![[그림 42] Load Balancer 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/img_244.png)
+<center>[그림 42] Load Balancer 생성 확인</center>
 
 
 외부에서 Load Balancer를 액세스할 수 있도록 Floating IP를 연결해보겠습니다.
@@ -615,20 +602,19 @@ Instance 생성에 사용할 Private Image를 선택하고 나머지 Instance �
 Floating IP를 연결할 Load Balancer 선택 후 [Floating IP 연결] 버튼 클릭
 ```
 
-![[그림 45] Load Balancer에 Floating IP 연결 대화창](http://static.toastoven.net/prod_infrastructure/compute/img_245.png)
-<center>[그림 45] Load Balancer에 Floating IP 연결 대화창</center>
+![[그림 43] Load Balancer에 Floating IP 연결 대화창](http://static.toastoven.net/prod_infrastructure/compute/img_212.png)
+<center>[그림 43] Load Balancer에 Floating IP 연결 대화창</center>
 
 ```
-[IP 주소] 항목에서 [+생성] 버튼을 클릭하여 [IP Pool] 항목 열기
-[IP Pool] 항목에서 “Public Network” 선택 후 [Floating IP 할당] 열기
+[IP 주소] 항목에서 [+생성] 버튼을 클릭
 [연결될 포트] 항목에서 Load Balancer의 IP를 선택
 [연결] 버튼 클릭
 ```
 
 Floating IP가 연결되었는지 리스트를 확인합니다.
 
-![[그림 46] Load Balancer Floating IP 연결 확인](http://static.toastoven.net/prod_infrastructure/compute/img_246.png)
-<center>[그림 46] Load Balancer Floating IP 연결 확인</center>
+![[그림 44] Load Balancer Floating IP 연결 확인](http://static.toastoven.net/prod_infrastructure/compute/img_246.png)
+<center>[그림 44] Load Balancer Floating IP 연결 확인</center>
 
 웹브라우저에서 Load Balancer로 접속해보기 전에 먼저 2대의 웹서버를 구동합니다.
 
@@ -646,8 +632,8 @@ Serving HTTP on 0.0.0.0 port 80 ...
 
 Load Balancer에 할당된 Floating IP로 접속합니다. 새로 고침 하면서 2대의 서버에서 ROUND_ROBIN 설정대로 번갈아 로그가 남는지 확인합니다.
 
-![[그림 47] Load Balancer Floating IP를 통한 접근](http://static.toastoven.net/prod_infrastructure/compute/img_247.png)
-<center>[그림 47] Load Balancer Floating IP를 통한 접근</center>
+![[그림 45] Load Balancer Floating IP를 통한 접근](http://static.toastoven.net/prod_infrastructure/compute/img_247.png)
+<center>[그림 45] Load Balancer Floating IP를 통한 접근</center>
 
 ```
 [root@host-192-168-0-6 ~]# python -m SimpleHTTPServer 80 Serving HTTP on 0.0.0.0 port 80 ...
@@ -670,8 +656,8 @@ Load Balancer에 할당된 Floating IP로 접속합니다. 새로 고침 하면�
 
 지금까지 구축한 내용은 다음과 같습니다.
 
-![[그림 48] Load Balancer 연동 구성도](http://static.toastoven.net/prod_infrastructure/compute/img_248.png)
-<center>[그림 48] Load Balancer 연동 구성도</center>
+![[그림 46] Load Balancer 연동 구성도](http://static.toastoven.net/prod_infrastructure/compute/img_248.png)
+<center>[그림 46] Load Balancer 연동 구성도</center>
 
 ## 맺음말
 
