@@ -602,7 +602,7 @@ Instance 생성에 사용할 Private Image를 선택하고 나머지 Instance �
 Floating IP를 연결할 Load Balancer 선택 후 [Floating IP 연결] 버튼 클릭
 ```
 
-![[그림 43] Load Balancer에 Floating IP 연결 대화창](http://static.toastoven.net/prod_infrastructure/compute/img_14.png)
+![[그림 43] Load Balancer에 Floating IP 연결 대화창](http://static.toastoven.net/prod_infrastructure/compute/img_14.jpg)
 <center>[그림 43] Load Balancer에 Floating IP 연결 대화창</center>
 
 ```
