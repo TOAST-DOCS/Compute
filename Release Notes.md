@@ -1,13 +1,5 @@
 ## Infrastructure > Compute & Network > Release Notes
 
-### 2017.04.20
-
-#### 버그 수정
-
-##### Monitoring
-
-* 추가 볼륨이 없는 인스턴스의 사용량 조회가 불가능하던 버그가 수정됩니다.
-
 ### 2017.03.23
 
 #### 기능 개선
