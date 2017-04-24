@@ -1,5 +1,13 @@
 ## Infrastructure > Compute & Network > Release Notes
 
+### 2017.04.25
+
+#### 기능 개선
+
+##### Instance
+
+* 인스턴스 생성시 초기 불륨 크기의 최대값이 600GB에서 1TB(1000GB)로 변경됩니다.
+
 ### 2017.04.20
 
 #### 버그 수정
