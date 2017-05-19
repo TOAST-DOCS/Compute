@@ -6,6 +6,7 @@ Volume은 Instance에 추가할 수 있는 disk입니다. 기본 제공되는 di
 
 - Volume 생성, 연결, 삭제
 - Volume Snapshot 생성, 사용, 삭제
+- 리눅스, 윈도우 추가 볼륨 적용 방법
 
 ## Volume 생성
 
@@ -184,3 +185,82 @@ Volume Snapshot은 현재 Volume의 상태를 그대로 저장해둡니다. Volu
 
 ![[그림 30] Volume Snapshot 삭제 확인](http://static.toastoven.net/prod_infrastructure/compute/img_288.png)
 <center>[그림 30] Volume Snapshot 삭제 확인</center>
+
+## 리눅스 추가 볼륨 적용 방법
+
+1.인스턴스에 접속 후 ’fdisk -l’ 을 통해 추가 볼륨이 구성되어 있는지 확인합니다.
+
+![[그림 31] 리눅스 추가 볼륨 구성 확인](http://static.toastoven.net/prod_infrastructure/compute/volume/img_001.png)
+
+2.추가된 볼륨을 사용할 수 있도록 ‘mkfs.ext4 {볼륨 이름}’ 을 통해 디스크 포맷을 진행합니다.
+
+![[그림 32] 디스크 포맷](http://static.toastoven.net/prod_infrastructure/compute/volume/img_002.png)
+
+3.위에서 설정한 볼륨을 시스템에 마운트 합니다.
+* mount -t ext4 {볼륨 이름} {마운트 디렉토리}
+
+![[그림 33] 볼륨 마운트](http://static.toastoven.net/prod_infrastructure/compute/volume/img_003.png)
+
+4.인스턴스 재시작 시 볼륨을 자동으로 mount 하도록 ‘/etc/fstab’에 볼륨 정보를 추가합니다.
+
+![[그림 34] 볼륨 자동 마운트](http://static.toastoven.net/prod_infrastructure/compute/volume/img_004.png)
+
+5.볼륨 해제시에 ‘unmount {마운트 디렉토리}’로 해제하실 수 있습니다.
+
+## 윈도우 추가 볼륨 적용 방법
+
+1.서버관리자 > 파일 및 저장소 서비스 > 볼륨 > 디스크로 이동하여 추가 볼륨을 확인합니다.
+
+2.오프라인 상태로 되어있는 추가 볼륨을 온라인으로 업데이트합니다.
+
+* 화면이 바로 바뀌지 않으면 서버관리자 창을 업데이트 하십시오.
+
+![[그림 35] 윈도우 추가 볼륨 구성 확인](http://static.toastoven.net/prod_infrastructure/compute/volume/img_005.png)
+
+3.이후 온라인 상태로 변경된 볼륨에서 오른쪽 클릭 -> 새 볼륨 버튼을 선택합니다.
+
+![[그림 36] 새 볼륨 추가](http://static.toastoven.net/prod_infrastructure/compute/volume/img_006.png)
+
+4.새 볼륨 마법사를 진행하여 추가 볼륨을 마운트합니다.
+
+- **1.시작하기 전**
+
+![[그림 37] 시작하기 전](http://static.toastoven.net/prod_infrastructure/compute/volume/img_007.png)
+
+- **2. 서버 및 디스크**
+
+![[그림 38] 서버 및 디스크](http://static.toastoven.net/prod_infrastructure/compute/volume/img_008.png)
+
+- **3. 크기**
+
+![[그림 39] 크기](http://static.toastoven.net/prod_infrastructure/compute/volume/img_009.png)
+
+- **4. 드라이브 문자 또는 폴더**
+
+![[그림 40] 드라이브 문자 또는 폴더](http://static.toastoven.net/prod_infrastructure/compute/volume/img_010.png)
+
+- **5. 파일 시스템 설정**
+
+![[그림 41] 파일 시스템 설정](http://static.toastoven.net/prod_infrastructure/compute/volume/img_011.png)
+
+- **6. 확인**
+
+![[그림 42] 확인](http://static.toastoven.net/prod_infrastructure/compute/volume/img_012.png)
+
+- **7. 완료**
+
+![[그림 43] 완료](http://static.toastoven.net/prod_infrastructure/compute/volume/img_013.png)
+
+5.완료 후 아래와 같이 추가 볼륨이 생성된 것을 확인하실 수 있습니다.
+
+![[그림 44] 추가 볼륨 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/volume/img_014.png)
+
+**※추가 확장 후 액세스 경로 추가가 실패할 경우**
+
+1.서버관리자 > 파일 및 저장소 서비스 > 볼륨 > 디스크 > 볼륨 > 드라이브 문자 및 액세스 경로 관리를 선택합니다.
+
+![[그림 45] 드라이브 문자 및 액세스 경로 관리](http://static.toastoven.net/prod_infrastructure/compute/volume/img_015.png)
+
+2.드라이브 문자와 액세스 경로를 설정하신 후 확인을 선택합니다.
+
+![[그림 46] 액세스 경로를 설정](http://static.toastoven.net/prod_infrastructure/compute/volume/img_016.png)
