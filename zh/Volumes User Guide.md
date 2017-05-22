@@ -197,6 +197,7 @@ Volume Snapshot은 현재 Volume의 상태를 그대로 저장해둡니다. Volu
 ![[그림 32] 디스크 포맷](http://static.toastoven.net/prod_infrastructure/compute/volume/img_002.png)
 
 3.위에서 설정한 볼륨을 시스템에 마운트 합니다.
+
 * mount -t ext4 {볼륨 이름} {마운트 디렉토리}
 
 ![[그림 33] 볼륨 마운트](http://static.toastoven.net/prod_infrastructure/compute/volume/img_003.png)
