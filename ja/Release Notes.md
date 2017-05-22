@@ -1,10 +1,12 @@
 ## Infrastructure > Compute & Network > Release Notes
 
-`single`
+### 2017.05.25
 
-```
-triple
-```
+#### 버그 수정
+
+#### Instance
+
+* 서비스 종료된 이미지로 생성된 인스턴스가 조회 되지 않는 버그가 수정되었습니다.
 
 ### 2017.04.25
 
