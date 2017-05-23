@@ -81,24 +81,24 @@ Windows 설치에 최소 필요버전을 사용해 시스템언어 , 시간 , �
 
 Sysprep 서비스로 고객용 이미지 생성절차에 대해 설명해드리겠습니다.
 
-1.  ToastCloud 콘솔의 가이드
+1. ToastCloud 콘솔의 가이드
 
-2.  ToastCloud Unattend 파일 구성 설정
+2. ToastCloud Unattend 파일 구성 설정
 
-    1.  기본제공되어 있기 때문에 특별한 용도를 제외하면 수정이 필요하지 않습니다.
+    * 기본제공되어 있기 때문에 특별한 용도를 제외하면 수정이 필요하지 않습니다.
 
-3.  Windows 접속후 명령 프롬프트 실행
+3. Windows 접속후 명령 프롬프트 실행
 
-4.  Cloudbase-init sysprep 실행
+4. Cloudbase-init sysprep 실행
 
-    1.  Cd C:\\Program Files\\Cloudbase Solutions\\Cloudbase-Init\\conf
+    1. Cd C:\\Program Files\\Cloudbase Solutions\\Cloudbase-Init\\conf
 
-    2.  C:\\Windows\\System32\\Sysprep\\sysprep.exe /generalize /oobe /shutdown /unattend:Unattend.xml
+    2. C:\\Windows\\System32\\Sysprep\\sysprep.exe /generalize /oobe /shutdown /unattend:Unattend.xml
 
-> ![](http://static.toastoven.net/prod_infrastructure/compute/sysprep/img_001.png)
+![](http://static.toastoven.net/prod_infrastructure/compute/sysprep/img_001.png)
 
-1.  Sysprep 수행 완료후 인스턴스 상태가 shutdown 로 변한 것을 확인
+1. Sysprep 수행 완료후 인스턴스 상태가 shutdown 로 변한 것을 확인
 
-2.  사용자 이미지 생성 콘솔의 가이드
+2. 사용자 이미지 생성 콘솔의 가이드
 
 감사합니다.
