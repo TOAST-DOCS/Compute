@@ -95,10 +95,10 @@ Sysprep 서비스로 고객용 이미지 생성절차에 대해 설명해드리�
 
     2. C:\\Windows\\System32\\Sysprep\\sysprep.exe /generalize /oobe /shutdown /unattend:Unattend.xml
 
-![](http://static.toastoven.net/prod_infrastructure/compute/sysprep/img_001.png)
+    ![](http://static.toastoven.net/prod_infrastructure/compute/sysprep/img_001.png)
 
-1. Sysprep 수행 완료후 인스턴스 상태가 shutdown 로 변한 것을 확인
+5. Sysprep 수행 완료후 인스턴스 상태가 shutdown 로 변한 것을 확인
 
-2. 사용자 이미지 생성 콘솔의 가이드
+6. 사용자 이미지 생성 콘솔의 가이드
 
 감사합니다.
