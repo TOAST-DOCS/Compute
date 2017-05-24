@@ -36,7 +36,7 @@ Image를 생성하기 위해서는 먼저 Image를 생성할 Instance를 정지�
 
 3.생성할 Image의 이름을 입력한 뒤, [Image 생성] 버튼을 클릭합니다.
 
-![[그림 3] Image 이름 입력](http://static.toastoven.net/prod_infrastructure/compute/img_65.jpg)
+![[그림 3] Image 이름 입력](http://static.toastoven.net/prod_infrastructure/compute/images/003_170524.jpg)
 <center>[그림 3] Image 이름 입력</center>
 
 4.[Infrastructure] > [Compute & Network] > [Images]에서 생성된 Image를 확인할 수 있습니다.
