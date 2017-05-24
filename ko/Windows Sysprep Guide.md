@@ -43,18 +43,18 @@ TOAST Cloud의 Windows Image에서 응답파일은 C:\Program Files\Cloud Soluti
 Windows Image 생성 하기전 다음과 같이 Sysprep을 실행합니다.
 
 1. Windows  Instance 접속 후 명령 프롬프트 실행 <br/>
-![[그림 1 명령 프롬프트 실행]](http://static.toastoven.net/prod_infrastructure/compute/sysprep/001_170524_800px.png)
+![[그림 1 명령 프롬프트 실행]](http://static.toastoven.net/prod_infrastructure/compute/sysprep/001_170524_800px.PNG)
 <center>[그림 1 명령 프롬프트 실행]</center>
 2. Sysprep 실행
 ```
 cd C:\Program Files\Cloudbase Solutions\Cloudbase-Init\conf
 C:\Windows\System32\Sysprep\sysprep.exe /generalize /oobe /shutdown /unattend:Unattend.xml
 ```
-![[그림 2 Sysprep 실행]](http://static.toastoven.net/prod_infrastructure/compute/sysprep/002_170524_800px.png)
+![[그림 2 Sysprep 실행]](http://static.toastoven.net/prod_infrastructure/compute/sysprep/002_170524_800px.PNG)
 <center>[그림 2 Sysprep 실행]</center>
-![[그림 3 Sysprep 실행 화면]](http://static.toastoven.net/prod_infrastructure/compute/sysprep/003_170524_800px.png)
+![[그림 3 Sysprep 실행 화면]](http://static.toastoven.net/prod_infrastructure/compute/sysprep/003_170524_800px.PNG)
 <center>[그림 3 Sysprep 실행 화면]</center>
-3. Sysprep 수행 완료후 Instance 상태가 shutdown으로 변한 것을 확인
-![[그림 4 Instance 상태 확인]](http://static.toastoven.net/prod_infrastructure/compute/sysprep/004_170524_800px.png)
+3. Sysprep 수행 완료후 Instance 상태가 shutdown으로 변한 것을 확인 <br />
+![[그림 4 Instance 상태 확인]](http://static.toastoven.net/prod_infrastructure/compute/sysprep/004_170524_800px.PNG)
 <center>[그림 4 Instance 상태 확인]</center>
 4. 이후 Image 가이드에 따라 사용자 Image를 생성
