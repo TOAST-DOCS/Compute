@@ -1,5 +1,14 @@
 ## Infrastructure > Compute & Network > Release Notes
 
+### 2017.06.22
+
+#### 기능 추가
+
+##### Instance
+
+* Fusion IO Flavor(i2 type)가 추가됩니다.
+   * Fusion IO는 스토리지에 최적화 된 Flavor로 기존 Flavor보다 더욱 뛰어난 디스크 IO 성능을 제공합니다.
+
 ### 2017.05.25
 
 #### 기능 추가
