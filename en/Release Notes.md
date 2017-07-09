@@ -1,5 +1,12 @@
 ## Infrastructure > Compute & Network > Release Notes
 
+### 2017.07.10
+
+#### 기능 추가
+
+* Nas(Offline) 상품이 추가됩니다.
+   * 고성능의 NAS(Network Attached Storage)를 TOAST Cloud 서버 고객이 사용할 수 있도록 제공하는 서비스입니다.
+
 ### 2017.05.25
 
 #### 기능 추가
