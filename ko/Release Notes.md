@@ -7,7 +7,7 @@
 ##### Nas(Offline)
 
 * Nas(Offline) 서비스가 추가됩니다.
-  * Nas(Offline) 서비스는 고성능의 NAS(Network Attached Storage)를 TOAST Cloud 서버 고객이 사용할 수 있도록 제공하는 서비스입니다.
+    * Nas(Offline) 서비스는 고성능의 NAS(Network Attached Storage)를 TOAST Cloud 서버 고객이 사용할 수 있도록 제공하는 서비스입니다.
 
 ### 2017.05.25
 
