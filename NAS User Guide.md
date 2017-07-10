@@ -13,25 +13,26 @@ NAS 는 여러 개의 인스턴스에서 네트워크를 통해 액세스 할 �
 ![[그림 1] NAS (Offline) 상품](http://static.toastoven.net/prod_infrastructure/compute/nas/nas_1.png)
 <center>[그림 1] NAS (Offline) 상품</center>
 
-2. [그림 2] 의 대화창에서 Nas 관련 정보를 입력합니다. 필요한 정보는 다음과 같습니다. 
+2. [그림 2] 의 대화창에서 NAS 관련 정보를 입력합니다. 필요한 정보는 다음과 같습니다. 
+
 - **신청유형**
 상품 이용 신청일 경우 [Volume 생성]으로 자동으로 입력됩니다. 
 - **Volume 이름**
-Nas Volume 이름으로 영문/숫자 형태로 8자리 이하의 이름을 입력합니다. 입력된 Volume 이름으로 실제 Nas Volume 이 생성이 됩니다. 
+NAS Volume 이름으로 영문/숫자 형태로 8자리 이하의 이름을 입력합니다. 입력된 Volume 이름으로 실제 Nas Volume 이 생성이 됩니다. 
 - **크기(GB)**
 NAS 는 신규 생성시 300GB 이상부터 신청이 가능합니다. 필요한 용량을 스크롤을 이용하여 선택합니다
 - **Snapshot**
-Snapshot 기능을 사용할 경우, Snapshot 은 1일 1회 3일 Nas 의 Snapshot 을 관리합니다. Snapshot 사용시 Snapshot 기능은 Nas Volume 을 사용합니다. Snapshot 을 이용한 복구는 별도 문의 바랍니다
+Snapshot 기능을 사용할 경우, Snapshot 은 1일 1회 3일 NAS 의 Snapshot 을 관리합니다. Snapshot 사용시 Snapshot 기능은 Nas Volume 을 사용합니다. Snapshot 을 이용한 복구는 별도 문의 바랍니다
 - **NAS 정보**
 NAS 정보는 실제 할당된 NAS Volume 명입니다. 전문 엔지니어가 NAS Volume 생성 후 입력하는 정보입니다. 
 ![[그림 2] NAS (Offline) 이용 신청](http://static.toastoven.net/prod_infrastructure/compute/nas/nas_2.png)
 <center>[그림 2] NAS(offline) 이용 신청</center>
 
-필요한 Nas 정보를 입력한 후 [신청] 버튼을 클릭합니다. 
+필요한 NAS 정보를 입력한 후 [신청] 버튼을 클릭합니다. 
 ![[그림 3] NAS (Offline) 신청 완료](http://static.toastoven.net/prod_infrastructure/compute/nas/nas_3.png)
 <center>[그림 3] NAS(offline) 신청 완료</center>
 
-3. Nas Volume 생성이 완료되면 아래와 같은 메일로 안내가 됩니다. 
+3. NAS Volume 생성이 완료되면 아래와 같은 메일로 안내가 됩니다. 
 
 ![[그림 4] NAS (Offline) 완료 메일](http://static.toastoven.net/prod_infrastructure/compute/nas/nas_4.png)
 <center>[그림 4] NAS(offline) 완료 메일</center>
@@ -42,7 +43,7 @@ NAS 정보는 실제 할당된 NAS Volume 명입니다. 전문 엔지니어가 N
 <center>[그림 5] NAS(offline) 이용내역</center>
 
 ## NAS 증설
-NAS 이용내역에서 Volume 증설을 할 수 있습니다. Volume증설은 Nas 의 상태가 [신청접수], [이용중] 일 경우에만 버튼이 활성화됩니다.
+NAS 이용내역에서 Volume 증설을 할 수 있습니다. Volume증설은 NAS 의 상태가 [신청접수], [이용중] 일 경우에만 버튼이 활성화됩니다.
 [그림 5]에서 [Volume 증설] 버튼을 클릭합니다. [그림 6]의 대화창에서 증설할 추가 용량 정보를 입력합니다.
 
 ![[그림 6] NAS (Offline) Volume 증설](http://static.toastoven.net/prod_infrastructure/compute/nas/nas_6.png)
