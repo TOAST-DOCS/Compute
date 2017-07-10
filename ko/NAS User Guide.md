@@ -44,7 +44,7 @@ NAS 정보는 실제 할당된 NAS Volume 명입니다. 전문 엔지니어가 N
 ![[그림 5] NAS (Offline) 이용내역](http://static.toastoven.net/prod_infrastructure/compute/nas/nas_5.png)
 <center>[그림 5] NAS(offline) 이용내역</center>
 
-## NAS 증설
+## Volume 증설
 NAS 이용내역에서 Volume 증설을 할 수 있습니다. Volume증설은 NAS 의 상태가 [신청접수], [이용중] 일 경우에만 버튼이 활성화됩니다.
 [그림 5]에서 [Volume 증설] 버튼을 클릭합니다. [그림 6]의 대화창에서 증설할 추가 용량 정보를 입력합니다.
 
