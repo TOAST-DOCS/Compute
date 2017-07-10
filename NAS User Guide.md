@@ -1,4 +1,4 @@
-## Infrastructure > Compute & Network > NAS User Guide
+## Infrastructure > Compute & Network > NAS (Offline) User Guide
 
 NAS 는 여러 개의 인스턴스에서 네트워크를 통해 액세스 할 수 있는 스토리지 입니다. NAS 는 프로젝트 내 의 모든 인스턴스가 접속하여 사용할 수 있습니다. 
 
