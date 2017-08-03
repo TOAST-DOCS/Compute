@@ -3,20 +3,26 @@
 ### 2017.08.24
 
 #### 기능 추가
-* Instance flavor를 변경할 수 있도록 기능이 추가되었습니다.
-    * 사용하던 Instance의 data는 그대로 보존하면서 CPU/Memory만 업그레이드 하거나 다운그레이드 할 수 있습니다.
+* Instance Flavor를 변경할 수 있도록 기능이 추가되었습니다.
+    * 사용하던 Instance의 data는 그대로 보존하면서 CPU/Memory를 업그레이드 하거나 다운그레이드 할 수 있습니다.
 
     * 제약 사항
-        * Disk size는 변경이 불가능합니다.
-        * Flavor 변경을 위해 Instance는 shutdown 되어야 합니다.
-        * 일반 Flavor에서 저가형 SSD, High IOPS Flavor로의 변경은 불가능합니다.
+        * Block Storage size는 변경이 불가능합니다.
+        * Flavor 변경을 위해 Instance는 shutdown 상태여야 합니다.
+        * 일반 Flavor(t2/m2/c2/r2)에서 Low IOPS SSD(u2), High IOPS SSD Flavor(i2)로의 변경은 불가능합니다.
         * 저가형 SSD, High IOPS Flavor는 Flavor 변경이 지원되지 않습니다.
 
-* 저가형 SSD Flavor 추가
+* Low IOPS SSD Flavor 추가
     * 좀 더 낮은 가격에 Instance를 이용할 수 있도록 저사양 Flavor가 추가되었습니다.
+    * 제약 사항
+        * 리눅스 계열 OS 만 지원합니다.
+        * Local Disk를 이용하기 때문에 하드웨어 장애시 데이터 복구가 불가능할 수 있습니다.
 
-* High IOPS flavor
-    * 높은 IOPS가 필요한 경우 High IOPS 상품을 이용하면 수준의 높은 IOPS를 보장 받을 수 있습니다. (보장 IOPS는 가격표 참조)
+* High IOPS SSD flavor
+    * 높은 IOPS가 필요한 경우 High IOPS SSD Flavor를 이용하면 수준의 높은 IOPS를 보장 받을 수 있습니다. (보장 IOPS는 가격표 참조)
+    * 제약 사항
+        * 리눅스 계열 OS 만 지원합니다.
+        * Local Disk를 이용하기 때문에 하드웨어 장애시 데이터 복구가 불가능할 수 있습니다.
 
 #### 버그 수정
 * Instance 사용량 조회시 값이 조회되지 않는 버그가 수정되었습니다.
