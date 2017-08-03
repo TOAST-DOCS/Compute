@@ -1,5 +1,27 @@
 ## Infrastructure > Compute & Network > Release Notes
 
+### 2017.08.24
+
+#### 기능 추가
+* Instance flavor를 변경할 수 있도록 기능이 추가되었습니다.
+    * 사용하던 Instance의 data는 그대로 보존하면서 CPU/Memory만 업그레이드 하거나 다운그레이드 할 수 있습니다.
+
+    * 제약 사항
+        * Disk size는 변경이 불가능합니다.
+        * Flavor 변경을 위해 Instance는 shutdown 되어야 합니다.
+        * 일반 Flavor에서 저가형 SSD, High IOPS Flavor로의 변경은 불가능합니다.
+        * 저가형 SSD, High IOPS Flavor는 Flavor 변경이 지원되지 않습니다.
+
+* 저가형 SSD Flavor 추가
+    * 좀 더 낮은 가격에 Instance를 이용할 수 있도록 저사양 Flavor가 추가되었습니다.
+
+* High IOPS flavor
+    * 높은 IOPS가 필요한 경우 High IOPS 상품을 이용하면 수준의 높은 IOPS를 보장 받을 수 있습니다. (보장 IOPS는 가격표 참조)
+
+#### 버그 수정
+* Instance 사용량 조회시 값이 조회되지 않는 버그가 수정되었습니다.
+* Load Balancer 서비스의 세션 지속성 항목이 제대로 표시되지 않던 버그가 수정되었습니다.
+
 ### 2017.07.20
 
 #### 버그 수정
