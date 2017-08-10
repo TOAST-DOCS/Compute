@@ -56,24 +56,24 @@ Block Storage는 Instance에 추가할 수 있는 disk입니다. 기본 제공�
 4.[Infrastructure] > [Compute & Network] > [Block Storage]에서, 선택한Block Storage가 연결되었음을 확인합니다.
 
 ![[그림 7] Block Storage 연결 확인](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img007.png)
-<center>[그림 7] Block Storage 연결 확인</center>
+<center>[그림 7] Block Storage 연결 확인</center>storage
 
 5.연결된 Block Storage를 해제하고 싶을 때에는 연결을 해제할 Block Storage를 선택하고 [연결 관리]버튼을 선택합니다.
 
 ![[그림 8] 연결된 Block Storage 해제](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img008.png)
 <center>[그림 8] 연결된 Block Storage 해제</center>
 
-6.&lt;Block Storage 연결 관리> 대화창에서 Instance를 선택한 후 [Block Storages 연결 해제] 버튼을 클릭합니다.
+6.&lt;Block Storage 연결 관리> 대화창에서 Instance를 선택한 후 [Block Storage 연결 해제] 버튼을 클릭합니다.
 
 ![[그림 9] Block Storage 연결 관리 대화창](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img009.png)
 <center>[그림 9] Block Storage 연결 관리 대화창</center>
 
-7.&lt;Block Storage 연결 해제를 확인하세요.> 대화창에서 [Block Storages 연결 해제] 버튼을 클릭합니다.
+7.&lt;Block Storage 연결 해제를 확인하세요.> 대화창에서 [Block storage 연결 해제] 버튼을 클릭합니다.
 
 ![[그림 10] Block Storage 연결 관리 대화창](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img010.png)
 <center>[그림 10] Block Storage 연결 관리 대화창</center>
 
-8.[Infrastructure] > [Compute & Network] > [Block Storages]에서, 선택한 Block Storage가 해제되었음을 확인합니다.
+8.[Infrastructure] > [Compute & Network] > [Block storage]에서, 선택한 Block Storage가 해제되었음을 확인합니다.
 
 ![[그림 11] Block Storage 연결 관리 대화창](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img011.png)
 <center>[그림 11] Block Storage 연결 관리 대화창</center>
@@ -97,7 +97,7 @@ Block Storage는 Instance에 추가할 수 있는 disk입니다. 기본 제공�
 ![[그림 14] Block Storage 삭제 대화창](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img014.png)
 <center>[그림 14] Block Storage 삭제 대화창</center>
 
-4.[Infrastructure] > [Compute & Network] > [Block Storages]에서 선택한 Block Storage가 삭제되었음을 확인합니다.
+4.[Infrastructure] > [Compute & Network] > [Block storage]에서 선택한 Block Storage가 삭제되었음을 확인합니다.
 
 ![[그림 15] Block Storage 삭제 대화창](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img015.png)
 <center>[그림 15] Block Storage 삭제 대화창</center>
@@ -121,7 +121,7 @@ Snapshot은 현재 Block Storage의 상태를 그대로 저장해둡니다. Snap
 ![[그림 18] Snapshot 생성 대화창](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img018.png)
 <center>[그림 18] Snapshot 생성 대화창</center>
 
-4.[Infrastructure] > [Compute & Network] > [Block StorageBlock Storage]의 Snapshots 탭에서 정상적으로 Snapshot이 생성되었음을 확인합니다.
+4.[Infrastructure] > [Compute & Network] > [Block Storage]의 Snapshots 탭에서 정상적으로 Snapshot이 생성되었음을 확인합니다.
 
 ![[그림 19] Snapshot 생성 완료 알림](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img019.png)
 <center>[그림 19] Snapshot 생성 완료 알림</center>
