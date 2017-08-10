@@ -10,12 +10,12 @@ Block Storage는 Instance에 추가할 수 있는 disk입니다. 기본 제공�
 
 ## Block Storage 생성
 
-1.[Infrastructure] > [Compute & Network] > [스토리지Block Storage]으로 이동한 뒤, [+ Block Storage 생성]버튼을 클릭합니다.
+1.[Infrastructure] > [Compute & Network] > [Block Storage]으로 이동한 뒤, [+ Block Storage 생성]버튼을 클릭합니다.
 
 ![[그림 1] Block Storage 목록 보기](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img001.png)
 <center>[그림 1] Block Storage 목록 보기</center>
 
-2.[그림 2]의 <Block Storage 생성> 대화창에서 Block Storage 관련 정보를 입력합니다. 필요한 정보는 다음과 같습니다.
+2.[그림 2]의 <Block Storage 생성> 대화창에서 Block Storage 관련 정보를 입력합니다. 필요ㄴ 정보는 다음과 같습니다.
 
 - **Block Storage 이름**    
   생성할 Block Storage의 이름을 입력합니다.
@@ -188,21 +188,21 @@ Snapshot은 현재 Block Storage의 상태를 그대로 저장해둡니다. Snap
 
 ## 리눅스 추가 스토리지 적용 방법
 
-1.인스턴스에 접속 후 ’fdisk -l’ 을 통해 추가 스토리지가스토리지 구성되어 있는지 확인합니다.
+1.인스턴스에 접속 후 ’fdisk -l’ 을 통해 추가 스토리지가 구성되어 있는지 확인합니다.
 
 ![[그림 31] 리눅스 추가 스토리지 구성 확인](http://static.toastoven.net/prod_infrastructure/compute/volume/img_001.png)
 
-2.추가된 스토리지를스토리지 사용할 수 있도록 ‘mkfs.ext4 {스토리지 이름}’ 을 통해 디스크 포맷을 진행합니다.
+2.추가된 스토리지를 사용할 수 있도록 ‘mkfs.ext4 {스토리지 이름}’ 을 통해 디스크 포맷을 진행합니다.
 
 ![[그림 32] 디스크 포맷](http://static.toastoven.net/prod_infrastructure/compute/volume/img_002.png)
 
-3.위에서 설정한 스토리지를스토리지 시스템에 마운트 합니다.
+3.위에서 설정한 스토리지를 시스템에 마운트 합니다.
 
 * mount -t ext4 {스토리지 이름} {마운트 디렉토리}
 
 ![[그림 33] 스토리지 마운트](http://static.toastoven.net/prod_infrastructure/compute/volume/img_003.png)
 
-4.인스턴스 재시작 시 스토리지를스토리지 자동으로 mount 하도록 ‘/etc/fstab’에 스토리지 정보를 추가합니다.
+4.인스턴스 재시작 시 스토리지를 자동으로 mount 하도록 ‘/etc/fstab’에 스토리지 정보를 추가합니다.
 
 ![[그림 34] 스토리지 자동 마운트](http://static.toastoven.net/prod_infrastructure/compute/volume/img_004.png)
 
@@ -252,7 +252,7 @@ Snapshot은 현재 Block Storage의 상태를 그대로 저장해둡니다. Snap
 
 ![[그림 43] 완료](http://static.toastoven.net/prod_infrastructure/compute/volume/img_013.png)
 
-5.완료 후 아래와 같이 추가 스토스토리지리지가 생성된 것을 확인하실 수 있습니다.
+5.완료 후 아래와 같이 추가 스토리지가 생성된 것을 확인하실 수 있습니다.
 
 ![[그림 44] 추가 스토리지 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/volume/img_014.png)
 
