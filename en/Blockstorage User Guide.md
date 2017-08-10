@@ -15,7 +15,7 @@ Block Storage는 Instance에 추가할 수 있는 disk입니다. 기본 제공�
 ![[그림 1] Block Storage 목록 보기](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img001.png)
 <center>[그림 1] Block Storage 목록 보기</center>
 
-2.[그림 2]의 <Block Storage 생성> 대화창에서 Block Storage 관련 정보를 입력합니다. 필요ㄴ 정보는 다음과 같습니다.
+2.[그림 2]의 <Block Storage 생성> 대화창에서 Block Storage 관련 정보를 입력합니다. 필요한 정보는 다음과 같습니다.
 
 - **Block Storage 이름**    
   생성할 Block Storage의 이름을 입력합니다.
