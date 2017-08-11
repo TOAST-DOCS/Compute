@@ -63,24 +63,24 @@ NAS 이용내역에서 Volume 을 삭제 할 수 있습니다.
 <center>[그림 7] NAS(offline) Volume 삭제</center>
 
 ## Volume 연결
-1. nfs 패키지 설치
+nfs 패키지 설치
  - Debian, Ubuntu: nfs-common, rpcbind
-```
-apt-get install nfs-common rpcbind
-```
+   ```
+   apt-get install nfs-common rpcbind
+   ```
  
  - CentOS: nfs-utils, rpcbind 
-```
-# yum install nfs-utils rpcbind
-```
+   ```
+   # yum install nfs-utils rpcbind
+   ```
 
-2. rpcbind 서비스 실행
+rpcbind 서비스 실행
 ```
 # service rpcbind start
 ```
 
-3. NAS Volume 마운트
+NAS Volume 마운트
 ```
 # mount -t nfs 192.168.0.254:/volume /mnt
+* /mnt: 마운트할 디렉토리
 ```
-/mnt : 마운트할 디렉토리
