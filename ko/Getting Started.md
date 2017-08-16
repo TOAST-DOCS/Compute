@@ -7,7 +7,7 @@ Infrastructure > Compute & Network를 통해 사용자의 서비스를 위한 �
 - Infrastructure 상품 활성화
 - Instance 생성
 - Floating IP 할당
-- Volume 생성
+- Block Storage 생성
 - Image 생성
 - Load Balancer 생성
 
@@ -299,7 +299,7 @@ Serving HTTP on 0.0.0.0 port 80 ..
 103.243.200.42 - - [11/Nov/2015 17:03:15] "GET / HTTP/1.1" 200 -
 ```
 
-## Volume 생성하기
+## Block Storage 생성하기
 
 Instance에 접속하여 Disk 용량을 확인해보겠습니다.
 
@@ -311,50 +311,50 @@ tmpfs                 499M     0  499M   0% /dev/shm
 [root@host-192-168-0-4 ~]#
 ```
 
-현재 Instance는 16G정도의 여유공간이 있습니다. 좀더 많은 Disk 공간을 확보하고 싶으면 Volume을 추가하면 됩니다. 우선 Volume을 생성해보겠습니다.
+현재 Instance는 16G정도의 여유공간이 있습니다. 좀더 많은 Disk 공간을 확보하고 싶으면 Block Storage를 추가하면 됩니다. 우선 Block Storage를 생성해보겠습니다.
 
-### Volume 생성
+### Block Storage 생성
 
-![[그림 21] Volume 생성](http://static.toastoven.net/prod_infrastructure/compute/img_222.png)
-<center>[그림 21] Volume 생성</center>
-
-```
-[Infrastructure] > [Compute & Network] > [Volumes] > [+Volume 생성] 버튼 클릭.
-```
-
-![[그림 22] Volume 생성 정보 입력](http://static.toastoven.net/prod_infrastructure/compute/img_25.jpg)
-<center>[그림 22] Volume 생성 정보 입력</center>
+![[그림 21] Block Storage 생성](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img001.png)
+<center>[그림 21] Block Storage 생성</center>
 
 ```
-[Volume 이름] 항목에서 Volume명 입력
+[Infrastructure] > [Compute & Network] > [Block Storage] > [+Block Storage 생성] 버튼 클릭.
+```
+
+![[그림 22] Block Storage 생성 정보 입력](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img002.png)
+<center>[그림 22] Block Storage 생성 정보 입력</center>
+
+```
+[Block Storage 이름] 항목에서 Block Storage명 입력
 [크기(GB)] 항목에서 Disk 크기 입력
 [Zone] 항목에서 기본값 유지
-[Volume 생성] 버튼 클릭
+[Block Storage 생성] 버튼 클릭
 ```
 
-Volume은 Instance와 연결해야 사용 가능합니다. [그림 24]의 [연결 관리]을 클릭하여 Volume과 연결할 Instance를 선택합니다.
+Block Storage는 Instance와 연결해야 사용 가능합니다. [그림 24]의 [연결 관리]을 클릭하여 Block Storage와 연결할 Instance를 선택합니다.
 
-![[그림 23] Volume 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/img_224.png)
-<center>[그림 23] Volume 생성 확인</center>
+![[그림 23] Block Storage 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img005.png)
+<center>[그림 23] Block Storage 생성 확인</center>
 
 ```
-연결할 Volume 선택
+연결할 Block Storage 선택
 [연결관리] 버튼 클릭.
 ```
 
-![[그림 24] Volume 연결 관리 대화창](http://static.toastoven.net/prod_infrastructure/compute/img_225.png)
-<center>[그림 24] Volume 연결 관리 대화창</center>
+![[그림 24] Block Storage 연결 관리 대화창](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img006.png)
+<center>[그림 24] Block Storage 연결 관리 대화창</center>
 
 ```
-<Volume 연결 관리> 대화창의 [Instance에 연결] 항목에서 Volume을 연결할 Instance 선택
+<Block Storage 연결 관리> 대화창의 [Instance에 연결] 항목에서 Block Storage을 연결할 Instance 선택
 ```
 
-Instance에 Volume이 연결되었는지 리스트의 ‘연결 정보’에서 확인합니다.
+Instance에 Block Storage가 연결되었는지 리스트의 ‘연결 정보’에서 확인합니다.
 
-![[그림 25] 연결 정보 확인](http://static.toastoven.net/prod_infrastructure/compute/img_226.png)
+![[그림 25] 연결 정보 확인](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img007.png)
 <center>[그림 25] 연결 정보 확인</center>
 
-### Instance 접속 및 Volume 마운트
+### Instance 접속 및 Block Storage 마운트
 
 물리적인 연결은 마쳤으므로 Instance에 접속하여 파일시스템 생성 및 마운트를 해보겠습니다. Instance에 접속하여 파일시스템을 생성합니다.
 
@@ -403,15 +403,15 @@ tmpfs           499M     0  499M   0% /dev/shm
 
 위 예에서는 /dev/vdb가 /root/external과 연결되어 있고 사용 가능용량은 9.2G입니다.
 
-### Volume 해제하기
+### Block Storage 해제하기
 
-사용중인 Volume을 반납할 경우 다음 순서로 진행합니다.
+사용중인 Block Storage를 반납할 경우 다음 순서로 진행합니다.
 
 - 언마운트
-- Volume 연결 해제
+- Block Storage 연결 해제
 
 > [주의]
-> 언마운트를 하지 않으면 데이터가 유실되므로 Volume 해제 전 반드시 언마운트를 수행해 주십시오.
+> 언마운트를 하지 않으면 데이터가 유실되므로 Block Storage 해제 전 반드시 언마운트를 수행해 주십시오.
 
 Instance에서 언마운트를 수행한 후 연결 상태를 확인합니다.
 
@@ -424,30 +424,30 @@ tmpfs           499M     0  499M   0% /dev/shm
 [root@host-192-168-0-4 ~]#
 ```
 
-Volume을 Instance에서 연결 해제합니다.
+Block Storage를 Instance에서 연결 해제합니다.
 
 ```
-[Infrastructure] > [Compute & Network] > Volume 선택 > [연결 관리] 버튼 클릭
-<Volume 연결 관리 > 대화창에서 Instance 선택
-[Volume 연결 해제] 버튼 클릭
+[Infrastructure] > [Compute & Network] > Block Storage 선택 > [연결 관리] 버튼 클릭
+<연결 관리 > 대화창에서 Instance 선택
+[Block Storage 연결 해제] 버튼 클릭
 ```
 
-![[그림 26] Volume 연결 해제](http://static.toastoven.net/prod_infrastructure/compute/img_227.png)
-<center>[그림 26] Volume 연결 해제</center>
+![[그림 26] Block Storage 연결 해제](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img009.png)
+<center>[그림 26] Block Storage 연결 해제</center>
 
-Volume 해제 최종 확인을 수행합니다.
+Block Storage 해제 최종 확인을 수행합니다.
 
 ```
-[Volume 연결 해제] 버튼 클릭
+[Block Storage 연결 해제] 버튼 클릭
 ```
 
-![[그림 27] Volume 연결 해제 확인](http://static.toastoven.net/prod_infrastructure/compute/img_228.png)
-<center>[그림 27] Volume 연결 해제 확인</center>
+![[그림 27] Block Storage 연결 해제 확인](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img010.png)
+<center>[그림 27] Block Storage 연결 해제 확인</center>
 
-Volume 연결 해제를 마쳤습니다. [그림 29]의 Volume 리스트에서 연결 정보가 비어있는지 확인합니다.
+Block Storage 연결 해제를 마쳤습니다. [그림 29]의 Block Storage 리스트에서 연결 정보가 비어있는지 확인합니다.
 
-![[그림 28] Volume 연결 해제 확인](http://static.toastoven.net/prod_infrastructure/compute/img_229.png)
-<center>[그림 28] Volume 연결 해제 확인</center>
+![[그림 28] Block Storage 연결 해제 확인](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img011.png)
+<center>[그림 28] Block Storage 연결 해제 확인</center>
 
 ## Image 생성하기
 
@@ -671,11 +671,11 @@ TOAST Cloud > Infrastructure 서비스에서 제공하는 가상 인프라 사�
 
 - 초기 기본 Security Group은 외부접속을 모두 허용하지 않습니다. 따라서 외부 접속을 허용할 IP, PORT에 대한 룰을 추가해야 합니다.
 
-### Volume
+### Block Storage
 
-- Image로 제공하는 Disk 용량이 모자랄 경우 Volume을 사용합니다.
-- Volume을 생성한 후에는 Instance 연결, 파일시스템 생성, 마운트 과정을 거치면 사용 가능합니다.
-- Volume을 반납 할 때는 언마운트, 연결해제 순으로 진행합니다.
+- Image로 제공하는 Disk 용량이 모자랄 경우 Block Storage를 사용합니다.
+- Block Storage를 생성한 후에는 Instance 연결, 파일시스템 생성, 마운트 과정을 거치면 사용 가능합니다.
+- Block Storage를 반납 할 때는 언마운트, 연결해제 순으로 진행합니다.
 
 ### Image
 - Instance를 Shutdown 시킨 후에 Private Image를 생성할 수 있습니다.

@@ -56,7 +56,7 @@ Block Storage는 Instance에 추가할 수 있는 disk입니다. 기본 제공�
 4.[Infrastructure] > [Compute & Network] > [Block Storage]에서, 선택한Block Storage가 연결되었음을 확인합니다.
 
 ![[그림 7] Block Storage 연결 확인](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img007.png)
-<center>[그림 7] Block Storage 연결 확인</center>storage
+<center>[그림 7] Block Storage 연결 확인</center>
 
 5.연결된 Block Storage를 해제하고 싶을 때에는 연결을 해제할 Block Storage를 선택하고 [연결 관리]버튼을 선택합니다.
 
