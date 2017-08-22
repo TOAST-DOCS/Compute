@@ -10,7 +10,7 @@ Block Storage는 Instance에 추가할 수 있는 disk입니다. 기본 제공�
 
 ## Block Storage 생성
 
-1.[Infrastructure] > [Compute & Network] > [스토리지Block Storage]으로 이동한 뒤, [+ Block Storage 생성]버튼을 클릭합니다.
+1.[Infrastructure] > [Compute & Network] > [Block Storage]으로 이동한 뒤, [+ Block Storage 생성]버튼을 클릭합니다.
 
 ![[그림 1] Block Storage 목록 보기](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img001.png)
 <center>[그림 1] Block Storage 목록 보기</center>
@@ -63,17 +63,17 @@ Block Storage는 Instance에 추가할 수 있는 disk입니다. 기본 제공�
 ![[그림 8] 연결된 Block Storage 해제](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img008.png)
 <center>[그림 8] 연결된 Block Storage 해제</center>
 
-6.&lt;Block Storage 연결 관리> 대화창에서 Instance를 선택한 후 [Block Storages 연결 해제] 버튼을 클릭합니다.
+6.&lt;Block Storage 연결 관리> 대화창에서 Instance를 선택한 후 [Block Storage 연결 해제] 버튼을 클릭합니다.
 
 ![[그림 9] Block Storage 연결 관리 대화창](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img009.png)
 <center>[그림 9] Block Storage 연결 관리 대화창</center>
 
-7.&lt;Block Storage 연결 해제를 확인하세요.> 대화창에서 [Block Storages 연결 해제] 버튼을 클릭합니다.
+7.&lt;Block Storage 연결 해제를 확인하세요.> 대화창에서 [Block storage 연결 해제] 버튼을 클릭합니다.
 
 ![[그림 10] Block Storage 연결 관리 대화창](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img010.png)
 <center>[그림 10] Block Storage 연결 관리 대화창</center>
 
-8.[Infrastructure] > [Compute & Network] > [Block Storages]에서, 선택한 Block Storage가 해제되었음을 확인합니다.
+8.[Infrastructure] > [Compute & Network] > [Block storage]에서, 선택한 Block Storage가 해제되었음을 확인합니다.
 
 ![[그림 11] Block Storage 연결 관리 대화창](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img011.png)
 <center>[그림 11] Block Storage 연결 관리 대화창</center>
@@ -97,7 +97,7 @@ Block Storage는 Instance에 추가할 수 있는 disk입니다. 기본 제공�
 ![[그림 14] Block Storage 삭제 대화창](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img014.png)
 <center>[그림 14] Block Storage 삭제 대화창</center>
 
-4.[Infrastructure] > [Compute & Network] > [Block Storages]에서 선택한 Block Storage가 삭제되었음을 확인합니다.
+4.[Infrastructure] > [Compute & Network] > [Block storage]에서 선택한 Block Storage가 삭제되었음을 확인합니다.
 
 ![[그림 15] Block Storage 삭제 대화창](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img015.png)
 <center>[그림 15] Block Storage 삭제 대화창</center>
@@ -121,7 +121,7 @@ Snapshot은 현재 Block Storage의 상태를 그대로 저장해둡니다. Snap
 ![[그림 18] Snapshot 생성 대화창](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img018.png)
 <center>[그림 18] Snapshot 생성 대화창</center>
 
-4.[Infrastructure] > [Compute & Network] > [Block StorageBlock Storage]의 Snapshots 탭에서 정상적으로 Snapshot이 생성되었음을 확인합니다.
+4.[Infrastructure] > [Compute & Network] > [Block Storage]의 Snapshots 탭에서 정상적으로 Snapshot이 생성되었음을 확인합니다.
 
 ![[그림 19] Snapshot 생성 완료 알림](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img019.png)
 <center>[그림 19] Snapshot 생성 완료 알림</center>
@@ -188,21 +188,21 @@ Snapshot은 현재 Block Storage의 상태를 그대로 저장해둡니다. Snap
 
 ## 리눅스 추가 스토리지 적용 방법
 
-1.인스턴스에 접속 후 ’fdisk -l’ 을 통해 추가 스토리지가스토리지 구성되어 있는지 확인합니다.
+1.인스턴스에 접속 후 ’fdisk -l’ 을 통해 추가 스토리지가 구성되어 있는지 확인합니다.
 
 ![[그림 31] 리눅스 추가 스토리지 구성 확인](http://static.toastoven.net/prod_infrastructure/compute/volume/img_001.png)
 
-2.추가된 스토리지를스토리지 사용할 수 있도록 ‘mkfs.ext4 {스토리지 이름}’ 을 통해 디스크 포맷을 진행합니다.
+2.추가된 스토리지를 사용할 수 있도록 ‘mkfs.ext4 {스토리지 이름}’ 을 통해 디스크 포맷을 진행합니다.
 
 ![[그림 32] 디스크 포맷](http://static.toastoven.net/prod_infrastructure/compute/volume/img_002.png)
 
-3.위에서 설정한 스토리지를스토리지 시스템에 마운트 합니다.
+3.위에서 설정한 스토리지를 시스템에 마운트 합니다.
 
 * mount -t ext4 {스토리지 이름} {마운트 디렉토리}
 
 ![[그림 33] 스토리지 마운트](http://static.toastoven.net/prod_infrastructure/compute/volume/img_003.png)
 
-4.인스턴스 재시작 시 스토리지를스토리지 자동으로 mount 하도록 ‘/etc/fstab’에 스토리지 정보를 추가합니다.
+4.인스턴스 재시작 시 스토리지를 자동으로 mount 하도록 ‘/etc/fstab’에 스토리지 정보를 추가합니다.
 
 ![[그림 34] 스토리지 자동 마운트](http://static.toastoven.net/prod_infrastructure/compute/volume/img_004.png)
 
@@ -252,7 +252,7 @@ Snapshot은 현재 Block Storage의 상태를 그대로 저장해둡니다. Snap
 
 ![[그림 43] 완료](http://static.toastoven.net/prod_infrastructure/compute/volume/img_013.png)
 
-5.완료 후 아래와 같이 추가 스토스토리지리지가 생성된 것을 확인하실 수 있습니다.
+5.완료 후 아래와 같이 추가 스토리지가 생성된 것을 확인하실 수 있습니다.
 
 ![[그림 44] 추가 스토리지 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/volume/img_014.png)
 

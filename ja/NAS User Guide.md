@@ -1,4 +1,8 @@
 ## Infrastructure > Compute & Network > NAS (Offline) User Guide
+```
+[Notice]
+공공클라우드 서비스는 해당 기능을 제공하지 않습니다.
+```
 
 NAS 는 여러 개의 인스턴스에서 네트워크를 통해 액세스 할 수 있는 스토리지 입니다. NAS 는 프로젝트 내 의 모든 인스턴스가 접속하여 사용할 수 있습니다. 
 
@@ -58,3 +62,26 @@ NAS 이용내역에서 Volume 을 삭제 할 수 있습니다.
 ![[그림 7] NAS (Offline) Volume 삭제](http://static.toastoven.net/prod_infrastructure/compute/nas/nas_7.png)
 <center>[그림 7] NAS(offline) Volume 삭제</center>
 
+## Volume 연결
+nfs 패키지 설치
+
+ - Debian, Ubuntu: nfs-common, rpcbind
+   ```
+   apt-get install nfs-common rpcbind
+   ```
+ 
+ - CentOS: nfs-utils, rpcbind 
+   ```
+   # yum install nfs-utils rpcbind
+   ```
+
+rpcbind 서비스 실행
+```
+# service rpcbind start
+```
+
+NAS Volume 마운트
+```
+# mount -t nfs 192.168.0.254:/volume /mnt
+* /mnt: 마운트할 디렉토리
+```

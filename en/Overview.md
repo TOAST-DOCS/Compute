@@ -13,23 +13,168 @@ Infrastructure > Compute & Network는 서비스 인프라 구축에 필요한 �
 ### Instance
 
 Infrastructure 서비스의 Compute 상품 중 기본이 되는 리소스로서 사용자의 필요에 따라 다양한 타입의 Instance를 사용할 수 있습니다. Instance는 하드웨어 템플릿(Flavor)과 소프트웨어 템플릿(Image)을 이용하여 생성할 수 있습니다.
-Flavor는 [표 1]과 같이 vCPU, Disk, RAM 의 세가지 하드웨어 조합으로 이루어집니다.
+Flavor는 [표 1]과 같이 vCPU, RAM의 조합으로 이루어집니다.
 
-|Flavor|	vCPU|	Disk|	RAM|
-|---|---|---|---|
-|m2.small|	1|	20GB|	2GB|
-|m2.medium|	2|	20GB|	4GB|
-|m2.large|	4|	20GB|	8GB|
-|m2.xlarge|	8|	20GB|	16GB|
-|m2.2xlarge|	16|	20GB|	32GB|
-|c2.small|	2|	20GB|	2GB|
-|c2.medium|	4|	20GB|	4GB|
-|c2.large|	8|	20GB|	8GB|
-|c2.xlarge|	16|	20GB|	16GB|
-|r2.small|	2|	20GB|	8GB|
-|r2.medium|	4|	20GB|	16GB|
-|r2.large|	8|	20GB|	32GB|
-|t2.tiny|	1|	20GB|	1GB|
+<table>
+	<colgroup>
+		<col style="width:16%">
+		<col style="width:7%">
+		<col style="width:13%">
+		<col style="width:7%">
+		<col style="width:7%">
+		<col style="width:10%">
+		<col style="width:10%">
+	</colgroup>
+	<thead>
+		<tr><th colspan="3" class="bd_rgt">flavor</th>
+		<th class="bd_rgt">vCPU</th>
+		<th class="bd_rgt">RAM</th>
+		<th class="bd_rgt">단위</th>
+		<th class="bd_rgt">과금액 (원/단위)</th>
+	</tr></thead>
+	<tbody>
+	<tr>
+		<td rowspan="5" class="bd_rgt2">Basic<br><span class="sp ico_beta">beta</span></td>
+		<td rowspan="5" class="txt_cent bd_rgt2">u2</td>
+		<td class="bd_rgt2">u2.nano</td>
+		<td class="bd_rgt2 txt_cent">1</td>
+		<td class="bd_rgt2 txt_cent">1</td>
+		<td class="txt_cent bd_lft2 bd_rgt2" rowspan="21">사용 시간 누적</td>
+		<td class="txt_cent">4.9 원/시간</td>
+	</tr>
+	<tr>
+		<td class="bd_rgt2 al_lft">u2.micro</td>
+		<td class="bd_rgt2 txt_cent">1</td>
+		<td class="txt_cent">2</td>
+		<td class="txt_cent">9.7 원/시간</td>
+	</tr>
+	<tr>
+		<td class="bd_rgt2 al_lft">u2.small</td>
+		<td class="bd_rgt2 txt_cent">2</td>
+		<td class="txt_cent">2</td>
+		<td class="txt_cent">16.0 원/시간</td>
+	</tr>
+	<tr>
+		<td class="bd_rgt2 al_lft">u2.medium</td>
+		<td class="bd_rgt2 txt_cent">2</td>
+		<td class="txt_cent">4</td>
+		<td class="txt_cent">25.0 원/시간</td>
+	</tr>
+	<tr>
+		<td class="bd_rgt2 al_lft">u2.large</td>
+		<td class="bd_rgt2 txt_cent">4</td>
+		<td class="txt_cent">4</td>
+		<td class="txt_cent">48.1 원/시간</td>
+	</tr>
+	
+	<tr>
+		<td rowspan="6" class="bd_rgt2">Standard</td>
+		<td class="txt_cent bd_rgt2">t2</td>
+		<td class="bd_rgt2">t2.tiny</td>
+		<td class="bd_rgt2 txt_cent">1</td>
+		<td class="bd_rgt2 txt_cent">1</td>
+		<td class="txt_cent">24 원/시간</td>
+	</tr>
+	<tr>
+		<td class="txt_cent bd_rgt2" rowspan="5">m2</td>
+		<td class="bd_rgt2 al_lft">m2.small</td>
+		<td class="bd_rgt2 txt_cent">1</td>
+		<td class="txt_cent">2</td>
+		<td class="txt_cent">43 원/시간</td>
+	</tr>
+	<tr>
+		<td class="bd_rgt2 al_lft">m2.medium</td>
+		<td class="bd_rgt2 txt_cent">2</td>
+		<td class="txt_cent">4</td>
+		<td class="txt_cent">93 원/시간</td>
+	</tr>
+	<tr>
+		<td class="bd_rgt2 al_lft">m2.large</td>
+		<td class="bd_rgt2 txt_cent">4</td>
+		<td class="txt_cent">8</td>
+		<td class="txt_cent">196 원/시간</td>
+	</tr>
+	<tr>
+		<td class="bd_rgt2 al_lft">m2.xlarge</td>
+		<td class="bd_rgt2 txt_cent">8</td>
+		<td class="txt_cent">16</td>
+		<td class="txt_cent">399 원/시간</td>
+	</tr>
+	<tr>
+		<td class="bd_rgt2 al_lft">m2.2xlarge</td>
+		<td class="bd_rgt2 txt_cent">16</td>
+		<td class="txt_cent">32</td>
+		<td class="txt_cent">807 원/시간</td>
+	</tr>
+	<tr>
+		<td rowspan="4" class="bd_rgt2">Compute Optimized</td>
+		<td class="txt_cent bd_rgt2" rowspan="4">c2</td>
+		<td class="bd_rgt2 al_lft">c2.small</td>
+		<td class="bd_rgt2 txt_cent">2</td>
+		<td class="txt_cent">2</td>
+		<td class="txt_cent">57 원/시간</td>
+	</tr>
+	<tr>
+		<td class="bd_rgt2 al_lft">c2.medium</td>
+		<td class="bd_rgt2 txt_cent">4</td>
+		<td class="txt_cent">4</td>
+		<td class="txt_cent">121 원/시간</td>
+	</tr>
+	<tr>
+		<td class="bd_rgt2 al_lft">c2.large</td>
+		<td class="bd_rgt2 txt_cent">8</td>
+		<td class="txt_cent">8</td>
+		<td class="txt_cent">250 원/시간</td>
+	</tr>
+	<tr>
+		<td class="bd_rgt2 al_lft">c2.xlarge</td>
+		<td class="bd_rgt2 txt_cent">16</td>
+		<td class="txt_cent">16</td>
+		<td class="txt_cent">509 원/시간</td>
+	</tr>
+	<tr>
+		<td rowspan="3" class="bd_rgt2">Memory Optimized</td>
+		<td class="txt_cent bd_rgt2" rowspan="3">r2</td>
+		<td class="bd_rgt2 al_lft">r2.small</td>
+		<td class="bd_rgt2 txt_cent">2</td>
+		<td class="txt_cent">8</td>
+		<td class="txt_cent">128 원/시간</td>
+	</tr>
+	<tr>
+		<td class="bd_rgt2 al_lft">r2.medium</td>
+		<td class="bd_rgt2 txt_cent">4</td>
+		<td class="txt_cent">16</td>
+		<td class="txt_cent">264 원/시간</td>
+	</tr>
+	<tr>
+		<td class="bd_rgt2 al_lft">r2.large</td>
+		<td class="bd_rgt2 txt_cent">8</td>
+		<td class="txt_cent">32</td>
+		<td class="txt_cent">534 원/시간</td>
+	</tr>
+	
+	<tr>
+		<td rowspan="3" class="bd_rgt2">Storage Optimized</td>
+		<td class="txt_cent bd_rgt2" rowspan="3">i2</td>
+		<td class="bd_rgt2 al_lft">i2.large</td>
+		<td class="bd_rgt2 txt_cent">4</td>
+		<td class="bd_rgt2 txt_cent">8</td>
+		<td class="txt_cent">593 원/시간</td>
+	</tr>
+	<tr>
+		<td class="bd_rgt2 al_lft">i2.xlarge</td>
+		<td class="bd_rgt2 txt_cent">8</td>
+		<td class="txt_cent">16</td>
+		<td class="txt_cent">796 원/시간</td>
+	</tr>
+	<tr>
+		<td class="bd_rgt2 al_lft">i2.2xlarge</td>
+		<td class="bd_rgt2 txt_cent">16</td>
+		<td class="txt_cent">32</td>
+		<td class="txt_cent">1,204 원/시간</td>
+	</tr>
+	</tbody>
+</table>
 
 [표 1 Flavor]
 
@@ -39,18 +184,18 @@ Flavor는 [표 1]과 같이 vCPU, Disk, RAM 의 세가지 하드웨어 조합으
 
 
 |이미지 종류|설명|
-|---|---|
+|---|:---|
 |Public Image|	TOAST Cloud가 제공하는 Image로서 기본적인 보안 검증을 마친 안전한 Image입니다.|
 |Private Image|	Public Image를 토대로 새롭게 생성한 사용자 고유의 Image입니다. 사용자의 필요에 따라 각종 OS 설정과 애플리케이션 설치 등을 변경하여 사용할 수 있습니다.|
 |공유 Image|	Private Image는 사용자가 소유한 프로젝트 간 공유가 가능하도록 설정할 수 있습니다. 이렇게 공유한 Image를 공유 Image라고 부릅니다.|
 
 [표 2 Image 종류]
 
-### Volume
+### Block Storage
 
-Volume은 Instance에 연결할 수 있는 Disk로서 기본으로 제공하는 Instance의 저장공간이 부족한 경우 추가로 연결 할 수 있습니다. Instance를 삭제할 경우 기본으로 제공된 Disk의 모든 데이터는 삭제되지만 Volume 서비스를 통해 생성된 Volume은 연결 된 Instance를 삭제하더라도 데이터가 삭제되지 않고 남아있습니다. 
-하나의 Volume은 여러 개의 Instance가 동시에 공유 할 수는 없으나 Instance 간 이동은 가능합니다. 
-또한 생성한 Volume을 통해 Snapshot을 만들 수도 있고, 이 Snapshot을 이용하여 새로운 Volume을 생성할 수 도 있습니다.
+Block Storage는 Instance에 연결할 수 있는 Disk로서 기본으로 제공하는 Instance의 저장공간이 부족한 경우 추가로 연결 할 수 있습니다. Instance를 삭제할 경우 기본으로 제공된 Disk의 모든 데이터는 삭제되지만 Block Storage 서비스를 통해 생성된 Block Storage은 연결 된 Instance를 삭제하더라도 데이터가 삭제되지 않고 남아있습니다. 
+하나의 Block Storage는 여러 개의 Instance가 동시에 공유 할 수는 없으나 Instance 간 이동은 가능합니다. 
+또한 생성한 Block Storage를 통해 Snapshot을 만들 수도 있고, 이 Snapshot을 이용하여 새로운 Block Storage을 생성할 수 도 있습니다.
 
 ### Security Group
 
