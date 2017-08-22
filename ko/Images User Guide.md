@@ -20,7 +20,7 @@ Image 는 [표 1]의 3가지 종류가 있으며 고객이 생성한 Image는 �
 |공유 Image|Private Image는 사용자가 소유한 Project간 공유가 가능하고, 이렇게 공유한 Image를 공유 Image라고 부릅니다.|
 ```
 [Notice]
-공공클라우드 서비스는 이미지 공유 기능을 제공하지 않습니다.
+TOAST Cloud G 서비스는 이미지 공유 기능을 제공하지 않습니다.
 ```
 
 ## Image 생성
@@ -55,7 +55,7 @@ Windows Instance의 경우 Image 생성하기 전에 Sysprep을 이용하여 사
 ## Image 공유
 ```
 [Notice]
-공공클라우드 서비스는 이미지 공유 기능을 제공하지 않습니다.
+TOAST Cloud G 서비스는 이미지 공유 기능을 제공하지 않습니다.
 ```
 
 생성된 Image는 다른 프로젝트에서 사용할 수 있도록 설정할 수 있습니다.
