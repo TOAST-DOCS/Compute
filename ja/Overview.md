@@ -34,7 +34,7 @@ Flavor는 [표 1]과 같이 vCPU, RAM의 조합으로 이루어집니다.
 	</tr></thead>
 	<tbody>
 	<tr>
-		<td rowspan="5" class="bd_rgt2">Basic<br><span class="sp ico_beta">beta</span></td>
+		<td rowspan="5" class="bd_rgt2">Basic</td>
 		<td rowspan="5" class="txt_cent bd_rgt2">u2</td>
 		<td class="bd_rgt2">u2.nano</td>
 		<td class="bd_rgt2 txt_cent">1</td>
