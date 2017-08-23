@@ -23,6 +23,7 @@ Infrastructure 서비스의 Compute & Network상품 중 기본이 되는 리소�
 ```
 [Notice]
 2017년 5월 25일부터 Windows Image가 추가되었습니다. Windows Image는 최소 2GB 이상의 RAM, 50GB 이상의 Disk를 필요로 합니다.
+TOAST Cloud G 서비스는 Windows Instance를 제공하지 않습니다.
 ```
 
 팝업된 Instance 생성 대화창에서 [그림 3]의 Instance 정보를 입력합니다. 입력해야 하는 정보는 다음과 같습니다.
@@ -92,6 +93,11 @@ Linux 기반의 OS Image (= CentOS, Debian, Ubuntu)를 사용해 Instance를 생
 [인스턴스 접속] 탭에서 제시한 ssh 명령어를 이용하여 Instance에 접속합니다. Security Group에 SSH 포트가 열려있지 않으면 접속이 불가능할 수 있습니다. 부팅중인 Instance는 부팅 완료 이후에 접속할 수 있습니다.
 
 ### Windows
+```
+[Notice]
+TOAST Cloud G 서비스는 해당 기능을 제공하지 않습니다.
+```
+
 Windows Image를 사용해 Instance를 생성한 경우 원격데스크톱 연결을 사용해 연결합니다. Instance 목록에서 원하는 Instance를 선택하고 화면 하단의 [인스턴스 접속] 탭을 클릭하면 [그림 12]와 같이 Instance 접속 정보 화면을 볼 수 있습니다.
 
 ![[그림 12 Windows Instance의 접속방법 안내]](http://static.toastoven.net/prod_infrastructure/compute/instances/012_170523_800px.PNG)

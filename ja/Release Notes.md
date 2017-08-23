@@ -1,5 +1,34 @@
 ## Infrastructure > Compute & Network > Release Notes
 
+### 2017.08.24
+
+#### 기능 추가
+* Instance Flavor를 변경할 수 있도록 기능이 추가되었습니다.
+    * 사용하던 Instance의 data는 그대로 보존하면서 CPU/Memory를 업그레이드 하거나 다운그레이드 할 수 있습니다.
+
+    * 제약 사항
+        * Block Storage size는 변경이 불가능합니다.
+        * Flavor 변경을 위해 Instance는 shutdown 상태여야 합니다.
+        * 자세한 제약 사항은 홈페이지 참조(https://cloud.toast.com/pricing)
+
+* Low IOPS SSD Flavor가 추가되었습니다.
+    * 좀 더 낮은 가격에 Instance를 이용할 수 있도록 저사양 Flavor가 추가되었습니다.
+    * 제약 사항
+        * 리눅스 계열 OS 만 지원합니다.
+        * Local Disk를 이용하기 때문에 하드웨어 장애시 데이터 복구가 불가능할 수 있습니다.
+        * 자세한 제약 사항은 홈페이지 참조(https://cloud.toast.com/pricing)
+
+* High IOPS SSD Flavor 추가되었습니다.
+    * 높은 IOPS가 필요한 경우 High IOPS SSD Flavor를 이용하면 수준의 높은 IOPS를 보장 받을 수 있습니다. (보장 IOPS는 가격표 참조)
+    * 제약 사항
+        * 리눅스 계열 OS 만 지원합니다.
+        * Local Disk를 이용하기 때문에 하드웨어 장애시 데이터 복구가 불가능할 수 있습니다.
+        * 자세한 제약 사항은 홈페이지 참조(https://cloud.toast.com/pricing)
+
+#### 버그 수정
+* Instance 사용량 조회시 값이 조회되지 않는 버그가 수정되었습니다.
+* Load Balancer 서비스의 세션 지속성 항목이 제대로 표시되지 않던 버그가 수정되었습니다.
+
 ### 2017.07.20
 
 #### 버그 수정

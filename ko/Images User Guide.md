@@ -18,7 +18,10 @@ Image 는 [표 1]의 3가지 종류가 있으며 고객이 생성한 Image는 �
 |Public Image|TOAST Cloud가 제공하는 Image로서 기본적인 보안 검증을 마친 안전한 Image입니다.|
 |Private Image|Public Image를 토대로 새롭게 생성한 사용자 고유의 Image입니다. 사용자의 필요에 따라 각종 OS 설정과 애플리케이션 설치 등을 변경하여 사용할 수 있습니다.|
 |공유 Image|Private Image는 사용자가 소유한 Project간 공유가 가능하고, 이렇게 공유한 Image를 공유 Image라고 부릅니다.|
-
+```
+[Notice]
+TOAST Cloud G 서비스는 이미지 공유 기능을 제공하지 않습니다.
+```
 
 ## Image 생성
 
@@ -50,6 +53,10 @@ Windows Instance의 경우 Image 생성하기 전에 Sysprep을 이용하여 사
 <center>[그림 4] 생성된 Image 확인</center>
 
 ## Image 공유
+```
+[Notice]
+TOAST Cloud G 서비스는 이미지 공유 기능을 제공하지 않습니다.
+```
 
 생성된 Image는 다른 프로젝트에서 사용할 수 있도록 설정할 수 있습니다.
 
