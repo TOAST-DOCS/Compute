@@ -23,15 +23,15 @@ http://api-compute.cloud.toast.com/v1.0/appkeys/{appkey}
 | -- | -- | -- | -- |
 | appkey | Path Variable | String | 상품 이용시 발급받은 앱키 |
 
-### Response
-#### Response HTTP Status Code
+### API Response
+##### Response HTTP Status Code
 모든 API 요청에 대해 200 OK로 응답하며, JSON 형태의 Response Body를 포함합니다.
 
-#### Response Body
+##### Response Body
 Response Body에는 "header" 정보가 기본으로 포함되어 있으며, 이를 통해 자세한 응답 결과를 확인할 수 있습니다.
 API에 따라 "header" 외 추가적인 정보가 포함될 수 있습니다.
 
-```jso
+```json
 {
     "header" : {
         "isSuccessful" : true,
@@ -64,18 +64,18 @@ API에 따라 "header" 외 추가적인 정보가 포함될 수 있습니다.
 | false | 40000~40999| Volume API 관련 에러 메시지 |
 | false | 50000~50999| Token API 관련 에러 메시지 |
 
-## Token API
-**Token** 은 Compute & Network의 RESTful API 사용을 위해 발급받아야 하는 인증키이며, 이후 모든 API 요청 시 Request에 ```X-Auth-Token``` Header로 입력하여 요청해야 합니다.
-
-### Token 발급
-#### Method, URL
+## Token 
+**Token** 은 Compute & Network의 RESTful API 사용을 위해 발급받아야 하는 인증키이며, 이후 모든 API 요청 시 Request에 **X-Auth-Token** Header로 입력하여 요청해야 합니다.
+### Token API
+#### Token 발급
+###### Method, URL
 ```
 POST /v1.0/appkeys/{appkey}/tokens
 Content-Type: application/json;charset=UTF-8
 ```
 
 
-#### Request Body
+###### Request Body
 ```json
 {
 	"auth" : {
@@ -89,7 +89,7 @@ Content-Type: application/json;charset=UTF-8
 | username | Body | String | - | TOAST Cloud 사용자 계정 ID |
 | password | Body | String | - | API 패스워드 |
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header" : {
@@ -122,19 +122,19 @@ Content-Type: application/json;charset=UTF-8
 | User ID | Body | String | - | 토큰을 발급받은 사용자의 UUID | 
 | Role name | Body | String | - | 토큰을 발급받은 사용자에게 부여된 Role |
 
-### Token 정보 조회
-#### Method, URL
+#### Token 정보 조회
+###### Method, URL
 ```
 GET /v1.0/appkey/{appkey}/tokens/{tokenId}
 ```
 |  Name | In | Type | Optional |Description |
 |--|--|--|--|--|
-| tokenId | header | string | - | Token ID |
+| tokenId | Header | String | - | Token ID |
 
-#### Request Body
+###### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
 
-### Response Body
+###### Response Body
 ```json
 {
     "header": {
@@ -169,10 +169,11 @@ GET /v1.0/appkey/{appkey}/tokens/{tokenId}
 | Role name | Body | String | - | 토큰을 발급받은 사용자에게 부여된 Role |
 
 
-## Server API
+## Server
+### Server API
 Server 생성, 삭제, 정보 조회 및 Block Storage 연결관리 기능을 제공합니다.
 
-### Server Status
+#### Server Status
 Server는 생성, 변경, 삭제, 운영 중 다음과 같은 Status를 갖습니다.
 ![[그림 1] Server Status Diagram](http://static.toastoven.net/prod_infrastructure/compute/developersguide/img_001.png)
 <center>[그림 1] Server Status Diagram</center>
@@ -190,21 +191,21 @@ Server는 생성, 변경, 삭제, 운영 중 다음과 같은 Status를 갖습�
 | DELETING | Server 삭제 중 |
 | ERROR | 오류 상태 |
 
-### Server 목록 간략 조회
+#### Server 목록 간략 조회
 생성되어 있는 Server들의 간략한 정보(ID, Name, Status)를 조회합니다.
-#### Method, URL
+###### Method, URL
 ```
 GET /v1.0/appkeys/{appkey}/servers
 X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Optional |Description |
 |--|--|--|--|--|
-| tokenId | header | string | - | Token ID |
+| tokenId | Header | String | - | Token ID |
 
-#### Request Body
+###### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 ```json
 {
     "servers": [
@@ -223,21 +224,21 @@ X-Auth-Token: {tokenId}
 | Server Name | Body | String | Server 이름 (Linux의 경우 최대 255자, Windows의 경우 최대 12자) |
 | Server Status | Body | String | Server의 상태 |
 
-### Server 목록 상세 조회
+#### Server 목록 상세 조회
 생성되어 있는 모든 Server들의 상세한 정보를 조회합니다.
-#### Method, URL
+###### Method, URL
 ```
 GET /v1.0/appkeys/{appkey}/servers/detail
 X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Optional |Description |
 |--|--|--|--|--|
-| tokenId | header | string | - | Token ID |
+| tokenId | Header | String | - | Token ID |
 
-#### Request Body
+###### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header": {
@@ -321,23 +322,23 @@ X-Auth-Token: {tokenId}
 | Created Time | Body | String | - | Server 생성 시각. yyyy-mm-ddTHH:MM:ssZ의 형태. 예) 2017-05-16T02:17:50.166563 |
 | Updated Time | Body | String | - | Server 수정 시각. yyyy-mm-ddTHH:MM:ssZ의 형태. 예) 2017-05-16T02:17:50.166563 |
 
-### Server 단건 조회
+#### Server 단건 조회
 특정 Server의 상세 정보를 조회합니다.
 
-#### Method, URL
+###### Method, URL
 ```
 GET /v1.0/appkeys/{appkey}/servers/{serverId}
 X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | header | String | - | Token ID |
-| serverId | path | String | - | 정보를 조회 할 Server의 식별자 |
+| tokenId | Header | String | - | Token ID |
+| serverId | Path | String | - | 정보를 조회 할 Server의 식별자 |
 
-#### Request Body
+###### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header": {
@@ -418,10 +419,10 @@ X-Auth-Token: {tokenId}
 | Created Time | Body | String | - | Server 생성 시각. yyyy-mm-ddTHH:MM:ssZ의 형태. 예) 2017-05-16T02:17:50.166563 |
 | Updated Time | Body | String | - | Server 수정 시각. yyyy-mm-ddTHH:MM:ssZ의 형태. 예) 2017-05-16T02:17:50.166563 |
 
-### Server 생성
+#### Server 생성
 새로운 Server를 생성합니다.
 
-#### Method, URL
+###### Method, URL
 ```
 POST /v1.0/appkeys/{appkey}/servers
 X-Auth-Token: {tokenId}
@@ -429,24 +430,28 @@ Content-Type: application/json;charset=UTF-8
 ```
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | header | String | - | Token ID |
+| tokenId | Header | String | - | Token ID |
 
-#### Request Body
+###### Request Body
 ```json
 {
     "server": {
         "name": "{Server Name}",
         "image": "{Image ID}",
         "flavor": "{Flavor ID}",
-        "networks": [{
-            "id": "{Network ID}"
-        }],
+        "networks": [
+        	{
+            	"id": "{Network ID}"
+        	}
+        ],
         "availabilityZone": "{Availability Zone}",
         "keyName": "{Key Name}",
         "count": "{Count}",
-        "volumes": [{
-            "size": "{Volume Size}"
-        }],
+        "volumes": [
+        	{
+            	"size": "{Volume Size}"
+        	}
+        ],
         "securityGroups": [
         	{
             	"name": "{Security Group Name}"
@@ -463,11 +468,11 @@ Content-Type: application/json;charset=UTF-8
 | Network ID | Body | String | - | Server가 연결될 Network 식별자 |
 | Availability Zone | Body | String | - | Server가 생성될 Availability Zone |
 | Key Name | Body | String | - | Server에 등록할 Key-pair 이름 |
-| Count | Body | Integer | - | 동시 생성할 Server의 댓수, 최대 10대로 제한 |
+| Count | Body | Integer | - | 동시 생성할 Server의 대수, 최대 10대로 제한 |
 | Volume Size | Body | Integer | - | Server의 Root Disk 크기, 허용가능한 Volume size는 Flavor에 따라 정해짐 |
 | Security Group Name | Body | String | - | Server에 등록할 Security Group 이름 |
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header": {
@@ -482,28 +487,28 @@ Content-Type: application/json;charset=UTF-8
     }
 }
 ```
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|--|
+| Name | In | Type | Optional | Description |
+|--|--|--|--|--|
 | Server ID | body | String | - |생성된 Server 식별자 |
 | Server Name | body | String | - |Server 이름 (Linux의 경우 최대 255자, Windows의 경우 최대 12자) |
 | Server Status | Body | String | - |Server의 상태 |
 
-### Server 삭제
+#### Server 삭제
 특정 Server를 삭제합니다.
-#### Method, URL
+###### Method, URL
 ```
 DELETE /v1.0/appkeys/{appkey}/servers/{serverId}
 X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Description |
 |--|--|--|--|
-| tokenId | header | String | Token ID |
-| serverId | path | String | 삭제할 Server의 고유 ID |
+| tokenId | Header | String | Token ID |
+| serverId | Path | String | 삭제할 Server의 고유 ID |
 
-### Block Storage 연결
+#### Block Storage 연결
 Server에 추가적인 Block Strorage를 연결합니다.
 
-#### Method, URL
+###### Method, URL
 ```
 POST infrastructure/v1.0/appkeys/{appkey}/servers/{serverId}/attachments
 X-Auth-Token: {tokenId}
@@ -512,10 +517,10 @@ Content-Type: application/json;charset=UTF-8
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | header | String | - | Token ID |
-| serverId | path | String | - | Block Strorage를 연결 할 Server의 고유 ID |
+| tokenId | Header | String | - | Token ID |
+| serverId | Path | String | - | Block Strorage를 연결 할 Server의 고유 ID |
 
-### Request Body
+###### Request Body
 ```json
 {
     "attachment":{
@@ -527,7 +532,7 @@ Content-Type: application/json;charset=UTF-8
 |--|--|--|--|--|
 | Volume ID | body | String | - | Server에 연결할 Block Strorage 식별자 |
 
-### Response Body
+###### Response Body
 
 ```json
 {
@@ -546,28 +551,28 @@ Content-Type: application/json;charset=UTF-8
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| Device ID | body | String | - | Server에 등록된 장치 이름, 예) ```/dev/vdc``` |
+| Device ID | body | String | - | Server에 등록된 장치 이름, 예) "/dev/vdc" |
 | Attachement ID | body | String | - | Attachment 식별자 |
 | Volume ID | body | String | - | Block Strorage 식별자, 연결 해제 시 필요 |
 
-### Block Storage 연결 해제
+#### Block Storage 연결 해제
 Server에 연결되어 있는 추가적인 Block Strorage의 연결을 해제합니다.
 
-#### Method, URL
+###### Method, URL
 ```
 DELETE /v1.0/appkeys/{appkey}/servers/{serverId}/attachments/{volumeId}
 X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Description |
 |--|--|--|--|
-| tokenId | header | String| Token ID |
-| serverId | path | String | Server 식별자 |
-| volumeId | path | String | Block Storage 식별자 |
+| tokenId | Header | String| Token ID |
+| serverId | Path | String | Server 식별자 |
+| volumeId | Path | String | Block Storage 식별자 |
 
-#### Request body
+###### Request body
 이 Request는 Body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 
 ```json
 {
@@ -579,17 +584,17 @@ X-Auth-Token: {tokenId}
 }
 ```
 
-## Server Action API
-다음과 같은 Server 제어 및 부가기능을 제공합니다.
-* Server 시작/정지/재시작
-* Server Flavor 변경(Resize)
-* Server Image 생성
-* Floating IP 연결/해제
-* Security Group 등록/해제
+### Server Action API
+다음과 같은 Server 제어 및 부가기능을 제공합니다.<br />
+- Server 시작/정지/재시작<br />
+- Server Flavor 변경(Resize)<br />
+- Server Image 생성<br />
+- Floating IP 연결/해제<br />
+- Security Group 등록/해제<br />
 
-### 공통
+#### 공통
 모든 Server Action API는 동일한 Method, URL로 호출하며, Request Body로 각 Action을 구분합니다.
-#### Method, URL
+###### Method, URL
 ```
 POST /v1.0/appkeys/{appkey}/servers/{serverId}/action
 X-Auth-Token: {tokenId}
@@ -597,19 +602,19 @@ Content-Type: application/json;charset=UTF-8
 ```
 |  Name | In | Type | Description |
 |--|--|--|--|
-| tokenId | header | String| Token ID |
-| serverId | path | String | Action을 수행할 Server의 식별자 |
+| tokenId | Header | String| Token ID |
+| serverId | Path | String | Action을 수행할 Server의 식별자 |
 
-### Server 시작
+#### Server 시작
 정지(STOP) 상태의 서버를 시작합니다.
-#### Request Body
+###### Request Body
 ```json
 {
     "os-start" : null
 }
 ```
       
-#### Response Body
+###### Response Body
 ```json
 {
     "header": {
@@ -620,16 +625,16 @@ Content-Type: application/json;charset=UTF-8
 }
 ```
 
-### Server 정지
+#### Server 정지
 동작중(ACTIVE) 또는 오류(ERROR) 상태의 Server를 정지합니다.
-#### Request Body
+###### Request Body
 ```json
 {
     "os-stop" : null
 }
 ```
      
-#### Response Body
+###### Response Body
 
 ```json
 {
@@ -641,12 +646,12 @@ Content-Type: application/json;charset=UTF-8
 }
 ```
 
-### Server 리부팅
-Server를 리부팅합니다. 다음과 같은 리부팅 방식을 지정할 수 있습니다.
-* SOFT - Graceful Shutdown 수행 후 Server를 재시작합니다.
-* HARD - 강제 Shutdown 수행 후 Server를 재시작합니다.
+#### Server 리부팅
+Server를 리부팅합니다. 다음과 같은 리부팅 방식을 지정할 수 있습니다.<br />
+ - SOFT - Graceful Shutdown 수행 후 Server를 재시작합니다.<br />
+ - HARD - 강제 Shutdown 수행 후 Server를 재시작합니다.
 
-#### Request Body
+###### Request Body
 
 ```json
 {
@@ -659,7 +664,7 @@ Server를 리부팅합니다. 다음과 같은 리부팅 방식을 지정할 수
 |--|--|--|--|
 | Reboot Type | body | String |  Reboot 타입. "HARD" or "SOFT" |
       
-#### Response Body
+###### Response Body
 
 ```json
 {
@@ -671,9 +676,9 @@ Server를 리부팅합니다. 다음과 같은 리부팅 방식을 지정할 수
 }
 ```
 
-### Server Resize
+#### Server Resize
 Server의 Flavor를 변경하여 Resize를 수행합니다.
-#### Request Body
+###### Request Body
 ```json
 {
     "resize":{
@@ -685,7 +690,7 @@ Server의 Flavor를 변경하여 Resize를 수행합니다.
 |--|--|--|--|
 |  Flavor ID | body | String |  변경할 Flavor 식별자 |
       
-### Response Body
+###### Response Body
 
 ```json
 {
@@ -697,9 +702,9 @@ Server의 Flavor를 변경하여 Resize를 수행합니다.
 }
 ```
 
-### Image 생성
+#### Image 생성
 지정한 Server로 부터 Image를 생성합니다. 생성된 Image는 Image API를 통해 조회할 수 있습니다.
-#### Request Body
+###### Request Body
 ```json
 {
     "uploadImage":{
@@ -711,7 +716,7 @@ Server의 Flavor를 변경하여 Resize를 수행합니다.
 |--|--|--|--|--|
 | ImageName | body | String | - | 생성할 Image 이름 |
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header": {
@@ -731,10 +736,10 @@ Server의 Flavor를 변경하여 Resize를 수행합니다.
 | Created Image ID | body | String | 생성된 Image 식별자 |
 | Created Image Name | body | String | 생성된 Image 이름 |
 
-### Floating IP 연결
+#### Floating IP 연결
 외부 네트워크에서 접근 가능한 Floating IP를 Server에 연결합니다.
 
-#### Request Body
+###### Request Body
 ```json
 {
     "addFloatingIp" : {
@@ -748,7 +753,7 @@ Server의 Flavor를 변경하여 Resize를 수행합니다.
 | Floating IP Address | body | String | Server에 연결할 Floating IP 주소 |
 | IP Address of the server | body | String | Floating IP를 연결할 Server의 IP 주소 |
 
-### Response Body
+###### Response Body
 ```json
 {
     "header": {
@@ -759,10 +764,10 @@ Server의 Flavor를 변경하여 Resize를 수행합니다.
 }
 ```
 
-### Floating IP 연결 해제
+#### Floating IP 연결 해제
 Server에 연결되어 있는 Floating IP의 연결을 해제합니다.
 
-#### Request Body
+###### Request Body
 ```json
 {
     "removeFloatingIp" : {
@@ -774,7 +779,7 @@ Server에 연결되어 있는 Floating IP의 연결을 해제합니다.
 |--|--|--|--|
 | Floating IP Address | body | String | 연결을 해제할 Floating IP 주소 |
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header": {
@@ -785,10 +790,10 @@ Server에 연결되어 있는 Floating IP의 연결을 해제합니다.
 }
 ```
 
-### Security Group 등록
+#### Security Group 등록
 Server에 Security Group을 추가 등록합니다.
 
-#### Request Body
+###### Request Body
 ```json
 {
     "addSecurityGroup": {
@@ -800,7 +805,7 @@ Server에 Security Group을 추가 등록합니다.
 |--|--|--|--|
 | Security Group Name | body | String | 서버에 추가할 Security Group 이름 |
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header": {
@@ -811,10 +816,10 @@ Server에 Security Group을 추가 등록합니다.
 }
 ```
 
-### Security Group 해제
+#### Security Group 해제
 Server에 등록되어 있는 Security Group을 제거합니다.
 
-#### Request Body
+###### Request Body
 ```json
 {
     "removeSecurityGroup": {
@@ -826,7 +831,7 @@ Server에 등록되어 있는 Security Group을 제거합니다.
 |--|--|--|--|
 | Security Group Name | body | String | 서버에서 제거할 Security Group 이름 |
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header": {
@@ -837,25 +842,30 @@ Server에 등록되어 있는 Security Group을 제거합니다.
 }
 ```
 
-## Flavor API
-### Flavor 목록 조회
+### Flavor API
+#### Flavor 목록 조회
 Flavor의 목록 및 상세 정보를 조회합니다.
 
-#### Method, URL
+###### Method, URL
 ```
 GET /v1.0/appkeys/{appkey}/flavors
 X-Auth-Token: {tokenID}
 ```
 |  Name | In | Type | Description |
 |--|--|--|--|
-| tokenId | header | String| Token ID |
+| tokenId | Header | String| Token ID |
 
-#### Request Body
+###### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 ```json
 {
+	"header": {
+        "isSuccessful": true,
+        "resultCode": 0,
+        "resultMessage": "SUCCESS"
+    },
     "flavors": [
         {
             "disabled": "{Disabled}",
@@ -868,19 +878,14 @@ X-Auth-Token: {tokenID}
             "ram": "{RAM}",
             "vcpus": "{VCPUs}"
         }
-    ],
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    }
+    ]
 }
 ```
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
 | Disabled | Body | Boolean | O | Flavor 비활성화 여부 |
 | Ephermeral | Body | Integer | - | 임시 디스크 사이즈, GB |
-| Type | Body | String | O | Flavor 최적화 특성에 따라 구분되는 Type값. ```general```, ```compute```, ```memory``` |
+| Type | Body | String | O | Flavor 최적화 특성에 따라 구분되는 Type값. "general, "compute", "memory" |
 | Max Volume Size | Body | Integer | - | Root Disk로 만들 수 있는 최대 Disk 사이즈. GB |
 | Flavor ID | Body | String | - | Flavor 식별자 |
 | Flavor Name | Body | String | - | Flavor 이름 |
@@ -888,22 +893,22 @@ X-Auth-Token: {tokenID}
 | RAM | Body | Integer | - | Flavor가 갖는 RAM 총량. MB |
 | VCPUs | Body | Integer | - | Server에 할당되는 가상 CPU 코어 개수 |
 
-## Availability Zone API
-### Availability Zone 조회
+### Availability Zone API
+#### Availability Zone 조회
 Server를 생성할 수 있는 Zone의 정보를 조회합니다.
-#### Method, URL
+###### Method, URL
 ```
 GET /v1.0/appkey/{appkey}/availability-zones
 X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Description |
 |--|--|--|--|
-| tokenId | header | string | API 호출 인증 및 권한 검사용 identifier |
+| tokenId | Header | String | Token ID |
 
-#### Request Body
+###### Request Body
 이 API는 request body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 ```json
 {
 	"header": {
@@ -926,22 +931,36 @@ X-Auth-Token: {tokenId}
 | Zone Name | Body | String | - | Availability Zone 이름 |
 | Available | Body | Boolean | - | Availability Zone 가용 여부 |
 
-## Image API
-### Image 목록 조회
+## Image
+### Image API
+#### Image Status
+Image는 다음의 Status 값을 갖습니다.
+
+| Status | Description |
+| -- | -- |
+| queued | Image ID는 발급되었으나 아직 Image 데이터가 업로드 되지 못한 상태 |
+| saving | Image 데이터를 저장 중인 상태 |
+| active | Image 사용 가능 상태 |
+| killed | Image 데이터 업로드 중 에러 발생 |
+| deleted | Image에 대한 정보는 남아있으나 더 이상 가용하지 않은 상태 |
+| pending_delete | deleted 상태와 유사, Image가 회복 불가능한 상태 |
+| deactivated | Image 데이터가 사용 불가한 상태 |
+
+#### Image 목록 조회
 Image의 목록 및 상세 정보를 조회합니다.
-#### Method, URL
+###### Method, URL
 ```
 GET /v1.0/appkey/{appkey}/images
 X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Description |
 |--|--|--|--|
-| tokenId | header | string | API 호출 인증 및 권한 검사용 identifier |
+| tokenId | Header | String | Token ID |
 
-#### Request Body
+###### Request Body
 이 API는 request body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header": {
@@ -972,7 +991,7 @@ X-Auth-Token: {tokenId}
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
 | Created At | Body | String  | - | Image 생성 시간. yyyy-mm-ddTHH:MM:ssZ의 형태. 예) 2017-05-16T02:17:50.166563 |
-| Disk Format | Body | String | - | Image의 Disk Format. <br \>```ami```, ```ari```, ```aki```, ```vhd```, ```vhdx```, ```vmdk```, ```raw```, ```qcow2```, ```vdi```, ```ploop```, ```iso``` |
+| Disk Format | Body | String | - | Image의 Disk Format. <br \>"ami", "ari", "aki", "vhd", "vhdx", "vmdk", "raw", "qcow2", "vdi", "ploop", "iso" |
 | Image ID | Body | String | - | Image 식별자 |
 | Is Public | Body | Boolean | - | 모든 Project에서 사용 가능한 공용 Image 여부 |
 | Min Disk | Body | Integer | - | Image 부팅에 필요한 최소 Disk 크기. GB |
@@ -984,23 +1003,171 @@ X-Auth-Token: {tokenId}
 | Image Status | Body | String | - | Image의 상태 |
 | Updated At | Body | String | - | Image가 업데이트 된 시간. yyyy-mm-ddTHH:MM:ssZ의 형태. 예) 2017-05-16T02:17:50.166563 |
 
-### Image Status
-Image는 다음과 같은 상태값을 갖습니다.
+### Keypair API
+Server 접근에 필요한 Keypair에 대한 생성, 삭제, 조회 기능을 제공합니다.
+#### Keypair 목록 조회
+계정에 속한 Keypair 목록을 조회합니다.
+###### Method, URL
+```
+GET /v1.0/appkeys/{appkey}/keypairs
+X-Auth-Token: {tokenId}
+```
+|  Name | In | Type | Optional | Description |
+|--|--|--|--|--|
+| tokenId | Header | String | - |Token ID |
 
-| Status | Description |
-| -- | -- |
-| queued | Image ID는 발급되었으나 아직 Image 데이터가 업로드 되지 못한 상태 |
-| saving | Image 데이터를 저장 중인 상태 |
-| active | Image 사용 가능 상태 |
-| killed | Image 데이터 업로드 중 에러 발생 |
-| deleted | Image에 대한 정보는 남아있으나 더 이상 가용하지 않은 상태 |
-| pending_delete | deleted 상태와 유사, Image가 회복 불가능한 상태 |
-| deactivated | Image 데이터가 사용 불가한 상태 |
+###### Request Body
+이 API는 request body를 필요로 하지 않습니다.
 
-## Block Storage API
+###### Response Body
+
+```json
+{
+    "header": {
+        "isSuccessful": true,
+        "resultCode": 0,
+        "resultMessage": "SUCCESS"
+    },
+    "keypairs": [
+        {
+            "name": "{Keypair Name}",
+            "publicKey": "{Public Key Value}",
+            "fingerprint": "{Fingerprint Value}"
+        }
+    ]
+}
+```
+
+|  Name | In | Type | Optional | Description |
+|--|--|--|--|--|
+| Keypair Name | Body | String | - |Keypair 이름 |
+| Public Key Value | Body | String | - | Keypair의 Public Key 값 |
+| Fingerprint Value | Body | String | - |Fingerprint 값 |
+
+#### Keypair 조회
+지정한 Keypair의 정보를 조회합니다.
+###### Method, URL
+```
+GET /v1.0/appkeys/{appkey}/keypairs/{keypairName}
+X-Auth-Token: {tokenId}
+```
+|  Name | In | Type | Optional | Description |
+|--|--|--|--|--|
+| tokenId | Header | String | - | Token ID |
+| keypairName | Path | String | - | 조회할 Keypair 이름
+
+###### Request Body
+이 API는 request body를 필요로 하지 않습니다.
+
+###### Response Body
+
+```json
+{
+    "header": {
+        "isSuccessful": true,
+        "resultCode": 0,
+        "resultMessage": "SUCCESS"
+    },
+    "keypair": {
+        "name": "{Keypair Name}",
+        "publicKey": "{Public Key Value}",
+        "fingerprint": "{Fingerprint Value}",
+        "createdAt": "{Created At}"
+    }
+}
+```
+
+|  Name | In | Type | Description |
+|--|--|--|--|
+| Keypair Name | Body | String | Keypair 이름 |
+| Public Key Value | Body | String | Keypair의 Public Key 값 |
+| Fingerprint Value | Body | String | Fingerprint 값 |
+| Created At | Body | DateTime | Keypair 생성 시간 |
+
+#### Keypair 생성 or 업로드
+Keypair를 생성하거나, ssh로 생성한 Keypair를 업로드 합니다.
+
+###### Method, URL
+```
+POST /v1.0/appkeys/{appkey}/keypairs
+X-Auth-Token: {tokenId}
+Content-Type: application/json;charset=UTF-8
+```
+|  Name | In | Type | Optional | Description |
+|--|--|--|--|--|
+| tokenId | Header | String | - | Token ID |
+
+###### Request Body
+
+```json
+{
+    "keypair": {
+        "name": "{Keypair Name}",
+        "publicKey": "{Public Key Value}"
+    }
+}
+```
+
+| Name | In | Type | Optional | Description |
+| --- | --- | --- | --- | --- |
+| Keypair Name | Body | String | - | Keypair 이름 |
+| Public Key Value | Body | String | O | 업로드할 Public ssh key. 생략 시 새로운 keypair가 만들어지며, 만들어진 Keypair의 Private Key가 Response로 함께 전달됩니다. |
+
+###### Response Body
+
+```json
+{
+    "header": {
+        "isSuccessful": true,
+        "resultCode": 0,
+        "resultMessage": "SUCCESS"
+    },
+    "keypair": {
+        "name": "{Keypair Name}",
+        "publicKey": "{Public Key Value}",
+        "privateKey": "{Private Key Value}",
+        "fingerprint": "{Fingerprint Value}"
+    }
+}
+```
+| Name | In | Type | Optional | Description |
+| --- | --- | --- | --- | --- |
+| Keypair Name | Body | String | - | Keypair 이름 |
+| Public Key Value | Body | String | - | Keypair의 Public ssh key |
+| Private Key Value | Body | String | O | Keypair의 Private ssh key. Keypair 업로드(Request에 "publicKey" 항목이 포함)인 경우 생략됩니다. |
+| Public Key Value | Body | String | - | Fingerprint 값 |
+
+#### Keypair 삭제
+지정한 Keypair를 삭제합니다.
+###### Method, URL
+```
+DELETE /v1.0/appkeys/{appkey}/keypairs/{keypairName}
+X-Auth-Token: {tokenId}
+```
+|  Name | In | Type | Optional | Description |
+|--|--|--|--|--|
+| tokenId | Header | String | - | Token ID |
+| keypairName | Path | String | - | 삭제할 Keypair 이름 |
+
+###### Request Body
+이 API는 Request Body를 필요로 하지 않습니다.
+
+###### Response Body
+```json
+{
+    "header": {
+        "isSuccessful": true,
+        "resultCode": 0,
+        "resultMessage": "SUCCESS"
+    }
+}
+```
+
+## Block Storage
+### Block Storage API
 Block Stroage 생성/삭제 및 조회 기능을 제공합니다. Block Storage를 Server에 연결/해제하는 기능은 Server API를 통해 제공됩니다.
 
-### Block Storage Status
+#### Block Storage Status
 Block Storage는 다음과 같은 Status 값을 갖습니다.
 
 | Status | Description |
@@ -1021,10 +1188,10 @@ Block Storage는 다음과 같은 Status 값을 갖습니다.
 | uploading | Image로 업로드 중 |
 
 
-### Block Storage 목록 조회
+#### Block Storage 목록 조회
 Block Storage 목록 및 정보를 조회합니다.
 
-#### Method, URL
+###### Method, URL
 ```
 GET /v1.0/appkeys/{appkey}/volumes
 X-Auth-Token: {tokenId}
@@ -1032,12 +1199,12 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Description |
 |--|--|--|--|
-| tokenId | header | string | Token ID |
+| tokenId | Header | String | Token ID |
 
-#### Request Body
+###### Request Body
 이 API는 request body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header": {
@@ -1070,7 +1237,7 @@ X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| Device Name | Body | String  | O | Server에 연결되어 있는 경우, Server에서의 장치명. ex) ```/dev/vdb``` |
+| Device Name | Body | String  | O | Server에 연결되어 있는 경우, Server에서의 장치명. ex) "/dev/vdb" |
 | Attached Server ID | Body | String | O | Server에 연결되어 있는 경우, 연결된 Server의 ID |
 | Attachment ID | Body | String | O | Server에 연결되어 있는 경우, 연결 식별자 |
 | Availability Zone Name | Body | String | - | Block Storage가 위치한 Zone 이름 |
@@ -1082,22 +1249,22 @@ X-Auth-Token: {tokenId}
 | Size | Body | Integer | - | Block Storage 크기. GB |
 | Status | Body | String | - | Block Strage 상태 |
 
-### Block Storage 조회
+#### Block Storage 조회
 특정 Block Storage의 정보를 조회합니다.
-#### Method, URL
+###### Method, URL
 ```
 GET /v1.0/appkey/{appkey}/volumes/{volumeId}
 X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Description |
 |--|--|--|--|
-| tokenId | header | string | Token ID |
-| volumeId | path | string | 조회할 Volume ID |
+| tokenId | Header | String | Token ID |
+| volumeId | Path | String | 조회할 Volume ID |
 
-#### Request Body
+###### Request Body
 이 API는 request body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header": {
@@ -1128,7 +1295,7 @@ X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| Device Name | Body | String  | O | Server에 연결되어 있는 경우, Server에서의 장치명. ex) ```/dev/vdb``` |
+| Device Name | Body | String  | O | Server에 연결되어 있는 경우, Server에서의 장치명. ex) "/dev/vdb" |
 | Attached Server ID | Body | String | O | Server에 연결되어 있는 경우, 연결된 Server의 ID |
 | Attachment ID | Body | String | O | Server에 연결되어 있는 경우, 연결 식별자 |
 | Availability Zone Name | Body | String | - | Block Storage가 위치한 Zone 이름 |
@@ -1140,10 +1307,10 @@ X-Auth-Token: {tokenId}
 | Size | Body | Integer | - | Block Storage 크기. GB |
 | Status | Body | String | - | Block Strage 상태 |
 
-### Block Storage 생성
+#### Block Storage 생성
 새로운 Block Storage를 생성합니다.
 
-#### Method, URL
+###### Method, URL
 ```
 POST /v1.0/appkey/{appkey}/volumes
 X-Auth-Token: {tokenId}
@@ -1151,9 +1318,9 @@ Content-Type: application/json;charset=UTF-8
 ```
 |  Name | In | Type | Description |
 |--|--|--|--|
-| tokenId | header | string | API 호출 인증 및 권한 검사용 identifier |
+| tokenId | Header | String | Token ID |
 
-#### Request Body
+###### Request Body
 ```
 {
     "volume":{
@@ -1180,7 +1347,7 @@ Content-Type: application/json;charset=UTF-8
 | Metadata Key / Metadata Value | Body | String | O | Block Storage에 기입하고자 하는 메타데이터 정보 |
 | Block Storage Name | Body | String | - | Block Storage 이름 |
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header": {
@@ -1214,23 +1381,23 @@ Content-Type: application/json;charset=UTF-8
 | Size | Body | Integer | - | Block Storage 크기. GB |
 | Status | Body | String | - | Block Strage 상태 |
 
-### Block Storage 삭제
-Block Storage를 삭제합니다. Status가 ```available```, ```in-use```, ```error```, ```error_restoring``` 인 Block Storage만 삭제할 수 있습니다.
+#### Block Storage 삭제
+Block Storage를 삭제합니다. Status가 "available" "in-use" "error" "error_restoring" 인 Block Storage만 삭제할 수 있습니다.
 
-#### Method, URL
+###### Method, URL
 ```
 DELETE /v1.0/appkey/{appkey}/volumes/{volumeId}
 X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Description |
 |--|--|--|--|
-| tokenId | header | String | Token ID |
-| volumeId | path | String | 삭제할 Volume ID |
+| tokenId | Header | String | Token ID |
+| volumeId | Path | String | 삭제할 Volume ID |
 
-### Request Body
+###### Request Body
 이 API는 request body를 필요로 하지 않습니다.
 
-### Response Body
+###### Response Body
 ```json
 {
     "header": {
@@ -1241,26 +1408,27 @@ X-Auth-Token: {tokenId}
 }
 ```
 
-## Security Groups API
+## Security Group
+### Security Group API
 Security Group 생성, 삭제, 조회 및 업데이트 기능을 제공합니다.
 
-### Security Group 목록 조회
-접근 가능한 Security Group들의 간략한 정보 목록을 조회합니다. ```detail``` Query Parameter를 통해 목록 내 Security Group들에 대한 상세한 정보를 조회할 수 있습니다.
+#### Security Group 목록 조회
+접근 가능한 Security Group들의 간략한 정보 목록을 조회합니다. "detail" Query Parameter를 통해 목록 내 Security Group들에 대한 상세한 정보를 조회할 수 있습니다.
 
-#### Method, URL
+###### Method, URL
 ```
 GET /v1.0/appkeys/{appkey}/security-groups
 X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
-| tokenId | header | String | - | Token ID |
+| tokenId | Header | String | - | Token ID |
 | detail | query | Boolean | O | 각 security-group의 상세 정보 표시, default는 false |
 
-#### Request Body
+###### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header" : {
@@ -1270,9 +1438,9 @@ X-Auth-Token: {tokenId}
     },
     "securityGroups": [
         {
-            "description": "default",
-            "id": "85cc3048-abc3-43cc-89b3-377341426ac5",
-            "name": "default",
+            "description": "{Desctiption}",
+            "id": "{Security Group ID}",
+            "name": "{Name}",
             "securityGroupRules": [
                 {
                     "direction": "egress",
@@ -1296,26 +1464,26 @@ X-Auth-Token: {tokenId}
 | Description | Body | String | - | Security Group 설명 |
 | Security Group ID | Body | String | - | Security Group 식별자 |
 | Name | Body | String | - |Security Group 이름 |
-| securityGroupRules | Body | List | O | Security Group Rule 목록, ```detail=true``` 일 때에만 표시.<br />Security Group Rule에 대한 자세한 사항은 Security Group Rules API 참조 |
+| securityGroupRules | Body | List | O | Security Group Rule 목록, "detail=true" 일 때에만 표시.<br />Security Group Rule에 대한 자세한 사항은 Security Group Rules API 참조 |
 
-### Security Group 조회
-지정한 Security Group의 간략한 정보를 조회합니다. ```detail``` Query Parameter를 통해 상세한 정보를 조회할 수 있습니다.
+#### Security Group 조회
+지정한 Security Group의 간략한 정보를 조회합니다. "detail" Query Parameter를 통해 상세한 정보를 조회할 수 있습니다.
 
-#### Method, URL
+###### Method, URL
 ```
 GET /v1.0/appkeys/{appkey}/security-groups/{securityGroupId}
 X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
-| tokenId | header | String | - | Token ID |
-| securityGroupId | path | String | - | 조회할 security-group 식별자 |
+| tokenId | Header | String | - | Token ID |
+| securityGroupId | Path | String | - | 조회할 security-group 식별자 |
 | detail | query | Boolean | O | 각 security-group의 상세 정보 표시, default는 false |
 
-#### Request Body
+###### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 
 ```json
 {
@@ -1325,9 +1493,9 @@ X-Auth-Token: {tokenId}
         "resultMessage" :  "SUCCESS"
     },
     "securityGroups": {
-        "description": "default",
-        "id": "85cc3048-abc3-43cc-89b3-377341426ac5",
-        "name": "default",
+        "description": "{Description}",
+        "id": "{Security Group ID}",
+        "name": "{Name}",
         "securityGroupRules": [
             {
                 "direction": "egress",
@@ -1350,12 +1518,12 @@ X-Auth-Token: {tokenId}
 | Description | Body | String | O | Security Group 설명 |
 | Security Group ID | Body | String | - | Security Group 식별자 |
 | Name | Body | String | - |Security Group 이름 |
-| securityGroupRules | Body | List | O | Security Group Rule 목록, ```detail=true``` 일 때에만 표시.<br />Security Group Rule에 대한 자세한 사항은 Security Group Rules API 참조 |
+| securityGroupRules | Body | List | O | Security Group Rule 목록, "detail=true" 일 때에만 표시.<br />Security Group Rule에 대한 자세한 사항은 Security Group Rules API 참조 |
 
-### Security Group 생성
+#### Security Group 생성
 새로운 Security Group을 생성합니다.
 
-#### Method, URL
+###### Method, URL
 ```
 POST /v1.0/appkeys/{appkey}/security-groups
 X-Auth-Token: {tokenId}
@@ -1363,10 +1531,9 @@ Content-Type: application/json;charset=UTF-8
 ```
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
-| appkey | path | String | - | TOAST Cloud의 인증용 identifier |
-| tokenId | header | String | - | API 호출 인증 및 권한 검사용 identifier |
+| tokenId | Header | String | - | Token ID |
 
-#### Request Body
+###### Request Body
 ```json
 {
     "securityGroup": {
@@ -1381,7 +1548,7 @@ Content-Type: application/json;charset=UTF-8
 | name | Body | String | - |Security Group 이름 |
 | description | Body | String | O | Security Group 설명 |
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header" : {
@@ -1417,10 +1584,10 @@ Content-Type: application/json;charset=UTF-8
 | Name | Body | String | - |Security Group 이름 |
 | securityGroupRules | Body | List | - | Security Group Rule 목록, Security Group Rules API 참조 |
 
-### Security Group 업데이트
+#### Security Group 업데이트
 Security Group의 이름, 설명을 변경합니다.
 
-#### Method, URL
+###### Method, URL
 ```
 PUT /v1.0/appkeys/{appkey}/security-groups/{securityGroupId}
 X-Auth-Token: {tokenId}
@@ -1428,10 +1595,10 @@ Content-Type: application/json;charset=UTF-8
 ```
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
-| tokenId | header | String | - | Token ID |
+| tokenId | Header | String | - | Token ID |
 | securityGroupId | Path | String | - | 변경할 Security Group의 식별자 |
 
-#### Request Body
+###### Request Body
 ```json
 {
     "securityGroup": {
@@ -1445,7 +1612,7 @@ Content-Type: application/json;charset=UTF-8
 | Name | Body | String | - | Security Group 이름 |
 | Description | Body | String | O | Security Group 설명 |
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header" : {
@@ -1466,10 +1633,10 @@ Content-Type: application/json;charset=UTF-8
 | Name | Body | String | - |Security Group 이름 |
 | Description | Body | String | O | Security Group 설명 |
 
-### Security Group 삭제
+#### Security Group 삭제
 지정한 Security Group을 삭제합니다.
 
-#### Method, URL
+###### Method, URL
 ```
 DELETE /v1.0/appkeys/{appkey}/security-groups/{securityGroupId}
 X-Auth-Token: {tokenId}
@@ -1479,10 +1646,10 @@ X-Auth-Token: {tokenId}
 | tokenId | Header | String | - | Token ID |
 | securityGroupId | Path | String | - | 삭제할 Security Group의 식별자 |
 
-#### Request Body
+###### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header" : {
@@ -1494,24 +1661,24 @@ X-Auth-Token: {tokenId}
 ```
 
 
-## Security Group Rules API
+### Security Group Rules API
 Security Group Rule 추가/삭제 및 조회 기능을 제공합니다.
 
-### Security Group Rule 목록 조회
+#### Security Group Rule 목록 조회
 접근 가능한 모든 Security Group Rule 목록을 조회합니다.
-#### Method, URL
+###### Method, URL
 ```
 GET /v1.0/appkeys/{appkey}/security-group-rules
 X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
-| tokenId | header | String | - | Token ID |
+| tokenId | Header | String | - | Token ID |
 
-#### Request Body
+###### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header" : {
@@ -1536,34 +1703,34 @@ X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
-| Direction | Body | String | - | Rule이 적용되는 방향, ```ingress``` or ```egress``` |
-| Ethernet Type | Body | String | O | ```IPv4``` or ```IPv6``` |
+| Direction | Body | String | - | Rule이 적용되는 방향, "ingress" or "egress" |
+| Ethernet Type | Body | String | O | "IPv4" or "IPv6" |
 | Rule ID | Body | String | - | Security Group Rule 식별자 |
 | Port Range MAX | Body | Integer | O | Rule이 적용되는 최대 Port 번호 |
 | Port Range MIN | Body | Integer | O | Rule이 적용되는 최소 Port 번호 |
-| Protocol | Body | String | O | IP Protocol. ```icmp```, ```tcp```, ```udp```, or ```null``` |
+| Protocol | Body | String | O | IP Protocol. "icmp" "tcp" "udp" or "null" |
 | Remote Group ID | Body | String | O | Rule이 적용되는 Remote Group의 식별자 |
-| Remote IP Prefix | Body | String | O | Rule이 적용되는 Remote IP의 Prefix. ``` |
+| Remote IP Prefix | Body | String | O | Rule이 적용되는 Remote IP의 Prefix |
 | Security Group ID | Body | String | O | Rule이 적용되는 Security Group의 식별자 |
 
-### Security Group Rule 조회
+#### Security Group Rule 조회
 지정한 Security Group Rule의 정보를 조회합니다.
-#### Method, URL
-```
-#### Method, URL
+
+###### Method, URL
 ```
 GET /v1.0/appkeys/{appkey}/security-group-rules/{securityGroupRuleId}
 X-Auth-Token: {tokenId}
 ```
+
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
 | tokenId | Header | String | - | Token ID |
 | securityGroupRuleId | Path | String | - | 조회할 Security Group Rule 식별자 |
 
-#### Request Body
+###### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header" : {
@@ -1586,19 +1753,19 @@ X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
-| Direction | Body | String | - | Rule이 적용되는 방향, ```ingress``` or ```egress``` |
-| Ethernet Type | Body | String | O | ```IPv4``` or ```IPv6``` |
+| Direction | Body | String | - | Rule이 적용되는 방향, "ingress" or "egress" |
+| Ethernet Type | Body | String | O | "IPv4" or "IPv6" |
 | Rule ID | Body | String | - | Security Group Rule 식별자 |
 | Port Range MAX | Body | Integer | O | Rule이 적용되는 최대 Port 번호 |
 | Port Range MIN | Body | Integer | O | Rule이 적용되는 최소 Port 번호 |
-| Protocol | Body | String | O | IP Protocol. ```icmp```, ```tcp```, ```udp```, or ```null``` |
+| Protocol | Body | String | O | IP Protocol. "icmp" "tcp" "udp" or "null" |
 | Remote Group ID | Body | String | O | Rule이 적용되는 Remote Security Group의 식별자 |
 | Remote IP Prefix | Body | String | - | Rule이 적용되는 Remote IP의 Prefix |
 | Security Group ID | Body | String | - | Rule이 적용되는 Security Group의 식별자 |
 
-### Security Group Rule 생성
+#### Security Group Rule 생성
 새로운 Security Group Rule을 생성합니다.
-#### Method, URL
+###### Method, URL
 ```
 POST /v1.0/appkeys/{appkey}/security-group-rules
 X-Auth-Token: {tokenId}
@@ -1608,7 +1775,7 @@ Content-Type: application/json;charset=UTF-8
 | --- | --- | --- | --- | --- |
 | tokenId | Header | String | - | Token ID |
 
-#### Request Body
+###### Request Body
 ```json
 {
     "securityGroupRule": {
@@ -1625,16 +1792,16 @@ Content-Type: application/json;charset=UTF-8
 ```
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
-| Direction | Body | String | - | Rule이 적용되는 방향, ```ingress``` or ```egress``` |
-| Ethernet Type | Body | String | O | ```IPv4``` or ```IPv6``` |
+| Direction | Body | String | - | Rule이 적용되는 방향, "ingress" or "egress" |
+| Ethernet Type | Body | String | O | "IPv4" or "IPv6" |
 | Port Range MAX | Body | Integer | O | Rule이 적용되는 최대 Port 번호 |
 | Port Range MIN | Body | Integer | O | Rule이 적용되는 최소 Port 번호 |
-| Protocol | Body | String | O | IP Protocol. ```icmp```, ```tcp```, ```udp```, or ```null``` |
-| Remote Group ID | Body | String | O | Rule이 적용되는 Remote Security Group의 식별자. ```remote |
+| Protocol | Body | String | O | IP Protocol. "icmp" "tcp" "udp" or "null" |
+| Remote Group ID | Body | String | O | Rule이 적용되는 Remote Security Group의 식별자 |
 | Remote IP Prefix | Body | String | - | Rule이 적용되는 Remote IP의 Prefix. |
 | Security Group ID | Body | String | - | Rule이 적용되는 Security Group의 식별자 |
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header" : {
@@ -1657,19 +1824,19 @@ Content-Type: application/json;charset=UTF-8
 ```
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
-| Direction | Body | String | - | Rule이 적용되는 방향, ```ingress``` or ```egress``` |
-| Ethernet Type | Body | String | O | ```IPv4``` or ```IPv6``` |
+| Direction | Body | String | - | Rule이 적용되는 방향, "ingress" or "egress" |
+| Ethernet Type | Body | String | O | "IPv4" or "IPv6" |
 | Rule ID | Body | String | - | Security Group Rule 식별자 |
 | Port Range MAX | Body | Integer | O | Rule이 적용되는 최대 Port 번호 |
 | Port Range MIN | Body | Integer | O | Rule이 적용되는 최소 Port 번호 |
-| Protocol | Body | String | O | IP Protocol. ```icmp```, ```tcp```, ```udp```, or ```null``` |
+| Protocol | Body | String | O | IP Protocol. "icmp" "tcp" "udp" or "null" |
 | Remote Group ID | Body | String | O | Rule이 적용되는 Remote Security Group의 식별자 |
 | Remote IP Prefix | Body | String | - | Rule이 적용되는 Remote IP의 Prefix |
 | Security Group ID | Body | String | - | Rule이 적용되는 Security Group의 식별자 |
 
-### Security Group Rule 삭제
+#### Security Group Rule 삭제
 지정한 Security Group Rule을 삭제합니다.
-#### Method, URL
+###### Method, URL
 ```
 DELETE /v1.0/appkeys/{appkey}/security-group-rules/{securityGroupRuelsId}
 X-Auth-Token: {tokenId}
@@ -1678,10 +1845,10 @@ X-Auth-Token: {tokenId}
 | --- | --- | --- | --- | --- |
 | tokenId | Header | String | - | Token ID |
 
-#### Request Body
+###### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 ```json
 {
     "header" : {
@@ -1692,23 +1859,82 @@ X-Auth-Token: {tokenId}
 }
 ```
 
-## Keypair API
-Server 접근에 필요한 Keypair에 대한 생성, 삭제, 조회 기능을 제공합니다.
-### Keypair 목록 조회
-계정에 속한 Keypair 목록을 조회합니다.
-#### Method, URL
+## Network
+### Network API
+#### Network Status
+Network는 다음 Status 값을 같습니다.
+
+| Status | Description |
+| -- | -- |
+| BUILD | Network 구축 중 |
+| ACTIVE | Network 활성화 상태 |
+| DOWN | Network 비활성화 상태 |
+| ERROR | 에러 발생 |
+
+#### Network 목록 조회
+접근 가능한 Network의 목록을 조회합니다.
+
+###### Method, URL
 ```
-GET /v1.0/appkeys/{appkey}/keypairs
+GET /v1.0/appkey/{appkey}/networks
 X-Auth-Token: {tokenId}
 ```
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | header | string | - |Token ID |
+|  Name | In | Type | Optional |Description |
+| -- | -- | -- | -- | -- |
+| tokenId | Header | String | - | Token ID |
 
-#### Request Body
+###### Request Body
+이 Request는 Body를 필요로 하지 않습니다.
+
+###### Response Body
+```json
+{
+    "header": {
+        "isSuccessful": true,
+        "resultCode": 0,
+        "resultMessage": "SUCCESS"
+    },
+    "networks": [
+        {
+            "adminStateUp": "{Administrative State}",
+            "id": "{Network ID}",
+            "name": "{Network Name}",
+            "router:external": "{External Router Provided}",
+            "status": "{Network Status}",
+            "subnets": [
+                "{Subnet ID}"
+            ]
+        }
+    ]
+}
+```
+
+|  Name | In | Type | Optional | Description |
+|--|--|--|--|
+| Administrative State | Body | Boolean | - |네트워크 관리 상태. true: up, false: down |
+| Network ID | Body | String | - | 네트워크 식별자 |
+| Network Name | Body | String | - |네트워크 이름 |
+| External Router Provided | Body | Boolean | - |Router를 통한 Floating IP 제공 가능 여부 |
+| Network Status | Body | String | - |네트워크 상태. ACTIVE, DOWN, BUILD or ERROR |
+| Subnet ID | Body | String | - | Subnet 식별자 |
+
+#### Network 조회
+지정한 Network의 정보를 조회합니다.
+
+###### Method, URL
+```
+GET /v1.0/appkey/{appkey}/networks/{networkId}
+X-Auth-Token: {tokenId}
+```
+|  Name | In | Type | Optional |Description |
+| -- | -- | -- | -- | -- |
+| tokenId | Header | String | - | Token ID |
+| networkId | Path | String | - | 조회할 Network 식별자 |
+
+###### Request Body
 이 API는 request body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 
 ```json
 {
@@ -1717,11 +1943,66 @@ X-Auth-Token: {tokenId}
         "resultCode": 0,
         "resultMessage": "SUCCESS"
     },
-    "keypairs": [
+    "network": {
+        "adminStateUp": "{Administrative State}",
+        "id": "{Network ID}",
+        "name": "{Network Name}",
+        "router:external": "{External Router Provided}",
+        "status": "{Network Status}",
+        "subnets": [
+            "{Subnet ID}"
+        ]
+    }
+}
+```
+|  Name | In | Type | Optional | Description |
+|--|--|--|--|
+| Administrative State | Body | Boolean | - |네트워크 관리 상태. true: up, false: down |
+| Network ID | Body | String | - | 네트워크 식별자 |
+| Network Name | Body | String | - |네트워크 이름 |
+| External Router Provided | Body | Boolean | - |Router를 통한 Floating IP 제공 가능 여부 |
+| Network Status | Body | String | - |네트워크 상태. ACTIVE, DOWN, BUILD or ERROR |
+| Subnet ID | Body | String | - | Subnet 식별자 |
+
+## Subnet API
+#### Subnet 목록 조회
+접근 가능한 Subnet의 목록을 조회합니다.
+###### Method, URL
+```
+GET /v1.0/appkey/{appkey}/subnets
+X-Auth-Token: {tokenId}
+```
+|  Name | In | Type | Optional |Description |
+| -- | -- | -- | -- | -- |
+| tokenId | Header | String | - | Token ID |
+
+###### Request Body
+이 API는 Request Body를 필요로 하지 않습니다.
+
+###### Response Body
+```json
+{
+    "header": {
+        "isSuccessful": true,
+        "resultCode": 0,
+        "resultMessage": "SUCCESS"
+    },
+    "subnets": [
         {
-            "name": "{Keypair Name}",
-            "publicKey": "{Public Key Value}",
-            "fingerprint": "{Fingerprint Value}"
+            "allocationPools": [
+                {
+                    "start": "{Start IP}",
+                    "end": "{End IP}"
+                }
+            ],
+            "cidr": "{CIDR}",
+            "enableDhcp": "{Enable DHCP}",
+            "gatewayIp": "{Gateway IP}",
+            "hostRoutes": [],
+            "id": "{Subnet ID}",
+            "ipVersion": "{IP version}",
+            "name": "{Subnet Name}",
+            "networkId": "{Network ID}"
         }
     ]
 }
@@ -1729,133 +2010,19 @@ X-Auth-Token: {tokenId}
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| Keypair Name | Body | String | - |Keypair 이름 |
-| Public Key Value | Body | String | - | Keypair의 Public Key 값 |
-| Fingerprint Value | Body | String | - |Fingerprint 값 |
+| Start IP | Body | String | - | 할당 Pool의 시작 IP. 예) 10.161.244.13 |
+| End IP | Body | String | - | 할당 Pool의 마지막 IP. 예) 10.161.244.121 |
+| CIDR | Body | String | - |Classless Inter-Domain Routing. 예) 10.161.244.0/25 |
+| Enable DHCP | Body | Boolean | - | DHCP 활성화 여부 |
+| Subnet ID | Body | String | - | Subnet 식별자 |
+| IP Version | Body | Integer | - | Subnet의 IP version |
+| Subnet Name | Body | Integer | - | Subnet 이름 |
+| Network ID | Body | Integer | - | Subnet이 속한 네트워크 식별자 |
 
-### Keypair 조회
-지정한 Keypair의 정보를 조회합니다.
-#### Method, URL
-```
-GET /v1.0/appkeys/{appkey}/keypairs/{keypairName}
-X-Auth-Token: {tokenId}
-```
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| keypairName | Path | String | - | 조회할 Keypair 이름
-
-#### Request Body
-이 API는 request body를 필요로 하지 않습니다.
-
-#### Response Body
-
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    },
-    "keypair": {
-        "name": "{Keypair Name}",
-        "publicKey": "{Public Key Value}",
-        "fingerprint": "{Fingerprint Value}",
-        "createdAt": "{Created At}"
-    }
-}
-```
-
-|  Name | In | Type | Description |
-|--|--|--|--|
-| Keypair Name | Body | String | Keypair 이름 |
-| Public Key Value | Body | String | Keypair의 Public Key 값 |
-| Fingerprint Value | Body | String | Fingerprint 값 |
-| Created At | Body | DateTime | Keypair 생성 시간 |
-
-### Keypair 생성 or 업로드
-Keypair를 생성하거나, ssh로 생성한 Keypair를 업로드 합니다.
-
-#### Method, URL
-```
-POST /v1.0/appkeys/{appkey}/keypairs
-X-Auth-Token: {tokenId}
-Content-Type: application/json;charset=UTF-8
-```
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | header | string | - | Token ID |
-
-#### Request Body
-
-```json
-{
-    "keypair": {
-        "name": "{Keypair Name}",
-        "publicKey": "{Public Key Value}"
-    }
-}
-```
-
-| Name | In | Type | Optional | Description |
-| --- | --- | --- | --- | --- |
-| Keypair Name | Body | String | - | Keypair 이름 |
-| Public Key Value | Body | String | O | 업로드할 Public ssh key. 생략 시 새로운 keypair가 만들어지며, 만들어진 Keypair의 Private Key가 Response로 함께 전달됩니다. |
-
-#### Response Body
-
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    },
-    "keypair": {
-        "name": "{Keypair Name}",
-        "publicKey": "{Public Key Value}",
-        "privateKey": "{Private Key Value}",
-        "fingerprint": "{Fingerprint Value}"
-    }
-}
-```
-| Name | In | Type | Optional | Description |
-| --- | --- | --- | --- | --- |
-| Keypair Name | Body | String | - | Keypair 이름 |
-| Public Key Value | Body | String | - | Keypair의 Public ssh key |
-| Private Key Value | Body | String | O | Keypair의 Private ssh key. Keypair 업로드(Request에 ```publicKey``` 항목이 포함)인 경우 생략됩니다. |
-| Public Key Value | Body | String | - | Fingerprint 값 |
-
-### Keypair 삭제
-지정한 Keypair를 삭제합니다.
-#### Method, URL
-```
-DELETE /v1.0/appkeys/{appkey}/keypairs/{keypairName}
-X-Auth-Token: {tokenId}
-```
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| keypairName | Path | String | - | 삭제할 Keypair 이름 |
-
-#### Request Body
-이 API는 Request Body를 필요로 하지 않습니다.
-
-#### Response Body
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    }
-}
-```
-
-## Floating IP API
+### Floating IP API
 Floating IP 생성, 삭제, 정보 조회 기능을 제공합니다.
 
-### Floating IP Status
+#### Floating IP Status
 Floating IP는 다음 상태값을 갖습니다.
 
 | Status | Description |
@@ -1864,21 +2031,21 @@ Floating IP는 다음 상태값을 갖습니다.
 | DOWN | Floating IP가 연결되어 있지 않은 상태 |
 | ERROR | 에러 발생 |
 
-### Floating IP 목록 조회
+#### Floating IP 목록 조회
 사용 가능한, 또는 사용 중인 Floating IP 목록을 조회합니다.
-#### Method, URL
+###### Method, URL
 ```
 GET /v1.0/appkey/{appkey}/floatingips
 X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| tokenId | header | string | - |Token ID |
+| tokenId | Header | String | - |Token ID |
 
-#### Request Body
+###### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 ```json
 {
 	"header": {
@@ -1903,15 +2070,15 @@ X-Auth-Token: {tokenId}
 |--|--|--|--|--|
 | Floating IP ID | Body | String | - | Floating IP 식별자 |
 | Floating IP Address | Body | String | - | Floating IP 주소 |
-| Fixed IP Address | Body | String | O | Floating IP가 연결된 Server NIC의 IP 주소. Status가 ```ACTIVE``` 인 경우에만 표시 |
+| Fixed IP Address | Body | String | O | Floating IP가 연결된 Server NIC의 IP 주소. Status가 "ACTIVE" 인 경우에만 표시 |
 | Floating Network ID | Body | String | - | Floating IP가 연결된 Network의 식별자 |
-| Port ID | Body | String | O | Floting IP가 연결된 Port의 식별자. Status가 ```ACTIVE``` 인 경우에만 표시 |
-| Router ID | Body | String | O | Floating IP의 Router 식별자. Status가 ```ACTIVE``` 인 경우에만 표시 |
+| Port ID | Body | String | O | Floting IP가 연결된 Port의 식별자. Status가 "ACTIVE" 인 경우에만 표시 |
+| Router ID | Body | String | O | Floating IP의 Router 식별자. Status가 "ACTIVE" 인 경우에만 표시 |
 | Status | Body | String | - | Floating IP의 상태 |
 
-### Floating IP 조회
+#### Floating IP 조회
 지정한 Floating IP의 정보를 조회합니다.
-#### Method, URL
+###### Method, URL
 ```
 GET /v1.0/appkey/{appkey}/floatingips/{floatingIpId}
 X-Auth-Token: {tokenId}
@@ -1921,10 +2088,10 @@ X-Auth-Token: {tokenId}
 | tokenId | Header | String | - | Token ID |
 | floatingIpId | Path | String | - | 조회할 Floating IP 식별자 |
 
-#### Request Body
+###### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 ```json
 {
 	"header": {
@@ -1947,15 +2114,15 @@ X-Auth-Token: {tokenId}
 |--|--|--|--|--|
 | Floating IP ID | Body | String | - | Floating IP 식별자 |
 | Floating IP Address | Body | String | - | Floating IP 주소 |
-| Fixed IP Address | Body | String | O | Floating IP가 연결된 Server NIC의 IP 주소. Status가 ```ACTIVE``` 인 경우에만 표시 |
+| Fixed IP Address | Body | String | O | Floating IP가 연결된 Server NIC의 IP 주소. Status가 "ACTIVE" 인 경우에만 표시 |
 | Floating Network ID | Body | String | - | Floating IP가 연결된 Network의 식별자 |
-| Port ID | Body | String | O | Floting IP가 연결된 Port의 식별자. Status가 ```ACTIVE``` 인 경우에만 표시 |
-| Router ID | Body | String | O | Floating IP의 Router 식별자. Status가 ```ACTIVE``` 인 경우에만 표시 |
+| Port ID | Body | String | O | Floting IP가 연결된 Port의 식별자. Status가 "ACTIVE" 인 경우에만 표시 |
+| Router ID | Body | String | O | Floating IP의 Router 식별자. Status가 "ACTIVE" 인 경우에만 표시 |
 | Status | Body | String | - | Floating IP의 상태 |
 
-### Floating IP 생성
+#### Floating IP 생성
 Floating IP를 생성합니다.
-#### Method, URL
+###### Method, URL
 ```
 POST /v1.0/appkey/{appkey}/floatingips
 X-Auth-Token: {tokenId}
@@ -1964,10 +2131,10 @@ X-Auth-Token: {tokenId}
 |--|--|--|--|--|
 | tokenId | Header | String | - | Token ID |
 
-#### Request Body
+###### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 ```json
 {
 	"header": {
@@ -1990,9 +2157,9 @@ X-Auth-Token: {tokenId}
 | Floating Network ID | Body | String | - | Floating IP가 연결된 Network의 식별자 |
 | Status | Body | String | - | Floating IP의 상태 |
 
-### Floating IP 삭제
+#### Floating IP 삭제
 지정한 Floating IP를 삭제합니다.
-#### Method, URL
+###### Method, URL
 ```
 DELETE /v1.0/appkey/{appkey}/floatingips/{floatingIpId}
 X-Auth-Token: {tokenId}
@@ -2002,10 +2169,10 @@ X-Auth-Token: {tokenId}
 | tokenId | Header | String | - | Token ID |
 | floatingIpId | Path | String | - | 조회할 Floating IP 식별자 |
 
-#### Request Body
+###### Request Body
 이 API는 request body를 필요로 하지 않습니다.
 
-#### Response Body
+###### Response Body
 
 ```json
 {
@@ -2016,4 +2183,3 @@ X-Auth-Token: {tokenId}
     }
 }
 ```
-
