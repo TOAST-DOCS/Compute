@@ -17,7 +17,7 @@
 ## 기본 정보
 ### API Endpoint
 ```
-http://api-compute.cloud.toast.com/v1.0/appkeys/{appkey}
+http://api-gw.cloud.toast.com/infra/v1.0/appkeys/{appkey}
 ```
 ###### Parameters
 | Name | In | Type | Description |
@@ -176,24 +176,6 @@ GET /v1.0/appkey/{appkey}/tokens/{tokenId}
 ## Server
 ### Server API
 Server 생성, 삭제, 정보 조회 및 Block Storage 연결관리 기능을 제공합니다.
-
-#### Server Status
-Server는 생성, 변경, 삭제, 운영 중 다음과 같은 Status를 갖습니다.
-![[그림 1] Server Status Diagram](http://static.toastoven.net/prod_infrastructure/compute/developersguide/img_001.png)
-<center>[그림 1] Server Status Diagram</center>
-
-| Status | Description |
-| --- | --- |
-| BUILD | Server 생성 중 |
-| POWERING_ON | Server 부팅 중 |
-| ACTIVE | Server 구동 중 |
-| POWERING_OFF | Server 종료 중 |
-| STOP | Server 종료 상태 |
-| REBOOTING | Server Rebooting 중 |
-| RESIZING | Server Resize 작업 중 |
-| MIGRATING | Server Migration 작업 중 |
-| DELETING | Server 삭제 중 |
-| ERROR | 오류 상태 |
 
 #### Server 목록 간략 조회
 생성되어 있는 Server들의 간략한 정보(ID, Name, Status)를 조회합니다.
@@ -582,11 +564,11 @@ DELETE /v1.0/appkeys/{appkey}/servers/{serverId}/attachments/{volumeId}
 X-Auth-Token: {tokenId}
 ```
 ###### Parameters
-|  Name | In | Type | Description |
+|  Name | In | Type | Optional | Description |
 |--|--|--|--|
-| tokenId | Header | String| Token ID |
-| serverId | Path | String | Server 식별자 |
-| volumeId | Path | String | Block Storage 식별자 |
+| tokenId | Header | String| - | Token ID |
+| serverId | Path | String | - | Server 식별자 |
+| volumeId | Path | String | - | Block Storage 식별자 |
 
 ##### Request body
 이 Request는 Body를 필요로 하지 않습니다.
@@ -602,6 +584,24 @@ X-Auth-Token: {tokenId}
     }
 }
 ```
+
+### Server Status
+Server는 생성, 변경, 삭제, 운영 중 다음과 같은 Status를 갖습니다.
+![[그림 1] Server Status Diagram](http://static.toastoven.net/prod_infrastructure/compute/developersguide/img_001.png)
+<center>[그림 1] Server Status Diagram</center>
+
+| Status | Description |
+| --- | --- |
+| BUILD | Server 생성 중 |
+| POWERING_ON | Server 부팅 중 |
+| ACTIVE | Server 구동 중 |
+| POWERING_OFF | Server 종료 중 |
+| STOP | Server 종료 상태 |
+| REBOOTING | Server Rebooting 중 |
+| RESIZING | Server Resize 작업 중 |
+| MIGRATING | Server Migration 작업 중 |
+| DELETING | Server 삭제 중 |
+| ERROR | 오류 상태 |
 
 ### Server Action API
 다음과 같은 Server 제어 및 부가기능을 제공합니다.<br />
@@ -620,10 +620,10 @@ X-Auth-Token: {tokenId}
 Content-Type: application/json;charset=UTF-8
 ```
 ###### Parameters
-|  Name | In | Type | Description |
+|  Name | In | Type | Optional | Description |
 |--|--|--|--|
-| tokenId | Header | String| Token ID |
-| serverId | Path | String | Action을 수행할 Server의 식별자 |
+| tokenId | Header | String| - | Token ID |
+| serverId | Path | String | - | Action을 수행할 Server의 식별자 |
 
 #### Server 시작
 정지(STOP) 상태의 서버를 시작합니다.
@@ -681,9 +681,9 @@ Server를 리부팅합니다. 다음과 같은 리부팅 방식을 지정할 수
 }
 ```
 ###### Parameters
-|  Name | In | Type | Description |
+|  Name | In | Type | Optional | Description |
 |--|--|--|--|
-| Reboot Type | body | String |  Reboot 타입. "HARD" or "SOFT" |
+| Reboot Type | body | String | - | Reboot 타입. "HARD" or "SOFT" |
       
 ##### Response Body
 
@@ -708,9 +708,9 @@ Server의 Flavor를 변경하여 Resize를 수행합니다.
 }
 ```
 ###### Parameters
-|  Name | In | Type | Description |
+|  Name | In | Type | Optional | Description |
 |--|--|--|--|
-|  Flavor ID | body | String |  변경할 Flavor 식별자 |
+|  Flavor ID | body | String | - | 변경할 Flavor 식별자 |
       
 ##### Response Body
 
@@ -754,10 +754,10 @@ Server의 Flavor를 변경하여 Resize를 수행합니다.
 }
 ```
 ###### Parameters
-|  Name | In | Type | Description |
+|  Name | In | Type | Optional | Description |
 |--|--|--|--|
-| Created Image ID | body | String | 생성된 Image 식별자 |
-| Created Image Name | body | String | 생성된 Image 이름 |
+| Created Image ID | body | String | - | 생성된 Image 식별자 |
+| Created Image Name | body | String | - | 생성된 Image 이름 |
 
 #### Floating IP 연결
 외부 네트워크에서 접근 가능한 Floating IP를 Server에 연결합니다.
@@ -772,10 +772,10 @@ Server의 Flavor를 변경하여 Resize를 수행합니다.
 }
 ```
 ###### Parameters
-|  Name | In | Type | Description |
+|  Name | In | Type | Optional | Description |
 |--|--|--|--|
-| Floating IP Address | body | String | Server에 연결할 Floating IP 주소 |
-| IP Address of the server | body | String | Floating IP를 연결할 Server의 IP 주소 |
+| Floating IP Address | body | String | - | Server에 연결할 Floating IP 주소 |
+| IP Address of the server | body | String | - | Floating IP를 연결할 Server의 IP 주소 |
 
 ##### Response Body
 ```json
@@ -800,9 +800,9 @@ Server에 연결되어 있는 Floating IP의 연결을 해제합니다.
 }
 ```
 ###### Parameters
-|  Name | In | Type | Description |
+|  Name | In | Type | Optional | Description |
 |--|--|--|--|
-| Floating IP Address | body | String | 연결을 해제할 Floating IP 주소 |
+| Floating IP Address | body | String | - | 연결을 해제할 Floating IP 주소 |
 
 ##### Response Body
 ```json
@@ -827,9 +827,9 @@ Server에 Security Group을 추가 등록합니다.
 }
 ```
 ###### Parameters
-|  Name | In | Type | Description |
+|  Name | In | Type | Optional | Description |
 |--|--|--|--|
-| Security Group Name | body | String | 서버에 추가할 Security Group 이름 |
+| Security Group Name | body | String | - | 서버에 추가할 Security Group 이름 |
 
 ##### Response Body
 ```json
@@ -854,9 +854,9 @@ Server에 등록되어 있는 Security Group을 제거합니다.
 }
 ```
 ###### Parameters
-|  Name | In | Type | Description |
+|  Name | In | Type | Optional | Description |
 |--|--|--|--|
-| Security Group Name | body | String | 서버에서 제거할 Security Group 이름 |
+| Security Group Name | body | String | - | 서버에서 제거할 Security Group 이름 |
 
 ##### Response Body
 ```json
@@ -868,7 +868,7 @@ Server에 등록되어 있는 Security Group을 제거합니다.
     }
 }
 ```
-
+## Flavor
 ### Flavor API
 #### Flavor 목록 조회
 Flavor의 목록 및 상세 정보를 조회합니다.
@@ -879,9 +879,9 @@ GET /v1.0/appkeys/{appkey}/flavors
 X-Auth-Token: {tokenID}
 ```
 ###### Parameters
-|  Name | In | Type | Description |
+|  Name | In | Type | Optional | Description |
 |--|--|--|--|
-| tokenId | Header | String| Token ID |
+| tokenId | Header | String| - | Token ID |
 
 ##### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
@@ -922,6 +922,7 @@ X-Auth-Token: {tokenID}
 | RAM | Body | Integer | - | Flavor가 갖는 RAM 총량. MB |
 | VCPUs | Body | Integer | - | Server에 할당되는 가상 CPU 코어 개수 |
 
+## Availability Zone
 ### Availability Zone API
 #### Availability Zone 조회
 Server를 생성할 수 있는 Zone의 정보를 조회합니다.
@@ -931,9 +932,9 @@ GET /v1.0/appkey/{appkey}/availability-zones
 X-Auth-Token: {tokenId}
 ```
 ###### Parameters
-|  Name | In | Type | Description |
+|  Name | In | Type | Optional | Description |
 |--|--|--|--|
-| tokenId | Header | String | Token ID |
+| tokenId | Header | String | - | Token ID |
 
 ##### Request Body
 이 API는 request body를 필요로 하지 않습니다.
@@ -964,19 +965,6 @@ X-Auth-Token: {tokenId}
 
 ## Image
 ### Image API
-#### Image Status
-Image는 다음의 Status 값을 갖습니다.
-
-| Status | Description |
-| -- | -- |
-| queued | Image ID는 발급되었으나 아직 Image 데이터가 업로드 되지 못한 상태 |
-| saving | Image 데이터를 저장 중인 상태 |
-| active | Image 사용 가능 상태 |
-| killed | Image 데이터 업로드 중 에러 발생 |
-| deleted | Image에 대한 정보는 남아있으나 더 이상 가용하지 않은 상태 |
-| pending_delete | deleted 상태와 유사, Image가 회복 불가능한 상태 |
-| deactivated | Image 데이터가 사용 불가한 상태 |
-
 #### Image 목록 조회
 Image의 목록 및 상세 정보를 조회합니다.
 ##### Method, URL
@@ -985,9 +973,9 @@ GET /v1.0/appkey/{appkey}/images
 X-Auth-Token: {tokenId}
 ```
 ###### Parameters
-|  Name | In | Type | Description |
+|  Name | In | Type | Optional | Description |
 |--|--|--|--|
-| tokenId | Header | String | Token ID |
+| tokenId | Header | String | - | Token ID |
 
 ##### Request Body
 이 API는 request body를 필요로 하지 않습니다.
@@ -1036,6 +1024,20 @@ X-Auth-Token: {tokenId}
 | Image Status | Body | String | - | Image의 상태 |
 | Updated At | Body | String | - | Image가 업데이트 된 시간. yyyy-mm-ddTHH:MM:ssZ의 형태. 예) 2017-05-16T02:17:50.166563 |
 
+### Image Status
+Image는 다음의 Status 값을 갖습니다.
+
+| Status | Description |
+| -- | -- |
+| queued | Image ID는 발급되었으나 아직 Image 데이터가 업로드 되지 못한 상태 |
+| saving | Image 데이터를 저장 중인 상태 |
+| active | Image 사용 가능 상태 |
+| killed | Image 데이터 업로드 중 에러 발생 |
+| deleted | Image에 대한 정보는 남아있으나 더 이상 가용하지 않은 상태 |
+| pending_delete | deleted 상태와 유사, Image가 회복 불가능한 상태 |
+| deactivated | Image 데이터가 사용 불가한 상태 |
+
+## Keypair
 ### Keypair API
 Server 접근에 필요한 Keypair에 대한 생성, 삭제, 조회 기능을 제공합니다.
 #### Keypair 목록 조회
@@ -1112,12 +1114,12 @@ X-Auth-Token: {tokenId}
 }
 ```
 ###### Parameters
-|  Name | In | Type | Description |
+|  Name | In | Type | Optional | Description |
 |--|--|--|--|
-| Keypair Name | Body | String | Keypair 이름 |
-| Public Key Value | Body | String | Keypair의 Public Key 값 |
-| Fingerprint Value | Body | String | Fingerprint 값 |
-| Created At | Body | DateTime | Keypair 생성 시간 |
+| Keypair Name | Body | String | - | Keypair 이름 |
+| Public Key Value | Body | String | - | Keypair의 Public Key 값 |
+| Fingerprint Value | Body | String | - | Fingerprint 값 |
+| Created At | Body | DateTime | - | Keypair 생성 시간 |
 
 #### Keypair 생성 or 업로드
 Keypair를 생성하거나, ssh로 생성한 Keypair를 업로드 합니다.
@@ -1204,28 +1206,6 @@ X-Auth-Token: {tokenId}
 ## Block Storage
 ### Block Storage API
 Block Stroage 생성/삭제 및 조회 기능을 제공합니다. Block Storage를 Server에 연결/해제하는 기능은 Server API를 통해 제공됩니다.
-
-#### Block Storage Status
-Block Storage는 다음과 같은 Status 값을 갖습니다.
-
-| Status | Description |
-| --- | --- |
-| creating | 생성 중 |
-| available | Server에 연결 가능한 상태 |
-| attaching | Server에 연결 중 |
-| detaching | Server에서 연결 해제 중 |
-| in-use | Server에 연결되어 사용 중인 상태 |
-| deleting | 삭제 중 |
-| error | 생성 중 에러 발생 |
-| error_deleting | 삭제 중 에러 발생 |
-| backing-up | 백업 진행 중 |
-| restoring-backup | 백업 복구 중 |
-| error_backing-up | 백업 진행 중 에러 발생 |
-| error_restoring | 백업 복구 중 에러 발생 |
-| downloading | Image 다운로드 중 |
-| uploading | Image로 업로드 중 |
-
-
 #### Block Storage 목록 조회
 Block Storage 목록 및 정보를 조회합니다.
 
@@ -1235,9 +1215,9 @@ GET /v1.0/appkeys/{appkey}/volumes
 X-Auth-Token: {tokenId}
 ```
 ###### Parameters
-|  Name | In | Type | Description |
+|  Name | In | Type | Optional | Description |
 |--|--|--|--|
-| tokenId | Header | String | Token ID |
+| tokenId | Header | String | - | Token ID |
 
 ##### Request Body
 이 API는 request body를 필요로 하지 않습니다.
@@ -1296,10 +1276,10 @@ GET /v1.0/appkey/{appkey}/volumes/{volumeId}
 X-Auth-Token: {tokenId}
 ```
 ###### Parameters
-|  Name | In | Type | Description |
+|  Name | In | Type | Optional | Description |
 |--|--|--|--|
-| tokenId | Header | String | Token ID |
-| volumeId | Path | String | 조회할 Volume ID |
+| tokenId | Header | String | - | Token ID |
+| volumeId | Path | String | - | 조회할 Volume ID |
 
 ##### Request Body
 이 API는 request body를 필요로 하지 않습니다.
@@ -1358,9 +1338,9 @@ X-Auth-Token: {tokenId}
 Content-Type: application/json;charset=UTF-8
 ```
 ###### Parameters
-|  Name | In | Type | Description |
+|  Name | In | Type | Optional | Description |
 |--|--|--|--|
-| tokenId | Header | String | Token ID |
+| tokenId | Header | String | - | Token ID |
 
 ##### Request Body
 ```
@@ -1432,10 +1412,10 @@ Block Storage를 삭제합니다. Status가 "available" "in-use" "error" "error_
 DELETE /v1.0/appkey/{appkey}/volumes/{volumeId}
 X-Auth-Token: {tokenId}
 ```
-|  Name | In | Type | Description |
+|  Name | In | Type | Optional | Description |
 |--|--|--|--|
-| tokenId | Header | String | Token ID |
-| volumeId | Path | String | 삭제할 Volume ID |
+| tokenId | Header | String | - | Token ID |
+| volumeId | Path | String | - | 삭제할 Volume ID |
 
 ##### Request Body
 이 API는 request body를 필요로 하지 않습니다.
@@ -1450,6 +1430,25 @@ X-Auth-Token: {tokenId}
     }
 }
 ```
+### Block Storage Status
+Block Storage는 다음과 같은 Status 값을 갖습니다.
+
+| Status | Description |
+| --- | --- |
+| creating | 생성 중 |
+| available | Server에 연결 가능한 상태 |
+| attaching | Server에 연결 중 |
+| detaching | Server에서 연결 해제 중 |
+| in-use | Server에 연결되어 사용 중인 상태 |
+| deleting | 삭제 중 |
+| error | 생성 중 에러 발생 |
+| error_deleting | 삭제 중 에러 발생 |
+| backing-up | 백업 진행 중 |
+| restoring-backup | 백업 복구 중 |
+| error_backing-up | 백업 진행 중 에러 발생 |
+| error_restoring | 백업 복구 중 에러 발생 |
+| downloading | Image 다운로드 중 |
+| uploading | Image로 업로드 중 |
 
 ## Security Group
 ### Security Group API
@@ -1921,16 +1920,6 @@ X-Auth-Token: {tokenId}
 
 ## Network
 ### Network API
-#### Network Status
-Network는 다음 Status 값을 같습니다.
-
-| Status | Description |
-| -- | -- |
-| BUILD | Network 구축 중 |
-| ACTIVE | Network 활성화 상태 |
-| DOWN | Network 비활성화 상태 |
-| ERROR | 에러 발생 |
-
 #### Network 목록 조회
 접근 가능한 Network의 목록을 조회합니다.
 
@@ -2027,7 +2016,17 @@ X-Auth-Token: {tokenId}
 | Network Status | Body | String | - |네트워크 상태. ACTIVE, DOWN, BUILD or ERROR |
 | Subnet ID | Body | String | - | Subnet 식별자 |
 
-## Subnet API
+### Network Status
+Network는 다음 Status 값을 같습니다.
+
+| Status | Description |
+| -- | -- |
+| BUILD | Network 구축 중 |
+| ACTIVE | Network 활성화 상태 |
+| DOWN | Network 비활성화 상태 |
+| ERROR | 에러 발생 |
+
+### Subnet API
 #### Subnet 목록 조회
 접근 가능한 Subnet의 목록을 조회합니다.
 ##### Method, URL
@@ -2254,3 +2253,7 @@ X-Auth-Token: {tokenId}
     }
 }
 ```
+
+## Load Balancer
+### Load Balancer API
+작성중
