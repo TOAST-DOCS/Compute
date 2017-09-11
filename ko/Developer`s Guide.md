@@ -80,8 +80,8 @@ Content-Type: application/json;charset=UTF-8
 ```json
 {
 	"auth" : {
-    	"username" : "User Name",
-        "password" : "API Password"
+    	"username" : "{User Name}",
+        "password" : "{API Password}"
     }
 }
 ```
@@ -268,11 +268,11 @@ X-Auth-Token: {tokenId}
 }
 ```
 ###### Parameters
-|  Name | In | Type | Description |
-|--|--|--|--|
-| Server ID | Body | String | Server 식별자 |
-| Server Name | Body | String | Server 이름 (Linux의 경우 최대 255자, Windows의 경우 최대 12자) |
-| Server Status | Body | String | Server의 상태 |
+|  Name | In | Type | Optional | Description |
+|--|--|--|--|--|
+| Server ID | Body | String | - | Server 식별자 |
+| Server Name | Body | String | - | Server 이름 (Linux의 경우 최대 255자, Windows의 경우 최대 12자) |
+| Server Status | Body | String | - | Server의 상태 |
 
 #### Server 목록 상세 조회
 생성되어 있는 모든 Server들의 상세한 정보를 조회합니다.
@@ -518,11 +518,11 @@ Content-Type: application/json;charset=UTF-8
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
 | Server Name | Body | String | - | Server 이름 (Linux의 경우 최대 255자, Windows의 경우 최대 12자) |
-| Image ID | Body | String | - | Server에 설치할 Image 식별자 |
-| Flavor ID | Body | String | - | Server의 Flavor 식별자 |
-| Network ID | Body | String | - | Server가 연결될 Network 식별자 |
-| Availability Zone | Body | String | - | Server가 생성될 Availability Zone |
-| Key Name | Body | String | - | Server에 등록할 Key-pair 이름 |
+| Image ID | Body | String | - | Server에 설치할 Image 식별자. [Image API](#image-api) 참조 |
+| Flavor ID | Body | String | - | Server의 Flavor 식별자. [Flavor API](#flavor-api) 참조|
+| Network ID | Body | String | - | Server가 연결될 Network 식별자. [Network API](#network-api) 참조|
+| Availability Zone | Body | String | - | Server가 생성될 Availability Zone 이름. [Availability Zone API](#availability-zone-api) 참조 |
+| Key Name | Body | String | - | Server에 등록할 Key-pair 이름. [Keypair API](#keypair-api) 참조|
 | Count | Body | Integer | - | 동시 생성할 Server의 대수, 최대 10대로 제한 |
 | Volume Size | Body | Integer | - | Server의 Root Disk 크기, 허용가능한 Volume size는 Flavor에 따라 정해짐 |
 | Security Group Name | Body | String | - | Server에 등록할 Security Group 이름 |
@@ -557,10 +557,10 @@ DELETE /v1.0/appkeys/{appkey}/servers/{serverId}
 X-Auth-Token: {tokenId}
 ```
 ###### Parameters
-|  Name | In | Type | Description |
-|--|--|--|--|
-| tokenId | Header | String | Token ID |
-| serverId | Path | String | 삭제할 Server의 고유 ID |
+|  Name | In | Type | Optional | Description |
+|--|--|--|--|--|
+| tokenId | Header | String | - | Token ID |
+| serverId | Path | String | - | 삭제할 Server의 고유 ID |
 
 #### Block Storage 연결
 Server에 추가적인 Block Strorage를 연결합니다.
@@ -588,7 +588,7 @@ Content-Type: application/json;charset=UTF-8
 ###### Parameters
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| Volume ID | body | String | - | Server에 연결할 Block Strorage 식별자 |
+| Volume ID | body | String | - | Server에 연결할 Block Strorage 식별자. [Block Storage API](#block-storage-api) 참조 |
 
 ##### Response Body
 
@@ -623,7 +623,7 @@ X-Auth-Token: {tokenId}
 ```
 ###### Parameters
 |  Name | In | Type | Optional | Description |
-|--|--|--|--|
+|--|--|--|--|--|
 | tokenId | Header | String| - | Token ID |
 | serverId | Path | String | - | Server 식별자 |
 | volumeId | Path | String | - | Block Storage 식별자 |
@@ -661,7 +661,7 @@ Content-Type: application/json;charset=UTF-8
 ```
 ###### Parameters
 |  Name | In | Type | Optional | Description |
-|--|--|--|--|
+|--|--|--|--|--|
 | tokenId | Header | String| - | Token ID |
 | serverId | Path | String | - | Action을 수행할 Server의 식별자 |
 
@@ -722,7 +722,7 @@ Server를 리부팅합니다. 다음과 같은 리부팅 방식을 지정할 수
 ```
 ###### Parameters
 |  Name | In | Type | Optional | Description |
-|--|--|--|--|
+|--|--|--|--|--|
 | Reboot Type | body | String | - | Reboot 타입. "HARD" or "SOFT" |
       
 ##### Response Body
@@ -749,7 +749,7 @@ Server의 Flavor를 변경하여 Resize를 수행합니다.
 ```
 ###### Parameters
 |  Name | In | Type | Optional | Description |
-|--|--|--|--|
+|--|--|--|--|--|
 |  Flavor ID | body | String | - | 변경할 Flavor 식별자 |
       
 ##### Response Body
@@ -765,7 +765,7 @@ Server의 Flavor를 변경하여 Resize를 수행합니다.
 ```
 
 #### Image 생성
-지정한 Server로 부터 Image를 생성합니다. 생성된 Image는 Image API를 통해 조회할 수 있습니다.
+지정한 Server로 부터 Image를 생성합니다. 생성된 Image는 [Image API](#image-api)를 통해 조회할 수 있습니다.
 ##### Request Body
 ```json
 {
@@ -795,12 +795,12 @@ Server의 Flavor를 변경하여 Resize를 수행합니다.
 ```
 ###### Parameters
 |  Name | In | Type | Optional | Description |
-|--|--|--|--|
+|--|--|--|--|--|
 | Created Image ID | body | String | - | 생성된 Image 식별자 |
 | Created Image Name | body | String | - | 생성된 Image 이름 |
 
 #### Floating IP 연결
-외부 네트워크에서 접근 가능한 Floating IP를 Server에 연결합니다.
+외부 네트워크에서 접근 가능한 [Floating IP](#floating-ip-api)를 Server에 연결합니다.
 
 ##### Request Body
 ```json
@@ -813,7 +813,7 @@ Server의 Flavor를 변경하여 Resize를 수행합니다.
 ```
 ###### Parameters
 |  Name | In | Type | Optional | Description |
-|--|--|--|--|
+|--|--|--|--|--|
 | Floating IP Address | body | String | - | Server에 연결할 Floating IP 주소 |
 | IP Address of the server | body | String | - | Floating IP를 연결할 Server의 IP 주소 |
 
@@ -829,7 +829,7 @@ Server의 Flavor를 변경하여 Resize를 수행합니다.
 ```
 
 #### Floating IP 연결 해제
-Server에 연결되어 있는 Floating IP의 연결을 해제합니다.
+Server에 연결되어 있는 [Floating IP](#floating-ip-api)의 연결을 해제합니다.
 
 ##### Request Body
 ```json
@@ -841,7 +841,7 @@ Server에 연결되어 있는 Floating IP의 연결을 해제합니다.
 ```
 ###### Parameters
 |  Name | In | Type | Optional | Description |
-|--|--|--|--|
+|--|--|--|--|--|
 | Floating IP Address | body | String | - | 연결을 해제할 Floating IP 주소 |
 
 ##### Response Body
@@ -856,7 +856,7 @@ Server에 연결되어 있는 Floating IP의 연결을 해제합니다.
 ```
 
 #### Security Group 등록
-Server에 Security Group을 추가 등록합니다.
+Server에 [Security Group](#security-group)을 추가 등록합니다.
 
 ##### Request Body
 ```json
@@ -868,7 +868,7 @@ Server에 Security Group을 추가 등록합니다.
 ```
 ###### Parameters
 |  Name | In | Type | Optional | Description |
-|--|--|--|--|
+|--|--|--|--|--|
 | Security Group Name | body | String | - | 서버에 추가할 Security Group 이름 |
 
 ##### Response Body
@@ -883,7 +883,7 @@ Server에 Security Group을 추가 등록합니다.
 ```
 
 #### Security Group 해제
-Server에 등록되어 있는 Security Group을 제거합니다.
+Server에 등록되어 있는 [Security Group](#security-group)을 제거합니다.
 
 ##### Request Body
 ```json
@@ -895,7 +895,7 @@ Server에 등록되어 있는 Security Group을 제거합니다.
 ```
 ###### Parameters
 |  Name | In | Type | Optional | Description |
-|--|--|--|--|
+|--|--|--|--|--|
 | Security Group Name | body | String | - | 서버에서 제거할 Security Group 이름 |
 
 ##### Response Body
@@ -1506,7 +1506,7 @@ X-Auth-Token: {tokenId}
 | Description | Body | String | - | Security Group 설명 |
 | Security Group ID | Body | String | - | Security Group 식별자 |
 | Name | Body | String | - |Security Group 이름 |
-| securityGroupRules | Body | List | O | Security Group Rule 목록, "detail=true" 일 때에만 표시.<br />Security Group Rule에 대한 자세한 사항은 Security Group Rules API 참조 |
+| securityGroupRules | Body | List | O | Security Group Rule 목록, "detail=true" 일 때에만 표시.<br />Security Group Rule에 대한 자세한 사항은 [Security Group Rules API](#security-group-rules-api) 참조 |
 
 #### Security Group 조회
 지정한 Security Group의 간략한 정보를 조회합니다. "detail" Query Parameter를 통해 상세한 정보를 조회할 수 있습니다.
@@ -1562,7 +1562,7 @@ X-Auth-Token: {tokenId}
 | Description | Body | String | O | Security Group 설명 |
 | Security Group ID | Body | String | - | Security Group 식별자 |
 | Name | Body | String | - |Security Group 이름 |
-| securityGroupRules | Body | List | O | Security Group Rule 목록, "detail=true" 일 때에만 표시.<br />Security Group Rule에 대한 자세한 사항은 Security Group Rules API 참조 |
+| securityGroupRules | Body | List | O | Security Group Rule 목록, "detail=true" 일 때에만 표시.<br />Security Group Rule에 대한 자세한 사항은 [Security Group Rules API](#security-group-rules-api) 참조 |
 
 #### Security Group 생성
 새로운 Security Group을 생성합니다.
@@ -1628,7 +1628,7 @@ Content-Type: application/json;charset=UTF-8
 | Description | Body | String | O | Security Group 설명 |
 | Security Group ID | Body | String | - | Security Group 식별자 |
 | Name | Body | String | - |Security Group 이름 |
-| securityGroupRules | Body | List | - | Security Group Rule 목록, Security Group Rules API 참조 |
+| securityGroupRules | Body | List | - | Security Group Rule 목록, [Security Group Rules API](#security-group-rules-api) 참조 |
 
 #### Security Group 업데이트
 Security Group의 이름, 설명을 변경합니다.
