@@ -128,7 +128,7 @@ Content-Type: application/json;charset=UTF-8
 #### Token 정보 조회
 ##### Method, URL
 ```
-GET /v1.0/appkey/{appkey}/tokens/{tokenId}
+GET /v1.0/appkeys/{appkey}/tokens/{tokenId}
 ```
 
 |  Name | In | Type | Optional |Description |
@@ -178,7 +178,7 @@ GET /v1.0/appkey/{appkey}/tokens/{tokenId}
 Instance, Block Storage를 생성할 수 있는 Zone의 정보를 조회합니다.
 ##### Method, URL
 ```
-GET /v1.0/appkey/{appkey}/availability-zones
+GET /v1.0/appkeys/{appkey}/availability-zones
 X-Auth-Token: {tokenId}
 ```
 
@@ -524,7 +524,7 @@ Content-Type: application/json;charset=UTF-8
 | Availability Zone | Body | String | - | Instance가 생성될 Availability Zone 이름. [Availability Zone API](#availability-zone-api) 참조 |
 | Key Name | Body | String | - | Instance에 등록할 Key-pair 이름. [Keypair API](#keypair-api) 참조|
 | Count | Body | Integer | - | 동시 생성할 Instance의 대수, 최대 10대로 제한 |
-| Volume Size | Body | Integer | - | Instance의 Root Disk 크기, 허용 가능한 Volume size는 Flavor에 따라 정해짐<br />- 최소값 : Flavor의 "minVolumeSize" 와 Image의 "minDisk" 값 중 큰 값<br />- 최대값 : Flavor의 "maxVolumeSize" 값 |
+| Volume Size | Body | Integer | - | Instance의 Root Disk 크기, 생성 가능한 크기는 Flavor 및 설치할 Image 따라 정해짐<br /> - 최소값 : Flavor의 "minVolumeSize" 와 Image의 "minDisk" 값 중 큰 값<br /> - 최대값 : Flavor의 "maxVolumeSize" 값 |
 | Security Group Name | Body | String | - | Instance에 등록할 Security Group 이름 |
 
 ##### Response Body
@@ -1135,7 +1135,7 @@ X-Auth-Token: {tokenId}
 Image의 목록 및 상세 정보를 조회합니다.
 ##### Method, URL
 ```
-GET /v1.0/appkey/{appkey}/images
+GET /v1.0/appkeys/{appkey}/images
 X-Auth-Token: {tokenId}
 ```
 
@@ -1272,7 +1272,7 @@ X-Auth-Token: {tokenId}
 특정 Block Storage의 정보를 조회합니다.
 ##### Method, URL
 ```
-GET /v1.0/appkey/{appkey}/volumes/{volumeId}
+GET /v1.0/appkeys/{appkey}/volumes/{volumeId}
 X-Auth-Token: {tokenId}
 ```
 
@@ -1333,7 +1333,7 @@ X-Auth-Token: {tokenId}
 
 ##### Method, URL
 ```
-POST /v1.0/appkey/{appkey}/volumes
+POST /v1.0/appkeys/{appkey}/volumes
 X-Auth-Token: {tokenId}
 Content-Type: application/json;charset=UTF-8
 ```
@@ -1409,7 +1409,7 @@ Block Storage를 삭제합니다. Status가 "available" "in-use" "error" "error_
 
 ##### Method, URL
 ```
-DELETE /v1.0/appkey/{appkey}/volumes/{volumeId}
+DELETE /v1.0/appkeys/{appkey}/volumes/{volumeId}
 X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Optional | Description |
@@ -1925,7 +1925,7 @@ X-Auth-Token: {tokenId}
 
 ##### Method, URL
 ```
-GET /v1.0/appkey/{appkey}/networks
+GET /v1.0/appkeys/{appkey}/networks
 X-Auth-Token: {tokenId}
 ```
 
@@ -1973,7 +1973,7 @@ X-Auth-Token: {tokenId}
 
 ##### Method, URL
 ```
-GET /v1.0/appkey/{appkey}/networks/{networkId}
+GET /v1.0/appkeys/{appkey}/networks/{networkId}
 X-Auth-Token: {tokenId}
 ```
 
@@ -2031,7 +2031,7 @@ Network는 다음 Status 값을 같습니다.
 접근 가능한 Subnet의 목록을 조회합니다.
 ##### Method, URL
 ```
-GET /v1.0/appkey/{appkey}/subnets
+GET /v1.0/appkeys/{appkey}/subnets
 X-Auth-Token: {tokenId}
 ```
 
@@ -2098,7 +2098,7 @@ Floating IP는 다음 상태값을 갖습니다.
 사용 가능한, 또는 사용 중인 Floating IP 목록을 조회합니다.
 ##### Method, URL
 ```
-GET /v1.0/appkey/{appkey}/floatingips
+GET /v1.0/appkeys/{appkey}/floatingips
 X-Auth-Token: {tokenId}
 ```
 
@@ -2145,7 +2145,7 @@ X-Auth-Token: {tokenId}
 지정한 Floating IP의 정보를 조회합니다.
 ##### Method, URL
 ```
-GET /v1.0/appkey/{appkey}/floatingips/{floatingIpId}
+GET /v1.0/appkeys/{appkey}/floatingips/{floatingIpId}
 X-Auth-Token: {tokenId}
 ```
 
@@ -2191,7 +2191,7 @@ X-Auth-Token: {tokenId}
 Floating IP를 생성합니다.
 ##### Method, URL
 ```
-POST /v1.0/appkey/{appkey}/floatingips
+POST /v1.0/appkeys/{appkey}/floatingips
 X-Auth-Token: {tokenId}
 ```
 
@@ -2230,7 +2230,7 @@ X-Auth-Token: {tokenId}
 지정한 Floating IP를 삭제합니다.
 ##### Method, URL
 ```
-DELETE /v1.0/appkey/{appkey}/floatingips/{floatingIpId}
+DELETE /v1.0/appkeys/{appkey}/floatingips/{floatingIpId}
 X-Auth-Token: {tokenId}
 ```
 
@@ -2605,7 +2605,7 @@ X-Auth-Token: {tokenId}
 #### Load Balancer 삭제
 ##### Method, URL
 ```
-DELETE /v1.0/appkey/{appkey}/loadbalancers/{loadbalancerId}
+DELETE /v1.0/appkeys/{appkey}/loadbalancers/{loadbalancerId}
 X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Optional | Description |
