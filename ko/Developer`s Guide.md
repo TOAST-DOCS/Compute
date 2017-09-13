@@ -939,7 +939,7 @@ X-Auth-Token: {tokenID}
             "disabled": "{Disabled}",
             "ephemeral": "{Ephermeral}",
             "type": "{Type}",
-            "minVolumeSize": "{Min Volume Size}"
+            "minVolumeSize": "{Min Volume Size}",
             "maxVolumeSize": "{Max Volume Size}",
             "id": "{Flavor ID}",
             "name": "{Flavor Name}",
@@ -956,7 +956,7 @@ X-Auth-Token: {tokenID}
 | Disabled | Body | Boolean | Flavor 비활성화 여부 |
 | Ephermeral | Body | Integer | 임시 디스크 사이즈, GB |
 | Type | Body | String | Flavor 최적화 특성에 따라 구분되는 Type값. "general, "compute", "memory" |
-| Min Volume Size | Body | Integer | Root Disk로 만들 수 있는 최소 Dosk 사이즈. GB |
+| Min Volume Size | Body | Integer | Root Disk로 만들 수 있는 최소 Disk 사이즈. GB |
 | Max Volume Size | Body | Integer | Root Disk로 만들 수 있는 최대 Disk 사이즈. GB |
 | Flavor ID | Body | String | Flavor 식별자 |
 | Flavor Name | Body | String | Flavor 이름 |
