@@ -41,9 +41,9 @@ API에 따라 "header" 외 추가적인 정보가 포함될 수 있습니다.
     }
 }
 ```
-| isSuccessfu | resultCode | resultMessage | Description |
+| isSuccessful | resultCode | resultMessage | Description |
 | --- | --- | --- | --- |
-| true | 0 | SUCCESS | 처리 성공 |
+| true | 0 | SUCCESS | 처리 성공. API에 따라 "header" 외 추가 정보 포함 |
 | false  | -1 | FAIL [: detail description] | 인증 모듈 연동 실패 또는 요청을 수행할 수 없는 상태인 경우. detail description 내용에 따라 조치 후 재시도 가능 |
 | false | -2 | UNKNOWN EXCEPTION | 예기치 못한 오류 발생. TOAST Cloud 담당자 문의 필요 |
 | false | -3 | Permission denied [: detail description] | 권한이 없는 사용자에 의한 요청. detail description 내용 참조 |
@@ -89,7 +89,7 @@ Content-Type: application/json;charset=UTF-8
 | Name | In | Type | Optional | Description |
 | -- | -- | -- | -- | -- |
 | User Name | Body | String | - | TOAST Cloud 사용자 계정 ID |
-| API Password | Body | String | - | [API 패스워드](#api-password-설정) |
+| API Password | Body | String | - | [API 패스워드](#api-password) |
 
 ##### Response Body
 ```json
@@ -546,7 +546,7 @@ Content-Type: application/json;charset=UTF-8
 | Name | In | Type | Description |
 |--|--|--|--|
 | Instance ID | body | String |생성된 Instance 식별자 |
-| Instance Name | body | String | nstance 이름 (Linux의 경우 최대 255자, Windows의 경우 최대 12자) |
+| Instance Name | body | String | Instance 이름 (Linux의 경우 최대 255자, Windows의 경우 최대 12자) |
 | Instance Status | Body | String | Instance의 상태 |
 
 #### Instance 삭제
@@ -563,11 +563,11 @@ X-Auth-Token: {tokenId}
 | instanceId | Path | String | - | 삭제할 Instance의 고유 ID |
 
 #### Block Storage 연결
-Instance에 추가적인 Block Strorage를 연결합니다.
+Instance에 추가적인 [Block Strorage](#block-storage-api)를 연결합니다.
 
 ##### Method, URL
 ```
-POST infrastructure/v1.0/appkeys/{appkey}/instances/{instanceId}/attachments
+POST /v1.0/appkeys/{appkey}/instances/{instanceId}/attachments
 X-Auth-Token: {tokenId}
 Content-Type: application/json;charset=UTF-8
 ```
@@ -588,7 +588,7 @@ Content-Type: application/json;charset=UTF-8
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| Volume ID | body | String | - | Instance에 연결할 Block Strorage 식별자. [Block Storage API](#block-storage-api) 참조 |
+| Volume ID | body | String | - | Instance에 연결할 [Block Strorage](#block-storage-api) 식별자. |
 
 ##### Response Body
 
@@ -750,8 +750,8 @@ Instance의 Flavor를 변경하여 Resize를 수행합니다.
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-|  Flavor ID | body | String | - | 변경할 Flavor 식별자 |
-      
+|  Flavor ID | body | String | - | 변경할 Flavor 식별자. [Flavor API](#flavor-api) 참조 |
+
 ##### Response Body
 
 ```json
@@ -869,7 +869,7 @@ Instance에 [Security Group](#security-group)을 추가 등록합니다.
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| Security Group Name | body | String | - | Instance에 추가할 Security Group 이름 |
+| Security Group Name | body | String | - | Instance에 추가할 [Security Group](#security-group-api) 이름 |
 
 ##### Response Body
 ```json
@@ -896,7 +896,7 @@ Instance에 등록되어 있는 [Security Group](#security-group)을 제거합�
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| Security Group Name | body | String | - | Instance에서 제거할 Security Group 이름 |
+| Security Group Name | body | String | - | Instance에서 제거할 [Security Group](#security-group-api) 이름 |
 
 ##### Response Body
 ```json
@@ -1131,6 +1131,19 @@ X-Auth-Token: {tokenId}
 
 ## Image
 ### Image API
+#### Image Status
+Image는 다음의 Status 값을 갖습니다.
+
+| Status | Description |
+| -- | -- |
+| queued | Image ID는 발급되었으나 아직 Image 데이터가 업로드 되지 못한 상태 |
+| saving | Image 데이터를 저장 중인 상태 |
+| active | Image 사용 가능 상태 |
+| killed | Image 데이터 업로드 중 에러 발생 |
+| deleted | Image에 대한 정보는 남아있으나 더 이상 가용하지 않은 상태 |
+| pending_delete | deleted 상태와 유사, Image가 회복 불가능한 상태 |
+| deactivated | Image 데이터가 사용 불가한 상태 |
+
 #### Image 목록 조회
 Image의 목록 및 상세 정보를 조회합니다.
 ##### Method, URL
@@ -1178,7 +1191,7 @@ X-Auth-Token: {tokenId}
 |  Name | In | Type | Description |
 |--|--|--|--|
 | Created At | Body | String  | Image 생성 시간. yyyy-mm-ddTHH:MM:ssZ의 형태. 예) 2017-05-16T02:17:50.166563 |
-| Disk Format | Body | String | Image의 Disk Format. <br \>"ami", "ari", "aki", "vhd", "vhdx", "vmdk", "raw", "qcow2", "vdi", "ploop", "iso" |
+| Disk Format | Body | String | Image의 Disk Format. <br />"ami", "ari", "aki", "vhd", "vhdx", "vmdk", "raw", "qcow2", "vdi", "ploop", "iso" |
 | Image ID | Body | String | Image 식별자 |
 | Is Public | Body | Boolean | 모든 Project에서 사용 가능한 공용 Image 여부 |
 | Min Disk | Body | Integer | Image 부팅에 필요한 최소 Disk 크기. GB |
@@ -1190,22 +1203,29 @@ X-Auth-Token: {tokenId}
 | Image Status | Body | String | Image의 상태 |
 | Updated At | Body | String | Image가 업데이트 된 시간. yyyy-mm-ddTHH:MM:ssZ의 형태. 예) 2017-05-16T02:17:50.166563 |
 
-#### Image Status
-Image는 다음의 Status 값을 갖습니다.
-
-| Status | Description |
-| -- | -- |
-| queued | Image ID는 발급되었으나 아직 Image 데이터가 업로드 되지 못한 상태 |
-| saving | Image 데이터를 저장 중인 상태 |
-| active | Image 사용 가능 상태 |
-| killed | Image 데이터 업로드 중 에러 발생 |
-| deleted | Image에 대한 정보는 남아있으나 더 이상 가용하지 않은 상태 |
-| pending_delete | deleted 상태와 유사, Image가 회복 불가능한 상태 |
-| deactivated | Image 데이터가 사용 불가한 상태 |
-
 ## Block Storage
 ### Block Storage API
-Block Stroage 생성/삭제 및 조회 기능을 제공합니다. Block Storage를 Instance에 연결/해제하는 기능은 Instance API를 통해 제공됩니다.
+Block Stroage 생성/삭제 및 조회 기능을 제공합니다. Block Storage를 Instance에 연결/해제하는 기능은 [Instance API](#instance-api)를 통해 제공됩니다.
+#### Block Storage Status
+Block Storage는 다음과 같은 Status 값을 갖습니다.
+
+| Status | Description |
+| --- | --- |
+| creating | 생성 중 |
+| available | Instance에 연결 가능한 상태 |
+| attaching | Instance에 연결 중 |
+| detaching | Instance에서 연결 해제 중 |
+| in-use | Instance에 연결되어 사용 중인 상태 |
+| deleting | 삭제 중 |
+| error | 생성 중 에러 발생 |
+| error_deleting | 삭제 중 에러 발생 |
+| backing-up | 백업 진행 중 |
+| restoring-backup | 백업 복구 중 |
+| error_backing-up | 백업 진행 중 에러 발생 |
+| error_restoring | 백업 복구 중 에러 발생 |
+| downloading | Image 다운로드 중 |
+| uploading | Image로 업로드 중 |
+
 #### Block Storage 목록 조회
 Block Storage 목록 및 정보를 조회합니다.
 
@@ -1430,32 +1450,12 @@ X-Auth-Token: {tokenId}
     }
 }
 ```
-#### Block Storage Status
-Block Storage는 다음과 같은 Status 값을 갖습니다.
-
-| Status | Description |
-| --- | --- |
-| creating | 생성 중 |
-| available | Instance에 연결 가능한 상태 |
-| attaching | Instance에 연결 중 |
-| detaching | Instance에서 연결 해제 중 |
-| in-use | Instance에 연결되어 사용 중인 상태 |
-| deleting | 삭제 중 |
-| error | 생성 중 에러 발생 |
-| error_deleting | 삭제 중 에러 발생 |
-| backing-up | 백업 진행 중 |
-| restoring-backup | 백업 복구 중 |
-| error_backing-up | 백업 진행 중 에러 발생 |
-| error_restoring | 백업 복구 중 에러 발생 |
-| downloading | Image 다운로드 중 |
-| uploading | Image로 업로드 중 |
-
 ## Security Group
 ### Security Group API
-Security Group 생성, 삭제, 조회 및 업데이트 기능을 제공합니다.
+Security Group 생성, 삭제, 조회 및 업데이트 기능을 제공합니다. Security Group을 Instance에 등록/해제하는 기능은 [Instance API](#instance-api)를 통해 제공됩니다.
 
 #### Security Group 목록 조회
-접근 가능한 Security Group들의 간략한 정보 목록을 조회합니다. "detail" Query Parameter를 통해 목록 내 Security Group들에 대한 상세한 정보를 조회할 수 있습니다.
+접근 가능한 Security Group들의 정보 목록을 조회합니다.
 
 ##### Method, URL
 ```
@@ -1466,7 +1466,6 @@ X-Auth-Token: {tokenId}
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
 | tokenId | Header | String | - | Token ID |
-| detail | query | Boolean | O | 각 security-group의 상세 정보 표시, default는 false |
 
 ##### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
@@ -1508,10 +1507,10 @@ X-Auth-Token: {tokenId}
 | Description | Body | String | Security Group 설명 |
 | Security Group ID | Body | String | Security Group 식별자 |
 | Name | Body | String | Security Group 이름 |
-| securityGroupRules | Body | List | Security Group Rule 목록, "detail=true" 일 때에만 표시.<br />Security Group Rule에 대한 자세한 사항은 [Security Group Rules API](#security-group-rules-api) 참조 |
+| securityGroupRules | Body | List | Security Group Rule 목록, [Security Group Rules API](#security-group-rules-api) 참조 |
 
 #### Security Group 조회
-지정한 Security Group의 간략한 정보를 조회합니다. "detail" Query Parameter를 통해 상세한 정보를 조회할 수 있습니다.
+지정한 Security Group의 정보를 조회합니다.
 
 ##### Method, URL
 ```
@@ -1523,7 +1522,6 @@ X-Auth-Token: {tokenId}
 | --- | --- | --- | --- | --- |
 | tokenId | Header | String | - | Token ID |
 | securityGroupId | Path | String | - | 조회할 security-group 식별자 |
-| detail | query | Boolean | O | 각 security-group의 상세 정보 표시, default는 false |
 
 ##### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
@@ -1537,7 +1535,7 @@ X-Auth-Token: {tokenId}
         "resultCode" :  0,
         "resultMessage" :  "SUCCESS"
     },
-    "securityGroups": {
+    "securityGroup": {
         "description": "{Description}",
         "id": "{Security Group ID}",
         "name": "{Name}",
@@ -1564,7 +1562,7 @@ X-Auth-Token: {tokenId}
 | Description | Body | String | Security Group 설명 |
 | Security Group ID | Body | String | Security Group 식별자 |
 | Name | Body | String |Security Group 이름 |
-| securityGroupRules | Body | List | Security Group Rule 목록, "detail=true" 일 때에만 표시.<br />Security Group Rule에 대한 자세한 사항은 [Security Group Rules API](#security-group-rules-api) 참조 |
+| securityGroupRules | Body | List | Security Group Rule 목록, [Security Group Rules API](#security-group-rules-api) 참조 |
 
 #### Security Group 생성
 새로운 Security Group을 생성합니다.
@@ -1604,24 +1602,24 @@ Content-Type: application/json;charset=UTF-8
         "resultMessage" :  "SUCCESS"
     },
     "securityGroup": {
-            "description": "{Description}",
-            "id": "{Security Group ID}",
-            "name": "{Name}",
-            "securityGroupRules": [
-                {
-                    "direction": "egress",
-                    "ethertype": "IPv4",
-                    "id": "3c0e45ff-adaf-4124-b083-bf390e5482ff",
-                    "portRangeMax": null,
-                    "portRangeMin": null,
-                    "protocol": null,
-                    "remoteGroupId": null,
-                    "remoteIpPrefix": null,
-                    "securityGroupId": "85cc3048-abc3-43cc-89b3-377341426ac5",
-                    "description": ""
-                }
-            ]
-        }
+        "description": "{Description}",
+        "id": "{Security Group ID}",
+        "name": "{Name}",
+        "securityGroupRules": [
+            {
+                "direction": "egress",
+                "ethertype": "IPv4",
+                "id": "3c0e45ff-adaf-4124-b083-bf390e5482ff",
+                "portRangeMax": null,
+                "portRangeMin": null,
+                "protocol": null,
+                "remoteGroupId": null,
+                "remoteIpPrefix": null,
+                "securityGroupId": "85cc3048-abc3-43cc-89b3-377341426ac5",
+                "description": ""
+            }
+        ]
+    }
 }
 ```
 
@@ -1792,7 +1790,7 @@ X-Auth-Token: {tokenId}
         "resultCode" :  0,
         "resultMessage" :  "SUCCESS"
     },
-    "securityGroupRules": {
+    "securityGroupRule": {
         "direction": "{Direction}",
         "ethertype": "{Ethernet Type}",
         "id": "{Rule ID}",
@@ -1807,7 +1805,7 @@ X-Auth-Token: {tokenId}
 ```
 
 |  Name | In | Type | Description |
-| --- | --- | --- | --- | 
+| --- | --- | --- | --- |
 | Direction | Body | String | Rule이 적용되는 방향, "ingress" or "egress" |
 | Ethernet Type | Body | String | "IPv4" or "IPv6" |
 | Rule ID | Body | String | Security Group Rule 식별자 |
@@ -1866,7 +1864,7 @@ Content-Type: application/json;charset=UTF-8
         "resultCode" :  0,
         "resultMessage" :  "SUCCESS"
     },
-    "securityGroupRules": {
+    "securityGroupRule": {
         "direction": "{Direction}",
         "ethertype": "{Ethernet Type}",
         "id": "{Rule ID}",
@@ -1920,6 +1918,17 @@ X-Auth-Token: {tokenId}
 
 ## Network
 ### Network API
+Instance에서 연결할 수 있는 Network 정보 조회 기능을 제공합니다.
+#### Network Status
+Network는 다음 Status 값을 같습니다.
+
+| Status | Description |
+| -- | -- |
+| BUILD | Network 구축 중 |
+| ACTIVE | Network 활성화 상태 |
+| DOWN | Network 비활성화 상태 |
+| ERROR | 에러 발생 |
+
 #### Network 목록 조회
 접근 가능한 Network의 목록을 조회합니다.
 
@@ -2015,16 +2024,6 @@ X-Auth-Token: {tokenId}
 | External Router Provided | Body | Boolean |Router를 통한 Floating IP 제공 가능 여부 |
 | Network Status | Body | String |네트워크 상태. ACTIVE, DOWN, BUILD or ERROR |
 | Subnet ID | Body | String | Subnet 식별자 |
-
-#### Network Status
-Network는 다음 Status 값을 같습니다.
-
-| Status | Description |
-| -- | -- |
-| BUILD | Network 구축 중 |
-| ACTIVE | Network 활성화 상태 |
-| DOWN | Network 비활성화 상태 |
-| ERROR | 에러 발생 |
 
 ### Subnet API
 #### Subnet 목록 조회
@@ -2165,7 +2164,7 @@ X-Auth-Token: {tokenId}
         "resultCode": 0,
         "resultMessage": "SUCCESS"
     },
-    "floatingips": {
+    "floatingip": {
         "id": "{Floating IP ID}",
         "floatingIpAddress": "{Floating IP Address}",
         "fixedIpAddress": "{Fixed IP Address}",
@@ -2603,6 +2602,7 @@ X-Auth-Token: {tokenId}
 | Weight | Body | Integer | Load Balancing 시 고려할 가중치, 높을 수록 더 많은 부하를 받음, 기본 값은 1 |
 
 #### Load Balancer 삭제
+지정한 Load Balancer를 삭제합니다.
 ##### Method, URL
 ```
 DELETE /v1.0/appkeys/{appkey}/loadbalancers/{loadbalancerId}
@@ -2991,7 +2991,7 @@ X-Auth-Token: {tokenId}
 
 ##### Method, URL
 ```
-GET infrastructure/v1.0/appkeys/{appkey}/loadbalancers/{loadbalancerId}/listeners/{listenerId}/members/{memberId}
+GET /v1.0/appkeys/{appkey}/loadbalancers/{loadbalancerId}/listeners/{listenerId}/members/{memberId}
 X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Optional | Description |
@@ -3018,7 +3018,6 @@ X-Auth-Token: {tokenId}
         "status": "{Status}",
         "weight": "{Weight}"
     }
-    
 }
 ```
 |  Name | In | Type | Description |
