@@ -15,9 +15,9 @@
 3. &lt;API Endpoint&gt; 대화창에서 원하는 API 비밀번호를 지정
 
 ## 기본 정보
-### API Endpoint
+### API Endpoint URL
 ```
-http://api-gw.cloud.toast.com/infra/v1.0/appkeys/{appkey}
+http://api-compute.cloud.toast.com/compute/v1.0/appkeys/{appkey}
 ```
 
 | Name | In | Type | Description |
@@ -46,7 +46,7 @@ API에 따라 "header" 외 추가적인 정보가 포함될 수 있습니다.
 | true | 0 | SUCCESS | 처리 성공. API에 따라 "header" 외 추가 정보 포함 |
 | false  | -1 | FAIL [: detail description] | 인증 모듈 연동 실패 또는 요청을 수행할 수 없는 상태인 경우. detail description 내용에 따라 조치 후 재시도 가능 |
 | false | -2 | UNKNOWN EXCEPTION | 예기치 못한 오류 발생. TOAST Cloud 담당자 문의 필요 |
-| false | -3 | Permission denied [: detail description] | 권한이 없는 사용자에 의한 요청. detail description 내용 참조 |
+| false | -3 | Permission denied [: detail description] | 권한이 없는 사용자, AppKey, 또는 Token ID에 의한 요청. detail description 내용 참조 |
 | false | -4 | Invalid parameters [: detail description] | API 호출 시 Request URL 또는 Body에 필요한 값이 없거나, 잘못된 형식의 값이 입력된 경우. detail description 내용에 따라 조치 후 재시도 가능 |
 | false | -5 | Nonexistent [: detail description] | 존재하지 않는 Resource에 접근한 경우. detail description 내용 참조 |
 | false | -6 | Failed to query internal db [: detail description] | Database Query에 실패한 경우. TOAST Cloud 담당자 문의 필요 |
@@ -56,6 +56,8 @@ API에 따라 "header" 외 추가적인 정보가 포함될 수 있습니다.
 | false | 11400~11499| Flavor API 관련 에러 메시지 | resultCode의 뒤 세자리는 HTTP Status Code이며, resultMessage 내용에 따라 조치 후 재시도 가능 |
 | false | 12400~12499| Availability Zone API 관련 에러 메시지 | resultCode의 뒤 세자리는 HTTP Status Code이며, resultMessage 내용에 따라 조치 후 재시도 가능 |
 | false | 13400~13499| Keypair API 관련 에러 메시지 | resultCode의 뒤 세자리는 HTTP Status Code이며, resultMessage 내용에 따라 조치 후 재시도 가능 |
+| false | 20001 | No available IP | 할당 가능한 IP가 없음. TOAST Cloud 담당자 문의 필요 |
+| false | 20004 | No accessible network | Network 조회 실패. 잘못된 Network ID로 조회, 또는 접근 가능한 Network가 없음. |
 | false | 20400~20499| Network API 관련 에러 메시지 | resultCode의 뒤 세자리는 HTTP Status Code이며, resultMessage 내용에 따라 조치 후 재시도 가능 |
 | false | 21400~21499| Subnet API 관련 에러 메시지 | resultCode의 뒤 세자리는 HTTP Status Code이며, resultMessage 내용에 따라 조치 후 재시도 가능 |
 | false | 22400~22499| Floating IP API 관련 에러 메시지 | resultCode의 뒤 세자리는 HTTP Status Code이며, resultMessage 내용에 따라 조치 후 재시도 가능 |
@@ -128,12 +130,12 @@ Content-Type: application/json;charset=UTF-8
 #### Token 정보 조회
 ##### Method, URL
 ```
-GET /v1.0/appkeys/{appkey}/tokens/{tokenId}
+GET /v1.0/appkeys/{appkey}/tokens?id={tokenId}
 ```
 
 |  Name | In | Type | Optional |Description |
 |--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
+| tokenId | Query | String | - | 조회할 Token ID |
 
 ##### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
@@ -165,7 +167,7 @@ GET /v1.0/appkeys/{appkey}/tokens/{tokenId}
 ```
 
 | Name | In | Type | Description |
-| -- | -- | -- | -- | 
+| -- | -- | -- | -- |
 | Token ID | Body | String | API 요청 시 HTTP 헤더(X-Auth-Token) 에 기재해야 하는 UUID |
 | Issued at | Body | String | 토큰 발급 시간. yyyy-mm-ddTHH:MM:ssZ의 형태. 예) 2017-05-16T02:17:50.166563 |
 | Expires | Body | String | 발급한 Token의 만료 시간. yyyy-mm-ddTHH:MM:ssZ의 형태. 예) 2017-05-16T03:17:50Z |
@@ -235,17 +237,18 @@ Instance는 생성, 변경, 삭제, 운영 중 다음과 같은 Status를 갖습
 | DELETING | Instance 삭제 중 |
 | ERROR | 오류 상태 |
 
-#### Instance 목록 간략 조회
-생성되어 있는 Instance들의 간략한 정보(ID, Name, Status)를 조회합니다.
+#### Instance 정보 간략 조회
+생성되어 있는 Instance의 간략한 정보(ID, Name, Status)를 조회합니다.
 ##### Method, URL
 ```
-GET /v1.0/appkeys/{appkey}/instances
+GET /v1.0/appkeys/{appkey}/instances?id={instanceId}
 X-Auth-Token: {tokenId}
 ```
 
 |  Name | In | Type | Optional |Description |
 |--|--|--|--|--|
 | tokenId | Header | String | - | Token ID |
+| instanceId | Query | String | O | 조회할 Instance 식별자. 기재하지 않을 경우 모든 Instance들의 간략 정보를 조회합니다. |
 
 ##### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
@@ -274,17 +277,18 @@ X-Auth-Token: {tokenId}
 | Instance Name | Body | String | Instance 이름 (Linux의 경우 최대 255자, Windows의 경우 최대 12자) |
 | Instance Status | Body | String | Instance의 상태 |
 
-#### Instance 목록 상세 조회
-생성되어 있는 모든 Instance들의 상세한 정보를 조회합니다.
+#### Instance 상세 조회
+Instance의 상세한 정보를 조회합니다.
 ##### Method, URL
 ```
-GET /v1.0/appkeys/{appkey}/instances/detail
+GET /v1.0/appkeys/{appkey}/instances-detail?id={instanceId}
 X-Auth-Token: {tokenId}
 ```
 
 |  Name | In | Type | Optional |Description |
 |--|--|--|--|--|
 | tokenId | Header | String | - | Token ID |
+| instanceId | Query | String | O | 조회할 Instance의 식별자. 생략 시 모든 Instance들의 상세 정보를 조회합니다. |
 
 ##### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
@@ -365,105 +369,6 @@ X-Auth-Token: {tokenId}
 | metadata | Body | Object | Instance에 설정할 사용자 metadata, "key": "value" 형태로 저장 |
 | PEM Key Name | Body | String | Instance에 등록할 Key-pair 이름 |
 | Root Volume Size | Body | Integer | Root Disk 크기, GB 단위 |
-| Attached Volume ID | Body | String | 추가 Block Storage 식별자 |
-| Attached Volume Name | Body | String | 추가 Block Storage 이름 |
-| Attached Volume Size | Body | Integer | 추가 Block Storage 크기, GB 단위 |
-| Security Group Name | Body | String | Instance에 등록된 Security Group의 이름 |
-| Launched Time | Body | String | Instance 최근 부팅 시각. yyyy-mm-ddTHH:MM:ssZ의 형태. 예) 2017-05-16T02:17:50.166563 |
-| Created Time | Body | String | Instance 생성 시각. yyyy-mm-ddTHH:MM:ssZ의 형태. 예) 2017-05-16T02:17:50.166563 |
-| Updated Time | Body | String | Instance 수정 시각. yyyy-mm-ddTHH:MM:ssZ의 형태. 예) 2017-05-16T02:17:50.166563 |
-
-#### Instance 단건 조회
-특정 Instance의 상세 정보를 조회합니다.
-
-##### Method, URL
-```
-GET /v1.0/appkeys/{appkey}/instances/{instanceId}
-X-Auth-Token: {tokenId}
-```
-
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| instanceId | Path | String | - | 정보를 조회 할 Instance의 식별자 |
-
-##### Request Body
-이 API는 Request Body를 필요로 하지 않습니다.
-
-##### Response Body
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    },
-    "instance":  {
-        "addresses": [
-            {
-                "macAddress": "{MAC Address}",
-                "ipAddress": "{IP Address}",
-                "version": "{IP Version}",
-                "floatingIpAddress": "{Floating IP Address}"
-            }
-        ],
-        "availabilityZone": "{Zone Name}",
-        "flavor": {
-            "id": "{Flavor ID}",
-            "name": "{Flavor Name}",
-            "cpu": "{Flavor CPU}",
-            "ram": "{Flavor RAM}"
-        },
-        "status": "{Status}",
-        "id": "{Instance ID}",
-        "name": "{Instance Name}",
-        "image": "{Image ID}",
-        "metadata": {
-            "key": "value"
-        },
-        "keyName": "{Key Name}",
-        "volumes": {
-            "root" : {
-                "size" : "{Volume Size}"
-            },
-            "attachments" : [
-                {
-                    "id" : "{Volume ID}",
-                    "name": "{Volume Name}",
-                    "size": "{Volume Size}"
-                }
-            ]
-        },
-        "securityGroups": [
-            {
-                "name": "default"
-            }
-        ],
-        "launchedAt": "{Launched Time}",
-        "createdAt": "{Created Time}",
-        "updateAt": "{Updated Time}"
-    }
-}
-```
-
-|  Name | In | Type | Description |
-|--|--|--|--|
-| MAC Address | Body | String | NIC의 MAC address |
-| IP Address | Body | String | NIC의 IP Address |
-| version | Body | Integer | IP Version. TOAST Cloud에서는 IP v4만 지원 |
-| Floating IP Address | Body | String | NIC에 할당된 Floatin IP Address |
-| Zone Name | Body | String | Availability Zone |
-| Flavor ID | Body | String | Flavor 식별자 |
-| Flavor Name | Body | String | Flavor name |
-| Flavor CPU | Body | Integer | CPU 갯수 |
-| Flavor RAM | Body | Integer | RAM 크기, MB 단위 |
-| Status | Body | String | Instance의 상태 |
-| Instance ID | Body | String | Instance 식별자 |
-| Instance Name | Body | String | Instance 이름 (Linux의 경우 최대 255자, Windows의 경우 최대 12자) |
-| Image ID | Body | String | Instance에 설치된 Image ID |
-| metadata | Body | Object | Instance에 설정할 사용자 metadata, "key": "value" 형태로 저장 |
-| PEM Key Name | Body | String | Instance에 등록할 Key-pair 이름 |
-| Root Volume Size | Body | Integer | Root Disk의 크기, GB 단위 |
 | Attached Volume ID | Body | String | 추가 Block Storage 식별자 |
 | Attached Volume Name | Body | String | 추가 Block Storage 이름 |
 | Attached Volume Size | Body | Integer | 추가 Block Storage 크기, GB 단위 |
@@ -553,14 +458,14 @@ Content-Type: application/json;charset=UTF-8
 특정 Instance를 삭제합니다.
 ##### Method, URL
 ```
-DELETE /v1.0/appkeys/{appkey}/instances/{instanceId}
+DELETE /v1.0/appkeys/{appkey}/instances?id={instanceId}
 X-Auth-Token: {tokenId}
 ```
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
 | tokenId | Header | String | - | Token ID |
-| instanceId | Path | String | - | 삭제할 Instance의 고유 ID |
+| instanceId | Query | String | - | 삭제할 Instance 식별자 |
 
 #### Block Storage 연결
 Instance에 추가적인 [Block Strorage](#block-storage-api)를 연결합니다.
@@ -575,7 +480,7 @@ Content-Type: application/json;charset=UTF-8
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
 | tokenId | Header | String | - | Token ID |
-| instanceId | Path | String | - | Block Strorage를 연결 할 Instance의 고유 ID |
+| instanceId | Path | String | - | Block Strorage를 연결 할 Instance의 식별자 |
 
 ##### Request Body
 ```json
@@ -618,7 +523,7 @@ Instance에 연결되어 있는 추가적인 Block Strorage의 연결을 해제�
 
 ##### Method, URL
 ```
-DELETE /v1.0/appkeys/{appkey}/instances/{instanceId}/attachments/{volumeId}
+DELETE /v1.0/appkeys/{appkey}/instances/{instanceId}/attachments?volumeId={volumeId}
 X-Auth-Token: {tokenId}
 ```
 
@@ -665,16 +570,30 @@ Content-Type: application/json;charset=UTF-8
 | tokenId | Header | String| - | Token ID |
 | instanceId | Path | String | - | Action을 수행할 Instance의 식별자 |
 
+##### Request Body Template
+```json
+{
+	"action": "Action Name",
+    "parameters" : {
+    	"key": "value"
+    }
+}
+```
+|  Name | In | Type | Optional | Description |
+|--|--|--|--|--|
+| Action Name | Body | String | - | Instance에서 실행할 Action명 |
+| parameters | Body | Object| O | Action 수행에 필요한 Parameter. Action에 따라 필요한 값을 기재하거나 없을 수 있습니다. |
+
 #### Instance 시작
 정지(STOP) 상태의 Instance를 시작합니다.
 ##### Request Body
 ```json
 {
-    "os-start" : null
+    "action" : "start"
 }
 ```
-      
-##### Response Body
+
+##### Response Body 
 ```json
 {
     "header": {
@@ -690,10 +609,10 @@ Content-Type: application/json;charset=UTF-8
 ##### Request Body
 ```json
 {
-    "os-stop" : null
+    "action" : "stop"
 }
 ```
-     
+
 ##### Response Body
 
 ```json
@@ -715,7 +634,8 @@ Instance를 리부팅합니다. 다음과 같은 리부팅 방식을 지정할 �
 
 ```json
 {
-    "reboot":{
+	"action" : "reboot",
+    "parameters":{
         "type":"{Reboot Type}"
     }
 }
@@ -724,9 +644,8 @@ Instance를 리부팅합니다. 다음과 같은 리부팅 방식을 지정할 �
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
 | Reboot Type | body | String | - | Reboot 타입. "HARD" or "SOFT" |
-      
-##### Response Body
 
+##### Response Body
 ```json
 {
     "header": {
@@ -742,7 +661,8 @@ Instance의 Flavor를 변경하여 Resize를 수행합니다.
 ##### Request Body
 ```json
 {
-    "resize":{
+	"action": "resize",
+    "parameters":{
         "flavor":"{Flavor ID}"
     }
 }
@@ -753,7 +673,6 @@ Instance의 Flavor를 변경하여 Resize를 수행합니다.
 |  Flavor ID | body | String | - | 변경할 Flavor 식별자. [Flavor API](#flavor-api) 참조 |
 
 ##### Response Body
-
 ```json
 {
     "header": {
@@ -769,7 +688,8 @@ Instance의 Flavor를 변경하여 Resize를 수행합니다.
 ##### Request Body
 ```json
 {
-    "uploadImage":{
+    "action" : "uploadImage",
+    "parameters" : {
         "name": "{Image Name}"
     }
 }
@@ -805,7 +725,8 @@ Instance의 Flavor를 변경하여 Resize를 수행합니다.
 ##### Request Body
 ```json
 {
-    "addFloatingIp" : {
+    "action": "addFloatingIp",
+    "parameters": {
         "address": "{Floating IP Address}",
         "ipAddress": "{IP Address of the instance}"
     }
@@ -818,6 +739,7 @@ Instance의 Flavor를 변경하여 Resize를 수행합니다.
 | IP Address of the instance | body | String | - | Floating IP를 연결할 Instance의 IP 주소 |
 
 ##### Response Body
+
 ```json
 {
     "header": {
@@ -832,9 +754,11 @@ Instance의 Flavor를 변경하여 Resize를 수행합니다.
 Instance에 연결되어 있는 [Floating IP](#floating-ip-api)의 연결을 해제합니다.
 
 ##### Request Body
+
 ```json
 {
-    "removeFloatingIp" : {
+	"action": "removeFloatingIp",
+    "parameters" : {
         "address": "{Floating IP Address}"
     }
 }
@@ -845,6 +769,7 @@ Instance에 연결되어 있는 [Floating IP](#floating-ip-api)의 연결을 해
 | Floating IP Address | body | String | - | 연결을 해제할 Floating IP 주소 |
 
 ##### Response Body
+
 ```json
 {
     "header": {
@@ -861,7 +786,8 @@ Instance에 [Security Group](#security-group)을 추가 등록합니다.
 ##### Request Body
 ```json
 {
-    "addSecurityGroup": {
+	"action": "addSecurityGroup",
+    "parameters": {
         "name": "{Security Group Name}"
     }
 }
@@ -872,6 +798,7 @@ Instance에 [Security Group](#security-group)을 추가 등록합니다.
 | Security Group Name | body | String | - | Instance에 추가할 [Security Group](#security-group-api) 이름 |
 
 ##### Response Body
+
 ```json
 {
     "header": {
@@ -888,7 +815,8 @@ Instance에 등록되어 있는 [Security Group](#security-group)을 제거합�
 ##### Request Body
 ```json
 {
-    "removeSecurityGroup": {
+	"action": "removeSecurityGroup",
+    "parameters": {
         "name": "{Security Group Name}"
     }
 }
@@ -966,17 +894,18 @@ X-Auth-Token: {tokenID}
 
 ### Keypair API
 Instance 접근에 필요한 Keypair에 대한 생성, 삭제, 조회 기능을 제공합니다.
-#### Keypair 목록 조회
-계정에 속한 Keypair 목록을 조회합니다.
+#### Keypair 조회
+계정에 속한 Keypair를 조회합니다.
 ##### Method, URL
 ```
-GET /v1.0/appkeys/{appkey}/keypairs
+GET /v1.0/appkeys/{appkey}/keypairs?name={keypairName}
 X-Auth-Token: {tokenId}
 ```
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
 | tokenId | Header | String | - |Token ID |
+| keypairName | Query | String | O | 조회할 Keypair 이름. 기재하지 않을 경우 모든 keypair 정보를 조회합니다. |
 
 ##### Request Body
 이 API는 request body를 필요로 하지 않습니다.
@@ -994,7 +923,8 @@ X-Auth-Token: {tokenId}
         {
             "name": "{Keypair Name}",
             "publicKey": "{Public Key Value}",
-            "fingerprint": "{Fingerprint Value}"
+            "fingerprint": "{Fingerprint Value}",
+        	"createdAt": "{Created At}"
         }
     ]
 }
@@ -1005,47 +935,7 @@ X-Auth-Token: {tokenId}
 | Keypair Name | Body | String | Keypair 이름 |
 | Public Key Value | Body | String | Keypair의 Public Key 값 |
 | Fingerprint Value | Body | String | Fingerprint 값 |
-
-#### Keypair 조회
-지정한 Keypair의 정보를 조회합니다.
-##### Method, URL
-```
-GET /v1.0/appkeys/{appkey}/keypairs/{keypairName}
-X-Auth-Token: {tokenId}
-```
-
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| keypairName | Path | String | - | 조회할 Keypair 이름
-
-##### Request Body
-이 API는 request body를 필요로 하지 않습니다.
-
-##### Response Body
-
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    },
-    "keypair": {
-        "name": "{Keypair Name}",
-        "publicKey": "{Public Key Value}",
-        "fingerprint": "{Fingerprint Value}",
-        "createdAt": "{Created At}"
-    }
-}
-```
-
-|  Name | In | Type | Description |
-|--|--|--|--|
-| Keypair Name | Body | String | Keypair 이름 |
-| Public Key Value | Body | String | Keypair의 Public Key 값 |
-| Fingerprint Value | Body | String | Fingerprint 값 |
-| Created At | Body | DateTime | Keypair 생성 시간 |
+| Created At | Body | DateTime | Keypair 생성 시간. "keypairName" 을 지정한 단건 조회 시에만 노출됩니다. |
 
 #### Keypair 생성 or 업로드
 Keypair를 생성하거나, ssh로 생성한 Keypair를 업로드 합니다.
@@ -1106,14 +996,14 @@ Content-Type: application/json;charset=UTF-8
 지정한 Keypair를 삭제합니다.
 ##### Method, URL
 ```
-DELETE /v1.0/appkeys/{appkey}/keypairs/{keypairName}
+DELETE /v1.0/appkeys/{appkey}/keypairs?name={keypairName}
 X-Auth-Token: {tokenId}
 ```
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
 | tokenId | Header | String | - | Token ID |
-| keypairName | Path | String | - | 삭제할 Keypair 이름 |
+| keypairName | Query | String | - | 삭제할 Keypair 이름 |
 
 ##### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
@@ -1226,18 +1116,19 @@ Block Storage는 다음과 같은 Status 값을 갖습니다.
 | downloading | Image 다운로드 중 |
 | uploading | Image로 업로드 중 |
 
-#### Block Storage 목록 조회
-Block Storage 목록 및 정보를 조회합니다.
+#### Block Storage 조회
+Block Storage의 정보를 조회합니다.
 
 ##### Method, URL
 ```
-GET /v1.0/appkeys/{appkey}/volumes
+GET /v1.0/appkeys/{appkey}/volumes?id={volumeId}
 X-Auth-Token: {tokenId}
 ```
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
 | tokenId | Header | String | - | Token ID |
+| volumeId | Query | String | O | 조회할 Block Storage ID. 기재하지 않을 경우 모든 Block Storage의 정보를 조회합니다. |
 
 ##### Request Body
 이 API는 request body를 필요로 하지 않습니다.
@@ -1269,7 +1160,7 @@ X-Auth-Token: {tokenId}
             "name": "{Block Storage Name}",
             "size": "{Size}",
             "status": "{Status}"
-        }    
+        }
     ]
 }
 ```
@@ -1286,67 +1177,7 @@ X-Auth-Token: {tokenId}
 | Metadata Key / Value | Body | Boolean | Block Storage에 기재된 Meta data |
 | Block Storage Name | Body | String | Block Storage 이름 |
 | Size | Body | Integer | Block Storage 크기. GB |
-| Status | Body | String | Block Strage 상태 |
-
-#### Block Storage 조회
-특정 Block Storage의 정보를 조회합니다.
-##### Method, URL
-```
-GET /v1.0/appkeys/{appkey}/volumes/{volumeId}
-X-Auth-Token: {tokenId}
-```
-
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| volumeId | Path | String | - | 조회할 Volume ID |
-
-##### Request Body
-이 API는 request body를 필요로 하지 않습니다.
-
-##### Response Body
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    },
-    "volume": {
-        "attachments": [
-            {
-                "device": "{Device Name}",
-                "instanceId": "{Attached Instance ID}",
-                "attachmentId": "{Attachment ID}"
-            }
-        ],
-        "availabilityZone": "{Availability Zone Name}",
-        "createdAt": "Created At",
-        "description": "{Description}",
-        "id": "{Block Storage ID}",
-        "metadata": {
-            "Metadata Key": "{Metadata Value}"
-        },
-        "name": "{Block Storage Name}",
-        "size": "{Size}",
-        "status": "{Status}"
-    }
-}
-```
-
-|  Name | In | Type | Description |
-|--|--|--|--|
-| Device Name | Body | String  | Instance에 연결되어 있는 경우, Instance에서의 장치명. ex) "/dev/vdb" |
-| Attached Instance ID | Body | String | Instance에 연결되어 있는 경우, 연결된 Instance의 ID |
-| Attachment ID | Body | String | Instance에 연결되어 있는 경우, 연결 식별자 |
-| Availability Zone Name | Body | String | Block Storage가 위치한 Zone 이름 |
-| Created At | Body | String | Block Storage 생성 시간. yyyy-mm-ddTHH:MM:ssZ의 형태. 예) 2017-05-16T02:17:50.166563 |
-| Description | Body | String | Block Storage 설명 |
-| Block Storage ID | Body | String | Block Storage 식별자 |
-| Metadata Key / Value | Body | Boolean | Block Storage에 기재된 Meta data |
-| Block Storage Name | Body | String | Block Storage 이름 |
-| Size | Body | Integer | Block Storage 크기. GB |
-| Status | Body | String | Block Strage 상태 |
+| Status | Body | String | Block Storage 상태 |
 
 #### Block Storage 생성
 새로운 Block Storage를 생성합니다.
@@ -1422,20 +1253,20 @@ Content-Type: application/json;charset=UTF-8
 | Metadata Key / Value | Body | Boolean | Block Storage에 기재된 Meta data |
 | Block Storage Name | Body | String | Block Storage 이름 |
 | Size | Body | Integer | Block Storage 크기. GB |
-| Status | Body | String | Block Strage 상태 |
+| Status | Body | String | Block Storage 상태 |
 
 #### Block Storage 삭제
 Block Storage를 삭제합니다. Status가 "available" "in-use" "error" "error_restoring" 인 Block Storage만 삭제할 수 있습니다.
 
 ##### Method, URL
 ```
-DELETE /v1.0/appkeys/{appkey}/volumes/{volumeId}
+DELETE /v1.0/appkeys/{appkey}/volumes?id={volumeId}
 X-Auth-Token: {tokenId}
 ```
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
 | tokenId | Header | String | - | Token ID |
-| volumeId | Path | String | - | 삭제할 Volume ID |
+| volumeId | Query | String | - | 삭제할 Block Storage ID |
 
 ##### Request Body
 이 API는 request body를 필요로 하지 않습니다.
@@ -1455,17 +1286,18 @@ X-Auth-Token: {tokenId}
 Security Group 생성, 삭제, 조회 및 업데이트 기능을 제공합니다. Security Group을 Instance에 등록/해제하는 기능은 [Instance API](#instance-api)를 통해 제공됩니다.
 
 #### Security Group 목록 조회
-접근 가능한 Security Group들의 정보 목록을 조회합니다.
+접근 가능한 Security Group의 정보를 조회합니다.
 
 ##### Method, URL
 ```
-GET /v1.0/appkeys/{appkey}/security-groups
+GET /v1.0/appkeys/{appkey}/security-groups?id={securityGroupId}
 X-Auth-Token: {tokenId}
 ```
 
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
 | tokenId | Header | String | - | Token ID |
+| securityGroupId | Query | String | O | 조회할 Security Group 식별자. 기재하지 않을 경우 모든 Security Group의 정보를 조회합니다. |
 
 ##### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
@@ -1507,61 +1339,6 @@ X-Auth-Token: {tokenId}
 | Description | Body | String | Security Group 설명 |
 | Security Group ID | Body | String | Security Group 식별자 |
 | Name | Body | String | Security Group 이름 |
-| securityGroupRules | Body | List | Security Group Rule 목록, [Security Group Rules API](#security-group-rules-api) 참조 |
-
-#### Security Group 조회
-지정한 Security Group의 정보를 조회합니다.
-
-##### Method, URL
-```
-GET /v1.0/appkeys/{appkey}/security-groups/{securityGroupId}
-X-Auth-Token: {tokenId}
-```
-
-|  Name | In | Type | Optional | Description |
-| --- | --- | --- | --- | --- |
-| tokenId | Header | String | - | Token ID |
-| securityGroupId | Path | String | - | 조회할 security-group 식별자 |
-
-##### Request Body
-이 API는 Request Body를 필요로 하지 않습니다.
-
-##### Response Body
-
-```json
-{
-    "header" : {
-        "isSuccessful" :  true,
-        "resultCode" :  0,
-        "resultMessage" :  "SUCCESS"
-    },
-    "securityGroup": {
-        "description": "{Description}",
-        "id": "{Security Group ID}",
-        "name": "{Name}",
-        "securityGroupRules": [
-            {
-                "direction": "egress",
-                "ethertype": "IPv4",
-                "id": "3c0e45ff-adaf-4124-b083-bf390e5482ff",
-                "portRangeMax": null,
-                "portRangeMin": null,
-                "protocol": null,
-                "remoteGroupId": null,
-                "remoteIpPrefix": null,
-                "securityGroupId": "85cc3048-abc3-43cc-89b3-377341426ac5",
-                "description": ""
-            }
-        ]
-    }
-}
-```
-
-|  Name | In | Type | Description |
-|--|--|--|--|
-| Description | Body | String | Security Group 설명 |
-| Security Group ID | Body | String | Security Group 식별자 |
-| Name | Body | String |Security Group 이름 |
 | securityGroupRules | Body | List | Security Group Rule 목록, [Security Group Rules API](#security-group-rules-api) 참조 |
 
 #### Security Group 생성
@@ -1687,14 +1464,14 @@ Content-Type: application/json;charset=UTF-8
 
 ##### Method, URL
 ```
-DELETE /v1.0/appkeys/{appkey}/security-groups/{securityGroupId}
+DELETE /v1.0/appkeys/{appkey}/security-groups?id={securityGroupId}
 X-Auth-Token: {tokenId}
 ```
 
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
 | tokenId | Header | String | - | Token ID |
-| securityGroupId | Path | String | - | 삭제할 Security Group의 식별자 |
+| securityGroupId | Query | String | - | 삭제할 Security Group의 식별자 |
 
 ##### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
@@ -1714,17 +1491,18 @@ X-Auth-Token: {tokenId}
 ### Security Group Rules API
 Security Group Rule 추가/삭제 및 조회 기능을 제공합니다.
 
-#### Security Group Rule 목록 조회
-접근 가능한 모든 Security Group Rule 목록을 조회합니다.
+#### Security Group Rule 조회
+접근 가능한 모든 Security Group Rule의 정보를 조회합니다.
 ##### Method, URL
 ```
-GET /v1.0/appkeys/{appkey}/security-group-rules
+GET /v1.0/appkeys/{appkey}/security-group-rules?id={securityGroupRuleId}
 X-Auth-Token: {tokenId}
 ```
 
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
 | tokenId | Header | String | - | Token ID |
+| securityGroupRuleId | Query | String | O | 조회할 Security Group Rule 식별자. 기재하지 않을 경우 모든 Security Group Rule의 정보를 조회합니다. |
 
 ##### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
@@ -1762,57 +1540,6 @@ X-Auth-Token: {tokenId}
 | Port Range MIN | Body | Integer | Rule이 적용되는 최소 Port 번호 |
 | Protocol | Body | String | IP Protocol. "icmp" "tcp" "udp" or "null" |
 | Remote Group ID | Body | String | Rule이 적용되는 Remote Group의 식별자 |
-| Remote IP Prefix | Body | String | Rule이 적용되는 Remote IP의 Prefix |
-| Security Group ID | Body | String | Rule이 적용되는 Security Group의 식별자 |
-
-#### Security Group Rule 조회
-지정한 Security Group Rule의 정보를 조회합니다.
-
-##### Method, URL
-```
-GET /v1.0/appkeys/{appkey}/security-group-rules/{securityGroupRuleId}
-X-Auth-Token: {tokenId}
-```
-
-|  Name | In | Type | Optional | Description |
-| --- | --- | --- | --- | --- |
-| tokenId | Header | String | - | Token ID |
-| securityGroupRuleId | Path | String | - | 조회할 Security Group Rule 식별자 |
-
-##### Request Body
-이 API는 Request Body를 필요로 하지 않습니다.
-
-##### Response Body
-```json
-{
-    "header" : {
-        "isSuccessful" :  true,
-        "resultCode" :  0,
-        "resultMessage" :  "SUCCESS"
-    },
-    "securityGroupRule": {
-        "direction": "{Direction}",
-        "ethertype": "{Ethernet Type}",
-        "id": "{Rule ID}",
-        "portRangeMax": "{Port Range MAX}",
-        "portRangeMin": "{Port Range MIN}",
-        "protocol": "{Protocol}",
-        "remoteGroupId": "{Remote Group ID}",
-        "remoteIpPrefix": "{Remote IP Prefix}",
-        "securityGroupId": "{Security Group ID}"
-    }
-}
-```
-
-|  Name | In | Type | Description |
-| --- | --- | --- | --- |
-| Direction | Body | String | Rule이 적용되는 방향, "ingress" or "egress" |
-| Ethernet Type | Body | String | "IPv4" or "IPv6" |
-| Rule ID | Body | String | Security Group Rule 식별자 |
-| Port Range MAX | Body | Integer | Rule이 적용되는 최대 Port 번호 |
-| Port Range MIN | Body | Integer | Rule이 적용되는 최소 Port 번호 |
-| Protocol | Body | String | IP Protocol. "icmp" "tcp" "udp" or "null" |
-| Remote Group ID | Body | String | Rule이 적용되는 Remote Security Group의 식별자 |
 | Remote IP Prefix | Body | String | Rule이 적용되는 Remote IP의 Prefix |
 | Security Group ID | Body | String | Rule이 적용되는 Security Group의 식별자 |
 
@@ -1894,14 +1621,14 @@ Content-Type: application/json;charset=UTF-8
 지정한 Security Group Rule을 삭제합니다.
 ##### Method, URL
 ```
-DELETE /v1.0/appkeys/{appkey}/security-group-rules/{securityGroupRuelsId}
+DELETE /v1.0/appkeys/{appkey}/security-group-rules?id={securityGroupRuelsId}
 X-Auth-Token: {tokenId}
 ```
 
 |  Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
 | tokenId | Header | String | - | Token ID |
-
+| securityGroupRuleId | Query | String | - | 삭제할 Security Group Rule 식별자 |
 ##### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
 
@@ -1929,18 +1656,19 @@ Network는 다음 Status 값을 같습니다.
 | DOWN | Network 비활성화 상태 |
 | ERROR | 에러 발생 |
 
-#### Network 목록 조회
-접근 가능한 Network의 목록을 조회합니다.
+#### Network 조회
+접근 가능한 Network의 정보를 조회합니다.
 
 ##### Method, URL
 ```
-GET /v1.0/appkeys/{appkey}/networks
+GET /v1.0/appkeys/{appkey}/networks?id={networkId}
 X-Auth-Token: {tokenId}
 ```
 
 |  Name | In | Type | Optional |Description |
 | -- | -- | -- | -- | -- |
 | tokenId | Header | String | - | Token ID |
+| networkId | Query | String | O | 조회할 Network 식별자. 기재하지 않을 경우 모든 Network의 정보를 조회합니다. |
 
 ##### Request Body
 이 Request는 Body를 필요로 하지 않습니다.
@@ -1977,57 +1705,9 @@ X-Auth-Token: {tokenId}
 | Network Status | Body | String | 네트워크 상태. ACTIVE, DOWN, BUILD or ERROR |
 | Subnet ID | Body | String | Subnet 식별자 |
 
-#### Network 조회
-지정한 Network의 정보를 조회합니다.
-
-##### Method, URL
-```
-GET /v1.0/appkeys/{appkey}/networks/{networkId}
-X-Auth-Token: {tokenId}
-```
-
-|  Name | In | Type | Optional |Description |
-| -- | -- | -- | -- | -- |
-| tokenId | Header | String | - | Token ID |
-| networkId | Path | String | - | 조회할 Network 식별자 |
-
-##### Request Body
-이 API는 request body를 필요로 하지 않습니다.
-
-##### Response Body
-
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    },
-    "network": {
-        "adminStateUp": "{Administrative State}",
-        "id": "{Network ID}",
-        "name": "{Network Name}",
-        "router:external": "{External Router Provided}",
-        "status": "{Network Status}",
-        "subnets": [
-            "{Subnet ID}"
-        ]
-    }
-}
-```
-
-|  Name | In | Type | Description |
-|--|--|--|--|
-| Administrative State | Body | Boolean |네트워크 관리 상태. true: up, false: down |
-| Network ID | Body | String | 네트워크 식별자 |
-| Network Name | Body | String | 네트워크 이름 |
-| External Router Provided | Body | Boolean |Router를 통한 Floating IP 제공 가능 여부 |
-| Network Status | Body | String |네트워크 상태. ACTIVE, DOWN, BUILD or ERROR |
-| Subnet ID | Body | String | Subnet 식별자 |
-
 ### Subnet API
-#### Subnet 목록 조회
-접근 가능한 Subnet의 목록을 조회합니다.
+#### Subnet 조회
+접근 가능한 Subnet의 정보를 조회합니다.
 ##### Method, URL
 ```
 GET /v1.0/appkeys/{appkey}/subnets
@@ -2093,17 +1773,18 @@ Floating IP는 다음 상태값을 갖습니다.
 | DOWN | Floating IP가 연결되어 있지 않은 상태 |
 | ERROR | 에러 발생 |
 
-#### Floating IP 목록 조회
-사용 가능한, 또는 사용 중인 Floating IP 목록을 조회합니다.
+#### Floating IP 조회
+사용 가능한, 또는 사용 중인 Floating IP 정보를 조회합니다.
 ##### Method, URL
 ```
-GET /v1.0/appkeys/{appkey}/floatingips
+GET /v1.0/appkeys/{appkey}/floating-ips?id={floatingIpId}
 X-Auth-Token: {tokenId}
 ```
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
 | tokenId | Header | String | - |Token ID |
+| floatingIpId | Query | String | O | 조회할 Floating IP의 식별자. 기재하지 않을 경우 모든 Floating IP의 정보를 조회합니다. |
 
 ##### Request Body
 이 API는 Request Body를 필요로 하지 않습니다.
@@ -2140,57 +1821,11 @@ X-Auth-Token: {tokenId}
 | Router ID | Body | String | Floating IP의 Router 식별자. Status가 "ACTIVE" 인 경우에만 표시 |
 | Status | Body | String | Floating IP의 상태 |
 
-#### Floating IP 조회
-지정한 Floating IP의 정보를 조회합니다.
-##### Method, URL
-```
-GET /v1.0/appkeys/{appkey}/floatingips/{floatingIpId}
-X-Auth-Token: {tokenId}
-```
-
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| floatingIpId | Path | String | - | 조회할 Floating IP 식별자 |
-
-##### Request Body
-이 API는 Request Body를 필요로 하지 않습니다.
-
-##### Response Body
-```json
-{
-	"header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    },
-    "floatingip": {
-        "id": "{Floating IP ID}",
-        "floatingIpAddress": "{Floating IP Address}",
-        "fixedIpAddress": "{Fixed IP Address}",
-        "floatingNetworkId": "{Floating IP Network ID}",
-        "portId": "{Port ID}",
-        "routerId": "{Router ID}",
-        "status": "{Status}"
-    }
-}
-```
-
-|  Name | In | Type | Description |
-|--|--|--|--|
-| Floating IP ID | Body | String | Floating IP 식별자 |
-| Floating IP Address | Body | String | Floating IP 주소 |
-| Fixed IP Address | Body | String | Floating IP가 연결된 Instance NIC의 IP 주소. Status가 "ACTIVE" 인 경우에만 표시 |
-| Floating Network ID | Body | String | Floating IP가 연결된 Network의 식별자 |
-| Port ID | Body | String | Floting IP가 연결된 Port의 식별자. Status가 "ACTIVE" 인 경우에만 표시 |
-| Router ID | Body | String | Floating IP의 Router 식별자. Status가 "ACTIVE" 인 경우에만 표시 |
-| Status | Body | String | Floating IP의 상태 |
-
 #### Floating IP 생성
 Floating IP를 생성합니다.
 ##### Method, URL
 ```
-POST /v1.0/appkeys/{appkey}/floatingips
+POST /v1.0/appkeys/{appkey}/floating-ips
 X-Auth-Token: {tokenId}
 ```
 
@@ -2229,14 +1864,14 @@ X-Auth-Token: {tokenId}
 지정한 Floating IP를 삭제합니다.
 ##### Method, URL
 ```
-DELETE /v1.0/appkeys/{appkey}/floatingips/{floatingIpId}
+DELETE /v1.0/appkeys/{appkey}/floating-ips?id={floatingIpId}
 X-Auth-Token: {tokenId}
 ```
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
 | tokenId | Header | String | - | Token ID |
-| floatingIpId | Path | String | - | 조회할 Floating IP 식별자 |
+| floatingIpId | Path | String | - | 삭제할 Floating IP 식별자 |
 
 ##### Request Body
 이 API는 request body를 필요로 하지 않습니다.
@@ -2250,849 +1885,5 @@ X-Auth-Token: {tokenId}
         "resultCode": 0,
         "resultMessage": "SUCCESS"
     }
-}
-```
-
-## Load Balancer
-### Load Balancer API
-Load Balance 생성, 삭제, 조회 기능을 제공합니다.
-#### Load Balancer 목록 조회
-##### Method, URL
-```
-GET /v1.0/appkeys/{appkey}/loadbalancers
-X-Auth-Token: {tokenId}
-```
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| detail | query | Boolean | O | 상세 조회 여부 |
-| fields | query | Enum | O | 조회할 field 목록, "id", "name", "subnet_id", "provider", "listeners" |
-
-##### Request Body
-이 API는 Request Body를 필요로 하지 않습니다.
-
-##### Response Body
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    },
-    "loadbalancers": [
-        {
-            "id": "{Load Balancer ID}",
-            "name": "{Load Balancer Name}",
-            "description": "{Load Balancer Description}",
-            "subnetId": "{Subnet ID}",
-            "provider": "{Provider}",
-            "ipAddress": "{Fixed IP Address}",
-            "floatingIpAddress": "{Floating IP Address}",
-            "listeners": [
-                {
-                    "id": "{Listener ID}",
-                    "algorithm": "{Algorithm}",
-                    "connectionLimit": "{Connection limit}",
-                    "protocol": "{Protocol}",
-                    "certificate": "{Certificate ID}",
-                    "servicePort": "{Service Port}",
-                    "memberPort": "{Member Port}",
-                    "sessionPersistence": {
-                        "type": "{Session persistence type}",
-                        "cookieName": "{Cookie name for Session persistence}" 
-                    },
-                    "healthMonitor": {
-                        "port": "{health check port}",
-                        "period": "{health check period}",
-                        "timeout": "{timeout}",
-                        "protocol": "{health check protocol}",
-                        "maxRetries": "{max retries}",
-                        "url": "{URL}",
-                        "httpCode": "{HTTP Code}"
-                    },
-                    "members": [
-                        {
-                            "id": "{Member ID}",
-                            "serverId": "{Server ID}",
-                            "weight": "{Weight}"
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-}
-```
-|  Name | In | Type | Description |
-| --- | --- | --- | --- |
-| Load Balancer ID | Body | String | Load Balancer 식별자 |
-| Load Balancer Name | Body | String | Load Balancer 이름 |
-| Load Balancer Description | Body | String | Load Balancer 설명 |
-| Subnet ID | Body | String | Load Balancer가 연결될 Subnet ID |
-| Provider | Body | String | Load Balancer 종류. 현재는 "haproxy"만 지원 |
-| Fixed IP Address | Body | String | Load Balancer의 Fixed IP 주소 |
-| Floating IP Address | Body | String | Load Balancer에 연결된 Floating IP 주소 |
-| Listener ID | Body | String | Listener 식별자 |
-| Algorithm | Body | String | Load Balancing Algorithm, "ROUND_ROBIN"/"LEAST_CONNECTION"/"SOURCE_IP" 중 택 1 |
-| Connection limit | Body | Integer | Listener에서 허용할 최대 connection 수 |
-| Protocol | Body | String | Listener가 처리할 traffic의 type, "TCP"/"HTTP"/"HTTPS"/"TERMINATED_HTTPS" 중 택1 |
-| Certificate ID | Body | string | protocol로 "TERMINATED_HTTPS"를 선택한 경우 사용할 인증서 식별자 |
-| Service Port | Body | Integer | Listener의 port |
-| Member Port | Body | Integer | Listener에 연결될 Server의 port |
-| Session persistence type | Body | String | Client의 session 유지 방법, "SOURCE_IP", "HTTP_COOKIE", "APP_COOKIE" 중 택1 |
-| Cookie name for Session persistence | Body | String | Session persistence type을 "APP_COOKIE"로 지정했을 때, client를 구분하기 위한 cookie 이름 |
-| health check port | Body | Integer | Health check를 시도할 Server의 port |
-| health check period | Body | Integer | Health check 주기 |
-| timeout | Body | Integer | Health check 응답 대기 시간 |
-| max retries | Body | Integer | Health check 최대 재시도 횟수 |
-| health check protocol | Body | String | Health check 방법. "TCP"/"HTTP"/"HTTPS" 중 택 1 |
-| URL | Body | String | Type을 "HTTP"/"HTTPS"로 지정했을 때 사용할 URL 경로 |
-| HTTP Code | Body | Integer | Type을 "HTTP"/"HTTPS"로 지정했을 때, 성공으로 간주할 HTTP 상태 코드 |
-| Member ID | Body | String | Member 식별자 |
-| Server ID | Body | String | Instance 식별자 |
-| Weight | Body | Integer | Load Balancing 시 고려할 가중치, 높을 수록 더 많은 부하를 받음, 기본 값은 1 |
-
-#### Load Balancer 단건 조회
-특정 Load Balancer의 정보를 조회합니다.
-##### Method, URL
-```
-GET /v1.0/appkeys/{appkey}/loadbalancers/{loadbalancerId}
-X-Auth-Token: {tokenId}
-```
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| loadbalancerId | Path | String | - | 조회할 Load Balancer 식별자 |
-| detail | query | Boolean | O | 상세 조회 여부 |
-| fields | query | Enum | O | 조회할 field 목록, "id", "name", "subnet_id", "provider", "listeners" |
-
-##### Request Body
-이 API는 Request Body를 필요로 하지 않습니다.
-
-##### Response Body
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    },
-    "loadbalancer": {
-        "id": "{Load Balancer ID}",
-        "name": "{Load Balancer Name}",
-        "subnet_id": "{Subnet ID}",
-        "provider": "{Provider}",
-        "listeners": [
-            {
-                "id": "{Listenern ID}",
-                "algorithm": "{Algorithm}",
-                "connection_limit": "{Connection limit}",
-                "protocol": "{Protocol}",
-                "certificate": "{Certificate ID}",
-                "servicePort": "{Service Port}",
-                "memberPort": "{Member Port}",
-                "sessionPersistence": {
-                    "type": "{Session persistence type}",
-                    "cookieName": "{Cookie name for Session persistence}" 
-                },
-                "healthMonitor": {
-                    "port": "{health check port}",
-                    "period": "{health check period}",
-                    "timeout": "{timeout}",
-                    "protocol": "{health check protocol}",
-                    "maxRetries": "{max retries}",
-                    "url": "{URL}",
-                    "http_code": "{HTTP Code}"
-                },
-                "members": [
-                    {
-                        "id": "{Member ID}",
-                        "serverId": "{Server ID}",
-                        "weight": "{Weight}"
-                    }
-                ]
-            }
-        ]
-    }
-}
-```
-|  Name | In | Type | Description |
-| --- | --- | --- | --- |
-| Load Balancer ID | Body | String | Load Balancer 식별자 |
-| Load Balancer Name | Body | String | Load Balancer 이름 |
-| Load Balancer Description | Body | String | Load Balancer 설명 |
-| Subnet ID | Body | String | Load Balancer가 연결될 Subnet ID |
-| Provider | Body | String | Load Balancer 종류. 현재는 "haproxy"만 지원 |
-| Fixed IP Address | Body | String | Load Balancer의 Fixed IP 주소 |
-| Floating IP Address | Body | String | Load Balancer에 연결된 Floating IP 주소 |
-| Listener ID | Body | String | Listener 식별자 |
-| Algorithm | Body | String | Load Balancing Algorithm, "ROUND_ROBIN"/"LEAST_CONNECTION"/"SOURCE_IP" 중 택 1 |
-| Connection limit | Body | Integer | Listener에서 허용할 최대 connection 수 |
-| Protocol | Body | String | Listener가 처리할 traffic의 type, "TCP"/"HTTP"/"HTTPS"/"TERMINATED_HTTPS" 중 택1 |
-| Certificate ID | Body | string | protocol로 "TERMINATED_HTTPS"를 선택한 경우 사용할 인증서 식별자 |
-| Service Port | Body | Integer | Listener의 port |
-| Member Port | Body | Integer | Listener에 연결될 Server의 port |
-| Session persistence type | Body | String | Client의 session 유지 방법, "SOURCE_IP", "HTTP_COOKIE", "APP_COOKIE" 중 택1 |
-| Cookie name for Session persistence | Body | String | Session persistence type을 "APP_COOKIE"로 지정했을 때, client를 구분하기 위한 cookie 이름 |
-| health check port | Body | Integer | Health check를 시도할 Server의 port |
-| health check period | Body | Integer | Health check 주기 |
-| timeout | Body | Integer | Health check 응답 대기 시간 |
-| max retries | Body | Integer | Health check 최대 재시도 횟수 |
-| health check protocol | Body | String | Health check 방법. "TCP"/"HTTP"/"HTTPS" 중 택 1 |
-| URL | Body | String | Type을 "HTTP"/"HTTPS"로 지정했을 때 사용할 URL 경로 |
-| HTTP Code | Body | Integer | Type을 "HTTP"/"HTTPS"로 지정했을 때, 성공으로 간주할 HTTP 상태 코드 |
-| Member ID | Body | String | Member 식별자 |
-| Server ID | Body | String | Instance 식별자 |
-| Weight | Body | Integer | Load Balancing 시 고려할 가중치, 높을 수록 더 많은 부하를 받음, 기본 값은 1 |
-
-#### Load Balancer 생성
-새로운 Load Balancer를 생성합니다.
-##### Method, URL
-```
-POST /v1.0/appkeys/{appkey}/loadbalancers
-X-Auth-Token: {tokenId}
-```
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-
-##### Request Body
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    },
-    "loadbalancer": {
-        "name": "{Load Balancer Name}",
-        "description": "{Load Balancer Description}"
-        "subnetId": "{Subnet ID}",
-        "provider": "{Provider}",
-        "listeners": [
-            {
-                "algorithm": "{Algorithm}",
-                "connectionLimit": "{Connection limit}",
-                "protocol": "{Protocol}",
-                "certificate": "{Certificate ID}",
-                "servicePort": "{Service Port}",
-                "memberPort": "{Member Port}",
-                "sessionPersistence": {
-                    "type": "{Session persistence type}",
-                    "cookieName": "{Cookie name for Session persistence}" 
-                },
-                "healthMonitor": {
-                    "port": "{health check port}",
-                    "period": "{health check period}",
-                    "timeout": "{timeout}",
-                    "protocol": "{health check protocol}",
-                    "maxRetries": "{max retries}",
-                    "url": "{URL}",
-                    "httpCode": "{HTTP Code}"
-                },
-                "members": [
-                    {
-                        "serverId": "{Server ID}",
-                        "weight": "{Weight}"
-                    }
-                ]
-            }
-        ]
-    }
-}
-```
-|  Name | In | Type | Optional | Description |
-| --- | --- | --- | --- | --- |
-| Load Balancer Name | Body | String | O |Load Balancer 이름 |
-| Load Balancer Description | Body | String | O |Load Balancer 설명 |
-| Subnet ID | Body | String | - | Load Balancer가 연결될 Subnet ID |
-| Provider | Body | String | O | Load Balancer 종류. 현재는 "haproxy"만 지원 |
-| Algorithm | Body | String | - | Load Balancing Algorithm, "ROUND_ROBIN"/"LEAST_CONNECTION"/"SOURCE_IP" 중 택 1 |
-| Connection limit | Body | Integer | O | Listener에서 허용할 최대 connection 수 |
-| Protocol | Body | String | - | Listener가 처리할 traffic의 type, "TCP"/"HTTP"/"HTTPS"/"TERMINATED_HTTPS" 중 택1 |
-| Certificate ID | Body | string | O | protocol로 "TERMINATED_HTTPS"를 선택한 경우 사용할 인증서 식별자 |
-| Service Port | Body | Integer | - | Listener의 port |
-| Member Port | Body | Integer | O | Listener에 연결될 Intance의 port |
-| Session persistence type | Body | - | String | Client의 session 유지 방법, "SOURCE_IP", "HTTP_COOKIE", "APP_COOKIE" 중 택1 |
-| Cookie name for Session persistence | Body | String | O | Session persistence type을 "APP_COOKIE"로 지정했을 때, client를 구분하기 위한 cookie 이름 |
-| health check port | Body | Integer | O | Health check를 시도할 Server의 port |
-| health check period | Body | Integer | - | Health check 주기 |
-| timeout | Body | Integer | - | Health check 응답 대기 시간 |
-| max retries | Body | Integer | - | Health check 최대 재시도 횟수 |
-| health check protocol | Body | String | - | Health check 방법. "TCP"/"HTTP"/"HTTPS" 중 택 1 |
-| URL | Body | String | - | Type을 "HTTP"/"HTTPS"로 지정했을 때 사용할 URL 경로 |
-| HTTP Code | Body | Integer | - | Type을 "HTTP"/"HTTPS"로 지정했을 때, 성공으로 간주할 HTTP 상태 코드, 기본값 200 |
-| Server ID | Body | String | - | Instance 식별자 |
-| Weight | Body | Integer | - | Load Balancing 시 고려할 가중치, 높을 수록 더 많은 부하를 받음, 기본 값은 1 |
-
-##### Response Body
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    },
-    "loadbalancer": {
-        "id": "{Load Balancer ID}",
-        "name": "{Load Balancer Name}",
-        "subnet_id": "{Subnet ID}",
-        "provider": "{Provider}",
-        "listeners": [
-            {
-                "id": "{Listenern ID}",
-                "algorithm": "{Algorithm}",
-                "connection_limit": "{Connection limit}",
-                "protocol": "{Protocol}",
-                "certificate": "{Certificate ID}",
-                "servicePort": "{Service Port}",
-                "memberPort": "{Member Port}",
-                "sessionPersistence": {
-                    "type": "{Session persistence type}",
-                    "cookieName": "{Cookie name for Session persistence}" 
-                },
-                "healthMonitor": {
-                    "port": "{health check port}",
-                    "period": "{health check period}",
-                    "timeout": "{timeout}",
-                    "protocol": "{health check protocol}",
-                    "maxRetries": "{max retries}",
-                    "url": "{URL}",
-                    "http_code": "{HTTP Code}"
-                },
-                "members": [
-                    {
-                        "id": "{Member ID}",
-                        "serverId": "{Server ID}",
-                        "weight": "{Weight}"
-                    }
-                ]
-            }
-        ]
-    }
-}
-```
-|  Name | In | Type | Description |
-| --- | --- | --- | --- |
-| Load Balancer ID | Body | String | Load Balancer 식별자 |
-| Load Balancer Name | Body | String | Load Balancer 이름 |
-| Load Balancer Description | Body | String | Load Balancer 설명 |
-| Subnet ID | Body | String | Load Balancer가 연결될 Subnet ID |
-| Provider | Body | String | Load Balancer 종류. 현재는 "haproxy"만 지원 |
-| Fixed IP Address | Body | String | Load Balancer의 Fixed IP 주소 |
-| Floating IP Address | Body | String | Load Balancer에 연결된 Floating IP 주소 |
-| Listener ID | Body | String | Listener 식별자 |
-| Algorithm | Body | String | Load Balancing Algorithm, "ROUND_ROBIN"/"LEAST_CONNECTION"/"SOURCE_IP" 중 택 1 |
-| Connection limit | Body | Integer | Listener에서 허용할 최대 connection 수 |
-| Protocol | Body | String | Listener가 처리할 traffic의 type, "TCP"/"HTTP"/"HTTPS"/"TERMINATED_HTTPS" 중 택1 |
-| Certificate ID | Body | string | protocol로 "TERMINATED_HTTPS"를 선택한 경우 사용할 인증서 식별자 |
-| Service Port | Body | Integer | Listener의 port |
-| Member Port | Body | Integer | Listener에 연결될 Server의 port |
-| Session persistence type | Body | String | Client의 session 유지 방법, "SOURCE_IP", "HTTP_COOKIE", "APP_COOKIE" 중 택1 |
-| Cookie name for Session persistence | Body | String | Session persistence type을 "APP_COOKIE"로 지정했을 때, client를 구분하기 위한 cookie 이름 |
-| health check port | Body | Integer | Health check를 시도할 Server의 port |
-| health check period | Body | Integer | Health check 주기 |
-| timeout | Body | Integer | Health check 응답 대기 시간 |
-| max retries | Body | Integer | Health check 최대 재시도 횟수 |
-| health check protocol | Body | String | Health check 방법. "TCP"/"HTTP"/"HTTPS" 중 택 1 |
-| URL | Body | String | Type을 "HTTP"/"HTTPS"로 지정했을 때 사용할 URL 경로 |
-| HTTP Code | Body | Integer | Type을 "HTTP"/"HTTPS"로 지정했을 때, 성공으로 간주할 HTTP 상태 코드 |
-| Member ID | Body | String | Member 식별자 |
-| Server ID | Body | String | Instance 식별자 |
-| Weight | Body | Integer | Load Balancing 시 고려할 가중치, 높을 수록 더 많은 부하를 받음, 기본 값은 1 |
-
-#### Load Balancer 삭제
-지정한 Load Balancer를 삭제합니다.
-##### Method, URL
-```
-DELETE /v1.0/appkeys/{appkey}/loadbalancers/{loadbalancerId}
-X-Auth-Token: {tokenId}
-```
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| loadbalancerId | Path | String | - | 삭제할 Load Balancer 식별자 |
-
-##### Request Body
-이 API는 Request Body를 필요로 하지 않습니다.
-
-##### Response Body
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    }
-}
-```
-
-### Listener API
-Load Balancer 하위 Listener의 생성, 삭제, 조회 기능을 제공합니다.
-
-#### Listener 목록 조회
-Listener의 목록 및 정보를 조회합니다.
-##### Method, URL
-```
-GET /v1.0/appkeys/{appkey}/loadbalancers/{loadbalancerId}/listeners
-X-Auth-Token: {tokenId}
-```
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| loadbalancerId | Path | String | - | Listener 정보를 조회할 Load Balancer 식별자 |
-
-##### Request Body
-이 API는 Request Body를 필요로 하지 않습니다.
-
-##### Response Body
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    },
-    "listeners": [
-        {
-            "id": "{Listener ID}",
-            "algorithm": "{Algorithm}",
-            "connectionLimit": "{Connection Limit}",
-            "protocol": "{Protocol}",
-            "certificate": "{Certificate ID}",
-            "servicePort": "{Service Port}",
-            "memberPort": "{Member Port}",
-            "sessionPersistence": {
-                "type": "{Session Persistence Type}",
-                "cookieName": "{Cookie Name}"
-            },
-            "healthMonitor": {
-                "port": "{Health Check Port}",
-                "period": "{Period}",
-                "timeout": "{Timeout}",
-                "protocol": "{Protocol}",
-                "retries": "{Retries}",
-                "url": "{URL}",
-                "httpCode": "{HTTP Code}"
-            },
-            "members": [
-                {
-                    "id": "{Member ID}",
-                    "serverId": "{Server ID}",
-                    "weight": "{Weight}"
-                }
-            ]
-        }
-    ]
-}
-```
-|  Name | In | Type | Description |
-| --- | --- | --- | --- |
-| Listener ID | Body | String | Listener 식별자 |
-| Algorithm | Body | String | Load Balancing Algorithm, "ROUND_ROBIN"/"LEAST_CONNECTION"/"SOURCE_IP" 중 택 1 |
-| Connection limit | Body | Integer | Listener에서 허용할 최대 connection 수 |
-| Protocol | Body | String | Listener가 처리할 traffic의 type, "TCP"/"HTTP"/"HTTPS"/"TERMINATED_HTTPS" 중 택1 |
-| Certificate ID | Body | string | protocol로 "TERMINATED_HTTPS"를 선택한 경우 사용할 인증서 식별자 |
-| Service Port | Body | Integer | Listener의 port |
-| Member Port | Body | Integer | Listener에 연결될 Server의 port |
-| Session Persistence Type | Body | String | Client의 session 유지 방법, "SOURCE_IP", "HTTP_COOKIE", "APP_COOKIE" 중 택1 |
-| Cookie Name | Body | String | Session persistence type을 "APP_COOKIE"로 지정했을 때, client를 구분하기 위한 cookie 이름 |
-| health check port | Body | Integer | Health check를 시도할 Server의 port |
-| health check period | Body | Integer | Health check 주기 |
-| timeout | Body | Integer | Health check 응답 대기 시간 |
-| max retries | Body | Integer | Health check 최대 재시도 횟수 |
-| health check protocol | Body | String | Health check 방법. "TCP"/"HTTP"/"HTTPS" 중 택 1 |
-| URL | Body | String | Type을 "HTTP"/"HTTPS"로 지정했을 때 사용할 URL 경로 |
-| HTTP Code | Body | Integer | Type을 "HTTP"/"HTTPS"로 지정했을 때, 성공으로 간주할 HTTP 상태 코드 |
-| Member ID | Body | String | Member 식별자 |
-| Server ID | Body | String | Instance 식별자 |
-| Weight | Body | Integer | Load Balancing 시 고려할 가중치, 높을 수록 더 많은 부하를 받음, 기본 값은 1 |
-
-#### Listener 단건 조회
-특정 Listener의 정보를 조회합니다.
-```
-GET /v1.0/appkeys/{appkey}/loadbalancers/{loadbalancerId}/listeners/{listenerId}
-X-Auth-Token: {tokenId}
-```
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| loadbalancerId | Path | String | - | Listener 정보를 조회할 Load Balancer 식별자 |
-| listenerId | Path | String | - | 조회할 Listener 식별자 |
-
-##### Request Body
-이 API는 Request Body를 필요로 하지 않습니다.
-
-##### Response Body
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    },
-    "listener": {
-        "id": "{Listener ID}",
-        "algorithm": "{Algorithm}",
-        "connectionLimit": "{Connection Limit}",
-        "protocol": "{Protocol}",
-        "certificate": "{Certificate ID}",
-        "servicePort": "{Service Port}",
-        "memberPort": "{Member Port}",
-        "sessionPersistence": {
-            "type": "{Session Persistence Type}",
-            "cookieName": "{Cookie Name}"
-        },
-        "healthMonitor": {
-            "port": "{Health Check Port}",
-            "period": "{Period}",
-            "timeout": "{Timeout}",
-            "protocol": "{Protocol}",
-            "retries": "{Retries}",
-            "url": "{URL}",
-            "httpCode": "{HTTP Code}"
-        },
-        "members": [
-            {
-                "id": "{Member ID}",
-                "serverId": "{Server ID}",
-                "weight": "{Weight}"
-            }
-        ]
-    }
-}
-```
-|  Name | In | Type | Description |
-| --- | --- | --- | --- |
-| Listener ID | Body | String | Listener 식별자 |
-| Algorithm | Body | String | Load Balancing Algorithm, "ROUND_ROBIN"/"LEAST_CONNECTION"/"SOURCE_IP" 중 택 1 |
-| Connection limit | Body | Integer | Listener에서 허용할 최대 connection 수 |
-| Protocol | Body | String | Listener가 처리할 traffic의 type, "TCP"/"HTTP"/"HTTPS"/"TERMINATED_HTTPS" 중 택1 |
-| Certificate ID | Body | string | protocol로 "TERMINATED_HTTPS"를 선택한 경우 사용할 인증서 식별자 |
-| Service Port | Body | Integer | Listener의 port |
-| Member Port | Body | Integer | Listener에 연결될 Server의 port |
-| Session Persistence Type | Body | String | Client의 session 유지 방법, "SOURCE_IP", "HTTP_COOKIE", "APP_COOKIE" 중 택1 |
-| Cookie Name | Body | String | Session persistence type을 "APP_COOKIE"로 지정했을 때, client를 구분하기 위한 cookie 이름 |
-| health check port | Body | Integer | Health check를 시도할 Server의 port |
-| health check period | Body | Integer | Health check 주기 |
-| timeout | Body | Integer | Health check 응답 대기 시간 |
-| max retries | Body | Integer | Health check 최대 재시도 횟수 |
-| health check protocol | Body | String | Health check 방법. "TCP"/"HTTP"/"HTTPS" 중 택 1 |
-| URL | Body | String | Type을 "HTTP"/"HTTPS"로 지정했을 때 사용할 URL 경로 |
-| HTTP Code | Body | Integer | Type을 "HTTP"/"HTTPS"로 지정했을 때, 성공으로 간주할 HTTP 상태 코드 |
-| Member ID | Body | String | Member 식별자 |
-| Server ID | Body | String | Instance 식별자 |
-| Weight | Body | Integer | Load Balancing 시 고려할 가중치, 높을 수록 더 많은 부하를 받음, 기본 값은 1 |
-
-#### Listener 생성
-Load Balancer에 새로운 Listener를 추가합니다.
-
-##### Method, URL
-```
-POST /v1.0/appkeys/{appkey}/loadbalancers/{loadbalancerId}/listeners
-X-Auth-Token: {tokenId}
-```
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| loadbalancerId | Path | String | - | Listener 정보를 조회할 Load Balancer 식별자 |
-
-##### Request Body
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    },
-    "listener": {
-        "algorithm": "{Algorithm}",
-        "connectionLimit": "{Connection limit}",
-        "protocol": "{Protocol}",
-        "certificate": "{Certificate ID}",
-        "servicePort": "{Service Port}",
-        "memberPort": "{Member Port}",
-        "sessionPersistence": {
-            "type": "{Session Persistence Type}",
-            "cookieName": "{Cookie Name}" 
-        },
-        "health_monitor": {
-            "port": "{Health Check Port}",
-            "period": "{Health Check Period}",
-            "timeout": "{Timeout}",
-            "protocol": "{Health Check Protocol}",
-            "retries": "{Retries}",
-            "url": "{URL}",
-            "httpCode": "{HTTP Code}"
-        },
-        "members": [
-            {
-                "serverId": "{Server ID}",
-                "weight": "{Weight}"
-            }
-        ]
-    }
-}
-```
-|  Name | In | Type | Optional | Description |
-| --- | --- | --- | --- | --- |
-| Algorithm | Body | String | - | Load Balancing Algorithm, "ROUND_ROBIN"/"LEAST_CONNECTION"/"SOURCE_IP" 중 택 1 |
-| Connection limit | Body | Integer | O | Listener에서 허용할 최대 connection 수 |
-| Protocol | Body | String | - | Listener가 처리할 traffic의 type, "TCP"/"HTTP"/"HTTPS"/"TERMINATED_HTTPS" 중 택1 |
-| Certificate ID | Body | string | O | protocol로 "TERMINATED_HTTPS"를 선택한 경우 사용할 인증서 식별자 |
-| Service Port | Body | Integer | - | Listener의 port |
-| Member Port | Body | Integer | O | Listener에 연결될 Intance의 port |
-| Session Persistence Type | Body | - | String | Client의 session 유지 방법, "SOURCE_IP", "HTTP_COOKIE", "APP_COOKIE" 중 택1 |
-| Cookie Name | Body | String | O | Session persistence type을 "APP_COOKIE"로 지정했을 때, client를 구분하기 위한 cookie 이름 |
-| Health Check Port | Body | Integer | O | Health check를 시도할 Server의 port |
-| Health Check Period | Body | Integer | - | Health check 주기 |
-| Timeout | Body | Integer | - | Health check 응답 대기 시간 |
-| Health Check Protocol | Body | String | - | Health check 방법. "TCP"/"HTTP"/"HTTPS" 중 택 1 |
-| Retries | Body | Integer | - | Health check 최대 재시도 횟수 |
-| URL | Body | String | - | Type을 "HTTP"/"HTTPS"로 지정했을 때 사용할 URL 경로 |
-| HTTP Code | Body | Integer | - | Type을 "HTTP"/"HTTPS"로 지정했을 때, 성공으로 간주할 HTTP 상태 코드, 기본값 200 |
-| Server ID | Body | String | - | Instance 식별자 |
-| Weight | Body | Integer | - | Load Balancing 시 고려할 가중치, 높을 수록 더 많은 부하를 받음, 기본 값은 1 |
-
-##### Response Body
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    },
-    "listener": {
-        "id": "{Listener ID}",
-        "algorithm": "{Algorithm}",
-        "connectionLimit": "{Connection Limit}",
-        "protocol": "{Protocol}",
-        "certificate": "{Certificate ID}",
-        "servicePort": "{Service Port}",
-        "memberPort": "{Member Port}",
-        "sessionPersistence": {
-            "type": "{Session Persistence Type}",
-            "cookieName": "{Cookie Name}"
-        },
-        "healthMonitor": {
-            "port": "{Health Check Port}",
-            "period": "{Period}",
-            "timeout": "{Timeout}",
-            "protocol": "{Protocol}",
-            "retries": "{Retries}",
-            "url": "{URL}",
-            "httpCode": "{HTTP Code}"
-        },
-        "members": [
-            {
-                "id": "{Member ID}",
-                "serverId": "{Server ID}",
-                "weight": "{Weight}"
-            }
-        ]
-    }
-}
-```
-|  Name | In | Type | Description |
-| --- | --- | --- | --- |
-| Listener ID | Body | String | Listener 식별자 |
-| Algorithm | Body | String | Load Balancing Algorithm, "ROUND_ROBIN"/"LEAST_CONNECTION"/"SOURCE_IP" 중 택 1 |
-| Connection limit | Body | Integer | Listener에서 허용할 최대 connection 수 |
-| Protocol | Body | String | Listener가 처리할 traffic의 type, "TCP"/"HTTP"/"HTTPS"/"TERMINATED_HTTPS" 중 택1 |
-| Certificate ID | Body | string | protocol로 "TERMINATED_HTTPS"를 선택한 경우 사용할 인증서 식별자 |
-| Service Port | Body | Integer | Listener의 port |
-| Member Port | Body | Integer | Listener에 연결될 Server의 port |
-| Session Persistence Type | Body | String | Client의 session 유지 방법, "SOURCE_IP", "HTTP_COOKIE", "APP_COOKIE" 중 택1 |
-| Cookie Name | Body | String | Session persistence type을 "APP_COOKIE"로 지정했을 때, client를 구분하기 위한 cookie 이름 |
-| health check port | Body | Integer | Health check를 시도할 Server의 port |
-| health check period | Body | Integer | Health check 주기 |
-| timeout | Body | Integer | Health check 응답 대기 시간 |
-| max retries | Body | Integer | Health check 최대 재시도 횟수 |
-| health check protocol | Body | String | Health check 방법. "TCP"/"HTTP"/"HTTPS" 중 택 1 |
-| URL | Body | String | Type을 "HTTP"/"HTTPS"로 지정했을 때 사용할 URL 경로 |
-| HTTP Code | Body | Integer | Type을 "HTTP"/"HTTPS"로 지정했을 때, 성공으로 간주할 HTTP 상태 코드 |
-| Member ID | Body | String | Member 식별자 |
-| Server ID | Body | String | Instance 식별자 |
-| Weight | Body | Integer | Load Balancing 시 고려할 가중치, 높을 수록 더 많은 부하를 받음, 기본 값은 1 |
-
-#### Listener 삭제
-Load Balance의 Listener를 삭제합니다.
-##### Method, URL
-```
-DELETE /v1.0/appkeys/{appkey}/loadbalancers/{loadbalancerId}/listeners/{listenerId}
-X-Auth-Token: {tokenId}
-```
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| loadbalancerId | Path | String | - | Listener를 삭제할 Load Balancer 식별자 |
-| listenerId | Path | String | - | 삭제할 Listener 식별자 |
-
-##### Request Body
-이 API는 Request Body를 필요로 하지 않습니다.
-
-##### Response Body
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    }
-}
-```
-
-### Member API
-Listener의 Member를 추가, 삭제하고 정보를 조회합니다.
-
-#### Member 목록 조회
-Member 목록 및 정보를 조회합니다.
-##### Method, URL
-```
-GET /v1.0/appkeys/{appkey}/loadbalancers/{loadbalancerId}/listeners/{listenerId}
-X-Auth-Token: {tokenId}
-```
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| loadbalancerId | Path | String | - | Member를 조회할 Load Balancer 식별자 |
-| listenerId | Path | String | - | Member를 조회할 Listener 식별자 |
-
-##### Request Body
-이 API는 Request Body를 필요로 하지 않습니다.
-
-##### Response Body
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    },
-    "members": [
-        {
-            "id": "{Member ID}",
-            "serverId": "{Server ID}",
-            "status": "{Status}",
-            "weight": "{Weight}"
-        }
-    ]
-}
-```
-|  Name | In | Type | Description |
-| --- | --- | --- | --- |
-| Member ID | Body | String | Member 식별자 |
-| Server ID | Body | String | Instance 식별자 |
-| Status | Body | String | Server의 Health Check 상태, "online" or "offline" |
-| Weight | Body | Integer | Load Balancing 시 고려할 가중치, 높을 수록 더 많은 부하를 받음, 기본 값은 1 |
-
-#### Member 단건 조회
-특정 Member의 정보를 조회합니다.
-
-##### Method, URL
-```
-GET /v1.0/appkeys/{appkey}/loadbalancers/{loadbalancerId}/listeners/{listenerId}/members/{memberId}
-X-Auth-Token: {tokenId}
-```
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| loadbalancerId | Path | String | - | Member를 조회할 Load Balancer 식별자 |
-| listenerId | Path | String | - | Member를 조회할 Listener 식별자 |
-| memberId | Path | String | - | 조회할 Member 식별자 |
-
-##### Request Body
-이 API는 Request Body를 필요로 하지 않습니다.
-
-##### Response Body
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    },
-    "member": {
-        "id": "{Member ID}",
-        "serverId": "{Server ID}",
-        "status": "{Status}",
-        "weight": "{Weight}"
-    }
-}
-```
-|  Name | In | Type | Description |
-| --- | --- | --- | --- |
-| Member ID | Body | String | Member 식별자 |
-| Server ID | Body | String | Instance 식별자 |
-| Status | Body | String | Server의 Health Check 상태, "online" or "offline" |
-| Weight | Body | Integer | Load Balancing 시 고려할 가중치, 높을 수록 더 많은 부하를 받음, 기본 값은 1 |
-
-#### Member 생성
-Listener에 Member를 추가합니다.
-##### Method, URL
-```
-POST /v1.0/appkeys/{appkey}/loadbalancers/{loadbalancerId}/members
-X-Auth-Token: {tokenId}
-```
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| loadbalancerId | Path | String | - | Member를 조회할 Load Balancer 식별자 |
-| listenerId | Path | String | - | Member를 조회할 Listener 식별자 |
-
-##### Request Body
-```json
-{
-	"serverId" : "{Server ID}"
-}
-```
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| Server ID | Body | String | - | Member로 추가할 Instance 식별자 |
-
-##### Response Body
-```json
-{
-    "header": {
-        "isSuccessful": true,
-        "resultCode": 0,
-        "resultMessage": "SUCCESS"
-    },
-    "member": {
-        "id" :  "{Member ID}",
-        "serverId" :  "{Server ID}"
-    }
-}
-```
-|  Name | In | Type | Description |
-| --- | --- | --- | --- |
-| Member ID | Body | String | Member 식별자 |
-| Server ID | Body | String | Instance 식별자 |
-
-#### Member 삭제
-Listener의 특정 Member를 삭제합니다.
-##### Method, URL
-```
-DELETE /v1.0/appkeys/{appkey}/loadbalancers/{loadbalancerId}/members/{memberId}
-X-Auth-Token: {tokenId}
-```
-|  Name | In | Type | Optional | Description |
-|--|--|--|--|--|
-| tokenId | Header | String | - | Token ID |
-| loadbalancerId | Path | String | - | Member를 조회할 Load Balancer 식별자 |
-| listenerId | Path | String | - | Member를 조회할 Listener 식별자 |
-| memberId | Path | String | - | 조회할 Member 식별자 |
-
-##### Request Body
-이 API는 Request Body를 필요로 하지 않습니다.
-
-##### Response Body
-```json
-{
-	"header" : {
-		"isSuccessful" :  true,
-		"resultCode" :  0,
-		"resultMessage" :  "SUCCESS"
-	}
 }
 ```
