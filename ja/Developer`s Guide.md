@@ -17,7 +17,7 @@
 ## 기본 정보
 ### API Endpoint URL
 ```
-http://api-compute.cloud.toast.com/compute/v1.0/appkeys/{appkey}
+https://api-compute.cloud.toast.com/compute/v1.0/appkeys/{appkey}
 ```
 
 | Name | In | Type | Description |
