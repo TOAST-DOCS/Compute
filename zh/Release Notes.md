@@ -1,5 +1,19 @@
 ## Infrastructure > Compute & Network > Release Notes
 
+### 2017.09.21
+
+#### 기능 추가
+* Public API 추가
+    * Object Storage에 이어 Compute&Network 상품을 API를 이용해 관리할 수 있습니다.
+    * 현재 제한적인 기능만 이용할 수 있으며, 추후 API 추가를 통해 기능이 확장될 예정입니다.
+    * 지원되는 API는 Developer Guide를 참고하시기 바랍니다.
+
+#### 버그 수정
+* Keypair를 지정하지 않고 Instance를 생성할 수 있었던 버그가 수정되었습니다.
+* Member 권한 제한
+    * Project에 Admin 권한이 없는 사용자가 security group을 수정할 수 없도록 수정되었습니다.
+    * Project에 Admin 권한이 없는 사용자에게는 Network 메뉴가 노출되지 않도록 수정되었습니다.
+
 ### 2017.08.24
 
 #### 기능 추가
