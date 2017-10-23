@@ -1,5 +1,7 @@
 ## Infrastructure > Compute & Network > Release Notes
 
+### 2017.09.21
+
 #### 기능 추가
 * Public API 추가
     * Object Storage에 이어 Compute&Network 상품을 API를 이용해 관리할 수 있습니다.
