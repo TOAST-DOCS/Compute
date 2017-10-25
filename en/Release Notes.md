@@ -1,5 +1,10 @@
 ## Infrastructure > Compute & Network > Release Notes
 
+### 2017.10.26
+
+#### 버그 수정
+* Loadbalancer 생성시 인증서가 등록되지 않는 버그가 수정되었습니다.
+
 ### 2017.09.21
 
 #### 기능 추가
