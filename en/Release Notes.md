@@ -1,5 +1,10 @@
 ## Infrastructure > Compute & Network > Release Notes
 
+### 2017.11.23
+
+#### 버그 수정
+* Load Balancer 생성시 리스너의 연결 제한값이 잘못 표기되는 현상을 수정하였습니다.
+
 ### 2017.10.26
 
 #### 버그 수정
