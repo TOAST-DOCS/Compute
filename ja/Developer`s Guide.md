@@ -64,7 +64,7 @@ API에 따라 "header" 외 추가적인 정보가 포함될 수 있습니다.
 | false | 23400~23499| Load Balancer API 관련 에러 메시지 | resultCode의 뒤 세자리는 HTTP Status Code이며, resultMessage 내용에 따라 조치 후 재시도 가능 |
 | false | 24400~24499| Security Group API 관련 에러 메시지 | resultCode의 뒤 세자리는 HTTP Status Code이며, resultMessage 내용에 따라 조치 후 재시도 가능 |
 | false | 30400~30499| Image API 관련 에러 메시지 | resultCode의 뒤 세자리는 HTTP Status Code이며, resultMessage 내용에 따라 조치 후 재시도 가능 |
-| false | 40400~40499| Volume API 관련 에러 메시지 | resultCode의 뒤 세자리는 HTTP Status Code이며, resultMessage 내용에 따라 조치 후 재시도 가능 |
+| false | 40400~40499| Block Storage API 관련 에러 메시지 | resultCode의 뒤 세자리는 HTTP Status Code이며, resultMessage 내용에 따라 조치 후 재시도 가능 |
 | false | 50400~50499| Token API 관련 에러 메시지 | resultCode의 뒤 세자리는 HTTP Status Code이며, resultMessage 내용에 따라 조치 후 재시도 가능 |
 
 ## Token
@@ -274,7 +274,7 @@ X-Auth-Token: {tokenId}
 |  Name | In | Type | Description |
 |--|--|--|--|
 | Instance ID | Body | String | Instance 식별자 |
-| Instance Name | Body | String | Instance 이름 (Linux의 경우 최대 255자, Windows의 경우 최대 12자) |
+| Instance Name | Body | String | Instance 이름 |
 | Instance Status | Body | String | Instance의 상태 |
 
 #### Instance 상세 조회
@@ -323,7 +323,7 @@ X-Auth-Token: {tokenId}
             "name": "{Instance Name}",
             "image": "{Image ID}",
             "metadata": {
-                "key": "value"
+                "{key}": "{value}"
             },
             "keyName": "{PEM Key Name}",
             "volumes": {
@@ -364,7 +364,7 @@ X-Auth-Token: {tokenId}
 | Flavor RAM | Body | Integer | RAM 크기, MB 단위 |
 | Status | Body | String | Instance의 상태 |
 | Instance ID | Body | String | Instance 식별자 |
-| Instance Name | Body | String | Instance 이름 (Linux의 경우 최대 255자, Windows의 경우 최대 12자) |
+| Instance Name | Body | String | Instance 이름 |
 | Image ID | Body | String | Instance에 설치된 Image ID |
 | metadata | Body | Object | Instance에 설정할 사용자 metadata, "key": "value" 형태로 저장 |
 | PEM Key Name | Body | String | Instance에 등록할 Key-pair 이름 |
@@ -406,11 +406,9 @@ Content-Type: application/json;charset=UTF-8
         "availabilityZone": "{Availability Zone}",
         "keyName": "{Key Name}",
         "count": "{Count}",
-        "volumes": [
-        	{
-            	"size": "{Volume Size}"
-        	}
-        ],
+        "volume": {
+            "size": "{Volume Size}"
+        },
         "securityGroups": [
         	{
             	"name": "{Security Group Name}"
@@ -422,15 +420,24 @@ Content-Type: application/json;charset=UTF-8
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| Instance Name | Body | String | - | Instance 이름 (Linux의 경우 최대 255자, Windows의 경우 최대 12자) |
+| Instance Name | Body | String | - | Instance 이름 (Linux의 경우 최대 20자, Windows의 경우 최대 12자, 영문자와 숫자, '-', '.' 만 가능) |
 | Image ID | Body | String | - | Instance에 설치할 Image 식별자. [Image API](#image-api) 참조 |
 | Flavor ID | Body | String | - | Instance의 Flavor 식별자. [Flavor API](#flavor-api) 참조|
 | Network ID | Body | String | - | Instance가 연결될 Network 식별자. [Network API](#network-api) 참조|
 | Availability Zone | Body | String | - | Instance가 생성될 Availability Zone 이름. [Availability Zone API](#availability-zone-api) 참조 |
 | Key Name | Body | String | - | Instance에 등록할 Key-pair 이름. [Keypair API](#keypair-api) 참조|
-| Count | Body | Integer | - | 동시 생성할 Instance의 대수, 최대 10대로 제한 |
-| Volume Size | Body | Integer | - | Instance의 Root Disk 크기, 생성 가능한 크기는 Flavor 및 설치할 Image 따라 정해짐<br /> - 최소값 : Flavor의 "minVolumeSize" 와 Image의 "minDisk" 값 중 큰 값<br /> - 최대값 : Flavor의 "maxVolumeSize" 값 |
+| Count | Body | Integer | O | 동시 생성할 Instance의 대수, 1 ~ 10 범위. 생략 시 1대 생성 |
+| Volume Size | Body | Integer | O | Instance의 Root Disk 크기, [Instance Volume Size](#Instance Volume Size) 참조 |
 | Security Group Name | Body | String | - | Instance에 등록할 Security Group 이름 |
+
+###### Instance Volume Size
+* **"volumeSize" 파라미터 값을 갖는 Flavor(u2.\* / i2.\*) 로 Instance 생성 시**
+	* "instance.volume.size" 파라미터를 생략해야 합니다.
+	* Flavor에 설정된 고정 Volume Size 크기의 Root Disk가 생성됩니다.
+
+* **"volumeSize" 파라미터 값을 갖지 않는 Flavor로 Instance 생성 시**
+	* "instance.volume.size" 파라미터가 반드시 기재되어야 합니다.
+	* **사용할 Image의 "minDisk" 값 ~ 1000의 범위 내에서 10 단위**로 설정되어야 하며, 설정된 크기의 Root Disk가 생성됩니다.
 
 ##### Response Body
 ```json
@@ -451,7 +458,7 @@ Content-Type: application/json;charset=UTF-8
 | Name | In | Type | Description |
 |--|--|--|--|
 | Instance ID | body | String |생성된 Instance 식별자 |
-| Instance Name | body | String | Instance 이름 (Linux의 경우 최대 255자, Windows의 경우 최대 12자) |
+| Instance Name | body | String | Instance 이름 |
 | Instance Status | Body | String | Instance의 상태 |
 
 #### Instance 삭제
@@ -573,9 +580,9 @@ Content-Type: application/json;charset=UTF-8
 ##### Request Body Template
 ```json
 {
-	"action": "Action Name",
+	"action": "{Action Name}",
     "parameters" : {
-    	"key": "value"
+    	"{key}": "{value}"
     }
 }
 ```
@@ -593,7 +600,7 @@ Content-Type: application/json;charset=UTF-8
 }
 ```
 
-##### Response Body 
+##### Response Body
 ```json
 {
     "header": {
@@ -685,6 +692,7 @@ Instance의 Flavor를 변경하여 Resize를 수행합니다.
 
 #### Image 생성
 지정한 Instance로 부터 Image를 생성합니다. 생성된 Image는 [Image API](#image-api)를 통해 조회할 수 있습니다.
+Image 생성 대상이 되는 Instance는 STOP 상태여야 합니다.
 ##### Request Body
 ```json
 {
@@ -697,7 +705,7 @@ Instance의 Flavor를 변경하여 Resize를 수행합니다.
 
 |  Name | In | Type | Optional | Description |
 |--|--|--|--|--|
-| ImageName | body | String | - | 생성할 Image 이름 |
+| Image Name | body | String | - | 생성할 Image 이름 |
 
 ##### Response Body
 ```json
@@ -867,8 +875,7 @@ X-Auth-Token: {tokenID}
             "disabled": "{Disabled}",
             "ephemeral": "{Ephermeral}",
             "type": "{Type}",
-            "minVolumeSize": "{Min Volume Size}",
-            "maxVolumeSize": "{Max Volume Size}",
+            "volumeSize": "{Volume Size}",
             "id": "{Flavor ID}",
             "name": "{Flavor Name}",
             "isPublic": "{Is Public}",
@@ -884,8 +891,7 @@ X-Auth-Token: {tokenID}
 | Disabled | Body | Boolean | Flavor 비활성화 여부 |
 | Ephermeral | Body | Integer | 임시 디스크 사이즈, GB |
 | Type | Body | String | Flavor 최적화 특성에 따라 구분되는 Type값. "general, "compute", "memory" |
-| Min Volume Size | Body | Integer | Root Disk로 만들 수 있는 최소 Disk 사이즈. GB |
-| Max Volume Size | Body | Integer | Root Disk로 만들 수 있는 최대 Disk 사이즈. GB |
+| Volume Size | Body | Integer | Instance 생성 시 만들어지는 Root Disk 사이즈(GB). <br \>Root Disk가 고정된 크기로 만들어지는 Flavor(u2.\* / i2.\*)의 경우에만 해당 Parameter가 전달됩니다. |
 | Flavor ID | Body | String | Flavor 식별자 |
 | Flavor Name | Body | String | Flavor 이름 |
 | Is Public | Body | Boolean | 모든 Project에서 사용 가능한 공용 Flavor 여부 |
@@ -965,7 +971,7 @@ Content-Type: application/json;charset=UTF-8
 | Name | In | Type | Optional | Description |
 | --- | --- | --- | --- | --- |
 | Keypair Name | Body | String | - | Keypair 이름 |
-| Public Key Value | Body | String | O | 업로드할 Public ssh key. 생략 시 새로운 keypair가 만들어지며, 만들어진 Keypair의 Private Key가 Response로 함께 전달됩니다. |
+| Public Key Value | Body | String | O | 업로드할 Public ssh key. 생략 시 새로운 keypair가 만들어지며, 만들어진 Keypair의 Private Key가 Response에 함께 전달됩니다.|
 
 ##### Response Body
 
@@ -989,8 +995,13 @@ Content-Type: application/json;charset=UTF-8
 | --- | --- | --- | --- |
 | Keypair Name | Body | String | Keypair 이름 |
 | Public Key Value | Body | String | Keypair의 Public ssh key |
-| Private Key Value | Body | String | Keypair의 Private ssh key. Keypair 업로드(Request에 "publicKey" 항목이 포함)인 경우 생략됩니다. |
-| Public Key Value | Body | String | Fingerprint 값 |
+| Private Key Value | Body | String | Keypair의 Private ssh key. Keypair 업로드(Request에 "publicKey" 항목을 포함)한 경우 생략됩니다. |
+| Fingerprint Value | Body | String | Fingerprint 값 |
+
+###### Private Key 저장
+생성된 Private Key Value는 전문을 .pem 파일로 저장 후 해당 Keypair를 사용하도록 설정된 Instance에 접근 시 사용할 수 있습니다.
+**생성된 Private Key Value는 다시 조회할 수 없으므로** 분실 또는 삭제되지 않도록 잘 보관해야 하며, 유출 방지를 위해 가급적 보조 저장매체(USB메모리)에 관리하는 것이 좋습니다.
+
 
 #### Keypair 삭제
 지정한 Keypair를 삭제합니다.
@@ -1065,7 +1076,7 @@ X-Auth-Token: {tokenId}
             "isPublic": "{Is Public}",
             "minDisk": "{Min Disk}",
             "minRam": "{Min RAM}",
-            "name": "Image Name",
+            "name": "{Image Name}",
             "properties": {
             	"{Prop Key}" : "{Prop Value}"
             },
@@ -1151,11 +1162,11 @@ X-Auth-Token: {tokenId}
                 }
             ],
             "availabilityZone": "{Availability Zone Name}",
-            "createdAt": "Created At",
+            "createdAt": "{Created At}",
             "description": "{Description}",
             "id": "{Block Storage ID}",
             "metadata": {
-                "Metadata Key": "{Metadata Value}"
+                "{Metadata Key}": "{Metadata Value}"
             },
             "name": "{Block Storage Name}",
             "size": "{Size}",
@@ -1194,12 +1205,11 @@ Content-Type: application/json;charset=UTF-8
 | tokenId | Header | String | - | Token ID |
 
 ##### Request Body
-```
+```json
 {
     "volume": {
         "description": "{Description}",
         "availabilityZone":"{Availability Zone Name}",
-        "snapshotId":"{Snapshot ID}",
         "size":"{Size}",
         "name":"{Block Storage Name}",
         "volumeType":"{Volume Type}",
@@ -1214,8 +1224,7 @@ Content-Type: application/json;charset=UTF-8
 | --- | --- | --- | --- | --- |
 | Description | Body | String | O | Block Storage 설명 |
 | Availability Zone Name | Body | String | - | Block Storage를 생성할 Availability Zone 이름 |
-| Snaptshot ID | Body | String | O | 스냅샷으로부터 Block Storage를 생성하고자 할 경우 사용하는 스냅샷 ID |
-| Size | Body | Integer | - | Block Storage 크기. GB |
+| Size | Body | Integer | - | Block Storage 크기. GB, 10 ~ 1000 범위, 10단위 입력 |
 | Volume Type | Body | String | - | 생성할 Block Storage의 종류, 현재는 별도로 타입이 제공되지 않으므로 빈 문자열로 설정.  |
 | Metadata Key / Metadata Value | Body | String | O | Block Storage에 기입하고자 하는 메타데이터 정보 |
 | Block Storage Name | Body | String | - | Block Storage 이름 |
@@ -1231,11 +1240,11 @@ Content-Type: application/json;charset=UTF-8
     "volume": {
         "attachments": [],
         "availabilityZone": "{Availability Zone Name}",
-        "createdAt": "Created At",
+        "createdAt": "{Created At}",
         "description": "{Description}",
         "id": "{Block Storage ID}",
         "metadata": {
-            "Metadata Key": "{Metadata Value}"
+            "{Metadata Key}": "{Metadata Value}"
         },
         "name": "{Block Storage Name}",
         "size": "{Size}",
@@ -1576,11 +1585,11 @@ Content-Type: application/json;charset=UTF-8
 | --- | --- | --- | --- | --- |
 | Direction | Body | String | - | Rule이 적용되는 방향, "ingress" or "egress" |
 | Ethernet Type | Body | String | O | "IPv4" or "IPv6" |
-| Port Range MAX | Body | Integer | O | Rule이 적용되는 최대 Port 번호 |
-| Port Range MIN | Body | Integer | O | Rule이 적용되는 최소 Port 번호 |
+| Port Range MAX | Body | Integer | O | Rule이 적용되는 최대 Port 번호. 1~65535 범위. 설정 시 "protocol" 항목 생략 불가 |
+| Port Range MIN | Body | Integer | O | Rule이 적용되는 최소 Port 번호  1~65535 범위. 설정 시 "protocol" 항목 생략 불가 |
 | Protocol | Body | String | O | IP Protocol. "icmp" "tcp" "udp" or "null" |
-| Remote Group ID | Body | String | O | Rule이 적용되는 Remote Security Group의 식별자 |
-| Remote IP Prefix | Body | String | - | Rule이 적용되는 Remote IP의 Prefix. |
+| Remote Group ID | Body | String | O | Rule이 적용되는 Remote Security Group의 식별자.<br />"remoteIpPrefix" 값을 설정할 경우 생략. |
+| Remote IP Prefix | Body | String | O | Rule이 적용되는 Remote IP의 Prefix.<br />"remoteGroupId" 값을 설정할 경우 생략. |
 | Security Group ID | Body | String | - | Rule이 적용되는 Security Group의 식별자 |
 
 ##### Response Body
@@ -1610,8 +1619,8 @@ Content-Type: application/json;charset=UTF-8
 | Direction | Body | String | Rule이 적용되는 방향, "ingress" or "egress" |
 | Ethernet Type | Body | String | "IPv4" or "IPv6" |
 | Rule ID | Body | String | Security Group Rule 식별자 |
-| Port Range MAX | Body | Integer | Rule이 적용되는 최대 Port 번호 |
-| Port Range MIN | Body | Integer | Rule이 적용되는 최소 Port 번호 |
+| Port Range MAX | Body | Integer | Rule이 적용되는 최대 Port 번호. |
+| Port Range MIN | Body | Integer | Rule이 적용되는 최소 Port 번호. |
 | Protocol | Body | String | IP Protocol. "icmp" "tcp" "udp" or "null" |
 | Remote Group ID | Body | String | Rule이 적용되는 Remote Security Group의 식별자 |
 | Remote IP Prefix | Body | String | Rule이 적용되는 Remote IP의 Prefix |
@@ -1773,6 +1782,43 @@ Floating IP는 다음 상태값을 갖습니다.
 | DOWN | Floating IP가 연결되어 있지 않은 상태 |
 | ERROR | 에러 발생 |
 
+#### Floating IP Pool 조회
+Floating IP Pool 목록을 조회합니다.
+
+##### Method, URL
+```
+GET /v1.0/appkeys/{appkey}/floating-ip-pools
+X-Auth-Token: {tokenId}
+```
+|  Name | In | Type | Optional | Description |
+|--|--|--|--|--|
+| tokenId | Header | String | - |Token ID |
+
+##### Request Body
+이 API는 Request Body를 필요로 하지 않습니다.
+
+##### Response Body
+```json
+{
+    "header" : {
+	    "resultMessage" :  "SUCCESS",
+    	"isSuccessful" :  true,
+    	"resultCode" :  0
+    },
+    "pools" : [
+    	{
+    		"id" :  "{Pool ID}",
+    		"name" :  "{Pool Name}"
+    	}
+    ]
+}
+```
+|  Name | In | Type | Description |
+|--|--|--|--|
+| Pool ID | Body | String | Floating IP Pool 식별자 |
+| Pool Name | Body | String | Floating IP Pool 이름 |
+
+
 #### Floating IP 조회
 사용 가능한, 또는 사용 중인 Floating IP 정보를 조회합니다.
 ##### Method, URL
@@ -1802,9 +1848,12 @@ X-Auth-Token: {tokenId}
         	"id": "{Floating IP ID}",
             "floatingIpAddress": "{Floating IP Address}",
             "fixedIpAddress": "{Fixed IP Address}",
-            "floatingNetworkId": "{Floating IP Network ID}",
             "portId": "{Port ID}",
             "routerId": "{Router ID}",
+            "pool" : {
+                "id" :  "{Pool ID}",
+                "name" :  "{Pool Name}"
+            },
             "status": "{Status}"
         }
     ]
@@ -1816,9 +1865,10 @@ X-Auth-Token: {tokenId}
 | Floating IP ID | Body | String | Floating IP 식별자 |
 | Floating IP Address | Body | String | Floating IP 주소 |
 | Fixed IP Address | Body | String | Floating IP가 연결된 Instance NIC의 IP 주소. Status가 "ACTIVE" 인 경우에만 표시 |
-| Floating Network ID | Body | String | Floating IP가 연결된 Network의 식별자 |
 | Port ID | Body | String | Floting IP가 연결된 Port의 식별자. Status가 "ACTIVE" 인 경우에만 표시 |
 | Router ID | Body | String | Floating IP의 Router 식별자. Status가 "ACTIVE" 인 경우에만 표시 |
+| Pool ID | Body | String | Floating IP가 속한 Pool 식별자 |
+| Pool Name | Body | String | Floating IP가 속한 Pool 이름 |
 | Status | Body | String | Floating IP의 상태 |
 
 #### Floating IP 생성
@@ -1834,7 +1884,16 @@ X-Auth-Token: {tokenId}
 | tokenId | Header | String | - | Token ID |
 
 ##### Request Body
-이 API는 Request Body를 필요로 하지 않습니다.
+```json
+{
+	"pool" : {
+		"id" :  "{Pool ID}"
+	}
+}
+```
+|  Name | In | Type | Optional | Description |
+|--|--|--|--|--|
+|  Pool ID | Body | String | - | Floating IP Pool 식별자 |
 
 ##### Response Body
 ```json
@@ -1846,8 +1905,11 @@ X-Auth-Token: {tokenId}
     },
     "floatingip": {
     	"id": "{Floating IP ID}",
-        "floatingIpAddress": "{Floating IP Address",
-        "floatingNetworkId": "{Floating IP Network ID}",
+        "floatingIpAddress": "{Floating IP Address}",
+        "pool" : {
+        	"id" :  "{Pool ID}",
+        	"name" :  "{Pool Name}"
+        },
         "status": "{Status}"
     }
 }
@@ -1857,11 +1919,12 @@ X-Auth-Token: {tokenId}
 |--|--|--|--|
 | Floating IP ID | Body | String | Floating IP 식별자 |
 | Floating IP Address | Body | String | Floating IP 주소 |
-| Floating Network ID | Body | String | Floating IP가 연결된 Network의 식별자 |
+| Pool ID | Body | String | Floating IP가 속한 Pool 식별자 |
+| Pool Name | Body | String | Floating IP가 속한 Pool 이름 |
 | Status | Body | String | Floating IP의 상태 |
 
 #### Floating IP 삭제
-지정한 Floating IP를 삭제합니다.
+지정한 Floating IP를 삭제합니다. 사용중(ACTIVE)인 Floating IP는 연결 해제 후 삭제할 수 있습니다.
 ##### Method, URL
 ```
 DELETE /v1.0/appkeys/{appkey}/floating-ips?id={floatingIpId}
