@@ -1,5 +1,17 @@
 ## Compute > 릴리스 노트
 
+### 2018.03.22
+
+#### 신규 상품 추가
+
+* Auto Scale 상품이 추가되었습니다.
+    * 사용자가 생성한 Instance Template을 바탕으로, Scaling Group을 생성할 수 있습니다.
+    * Scaling Group에 속한 인스턴스의 개수를 인스턴스 상태 혹은 예약 작업을 통해 동적으로 관리할 수 있습니다.
+    * 자세한 내용은 가이드 문서를 참고해 주세요.
+
+#### 버그 수정
+* 대용량 볼륨에 대한 이미지 생성이 완료되지 않던 문제를 수정했습니다.
+
 ### 2018.02.22
 
 #### 기능 개선
@@ -16,7 +28,7 @@
 		* Time Zone Peer 도메인 변경 : [기존] 1.kr.pool.ntp.org , 1.pool.ntp.org -> [변경] 1.pool.ntp.org , time.windows.com
 	* MS 2018.02.13 Windows Update 적용
 		* https://support.microsoft.com/ko-kr/help/4074594/windows-81-update-kb-4074594
-	
+
 * Ubuntu Linux 14.04 이미지 업데이트
 	* 이미지 정보
 		* Name : Ubuntu 14.04
@@ -25,7 +37,7 @@
 		* Linux Kernel Version : [기존] 3.13.0-32 --> [변경] 3.13.0-141
 		* Variant 1 (CVE-2017-5753) - patched
 		* Variant 3 (CVE-2017-5754) - patched
-		
+
 * Debian Linux 8.2 이미지 업데이트
 	* 이미지 정보
 		* Name : Debian Linux 8.2.0
