@@ -23,10 +23,8 @@
 #### 신규 상품 추가
 
 * Auto Scale 상품이 추가되었습니다.
-    * 사용자가 생성한 Instance Template을 바탕으로, Scaling Group을 생성할 수 있
-습니다.
-    * Scaling Group에 속한 인스턴스의 개수를 인스턴스 상태 혹은 예약 작업을 통해
- 동적으로 관리할 수 있습니다.
+    * 사용자가 생성한 Instance Template을 바탕으로, Scaling Group을 생성할 수 있습니다.
+    * Scaling Group에 속한 인스턴스의 개수를 인스턴스 상태 혹은 예약 작업을 통해 동적으로 관리할 수 있습니다.
     * 자세한 내용은 가이드 문서를 참고해 주세요.
 
 
