@@ -10,9 +10,6 @@
 #### 기능 추가
 * Instance 생성 시 volume type 설정 기능이 추가되었습니다.
 * Block Storage 생성 시 volume type 설정 기능이 추가되었습니다.
-* Auto Scale의 Instance template 생성 시 volume type 설정 기능이 추가되었습니다.
-    * 기본 볼륨 설정 시 volume type 설정 항목 추가
-    * 추가 볼륨 설정 시 volume type 설정 항목 추가
 
 ### 2018.04.24
 
