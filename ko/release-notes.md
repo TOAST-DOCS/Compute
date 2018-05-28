@@ -8,10 +8,11 @@
     * 반복성 예약 작업의 최초 실행이 cron expression을 따르지 않고, 예약 작업 생성 시 설정한 '시작 시각'에 수행되는 오류 수정
 
 #### 기능 추가
+* Instance 생성 시 volume type 설정 기능이 추가되었습니다.
+* Block Storage 생성 시 volume type 설정 기능이 추가되었습니다.
 * Auto Scale의 Instance template 생성 시 volume type 설정 기능이 추가되었습니다.
-    * Instance 정보 설정 시 volume type 설정 항목 추가
-    * 추가 Volume 설정 시 volume type 설정 항목 추가
-
+    * 기본 볼륨 설정 시 volume type 설정 항목 추가
+    * 추가 볼륨 설정 시 volume type 설정 항목 추가
 
 ### 2018.04.24
 

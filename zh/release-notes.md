@@ -1,5 +1,22 @@
 ## Compute > Release Notes
 
+### 2018.05.29
+
+#### 버그 수정
+* Auto Scale의 반복성 예약 작업(cron expression 기반) 관련 오류가 수정되었습니다.
+    * 반복성 예약 작업 실행 시점이  UTC를 기반으로  동작하는 오류 수정
+    * 반복성 예약 작업의 최초 실행이 cron expression을 따르지 않고, 예약 작업 생성 시 설정한 '시작 시각'에 수행되는 오류 수정
+
+#### 기능 추가
+* Instance 생성 시 volume type 설정 기능이 추가되었습니다.
+* Block Storage 생성 시 volume type 설정 기능이 추가되었습니다.
+* Auto Scale의 Instance template 생성 시 volume type 설정 기능이 추가되었습니다.
+    * 기본 볼륨 설정 시 volume type 설정 항목 추가
+    * 추가 볼륨 설정 시 volume type 설정 항목 추가
+
+### 2018.04.24
+
+* Windows 인스턴스 Log 탭이 일시적으로 삭제 되었습니다.
 
 ### 2018.03.22
 
@@ -29,7 +46,7 @@
 		* Time Zone Peer 도메인 변경 : [기존] 1.kr.pool.ntp.org , 1.pool.ntp.org -> [변경] 1.pool.ntp.org , time.windows.com
 	* MS 2018.02.13 Windows Update 적용
 		* https://support.microsoft.com/ko-kr/help/4074594/windows-81-update-kb-4074594
-	
+
 * Ubuntu Linux 14.04 이미지 업데이트
 	* 이미지 정보
 		* Name : Ubuntu 14.04
@@ -38,7 +55,7 @@
 		* Linux Kernel Version : [기존] 3.13.0-32 --> [변경] 3.13.0-141
 		* Variant 1 (CVE-2017-5753) - patched
 		* Variant 3 (CVE-2017-5754) - patched
-		
+
 * Debian Linux 8.2 이미지 업데이트
 	* 이미지 정보
 		* Name : Debian Linux 8.2.0
@@ -91,4 +108,3 @@
 		* Description : CentOS Linux 6.5 with MySQL 5.7.20 (2018.02.22)
 	* MySQL 5.7.20 패키지 설치됨
 	* 그외 설정은 CentOS Linux 6.5 이미지와 동일함
-
