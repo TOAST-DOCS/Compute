@@ -1,4 +1,94 @@
-## Compute > Release Notes
+## Compute > 릴리스 노트
+
+### 2018.07.16
+
+#### 기능 개선
+
+* Windows 2012 R2 Standard 이미지 업데이트
+	* 이미지 정보
+		* Windows 2012R2std
+		* 언어 : KO
+		* 설명 : Windows 2012 R2 STD (2018.07.16)
+		* 커널 비트 : 64bit
+	* Auto scale 기능으로 백신이 포함된 인스턴스 생성시 발생하는 에러 현상 수정
+	* CPU 설정 변경  ( CPU Socket 최대 개수  4개 )
+	* Network  인터페이스 속도  10G 로 표시
+
+
+* Windows 2008 R2 Standard 신규 이미지 업데이트
+	* 이미지 정보
+		* Windows 2008R2std
+		* 언어 : EN
+		* 설명 : Windows 2008 R2 STD (2018.07.16)
+		* 커널 비트 : 64bit
+	* Windows 보안업데이트
+		* 2018년 6월 12일자 보안 업데이트 적용 ( https://support.microsoft.com/ko-kr/help/4284826 )
+	* Toast Cloud 보안기준으로 OS 하드닝 적용
+		* 계정 관리
+			* Guest 계정 사용 제한 : Guest 계정 사용 안함으로 변경
+			* 마지막 사용자 로그인 이름 표시 :  표시 안함으로 설정
+			* 세션이 잠긴경우 사용자 정보표시 : 사용자 이름만 표시로 설정
+			* 암호만료 전에 변경 알림 : 변경 알림 14일로 설정
+			* 일반 사용자의 시스템 종료 제한 : 시스템 종료 정책을 Administrator 로 설정
+		* 서비스 관리
+			* NTP 설정 : 1.pool.ntp.org, time,windows.com
+			* NTP 동기화 주기 :  256초
+		* 시스템 관리
+			* SAM 계정과 공유의 익명열거 허용 안함 :  SAM 계정관련  익명열거 허용 안함 항목 사용
+			* 로그온 하지 않고 시스템 종료허용  제한 :  로그온하지 않고 시스템 종료 허용 정책을 사용 안함으로 설정
+			* Autologin 기능 제한 :  AutoAdminLogon 값을 0 으로 설정
+
+
+* Ubuntu Linux 16.04 LTS 신규 이미지 업데이트
+	* 이미지 정보
+		* Ubuntu 16.04 LTS
+		* 언어 : EN
+		* 설명 : Ubuntu 16.04.4 LTS  (2018.07.16)
+		* 커널 비트 : 64bit
+	* Kernel 4.4.0-130
+		* meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
+	* Toast Cloud 보안기준으로 OS 하드닝 적용
+		* 패스워드 복잡도 설정 (숫자,영문,특문 조합 + 8자리 이상) : /etc/pam.d/common-password에 아래 line 추가
+			* password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
+		* 불필요 계정/그룹 삭제
+			* user : lp, sync, uucp, games
+			* group : dip
+		* 취약점 대비 커널 파라메터 변경 (sysctl)
+			* net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
+			* net.ipv4\.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
+			* net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
+			* net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
+			* net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
+			* net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
+		* ssh 설정 변경
+			* PermitRootLogin 비활성화
+			* /etc/ssh/sshd_config immutable 속성 부여
+		* setuid/setgid 제거
+			* /usr/bin/chag
+			* /usr/bin/gpasswd
+			* /usr/bin/wall
+			* /usr/bin/chfn
+			* /usr/bin/chsh
+			* /usr/bin/newgrp
+			* /bin/mount
+			* /bin/umount
+			* /sbin/unix_chkpwd
+		* 퍼미션 설정
+			* /etc/passwd 644
+			* /etc/hosts 644
+			* /etc/rsyslog.conf 644
+			* /etc/services 644
+			* /etc/group 644
+			* /etc/shadow 400
+			* /etc/gshadow 400
+			* /etc/login.defs 400
+		* 터미널 접근 제한 : /etc/securetty 수정
+		* profile 추가 (/etc/profile)
+			* TMOUT=7200      # 터미널로 부터 사용자입력없을때 세선 종료
+			* HISTSIZE=500       # history list에 저장될 command 수 제한
+			* HISTFILESIZE=0     # history file에 저장될 command 없음
+		* 시스템 로그인전 배너 설정 제거
+			* /etc/issue, /etc/issue.net 삭제
 
 ### 2018.05.29
 
@@ -103,3 +193,99 @@
 		* Description : CentOS Linux 6.5 with MySQL 5.7.20 (2018.02.22)
 	* MySQL 5.7.20 패키지 설치됨
 	* 그외 설정은 CentOS Linux 6.5 이미지와 동일함
+
+
+### 2017.09.21
+
+#### 기능 추가
+* Public API 추가
+    * Object Storage에 이어 TOAST Compute를 API로 관리할 수 있습니다.
+    * 현재 제한적인 기능만 이용할 수 있으며, 추후 API 추가를 통해 기능이 확장될 예정입니다.
+    * 지원되는 API는 API Guide를 참고하시기 바랍니다.
+
+#### 버그 수정
+* 키페어를 지정하지 않고 인스턴스를 생성할 수 있었던 버그가 수정되었습니다.
+
+
+
+### 2017.07.20
+
+#### 버그 수정
+* 대용량 이미지 생성시 간헐적으로 생성이 완료되지 않던 버그가 수정되었습니다.
+
+
+
+### 2017.08.24
+
+#### 기능 추가
+
+* 인스턴스 사양을 변경할 수 있도록 기능이 추가되었습니다.
+	* 사용하던 인스턴스의 디스크는 그대로 보존하면서 CPU/Memory를 업그레이드 하거나 다운그레이드 할 수 있습니다.
+	* 블록 스토리지 크기는 변경이 불가능합니다.
+	* 사양 변경을 위해 인스턴스는 종료 상태여야 합니다.
+	* 자세한 제약 사항은 [인스턴스 사양 변경](/Compute/Instance/ko/console-guide/#_14) 참조
+* Low IOPS SSD 사양(U 타입)이 추가되었습니다.
+	* 좀 더 낮은 가격에 인스턴스를 이용할 수 있도록 저사양 인스턴스 사양이 추가되었습니다.
+	* 리눅스 OS만 지원합니다.
+	* Local Disk를 이용하기 때문에 하드웨어 장애시 데이터 복구가 불가능할 수 있습니다.
+* High IOPS SSD 사양(I 타입)이 추가되었습니다.
+	* 높은 IOPS가 필요한 경우 I타입을 이용하면 수준의 높은 IOPS를 보장 받을 수 있습니다. (보장 IOPS는 가격표 참조)
+	* 리눅스 OS만 지원합니다.
+
+#### 버그 수정
+* 인스턴스 사용량 조회시 값이 조회되지 않는 버그가 수정되었습니다.
+
+
+
+### 2017.05.25
+
+#### 기능 추가
+
+* 윈도우 이미지(Windows 2012 r2)가 추가됩니다.
+
+#### 버그 수정
+
+* 서비스 종료된 이미지로 생성된 인스턴스가 조회 되지 않는 버그가 수정되었습니다.
+
+
+
+### 2017.04.25
+
+#### 기능 개선
+
+* 인스턴스 생성시 초기 불륨 크기의 최대값이 600GB에서 1TB(1000GB)로 변경됩니다.
+
+
+
+### 2017.03.23
+
+#### 기능 개선
+
+* 인스턴스 생성시 사용자가 초기 볼륨의 크기를 지정할 수 있게 됩니다.
+    * [기존] 인스턴스 사양에 지정된 크기로 초기 볼륨 생성 -> [변경] 사용자가 지정한 크기 만큼 초기 볼륨을 생성
+    * 기본 디스크의 크기는 이미지 최소 요구 사항에서 최대 600GB 까지 설정할 수 있습니다.
+
+
+
+### 2017.01.19
+
+#### 기능 개선/변경
+- 인스턴스 기본 정보의 IP 주소 정보에서 서브넷 명칭을 표시하지 않습니다.
+    - 명칭 표기로 행의 넓이가 넓어져 가독성이 떨어지는 것을 방지합니다.
+- 인스턴스 이름 길이 및 특수문자 제한합니다.
+    - 이제부터 생성 및 수정되는 인스턴스의 이름은 20자 이하 영숫자와 **.** (dot),**-** (dash) 문자만 허용합니다.
+- 인스턴스 생성 기능을 이미지 생성 기능으로 변경합니다.
+    - 탭과 일관된 기능으로 변경하였습니다.
+
+#### 버그 수정
+* 이미지 탭(Private, Shared, Public) 변경시 이미지 선택이 해제되지 않던 문제를 수정하였습니다.
+
+
+
+### 2016.12.22
+
+#### 기능 개선/변경
+
+* 정지된 인스턴스의 보안 그룹 수정이 가능하도록 변경합니다.
+    * 의도와 다르게 기존에는 정지되어 있는 인스턴스에 보안 그룹 수정이 불가능하였습니다. 이를 수정하여 정지된 인스턴스도 보안 그룹을 변경할 수 있도록 하였습니다.
+* 인스턴스 생성시 선택 가능한 보안 그룹이 하나일 경우 자동 선택되도록 변경합니다.
