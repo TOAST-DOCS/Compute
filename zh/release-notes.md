@@ -1,5 +1,70 @@
 ## Compute > 릴리스 노트
 
+### 2018.08.09
+
+#### 기능 개선
+
+* Windows 2012 R2 Standard 이미지 업데이트
+	* 이미지 정보
+		* Windows 2012 R2 STD
+		* 언어 : EN
+		* 설명 : Windows 2012 R2 STD (2018.08.09)
+		* 커널 비트 : 64bit
+	* 변경사항 
+		* 한글 사용시 사용자가 한글 언어팩을 설치 ( 기본으로 영문 버전 제공 ) 
+	* Windows 보안업데이트
+		* 2018년 7월 10일 보안업데이트 적용 ( https://support.microsoft.com/en-us/help/4338815/windows-81-update-kb4338815 )
+	* Toast Cloud 보안기준으로 OS 하드닝 적용
+		* 계정 관리
+			* Interactive logon: Display user information when the session is locked : User display name only
+			* Interactive logon: Do not display last user name :  Enabled
+			* Interactive logon: Prompt user to change password before expiration : 14days
+			* Shut down the system : Administrators
+		* 서비스 관리
+			* NTP 설정 : 1.pool.ntp.org, time,windows.com
+			* NTP 동기화 주기 :  256초
+		* 시스템 관리
+			* Network access: Do not allow anonymous enumeration of SAM accounts : Enabled
+			* Network access: Do not allow anonymous enumeration of SAM accounts and shares : Enabled
+			* Autologin 기능 제한 :  AutoAdminLogon 값을 0 으로 설정
+	
+* Windows 2016 Standard 신규 이미지 업데이트
+	* 이미지 정보
+		* Windows 2016 STD
+		* 언어 : EN
+		* 설명 : Windows 2016 STD (2018.08.09)
+		* 비트 : 64bit
+	* Windows 보안업데이트
+		* 2018년 7월 24일 (https://support.microsoft.com/en-us/help/4338822/windows-10-update-kb4338822)
+	* Toast Cloud 보안기준으로 OS 하드닝 적용
+		* 계정 관리
+			* Interactive logon: Display user information when the session is locked : User display name only
+			* Interactive logon: Do not display last user name :  Enabled
+			* Interactive logon: Prompt user to change password before expiration : 14days
+			* Shut down the system : Administrators
+		* 서비스 관리
+			* NTP 설정 : 1.pool.ntp.org, time,windows.com
+			* NTP 동기화 주기 :  256초
+		* 시스템 관리
+			* Network access: Do not allow anonymous enumeration of SAM accounts : Enabled
+			* Network access: Do not allow anonymous enumeration of SAM accounts and shares : Enabled
+			
+* Debian 9.4 신규 이미지 업데이트
+	* 이미지 정보
+		* Debian 9.4
+		* 언어 : EN
+		* 설명 : Debian 9.4.0 (2018.08.09)
+		* 비트 : 64bit
+	* Kernel 4.9
+		* meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
+	* Toast Cloud 보안기준으로 OS 하드닝 적용
+		* 패스워드 복잡도 설정 (숫자,영문,특문 조합 + 8자리 이상) : /etc/pam.d/common-password에 아래 line 추가
+			* password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
+		* 불필요 계정/그룹 삭제
+			* user : lp, sync, uucp, games
+			* group : dip
+		* 취약점 대비 커널 파라메터 변경 (sysctl)
+		
 ### 2018.07.16
 
 #### 기능 개선
