@@ -1,5 +1,6 @@
 ## Compute > 릴리스 노트
 
+
 ### 2018.08.09
 
 #### 기능 개선
@@ -64,7 +65,44 @@
 			* user : lp, sync, uucp, games
 			* group : dip
 		* 취약점 대비 커널 파라메터 변경 (sysctl)
-		
+			* net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
+			* net.ipv4\.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
+			* net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
+			* net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
+			* net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
+			* net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
+		* ssh 설정 변경
+			* PermitRootLogin 비활성화
+			* /etc/ssh/sshd_config immutable 속성 부여
+		* setuid/setgid 제거
+			* /usr/bin/chag
+			* /usr/bin/gpasswd
+			* /usr/bin/wall
+			* /usr/bin/chfn
+			* /usr/bin/chsh
+			* /usr/bin/newgrp
+			* /bin/mount
+			* /bin/umount
+			* /sbin/unix_chkpwd
+		* 퍼미션 설정
+			* /etc/passwd 644
+			* /etc/hosts 644
+			* /etc/rsyslog.conf 644
+			* /etc/services 644
+			* /etc/group 644
+			* /etc/shadow 400
+			* /etc/gshadow 400
+			* /etc/login.defs 400
+		* 터미널 접근 제한 : /etc/securetty 수정
+		* profile 추가 (/etc/profile)
+			* TMOUT=7200      # 터미널로 부터 사용자입력없을때 세선 종료
+			* HISTSIZE=500       # history list에 저장될 command 수 제한
+			* HISTFILESIZE=0     # history file에 저장될 command 없음
+		* 시스템 로그인전 배너 설정 제거
+			* /etc/issue, /etc/issue.net 삭제
+
+
+
 ### 2018.07.16
 
 #### 기능 개선
