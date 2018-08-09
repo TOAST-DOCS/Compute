@@ -1,5 +1,107 @@
 ## Compute > 릴리스 노트
 
+### 2018.08.09
+
+#### 기능 개선
+
+* Windows 2012 R2 Standard 이미지 업데이트
+	* 이미지 정보
+		* Windows 2012 R2 STD
+		* 언어 : EN
+		* 설명 : Windows 2012 R2 STD (2018.08.09)
+		* 커널 비트 : 64bit
+	* 변경사항 
+		* 한글 사용시 사용자가 한글 언어팩을 설치 ( 기본으로 영문 버전 제공 ) 
+	* Windows 보안업데이트
+		* 2018년 7월 10일 보안업데이트 적용 ( https://support.microsoft.com/en-us/help/4338815/windows-81-update-kb4338815 )
+	* Toast Cloud 보안기준으로 OS 하드닝 적용
+		* 계정 관리
+			* Interactive logon: Display user information when the session is locked : User display name only
+			* Interactive logon: Do not display last user name :  Enabled
+			* Interactive logon: Prompt user to change password before expiration : 14days
+			* Shut down the system : Administrators
+		* 서비스 관리
+			* NTP 설정 : 1.pool.ntp.org, time,windows.com
+			* NTP 동기화 주기 :  256초
+		* 시스템 관리
+			* Network access: Do not allow anonymous enumeration of SAM accounts : Enabled
+			* Network access: Do not allow anonymous enumeration of SAM accounts and shares : Enabled
+			* Autologin 기능 제한 :  AutoAdminLogon 값을 0 으로 설정
+	
+* Windows 2016 Standard 신규 이미지 업데이트
+	* 이미지 정보
+		* Windows 2016 STD
+		* 언어 : EN
+		* 설명 : Windows 2016 STD (2018.08.09)
+		* 비트 : 64bit
+	* Windows 보안업데이트
+		* 2018년 7월 24일 (https://support.microsoft.com/en-us/help/4338822/windows-10-update-kb4338822)
+	* Toast Cloud 보안기준으로 OS 하드닝 적용
+		* 계정 관리
+			* Interactive logon: Display user information when the session is locked : User display name only
+			* Interactive logon: Do not display last user name :  Enabled
+			* Interactive logon: Prompt user to change password before expiration : 14days
+			* Shut down the system : Administrators
+		* 서비스 관리
+			* NTP 설정 : 1.pool.ntp.org, time,windows.com
+			* NTP 동기화 주기 :  256초
+		* 시스템 관리
+			* Network access: Do not allow anonymous enumeration of SAM accounts : Enabled
+			* Network access: Do not allow anonymous enumeration of SAM accounts and shares : Enabled
+			
+* Debian 9.4 신규 이미지 업데이트
+	* 이미지 정보
+		* Debian 9.4
+		* 언어 : EN
+		* 설명 : Debian 9.4.0 (2018.08.09)
+		* 비트 : 64bit
+	* Kernel 4.9
+		* meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
+	* Toast Cloud 보안기준으로 OS 하드닝 적용
+		* 패스워드 복잡도 설정 (숫자,영문,특문 조합 + 8자리 이상) : /etc/pam.d/common-password에 아래 line 추가
+			* password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
+		* 불필요 계정/그룹 삭제
+			* user : lp, sync, uucp, games
+			* group : dip
+		* 취약점 대비 커널 파라메터 변경 (sysctl)
+			* net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
+			* net.ipv4\.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
+			* net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
+			* net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
+			* net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
+			* net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
+		* ssh 설정 변경
+			* PermitRootLogin 비활성화
+			* /etc/ssh/sshd_config immutable 속성 부여
+		* setuid/setgid 제거
+			* /usr/bin/chag
+			* /usr/bin/gpasswd
+			* /usr/bin/wall
+			* /usr/bin/chfn
+			* /usr/bin/chsh
+			* /usr/bin/newgrp
+			* /bin/mount
+			* /bin/umount
+			* /sbin/unix_chkpwd
+		* 퍼미션 설정
+			* /etc/passwd 644
+			* /etc/hosts 644
+			* /etc/rsyslog.conf 644
+			* /etc/services 644
+			* /etc/group 644
+			* /etc/shadow 400
+			* /etc/gshadow 400
+			* /etc/login.defs 400
+		* 터미널 접근 제한 : /etc/securetty 수정
+		* profile 추가 (/etc/profile)
+			* TMOUT=7200      # 터미널로 부터 사용자입력없을때 세선 종료
+			* HISTSIZE=500       # history list에 저장될 command 수 제한
+			* HISTFILESIZE=0     # history file에 저장될 command 없음
+		* 시스템 로그인전 배너 설정 제거
+			* /etc/issue, /etc/issue.net 삭제
+
+
+		
 ### 2018.07.16
 
 #### 기능 개선
