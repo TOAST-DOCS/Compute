@@ -14,6 +14,36 @@
 	* 예약 스크립트 등록 기능 추가 
 
 
+* Ubuntu Server 18.04 LTS 신규 이미지 업데이트
+        * 이미지 정보
+                * Ubuntu Server 18.04 LTS
+                * 언어 : EN
+                * 설명 : Ubuntu Server 18.04.1 LTS (2018.09.20)
+                * 비트 : 64bit
+        * Kernel 4.15.0-29
+                * meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
+        * Toast Cloud 보안기준으로 OS 하드닝 적용
+                * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+                        * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
+                * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+                        * PermitRootLogin no                # root 접속 비활성화
+                        * PasswordAuthentication no         # 패스워드 인증 비활성화
+                * 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+                        * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
+                        * net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
+                        * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
+                        * net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
+                        * net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
+                        * net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
+                * 터미널 접근 제한 ( /etc/securetty 수정)
+                        * console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
+                * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+                        * TMOUT=7200
+                * 추가 변경 사항
+                        * Instance 생성시 swap partition 을 생성하지 않음 ( 필요시 사용자가 별도 생성 )
+                * 나머지 설정은 Ubuntu Server 18.04 LTS upstream 을 유지함 
+
+
 ### 2018.08.09
 
 #### 기능 개선
