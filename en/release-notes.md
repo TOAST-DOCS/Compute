@@ -5,8 +5,8 @@
 #### 기능 개선
 
 * 이미지 업데이트 관련 주요 변경 사항 요약
-	*  신규 이미지 릴리즈 : CentOS 7.5 , CentOS 6.10
-	* 인스턴스 생성시 OS Swap Partition을 기본으로 설정하지 않음.  ( 생성가이드 Link ) 
+        * 신규 이미지 릴리즈 : CentOS 7.5 , CentOS 6.10
+        * 인스턴스 생성시 OS Swap Partition을 기본으로 설정하지 않음. [생성가이드](https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-swap-adding.html)
 	* CentOS 인스턴스 ssh 접근시 root 계정 접속 허용 에서 일반 계정 "centos" 접속 후 root 전환으로 변경 
 
 * CentOS 7.5 신규 이미지 업데이트
