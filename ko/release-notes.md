@@ -1,5 +1,272 @@
 ## Compute > 릴리스 노트
 
+### 2018.10.23
+
+#### 기능 개선
+
+* 이미지 업데이트 관련 주요 변경 사항 요약
+	* 신규 이미지 릴리즈 : CentOS 7.5 , CentOS 6.10
+	* 인스턴스 생성시 OS Swap Partition을 기본으로 설정하지 않음. [생성가이드](https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-swap-adding.html)
+	* CentOS 인스턴스 ssh 접근시 root 계정 접속 허용 에서 일반 계정 "centos" 접속 후 root 전환으로 변경 
+
+* CentOS 7.5 신규 이미지 업데이트
+	* 이미지 정보
+		* CentOS 7.5
+		* 언어 : EN
+		* 설명 : CentOS 7.5 (2018.10.23)
+		* 비트 : 64bit
+		* 커널 : 3.10.0-862.14.4.el7
+	* Toast Cloud 보안기준으로 OS 하드닝 적용
+		* 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+			* password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
+		* ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+			* PermitRootLogin no                # root 접속 비활성화
+			* PasswordAuthentication no         # 패스워드 인증 비활성화
+		* 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+			* net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
+			* net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
+			* net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
+			* net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
+			* net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
+			* net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
+		* 터미널 접근 제한 ( /etc/securetty 수정)
+			* console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
+		* 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+			* TMOUT=7200
+		* 나머지 설정은 CentOS Upstream을 유지함
+	* 기능개선
+		* 접근 보안성 강화를 위한 root 계정 접속 제한
+			* 기존 : root 계정의 ssh 접속 허용
+			* 변경 : 일반 User 계정인 "centos" 로 접속 후 전환
+		* 인스턴스 생성시 swap partition 을  생성하지 않음
+		* /etc/hosts 파일의 사용자 추가 설정 유지
+
+
+* CentOS 6.10 신규 이미지 업데이트
+	* 이미지 정보
+		* CentOS 6.10
+		* 언어 : EN
+		* 설명 : CentOS 6.10 (2018.10.23)
+		* 비트 : 64bit
+		* 커널 : 2.6.32-754.3.5.el6
+	* Toast Cloud 보안기준으로 OS 하드닝 적용
+		* 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+			* password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
+		* ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+			* PermitRootLogin no                # root 접속 비활성화
+			* PasswordAuthentication no         # 패스워드 인증 비활성화
+		* 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+			* net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
+			* net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
+			* net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
+			* net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
+			* net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
+			* net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
+		* 터미널 접근 제한 ( /etc/securetty 수정)
+			* console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
+		* 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+			* TMOUT=7200
+		* 나머지 설정은 CentOS Upstream을 유지함
+	* 기능개선
+		* 접근 보안성 강화를 위한 root 계정 접속 제한
+			* 기존 : root 계정의 ssh 접속 허용
+			* 변경 : 일반 User 계정인 "centos" 로 접속 후 전환
+		* 인스턴스 생성시 swap partition 을  생성하지 않음
+		* /etc/hosts 파일의 사용자 추가 설정 유지
+
+
+* CentOS 7.1 이미지 업데이트
+	* 이미지 정보
+		* CentOS 7.1
+		* 언어 : EN
+		* 설명 : CentOS 7.1 (2018.10.23)
+		* 비트 : 64bit
+		* 커널 : 3.10.0-229.el7
+		
+	* Toast Cloud 보안기준으로 OS 하드닝 적용
+		* 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+			* password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
+		* ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+			* PermitRootLogin no                # root 접속 비활성화
+			* PasswordAuthentication no         # 패스워드 인증 비활성화
+		* 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+			* net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
+			* net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
+			* net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
+			* net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
+			* net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
+			* net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
+		* 터미널 접근 제한 ( /etc/securetty 수정)
+			* console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
+		* 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+			* TMOUT=7200
+		* 나머지 설정은 CentOS Upstream을 유지함
+	* 기능개선
+		* 접근 보안성 강화를 위한 root 계정 접속 제한
+			* 기존 : root 계정의 ssh 접속 허용
+			* 변경 : 일반 User 계정인 "centos" 로 접속 후 전환
+		* 인스턴스 생성시 swap partition 을  생성하지 않음
+		* /etc/hosts 파일의 사용자 추가 설정 유지
+
+
+* CentOS 6.5 이미지 업데이트
+	* 이미지 정보
+		* CentOS 6.5
+		* 언어 : EN
+		* 설명 : CentOS 6.5 (2018.10.23)
+		* 비트 : 64bit
+		* 커널 : 2.6.32-431.el6
+	
+	* Toast Cloud 보안기준으로 OS 하드닝 적용
+		* 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+			* password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
+		* ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+			* PermitRootLogin no                # root 접속 비활성화
+			* PasswordAuthentication no         # 패스워드 인증 비활성화
+		* 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+			* net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
+			* net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
+			* net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
+			* net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
+			* net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
+			* net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
+		* 터미널 접근 제한 ( /etc/securetty 수정)
+			* console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
+		* 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+			* TMOUT=7200
+		* 나머지 설정은 CentOS Upstream을 유지함
+	* 기능개선
+		* 접근 보안성 강화를 위한 root 계정 접속 제한
+			* 기존 : root 계정의 ssh 접속 허용
+			* 변경 : 일반 User 계정인 "centos" 로 접속 후 전환
+		* 인스턴스 생성시 swap partition 을  생성하지 않음
+		* /etc/hosts 파일의 사용자 추가 설정 유지
+
+
+* Ubuntu Server 16.04 LTS 이미지 업데이트
+	* 이미지 정보
+		* Ubuntu Server 16.04 LTS
+		* 언어 : EN
+		* 설명 : Ubuntu Server 16.04.5 LTS (2018.10.23)
+		* 비트 : 64bit
+		* 커널 : 4.4.0-131
+
+	* Toast Cloud 보안기준으로 OS 하드닝 적용
+		* 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+			* password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
+		* ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+			* PermitRootLogin no                # root 접속 비활성화
+			* PasswordAuthentication no         # 패스워드 인증 비활성화
+		* 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+			* net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
+			* net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
+			* net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
+			* net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
+			* net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
+			* net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
+		* 터미널 접근 제한 ( /etc/securetty 수정)
+			* console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
+		* 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+			* TMOUT=7200
+		* 나머지 설정은 Ubuntu Server 16.04 LTS Upstream을 유지함
+	* 기능개선
+		* 인스턴스 생성시 swap partition 을  생성하지 않음
+		* /etc/hosts 파일의 사용자 추가 설정 유지
+
+
+* Ubuntu Server 14.04 LTS 이미지 업데이트
+	* 이미지 정보
+		* Ubuntu Server 14.04 LTS
+		* 언어 : EN
+		* 설명 : Ubuntu Server 14.04.5 LTS (2018.10.23)
+		* 비트 : 64bit
+		* 커널 : 4.4.0-131
+
+	* Toast Cloud 보안기준으로 OS 하드닝 적용
+		* 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+			* password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
+		* ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+			* PermitRootLogin no                # root 접속 비활성화
+			* PasswordAuthentication no         # 패스워드 인증 비활성화
+		* 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+			* net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
+			* net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
+			* net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
+			* net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
+			* net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
+			* net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
+		* 터미널 접근 제한 ( /etc/securetty 수정)
+			* console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
+		* 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+			* TMOUT=7200
+		* 나머지 설정은 Ubuntu Server 14.04 LTS Upstream을 유지함
+	* 기능개선
+		* 인스턴스 생성시 swap partition 을  생성하지 않음
+		* /etc/hosts 파일의 사용자 추가 설정 유지
+
+
+* Debian 9 Stretch 이미지 업데이트
+	* 이미지 정보
+		* Debian 9 Stretch
+		* 언어 : EN
+		* 설명 : Debian 9.5 Stretch (2018.10.23)
+		* 비트 : 64bit
+		* 커널 : 4.9.0-7
+
+	* Toast Cloud 보안기준으로 OS 하드닝 적용
+		* 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+			* password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
+		* ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+			* PermitRootLogin no                # root 접속 비활성화
+			* PasswordAuthentication no         # 패스워드 인증 비활성화
+		* 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+			* net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
+			* net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
+			* net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
+			* net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
+			* net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
+			* net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
+		* 터미널 접근 제한 ( /etc/securetty 수정)
+			* console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
+		* 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+			* TMOUT=7200
+		* 나머지 설정은 Debian 9 Upstream을 유지함
+	* 기능개선
+		* 인스턴스 생성시 swap partition 을  생성하지 않음
+		* /etc/hosts 파일의 사용자 추가 설정 유지
+
+
+* Debian 8 Jessie 이미지 업데이트
+	* 이미지 정보
+		* Debian 8 Jessie
+		* 언어 : EN
+		* 설명 : Debian 8.11 Jessie (2018.10.23)
+		* 비트 : 64bit
+		* 커널 : 3.16.0-6
+		
+	* Toast Cloud 보안기준으로 OS 하드닝 적용
+		* 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+			* password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
+		* ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+			* PermitRootLogin no                # root 접속 비활성화
+			* PasswordAuthentication no         # 패스워드 인증 비활성화
+		* 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+			* net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
+			* net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
+			* net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
+			* net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
+			* net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
+			* net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
+		* 터미널 접근 제한 ( /etc/securetty 수정)
+			* console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
+		* 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+			* TMOUT=7200
+		* 나머지 설정은 Debian 8 Upstream을 유지함
+	* 기능개선
+		* 인스턴스 생성시 swap partition 을  생성하지 않음
+		* /etc/hosts 파일의 사용자 추가 설정 유지
+
+
 ### 2018.09.20
 
 #### 기능 개선
