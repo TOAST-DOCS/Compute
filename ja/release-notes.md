@@ -1,12 +1,38 @@
 ## Compute > 릴리스 노트
 
+### 2018.11.13
+
+#### 기능 개선
+
+* CentOS 7.1 이미지 업데이트
+	* 이미지 정보
+		* CentOS 7.1
+		* 언어 : EN
+		* 설명 : CentOS 7.1 (2018.11.13)
+		* 비트 : 64bit
+		* 커널 : 3.10.0-693.21.1
+		
+	* 커널 업데이트 :  3.10.0-229 -> 3.10.0-693.21.1
+	* Yum repository target 변경 : CentOS 최신 repo
+		
+* CentOS 6.5 이미지 업데이트
+	* 이미지 정보
+		* CentOS 6.5
+		* 언어 : EN
+		* 설명 : CentOS 6.5 (2018.11.13)
+		* 비트 : 64bit
+		* 커널 : 2.6.32-754.6.3
+	
+	* 커널 업데이트 :  2.6.32-431 -> 2.6.32-754.6.3
+	* Yum repository target 변경 : CentOS 최신 repo
+
 ### 2018.10.23
 
 #### 기능 개선
 
 * 이미지 업데이트 관련 주요 변경 사항 요약
-        * 신규 이미지 릴리즈 : CentOS 7.5 , CentOS 6.10
-        * 인스턴스 생성시 OS Swap Partition을 기본으로 설정하지 않음. [생성가이드](https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-swap-adding.html)
+	* 신규 이미지 릴리즈 : CentOS 7.5 , CentOS 6.10
+	* 인스턴스 생성시 OS Swap Partition을 기본으로 설정하지 않음. [생성가이드](https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-swap-adding.html)
 	* CentOS 인스턴스 ssh 접근시 root 계정 접속 허용 에서 일반 계정 "centos" 접속 후 root 전환으로 변경 
 
 * CentOS 7.5 신규 이미지 업데이트
