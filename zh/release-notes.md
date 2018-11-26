@@ -13,7 +13,7 @@
 * Debian 9 Stretch 이미지 업데이트
 	* 이미지 정보
 		* Debian 9 Stretch
-		* 설명 : Debian 9 Stretch (2018.11.27)
+		* 설명 : Debian 9.6 Stretch (2018.11.27)
 		* 언어 : EN
 		* 비트 : 64bit
 		* 커널 : 4.9.0-8
@@ -24,7 +24,7 @@
 * Debian 8 Jessie 이미지 업데이트
 	* 이미지 정보
 		* Debian 8 Jessie
-		* 설명 : Debian 8 Jessie (2018.11.27)
+		* 설명 : Debian 8.11 Jessie (2018.11.27)
 		* 언어 : EN
 		* 비트 : 64bit
 		* 커널 : 3.16-0-6
