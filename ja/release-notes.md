@@ -12,7 +12,7 @@
 * Debian 9 Stretch 이미지 업데이트
 	* 이미지 정보
 		* Debian 9 Stretch
-		* 설명 : Debian 9.6 Stretch (2018.11.27)
+		* 설명 : Debian 9.6 Stretch (2018.12.11)
 		* 언어 : EN
 		* 비트 : 64bit
 		* 커널 : 4.9.0-8
@@ -23,7 +23,7 @@
 * Debian 8 Jessie 이미지 업데이트
 	* 이미지 정보
 		* Debian 8 Jessie
-		* 설명 : Debian 8.11 Jessie (2018.11.27)
+		* 설명 : Debian 8.11 Jessie (2018.12.11)
 		* 언어 : EN
 		* 비트 : 64bit
 		* 커널 : 3.16-0-6
@@ -33,7 +33,7 @@
 * CentOS 7.5 이미지 업데이트
 	* 이미지 정보
 		* CentOS 7.5
-		* 설명 : CentOS 7.5 (2018.11.27)
+		* 설명 : CentOS 7.5 (2018.12.11)
 		* 언어 : EN
 		* 비트 : 64bit
 		* 커널 : 3.10.0-862
@@ -43,7 +43,7 @@
 * CentOS 7.1 이미지 업데이트
 	* 이미지 정보
 		* CentOS 7.1
-		* 설명 : CentOS 7.1 (2018.11.27)
+		* 설명 : CentOS 7.1 (2018.12.11)
 		* 언어 : EN
 		* 비트 : 64bit
 		* 커널 : 3.10.0-693
@@ -53,7 +53,7 @@
 * CentOS 6.10 이미지 업데이트
 	* 이미지 정보
 		* CentOS 6.10
-		* 설명 : CentOS 6.10 (2018.11.27)
+		* 설명 : CentOS 6.10 (2018.12.11)
 		* 언어 : EN
 		* 비트 : 64bit
 		* 커널 : 2.6.32-754
@@ -63,7 +63,7 @@
 * CentOS 6.5 이미지 업데이트
 	* 이미지 정보
 		* CentOS 6.5
-		* 설명 : CentOS 6.5 (2018.11.27)
+		* 설명 : CentOS 6.5 (2018.12.11)
 		* 언어 : EN
 		* 비트 : 64bit
 		* 커널 : 2.6.32-754
@@ -73,7 +73,7 @@
 * Ubuntu Server 18.04 LTS 이미지 업데이트
 	* 이미지 정보
 		* Ubuntu Server 18.04 LTS
-		* 설명 : Ubuntu Server 18.04.1 LTS (2018.11.27)
+		* 설명 : Ubuntu Server 18.04.1 LTS (2018.12.11)
 		* 언어 : EN
 		* 비트 : 64bit
 		* 커널 : 4.15.0-29
@@ -83,7 +83,7 @@
 * Ubuntu Server 16.04 LTS 이미지 업데이트
 	* 이미지 정보
 		* Ubuntu Server 16.04 LTS
-		* 설명 : Ubuntu Server 16.04.5 LTS (2018.11.27)
+		* 설명 : Ubuntu Server 16.04.5 LTS (2018.12.11)
 		* 언어 : EN
 		* 비트 : 64bit
 		* 커널 : 4.4.0-131
@@ -93,7 +93,7 @@
 * Ubuntu Server 14.04 LTS 이미지 업데이트
 	* 이미지 정보
 		* Ubuntu Server 14.04 LTS
-		* 설명 : Ubuntu Server 14.04.5 LTS (2018.11.27)
+		* 설명 : Ubuntu Server 14.04.5 LTS (2018.12.11)
 		* 언어 : EN
 		* 비트 : 64bit
 		* 커널 : 4.4.0-31
