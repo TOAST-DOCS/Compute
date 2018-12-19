@@ -9,7 +9,6 @@
     * 이미지 공통 기능개선 
         * 네트워크 인터페이스 또는 Subnet 추가 삭제 시 간헐적으로 발생하는 통신 오류 해결
     * Debian 9 Stretch OS 커널 업데이트 
-
 * Debian 9 Stretch 이미지 업데이트
     * 이미지 정보
         * Debian 9 Stretch
@@ -20,7 +19,6 @@
     * 기능 개선
         * 커널 업데이트 :  기존 4.9.0-7 > 변경 4.9.0-8
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
-        
 * Debian 8 Jessie 이미지 업데이트
     * 이미지 정보
         * Debian 8 Jessie
@@ -30,7 +28,6 @@
         * 커널 : 3.16-0-6
     * 기능 개선
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
-    
 * CentOS 7.5 이미지 업데이트
     * 이미지 정보
         * CentOS 7.5
@@ -40,7 +37,6 @@
         * 커널 : 3.10.0-862
     * 기능 개선
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
-
 * CentOS 7.1 이미지 업데이트
     * 이미지 정보
         * CentOS 7.1
@@ -50,7 +46,6 @@
         * 커널 : 3.10.0-693
     * 기능 개선
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
-
 * CentOS 6.10 이미지 업데이트
     * 이미지 정보
         * CentOS 6.10
@@ -60,7 +55,6 @@
         * 커널 : 2.6.32-754
     * 기능 개선
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
-
 * CentOS 6.5 이미지 업데이트
     * 이미지 정보
         * CentOS 6.5
@@ -70,7 +64,6 @@
         * 커널 : 2.6.32-754
     * 기능 개선
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
-
 * Ubuntu Server 18.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 18.04 LTS
@@ -80,7 +73,6 @@
         * 커널 : 4.15.0-29
     * 기능 개선
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
-
 * Ubuntu Server 16.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 16.04 LTS
@@ -90,7 +82,6 @@
         * 커널 : 4.4.0-131
     * 기능 개선
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
-
 * Ubuntu Server 14.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 14.04 LTS
@@ -113,10 +104,8 @@
         * 설명 : CentOS 7.1 (2018.11.13)
         * 비트 : 64bit
         * 커널 : 3.10.0-693.21.1
-        
     * 커널 업데이트 :  3.10.0-229 -> 3.10.0-693.21.1
     * Yum repository target 변경 : CentOS 최신 repo
-        
 * CentOS 6.5 이미지 업데이트
     * 이미지 정보
         * CentOS 6.5
@@ -124,7 +113,6 @@
         * 설명 : CentOS 6.5 (2018.11.13)
         * 비트 : 64bit
         * 커널 : 2.6.32-754.6.3
-    
     * 커널 업데이트 :  2.6.32-431 -> 2.6.32-754.6.3
     * Yum repository target 변경 : CentOS 최신 repo
 
@@ -136,7 +124,6 @@
     * 신규 이미지 릴리즈 : CentOS 7.5 , CentOS 6.10
     * 인스턴스 생성시 OS Swap Partition을 기본으로 설정하지 않음.
     * CentOS 인스턴스 ssh 접근시 root 계정 접속 허용 에서 일반 계정 "centos" 접속 후 root 전환으로 변경 
-
 * CentOS 7.5 신규 이미지 업데이트
     * 이미지 정보
         * CentOS 7.5
@@ -168,8 +155,6 @@
             * 변경 : 일반 User 계정인 "centos" 로 접속 후 전환
         * 인스턴스 생성시 swap partition 을  생성하지 않음
         * /etc/hosts 파일의 사용자 추가 설정 유지
-
-
 * CentOS 6.10 신규 이미지 업데이트
     * 이미지 정보
         * CentOS 6.10
@@ -201,8 +186,6 @@
             * 변경 : 일반 User 계정인 "centos" 로 접속 후 전환
         * 인스턴스 생성시 swap partition 을  생성하지 않음
         * /etc/hosts 파일의 사용자 추가 설정 유지
-
-
 * CentOS 7.1 이미지 업데이트
     * 이미지 정보
         * CentOS 7.1
@@ -210,7 +193,6 @@
         * 설명 : CentOS 7.1 (2018.10.23)
         * 비트 : 64bit
         * 커널 : 3.10.0-229.el7
-        
     * Toast Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
@@ -235,8 +217,6 @@
             * 변경 : 일반 User 계정인 "centos" 로 접속 후 전환
         * 인스턴스 생성시 swap partition 을  생성하지 않음
         * /etc/hosts 파일의 사용자 추가 설정 유지
-
-
 * CentOS 6.5 이미지 업데이트
     * 이미지 정보
         * CentOS 6.5
@@ -244,7 +224,6 @@
         * 설명 : CentOS 6.5 (2018.10.23)
         * 비트 : 64bit
         * 커널 : 2.6.32-431.el6
-    
     * Toast Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
@@ -269,8 +248,6 @@
             * 변경 : 일반 User 계정인 "centos" 로 접속 후 전환
         * 인스턴스 생성시 swap partition 을  생성하지 않음
         * /etc/hosts 파일의 사용자 추가 설정 유지
-
-
 * Ubuntu Server 16.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 16.04 LTS
@@ -278,7 +255,6 @@
         * 설명 : Ubuntu Server 16.04.5 LTS (2018.10.23)
         * 비트 : 64bit
         * 커널 : 4.4.0-131
-
     * Toast Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
@@ -300,8 +276,6 @@
     * 기능개선
         * 인스턴스 생성시 swap partition 을  생성하지 않음
         * /etc/hosts 파일의 사용자 추가 설정 유지
-
-
 * Ubuntu Server 14.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 14.04 LTS
@@ -309,7 +283,6 @@
         * 설명 : Ubuntu Server 14.04.5 LTS (2018.10.23)
         * 비트 : 64bit
         * 커널 : 4.4.0-131
-
     * Toast Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
@@ -331,8 +304,6 @@
     * 기능개선
         * 인스턴스 생성시 swap partition 을  생성하지 않음
         * /etc/hosts 파일의 사용자 추가 설정 유지
-
-
 * Debian 9 Stretch 이미지 업데이트
     * 이미지 정보
         * Debian 9 Stretch
@@ -340,7 +311,6 @@
         * 설명 : Debian 9.5 Stretch (2018.10.23)
         * 비트 : 64bit
         * 커널 : 4.9.0-7
-
     * Toast Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
@@ -362,8 +332,6 @@
     * 기능개선
         * 인스턴스 생성시 swap partition 을  생성하지 않음
         * /etc/hosts 파일의 사용자 추가 설정 유지
-
-
 * Debian 8 Jessie 이미지 업데이트
     * 이미지 정보
         * Debian 8 Jessie
@@ -371,7 +339,6 @@
         * 설명 : Debian 8.11 Jessie (2018.10.23)
         * 비트 : 64bit
         * 커널 : 3.16.0-6
-        
     * Toast Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
@@ -402,15 +369,11 @@
 * Instance 관리 화면 UX/UI가 개선되었습니다.
     * 인스턴스 이름 조회 기능 추가
     * 가용성 영역, 인스턴스 상태로 필터 추가
-
-
 * Instance 생성 화면 기능 및 UX/UI가 개선되었습니다.
     * 플로팅 IP 사용 여부 선택 기능 추가
     * 보안 그룹 생성 및 정책 확인 기능 추가
     * 추가 블록 스토리지 연결 기능 추가
     * 예약 스크립트 등록 기능 추가
-
-
 * Ubuntu Server 18.04 LTS 신규 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 18.04 LTS
@@ -439,8 +402,6 @@
         * 추가 변경 사항
             * Instance 생성시 swap partition 을 생성하지 않음 ( 필요시 사용자가 별도 생성 )
         * 나머지 설정은 Ubuntu Server 18.04 LTS upstream 을 유지함
-
-
 * Ubuntu Linux 14.04 LTS 신규 이미지 업데이트
     * 이미지 정보
         * Ubuntu Linux 14.04
@@ -478,7 +439,6 @@
             * Network access: Do not allow anonymous enumeration of SAM accounts : Enabled
             * Network access: Do not allow anonymous enumeration of SAM accounts and shares : Enabled
             * Autologin 기능 제한 :  AutoAdminLogon 값을 0 으로 설정
-
 * Windows 2016 Standard 신규 이미지 업데이트
     * 이미지 정보
         * Windows 2016 STD
@@ -499,7 +459,6 @@
         * 시스템 관리
             * Network access: Do not allow anonymous enumeration of SAM accounts : Enabled
             * Network access: Do not allow anonymous enumeration of SAM accounts and shares : Enabled
-
 * Debian 9.4 신규 이미지 업데이트
     * 이미지 정보
         * Debian 9.4
@@ -566,8 +525,6 @@
     * Auto scale 기능으로 백신이 포함된 인스턴스 생성시 발생하는 에러 현상 수정
     * CPU 설정 변경  ( CPU Socket 최대 개수  4개 )
     * Network  인터페이스 속도  10G 로 표시
-
-
 * Windows 2008 R2 Standard 신규 이미지 업데이트
     * 이미지 정보
         * Windows 2008R2std
@@ -590,8 +547,6 @@
             * SAM 계정과 공유의 익명열거 허용 안함 :  SAM 계정관련  익명열거 허용 안함 항목 사용
             * 로그온 하지 않고 시스템 종료허용  제한 :  로그온하지 않고 시스템 종료 허용 정책을 사용 안함으로 설정
             * Autologin 기능 제한 :  AutoAdminLogon 값을 0 으로 설정
-
-
 * Ubuntu Linux 16.04 LTS 신규 이미지 업데이트
     * 이미지 정보
         * Ubuntu 16.04 LTS
@@ -673,7 +628,6 @@
 #### 기능 개선
 
 * VPC 기능이 추가됨에 따라 인스턴스 생성 시에 서브넷을 지정하도록 변경되었습니다.
-
 * Windows 2012 R2 Standard 이미지 업데이트
     * 이미지 정보
         * Name : Windows 2012R2std
@@ -684,7 +638,6 @@
         * Time Zone Peer 도메인 변경 : [기존] 1.kr.pool.ntp.org , 1.pool.ntp.org -> [변경] 1.pool.ntp.org , time.windows.com
     * MS 2018.02.13 Windows Update 적용
         * https://support.microsoft.com/ko-kr/help/4074594/windows-81-update-kb-4074594
-
 * Ubuntu Linux 14.04 이미지 업데이트
     * 이미지 정보
         * Name : Ubuntu 14.04
@@ -693,7 +646,6 @@
         * Linux Kernel Version : [기존] 3.13.0-32 --> [변경] 3.13.0-141
         * Variant 1 (CVE-2017-5753) - patched
         * Variant 3 (CVE-2017-5754) - patched
-
 * Debian Linux 8.2 이미지 업데이트
     * 이미지 정보
         * Name : Debian Linux 8.2.0
@@ -704,7 +656,6 @@
     * 취약점 패치를 위한 관련 커널 업데이트
         * Linux Kernel Version : [기존] 3.16.0-4 --> [변경] 3.16.0-5
         * Variant 3 (CVE-2017-5754) - patched
-
 * CentOS Linux 6.5 이미지 업데이트
     * 이미지 정보
         * Name : CentOS Linux 6.5
@@ -716,7 +667,6 @@
         * Linux Kernel Version : [기존] 2.6.32-431 --> [변경] 2.6.32-696.20.1
         * Variant 1 (CVE-2017-5753) - patched
         * Variant 3 (CVE-2017-5754) - patched
-
 * CentOS Linux 7.1 이미지 업데이트
     * 이미지 정보
         * Name : CentOS Linux 7.1
@@ -732,14 +682,12 @@
         * Linux Kernel Version : [기존] 3.10.0-229.20.1 --> [변경] 3.10.0-693.17.1
         * Variant 1 (CVE-2017-5753) - patched
         * Variant 3 (CVE-2017-5754) - patched
-
 * CentOS Linux 6.5 with MySQL 5.6.38 신규 이미지 업데이트
     * 이미지 정보
         * Name : CentOS Linux 6.5
         * Description : CentOS Linux 6.5 with MySQL 5.6.38 (2018.02.22)
     * MySQL 5.6.38 패키지 설치됨
     * 그외 설정은 CentOS Linux 6.5 이미지와 동일함
-
 * CentOS Linux 6.5 with MySQL 5.7.20 신규 이미지 업데이트
     * 이미지 정보
         * Name : CentOS Linux 6.5
