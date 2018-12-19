@@ -8,7 +8,9 @@
 * 이미지 업데이트 관련 주요 변경 사항 요약
     * 이미지 공통 기능개선 
         * 네트워크 인터페이스 또는 Subnet 추가 삭제 시 간헐적으로 발생하는 통신 오류 해결
-    * Debian 9 Stretch OS 커널 업데이트 
+    * Debian 9 Stretch OS 커널 업데이트
+
+
 * Debian 9 Stretch 이미지 업데이트
     * 이미지 정보
         * Debian 9 Stretch
