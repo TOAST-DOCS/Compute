@@ -9,7 +9,6 @@
 * Ubuntu Server 14.04 LTS 이미지 업데이트
 * Debian 9 Stretch 이미지 업데이트
 * Debian 8 Jessie 이미지 업데이트
-
 * (공통) 이미지 업데이트 변경 내용
     * 현상 
         * shell 상에서 자동완성 (tab) 기능 사용시 LC_CTYPE 관련 warning message 발생
