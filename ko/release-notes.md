@@ -1,5 +1,26 @@
 ## Compute > 릴리스 노트
 
+### 2018.12.17
+
+#### 기능 개선
+
+* Ubuntu Server 18.04 LTS 이미지 업데이트
+* Ubuntu Server 16.04 LTS 이미지 업데이트
+* Ubuntu Server 14.04 LTS 이미지 업데이트
+* Debian 9 Stretch 이미지 업데이트
+* Debian 8 Jessie 이미지 업데이트
+
+* (공통) 이미지 업데이트 변경 내용
+    * 현상 
+        * shell 상에서 자동완성 (tab) 기능 사용시 LC_CTYPE 관련 warning message 발생
+    * 원인
+        * 설치되지 않은 "ko_KR.UTF-8"로 설정됨
+    * 수정
+        * default 설정을 "en_US.UTF-8"로 변경
+        * /etc/default/locale 수정
+            * LC_ALL="en_US.UTF-8"
+            * LC_CTYPE="en_US.UTF-8"
+
 
 ### 2018.12.11
 
