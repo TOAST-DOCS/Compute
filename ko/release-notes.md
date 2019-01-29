@@ -1,5 +1,15 @@
 ## Compute > 릴리스 노트
 
+### 2019.01.29
+
+#### 기능 개선
+
+* Public API 변경
+  * Instance 생성시 Subnet을 지정할 수 있도록 수정
+  * Image 조회 API에 pagination을 위한 쿼리 파라미터 추가
+  * Image 삭제 API 추가
+  
+
 ### 2018.12.27
 
 #### 기능 개선
@@ -10,7 +20,7 @@
 * Debian 9 Stretch 이미지 업데이트
 * Debian 8 Jessie 이미지 업데이트
 * (공통) 이미지 업데이트 변경 내용
-    * 현상 
+    * 현상
         * shell 상에서 자동완성 (tab) 기능 사용시 LC_CTYPE 관련 warning message 발생
     * 원인
         * 설치되지 않은 "ko_KR.UTF-8"로 설정됨
@@ -26,7 +36,7 @@
 #### 기능 개선
 
 * 이미지 업데이트 관련 주요 변경 사항 요약
-    * 이미지 공통 기능개선 
+    * 이미지 공통 기능개선
         * 네트워크 인터페이스 또는 Subnet 추가 삭제 시 간헐적으로 발생하는 통신 오류 해결
     * Debian 9 Stretch OS 커널 업데이트
 
@@ -152,7 +162,7 @@
 * 이미지 업데이트 관련 주요 변경 사항 요약
     * 신규 이미지 릴리즈 : CentOS 7.5 , CentOS 6.10
     * 인스턴스 생성시 OS Swap Partition을 기본으로 설정하지 않음.
-    * CentOS 인스턴스 ssh 접근시 root 계정 접속 허용 에서 일반 계정 "centos" 접속 후 root 전환으로 변경 
+    * CentOS 인스턴스 ssh 접근시 root 계정 접속 허용 에서 일반 계정 "centos" 접속 후 root 전환으로 변경
 * CentOS 7.5 신규 이미지 업데이트
     * 이미지 정보
         * CentOS 7.5
