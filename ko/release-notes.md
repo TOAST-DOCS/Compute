@@ -11,6 +11,44 @@
     * 알람 정책 관리 및 알람 이력 조회 기능
 * 자세한 내용은 사용자 가이드를 참고해 주세요.
 
+#### 기능 개선
+
+* 이미지 전체 공통 적용 
+	* 업데이트 이미지 명
+		* CentOS 7.1 (2019.03.26)
+		* CentOS 7.5 (2019.03.26)
+		* CentOS 6.10 (2019.03.26)
+		* CentOS 6.5 (2019.03.26)
+		* Ubuntu Server 18.04.2 LTS (2019.03.26)
+		* Ubuntu Server 16.04.5 LTS (2019.03.26)
+		* Ubuntu Server 14.04.5 LTS (2019.03.26)
+		* Debian 9.8 Stretch (2019.03.26)
+		* Debian 8.11 Jessie (2019.03.26)
+		* Windows 2016 STD (2019.03.26)
+		* Windows 2012 R2 STD (2019.03.26)
+		* Windows 2008 R2 STD (2019.03.26)
+		
+		* CentOS 6.5 with MySQL 5.6.38 (2019.03.26)
+		* CentOS 6.5 with MySQL 5.6.20 (2019.03.26)
+		* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.03.26)
+		* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.03.26)
+		* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.03.26)
+		* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.03.26)
+		* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.03.26)
+	* 반영내용
+		* Toast cloud Monitoring V2 적용을 위한 이미지 수정 반영 
+
+* Debian 9 Stretch 이미지 업데이트
+	* 이미지 정보
+		* Debian 9 Stretch
+		* 설명 : Debian 9.8 Stretch (2019.03.26)
+		* 언어 : EN
+		* 비트 : 64bit
+		* 커널 : 4.9.144-3
+	* 기능 개선
+      * 커널 업데이트
+
+
 ### 2019.02.26
 
 #### 기능 개선
