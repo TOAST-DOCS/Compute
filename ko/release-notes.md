@@ -29,7 +29,7 @@
 		* CentOS 6.5 with MySQL 5.6.20 (2019.03.26)
 		
 	* 반영내용
-		* Bootstrap 과정의 기능 개선
+		* Bootstrap 과정의 기능 개선 
 
 
 ### 2019.02.26
