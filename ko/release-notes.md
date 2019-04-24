@@ -1,5 +1,35 @@
 ## Compute > 릴리스 노트
 
+### 2019.04.25
+
+#### 기능 개선
+
+* Auto Scaling 예약 작업
+	* 예약 작업 생성 시 타임존 설정 기능 추가
+
+* Linux CentOS 계열 공용 이미지
+	* 업데이트 이미지 명
+		* CentOS 6.5 (2019.04.25)
+		* CentOS 6.10 (2019.04.25)
+		* CentOS 7.1 (2019.04.25)
+		* CentOS 7.5 (2019.04.25)
+	* 반영내용
+		* yum update 시 발생하는 에러현상 개선
+		* CentOS 7.X  OS이미지 시간 동기화 데몬 변경 (ntpd)
+* Windows 계열 공용 이미지
+	* 업데이트 이미지 명
+		* Windows 2008 R2 STD (2019.04.25)
+		* Windows 2012 R2 STD (2019.04.25)
+		* Windows 2016 STD (2019.04.25)
+		* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.04.25)
+		* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.04.25)
+		* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.04.25)
+		* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.04.25)
+		* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.04.25)
+	* 반영 내용
+		* Windows Bootstrap 과정 기능 개선
+
+
 ### 2019.03.26
 
 #### 기능 개선
@@ -877,3 +907,4 @@
 * 정지된 인스턴스의 보안 그룹 수정이 가능하도록 변경합니다.
     * 의도와 다르게 기존에는 정지되어 있는 인스턴스에 보안 그룹 수정이 불가능하였습니다. 이를 수정하여 정지된 인스턴스도 보안 그룹을 변경할 수 있도록 하였습니다.
 * 인스턴스 생성시 선택 가능한 보안 그룹이 하나일 경우 자동 선택되도록 변경합니다.
+
