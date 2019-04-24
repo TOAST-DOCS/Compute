@@ -28,7 +28,6 @@
 		* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.04.25)
 	* 반영 내용
 		* Windows Bootstrap 과정 기능 개선
-		* 외부 통신이 불가능한 네트워크 선택 시 패스워드 생성이 실패하는 현상 개선
 
 
 ### 2019.03.26
