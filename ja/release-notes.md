@@ -1,5 +1,32 @@
 ## Compute > Release Notes
 
+### 2019.05.14
+
+#### 기능 개선
+
+* 신규 이미지 제공
+	* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.05.14)
+	* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.05.14)
+	* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.05.14)
+	* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.05.14)
+	* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.05.14)
+	* Windows 2016 STD with MS-SQL 2016 Standard (2019.05.14)
+	* CentOS 6.10 with MySQL 5.6.38 (2019.05.14)
+	* CentOS 6.10 with MySQL 5.7.20 (2019.05.14)
+	
+* OS 이미지 지원 종료
+	* CentOS 6.5
+	* CentOS 7.1
+	* Ubuntu 14.04
+	* Windows 2008 R2 STD
+	
+* 기존 OS 이미지 커널 업데이트
+	* Ubuntu 16.04 LTS 
+		* 커널 : 4.4.0-142.168 
+	* Debian 9 Stretch
+		* 커널 : 4.9.168-1 
+
+
 ### 2019.04.25
 
 #### 기능 개선
