@@ -1,5 +1,20 @@
 ## Compute > 릴리스 노트
 
+### 2019.05.14
+
+#### 기능 개선
+
+* MySQL 이미지 변경
+	* CentOS Linux 6.5 with MySQL 5.6.38  > CentOS 6.10 with MySQL 5.6.38 (2019.05.14)
+	* CentOS Linux 6.5 with MySQL 5.7.20  > CentOS 6.10 with MySQL 5.7.20 (2019.05.14)
+
+* OS 이미지 지원 종료
+	* CentOS 6.5
+	* CentOS 7.1
+	* Ubuntu 14.04
+	* Windows 2008 R2 STD
+
+
 ### 2019.04.25
 
 #### 기능 개선
