@@ -19,7 +19,7 @@
 * Ubuntu Server 16.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 16.04 LTS
-        * 설명 : Ubuntu Server 14.04.6 LTS (2019.05.28)
+        * 설명 : Ubuntu Server 16.04.6 LTS (2019.05.28)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 4.4.0-142.168
