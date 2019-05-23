@@ -1,5 +1,59 @@
 ## Compute > 릴리스 노트
 
+### 2019.05.28
+
+#### 기능 개선
+
+* **KR 리전**
+* Debian 9 Stretch 이미지 업데이트
+	* 이미지 정보
+		* Debian 9 Stretch
+		* 설명 : Debian 9.9 Stretch (2019.05.28)
+		* 언어 : EN
+		* 비트 : 64bit
+		* 커널 : 4.9.168-1
+	* 기능 개선
+		* 커널 업데이트
+		* 마이너 버전 업데이트
+
+* Ubuntu Server 16.04 LTS 이미지 업데이트
+    * 이미지 정보
+        * Ubuntu Server 16.04 LTS
+        * 설명 : Ubuntu Server 14.04.6 LTS (2019.05.28)
+        * 언어 : EN
+        * 비트 : 64bit
+        * 커널 : 4.4.0-142.168
+    * 기능 개선
+        * 커널 업데이트
+	* 마이너 버전 업데이트
+
+* Linux CentOS 계열 공용 이미지
+	* 업데이트
+		* CentOS 6.10 (2019.05.28)
+		* CentOS 7.5 (2019.05.28)
+		* Debian 8.11 Jessie (2019.05.28)
+		* Debian 9.9 Stretch (2019.05.28)
+		* Ubuntu Server 16.04.6 LTS (2019.05.28)
+		* Ubuntu Server 18.04.2 LTS (2019.05.28)
+	* 반영 내용
+		* Region에 따른 timezone 변경 적용
+
+* Windows 계열 공용 이미지
+	* 업데이트 
+		* Windows 2012 R2 STD (2019.05.28)
+		* Windows 2016 STD (2019.05.28)
+		* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.05.28)
+		* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.05.28)
+		* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.05.28)
+		* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.05.28)
+		* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.05.28)
+	* 반영 내용
+		* Region에 따른 timezone 변경 적용
+
+	* 신규 릴리즈
+		* Windows 2016 STD with MS-SQL 2016 Standard (2019.05.28)
+
+
 ### 2019.05.14
 
 #### 기능 개선
