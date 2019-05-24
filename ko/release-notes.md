@@ -49,7 +49,9 @@
 		* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.05.28)
 	* 반영 내용
 		* Region에 따른 timezone 변경 적용
-
+		* 2019년 5월 14일 보안 업데이트 반영
+			* Windows 2012 R2 ( https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151 )
+			* Windows 2016 ( https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947 )
 	* 신규 릴리즈
 		* Windows 2016 STD with MS-SQL 2016 Standard (2019.05.28)
 
