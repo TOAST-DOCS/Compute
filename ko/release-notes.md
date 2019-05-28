@@ -39,7 +39,7 @@
 		* Region에 따른 timezone 변경 적용
 
 * Windows 계열 공용 이미지
-	* 업데이트 
+	* 업데이트
 		* Windows 2012 R2 STD (2019.05.28)
 		* Windows 2016 STD (2019.05.28)
 		* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.05.28)
@@ -54,6 +54,9 @@
 			* Windows 2016 ( https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947 )
 	* 신규 릴리즈
 		* Windows 2016 STD with MS-SQL 2016 Standard (2019.05.28)
+
+* Auto Scaling 통계 그래프
+	* Scaling Group의 사용량을 확인할 수 있는 통계 그래프 추가
 
 
 ### 2019.05.14
@@ -115,7 +118,7 @@
 	* 기능 개선
 		* 커널 업데이트
 
-* 리눅스 계열 이미지 공통 적용 
+* 리눅스 계열 이미지 공통 적용
 	* 업데이트 이미지 이름
 		* CentOS 7.1 (2019.03.26)
 		* CentOS 7.5 (2019.03.26)
@@ -128,9 +131,9 @@
 		* Debian 8.11 Jessie (2019.03.26)
 		* CentOS 6.5 with MySQL 5.6.38 (2019.03.26)
 		* CentOS 6.5 with MySQL 5.7.20 (2019.03.26)
-		
+
 	* 반영내용
-		* Bootstrap 과정의 기능 개선 
+		* Bootstrap 과정의 기능 개선
 
 
 ### 2019.02.26
@@ -147,7 +150,7 @@
     * 기능 개선
         * 커널 업데이트 ( 4.15.0-29 -> 4.15.0-45 )
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 추가 해결
-        
+
 
 ### 2019.01.29
 
@@ -157,7 +160,7 @@
   * Instance 생성시 Subnet을 지정할 수 있도록 수정
   * Image 조회 API에 pagination을 위한 쿼리 파라미터 추가
   * Image 삭제 API 추가
-  
+
 
 ### 2018.12.27
 

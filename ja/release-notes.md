@@ -39,7 +39,7 @@
 		* Region에 따른 timezone 변경 적용
 
 * Windows 계열 공용 이미지
-	* 업데이트 
+	* 업데이트
 		* Windows 2012 R2 STD (2019.05.28)
 		* Windows 2016 STD (2019.05.28)
 		* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.05.28)
@@ -55,6 +55,9 @@
 	* 신규 릴리즈
 		* Windows 2016 STD with MS-SQL 2016 Standard (2019.05.28)
 
+* Auto Scaling 통계 그래프
+	* Scaling Group의 사용량을 확인할 수 있는 통계 그래프 추가
+
 ### 2019.05.14
 
 #### 기능 개선
@@ -68,18 +71,18 @@
 	* Windows 2016 STD with MS-SQL 2016 Standard (2019.05.14)
 	* CentOS 6.10 with MySQL 5.6.38 (2019.05.14)
 	* CentOS 6.10 with MySQL 5.7.20 (2019.05.14)
-	
+
 * OS 이미지 지원 종료
 	* CentOS 6.5
 	* CentOS 7.1
 	* Ubuntu 14.04
 	* Windows 2008 R2 STD
-	
+
 * 기존 OS 이미지 커널 업데이트
-	* Ubuntu 16.04 LTS 
-		* 커널 : 4.4.0-142.168 
+	* Ubuntu 16.04 LTS
+		* 커널 : 4.4.0-142.168
 	* Debian 9 Stretch
-		* 커널 : 4.9.168-1 
+		* 커널 : 4.9.168-1
 
 
 ### 2019.04.25
@@ -126,7 +129,7 @@
 	* 기능 개선
 		* 커널 업데이트
 
-* 리눅스 계열 이미지 공통 적용 
+* 리눅스 계열 이미지 공통 적용
 	* 업데이트 이미지 이름
 		* CentOS 7.1 (2019.03.26)
 		* CentOS 7.5 (2019.03.26)
@@ -139,7 +142,7 @@
 		* Debian 8.11 Jessie (2019.03.26)
 		* CentOS 6.5 with MySQL 5.6.38 (2019.03.26)
 		* CentOS 6.5 with MySQL 5.7.20 (2019.03.26)
-		
+
 	* 반영내용
 		* Bootstrap 과정의 기능 개선
 
@@ -168,7 +171,7 @@
   * Image 조회 API에 pagination을 위한 쿼리 파라미터 추가
   * Image 삭제 API 추가
 
-### 2018.12.27 
+### 2018.12.27
 
 #### 기능 개선
 
@@ -178,7 +181,7 @@
 * Debian 9 Stretch 이미지 업데이트
 * Debian 8 Jessie 이미지 업데이트
 * (공통) 이미지 업데이트 변경 내용
-    * 현상 
+    * 현상
         * shell 상에서 자동완성 (tab) 기능 사용시 LC_CTYPE 관련 warning message 발생
     * 원인
         * 설치되지 않은 "ko_KR.UTF-8"로 설정됨
@@ -194,7 +197,7 @@
 #### 기능 개선
 
 * 이미지 업데이트 관련 주요 변경 사항 요약
-    * 이미지 공통 기능개선 
+    * 이미지 공통 기능개선
         * 네트워크 인터페이스 또는 Subnet 추가 삭제 시 간헐적으로 발생하는 통신 오류 해결
     * Debian 9 Stretch OS 커널 업데이트
 
@@ -320,7 +323,7 @@
 * 이미지 업데이트 관련 주요 변경 사항 요약
     * 신규 이미지 릴리즈 : CentOS 7.5 , CentOS 6.10
     * 인스턴스 생성시 OS Swap Partition을 기본으로 설정하지 않음.
-    * CentOS 인스턴스 ssh 접근시 root 계정 접속 허용 에서 일반 계정 "centos" 접속 후 root 전환으로 변경 
+    * CentOS 인스턴스 ssh 접근시 root 계정 접속 허용 에서 일반 계정 "centos" 접속 후 root 전환으로 변경
 * CentOS 7.5 신규 이미지 업데이트
     * 이미지 정보
         * CentOS 7.5
