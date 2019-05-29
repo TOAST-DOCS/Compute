@@ -27,30 +27,30 @@
   - Minor version updated
 - Common Image of Linux CentOS Type 
   - Updates 
-    - CentOS 6.10 (May 28, 2019)
-    - CentOS 7.5 (May 28, 2019)
-    - Debian 8.11 Jessie (May 28, 2019)
-    - Debian 9.9 Stretch (May 28, 2019)
-    - Ubuntu Server 16.04.6 LTS (May 28, 2019)
-    - Ubuntu Server 18.04.2 LTS (May 28, 2019)
+    - CentOS 6.10 (2019.05.28)
+    - CentOS 7.5 (2019.05.28)
+    - Debian 8.11 Jessie (2019.05.28)
+    - Debian 9.9 Stretch (2019.05.28)
+    - Ubuntu Server 16.04.6 LTS (2019.05.28)
+    - Ubuntu Server 18.04.2 LTS (2019.05.28)
   - Application
     - Change of timezone according to each region
 - Common Image of Windows Type 
   - Updates
-    - Windows 2012 R2 STD (May 28, 2019)
-    - Windows 2016 STD (May 28, 2019)
-    - Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (May 28, 2019)
-    - Windows 2012 R2 STD with MS-SQL 2012 Standard (May 28, 2019)
-    - Windows 2012 R2 STD with MS-SQL 2014 Standard (May 28, 2019)
-    - Windows 2012 R2 STD with MS-SQL 2016 Express (May 28, 2019)
-    - Windows 2012 R2 STD with MS-SQL 2016 Standard (May 28, 2019)
+    - Windows 2012 R2 STD (2019.05.28)
+    - Windows 2016 STD (2019.05.28)
+    - Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.05.28)
+    - Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.05.28)
+    - Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.05.28)
+    - Windows 2012 R2 STD with MS-SQL 2016 Express (2019.05.28)
+    - Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.05.28)
   - Application 
     - Change of timezone according to each region 
     - Security updated as of May 14, 2019
       - Windows 2012 R2 ( https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151 )
       - Windows 2016 ( https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947 )
   - New Release 
-    - Windows 2016 STD with MS-SQL 2016 Standard (May 28, 2019)
+    - Windows 2016 STD with MS-SQL 2016 Standard (2019.05.28)
     
     
 ### 2019.05.14
