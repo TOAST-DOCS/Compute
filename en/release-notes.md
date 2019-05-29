@@ -1,63 +1,58 @@
 ## Compute > Release Notes
 
-### 2019.05.28
+### May 28, 2019
 
-#### 기능 개선
+#### Updates
 
-* **KR 리전**
-* Debian 9 Stretch 이미지 업데이트
-	* 이미지 정보
-		* Debian 9 Stretch
-		* 설명 : Debian 9.9 Stretch (2019.05.28)
-		* 언어 : EN
-		* 비트 : 64bit
-		* 커널 : 4.9.168-1
-	* 기능 개선
-		* 커널 업데이트
-		* 마이너 버전 업데이트
-
-* Ubuntu Server 16.04 LTS 이미지 업데이트
-    * 이미지 정보
-        * Ubuntu Server 16.04 LTS
-        * 설명 : Ubuntu Server 16.04.6 LTS (2019.05.28)
-        * 언어 : EN
-        * 비트 : 64bit
-        * 커널 : 4.4.0-142.168
-    * 기능 개선
-        * 커널 업데이트
-	* 마이너 버전 업데이트
-
-* Linux CentOS 계열 공용 이미지
-	* 업데이트
-		* CentOS 6.10 (2019.05.28)
-		* CentOS 7.5 (2019.05.28)
-		* Debian 8.11 Jessie (2019.05.28)
-		* Debian 9.9 Stretch (2019.05.28)
-		* Ubuntu Server 16.04.6 LTS (2019.05.28)
-		* Ubuntu Server 18.04.2 LTS (2019.05.28)
-	* 반영 내용
-		* Region에 따른 timezone 변경 적용
-
-* Windows 계열 공용 이미지
-	* 업데이트
-		* Windows 2012 R2 STD (2019.05.28)
-		* Windows 2016 STD (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.05.28)
-	* 반영 내용
-		* Region에 따른 timezone 변경 적용
-		* 2019년 5월 14일 보안 업데이트 반영
-			* Windows 2012 R2 ( https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151 )
-			* Windows 2016 ( https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947 )
-	* 신규 릴리즈
-		* Windows 2016 STD with MS-SQL 2016 Standard (2019.05.28)
-
-* Auto Scaling 통계 그래프
-	* Scaling Group의 사용량을 확인할 수 있는 통계 그래프 추가
-
+- **KR Region**
+- Image Updated for Debian 9 Stretch 
+  - Image Information 
+    - Debian 9 Stretch
+    - Description: Debian 9.9 Stretch (2019.05.28)
+    - Language: EN
+    - Bit: 64bit
+    - Kernel: 4.9.168-1
+  - Feature Updates 
+    - Kernel updated
+    - Minor version updated 
+- Image Updated for Ubuntu Server 16.04 LTS  
+  - Image Information
+    - Ubuntu Server 16.04 LTS
+    - Description: Ubuntu Server 16.04.6 LTS (2019.05.28)
+    - Language: EN
+    - Bit: 64bit
+    - Kernel: 4.4.0-142.168
+  - Feature Updates
+    - Kernel updated
+  - Minor version updated
+- Common Image of Linux CentOS Type 
+  - Updates 
+    - CentOS 6.10 (May 28, 2019)
+    - CentOS 7.5 (May 28, 2019)
+    - Debian 8.11 Jessie (May 28, 2019)
+    - Debian 9.9 Stretch (May 28, 2019)
+    - Ubuntu Server 16.04.6 LTS (May 28, 2019)
+    - Ubuntu Server 18.04.2 LTS (May 28, 2019)
+  - Application
+    - Change of timezone according to each region
+- Common Image of Windows Type 
+  - Updates
+    - Windows 2012 R2 STD (May 28, 2019)
+    - Windows 2016 STD (May 28, 2019)
+    - Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (May 28, 2019)
+    - Windows 2012 R2 STD with MS-SQL 2012 Standard (May 28, 2019)
+    - Windows 2012 R2 STD with MS-SQL 2014 Standard (May 28, 2019)
+    - Windows 2012 R2 STD with MS-SQL 2016 Express (May 28, 2019)
+    - Windows 2012 R2 STD with MS-SQL 2016 Standard (May 28, 2019)
+  - Application 
+    - Change of timezone according to each region 
+    - Security updated as of May 14, 2019
+      - Windows 2012 R2 ( https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151 )
+      - Windows 2016 ( https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947 )
+  - New Release 
+    - Windows 2016 STD with MS-SQL 2016 Standard (May 28, 2019)
+    
+    
 ### 2019.05.14
 
 #### 기능 개선
