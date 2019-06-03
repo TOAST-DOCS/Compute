@@ -1,5 +1,11 @@
 ## Compute > Release Notes
 
+### June 25, 2019
+
+#### Updates
+
+* Image creation is available even when instance is running.
+
 ### May 28, 2019
 
 #### Updates
