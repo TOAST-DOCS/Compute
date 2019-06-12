@@ -1,4 +1,4 @@
-## Compute > Release Notes
+## Compute > リリースノート
 
 ### 2019.06.25
 
@@ -9,59 +9,55 @@
 
 ### 2019.05.28
 
-#### 기능 개선
+#### 機能改善
 
-* **KR 리전**
-* Debian 9 Stretch 이미지 업데이트
-	* 이미지 정보
-		* Debian 9 Stretch
-		* 설명 : Debian 9.9 Stretch (2019.05.28)
-		* 언어 : EN
-		* 비트 : 64bit
-		* 커널 : 4.9.168-1
-	* 기능 개선
-		* 커널 업데이트
-		* 마이너 버전 업데이트
-
-* Ubuntu Server 16.04 LTS 이미지 업데이트
-    * 이미지 정보
-        * Ubuntu Server 16.04 LTS
-        * 설명 : Ubuntu Server 16.04.6 LTS (2019.05.28)
-        * 언어 : EN
-        * 비트 : 64bit
-        * 커널 : 4.4.0-142.168
-    * 기능 개선
-        * 커널 업데이트
-	* 마이너 버전 업데이트
-
-* Linux CentOS 계열 공용 이미지
-	* 업데이트
-		* CentOS 6.10 (2019.05.28)
-		* CentOS 7.5 (2019.05.28)
-		* Debian 8.11 Jessie (2019.05.28)
-		* Debian 9.9 Stretch (2019.05.28)
-		* Ubuntu Server 16.04.6 LTS (2019.05.28)
-		* Ubuntu Server 18.04.2 LTS (2019.05.28)
-	* 반영 내용
-		* Region에 따른 timezone 변경 적용
-
-* Windows 계열 공용 이미지
-	* 업데이트
-		* Windows 2012 R2 STD (2019.05.28)
-		* Windows 2016 STD (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.05.28)
-	* 반영 내용
-		* Region에 따른 timezone 변경 적용
-		* 2019년 5월 14일 보안 업데이트 반영
-			* Windows 2012 R2 ( https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151 )
-			* Windows 2016 ( https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947 )
-	* 신규 릴리즈
-		* Windows 2016 STD with MS-SQL 2016 Standard (2019.05.28)
-
+- KRリージョン
+- Debian 9 Stretchイメージアップデート
+  - イメージ情報
+    - Debian 9 Stretch
+    - 説明：Debian 9.9 Stretch (2019.05.28)
+    - 言語：EN
+    - bit：64bit
+    - カーネル：4.9.168-1
+  - 機能改善
+    - カーネルアップデート
+    - マイナーバージョンアップデート
+- Ubuntu Server 16.04 LTSイメージアップデート
+  - イメージ情報
+    - Ubuntu Server 16.04 LTS
+    - 説明：Ubuntu Server 16.04.6 LTS (2019.05.28)
+    - 言語：EN
+    - bit：64bit
+    - カーネル：4.4.0-142.168
+  - 機能改善
+    - カーネルアップデート
+  - マイナーバージョンアップデート
+- Linux CentOS系のパブリックイメージ
+  - アップデート
+    - CentOS 6.10 (2019.05.28)
+    - CentOS 7.5 (2019.05.28)
+    - Debian 8.11 Jessie (2019.05.28)
+    - Debian 9.9 Stretch (2019.05.28)
+    - Ubuntu Server 16.04.6 LTS (2019.05.28)
+    - Ubuntu Server 18.04.2 LTS (2019.05.28)
+  - 反映内容
+    - Regionに応じてtimezone変更を適用
+- Windows系のパブリックイメージ
+  - アップデート 
+    - Windows 2012 R2 STD (2019.05.28)
+    - Windows 2016 STD (2019.05.28)
+    - Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.05.28)
+    - Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.05.28)
+    - Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.05.28)
+    - Windows 2012 R2 STD with MS-SQL 2016 Express (2019.05.28)
+    - Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.05.28)
+  - 反映内容
+    - Regionに応じてtimezone変更を適用
+    - 2019年5月14日セキュリティアップデートを反映
+      - Windows 2012 R2 ( https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151 )
+      - Windows 2016 ( https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947 )
+  - 新規リリース
+    - Windows 2016 STD with MS-SQL 2016 Standard (2019.05.28)
 * Auto Scaling 통계 그래프
 	* Scaling Group의 사용량을 확인할 수 있는 통계 그래프 추가
 
