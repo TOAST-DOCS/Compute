@@ -1,8 +1,15 @@
-Compute > リリースノート
+## Compute > リリースノート
 
-2019.05.28
+### 2019.06.25
 
-機能改善
+#### 機能改善
+
+* インスタンスが起動中の時もイメージが作成できるように機能を追加しました。
+
+
+### 2019.05.28
+
+#### 機能改善
 
 - KRリージョン
 - Debian 9 Stretchイメージアップデート
@@ -51,7 +58,6 @@ Compute > リリースノート
       - Windows 2016 ( https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947 )
   - 新規リリース
     - Windows 2016 STD with MS-SQL 2016 Standard (2019.05.28)
-
 * Auto Scaling 통계 그래프
 	* Scaling Group의 사용량을 확인할 수 있는 통계 그래프 추가
 
