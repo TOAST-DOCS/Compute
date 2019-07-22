@@ -1,5 +1,12 @@
 ## Compute > Release Notes
 
+### July 23, 2019
+
+#### Release of New Service: System Monitoring
+
+- System metrics are provided on a chart for a newly created virtual server  
+- Each chart of system metrics can be configured under a layout of choice; you may set a notification to be sent to a group of particular users via email or SMS, when a metric reaches a specific threshold. 
+
 ### June 25, 2019
 
 #### Updates
