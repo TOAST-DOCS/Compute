@@ -5,6 +5,11 @@
 #### 기능 개선
 
 * 인스턴스가 구동 중일 때도 이미지를 생성할 수 있도록 기능이 추가되었습니다.
+* Auto Scaling 예약 작업
+	* 예약 작업 생성 시 타임존 설정 기능 추가
+* Auto Scaling 통계 그래프
+	* Scaling Group의 사용량을 확인할 수 있는 통계 그래프 추가
+	
 * Debian 9 Stretch 이미지 업데이트
 	* 이미지 정보
 		* Debian 9 Stretch
@@ -30,73 +35,39 @@
 * Linux CentOS 계열 공용 이미지
 	* 업데이트
 		* CentOS 6.10 (2019.05.28)
-		* CentOS 7.5 (2019.05.28)
-		* Debian 8.11 Jessie (2019.05.28)
-		* Debian 9.9 Stretch (2019.05.28)
-		* Ubuntu Server 16.04.6 LTS (2019.05.28)
-		* Ubuntu Server 18.04.2 LTS (2019.05.28)
 	* 반영 내용
 		* Region에 따른 timezone 변경 적용
+		* yum update 시 발생하는 에러현상 개선
+		* CentOS 7.X  OS이미지 시간 동기화 데몬 변경 (ntpd)
+		
+* MySQL 이미지 변경
+	* CentOS Linux 6.5 with MySQL 5.6.38  > CentOS 6.10 with MySQL 5.6.38 (2019.05.14)
+	* CentOS Linux 6.5 with MySQL 5.7.20  > CentOS 6.10 with MySQL 5.7.20 (2019.05.14)
 
 * Windows 계열 공용 이미지
 	* 업데이트
-		* Windows 2012 R2 STD (2019.05.28)
-		* Windows 2016 STD (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.05.28)
+		* Windows 2012 R2 STD (2019.08.13)
+		* Windows 2016 STD (2019.08.13)
+		* Windows 2012 STD with MS-SQL 2008 Standard (2019.05.14)
+		* Windows 2012 STD with MS-SQL 2012 Standard (2019.08.13)
+		* Windows 2012 STD with MS-SQL 2014 Standard (2019.08.13)
+		* Windows 2012 STD with MS-SQL 2016 Express (2019.08.13)
+		* Windows 2012 STD with MS-SQL 2016 Standard (2019.08.13)
+
 	* 반영 내용
+		* Windows Bootstrap 과정 기능 개선
 		* Region에 따른 timezone 변경 적용
 		* 2019년 5월 14일 보안 업데이트 반영
 			* Windows 2012 R2 ( https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151 )
 			* Windows 2016 ( https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947 )
 	* 신규 릴리즈
-		* Windows 2016 STD with MS-SQL 2016 Standard (2019.05.28)
-
-* Auto Scaling 통계 그래프
-	* Scaling Group의 사용량을 확인할 수 있는 통계 그래프 추가
-
-* MySQL 이미지 변경
-	* CentOS Linux 6.5 with MySQL 5.6.38  > CentOS 6.10 with MySQL 5.6.38 (2019.05.14)
-	* CentOS Linux 6.5 with MySQL 5.7.20  > CentOS 6.10 with MySQL 5.7.20 (2019.05.14)
+		* Windows 2016 STD with MS-SQL 2016 Standard (2019.08.13)
 
 * OS 이미지 지원 종료
 	* CentOS 6.5
 	* CentOS 7.1
 	* Ubuntu 14.04
 	* Windows 2008 R2 STD
-
-
-### 2019.04.25
-
-#### 기능 개선
-
-* Auto Scaling 예약 작업
-	* 예약 작업 생성 시 타임존 설정 기능 추가
-
-* Linux CentOS 계열 공용 이미지
-	* 업데이트 이미지 명
-		* CentOS 6.5 (2019.04.25)
-		* CentOS 6.10 (2019.04.25)
-		* CentOS 7.1 (2019.04.25)
-		* CentOS 7.5 (2019.04.25)
-	* 반영내용
-		* yum update 시 발생하는 에러현상 개선
-		* CentOS 7.X  OS이미지 시간 동기화 데몬 변경 (ntpd)
-* Windows 계열 공용 이미지
-	* 업데이트 이미지 명
-		* Windows 2008 R2 STD (2019.04.25)
-		* Windows 2012 R2 STD (2019.04.25)
-		* Windows 2016 STD (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.04.25)
-	* 반영 내용
-		* Windows Bootstrap 과정 기능 개선
 
 
 ### 2019.03.26
