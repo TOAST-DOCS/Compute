@@ -13,7 +13,7 @@
 * Debian 9 Stretch 이미지 업데이트
 	* 이미지 정보
 		* Debian 9 Stretch
-		* 설명 : Debian 9.9 Stretch (2019.05.28)
+		* 설명 : Debian 9.9 Stretch (2019.08.13)
 		* 언어 : EN
 		* 비트 : 64bit
 		* 커널 : 4.9.168-1
@@ -24,7 +24,7 @@
 * Ubuntu Server 16.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 16.04 LTS
-        * 설명 : Ubuntu Server 16.04.6 LTS (2019.05.28)
+        * 설명 : Ubuntu Server 16.04.6 LTS (2019.08.13)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 4.4.0-142.168
@@ -34,15 +34,20 @@
 
 * Linux CentOS 계열 공용 이미지
 	* 업데이트
-		* CentOS 6.10 (2019.05.28)
+		* CentOS 6.10 (2019.08.13)
+		* CentOS 7.5 (2019.08.13)
+		* Debian 8.11 Jessie (2019.08.13)
+		* Debian 9.9 Stretch (2019.08.13)
+		* Ubuntu Server 16.04.6 LTS (2019.08.13)
+		* Ubuntu Server 18.04.2 LTS (2019.08.13)
 	* 반영 내용
 		* Region에 따른 timezone 변경 적용
 		* yum update 시 발생하는 에러현상 개선
 		* CentOS 7.X  OS이미지 시간 동기화 데몬 변경 (ntpd)
 		
 * MySQL 이미지 변경
-	* CentOS Linux 6.5 with MySQL 5.6.38  > CentOS 6.10 with MySQL 5.6.38 (2019.05.14)
-	* CentOS Linux 6.5 with MySQL 5.7.20  > CentOS 6.10 with MySQL 5.7.20 (2019.05.14)
+	* CentOS Linux 6.5 with MySQL 5.6.38  > CentOS Linux 6.10 with MySQL 5.6.38 (2019.08.13)
+	* CentOS Linux 6.5 with MySQL 5.7.20  > CentOS Linux 6.10 with MySQL 5.7.20 (2019.08.13)
 
 * Windows 계열 공용 이미지
 	* 업데이트
