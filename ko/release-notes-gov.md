@@ -1,27 +1,19 @@
 ## Compute > 릴리스 노트
 
-### 2019.07.23
-
-#### 신규 서비스 출시: System Monitoring
-
-- 생성된 가상 서버의 시스템 지표 차트를 제공합니다. 
-- 각 시스템 지표 차트를 원하는 레이아웃으로 구성할 수 있으며, 지표가 특정 임계치에 도달할 경우 원하는 특정 사용자 그룹에게 이메일이나 SMS로 알림을 보내도록 설정할 수 있습니다.
-
-### 2019.06.25
+### 2019.08.13
 
 #### 기능 개선
 
 * 인스턴스가 구동 중일 때도 이미지를 생성할 수 있도록 기능이 추가되었습니다.
-
-### 2019.05.28
-
-#### 기능 개선
-
-* **KR 리전**
+* Auto Scaling 예약 작업
+	* 예약 작업 생성 시 타임존 설정 기능 추가
+* Auto Scaling 통계 그래프
+	* Scaling Group의 사용량을 확인할 수 있는 통계 그래프 추가
+	
 * Debian 9 Stretch 이미지 업데이트
 	* 이미지 정보
 		* Debian 9 Stretch
-		* 설명 : Debian 9.9 Stretch (2019.05.28)
+		* 설명 : Debian 9.9 Stretch (2019.08.13)
 		* 언어 : EN
 		* 비트 : 64bit
 		* 커널 : 4.9.168-1
@@ -32,7 +24,7 @@
 * Ubuntu Server 16.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 16.04 LTS
-        * 설명 : Ubuntu Server 16.04.6 LTS (2019.05.28)
+        * 설명 : Ubuntu Server 16.04.6 LTS (2019.08.13)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 4.4.0-142.168
@@ -42,79 +34,45 @@
 
 * Linux CentOS 계열 공용 이미지
 	* 업데이트
-		* CentOS 6.10 (2019.05.28)
-		* CentOS 7.5 (2019.05.28)
-		* Debian 8.11 Jessie (2019.05.28)
-		* Debian 9.9 Stretch (2019.05.28)
-		* Ubuntu Server 16.04.6 LTS (2019.05.28)
-		* Ubuntu Server 18.04.2 LTS (2019.05.28)
+		* CentOS 6.10 (2019.08.13)
+		* CentOS 7.5 (2019.08.13)
+		* Debian 8.11 Jessie (2019.08.13)
+		* Debian 9.9 Stretch (2019.08.13)
+		* Ubuntu Server 16.04.6 LTS (2019.08.13)
+		* Ubuntu Server 18.04.2 LTS (2019.08.13)
 	* 반영 내용
 		* Region에 따른 timezone 변경 적용
+		* yum update 시 발생하는 에러현상 개선
+		* CentOS 7.X  OS이미지 시간 동기화 데몬 변경 (ntpd)
+		
+* MySQL 이미지 변경
+	* CentOS Linux 6.5 with MySQL 5.6.38  > CentOS Linux 6.10 with MySQL 5.6.38 (2019.08.13)
+	* CentOS Linux 6.5 with MySQL 5.7.20  > CentOS Linux 6.10 with MySQL 5.7.20 (2019.08.13)
 
 * Windows 계열 공용 이미지
 	* 업데이트
-		* Windows 2012 R2 STD (2019.05.28)
-		* Windows 2016 STD (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.05.28)
+		* Windows 2012 R2 STD (2019.08.13)
+		* Windows 2016 STD (2019.08.13)
+		* Windows 2012 STD with MS-SQL 2008 Standard (2019.05.14)
+		* Windows 2012 STD with MS-SQL 2012 Standard (2019.08.13)
+		* Windows 2012 STD with MS-SQL 2014 Standard (2019.08.13)
+		* Windows 2012 STD with MS-SQL 2016 Express (2019.08.13)
+		* Windows 2012 STD with MS-SQL 2016 Standard (2019.08.13)
+
 	* 반영 내용
+		* Windows Bootstrap 과정 기능 개선
 		* Region에 따른 timezone 변경 적용
 		* 2019년 5월 14일 보안 업데이트 반영
 			* Windows 2012 R2 ( https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151 )
 			* Windows 2016 ( https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947 )
 	* 신규 릴리즈
-		* Windows 2016 STD with MS-SQL 2016 Standard (2019.05.28)
-
-* Auto Scaling 통계 그래프
-	* Scaling Group의 사용량을 확인할 수 있는 통계 그래프 추가
-
-
-### 2019.05.14
-
-#### 기능 개선
-
-* MySQL 이미지 변경
-	* CentOS Linux 6.5 with MySQL 5.6.38  > CentOS 6.10 with MySQL 5.6.38 (2019.05.14)
-	* CentOS Linux 6.5 with MySQL 5.7.20  > CentOS 6.10 with MySQL 5.7.20 (2019.05.14)
+		* Windows 2016 STD with MS-SQL 2016 Standard (2019.08.13)
 
 * OS 이미지 지원 종료
 	* CentOS 6.5
 	* CentOS 7.1
 	* Ubuntu 14.04
 	* Windows 2008 R2 STD
-
-
-### 2019.04.25
-
-#### 기능 개선
-
-* Auto Scaling 예약 작업
-	* 예약 작업 생성 시 타임존 설정 기능 추가
-
-* Linux CentOS 계열 공용 이미지
-	* 업데이트 이미지 명
-		* CentOS 6.5 (2019.04.25)
-		* CentOS 6.10 (2019.04.25)
-		* CentOS 7.1 (2019.04.25)
-		* CentOS 7.5 (2019.04.25)
-	* 반영내용
-		* yum update 시 발생하는 에러현상 개선
-		* CentOS 7.X  OS이미지 시간 동기화 데몬 변경 (ntpd)
-* Windows 계열 공용 이미지
-	* 업데이트 이미지 명
-		* Windows 2008 R2 STD (2019.04.25)
-		* Windows 2012 R2 STD (2019.04.25)
-		* Windows 2016 STD (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.04.25)
-	* 반영 내용
-		* Windows Bootstrap 과정 기능 개선
 
 
 ### 2019.03.26
@@ -163,16 +121,6 @@
     * 기능 개선
         * 커널 업데이트 ( 4.15.0-29 -> 4.15.0-45 )
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 추가 해결
-
-
-### 2019.01.29
-
-#### 기능 개선
-
-* Public API 변경
-  * Instance 생성시 Subnet을 지정할 수 있도록 수정
-  * Image 조회 API에 pagination을 위한 쿼리 파라미터 추가
-  * Image 삭제 API 추가
 
 
 ### 2018.12.27
@@ -994,4 +942,3 @@
 * 정지된 인스턴스의 보안 그룹 수정이 가능하도록 변경합니다.
     * 의도와 다르게 기존에는 정지되어 있는 인스턴스에 보안 그룹 수정이 불가능하였습니다. 이를 수정하여 정지된 인스턴스도 보안 그룹을 변경할 수 있도록 하였습니다.
 * 인스턴스 생성시 선택 가능한 보안 그룹이 하나일 경우 자동 선택되도록 변경합니다.
-
