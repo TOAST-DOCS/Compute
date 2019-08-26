@@ -6,6 +6,9 @@
 - Improved performance for the query of charts on server dashboard 
 - UI improved for the Internet Explorer 11 browser environment 
 
+#### Updates
+* 이미지 관리 화면에서 공용 이미지 탭이 제거되었습니다.
+
 ### July 23, 2019
 
 #### Release of New Service: System Monitoring
