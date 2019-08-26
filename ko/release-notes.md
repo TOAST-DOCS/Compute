@@ -22,7 +22,7 @@
 			* Windows 2012 R2 ( https://support.microsoft.com/en-gb/help/4507448/windows-8-1-update-kb4507448 )
 			* Windows 2016 ( https://support.microsoft.com/en-us/help/4507460/windows-10-update-kb4507460 )
 * OS 이미지 지원 종료
-	* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.05.28)
+	* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.07.23)
 
 ### 2019.07.23
 
