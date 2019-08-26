@@ -7,7 +7,7 @@
 - UI improved for the Internet Explorer 11 browser environment 
 
 #### Updates
-* 이미지 관리 화면에서 공용 이미지 탭이 제거되었습니다.
+* Removed the common usage tab from the image management page. 
 
 ### July 23, 2019
 
