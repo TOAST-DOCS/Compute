@@ -8,6 +8,21 @@
 
 #### 기능 개선
 * 이미지 관리 화면에서 공용 이미지 탭이 제거되었습니다.
+* Windows 계열 공용 이미지
+	* 업데이트
+		* Windows 2012 R2 STD (2019.08.27)
+		* Windows 2016 STD (2019.08.27)
+		* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.08.27)
+		* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.08.27)
+		* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.08.27)
+		* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.08.27)
+		* Windows 2016 R2 STD with MS-SQL 2016 Standard (2019.08.27)
+	* 반영 내용
+		* 2019년 7월 10일 보안 업데이트 반영
+			* Windows 2012 R2 ( https://support.microsoft.com/en-gb/help/4507448/windows-8-1-update-kb4507448 )
+			* Windows 2016 ( https://support.microsoft.com/en-us/help/4507460/windows-10-update-kb4507460 )
+* OS 이미지 지원 종료
+	* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.05.28)
 
 ### 2019.07.23
 
