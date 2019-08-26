@@ -1,5 +1,11 @@
 ## Compute > Release Notes
 
+### August 27, 2019
+
+#### System Monitoring
+- Improved performance for the query of charts on server dashboard 
+- UI improved for the Internet Explorer 11 browser environment 
+
 ### July 23, 2019
 
 #### Release of New Service: System Monitoring

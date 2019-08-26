@@ -1,5 +1,11 @@
 ## Compute > 릴리스 노트
 
+### 2019.08.27
+
+#### System Monitoring
+- 서버 대시보드 차트 조회 성능 개선
+- Internet Explorer 11 브라우저 환경 UI 개선
+
 ### 2019.07.23
 
 #### 신규 서비스 출시: System Monitoring
