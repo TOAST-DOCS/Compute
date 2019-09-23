@@ -1,5 +1,11 @@
 ## Compute > Release Notes
 
+### 2019.09.24
+
+#### System Monitoring
+- 웹 콘솔 영어 메시지 지원
+- Internet Explorer 11 브라우저 환경에서 서버 대시보드 레이아웃 선택에 실패하던 현상 수정
+
 ### 2019.08.27
 
 #### System Monitoring

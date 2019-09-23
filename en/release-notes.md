@@ -1,5 +1,11 @@
 ## Compute > Release Notes
 
+### September 24, 2019
+
+#### System Monitoring
+- Supports English for web console messages 
+- Fixed failure in the layout selection for server dashboard on Internet Explorer 11 
+
 ### August 27, 2019
 
 #### System Monitoring

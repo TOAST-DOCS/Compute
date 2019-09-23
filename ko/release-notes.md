@@ -1,5 +1,11 @@
 ## Compute > 릴리스 노트
 
+### 2019.09.24
+
+#### System Monitoring
+- 웹 콘솔 영어 메시지 지원
+- Internet Explorer 11 브라우저 환경에서 서버 대시보드 레이아웃 선택에 실패하던 현상 수정
+
 ### 2019.08.27
 
 #### System Monitoring
@@ -22,7 +28,7 @@
 			* Windows 2012 R2 ( https://support.microsoft.com/en-gb/help/4507448/windows-8-1-update-kb4507448 )
 			* Windows 2016 ( https://support.microsoft.com/en-us/help/4507460/windows-10-update-kb4507460 )
 * OS 이미지 지원 종료
-	* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.05.28)
+	* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.07.23)
 
 ### 2019.07.23
 
