@@ -1,5 +1,11 @@
 ## Compute > リリースノート
 
+### 2019.09.24
+
+#### System Monitoring
+- Webコンソール英語メッセージをサポート
+- Internet Explorer 11ブラウザ環境で、サーバーダッシュボードレイアウトの選択に失敗する現象を修正
+
 ### 2019.08.27
 
 #### System Monitoring
