@@ -1,5 +1,36 @@
 ## Compute > 릴리스 노트
 
+### 2019.10.29
+
+#### System Monitoring
+
+##### 기능 개선
+- 사용자 상호작용 UI 개선
+    - 사용자 그룹, 감시 그룹, 감시 설정 등 모니터링 정보 조회/추가/수정/삭제 시 로딩 바가 노출되도록 수정
+    - 상호작용 중 불필요한 버튼은 비활성화되도록 수정
+
+* Application 이미지
+	* 업데이트
+		* PLOS-WFK-KS-v2.0.60.0.14 (2019.10.22)
+	* 반영 내용
+		* WF-KS 페이지의 Storage 크기 표기 오류 수정
+* Windows 계열 공용 이미지
+	* 업데이트
+		* Windows 2012 R2 STD (2019.10.22)
+		* Windows 2016 STD (2019.10.22)
+		* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.10.22)
+		* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.10.22)
+		* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.10.22)
+		* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.10.22)
+		* Windows 2016 R2 STD with MS-SQL 2016 Standard (2019.10.22)
+	* 반영 내용
+		* 언어별 이미지 제공 (KO,EN,JP)
+
+
+##### 버그 수정
+- 일본, 미국 리전에서 감시 설정을 변경한 서버의 지표 수집이 일시적으로 중단되던 문제 수정
+- 미국 리전에서 사용자 그룹과 감시 그룹의 추가/수정 날짜가 잘못 출력되던 문제 수정
+
 ### 2019.09.24
 
 #### System Monitoring

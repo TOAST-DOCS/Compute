@@ -1,5 +1,36 @@
 ## Compute > リリースノート
 
+### 2019.10.29
+
+#### System Monitoring
+
+##### 機能改善
+- ユーザー相互作用UIの改善
+    - ユーザーグループ、監視グループ、監視設定などのモニタリング情報を照会/追加/修正/削除した時、ローディングバーが表示されるように修正
+    - 相互作用中、不要なボタンは無効化されるように修正
+
+* Applicationイメージ
+	* アップデート
+		* PLOS-WFK-KS-v2.0.60.0.14 (2019.10.22)
+	* 反映内容
+		* WF-KSページのStorageサイズ表記エラーを修正
+* Windows系列の共用イメージ
+	* アップデート
+		* Windows 2012 R2 STD (2019.10.22)
+		* Windows 2016 STD (2019.10.22)
+		* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.10.22)
+		* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.10.22)
+		* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.10.22)
+		* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.10.22)
+		* Windows 2016 R2 STD with MS-SQL 2016 Standard (2019.10.22)
+	* 反映内容
+		* 言語別イメージを提供(KO,EN,JP)
+
+##### バグ修正
+- JP/USリージョンで監視設定を変更したサーバーの指標収集が一時的に中断されていた問題を修正
+- USリージョンでユーザーグループと監視グループの追加/修正日が誤って出力されていた問題を修正
+
+
 ### 2019.09.24
 
 #### System Monitoring
