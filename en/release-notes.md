@@ -1,5 +1,28 @@
 ## Compute > Release Notes
 
+### Oct 29, 2019 
+
+#### Image
+* Application Image
+
+    * Updates 
+        * PLOS-WFK-KS-v2.0.60.0.14 (2019.10.22)
+    * Change Details 
+        * Fixed size error for storage on the WF-KS page
+
+* Common Windows Image
+
+    * Updates 
+        * Windows 2012 R2 STD (2019.10.22)
+        * Windows 2016 STD (2019.10.22)
+        * Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.10.22)
+        * Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.10.22)
+        * Windows 2012 R2 STD with MS-SQL 2016 Express (2019.10.22)
+        * Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.10.22)
+        * Windows 2016 R2 STD with MS-SQL 2016 Standard (2019.10.22)
+    * Change Details 
+        * Provides images for each language (e.g. KO, EN, JP)
+
 ### September 24, 2019
 
 #### System Monitoring
