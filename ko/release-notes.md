@@ -17,8 +17,8 @@
 #### Image
 * Application 이미지 업데이트
 	* PLOS-WFK-KS-v2.0.60.0.14 (2019.10.22)
-     * WF-KS 페이지의 Storage 크기 표기 오류 수정
-* Windows 계열 이미지 업데이트
+	* WF-KS 페이지의 Storage 크기 표기 오류 수정
+* Windows 계열 이미지 업데이트: 언어별 이미지 제공 (KO,EN,JP)
 	* Windows 2012 R2 STD (2019.10.22)
 	* Windows 2016 STD (2019.10.22)
 	* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.10.22)
@@ -26,19 +26,18 @@
 	* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.10.22)
 	* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.10.22)
 	* Windows 2016 R2 STD with MS-SQL 2016 Standard (2019.10.22)
-		 * 언어별 이미지 제공 (KO,EN,JP)
 
 #### System Monitoring
 - 사용자 상호작용 UI 개선
     - 사용자 그룹, 감시 그룹, 감시 설정 등 모니터링 정보 조회/추가/수정/삭제 시 로딩 바가 노출되도록 수정
     - 상호작용 중 불필요한 버튼은 비활성화되도록 수정
 - 해외 리전 버그 수정
-  - 일본, 미국 리전에서 감시 설정을 변경한 서버의 지표 수집이 일시적으로 중단되던 문제 수정
-  - 미국 리전에서 사용자 그룹과 감시 그룹의 추가/수정 날짜가 잘못 출력되던 문제 수정
+	- 일본, 미국 리전에서 감시 설정을 변경한 서버의 지표 수집이 일시적으로 중단되던 문제 수정
+	- 미국 리전에서 사용자 그룹과 감시 그룹의 추가/수정 날짜가 잘못 출력되던 문제 수정
 
 #### VPC
 * Default VPC 삭제 기능 추가
-  - Default VPC를 사용자가 삭제할 수 있도록 수정
+	- Default VPC를 사용자가 삭제할 수 있도록 수정
 
 
 ### 2019.09.24
@@ -51,17 +50,17 @@
 
 #### Image
 * 이미지 관리 화면에서 공용 이미지 탭이 제거되었습니다.
-* Windows 계열 이미지 업데이트
+* Windows 2012 이미지 업데이트
+    * 2019년 7월 10일 보안 업데이트 반영 : https://support.microsoft.com/en-gb/help/4507448/windows-8-1-update-kb4507448
 	* Windows 2012 R2 STD (2019.08.27)
 	* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.08.27)
 	* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.08.27)
 	* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.08.27)
 	* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.08.27)
-    * 2019년 7월 10일 보안 업데이트 반영 : https://support.microsoft.com/en-gb/help/4507448/windows-8-1-update-kb4507448
+* Windows 2016 이미지 업데이트
+	* 2019년 7월 10일 보안 업데이트 반영 : https://support.microsoft.com/en-us/help/4507460/windows-10-update-kb4507460
 	* Windows 2016 STD (2019.08.27)
 	* Windows 2016 R2 STD with MS-SQL 2016 Standard (2019.08.27)
-		* 2019년 7월 10일 보안 업데이트 반영 : https://support.microsoft.com/en-us/help/4507460/windows-10-update-kb4507460
-
 * OS 이미지 지원 종료
 	* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard
 
@@ -87,33 +86,33 @@
 #### Image
 * Debian 계열 이미지 업데이트
 	* Debian 9.9 Stretch (2019.05.28)
-	  * 커널 업데이트 : 4.9.168-1
+	* 커널 업데이트 : 4.9.168-1
 
 * Ubuntu 계열 이미지 업데이트
   * Ubuntu Server 16.04.6 LTS (2019.05.28)
   * 커널 업데이트 : 4.4.0-142.168
 
-* CentOS 계열 이미지 업데이트
+* 리전에 따른 timezone 변경 적용
 	* CentOS 6.10 (2019.05.28)
 	* CentOS 7.5 (2019.05.28)
 	* Debian 8.11 Jessie (2019.05.28)
 	* Debian 9.9 Stretch (2019.05.28)
 	* Ubuntu Server 16.04.6 LTS (2019.05.28)
 	* Ubuntu Server 18.04.2 LTS (2019.05.28)
-		* 리전에 따른 timezone 변경 적용
 
-* Windows 계열 이미지 업데이트
+* Windows 2012 이미지 업데이트
+    * Region에 따른 timezone 변경 적용
+	* 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151   
 	* Windows 2012 R2 STD (2019.05.28)
 	* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.05.28)
 	* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.05.28)
 	* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.05.28)
 	* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.05.28)
 	* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.05.28)
-    * Region에 따른 timezone 변경 적용
-		* 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151   
-  * Windows 2016 STD (2019.05.28)
-		* Region에 따른 timezone 변경 적용
-		* 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947
+* Windows 2016 이미지 업데이트
+	* Region에 따른 timezone 변경 적용
+	* 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947
+	* Windows 2016 STD (2019.05.28)
 
 * 신규 이미지 추가
   * Windows 2016 STD with MS-SQL 2016 Standard (2019.05.28)
@@ -141,14 +140,14 @@
 
 #### Image
 * CentOS 계열 이미지 업데이트
+	* yum update 시 발생하는 에러현상 개선
+	* CentOS 7.X  OS이미지 시간 동기화 데몬 변경 (ntpd)
 	* CentOS 6.5 (2019.04.25)
 	* CentOS 6.10 (2019.04.25)
 	* CentOS 7.1 (2019.04.25)
 	* CentOS 7.5 (2019.04.25)
-	  * yum update 시 발생하는 에러현상 개선
-	  * CentOS 7.X  OS이미지 시간 동기화 데몬 변경 (ntpd)
 
-* Windows 계열 이미지 업데이트
+* Windows 계열 이미지 업데이트: Windows Bootstrap 과정 기능 개선
 	* Windows 2008 R2 STD (2019.04.25)
 	* Windows 2012 R2 STD (2019.04.25)
 	* Windows 2016 STD (2019.04.25)
@@ -157,34 +156,26 @@
 	* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.04.25)
 	* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.04.25)
 	* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.04.25)
-		* Windows Bootstrap 과정 기능 개선
 
 
 ### 2019.03.26
 
-#### Image		
+#### Image
 
-* CentOS 계열 이미지 업데이트
+* Bootstrap 과정의 기능 개선
 	* CentOS 7.1 (2019.03.26)
 	* CentOS 7.5 (2019.03.26)
 	* CentOS 6.10 (2019.03.26)
 	* CentOS 6.5 (2019.03.26)
-  * CentOS 6.5 with MySQL 5.6.38 (2019.03.26)
-  * CentOS 6.5 with MySQL 5.7.20 (2019.03.26)
-     * Bootstrap 과정의 기능 개선
-
-* Ubuntu 계열 이미지 업데이트
+	* CentOS 6.5 with MySQL 5.6.38 (2019.03.26)
+	* CentOS 6.5 with MySQL 5.7.20 (2019.03.26)
 	* Ubuntu Server 18.04.2 LTS (2019.03.26)
 	* Ubuntu Server 16.04.5 LTS (2019.03.26)
 	* Ubuntu Server 14.04.5 LTS (2019.03.26)
-     * Bootstrap 과정의 기능 개선
-
-* Debian 계열 이미지 업데이트
 	* Debian 9.8 Stretch (2019.03.26)
-     * Bootstrap 과정의 기능 개선
-     * 커널 업데이트: 4.9.144-3
 	* Debian 8.11 Jessie (2019.03.26)
-		* Bootstrap 과정의 기능 개선
+* 커널 업데이트: 4.9.144-3
+	* Debian 9.8 Stretch (2019.03.26)
 
 
 ### 2019.02.26
@@ -266,36 +257,33 @@
 #### Image
 
 * CentOS 계열 이미지 업데이트
-  * CentOS 7.5 (2018.10.23)
-  * CentOS 7.1 (2018.10.23)
-  * CentOS 6.10 (2018.10.23)
-  * CentOS 6.5 (2018.10.23)
-    * TOAST Cloud 보안기준으로 OS 하드닝 적용
-      * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
-          * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
-      * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
-          * PermitRootLogin no                # root 접속 비활성화
-          * PasswordAuthentication no         # 패스워드 인증 비활성화
-      * 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
-          * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
-          * net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
-          * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
-          * net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
-          * net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
-          * net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
-      * 터미널 접근 제한 ( /etc/securetty 수정)
-          * console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
-      * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
-          * TMOUT=7200
-      * 나머지 설정은 CentOS Upstream을 유지함
-      * 접근 보안성 강화를 위한 root 계정 접속 제한
-          * 기존 : root 계정의 ssh 접속 허용
-          * 변경 : 일반 User 계정인 "centos" 로 접속 후 전환
-      * 인스턴스 생성시 swap partition 을  생성하지 않음
-      * /etc/hosts 파일의 사용자 추가 설정 유지
+	* CentOS 7.5 (2018.10.23), CentOS 7.1 (2018.10.23), CentOS 6.10 (2018.10.23), CentOS 6.5 (2018.10.23)
+	* TOAST Cloud 보안기준으로 OS 하드닝 적용
+	  * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+		  * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
+	  * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+		  * PermitRootLogin no                # root 접속 비활성화
+		  * PasswordAuthentication no         # 패스워드 인증 비활성화
+	  * 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+		  * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
+		  * net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
+		  * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
+		  * net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
+		  * net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
+		  * net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
+	  * 터미널 접근 제한 ( /etc/securetty 수정)
+		  * console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
+	  * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+		  * TMOUT=7200
+	  * 나머지 설정은 CentOS Upstream을 유지함
+	  * 접근 보안성 강화를 위한 root 계정 접속 제한
+		  * 기존 : root 계정의 ssh 접속 허용
+		  * 변경 : 일반 User 계정인 "centos" 로 접속 후 전환
+	  * 인스턴스 생성시 swap partition 을  생성하지 않음
+	  * /etc/hosts 파일의 사용자 추가 설정 유지
 
 * Ubuntu 계열 이미지 업데이트
-  * Ubuntu Server 16.04.5 LTS (2018.10.23)
+	* Ubuntu Server 16.04.5 LTS (2018.10.23)
     * TOAST Cloud 보안기준으로 OS 하드닝 적용
       * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
           * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
@@ -318,8 +306,7 @@
       * /etc/hosts 파일의 사용자 추가 설정 유지
 
 * Debian 계열 이미지 업데이트
-  * Debian 9.5 Stretch (2018.10.23)
-  * Debian 8.11 Jessie (2018.10.23)
+	* Debian 9.5 Stretch (2018.10.23), Debian 8.11 Jessie (2018.10.23)
     * TOAST Cloud 보안기준으로 OS 하드닝 적용
       * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
           * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
@@ -345,28 +332,28 @@
 ### 2018.09.20
 #### Image
 * Ubuntu Server 계열 이미지 업데이트
-    * Ubuntu Server 18.04.1 LTS (2018.09.20)
-      * Kernel 4.15.0-29:  meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
-      * TOAST Cloud 보안기준으로 OS 하드닝 적용
-        * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
-          * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
-        * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
-          * PermitRootLogin no                # root 접속 비활성화
-          * PasswordAuthentication no         # 패스워드 인증 비활성화
-        * 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
-          * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
-          * net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
-          * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
-          * net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
-          * net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
-          * net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
-        * 터미널 접근 제한 ( /etc/securetty 수정)
-          * console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
-        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
-          * TMOUT=7200
-        * Instance 생성시 swap partition 을 생성하지 않음 (필요시 사용자가 별도 생성)
-        * 나머지 설정은 Ubuntu Server 18.04 LTS upstream 을 유지함
-    * Ubuntu Linux 14.04.5 (2018.09.20) 추가
+  * Ubuntu Server 18.04.1 LTS (2018.09.20)
+  * Kernel 4.15.0-29:  meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
+  * TOAST Cloud 보안기준으로 OS 하드닝 적용
+	* 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+	  * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
+	* ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+	  * PermitRootLogin no                # root 접속 비활성화
+	  * PasswordAuthentication no         # 패스워드 인증 비활성화
+	* 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+	  * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
+	  * net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
+	  * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
+	  * net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
+	  * net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
+	  * net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
+	* 터미널 접근 제한 ( /etc/securetty 수정)
+	  * console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
+	* 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+	  * TMOUT=7200
+	* Instance 생성시 swap partition 을 생성하지 않음 (필요시 사용자가 별도 생성)
+	* 나머지 설정은 Ubuntu Server 18.04 LTS upstream 을 유지함
+* Ubuntu Linux 14.04.5 (2018.09.20) 추가
 
 * 2018.09.20 신규적용되는 예약스크립트 기능이 정상적으로 적용되지 않는 부분 해결
 
