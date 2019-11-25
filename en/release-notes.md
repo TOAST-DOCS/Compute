@@ -1,5 +1,49 @@
 ## Compute > Release Notes
 
+### November 26, 2019
+
+#### System Monitoring
+
+##### Feature Updates 
+
+- Instance Search Updated on Server Dashboard: No distinction is required between upper and lower cases
+
+
+### Oct 29, 2019 
+
+#### Image
+* Application Image
+
+    * Updates 
+        * PLOS-WFK-KS-v2.0.60.0.14 (2019.10.22)
+    * Change Details 
+        * Fixed size error for storage on the WF-KS page
+
+* Common Windows Image
+
+    * Updates 
+        * Windows 2012 R2 STD (2019.10.22)
+        * Windows 2016 STD (2019.10.22)
+        * Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.10.22)
+        * Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.10.22)
+        * Windows 2012 R2 STD with MS-SQL 2016 Express (2019.10.22)
+        * Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.10.22)
+        * Windows 2016 R2 STD with MS-SQL 2016 Standard (2019.10.22)
+    * Change Details 
+        * Provides images for each language (e.g. KO, EN, JP)
+
+#### System Monitoring
+
+##### Feature Updates 
+- Updated UI for User Interactions
+    - Updated to show the loading bar to search/add/modify/delete monitoring data, including user group, monitoring group, or monitoring setting. 
+    - Allowed to disable unnecessary buttons for interactions 
+
+##### Bug Fixes 
+- Fixed the error in the Japan and US region, where indicator collecting was temporarily suspended for servers with changed monitoring setting
+- Fixed the issue of invalid output of dates for the adding/modifying user/monitoring groups, especially in the US region
+
+
 ### September 24, 2019
 
 #### System Monitoring
