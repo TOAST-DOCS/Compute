@@ -13,13 +13,13 @@
 
 #### System Monitoring
 
-##### 기능 개선
 - 서버 대시보드의 인스턴스 검색 기능 개선: 대소문자를 구분하지 않도록 수정
 
 
 ### 2019.10.29
 
 #### Image
+
 * Application 이미지 업데이트
 	* PLOS-WFK-KS-v2.0.60.0.14 (2019.10.22)
 	* WF-KS 페이지의 Storage 크기 표기 오류 수정
@@ -53,7 +53,7 @@
 ### 2019.08.27
 
 #### Image
-* 이미지 관리 화면에서 공용 이미지 탭이 제거되었습니다.
+* 이미지 관리 화면에서 공용 이미지 탭이 제거됨
 * Windows 2012 이미지 업데이트
     * 2019년 7월 10일 보안 업데이트 반영 : https://support.microsoft.com/en-gb/help/4507448/windows-8-1-update-kb4507448
 	* Windows 2012 R2 STD (2019.08.27)
@@ -89,12 +89,12 @@
 
 #### Image
 * Debian 계열 이미지 업데이트
-	* Debian 9.9 Stretch (2019.05.28)
 	* 커널 업데이트 : 4.9.168-1
+	* Debian 9.9 Stretch (2019.05.28)
 
 * Ubuntu 계열 이미지 업데이트
-  * Ubuntu Server 16.04.6 LTS (2019.05.28)
   * 커널 업데이트 : 4.4.0-142.168
+  * Ubuntu Server 16.04.6 LTS (2019.05.28)
 
 * 리전에 따른 timezone 변경 적용
 	* CentOS 6.10 (2019.05.28)
@@ -106,7 +106,7 @@
 
 * Windows 2012 이미지 업데이트
     * Region에 따른 timezone 변경 적용
-	* 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151   
+	* 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
 	* Windows 2012 R2 STD (2019.05.28)
 	* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.05.28)
 	* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.05.28)
