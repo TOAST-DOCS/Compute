@@ -1,5 +1,9 @@
 ## Compute > 릴리스 노트
 
+#### Image
+* 신규 이미지 추가
+    * Windows 2019 STD (2020.01.31)
+
 ### 2020. 01. 21.
 #### System Monitoring
 * 이벤트 조회 페이지 추가
