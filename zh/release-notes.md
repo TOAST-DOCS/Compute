@@ -1,5 +1,17 @@
 ## Compute > Release Notes
 
+### January 21, 2020
+
+#### System Monitoring
+* Added Query Event Page 
+    * Query events occurred out of surveillance setup 
+* Updated`List of Servers` on Server Dashboard
+    * Upgraded to query all instances in `Compute > Instance`
+    * Updated to show instance status more precisely
+* Updated `Server and User Group Integration` for Alarm Groups
+    * Updated to save changes, by selecting a server and user group and clicking the save button 
+
+
 ### November 26, 2019
 
 #### System Monitoring
