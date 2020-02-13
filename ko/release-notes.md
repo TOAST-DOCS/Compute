@@ -3,16 +3,23 @@
 ### 2020. 02. 25.
 #### Image
 * 개인 이미지와 공유받은 이미지가 이미지 목록에 함께 노출되도록 변경
-* OS 신규 이미지
+* 신규 이미지 추가
     * Debian 10.2 Buster(2020. 02. 18.)
 
 * CentOS 6.10(2020. 02. 18.)
+    * 이미지 업데이트
 * CentOS 7.5(2020. 02. 18.)
+    * 이미지 업데이트
 * CentOS Linux 6.10 with MySQL 5.6.38(2020. 02. 18.)
+    * 이미지 업데이트
 * CentOS Linux 6.10 with MySQL 5.7.20(2020. 02. 18.)
+    * 이미지 업데이트
 * Debian 9.9 Stretch(2020. 02. 18.)
+    * 이미지 업데이트
 * Ubuntu Server 16.04.2 LTS(2020. 02. 18.)
+    * 이미지 업데이트
 * Ubuntu Server 18.04.2 LTS(2020. 02. 18.)
+    * 이미지 업데이트
 
 * Windows 2012 R2 STD(2020. 02. 18.)
     * 2019년 12월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
@@ -29,8 +36,9 @@
 * Windows 2016 R2 STD with MS-SQL 2016 Standard(2020. 02. 18.)
     * 2019년 12월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4530689/windows-10-update-kb4530689
 * Windows 2019 STD(2020. 02. 18.)
+    * 이미지 업데이트
 
-* OS 이미지 지원 종료
+* 이미지 지원 종료
     * Debian 8.11 Jessie(2019.07.23)
 
 ### 2020. 01. 31.
