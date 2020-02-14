@@ -3,7 +3,7 @@
 ### 2020. 02. 25.
 #### Image
 * 개인 이미지와 공유받은 이미지가 이미지 목록에 함께 노출되도록 변경
-* 신규 이미지 추가
+* 신규 이미지 추가 
     * Debian 10.2 Buster(2020. 02. 18.)
 
 * CentOS 6.10(2020. 02. 18.)
@@ -20,7 +20,6 @@
     * 이미지 업데이트
 * Ubuntu Server 18.04.2 LTS(2020. 02. 18.)
     * 이미지 업데이트
-
 * Windows 2012 R2 STD(2020. 02. 18.)
     * 2019년 12월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
 * Windows 2012 R2 STD with MS-SQL 2012 Standard(2020. 02. 18.)
