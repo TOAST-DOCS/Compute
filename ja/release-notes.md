@@ -1,6 +1,43 @@
 ## Compute > リリースノート
 
 ### 2020. 02. 25.
+#### Image
+* OS新規イメージ
+    * Debian 10.2 Buster(2020.02.18)
+    * Windows 2019 STD(2020.02.18)
+
+* CentOS 6.10(2020.02.18)
+    * イメージ アップデート
+* CentOS 7.5(2020.02.18)
+    * イメージ アップデート
+* CentOS Linux 6.10 with MySQL 5.6.38(2020.02.18)
+    * イメージ アップデート
+* CentOS Linux 6.10 with MySQL 5.7.20(2020.02.18)
+    * イメージ アップデート
+* Debian 9.9 Stretch(2020.02.18)
+    * イメージ アップデート
+* Ubuntu Server 16.04.2 LTS(2020.02.18)
+    * イメージ アップデート
+* Ubuntu Server 18.04.2 LTS(2020.02.18)
+    * イメージ アップデート
+* Windows 2012 R2 STD(2020.02.18)
+    * 2019年12月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
+* Windows 2012 R2 STD with MS-SQL 2012 Standard(2020.02.18)
+    * 2019年12月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
+* Windows 2012 R2 STD with MS-SQL 2014 Standard(2020.02.18)
+    * 2019年12月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
+* Windows 2012 R2 STD with MS-SQL 2016 Express(2020.02.18)
+    * 2019年12月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020.02.18)
+    * 2019年12月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
+* Windows 2016 STD(2020.02.18)
+    * 2019年12月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4530689/windows-10-update-kb4530689
+* Windows 2016 R2 STD with MS-SQL 2016 Standard(2020.02.18)
+    * 2019年12月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4530689/windows-10-update-kb4530689
+
+* OSイメージサポート終了
+    * Debian 8.11 Jessie(2019.07.23)
+
 #### System Monitoring
 * イベント状況ページの改善
     * リージョンごとにイベントを照会できるように改善
