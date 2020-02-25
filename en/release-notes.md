@@ -1,12 +1,24 @@
 ## Compute > Release Notes
 
+### January 21, 2020
+
+#### System Monitoring
+* Added Query Event Page 
+    * Query events occurred out of surveillance setup 
+* Updated`Server List` on Server Dashboard
+    * Upgraded to query all instances in `Compute > Instance`
+    * Updated to show instance status more precisely
+* Updated `Server - User Integration` for Alarm Groups
+    * Updated to save changes, by selecting a server and user group and clicking the save button 
+
+
 ### November 26, 2019
 
 #### System Monitoring
 
 ##### Feature Updates 
 
-- Instance Search Updated on Server Dashboard: No distinction is required between upper and lower cases
+* Instance Search Updated on Server Dashboard: No distinction is required between upper and lower cases
 
 
 ### Oct 29, 2019 
