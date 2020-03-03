@@ -1,3 +1,5 @@
+## Compute > Identity API 가이드
+
 ## 사전 준비
 
 ### API Endpoint 확인
@@ -9,16 +11,16 @@ TOAST 기본 인프라 서비스 API는 하위 서비스별로 엔드포인트�
 | 서비스 | 리전 | 엔드포인트 |
 |---|---|---|
 | Identity | 모든 리전 | https://api-identity.cloud.toast.com |
-| compute | KR1 | https://kr1-api-compute.cloud.toast.com |
-| network | KR1 | https://kr1-api-network.cloud.toast.com |
-| image | KR1 | https://kr1-api-image.cloud.toast.com |
-| volume | KR1 | https://kr1-api-volume.cloud.toast.com |
+| compute | 한국(판교) 리전 | https://kr1-api-compute.cloud.toast.com |
+| network | 한국(판교) 리전 | https://kr1-api-network.cloud.toast.com |
+| image | 한국(판교) 리전 | https://kr1-api-image.cloud.toast.com |
+| volume | 한국(판교) 리전 | https://kr1-api-volume.cloud.toast.com |
 
 ### API Password 설정
 
-1. **Infrasturcutre** > **Compute & Network** 메뉴 클릭
-2. 상단에 보이는 **API Endpoint 설정** 버튼 클릭
-3. **API Endpoint** 대화창에서 원하는 API 비밀번호를 지정
+1. **Infrasturcutre** > **Compute** > **Instance** > 관리 메뉴 클릭
+2. 상단의 **API 엔드포인트 설정** 버튼 클릭
+3. **API 엔드포인트 설정** 대화창에서 원하는 API 비밀번호를 지정
 
 > API 비밀번호는 계정별로 설정됩니다. 동일한 계정을 사용한다면 다른 프로젝트에서도 사용하실 수 있습니다.
 
