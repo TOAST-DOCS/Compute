@@ -1,5 +1,50 @@
 ## Compute > 릴리스 노트
 
+### 2020. 03. 10.
+#### Image
+* 개인 이미지와 공유받은 이미지가 이미지 목록에 함께 노출되도록 변경
+* 신규 이미지 추가 
+    * Debian 10.2 Buster(2020.02.18)
+    * Windows 2019 STD(2020.02.18)
+
+* CentOS 6.10(2020.02.18)
+    * 이미지 업데이트
+* CentOS 7.5(2020.02.18)
+    * 이미지 업데이트
+* CentOS Linux 6.10 with MySQL 5.6.38(2020.02.18)
+    * 이미지 업데이트
+* CentOS Linux 6.10 with MySQL 5.7.20(2020.02.18)
+    * 이미지 업데이트
+* Debian 9.9 Stretch(2020.02.18)
+    * 이미지 업데이트
+* Ubuntu Server 16.04.2 LTS(2020.02.18)
+    * 이미지 업데이트
+* Ubuntu Server 18.04.2 LTS(2020.02.18)
+    * 이미지 업데이트
+* Windows 2012 R2 STD(2020. 02.18)
+    * 2019년 12월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
+* Windows 2012 R2 STD with MS-SQL 2012 Standard(2020.02.18)
+    * 2019년 12월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
+* Windows 2012 R2 STD with MS-SQL 2014 Standard(2020.02.18)
+    * 2019년 12월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
+* Windows 2012 R2 STD with MS-SQL 2016 Express(2020.02.18)
+    * 2019년 12월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020.02.18)
+    * 2019년 12월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
+* Windows 2016 STD(2020.02.18)
+    * 2019년 12월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4530689/windows-10-update-kb4530689
+* Windows 2016 R2 STD with MS-SQL 2016 Standard(2020.02.18)
+    * 2019년 12월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4530689/windows-10-update-kb4530689
+
+* 이미지 지원 종료
+    * Debian 8.11 Jessie(2019.07.23)
+
+#### System Monitoring
+* System Monitoring 서비스 추가
+    * 생성된 가상 서버의 시스템 지표 차트를 제공
+    * 각 시스템 지표 차트를 원하는 레이아웃으로 구성
+    * 지표가 특정 임계치에 도달할 경우 원하는 특정 사용자 그룹에게 알림을 보내도록 설정
+
 ### 2019. 11. 12.
 #### Image
 * PLOS-WFK-KS-v2.0.60.0.14 (2019.10.22)
