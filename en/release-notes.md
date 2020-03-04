@@ -3,37 +3,45 @@
 ### January 21, 2020
 
 #### System Monitoring
-* Added Query Event Page 
-    * Query events occurred out of surveillance setup 
+* Added Query Event Page
+    * Query events occurred out of surveillance setup
 * Updated`Server List` on Server Dashboard
     * Upgraded to query all instances in `Compute > Instance`
     * Updated to show instance status more precisely
 * Updated `Server - User Integration` for Alarm Groups
-    * Updated to save changes, by selecting a server and user group and clicking the save button 
+    * Updated to save changes, by selecting a server and user group and clicking the save button
+
+
+### December 17, 2019 
+
+#### Auto Scale
+* Updated to show all input data created on the instance template list and detail information
+    * List Table: Availability area
+    * Detail Information: All configured network data, and script for reservation
 
 
 ### November 26, 2019
 
 #### System Monitoring
 
-##### Feature Updates 
+##### Feature Updates
 
 * Instance Search Updated on Server Dashboard: No distinction is required between upper and lower cases
 
 
-### Oct 29, 2019 
+### Oct 29, 2019
 
 #### Image
 * Application Image
 
-    * Updates 
+    * Updates
         * PLOS-WFK-KS-v2.0.60.0.14 (2019.10.22)
-    * Change Details 
+    * Change Details
         * Fixed size error for storage on the WF-KS page
 
 * Common Windows Image
 
-    * Updates 
+    * Updates
         * Windows 2012 R2 STD (2019.10.22)
         * Windows 2016 STD (2019.10.22)
         * Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.10.22)
@@ -41,17 +49,17 @@
         * Windows 2012 R2 STD with MS-SQL 2016 Express (2019.10.22)
         * Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.10.22)
         * Windows 2016 R2 STD with MS-SQL 2016 Standard (2019.10.22)
-    * Change Details 
+    * Change Details
         * Provides images for each language (e.g. KO, EN, JP)
 
 #### System Monitoring
 
-##### Feature Updates 
+##### Feature Updates
 - Updated UI for User Interactions
-    - Updated to show the loading bar to search/add/modify/delete monitoring data, including user group, monitoring group, or monitoring setting. 
-    - Allowed to disable unnecessary buttons for interactions 
+    - Updated to show the loading bar to search/add/modify/delete monitoring data, including user group, monitoring group, or monitoring setting.
+    - Allowed to disable unnecessary buttons for interactions
 
-##### Bug Fixes 
+##### Bug Fixes
 - Fixed the error in the Japan and US region, where indicator collecting was temporarily suspended for servers with changed monitoring setting
 - Fixed the issue of invalid output of dates for the adding/modifying user/monitoring groups, especially in the US region
 
@@ -59,24 +67,24 @@
 ### September 24, 2019
 
 #### System Monitoring
-- Supports English for web console messages 
-- Fixed failure in the layout selection for server dashboard on Internet Explorer 11 
+- Supports English for web console messages
+- Fixed failure in the layout selection for server dashboard on Internet Explorer 11
 
 ### August 27, 2019
 
 #### System Monitoring
-- Improved performance for the query of charts on server dashboard 
-- UI improved for the Internet Explorer 11 browser environment 
+- Improved performance for the query of charts on server dashboard
+- UI improved for the Internet Explorer 11 browser environment
 
 #### Updates
-* Removed the common usage tab from the image management page. 
+* Removed the common usage tab from the image management page.
 
 ### July 23, 2019
 
 #### Release of New Service: System Monitoring
 
 - System metrics are provided on a chart for a newly created virtual server  
-- Each chart of system metrics can be configured under a layout of choice; you may set a notification to be sent to a group of particular users via email or SMS, when a metric reaches a specific threshold. 
+- Each chart of system metrics can be configured under a layout of choice; you may set a notification to be sent to a group of particular users via email or SMS, when a metric reaches a specific threshold.
 
 ### June 25, 2019
 
@@ -89,16 +97,16 @@
 #### Updates
 
 - **KR Region**
-- Image Updated for Debian 9 Stretch 
-  - Image Information 
+- Image Updated for Debian 9 Stretch
+  - Image Information
     - Debian 9 Stretch
     - Description: Debian 9.9 Stretch (2019.05.28)
     - Language: EN
     - Bit: 64bit
     - Kernel: 4.9.168-1
-  - Feature Updates 
+  - Feature Updates
     - Kernel updated
-    - Minor version updated 
+    - Minor version updated
 - Image Updated for Ubuntu Server 16.04 LTS  
   - Image Information
     - Ubuntu Server 16.04 LTS
@@ -109,8 +117,8 @@
   - Feature Updates
     - Kernel updated
   - Minor version updated
-- Common Image of Linux CentOS Type 
-  - Updates 
+- Common Image of Linux CentOS Type
+  - Updates
     - CentOS 6.10 (2019.05.28)
     - CentOS 7.5 (2019.05.28)
     - Debian 8.11 Jessie (2019.05.28)
@@ -119,7 +127,7 @@
     - Ubuntu Server 18.04.2 LTS (2019.05.28)
   - Application
     - Change of timezone according to each region
-- Common Image of Windows Type 
+- Common Image of Windows Type
   - Updates
     - Windows 2012 R2 STD (2019.05.28)
     - Windows 2016 STD (2019.05.28)
@@ -128,15 +136,15 @@
     - Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.05.28)
     - Windows 2012 R2 STD with MS-SQL 2016 Express (2019.05.28)
     - Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.05.28)
-  - Application 
-    - Change of timezone according to each region 
+  - Application
+    - Change of timezone according to each region
     - Security updated as of May 14, 2019
       - Windows 2012 R2 ( https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151 )
       - Windows 2016 ( https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947 )
-  - New Release 
+  - New Release
     - Windows 2016 STD with MS-SQL 2016 Standard (2019.05.28)
-    
-    
+
+
 ### 2019.05.14
 
 #### 기능 개선
