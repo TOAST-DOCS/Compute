@@ -3,34 +3,42 @@
 ### January 21, 2020
 
 #### System Monitoring
-* Added Query Event Page 
-    * Query events occurred out of surveillance setup 
+* Added Query Event Page
+    * Query events occurred out of surveillance setup
 * Updated`Server List` on Server Dashboard
     * Upgraded to query all instances in `Compute > Instance`
     * Updated to show instance status more precisely
 * Updated `Server - User Integration` for Alarm Groups
-    * Updated to save changes, by selecting a server and user group and clicking the save button 
+    * Updated to save changes, by selecting a server and user group and clicking the save button
+
+
+### December 17, 2019 
+
+#### Auto Scale
+* 修改为可在实例模板列表及详细信息中查看创建时输入的所有信息
+    * 列表table：可用性区域
+    * 详细信息：设置的所有网络信息、预约脚本内容
 
 
 ### November 26, 2019
 
 #### System Monitoring
 
-##### Feature Updates 
+##### Feature Updates
 
 - Instance Search Updated on Server Dashboard: No distinction is required between upper and lower cases
 
 
-### Oct 29, 2019 
+### Oct 29, 2019
 
 #### System Monitoring
 
-##### Feature Updates 
+##### Feature Updates
 - Updated UI for User Interactions
-    - Updated to show the loading bar to search/add/modify/delete monitoring data, including user group, monitoring group, or monitoring setting. 
-    - Allowed to disable unnecessary buttons for interactions 
+    - Updated to show the loading bar to search/add/modify/delete monitoring data, including user group, monitoring group, or monitoring setting.
+    - Allowed to disable unnecessary buttons for interactions
 
-##### Bug Fixes 
+##### Bug Fixes
 - Fixed the error in the Japan and US region, where indicator collecting was temporarily suspended for servers with changed monitoring setting
 - Fixed the issue of invalid output of dates for the adding/modifying user/monitoring groups, especially in the US region
 
@@ -54,7 +62,7 @@
 
 #### 신규 서비스 출시: System Monitoring
 
-- 생성된 가상 서버의 시스템 지표 차트를 제공합니다. 
+- 생성된 가상 서버의 시스템 지표 차트를 제공합니다.
 - 각 시스템 지표 차트를 원하는 레이아웃으로 구성할 수 있으며, 지표가 특정 임계치에 도달할 경우 원하는 특정 사용자 그룹에게 이메일이나 SMS로 알림을 보내도록 설정할 수 있습니다.
 
 ### 2019.06.25
