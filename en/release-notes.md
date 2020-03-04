@@ -1,5 +1,18 @@
 ## Compute > Release Notes
 
+### February 25, 2020
+
+#### System Monitoring
+* Updates in Event Status Page
+    * Updated to query events by each region
+    * Added 'All' as status item for event search filters
+    * Added the **Forced Stop** button, by which user can  directly close events
+* Agent Updates
+    * Optimized communication paths with System Monitoring servers
+        * Indicators can be collected, regardless of internet gateway or security group settings 
+    * Upgraded usage volume for CPU and memory 
+
+
 ### January 21, 2020
 
 #### System Monitoring
