@@ -2,9 +2,9 @@
 
 ## 공통 준비 사항
 
-### API Endpoint 확인
+### API 엔드포인트 확인
 
-TOAST 기본 인프라 서비스 API는 타입과 리전 별로 엔드포인트가 나누어져 있습니다. 단, identity API는 모든 리전에서 동일한 endpoint를 사용합니다.
+TOAST 기본 인프라 서비스 API는 타입과 리전별로 엔드포인트가 나뉘어 있습니다. 단, Identity API는 모든 리전에서 동일한 엔드포인트를 사용합니다.
 
 | 타입 | 리전 | 엔드포인트 |
 |---|---|---|
@@ -18,14 +18,14 @@ TOAST 기본 인프라 서비스 API는 타입과 리전 별로 엔드포인트�
 
 ### 테넌트 ID 확인
 
-API 요청에 포함되는 테넌트 ID는 **Compute > Instance > 관리** 페이지의 **API 엔드포인트 설정** 창에서 확인합니다.
+API 요청에 포함되는 테넌트 ID는 **Compute > Instance > 관리** 페이지의 **API 엔드포인트 설정** 대화 상자에서 확인합니다.
 
 ### API 비밀번호 설정
 
-TOAST 기본 인프라 서비스 API를 사용하기 위해서 TOAST 계정 비밀번호와는 별개로 API 비밀번호를 설정해야 합니다.
+TOAST 기본 인프라 서비스 API를 사용하려면 TOAST 계정 비밀번호와는 별개로 API 비밀번호를 설정해야 합니다.
 
 1. **Compute > Instance > 관리** 페이지의 **API 엔드포인트 설정** 버튼을 클릭합니다.
-2. **API 엔드포인트 설정** 대화창 아래의 **API 비밀번호 설정**에 원하는 API 비밀번호를 지정합니다.
+2. **API 엔드포인트 설정** 대화 상자 아래의 **API 비밀번호 설정**에 원하는 API 비밀번호를 지정합니다.
 
 > API 비밀번호는 계정별로 설정됩니다. 한 프로젝트에서 설정된 비밀번호는 사용자가 속한 모든 프로젝트에서 사용할 수 있습니다.
 
@@ -36,7 +36,7 @@ TOAST 기본 인프라 서비스 API를 사용하기 위해서 TOAST 계정 비�
 
 토큰 발급은 `identity` 타입 엔드포인트를 이용합니다. `identity` 서비스 엔드포인트는 리전에 관계없이 `https://api-identity.infrastructure.cloud.toast.com`입니다.
 
-API 호출할 때 필요한 토큰을 발급 받습니다. TOAST에서는 프로젝트 한정 토큰(project-scoped token)을 사용합니다.
+API를 호출할 때 필요한 토큰을 발급받습니다. TOAST에서는 프로젝트 한정 토큰(project-scoped token)을 사용합니다.
 
 ```
 POST /v2.0/tokens
@@ -49,7 +49,7 @@ POST /v2.0/tokens
 | tenantId | Body | String | O | 토큰을 발급받을 테넌트 ID |
 | passwordCredentials | Body | Object | O | 인증을 위한 사용자 정보 객체 |
 | username | Body | String | O | TOAST 사용자 ID |
-| password | Body | String | O | API 비밀 번호 |
+| password | Body | String | O | API 비밀번호 |
 
 #### 예시
 <details><summary>펼쳐 보기</summary>
@@ -76,12 +76,12 @@ POST /v2.0/tokens
 |---|---|---|---|
 | access | Body | Object | `access` 객체 |
 | access.token | Body | Object | `token` 객체 |
-| access.token.issued_at | Body | Datetime | 토큰 발급 시간 (UTC)<br>`YYYY-MM-DDThh:mm:ss.SSSSSS`의 형태 |
-| access.token.expires | Body | Datetime | 토큰 만료 시간 (UTC)<br>`YYYY-MM-DDThh:mm:ssZ`의 형태 |
+| access.token.issued_at | Body | Datetime | 토큰 발급 시간(UTC)<br>`YYYY-MM-DDThh:mm:ss.SSSSSS`의 형태 |
+| access.token.expires | Body | Datetime | 토큰 만료 시간(UTC)<br>`YYYY-MM-DDThh:mm:ssZ`의 형태 |
 | access.token.id | Body | String | 토큰 ID |
 | access.token.tenant | Body | Object | `tenant` 객체 |
 | access.token.tenant.description | Body | String | 테넌트 설명 |
-| access.token.tenant.enabled | Body | String | Tenant의 활성화 여부<br>활성화가 되지 않으면 토큰 발급 및 API 호출 불가 |
+| access.token.tenant.enabled | Body | String | 테넌트의 활성화 여부<br>활성화되지 않으면 토큰 발급 및 API 호출 불가 |
 | access.token.tenant.id | Body | String | 테넌트 ID |
 | access.token.tenant.name | Body | String | 테넌트 이름 |
 | access.serviceCatalog | Body | Object | `serviceCatalog` 객체 |
