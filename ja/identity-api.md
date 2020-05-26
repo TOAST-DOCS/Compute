@@ -33,7 +33,7 @@ TOAST基本インフラサービスAPIを使用するためにTOASTアカウン�
 ## Token
 ### トークンを発行する
 
-API呼び出す時に必要なトークンを発行します。TOASTでは、プロジェクト限定トークン(project-scoped token)を使用します。
+API呼び出し時に必要なトークンを発行します。TOASTでは、プロジェクト限定トークン(project-scoped token)を使用します。
 
 ```
 POST /v2.0/tokens
@@ -73,7 +73,7 @@ POST /v2.0/tokens
 |---|---|---|---|
 | access | Body | Object | `access`オブジェクト |
 | access.token | Body | Object | `token`オブジェクト |
-| access.token.issued_at | Body | Datetime | トークン発行時間(UTC)<br>`YYYY-MM-DDThh:mm:ss.SSSSSS`の形式 |
+| access.token.issued_at | Body | Datetime | トークン発行日時(UTC)<br>`YYYY-MM-DDThh:mm:ss.SSSSSS`の形式 |
 | access.token.expires | Body | Datetime | トークン有効期限(UTC)<br>`YYYY-MM-DDThh:mm:ssZ`の形式 |
 | access.token.id | Body | String | トークンID |
 | access.token.tenant | Body | Object | `tenant`オブジェクト |
