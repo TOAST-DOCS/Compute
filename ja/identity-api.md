@@ -1,4 +1,4 @@
-﻿## API v2使用準備
+## API v2使用準備
 
 ## 共通準備事項
 
@@ -9,7 +9,7 @@ TOAST基本インフラサービスAPIは、サービスとリージョンごと
 | サービス | リージョン | エンドポイント |
 |---|---|---|
 | Identity | すべてのリージョン | https://api-identity.infrastructure.cloud.toast.com |
-| compute | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-compute.infrastructure.cloud.toast.com<br>https://jp1-api-compute.infrastructure.cloud.toast.com |
+| compute | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-instance.infrastructure.cloud.toast.com<br>https://jp1-api-instance.infrastructure.cloud.toast.com |
 | network | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-network.infrastructure.cloud.toast.com<br>https://jp1-api-network.infrastructure.cloud.toast.com |
 | image | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-image.infrastructure.cloud.toast.com<br>https://jp1-api-image.infrastructure.cloud.toast.com |
 | volume | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-block-storage.infrastructure.cloud.toast.com<br>https://jp1-api-block-storage.infrastructure.cloud.toast.com |
