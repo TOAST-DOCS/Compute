@@ -4,16 +4,16 @@
 
 ### API 엔드포인트 확인
 
-TOAST 기본 인프라 서비스 API는 타입과 리전별로 엔드포인트가 나뉘어 있습니다. 단, Identity API는 모든 리전에서 동일한 엔드포인트를 사용합니다.
+TOAST 기본 인프라 서비스 API는 서비스와 리전별로 엔드포인트가 나뉘어 있습니다. 단, Identity API는 모든 리전에서 동일한 엔드포인트를 사용합니다.
 
-| 타입 | 리전 | 엔드포인트 |
+| 서비스 | 리전 | 엔드포인트 |
 |---|---|---|
-| identity | 모든 리전 | https://api-identity.infrastructure.cloud.toast.com |
-| compute | 한국(판교) 리전<br>일본 리전 | https://kr1-api-instance.infrastructure.cloud.toast.com<br>https://jp1-api-instance.infrastructure.cloud.toast.com |
+| Identity | 모든 리전 | https://api-identity.infrastructure.cloud.toast.com |
+| compute | 한국(판교) 리전<br>일본 리전 | https://kr1-api-compute.infrastructure.cloud.toast.com<br>https://jp1-api-compute.infrastructure.cloud.toast.com |
 | network | 한국(판교) 리전<br>일본 리전 | https://kr1-api-network.infrastructure.cloud.toast.com<br>https://jp1-api-network.infrastructure.cloud.toast.com |
 | image | 한국(판교) 리전<br>일본 리전 | https://kr1-api-image.infrastructure.cloud.toast.com<br>https://jp1-api-image.infrastructure.cloud.toast.com |
-| volumev2 | 한국(판교) 리전<br>일본 리전 | https://kr1-api-block-storage.infrastructure.cloud.toast.com<br>https://jp1-api-block-storage.infrastructure.cloud.toast.com |
-| object-store | 한국(판교) 리전<br>일본 리전 | https://api-storage.cloud.toast.com<br>https://jp1-api-storage.cloud.toast.com |
+| volume | 한국(판교) 리전<br>일본 리전 | https://kr1-api-block-storage.infrastructure.cloud.toast.com<br>https://jp1-api-block-storage.infrastructure.cloud.toast.com |
+| object-store | 한국(판교) 리전<br>일본 리전 | https://kr1-api-object-storage.infrastructure.cloud.toast.com<br>https://jp1-api-object-storage.infrastructure.cloud.toast.com |
 | key-manager | 한국(판교) 리전<br>일본 리전 | https://kr1-api-key-manager.infrastructure.cloud.toast.com<br>https://jp1-api-key-manager.infrastructure.cloud.toast.com |
 
 ### 테넌트 ID 확인
@@ -31,10 +31,7 @@ TOAST 기본 인프라 서비스 API를 사용하려면 TOAST 계정 비밀번�
 
 
 ## Token
-
 ### 토큰 발급하기
-
-토큰 발급은 `identity` 타입 엔드포인트를 이용합니다. `identity` 서비스 엔드포인트는 리전에 관계없이 `https://api-identity.infrastructure.cloud.toast.com`입니다.
 
 API를 호출할 때 필요한 토큰을 발급받습니다. TOAST에서는 프로젝트 한정 토큰(project-scoped token)을 사용합니다.
 
@@ -58,7 +55,7 @@ POST /v2.0/tokens
 ```json
 {
     "auth": {
-        "tenantId": "f5073eaa26b64cffbee89411df94ce01",
+        "tenantId": "a07397e624b1a44bb96b76d451f7e3b23",
         "passwordCredentials": {
             "username": "user@example.com",
             "password": "secretsecret"
@@ -98,120 +95,68 @@ POST /v2.0/tokens
 
 ```json
 {
-  "access": {
-    "token": {
-      "id": "e42a092ed6ee4d99949bf25f5f6ecc60",
-      "expires": "2020-04-29T15:31:21Z",
-      "tenant": {
-        "id": "f5073eaa26b64cffbee89411df94ce01",
-        "name": "c_VKkasVsh",
-        "groupId": "XEj2zkHrbA7modGU",
-        "description": "",
-        "enabled": true,
-        "project_domain": "NORMAL"
-      },
-      "issued_at": "2020-04-29T03:32:28.000405"
-    },
-    "serviceCatalog": [
-      {
-        "endpoints": [
-          {
-            "region": "KR2",
-            "publicURL": "https://kr2-api-instance.infrastructure.cloud.toast.com/v2/f5073eaa26b64cffbee89411df94ce01"
-          },
-          {
-            "region": "KR1",
-            "publicURL": "https://kr1-api-instance.infrastructure.cloud.toast.com/v2/f5073eaa26b64cffbee89411df94ce01"
-          }
+    "access": {
+        "token": {
+            "issued_at": "2020-02-22T17:09:57.647795",
+            "expires": "2020-02-22T17:09:57Z",
+            "id": "gAAAAABeeVymchFmeAIHc0JORI3l1BP9fhGiKxk4Z1t1VwEEUd5fm4THktl6wkq434MqoI4uLYrsVL-rzFut9M4BGa824HeXHj8mPz2oLCAB0cWMNU3WN5G9-cOT4LySU0F7TVxcvjq8ZN7V4rfWyL6gUCiZMvnlKx8KxxV4LWSBj9f1otcWXrg%3D",
+            "tenant": {
+                "description": null,
+                "enabled": true,
+                "id": "73f0aa26640f4971864919d0eb0f0880",
+                "name": "c_VKkasVsh"
+            }
+        },
+        "serviceCatalog": [
+            {
+                "endpoints": [
+                    {
+                        "region": "KR1",
+                        "publicURL": "http://kr1-compute.example.com/v2/73f0aa26640f4971864919d0eb0f0880"
+                    },
+                    {
+                        "region": "JP1",
+                        "publicURL": "http://jp1-compute.example.com/v2/73f0aa26640f4971864919d0eb0f0880"
+                    }
+                ],
+                "endpoints_links": [],
+                "type": "compute",
+                "name": "nova"
+            },
+            {
+                "endpoints": [
+                    {
+                        "region": "KR1",
+                        "publicURL": "http://identity.example.com/v2.0"
+                    },
+                    {
+                        "region": "JP1",
+                        "publicURL": "http://identity.example.com/v2.0"
+                    }
+                ],
+                "endpoints_links": [],
+                "type": "identity",
+                "name": "keystone"
+            }
         ],
-        "type": "compute",
-        "name": "nova"
-      },
-      {
-        "endpoints": [
-          {
-            "region": "KR2",
-            "publicURL": "https://kr2-api-image.infrastructure.cloud.toast.com"
-          },
-          {
-            "region": "KR1",
-            "publicURL": "https://kr1-api-image.infrastructure.cloud.toast.com"
-          }
-        ],
-        "type": "image",
-        "name": "glance"
-      },
-      {
-        "endpoints": [
-          {
-            "region": "KR1",
-            "publicURL": "https://api-identity.infrastructure.cloud.toast.com/v2.0"
-          }
-        ],
-        "type": "identity",
-        "name": "keystone"
-      },
-      {
-        "endpoints": [
-          {
-            "region": "KR2",
-            "publicURL": "https://kr2-api-key-manager.infrastructure.cloud.toast.com"
-          },
-          {
-            "region": "KR1",
-            "publicURL": "https://kr1-api-key-manager.infrastructure.cloud.toast.com"
-          }
-        ],
-        "type": "key-manager",
-        "name": "barbican"
-      },
-      {
-        "endpoints": [
-          {
-            "region": "KR2",
-            "publicURL": "https://kr2-api-block-storage.infrastructure.cloud.toast.com/v2/f5073eaa26b64cffbee89411df94ce01"
-          },
-          {
-            "region": "KR1",
-            "publicURL": "https://kr1-api-block-storage.infrastructure.cloud.toast.com/v2/f5073eaa26b64cffbee89411df94ce01"
-          }
-        ],
-        "type": "volumev2",
-        "name": "cinderv2"
-      },
-      {
-        "endpoints": [
-          {
-            "region": "KR2",
-            "publicURL": "https://kr2-api-network.infrastructure.cloud.toast.com"
-          },
-          {
-            "region": "KR1",
-            "publicURL": "https://kr1-api-network.infrastructure.cloud.toast.com"
-          }
-        ],
-        "type": "network",
-        "name": "neutron"
-      }
-    ],
-    "user": {
-      "id": "436f727b7c9142f896ddd56be591dd7f",
-      "username": "37be6ac0-d660-11e7-ae46-005056ac1497",
-      "name": "37be6ac0-d660-11e7-ae46-005056ac1497",
-      "roles": [
-        {
-          "name": "project_admin"
+        "user": {
+            "username": "37be6ac0-d660-11e7-ae46-005056ac1498",
+            "roles_links": [],
+            "id": "436f727b7c9142f896ddd56be591dd7a",
+            "roles": [
+                {
+                    "name": "project_admin"
+                }
+            ],
+            "name": "37be6ac0-d660-11e7-ae46-005056ac1498"
+        },
+        "metadata": {
+            "is_admin": 0,
+            "roles": [
+                "8341d3603a1d4d5985bff09f10704d4d"
+            ]
         }
-      ],
-      "roles_links": []
-    },
-    "metadata": {
-      "roles": [
-        "9fe2ff9ee4384b1894a90878d3e92bab"
-      ],
-      "is_admin": 0
     }
-  }
 }
 ```
 
