@@ -5,13 +5,13 @@
 #### Instance
 
 * Public API v2 출시
-    * 오픈스택 호환 API 스펙으로 변경
-    * 테라폼 지원
+    * Openstack 호환 API 스펙으로 변경
+    * Terraform 지원
 
 #### Image
 
 * Public API v2 출시
-    * 오픈스택 호환 API 스펙으로 변경
+    * Openstack 호환 API 스펙으로 변경
 
 ### 2020. 04. 07.
 #### System Monitoring
