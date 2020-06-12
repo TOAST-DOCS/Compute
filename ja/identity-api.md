@@ -102,10 +102,8 @@ POST /v2.0/tokens
       "tenant": {
         "id": "f5073eaa26b64cffbee89411df94ce01",
         "name": "c_VKkasVsh",
-        "groupId": "XEj2zkHrbA7modGU",
         "description": "",
         "enabled": true,
-        "project_domain": "NORMAL"
       },
       "issued_at": "2020-04-29T03:32:28.000405"
     },
