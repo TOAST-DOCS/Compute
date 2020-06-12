@@ -13,7 +13,6 @@ TOAST基本インフラサービスAPIは、サービスとリージョンごと
 | network | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-network.infrastructure.cloud.toast.com<br>https://jp1-api-network.infrastructure.cloud.toast.com |
 | image | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-image.infrastructure.cloud.toast.com<br>https://jp1-api-image.infrastructure.cloud.toast.com |
 | volume | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-block-storage.infrastructure.cloud.toast.com<br>https://jp1-api-block-storage.infrastructure.cloud.toast.com |
-| object-store | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-object-storage.infrastructure.cloud.toast.com<br>https://jp1-api-object-storage.infrastructure.cloud.toast.com |
 | key-manager | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-key-manager.infrastructure.cloud.toast.com<br>https://jp1-api-key-manager.infrastructure.cloud.toast.com |
 
 ### テナントID確認
