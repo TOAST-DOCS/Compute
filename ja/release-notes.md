@@ -1,5 +1,18 @@
 ## Compute > リリースノート
 
+### 2020. 05. 26.
+
+#### Instance
+
+* Public API v2リリース
+    * Openstack互換APIスペックに変更
+    * Terraformサポート
+
+#### Image
+
+* Public API v2リリース
+    * Openstack互換APIスペックに変更
+    
 ### 2020. 02. 25.
 #### Image
 * OS新規イメージ
