@@ -13,7 +13,6 @@ TOAST 기본 인프라 서비스 API는 타입과 리전별로 엔드포인트�
 | network | 한국(판교) 리전 | https://gov-api-network.infrastructure.cloud.toast.com |
 | image | 한국(판교) 리전 | https://gov-api-image.infrastructure.cloud.toast.com |
 | volume | 한국(판교) 리전 | https://gov-api-block-storage.infrastructure.cloud.toast.com |
-| object-store | 한국(판교) 리전 | https://gov-api-storage.cloud.toast.com |
 | key-manager | 한국(판교) 리전 | https://gov-api-key-manager.infrastructure.cloud.toast.com |
 
 ### 테넌트 ID 확인
