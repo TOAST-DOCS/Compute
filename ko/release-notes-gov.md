@@ -1,5 +1,18 @@
 ## Compute > 릴리스 노트
 
+### 2020. 06. 16.
+
+#### Instance
+
+* Public API v2 출시
+    * Openstack 호환 API 스펙으로 변경
+    * Terraform 지원
+
+#### Image
+
+* Public API v2 출시
+    * Openstack 호환 API 스펙으로 변경
+
 ### 2020. 04. 07.
 #### System Monitoring
 * System Monitoring 서비스 추가
