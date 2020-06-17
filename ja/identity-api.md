@@ -4,16 +4,16 @@
 
 ### API Endpoint確認
 
-TOAST基本インフラサービスAPIは、サービスとリージョンごとにエンドポイントが分かれています。ただし、Identity APIはすべてのリージョンで同じendpointを使用します。
+TOAST基本インフラサービスAPIは、タイプとリージョンごとにエンドポイントが分かれています。ただし、Identity APIはすべてのリージョンで同じendpointを使用します。
 
-| サービス | リージョン | エンドポイント |
+| タイプ | リージョン | エンドポイント |
 |---|---|---|
-| Identity | すべてのリージョン | https://api-identity.infrastructure.cloud.toast.com |
+| identity | すべてのリージョン | https://api-identity.infrastructure.cloud.toast.com |
 | compute | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-instance.infrastructure.cloud.toast.com<br>https://jp1-api-instance.infrastructure.cloud.toast.com |
 | network | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-network.infrastructure.cloud.toast.com<br>https://jp1-api-network.infrastructure.cloud.toast.com |
 | image | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-image.infrastructure.cloud.toast.com<br>https://jp1-api-image.infrastructure.cloud.toast.com |
-| volume | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-block-storage.infrastructure.cloud.toast.com<br>https://jp1-api-block-storage.infrastructure.cloud.toast.com |
-| key-manager | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-key-manager.infrastructure.cloud.toast.com<br>https://jp1-api-key-manager.infrastructure.cloud.toast.com |
+| volumev2 | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-block-storage.infrastructure.cloud.toast.com<br>https://jp1-api-block-storage.infrastructure.cloud.toast.com |
+| object-store | 韓国(パンギョ)リージョン<br>日本リージョン | https://api-storage.cloud.toast.com<br>https://jp1-api-storage.cloud.toast.com |
 
 ### テナントID確認
 
@@ -30,7 +30,10 @@ TOAST基本インフラサービスAPIを使用するためにTOASTアカウン�
 
 
 ## Token
+
 ### トークンを発行する
+
+トークンの発行は`identity`タイプエンドポイントを利用します。 `identity`サービスエンドポイントはリージョンに関係なく`https://api-identity.infrastructure.cloud.toast.com`です。
 
 API呼び出し時に必要なトークンを発行します。TOASTでは、プロジェクト限定トークン(project-scoped token)を使用します。
 
@@ -54,7 +57,7 @@ POST /v2.0/tokens
 ```json
 {
     "auth": {
-        "tenantId": "a07397e624b1a44bb96b76d451f7e3b23",
+        "tenantId": "f5073eaa26b64cffbee89411df94ce01",
         "passwordCredentials": {
             "username": "user@example.com",
             "password": "secretsecret"
