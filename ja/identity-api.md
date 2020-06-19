@@ -4,16 +4,16 @@
 
 ### API Endpoint確認
 
-TOAST基本インフラサービスAPIは、サービスとリージョンごとにエンドポイントが分かれています。ただし、Identity APIはすべてのリージョンで同じendpointを使用します。
+TOAST基本インフラサービスAPIは、タイプとリージョンごとにエンドポイントが分かれています。ただし、Identity APIはすべてのリージョンで同じendpointを使用します。
 
-| サービス | リージョン | エンドポイント |
+| タイプ | リージョン | エンドポイント |
 |---|---|---|
-| Identity | すべてのリージョン | https://api-identity.infrastructure.cloud.toast.com |
+| identity | すべてのリージョン | https://api-identity.infrastructure.cloud.toast.com |
 | compute | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-instance.infrastructure.cloud.toast.com<br>https://jp1-api-instance.infrastructure.cloud.toast.com |
 | network | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-network.infrastructure.cloud.toast.com<br>https://jp1-api-network.infrastructure.cloud.toast.com |
 | image | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-image.infrastructure.cloud.toast.com<br>https://jp1-api-image.infrastructure.cloud.toast.com |
-| volume | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-block-storage.infrastructure.cloud.toast.com<br>https://jp1-api-block-storage.infrastructure.cloud.toast.com |
-| key-manager | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-key-manager.infrastructure.cloud.toast.com<br>https://jp1-api-key-manager.infrastructure.cloud.toast.com |
+| volumev2 | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-block-storage.infrastructure.cloud.toast.com<br>https://jp1-api-block-storage.infrastructure.cloud.toast.com |
+| object-store | 韓国(パンギョ)リージョン<br>日本リージョン | https://api-storage.cloud.toast.com<br>https://jp1-api-storage.cloud.toast.com |
 
 ### テナントID確認
 
@@ -30,7 +30,10 @@ TOAST基本インフラサービスAPIを使用するためにTOASTアカウン�
 
 
 ## Token
+
 ### トークンを発行する
+
+トークンの発行は`identity`タイプエンドポイントを利用します。 `identity`サービスエンドポイントはリージョンに関係なく`https://api-identity.infrastructure.cloud.toast.com`です。
 
 API呼び出し時に必要なトークンを発行します。TOASTでは、プロジェクト限定トークン(project-scoped token)を使用します。
 
@@ -54,7 +57,7 @@ POST /v2.0/tokens
 ```json
 {
     "auth": {
-        "tenantId": "a07397e624b1a44bb96b76d451f7e3b23",
+        "tenantId": "f5073eaa26b64cffbee89411df94ce01",
         "passwordCredentials": {
             "username": "user@example.com",
             "password": "secretsecret"
@@ -94,68 +97,120 @@ POST /v2.0/tokens
 
 ```json
 {
-    "access": {
-        "token": {
-            "issued_at": "2020-02-22T17:09:57.647795",
-            "expires": "2020-02-22T17:09:57Z",
-            "id": "gAAAAABeeVymchFmeAIHc0JORI3l1BP9fhGiKxk4Z1t1VwEEUd5fm4THktl6wkq434MqoI4uLYrsVL-rzFut9M4BGa824HeXHj8mPz2oLCAB0cWMNU3WN5G9-cOT4LySU0F7TVxcvjq8ZN7V4rfWyL6gUCiZMvnlKx8KxxV4LWSBj9f1otcWXrg%3D",
-            "tenant": {
-                "description": null,
-                "enabled": true,
-                "id": "73f0aa26640f4971864919d0eb0f0880",
-                "name": "c_VKkasVsh"
-            }
-        },
-        "serviceCatalog": [
-            {
-                "endpoints": [
-                    {
-                        "region": "KR1",
-                        "publicURL": "http://kr1-compute.example.com/v2/73f0aa26640f4971864919d0eb0f0880"
-                    },
-                    {
-                        "region": "JP1",
-                        "publicURL": "http://jp1-compute.example.com/v2/73f0aa26640f4971864919d0eb0f0880"
-                    }
-                ],
-                "endpoints_links": [],
-                "type": "compute",
-                "name": "nova"
-            },
-            {
-                "endpoints": [
-                    {
-                        "region": "KR1",
-                        "publicURL": "http://identity.example.com/v2.0"
-                    },
-                    {
-                        "region": "JP1",
-                        "publicURL": "http://identity.example.com/v2.0"
-                    }
-                ],
-                "endpoints_links": [],
-                "type": "identity",
-                "name": "keystone"
-            }
+  "access": {
+    "token": {
+      "id": "e42a092ed6ee4d99949bf25f5f6ecc60",
+      "expires": "2020-04-29T15:31:21Z",
+      "tenant": {
+        "id": "f5073eaa26b64cffbee89411df94ce01",
+        "name": "c_VKkasVsh",
+        "groupId": "XEj2zkHrbA7modGU",
+        "description": "",
+        "enabled": true,
+        "project_domain": "NORMAL"
+      },
+      "issued_at": "2020-04-29T03:32:28.000405"
+    },
+    "serviceCatalog": [
+      {
+        "endpoints": [
+          {
+            "region": "KR2",
+            "publicURL": "https://kr2-api-instance.infrastructure.cloud.toast.com/v2/f5073eaa26b64cffbee89411df94ce01"
+          },
+          {
+            "region": "KR1",
+            "publicURL": "https://kr1-api-instance.infrastructure.cloud.toast.com/v2/f5073eaa26b64cffbee89411df94ce01"
+          }
         ],
-        "user": {
-            "username": "37be6ac0-d660-11e7-ae46-005056ac1498",
-            "roles_links": [],
-            "id": "436f727b7c9142f896ddd56be591dd7a",
-            "roles": [
-                {
-                    "name": "project_admin"
-                }
-            ],
-            "name": "37be6ac0-d660-11e7-ae46-005056ac1498"
-        },
-        "metadata": {
-            "is_admin": 0,
-            "roles": [
-                "8341d3603a1d4d5985bff09f10704d4d"
-            ]
+        "type": "compute",
+        "name": "nova"
+      },
+      {
+        "endpoints": [
+          {
+            "region": "KR2",
+            "publicURL": "https://kr2-api-image.infrastructure.cloud.toast.com"
+          },
+          {
+            "region": "KR1",
+            "publicURL": "https://kr1-api-image.infrastructure.cloud.toast.com"
+          }
+        ],
+        "type": "image",
+        "name": "glance"
+      },
+      {
+        "endpoints": [
+          {
+            "region": "KR1",
+            "publicURL": "https://api-identity.infrastructure.cloud.toast.com/v2.0"
+          }
+        ],
+        "type": "identity",
+        "name": "keystone"
+      },
+      {
+        "endpoints": [
+          {
+            "region": "KR2",
+            "publicURL": "https://kr2-api-key-manager.infrastructure.cloud.toast.com"
+          },
+          {
+            "region": "KR1",
+            "publicURL": "https://kr1-api-key-manager.infrastructure.cloud.toast.com"
+          }
+        ],
+        "type": "key-manager",
+        "name": "barbican"
+      },
+      {
+        "endpoints": [
+          {
+            "region": "KR2",
+            "publicURL": "https://kr2-api-block-storage.infrastructure.cloud.toast.com/v2/f5073eaa26b64cffbee89411df94ce01"
+          },
+          {
+            "region": "KR1",
+            "publicURL": "https://kr1-api-block-storage.infrastructure.cloud.toast.com/v2/f5073eaa26b64cffbee89411df94ce01"
+          }
+        ],
+        "type": "volumev2",
+        "name": "cinderv2"
+      },
+      {
+        "endpoints": [
+          {
+            "region": "KR2",
+            "publicURL": "https://kr2-api-network.infrastructure.cloud.toast.com"
+          },
+          {
+            "region": "KR1",
+            "publicURL": "https://kr1-api-network.infrastructure.cloud.toast.com"
+          }
+        ],
+        "type": "network",
+        "name": "neutron"
+      }
+    ],
+    "user": {
+      "id": "436f727b7c9142f896ddd56be591dd7f",
+      "username": "37be6ac0-d660-11e7-ae46-005056ac1497",
+      "name": "37be6ac0-d660-11e7-ae46-005056ac1497",
+      "roles": [
+        {
+          "name": "project_admin"
         }
+      ],
+      "roles_links": []
+    },
+    "metadata": {
+      "roles": [
+        "9fe2ff9ee4384b1894a90878d3e92bab"
+      ],
+      "is_admin": 0
     }
+  }
 }
 ```
 
