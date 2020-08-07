@@ -27,6 +27,8 @@
     * 이미지 업데이트
 * Ubuntu Server 18.04.4 LTS(2020.08.18)
     * 이미지 업데이트
+* Ubuntu Server 18.04.4 LTS with NVIDIA(2020.08.18)
+    * 이미지 업데이트
 * Windows 2012 R2 STD(2020.08.18)
     * 이미지 업데이트
 * Windows 2016 STD(2020.08.18)
