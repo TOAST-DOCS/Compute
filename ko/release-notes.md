@@ -21,7 +21,7 @@
     * 이미지 업데이트
 * Debian 9.9 Stretch(2020.08.18)
     * 이미지 업데이트
-* Debian 10.2 Buster(2020.08.18)
+* Debian 10.5 Buster(2020.08.18)
     * 이미지 업데이트
 * Ubuntu Server 16.04.6 LTS(2020.08.18)
     * 이미지 업데이트
