@@ -1,9 +1,53 @@
 ## Compute > 릴리스 노트
 
 ### 2020. 08. 25.
+
 #### Instance
 * **Windows 인스턴스 접속 정보** 탭에 **비밀번호 초기화** 버튼 추가
 * Windows 이미지 생성 시 원본 인스턴스 비밀번호 초기화 기능 추가
+
+#### Image
+* 신규 이미지 추가 
+    * Cent OS 7.8(2020.08.18)
+    * Ubuntu 20.04 LTS(2020.08.18)
+    * Windows Server 2016 with SQL Server 2019 Express(2020.08.18)
+    * Windows Server 2016 with SQL Server 2017 Standard(2020.08.18)
+    * Windows Server 2016 with SQL Server 2019 Standard(2020.08.18)
+    * Windows Server 2019 with SQL Server 2019 Standard(2020.08.18)
+
+* CentOS 6.10(2020.08.18)
+    * 이미지 업데이트
+* CentOS 7.5(2020.08.18)
+    * 이미지 업데이트
+* CentOS Linux 6.10 with MySQL 5.6.38(2020.08.18)
+    * 이미지 업데이트
+* CentOS Linux 6.10 with MySQL 5.7.20(2020.08.18)
+    * 이미지 업데이트
+* Debian 9.9 Stretch(2020.08.18)
+    * 이미지 업데이트
+* Debian 10.5 Buster(2020.08.18)
+    * 이미지 업데이트
+* Ubuntu Server 16.04.6 LTS(2020.08.18)
+    * 이미지 업데이트
+* Ubuntu Server 18.04.4 LTS(2020.08.18)
+    * 이미지 업데이트
+* Ubuntu Server 18.04.4 LTS with NVIDIA(2020.08.18)
+    * 이미지 업데이트
+* Windows 2012 R2 STD(2020.08.18)
+    * 이미지 업데이트
+* Windows 2016 STD(2020.08.18)
+    * 이미지 업데이트
+* Windows 2019 STD(2020.08.18)
+    * 이미지 업데이트
+* Windows Server 2012 R2 with SQL Server 2016 Standard(2020.08.18)
+    * 이미지 업데이트
+* Windows Server 2016 with SQL Server 2016 Standard(2020.08.18)
+    * 이미지 업데이트
+
+* 이미지 지원 종료
+    * Windows Server 2012 R2 with SQL Server 2012 Standard(2020.02.18)
+    * Windows Server 2012 R2 with SQL Server 2014 Standard(2020.02.18)
+    * Windows Server 2012 R2 with SQL Server 2016 Express(2020.02.18)
 
 ### 2020. 06. 23.
 
