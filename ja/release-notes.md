@@ -21,11 +21,13 @@
     * イメージアップデート
 * Debian 9.9 Stretch(2020.08.18)
     * イメージアップデート
-* Debian 10.2 Buster(2020.08.18)
+* Debian 10.5 Buster(2020.08.18)
     * イメージアップデート
 * Ubuntu Server 16.04.6 LTS(2020.08.18)
     * イメージアップデート
 * Ubuntu Server 18.04.4 LTS(2020.08.18)
+    * イメージアップデート
+* Ubuntu Server 18.04.4 LTS with NVIDIA(2020.08.18)
     * イメージアップデート
 * Windows 2012 R2 STD(2020.08.18)
     * イメージアップデート
