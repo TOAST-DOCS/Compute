@@ -9,11 +9,12 @@ TOAST基本インフラサービスAPIは、タイプとリージョンごとに
 | タイプ | リージョン | エンドポイント |
 |---|---|---|
 | identity | すべてのリージョン | https://api-identity.infrastructure.cloud.toast.com |
-| compute | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-instance.infrastructure.cloud.toast.com<br>https://jp1-api-instance.infrastructure.cloud.toast.com |
-| network | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-network.infrastructure.cloud.toast.com<br>https://jp1-api-network.infrastructure.cloud.toast.com |
-| image | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-image.infrastructure.cloud.toast.com<br>https://jp1-api-image.infrastructure.cloud.toast.com |
-| volumev2 | 韓国(パンギョ)リージョン<br>日本リージョン | https://kr1-api-block-storage.infrastructure.cloud.toast.com<br>https://jp1-api-block-storage.infrastructure.cloud.toast.com |
-| object-store | 韓国(パンギョ)リージョン<br>日本リージョン | https://api-storage.cloud.toast.com<br>https://jp1-api-storage.cloud.toast.com |
+| compute | 韓国(パンギョ)リージョン<br>韓国(坪村)リージョン<br>日本リージョン | https://kr1-api-instance.infrastructure.cloud.toast.com<br>https://kr2-api-instance.infrastructure.cloud.toast.com<br>https://jp1-api-instance.infrastructure.cloud.toast.com |
+| network | 韓国(パンギョ)リージョン<br>韓国(坪村)リージョン<br>日本リージョン | https://kr1-api-network.infrastructure.cloud.toast.com<br>https://kr2-api-network.infrastructure.cloud.toast.com<br>https://jp1-api-network.infrastructure.cloud.toast.com |
+| image | 韓国(パンギョ)リージョン<br>韓国(坪村)リージョン<br>日本リージョン | https://kr1-api-image.infrastructure.cloud.toast.com<br>https://kr2-api-image.infrastructure.cloud.toast.com<br>https://jp1-api-image.infrastructure.cloud.toast.com |
+| volumev2 | 韓国(パンギョ)リージョン<br>韓国(坪村)リージョン<br>日本リージョン | https://kr1-api-block-storage.infrastructure.cloud.toast.com<br>https://kr2-api-block-storage.infrastructure.cloud.toast.com<br>https://jp1-api-block-storage.infrastructure.cloud.toast.com |
+| object-store | 韓国(パンギョ)リージョン<br>韓国(坪村)リージョン<br>日本リージョン | https://api-storage.cloud.toast.com<br>https://kr2-api-storage.cloud.toast.com<br>https://jp1-api-storage.cloud.toast.com |
+| key-manager | 韓国(パンギョ)リージョン<br>韓国(坪村)リージョン<br>日本リージョン | https://kr1-api-key-manager.infrastructure.cloud.toast.com<br>https://kr2-api-key-manager.infrastructure.cloud.toast.com<br>https://jp1-api-key-manager.infrastructure.cloud.toast.com |
 
 ### テナントID確認
 
