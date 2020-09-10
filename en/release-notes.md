@@ -1,5 +1,12 @@
 ## Compute > Release Notes
 
+### June 23, 2020
+
+#### System Monitoring
+
+* Updated chart and legend names to clarify  
+* Added detail indications on a chart for items with more details 
+
 ### February 25, 2020
 
 #### System Monitoring
