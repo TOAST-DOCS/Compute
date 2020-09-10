@@ -1,5 +1,18 @@
 ## Compute > Release Notes
 
+### May 26, 2020
+
+#### Instance
+
+* Released Public API v2
+    * Updated API specifications to be compatible with Openstack 
+    * Supports Terraform 
+
+#### Image
+
+* Released Public API v2
+    * Updated API specifications to be compatible with Openstack 
+    
 ### February 25, 2020
 
 #### System Monitoring
