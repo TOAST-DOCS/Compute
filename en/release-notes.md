@@ -1,9 +1,9 @@
 ## Compute > Release Notes
 
 #### Instance
-* 키페어에 등록된 공개 키 조회 기능 추가
-* GPU 인스턴스를 콘솔에서 직접 생성할 수 있도록 서비스 오픈
-* 인스턴스 정지 대화 상자에서 삭제 버튼 제거
+* Added the feature of querying public keys registered at keypair 
+* Released the service of creating GPU instances readily on console
+* Removed the Delete button from the dialogue box of suspending instances
 
 ### May 26, 2020
 
