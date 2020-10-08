@@ -1,7 +1,14 @@
 ## Compute > Release Notes
 
+### 2020. 10. 27.
+
+#### Auto Scale
+* Deploy 서비스 연계 기능 추가
+
+### 2020. 08. 25.
+
 #### Instance
-* Added the feature of querying public keys registered at keypair 
+* Added the feature of querying public keys registered at keypair
 * Released the service of creating GPU instances readily on console
 * Removed the Delete button from the dialogue box of suspending instances
 
@@ -10,14 +17,14 @@
 #### Instance
 
 * Released Public API v2
-    * Updated API specifications to be compatible with Openstack 
-    * Supports Terraform 
+    * Updated API specifications to be compatible with Openstack
+    * Supports Terraform
 
 #### Image
 
 * Released Public API v2
-    * Updated API specifications to be compatible with Openstack 
-    
+    * Updated API specifications to be compatible with Openstack
+
 ### February 25, 2020
 
 #### System Monitoring
@@ -27,8 +34,8 @@
     * Added the **Forced Stop** button, by which user can  directly close events
 * Agent Updates
     * Optimized communication paths with System Monitoring servers
-        * Indicators can be collected, regardless of internet gateway or security group settings 
-    * Upgraded usage volume for CPU and memory 
+        * Indicators can be collected, regardless of internet gateway or security group settings
+    * Upgraded usage volume for CPU and memory
 
 
 ### January 21, 2020
