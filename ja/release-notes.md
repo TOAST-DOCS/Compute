@@ -79,7 +79,7 @@
 
 * Public API v2リリース
     * Openstack互換API仕様に変更
-    
+
 ### 2020. 02. 25.
 #### Image
 * OS新規イメージ
