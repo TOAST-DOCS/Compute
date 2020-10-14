@@ -81,7 +81,9 @@
     * Openstack互換API仕様に変更
 
 ### 2020. 02. 25.
+
 #### Image
+
 * OS新規イメージ
     * Debian 10.2 Buster(2020.02.18)
     * Windows 2019 STD(2020.02.18)

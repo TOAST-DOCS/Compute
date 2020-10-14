@@ -1,16 +1,23 @@
 ## Compute > Release Notes
 
-### 2020. 10. 27.
+### October 27, 2020
 
 #### Auto Scale
 * Deploy 서비스 연계 기능 추가
 
-### 2020. 08. 25.
+### August 25, 2020
 
 #### Instance
 * Added the feature of querying public keys registered at keypair
 * Released the service of creating GPU instances readily on console
 * Removed the Delete button from the dialogue box of suspending instances
+
+### June 23, 2020
+
+#### System Monitoring
+
+* Updated chart and legend names to clarify  
+* Added detail indications on a chart for items with more details
 
 ### May 26, 2020
 
