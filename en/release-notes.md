@@ -3,7 +3,7 @@
 ### October 27, 2020
 
 #### Auto Scale
-* Deploy 서비스 연계 기능 추가
+* Added the feature of associating with Deploy
 
 ### August 25, 2020
 
