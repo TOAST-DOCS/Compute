@@ -14,11 +14,11 @@
 #### Image
 * Added New Images
     * Cent OS 7.8 (Aug.18,2020)
-    * Ubuntu 20.04 LTS(Aug.18, 2020)
-    * Windows Server 2016 with SQL Server 2019 Express(Aug.18,2020)
-    * Windows Server 2016 with SQL Server 2017 Standard(Aug.18,2020)
-    * Windows Server 2016 with SQL Server 2019 Standard(Aug.18,2020)
-    * Windows Server 2019 with SQL Server 2019 Standard(Aug.18,2020)
+    * Ubuntu 20.04 LTS (Aug.18,2020)
+    * Windows Server 2016 with SQL Server 2019 Express (Aug.18,2020)
+    * Windows Server 2016 with SQL Server 2017 Standard (Aug.18,2020)
+    * Windows Server 2016 with SQL Server 2019 Standard (Aug.18,2020)
+    * Windows Server 2019 with SQL Server 2019 Standard (Aug.18,2020)
 
 * CentOS 6.10 (Aug.18,2020)
     * Updated image
