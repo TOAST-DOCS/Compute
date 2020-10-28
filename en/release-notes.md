@@ -1,10 +1,5 @@
 ## Compute > Release Notes
 
-### October 27, 2020
-
-#### Auto Scale
-* Deploy 서비스 연계 기능 추가
-
 ### August 25, 2020
 
 #### Instance
