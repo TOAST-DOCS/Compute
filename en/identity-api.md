@@ -3,17 +3,16 @@
 ## Common Preparations 
 
 ### Check API Endpoints 
-
 TOAST Infrastructure Service API provides different endpoints for each type and region. However, the Identity API provides the same endpoint in all regions. 
 
 | Type | Region | Endpoint |
 |---|---|---|
 | identity | All Regions | https://api-identity.infrastructure.cloud.toast.com |
-| compute | Korea (Pangyo) <br>Japan | https://kr1-api-instance.infrastructure.cloud.toast.com<br>https://jp1-api-instance.infrastructure.cloud.toast.com |
-| network | Korea (Pangyo)<br>Japan | https://kr1-api-network.infrastructure.cloud.toast.com<br>https://jp1-api-network.infrastructure.cloud.toast.com |
-| image | Korea (Pangyo)<br>Japan | https://kr1-api-image.infrastructure.cloud.toast.com<br>https://jp1-api-image.infrastructure.cloud.toast.com |
-| volumev2 | Korea (Pangyo)<br>Japan | https://kr1-api-block-storage.infrastructure.cloud.toast.com<br>https://jp1-api-block-storage.infrastructure.cloud.toast.com |
-| key-manager | Korea (Pangyo)<br>Japan | https://kr1-api-key-manager.infrastructure.cloud.toast.com<br>https://jp1-api-key-manager.infrastructure.cloud.toast.com |
+| compute | Korea (Pangyo)<br>Korea(Pyeongchon)<br>Japan | https://kr1-api-instance.infrastructure.cloud.toast.com<br>https://kr2-api-instance.infrastructure.cloud.toast.com<br>https://jp1-api-instance.infrastructure.cloud.toast.com |
+| network | Korea (Pangyo)<br>Korea(Pyeongchon)<br>Japan | https://kr1-api-network.infrastructure.cloud.toast.com<br>https://kr2-api-instance.infrastructure.cloud.toast.com<br>https://jp1-api-network.infrastructure.cloud.toast.com |
+| image | Korea (Pangyo<br>Korea(Pyeongchon))<br>Japan | https://kr1-api-image.infrastructure.cloud.toast.com<br>https://kr2-api-instance.infrastructure.cloud.toast.com<br>https://jp1-api-image.infrastructure.cloud.toast.com |
+| volumev2 | Korea (Pangyo)<br>Korea(Pyeongchon)<br>Japan | https://kr1-api-block-storage.infrastructure.cloud.toast.com<br>https://kr2-api-instance.infrastructure.cloud.toast.com<br>https://jp1-api-block-storage.infrastructure.cloud.toast.com |
+| key-manager | Korea (Pangyo)<br>Korea(Pyeongchon)<br>Japan | https://kr1-api-key-manager.infrastructure.cloud.toast.com<br>https://kr2-api-instance.infrastructure.cloud.toast.com<br>https://jp1-api-key-manager.infrastructure.cloud.toast.com |
 
 ### Check Tenant ID 
 
