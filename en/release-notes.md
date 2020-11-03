@@ -3,9 +3,51 @@
 ### August 25, 2020
 
 #### Instance
-* Added the feature of querying public keys registered at keypair
-* Released the service of creating GPU instances readily on console
-* Removed the Delete button from the dialogue box of suspending instances
+* Added the **Initialize Password** button on the **Windows Instance Access Information** tab.  
+* Added the feature of initializing password of original instance when creating a Windows image
+
+#### Image
+* Added New Images
+    * Cent OS 7.8 (Aug.18,2020)
+    * Ubuntu 20.04 LTS (Aug.18,2020)
+    * Windows Server 2016 with SQL Server 2019 Express (Aug.18,2020)
+    * Windows Server 2016 with SQL Server 2017 Standard (Aug.18,2020)
+    * Windows Server 2016 with SQL Server 2019 Standard (Aug.18,2020)
+    * Windows Server 2019 with SQL Server 2019 Standard (Aug.18,2020)
+
+* CentOS 6.10 (Aug.18,2020)
+    * Updated image
+* CentOS 7.5 (Aug.18,2020)
+    * Updated image
+* CentOS Linux 6.10 with MySQL 5.6.38 (Aug.18,2020)
+    * Updated image
+* CentOS Linux 6.10 with MySQL 5.7.20 (Aug.18,2020)
+    * Updated image
+* Debian 9.9 Stretch (Aug.18,2020)
+    * Updated image
+* Debian 10.5 Buster (Aug.18,2020)
+    * Updated image
+* Ubuntu Server 16.04.6 LTS (Aug.18,2020)
+    * Updated image
+* Ubuntu Server 18.04.4 LTS (Aug.18,2020)
+    * Updated image
+* Ubuntu Server 18.04.4 LTS with NVIDIA (Aug.18,2020)
+    * Updated image
+* Windows 2012 R2 STD (Aug.18,2020)
+    * Updated image
+* Windows 2016 STD (Aug.18,2020)
+    * Updated image
+* Windows 2019 STD (Aug.18,2020)
+    * Updated image
+* Windows Server 2012 R2 with SQL Server 2016 Standard (Aug.18,2020)
+    * Updated image
+* Windows Server 2016 with SQL Server 2016 Standard (Aug.18,2020)
+    * Updated image
+
+* Closed support for image 
+    * Windows Server 2012 R2 with SQL Server 2012 Standard (Feb.18,2020)
+    * Windows Server 2012 R2 with SQL Server 2014 Standard (Feb.18,2020)
+    * Windows Server 2012 R2 with SQL Server 2016 Express (Feb.18,2020)
 
 ### June 23, 2020
 
@@ -13,6 +55,11 @@
 
 * Updated chart and legend names to clarify  
 * Added detail indications on a chart for items with more details
+
+#### Instance
+* Added the feature of querying public keys registered at keypair
+* Released the service of creating GPU instances readily on console
+* Removed the Delete button from the dialogue box of suspending instances
 
 ### May 26, 2020
 
@@ -52,7 +99,7 @@
     * Updated to save changes, by selecting a server and user group and clicking the save button
 
 
-### December 17, 2019 
+### December 17, 2019
 
 #### Auto Scale
 * Updated to show all input data created on the instance template list and detail information
