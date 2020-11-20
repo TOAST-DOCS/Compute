@@ -1,11 +1,5 @@
 ## Compute > 릴리스 노트
 
-### 2020. 11. 24.
-
-#### System Monitoring
-* 신규 기능 추가: OpenMetrics 대시보드
-    * OpenMetrics(Prometheus format) 지표 수집, 조회, 알림 기능 제공
-
 ### 2020. 10. 27.
 
 #### Auto Scale
