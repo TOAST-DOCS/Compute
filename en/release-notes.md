@@ -1,6 +1,6 @@
 ## Compute > Release Notes
 
-### October 27, 2020
+### November 24, 2020
 
 #### Auto Scale
 * Added the feature of associating with Deploy
@@ -49,7 +49,7 @@
 * Windows Server 2016 with SQL Server 2016 Standard (Aug.18,2020)
     * Updated image
 
-* Closed support for image 
+* Closed support for image
     * Windows Server 2012 R2 with SQL Server 2012 Standard (Feb.18,2020)
     * Windows Server 2012 R2 with SQL Server 2014 Standard (Feb.18,2020)
     * Windows Server 2012 R2 with SQL Server 2016 Express (Feb.18,2020)
