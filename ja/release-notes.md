@@ -1,4 +1,52 @@
 ## Compute > リリースノート
+  
+### 2020. 12. 29.
+
+#### Image
+* 신규 이미지 추가
+    * Windows 2016 STD with NVIDIA(2020.12.22)
+    * Windows 2019 STD with NVIDIA(2020.12.22)
+
+* CentOS 6.10(2020.12.22)
+    * 이미지 업데이트
+* CentOS 7.5(2020.12.22)
+    * 이미지 업데이트
+* CentOS 7.8(2020.12.22)
+    * 이미지 업데이트
+* CentOS Linux 6.10 with MySQL 5.6.38(2020.12.22)
+    * 이미지 업데이트
+* CentOS Linux 6.10 with MySQL 5.7.20(2020.12.22)
+    * 이미지 업데이트
+* Debian 9.13 Stretch(2020.12.22)
+    * 이미지 업데이트
+* Debian 10.7 Buster(2020.12.22)
+    * 이미지 업데이트
+* Ubuntu Server 16.04.7 LTS(2020.12.22)
+    * 이미지 업데이트
+* Ubuntu Server 18.04.5 LTS(2020.12.22)
+    * 이미지 업데이트
+* Ubuntu Server 20.04.1 LTS(2020.12.22)
+    * 이미지 업데이트
+* Ubuntu Server 18.04.5 LTS with NVIDIA(2020.12.22)
+    * 이미지 업데이트
+* Windows 2012 R2 STD(2020.12.22)
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update
+* Windows 2016 STD(2020.12.22)
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+* Windows 2019 STD(2020.12.22)
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020.12.22)
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update
+* Windows 2016 STD with MS-SQL 2016 Standard(2020.12.22)
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+* Windows 2016 STD with MS-SQL 2019 Express(2020.12.22)
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+* Windows 2016 STD with MS-SQL 2017 Standard(2020.12.22)
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+* Windows 2016 STD with MS-SQL 2019 Standard(2020.12.22)
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+* Windows 2019 STD with MS-SQL 2019 Standard(2020.12.22)
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
 
 ### 2020. 11. 24.
 
@@ -15,10 +63,10 @@
 * 新規イメージ追加
     * Cent OS 7.8(2020.08.18)
     * Ubuntu 20.04 LTS(2020.08.18)
-    * Windows Server 2016 with SQL Server 2019 Express(2020.08.18)
-    * Windows Server 2016 with SQL Server 2017 Standard(2020.08.18)
-    * Windows Server 2016 with SQL Server 2019 Standard(2020.08.18)
-    * Windows Server 2019 with SQL Server 2019 Standard(2020.08.18)
+    * Windows 2016 STD with MS-SQL 2019 Express(2020.08.18)
+    * Windows 2016 STD with MS-SQL 2017 Standard(2020.08.18)
+    * Windows 2016 STD with MS-SQL 2019 Standard(2020.08.18)
+    * Windows 2019 STD with MS-SQL 2019 Standard(2020.08.18)
 
 * CentOS 6.10(2020.08.18)
     * イメージアップデート
@@ -44,15 +92,15 @@
     * イメージアップデート
 * Windows 2019 STD(2020.08.18)
     * イメージアップデート
-* Windows Server 2012 R2 with SQL Server 2016 Standard(2020.08.18)
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020.08.18)
     * イメージアップデート
-* Windows Server 2016 with SQL Server 2016 Standard(2020.08.18)
+* Windows 2016 STD with MS-SQL 2016 Standard(2020.08.18)
     * イメージアップデート
 
 * イメージサポート終了
-    * Windows Server 2012 R2 with SQL Server 2012 Standard(2020.02.18)
-    * Windows Server 2012 R2 with SQL Server 2014 Standard(2020.02.18)
-    * Windows Server 2012 R2 with SQL Server 2016 Express(2020.02.18)
+    * Windows 2012 R2 STD with MS-SQL 2012 Standard(2020.02.18)
+    * Windows 2012 R2 STD with MS-SQL 2014 Standard(2020.02.18)
+    * Windows 2012 R2 STD with MS-SQL 2016 Express(2020.02.18)
 
 ### 2020. 06. 23.
 

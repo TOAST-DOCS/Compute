@@ -29,23 +29,23 @@
     * 이미지 업데이트
 * Ubuntu Server 18.04.5 LTS with NVIDIA(2020.12.22)
     * 이미지 업데이트
-* Windows 2012 R2 STD(2020.12.29)
+* Windows 2012 R2 STD(2020.12.22)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update
-* Windows 2016 STD(2020.12.29)
+* Windows 2016 STD(2020.12.22)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830 
-* Windows 2019 STD(2020.12.29)
+* Windows 2019 STD(2020.12.22)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
-* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020.12.29)
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020.12.22)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update 
-* Windows 2016 STD with MS-SQL 2016 Standard(2020.12.29)
+* Windows 2016 STD with MS-SQL 2016 Standard(2020.12.22)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830 
-* Windows 2016 STD with MS-SQL 2019 Express(2020.12.29)
+* Windows 2016 STD with MS-SQL 2019 Express(2020.12.22)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830 
-* Windows 2016 STD with MS-SQL 2017 Standard(2020.12.29)
+* Windows 2016 STD with MS-SQL 2017 Standard(2020.12.22)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830 
-* Windows 2016 STD with MS-SQL 2019 Standard(2020.12.29)
+* Windows 2016 STD with MS-SQL 2019 Standard(2020.12.22)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830 
-* Windows 2019 STD with MS-SQL 2019 Standard(2020.12.29)
+* Windows 2019 STD with MS-SQL 2019 Standard(2020.12.22)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
 
 ### 2020. 11. 24.
@@ -98,9 +98,9 @@
     * 이미지 업데이트
 
 * 이미지 지원 종료
-    * Windows Server 2012 R2 STD with MS-SQL 2012 Standard(2020.02.18)
-    * Windows Server 2012 R2 STD with MS-SQL 2014 Standard(2020.02.18)
-    * Windows Server 2012 R2 STD with MS-SQL 2016 Express(2020.02.18)
+    * Windows 2012 R2 STD with MS-SQL 2012 Standard(2020.02.18)
+    * Windows 2012 R2 STD with MS-SQL 2014 Standard(2020.02.18)
+    * Windows 2012 R2 STD with MS-SQL 2016 Express(2020.02.18)
 
 ### 2020. 06. 23.
 
@@ -112,7 +112,7 @@
 #### Instance
 * 키페어에 등록된 공개 키 조회 기능 추가
 * GPU 인스턴스를 콘솔에서 직접 생성할 수 있도록 서비스 오픈
-* 인스턴스 정지 대화 상자에서 삭제 버튼 제거
+* **인스턴스 정지** 대화 상자에서 **삭제** 버튼 제거
 
 ### 2020. 05. 26.
 
