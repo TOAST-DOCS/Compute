@@ -3,10 +3,6 @@
 ### 2020. 12. 29.
 
 #### Image
-* 신규 이미지 추가
-    * Windows 2016 STD with NVIDIA(2020.12.22)
-    * Windows 2019 STD with NVIDIA(2020.12.22)
-
 * CentOS 6.10(2020.12.22)
     * 이미지 업데이트
 * CentOS 7.5(2020.12.22)
