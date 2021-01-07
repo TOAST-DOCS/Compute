@@ -1,5 +1,49 @@
 ## Compute > 릴리스 노트
 
+### 2021. 01. 19.
+
+#### Image
+* CentOS 6.10(2020.12.22)
+    * 이미지 업데이트
+* CentOS 7.5(2020.12.22)
+    * 이미지 업데이트
+* CentOS 7.8(2020.12.22)
+    * 이미지 업데이트
+* CentOS Linux 6.10 with MySQL 5.6.38(2020.12.22)
+    * 이미지 업데이트
+* CentOS Linux 6.10 with MySQL 5.7.20(2020.12.22)
+    * 이미지 업데이트
+* Debian 9.13 Stretch(2020.12.22)
+    * 이미지 업데이트
+* Debian 10.7 Buster(2020.12.22)
+    * 이미지 업데이트
+* Ubuntu Server 16.04.7 LTS(2020.12.22)
+    * 이미지 업데이트
+* Ubuntu Server 18.04.5 LTS(2020.12.22)
+    * 이미지 업데이트
+* Ubuntu Server 20.04.1 LTS(2020.12.22)
+    * 이미지 업데이트
+* Ubuntu Server 18.04.5 LTS with NVIDIA(2020.12.22)
+    * 이미지 업데이트
+* Windows 2012 R2 STD(2020.12.22)
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update
+* Windows 2016 STD(2020.12.22)
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+* Windows 2019 STD(2020.12.22)
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020.12.22)
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update
+* Windows 2016 STD with MS-SQL 2016 Standard(2020.12.22)
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+* Windows 2016 STD with MS-SQL 2019 Express(2020.12.22)
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+* Windows 2016 STD with MS-SQL 2017 Standard(2020.12.22)
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+* Windows 2016 STD with MS-SQL 2019 Standard(2020.12.22)
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+* Windows 2019 STD with MS-SQL 2019 Standard(2020.12.22)
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
+
 ### 2020. 11. 03.
 
 #### Instance
