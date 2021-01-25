@@ -1,5 +1,11 @@
 ## Compute > リリースノート
   
+### 2021. 01. 26.
+
+#### System Monitoring
+* 新規機能追加：Advanced Monitoring(OpenMetrics)
+    * OpenMetrics(Prometheus exposition format)指標収集、照会、通知機能を提供
+
 ### 2020. 12. 29.
 
 #### Image
