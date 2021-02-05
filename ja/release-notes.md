@@ -5,17 +5,17 @@
 #### Image
 
 * 신규 이미지 추가
-    * CentOS 7.8 with MySQL 5.6.38 (2021.02.23)
-    * CentOS 7.8 with MySQL 5.6.50 (2021.02.23)
-    * CentOS 7.8 with MySQL 5.7.20 (2021.02.23)
-    * CentOS 7.8 with MySQL 5.7.32 (2021.02.23)
-    * CentOS 7.8 with MySQL 8.0.22 (2021.02.23)
+    * CentOS 7.8 with MySQL 5.6.38(2021.02.23)
+    * CentOS 7.8 with MySQL 5.6.50(2021.02.23)
+    * CentOS 7.8 with MySQL 5.7.20(2021.02.23)
+    * CentOS 7.8 with MySQL 5.7.32(2021.02.23)
+    * CentOS 7.8 with MySQL 8.0.22(2021.02.23)
 
 * 이미지 지원 종료
-    * CentOS 6.10(2020.12.22)
-    * CentOS 7.5(2020.12.22)
-    * CentOS Linux 6.10 with MySQL 5.6.38(2020.12.22)
-    * CentOS Linux 6.10 with MySQL 5.7.20(2020.12.22)
+    * CentOS 6.10(2020. 12. 22.)
+    * CentOS 7.5(2020. 12. 22.)
+    * CentOS Linux 6.10 with MySQL 5.6.38(2020. 12. 22.)
+    * CentOS Linux 6.10 with MySQL 5.7.20(2020. 12. 22.)
 
 * CentOS 7.8(2021.02.23)
     * 이미지 업데이트
@@ -29,45 +29,45 @@
 ### 2020. 12. 29.
 
 #### Image
-* CentOS 6.10(2020.12.22)
+* CentOS 6.10(2020. 12. 22.)
     * イメージアップデート
-* CentOS 7.5(2020.12.22)
+* CentOS 7.5(2020. 12. 22.)
     * イメージアップデート
-* CentOS 7.8(2020.12.22)
+* CentOS 7.8(2020. 12. 22.)
     * イメージアップデート
-* CentOS Linux 6.10 with MySQL 5.6.38(2020.12.22)
+* CentOS Linux 6.10 with MySQL 5.6.38(2020. 12. 22.)
     * イメージアップデート
-* CentOS Linux 6.10 with MySQL 5.7.20(2020.12.22)
+* CentOS Linux 6.10 with MySQL 5.7.20(2020. 12. 22.)
     * イメージアップデート
-* Debian 9.13 Stretch(2020.12.22)
+* Debian 9.13 Stretch(2020. 12. 22.)
     * イメージアップデート
-* Debian 10.7 Buster(2020.12.22)
+* Debian 10.7 Buster(2020. 12. 22.)
     * イメージアップデート
-* Ubuntu Server 16.04.7 LTS(2020.12.22)
+* Ubuntu Server 16.04.7 LTS(2020. 12. 22.)
     * イメージアップデート
-* Ubuntu Server 18.04.5 LTS(2020.12.22)
+* Ubuntu Server 18.04.5 LTS(2020. 12. 22.)
     * イメージアップデート
-* Ubuntu Server 20.04.1 LTS(2020.12.22)
+* Ubuntu Server 20.04.1 LTS(2020. 12. 22.)
     * イメージアップデート
-* Ubuntu Server 18.04.5 LTS with NVIDIA(2020.12.22)
+* Ubuntu Server 18.04.5 LTS with NVIDIA(2020. 12. 22.)
     * イメージアップデート
-* Windows 2012 R2 STD(2020.12.22)
+* Windows 2012 R2 STD(2020. 12. 22.)
     * 2020年11月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update
-* Windows 2016 STD(2020.12.22)
+* Windows 2016 STD(2020. 12. 22.)
     * 2020年11月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
-* Windows 2019 STD(2020.12.22)
+* Windows 2019 STD(2020. 12. 22.)
     * 2020年11月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
-* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020.12.22)
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020. 12. 22.)
     * 2020年11月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update
-* Windows 2016 STD with MS-SQL 2016 Standard(2020.12.22)
+* Windows 2016 STD with MS-SQL 2016 Standard(2020. 12. 22.)
     * 2020年11月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
-* Windows 2016 STD with MS-SQL 2019 Express(2020.12.22)
+* Windows 2016 STD with MS-SQL 2019 Express(2020. 12. 22.)
     * 2020年11月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
-* Windows 2016 STD with MS-SQL 2017 Standard(2020.12.22)
+* Windows 2016 STD with MS-SQL 2017 Standard(2020. 12. 22.)
     * 2020年11月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
-* Windows 2016 STD with MS-SQL 2019 Standard(2020.12.22)
+* Windows 2016 STD with MS-SQL 2019 Standard(2020. 12. 22.)
     * 2020年11月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
-* Windows 2019 STD with MS-SQL 2019 Standard(2020.12.22)
+* Windows 2019 STD with MS-SQL 2019 Standard(2020. 12. 22.)
     * 2020年11月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
 
 ### 2020. 11. 24.
@@ -83,46 +83,46 @@
 
 #### Image
 * 新規イメージ追加
-    * Cent OS 7.8(2020.08.18)
-    * Ubuntu 20.04 LTS(2020.08.18)
-    * Windows 2016 STD with MS-SQL 2019 Express(2020.08.18)
-    * Windows 2016 STD with MS-SQL 2017 Standard(2020.08.18)
-    * Windows 2016 STD with MS-SQL 2019 Standard(2020.08.18)
-    * Windows 2019 STD with MS-SQL 2019 Standard(2020.08.18)
+    * Cent OS 7.8(2020. 08. 18.)
+    * Ubuntu 20.04 LTS(2020. 08. 18.)
+    * Windows 2016 STD with MS-SQL 2019 Express(2020. 08. 18.)
+    * Windows 2016 STD with MS-SQL 2017 Standard(2020. 08. 18.)
+    * Windows 2016 STD with MS-SQL 2019 Standard(2020. 08. 18.)
+    * Windows 2019 STD with MS-SQL 2019 Standard(2020. 08. 18.)
 
-* CentOS 6.10(2020.08.18)
+* CentOS 6.10(2020. 08. 18.)
     * イメージアップデート
-* CentOS 7.5(2020.08.18)
+* CentOS 7.5(2020. 08. 18.)
     * イメージアップデート
-* CentOS Linux 6.10 with MySQL 5.6.38(2020.08.18)
+* CentOS Linux 6.10 with MySQL 5.6.38(2020. 08. 18.)
     * イメージアップデート
-* CentOS Linux 6.10 with MySQL 5.7.20(2020.08.18)
+* CentOS Linux 6.10 with MySQL 5.7.20(2020. 08. 18.)
     * イメージアップデート
-* Debian 9.9 Stretch(2020.08.18)
+* Debian 9.9 Stretch(2020. 08. 18.)
     * イメージアップデート
-* Debian 10.5 Buster(2020.08.18)
+* Debian 10.5 Buster(2020. 08. 18.)
     * イメージアップデート
-* Ubuntu Server 16.04.6 LTS(2020.08.18)
+* Ubuntu Server 16.04.6 LTS(2020. 08. 18.)
     * イメージアップデート
-* Ubuntu Server 18.04.4 LTS(2020.08.18)
+* Ubuntu Server 18.04.4 LTS(2020. 08. 18.)
     * イメージアップデート
-* Ubuntu Server 18.04.4 LTS with NVIDIA(2020.08.18)
+* Ubuntu Server 18.04.4 LTS with NVIDIA(2020. 08. 18.)
     * イメージアップデート
-* Windows 2012 R2 STD(2020.08.18)
+* Windows 2012 R2 STD(2020. 08. 18.)
     * イメージアップデート
-* Windows 2016 STD(2020.08.18)
+* Windows 2016 STD(2020. 08. 18.)
     * イメージアップデート
-* Windows 2019 STD(2020.08.18)
+* Windows 2019 STD(2020. 08. 18.)
     * イメージアップデート
-* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020.08.18)
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020. 08. 18.)
     * イメージアップデート
-* Windows 2016 STD with MS-SQL 2016 Standard(2020.08.18)
+* Windows 2016 STD with MS-SQL 2016 Standard(2020. 08. 18.)
     * イメージアップデート
 
 * イメージサポート終了
-    * Windows 2012 R2 STD with MS-SQL 2012 Standard(2020.02.18)
-    * Windows 2012 R2 STD with MS-SQL 2014 Standard(2020.02.18)
-    * Windows 2012 R2 STD with MS-SQL 2016 Express(2020.02.18)
+    * Windows 2012 R2 STD with MS-SQL 2012 Standard(2020. 02. 18.)
+    * Windows 2012 R2 STD with MS-SQL 2014 Standard(2020. 02. 18.)
+    * Windows 2012 R2 STD with MS-SQL 2016 Express(2020. 02. 18.)
 
 ### 2020. 06. 23.
 
@@ -155,40 +155,40 @@
 #### Image
 
 * OS新規イメージ
-    * Debian 10.2 Buster(2020.02.18)
-    * Windows 2019 STD(2020.02.18)
+    * Debian 10.2 Buster(2020. 02. 18.)
+    * Windows 2019 STD(2020. 02. 18.)
 
-* CentOS 6.10(2020.02.18)
+* CentOS 6.10(2020. 02. 18.)
     * イメージ アップデート
-* CentOS 7.5(2020.02.18)
+* CentOS 7.5(2020. 02. 18.)
     * イメージ アップデート
-* CentOS Linux 6.10 with MySQL 5.6.38(2020.02.18)
+* CentOS Linux 6.10 with MySQL 5.6.38(2020. 02. 18.)
     * イメージ アップデート
-* CentOS Linux 6.10 with MySQL 5.7.20(2020.02.18)
+* CentOS Linux 6.10 with MySQL 5.7.20(2020. 02. 18.)
     * イメージ アップデート
-* Debian 9.9 Stretch(2020.02.18)
+* Debian 9.9 Stretch(2020. 02. 18.)
     * イメージ アップデート
-* Ubuntu Server 16.04.2 LTS(2020.02.18)
+* Ubuntu Server 16.04.2 LTS(2020. 02. 18.)
     * イメージ アップデート
-* Ubuntu Server 18.04.2 LTS(2020.02.18)
+* Ubuntu Server 18.04.2 LTS(2020. 02. 18.)
     * イメージ アップデート
-* Windows 2012 R2 STD(2020.02.18)
+* Windows 2012 R2 STD(2020. 02. 18.)
     * 2019年12月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
-* Windows 2012 R2 STD with MS-SQL 2012 Standard(2020.02.18)
+* Windows 2012 R2 STD with MS-SQL 2012 Standard(2020. 02. 18.)
     * 2019年12月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
-* Windows 2012 R2 STD with MS-SQL 2014 Standard(2020.02.18)
+* Windows 2012 R2 STD with MS-SQL 2014 Standard(2020. 02. 18.)
     * 2019年12月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
-* Windows 2012 R2 STD with MS-SQL 2016 Express(2020.02.18)
+* Windows 2012 R2 STD with MS-SQL 2016 Express(2020. 02. 18.)
     * 2019年12月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
-* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020.02.18)
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020. 02. 18.)
     * 2019年12月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
-* Windows 2016 STD(2020.02.18)
+* Windows 2016 STD(2020. 02. 18.)
     * 2019年12月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4530689/windows-10-update-kb4530689
-* Windows 2016 R2 STD with MS-SQL 2016 Standard(2020.02.18)
+* Windows 2016 R2 STD with MS-SQL 2016 Standard(2020. 02. 18.)
     * 2019年12月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4530689/windows-10-update-kb4530689
 
 * OSイメージサポート終了
-    * Debian 8.11 Jessie(2019.07.23)
+    * Debian 8.11 Jessie(2019. 07. 23.)
 
 #### System Monitoring
 * イベント状況ページの改善
@@ -240,16 +240,16 @@
 #### イメージ
 
 * Applicationイメージ アップデート
-	* PLOS-WFK-KS-v2.0.60.0.14 (2019.10.22)
+	* PLOS-WFK-KS-v2.0.60.0.14(2019. 10. 22.)
 	* WF-KSページのStorageサイズ表記エラーを修正
 * Windows系列のイメージ アップデート : 言語別イメージを提供(KO,EN,JP)
-	* Windows 2012 R2 STD (2019.10.22)
-	* Windows 2016 STD (2019.10.22)
-	* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.10.22)
-	* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.10.22)
-	* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.10.22)
-	* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.10.22)
-	* Windows 2016 R2 STD with MS-SQL 2016 Standard (2019.10.22)
+	* Windows 2012 R2 STD(2019. 10. 22.)
+	* Windows 2016 STD(2019. 10. 22.)
+	* Windows 2012 R2 STD with MS-SQL 2012 Standard(2019. 10. 22.)
+	* Windows 2012 R2 STD with MS-SQL 2014 Standard(2019. 10. 22.)
+	* Windows 2012 R2 STD with MS-SQL 2016 Express(2019. 10. 22.)
+	* Windows 2012 R2 STD with MS-SQL 2016 Standard(2019. 10. 22.)
+	* Windows 2016 R2 STD with MS-SQL 2016 Standard(2019. 10. 22.)
 
 #### System Monitoring
 
@@ -269,7 +269,7 @@
 - Webコンソール英語メッセージをサポート
 - Internet Explorer 11ブラウザ環境で、サーバーダッシュボードレイアウトの選択に失敗する現象を修正
 
-### 2019.08.27
+### 2019. 08. 27.
 
 #### System Monitoring
 - サーバーダッシュボードチャート照会性能を改善
@@ -278,7 +278,7 @@
 #### 機能改善
 * イメージ管理画面で共用イメージタブが削除されました。
 
-### 2019.07.23
+### 2019. 07. 23.
 
 #### 新規サービスリリース：System Monitoring
 
@@ -292,7 +292,7 @@
 * インスタンスが起動中の時もイメージが作成できるように機能を追加しました。
 
 
-### 2019.05.28
+### 2019. 05. 28.
 
 #### 機能改善
 
@@ -300,7 +300,7 @@
 - Debian 9 Stretchイメージアップデート
   - イメージ情報
     - Debian 9 Stretch
-    - 説明：Debian 9.9 Stretch (2019.05.28)
+    - 説明：Debian 9.9 Stretch(2019. 05. 28.)
     - 言語：EN
     - bit：64bit
     - カーネル：4.9.168-1
@@ -310,7 +310,7 @@
 - Ubuntu Server 16.04 LTSイメージアップデート
   - イメージ情報
     - Ubuntu Server 16.04 LTS
-    - 説明：Ubuntu Server 16.04.6 LTS (2019.05.28)
+    - 説明：Ubuntu Server 16.04.6 LTS(2019. 05. 28.)
     - 言語：EN
     - bit：64bit
     - カーネル：4.4.0-142.168
@@ -319,46 +319,46 @@
   - マイナーバージョンアップデート
 - Linux CentOS系のパブリックイメージ
   - アップデート
-    - CentOS 6.10 (2019.05.28)
-    - CentOS 7.5 (2019.05.28)
-    - Debian 8.11 Jessie (2019.05.28)
-    - Debian 9.9 Stretch (2019.05.28)
-    - Ubuntu Server 16.04.6 LTS (2019.05.28)
-    - Ubuntu Server 18.04.2 LTS (2019.05.28)
+    - CentOS 6.10(2019. 05. 28.)
+    - CentOS 7.5(2019. 05. 28.)
+    - Debian 8.11 Jessie(2019. 05. 28.)
+    - Debian 9.9 Stretch(2019. 05. 28.)
+    - Ubuntu Server 16.04.6 LTS(2019. 05. 28.)
+    - Ubuntu Server 18.04.2 LTS(2019. 05. 28.)
   - 反映内容
     - Regionに応じてtimezone変更を適用
 - Windows系のパブリックイメージ
   - アップデート
-    - Windows 2012 R2 STD (2019.05.28)
-    - Windows 2016 STD (2019.05.28)
-    - Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.05.28)
-    - Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.05.28)
-    - Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.05.28)
-    - Windows 2012 R2 STD with MS-SQL 2016 Express (2019.05.28)
-    - Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.05.28)
+    - Windows 2012 R2 STD(2019. 05. 28.)
+    - Windows 2016 STD(2019. 05. 28.)
+    - Windows 2012 R2 STD with MS-SQL 2008 R2 Standard(2019. 05. 28.)
+    - Windows 2012 R2 STD with MS-SQL 2012 Standard(2019. 05. 28.)
+    - Windows 2012 R2 STD with MS-SQL 2014 Standard(2019. 05. 28.)
+    - Windows 2012 R2 STD with MS-SQL 2016 Express(2019. 05. 28.)
+    - Windows 2012 R2 STD with MS-SQL 2016 Standard(2019. 05. 28.)
   - 反映内容
     - Regionに応じてtimezone変更を適用
     - 2019年5月14日セキュリティアップデートを反映
       - Windows 2012 R2 ( https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151 )
       - Windows 2016 ( https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947 )
   - 新規リリース
-    - Windows 2016 STD with MS-SQL 2016 Standard (2019.05.28)
+    - Windows 2016 STD with MS-SQL 2016 Standard(2019. 05. 28.)
 * Auto Scaling 통계 그래프
 	* Scaling Group의 사용량을 확인할 수 있는 통계 그래프 추가
 
-### 2019.05.14
+### 2019. 05. 14.
 
 #### 기능 개선
 
 * 신규 이미지 제공
-	* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.05.14)
-	* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.05.14)
-	* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.05.14)
-	* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.05.14)
-	* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.05.14)
-	* Windows 2016 STD with MS-SQL 2016 Standard (2019.05.14)
-	* CentOS 6.10 with MySQL 5.6.38 (2019.05.14)
-	* CentOS 6.10 with MySQL 5.7.20 (2019.05.14)
+	* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard(2019. 05. 14.)
+	* Windows 2012 R2 STD with MS-SQL 2012 Standard(2019. 05. 14.)
+	* Windows 2012 R2 STD with MS-SQL 2014 Standard(2019. 05. 14.)
+	* Windows 2012 R2 STD with MS-SQL 2016 Express(2019. 05. 14.)
+	* Windows 2012 R2 STD with MS-SQL 2016 Standard(2019. 05. 14.)
+	* Windows 2016 STD with MS-SQL 2016 Standard(2019. 05. 14.)
+	* CentOS 6.10 with MySQL 5.6.38(2019. 05. 14.)
+	* CentOS 6.10 with MySQL 5.7.20(2019. 05. 14.)
 
 * OS 이미지 지원 종료
 	* CentOS 6.5
@@ -373,7 +373,7 @@
 		* 커널 : 4.9.168-1
 
 
-### 2019.04.25
+### 2019. 04. 25.
 
 #### 기능 개선
 
@@ -382,35 +382,35 @@
 
 * Linux CentOS 계열 공용 이미지
 	* 업데이트 이미지 명
-		* CentOS 6.5 (2019.04.25)
-		* CentOS 6.10 (2019.04.25)
-		* CentOS 7.1 (2019.04.25)
-		* CentOS 7.5 (2019.04.25)
+		* CentOS 6.5(2019. 04. 25.)
+		* CentOS 6.10(2019. 04. 25.)
+		* CentOS 7.1(2019. 04. 25.)
+		* CentOS 7.5(2019. 04. 25.)
 	* 반영내용
 		* yum update 시 발생하는 에러현상 개선
 		* CentOS 7.X  OS이미지 시간 동기화 데몬 변경 (ntpd)
 * Windows 계열 공용 이미지
 	* 업데이트 이미지 명
-		* Windows 2008 R2 STD (2019.04.25)
-		* Windows 2012 R2 STD (2019.04.25)
-		* Windows 2016 STD (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.04.25)
+		* Windows 2008 R2 STD(2019. 04. 25.)
+		* Windows 2012 R2 STD(2019. 04. 25.)
+		* Windows 2016 STD(2019. 04. 25.)
+		* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard(2019. 04. 25.)
+		* Windows 2012 R2 STD with MS-SQL 2012 Standard(2019. 04. 25.)
+		* Windows 2012 R2 STD with MS-SQL 2014 Standard(2019. 04. 25.)
+		* Windows 2012 R2 STD with MS-SQL 2016 Express(2019. 04. 25.)
+		* Windows 2012 R2 STD with MS-SQL 2016 Standard(2019. 04. 25.)
 	* 반영 내용
 		* Windows Bootstrap 과정 기능 개선
 
 
-### 2019.03.26
+### 2019. 03. 26.
 
 #### 기능 개선
 
 * Debian 9 Stretch 이미지 업데이트
 	* 이미지 정보
 		* Debian 9 Stretch
-		* 설명 : Debian 9.8 Stretch (2019.03.26)
+		* 설명 : Debian 9.8 Stretch(2019. 03. 26.)
 		* 언어 : EN
 		* 비트 : 64bit
 		* 커널 : 4.9.144-3
@@ -419,29 +419,29 @@
 
 * 리눅스 계열 이미지 공통 적용
 	* 업데이트 이미지 이름
-		* CentOS 7.1 (2019.03.26)
-		* CentOS 7.5 (2019.03.26)
-		* CentOS 6.10 (2019.03.26)
-		* CentOS 6.5 (2019.03.26)
-		* Ubuntu Server 18.04.2 LTS (2019.03.26)
-		* Ubuntu Server 16.04.5 LTS (2019.03.26)
-		* Ubuntu Server 14.04.5 LTS (2019.03.26)
-		* Debian 9.8 Stretch (2019.03.26)
-		* Debian 8.11 Jessie (2019.03.26)
-		* CentOS 6.5 with MySQL 5.6.38 (2019.03.26)
-		* CentOS 6.5 with MySQL 5.7.20 (2019.03.26)
+		* CentOS 7.1(2019. 03. 26.)
+		* CentOS 7.5(2019. 03. 26.)
+		* CentOS 6.10(2019. 03. 26.)
+		* CentOS 6.5(2019. 03. 26.)
+		* Ubuntu Server 18.04.2 LTS(2019. 03. 26.)
+		* Ubuntu Server 16.04.5 LTS(2019. 03. 26.)
+		* Ubuntu Server 14.04.5 LTS(2019. 03. 26.)
+		* Debian 9.8 Stretch(2019. 03. 26.)
+		* Debian 8.11 Jessie(2019. 03. 26.)
+		* CentOS 6.5 with MySQL 5.6.38(2019. 03. 26.)
+		* CentOS 6.5 with MySQL 5.7.20(2019. 03. 26.)
 
 	* 반영내용
 		* Bootstrap 과정의 기능 개선
 
-### 2019.02.26
+### 2019. 02. 26.
 
 #### 기능 개선
 
 * Ubuntu Server 18.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 18.04 LTS
-        * 설명 : Ubuntu Server 18.04.2 LTS (2019.02.26)
+        * 설명 : Ubuntu Server 18.04.2 LTS(2019. 02. 26.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 4.15.0-45
@@ -459,7 +459,7 @@
   * Image 조회 API에 pagination을 위한 쿼리 파라미터 추가
   * Image 삭제 API 추가
 
-### 2018.12.27
+### 2018. 12. 27.
 
 #### 기능 개선
 
@@ -480,7 +480,7 @@
             * LC_CTYPE="en_US.UTF-8"
 
 
-### 2018.12.11
+### 2018. 12. 11.
 
 #### 기능 개선
 
@@ -492,7 +492,7 @@
 * Debian 9 Stretch 이미지 업데이트
     * 이미지 정보
         * Debian 9 Stretch
-        * 설명 : Debian 9.6 Stretch (2018.12.11)
+        * 설명 : Debian 9.6 Stretch(2018. 12. 11.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 4.9.0-8
@@ -503,7 +503,7 @@
 * Debian 8 Jessie 이미지 업데이트
     * 이미지 정보
         * Debian 8 Jessie
-        * 설명 : Debian 8.11 Jessie (2018.12.11)
+        * 설명 : Debian 8.11 Jessie(2018. 12. 11.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 3.16-0-6
@@ -513,7 +513,7 @@
 * CentOS 7.5 이미지 업데이트
     * 이미지 정보
         * CentOS 7.5
-        * 설명 : CentOS 7.5 (2018.12.11)
+        * 설명 : CentOS 7.5(2018. 12. 11.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 3.10.0-862
@@ -523,7 +523,7 @@
 * CentOS 7.1 이미지 업데이트
     * 이미지 정보
         * CentOS 7.1
-        * 설명 : CentOS 7.1 (2018.12.11)
+        * 설명 : CentOS 7.1(2018. 12. 11.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 3.10.0-693
@@ -533,7 +533,7 @@
 * CentOS 6.10 이미지 업데이트
     * 이미지 정보
         * CentOS 6.10
-        * 설명 : CentOS 6.10 (2018.12.11)
+        * 설명 : CentOS 6.10(2018. 12. 11.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 2.6.32-754
@@ -543,7 +543,7 @@
 * CentOS 6.5 이미지 업데이트
     * 이미지 정보
         * CentOS 6.5
-        * 설명 : CentOS 6.5 (2018.12.11)
+        * 설명 : CentOS 6.5(2018. 12. 11.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 2.6.32-754
@@ -553,7 +553,7 @@
 * Ubuntu Server 18.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 18.04 LTS
-        * 설명 : Ubuntu Server 18.04.1 LTS (2018.12.11)
+        * 설명 : Ubuntu Server 18.04.1 LTS(2018. 12. 11.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 4.15.0-29
@@ -563,7 +563,7 @@
 * Ubuntu Server 16.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 16.04 LTS
-        * 설명 : Ubuntu Server 16.04.5 LTS (2018.12.11)
+        * 설명 : Ubuntu Server 16.04.5 LTS(2018. 12. 11.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 4.4.0-131
@@ -573,7 +573,7 @@
 * Ubuntu Server 14.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 14.04 LTS
-        * 설명 : Ubuntu Server 14.04.5 LTS (2018.12.11)
+        * 설명 : Ubuntu Server 14.04.5 LTS(2018. 12. 11.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 4.4.0-31
@@ -581,7 +581,7 @@
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
 
 
-### 2018.11.13
+### 2018. 11. 13.
 
 #### 기능 개선
 
@@ -589,7 +589,7 @@
     * 이미지 정보
         * CentOS 7.1
         * 언어 : EN
-        * 설명 : CentOS 7.1 (2018.11.13)
+        * 설명 : CentOS 7.1(2018. 11. 13.)
         * 비트 : 64bit
         * 커널 : 3.10.0-693.21.1
     * 커널 업데이트 :  3.10.0-229 -> 3.10.0-693.21.1
@@ -598,13 +598,13 @@
     * 이미지 정보
         * CentOS 6.5
         * 언어 : EN
-        * 설명 : CentOS 6.5 (2018.11.13)
+        * 설명 : CentOS 6.5(2018. 11. 13.)
         * 비트 : 64bit
         * 커널 : 2.6.32-754.6.3
     * 커널 업데이트 :  2.6.32-431 -> 2.6.32-754.6.3
     * Yum repository target 변경 : CentOS 최신 repo
 
-### 2018.10.23
+### 2018. 10. 23.
 
 #### 기능 개선
 
@@ -616,7 +616,7 @@
     * 이미지 정보
         * CentOS 7.5
         * 언어 : EN
-        * 설명 : CentOS 7.5 (2018.10.23)
+        * 설명 : CentOS 7.5(2018. 10. 23.)
         * 비트 : 64bit
         * 커널 : 3.10.0-862.14.4.el7
     * Toast Cloud 보안기준으로 OS 하드닝 적용
@@ -647,7 +647,7 @@
     * 이미지 정보
         * CentOS 6.10
         * 언어 : EN
-        * 설명 : CentOS 6.10 (2018.10.23)
+        * 설명 : CentOS 6.10(2018. 10. 23.)
         * 비트 : 64bit
         * 커널 : 2.6.32-754.3.5.el6
     * Toast Cloud 보안기준으로 OS 하드닝 적용
@@ -678,7 +678,7 @@
     * 이미지 정보
         * CentOS 7.1
         * 언어 : EN
-        * 설명 : CentOS 7.1 (2018.10.23)
+        * 설명 : CentOS 7.1(2018. 10. 23.)
         * 비트 : 64bit
         * 커널 : 3.10.0-229.el7
     * Toast Cloud 보안기준으로 OS 하드닝 적용
@@ -709,7 +709,7 @@
     * 이미지 정보
         * CentOS 6.5
         * 언어 : EN
-        * 설명 : CentOS 6.5 (2018.10.23)
+        * 설명 : CentOS 6.5(2018. 10. 23.)
         * 비트 : 64bit
         * 커널 : 2.6.32-431.el6
     * Toast Cloud 보안기준으로 OS 하드닝 적용
@@ -740,7 +740,7 @@
     * 이미지 정보
         * Ubuntu Server 16.04 LTS
         * 언어 : EN
-        * 설명 : Ubuntu Server 16.04.5 LTS (2018.10.23)
+        * 설명 : Ubuntu Server 16.04.5 LTS(2018. 10. 23.)
         * 비트 : 64bit
         * 커널 : 4.4.0-131
     * Toast Cloud 보안기준으로 OS 하드닝 적용
@@ -768,7 +768,7 @@
     * 이미지 정보
         * Ubuntu Server 14.04 LTS
         * 언어 : EN
-        * 설명 : Ubuntu Server 14.04.5 LTS (2018.10.23)
+        * 설명 : Ubuntu Server 14.04.5 LTS(2018. 10. 23.)
         * 비트 : 64bit
         * 커널 : 4.4.0-131
     * Toast Cloud 보안기준으로 OS 하드닝 적용
@@ -796,7 +796,7 @@
     * 이미지 정보
         * Debian 9 Stretch
         * 언어 : EN
-        * 설명 : Debian 9.5 Stretch (2018.10.23)
+        * 설명 : Debian 9.5 Stretch(2018. 10. 23.)
         * 비트 : 64bit
         * 커널 : 4.9.0-7
     * Toast Cloud 보안기준으로 OS 하드닝 적용
@@ -824,7 +824,7 @@
     * 이미지 정보
         * Debian 8 Jessie
         * 언어 : EN
-        * 설명 : Debian 8.11 Jessie (2018.10.23)
+        * 설명 : Debian 8.11 Jessie(2018. 10. 23.)
         * 비트 : 64bit
         * 커널 : 3.16.0-6
     * Toast Cloud 보안기준으로 OS 하드닝 적용
@@ -850,7 +850,7 @@
         * /etc/hosts 파일의 사용자 추가 설정 유지
 
 
-### 2018.09.20
+### 2018. 09. 20.
 
 #### 기능 개선
 
@@ -866,7 +866,7 @@
     * 이미지 정보
         * Ubuntu Server 18.04 LTS
         * 언어 : EN
-        * 설명 : Ubuntu Server 18.04.1 LTS (2018.09.20)
+        * 설명 : Ubuntu Server 18.04.1 LTS(2018. 09. 20.)
         * 비트 : 64bit
     * Kernel 4.15.0-29
         * meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
@@ -894,13 +894,13 @@
     * 이미지 정보
         * Ubuntu Linux 14.04
         * 언어 : EN
-        * 설명 : Ubuntu Linux 14.04.5 (2018.09.20)
+        * 설명 : Ubuntu Linux 14.04.5(2018. 09. 20.)
         * 비트 : 64bit
     * 버그픽스
-        * 2018.09.20 신규적용되는 예약스크립트 기능이 정상적으로 적용되지 않는 부분 해결
+        * 2018. 09. 20. 신규적용되는 예약스크립트 기능이 정상적으로 적용되지 않는 부분 해결
 
 
-### 2018.08.09
+### 2018. 08. 09.
 
 #### 기능 개선
 
@@ -908,7 +908,7 @@
     * 이미지 정보
         * Windows 2012 R2 STD
         * 언어 : EN
-        * 설명 : Windows 2012 R2 STD (2018.08.09)
+        * 설명 : Windows 2012 R2 STD(2018. 08. 09.)
         * 커널 비트 : 64bit
     * 변경사항
         * 한글 사용시 사용자가 한글 언어팩을 설치 ( 기본으로 영문 버전 제공 )
@@ -931,7 +931,7 @@
     * 이미지 정보
         * Windows 2016 STD
         * 언어 : EN
-        * 설명 : Windows 2016 STD (2018.08.09)
+        * 설명 : Windows 2016 STD(2018. 08. 09.)
         * 비트 : 64bit
     * Windows 보안업데이트
         * 2018년 7월 24일 (https://support.microsoft.com/en-us/help/4338822/windows-10-update-kb4338822)
@@ -951,7 +951,7 @@
     * 이미지 정보
         * Debian 9.4
         * 언어 : EN
-        * 설명 : Debian 9.4.0 (2018.08.09)
+        * 설명 : Debian 9.4.0(2018. 08. 09.)
         * 비트 : 64bit
     * Kernel 4.9
         * meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
@@ -1000,7 +1000,7 @@
 
 
 
-### 2018.07.16
+### 2018. 07. 16.
 
 #### 기능 개선
 
@@ -1008,7 +1008,7 @@
     * 이미지 정보
         * Windows 2012R2std
         * 언어 : KO
-        * 설명 : Windows 2012 R2 STD (2018.07.16)
+        * 설명 : Windows 2012 R2 STD(2018. 07. 16.)
         * 커널 비트 : 64bit
     * Auto scale 기능으로 백신이 포함된 인스턴스 생성시 발생하는 에러 현상 수정
     * CPU 설정 변경  ( CPU Socket 최대 개수  4개 )
@@ -1017,7 +1017,7 @@
     * 이미지 정보
         * Windows 2008R2std
         * 언어 : EN
-        * 설명 : Windows 2008 R2 STD (2018.07.16)
+        * 설명 : Windows 2008 R2 STD(2018. 07. 16.)
         * 커널 비트 : 64bit
     * Windows 보안업데이트
         * 2018년 6월 12일자 보안 업데이트 적용 ( https://support.microsoft.com/ko-kr/help/4284826 )
@@ -1039,7 +1039,7 @@
     * 이미지 정보
         * Ubuntu 16.04 LTS
         * 언어 : EN
-        * 설명 : Ubuntu 16.04.4 LTS  (2018.07.16)
+        * 설명 : Ubuntu 16.04.4 LTS(2018. 07. 16.)
         * 커널 비트 : 64bit
     * Kernel 4.4.0-130
         * meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
@@ -1111,7 +1111,7 @@
     * 자세한 내용은 가이드 문서를 참고해 주세요.
 
 
-### 2018.02.22
+### 2018. 02. 22.
 
 #### 기능 개선
 
@@ -1120,7 +1120,7 @@
     * 이미지 정보
         * Name : Windows 2012R2std
         * Language : KO
-        * Description : Windows 2012 R2 STD (2018.02.22)
+        * Description : Windows 2012 R2 STD(2018. 02. 22.)
     * Windows Time Zone 설정 변경
         * 동기화 주기 변경 : [기존) 604800초 (7일) -> [변경] 256초
         * Time Zone Peer 도메인 변경 : [기존] 1.kr.pool.ntp.org , 1.pool.ntp.org -> [변경] 1.pool.ntp.org , time.windows.com
@@ -1129,7 +1129,7 @@
 * Ubuntu Linux 14.04 이미지 업데이트
     * 이미지 정보
         * Name : Ubuntu 14.04
-        * Description : Ubuntu Linux 14.04.5 (2018.02.22)
+        * Description : Ubuntu Linux 14.04.5(2018. 02. 22.)
     * 취약점 패치를 위한 관련 커널 업데이트
         * Linux Kernel Version : [기존] 3.13.0-32 --> [변경] 3.13.0-141
         * Variant 1 (CVE-2017-5753) - patched
@@ -1137,7 +1137,7 @@
 * Debian Linux 8.2 이미지 업데이트
     * 이미지 정보
         * Name : Debian Linux 8.2.0
-        * Description : Debian Linux 8.2.0 (2018.02.22)
+        * Description : Debian Linux 8.2.0(2018. 02. 22.)
     * 호스트명 설정 변경
         * 인스턴스 생성시 지정한 이름으로 호스트명 적용되도록 수정
         * [기존] localhost-192.168.0.x -> [변경] 콘솔에서 지정한 이름
@@ -1147,7 +1147,7 @@
 * CentOS Linux 6.5 이미지 업데이트
     * 이미지 정보
         * Name : CentOS Linux 6.5
-        * Description : CentOS Linux 6.5 (2018.02.22)
+        * Description : CentOS Linux 6.5(2018. 02. 22.)
     * 호스트명 설정 변경
         * 인스턴스 생성시 지정한 이름으로 호스트명 적용되도록 수정
         * [기존] localhost-192.168.0.x -> [변경] 콘솔에서 지정한 이름
@@ -1158,7 +1158,7 @@
 * CentOS Linux 7.1 이미지 업데이트
     * 이미지 정보
         * Name : CentOS Linux 7.1
-        * Description : CentOS Linux 7.1 (2018.02.22)
+        * Description : CentOS Linux 7.1(2018. 02. 22.)
     * 호스트명 설정 변경
         * 인스턴스 생성시 지정한 이름으로 호스트명 적용되도록 수정
         * [기존] localhost-192.168.0.x -> [변경] 콘솔에서 지정한 이름
@@ -1173,13 +1173,13 @@
 * CentOS Linux 6.5 with MySQL 5.6.38 신규 이미지 업데이트
     * 이미지 정보
         * Name : CentOS Linux 6.5
-        * Description : CentOS Linux 6.5 with MySQL 5.6.38 (2018.02.22)
+        * Description : CentOS Linux 6.5 with MySQL 5.6.38(2018. 02. 22.)
     * MySQL 5.6.38 패키지 설치됨
     * 그외 설정은 CentOS Linux 6.5 이미지와 동일함
 * CentOS Linux 6.5 with MySQL 5.7.20 신규 이미지 업데이트
     * 이미지 정보
         * Name : CentOS Linux 6.5
-        * Description : CentOS Linux 6.5 with MySQL 5.7.20 (2018.02.22)
+        * Description : CentOS Linux 6.5 with MySQL 5.7.20(2018. 02. 22.)
     * MySQL 5.7.20 패키지 설치됨
     * 그외 설정은 CentOS Linux 6.5 이미지와 동일함
 
@@ -1226,7 +1226,7 @@
 
 
 
-### 2017.05.25
+### 2017. 05. 25.
 
 #### 기능 추가
 

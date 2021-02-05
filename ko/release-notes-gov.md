@@ -3,45 +3,45 @@
 ### 2021. 01. 19.
 
 #### Image
-* CentOS 6.10(2020.12.22)
+* CentOS 6.10(2020. 12. 22.)
     * 이미지 업데이트
-* CentOS 7.5(2020.12.22)
+* CentOS 7.5(2020. 12. 22.)
     * 이미지 업데이트
-* CentOS 7.8(2020.12.22)
+* CentOS 7.8(2020. 12. 22.)
     * 이미지 업데이트
-* CentOS Linux 6.10 with MySQL 5.6.38(2020.12.22)
+* CentOS Linux 6.10 with MySQL 5.6.38(2020. 12. 22.)
     * 이미지 업데이트
-* CentOS Linux 6.10 with MySQL 5.7.20(2020.12.22)
+* CentOS Linux 6.10 with MySQL 5.7.20(2020. 12. 22.)
     * 이미지 업데이트
-* Debian 9.13 Stretch(2020.12.22)
+* Debian 9.13 Stretch(2020. 12. 22.)
     * 이미지 업데이트
-* Debian 10.7 Buster(2020.12.22)
+* Debian 10.7 Buster(2020. 12. 22.)
     * 이미지 업데이트
-* Ubuntu Server 16.04.7 LTS(2020.12.22)
+* Ubuntu Server 16.04.7 LTS(2020. 12. 22.)
     * 이미지 업데이트
-* Ubuntu Server 18.04.5 LTS(2020.12.22)
+* Ubuntu Server 18.04.5 LTS(2020. 12. 22.)
     * 이미지 업데이트
-* Ubuntu Server 20.04.1 LTS(2020.12.22)
+* Ubuntu Server 20.04.1 LTS(2020. 12. 22.)
     * 이미지 업데이트
-* Ubuntu Server 18.04.5 LTS with NVIDIA(2020.12.22)
+* Ubuntu Server 18.04.5 LTS with NVIDIA(2020. 12. 22.)
     * 이미지 업데이트
-* Windows 2012 R2 STD(2020.12.22)
+* Windows 2012 R2 STD(2020. 12. 22.)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update
-* Windows 2016 STD(2020.12.22)
+* Windows 2016 STD(2020. 12. 22.)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
-* Windows 2019 STD(2020.12.22)
+* Windows 2019 STD(2020. 12. 22.)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
-* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020.12.22)
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020. 12. 22.)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update
-* Windows 2016 STD with MS-SQL 2016 Standard(2020.12.22)
+* Windows 2016 STD with MS-SQL 2016 Standard(2020. 12. 22.)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
-* Windows 2016 STD with MS-SQL 2019 Express(2020.12.22)
+* Windows 2016 STD with MS-SQL 2019 Express(2020. 12. 22.)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
-* Windows 2016 STD with MS-SQL 2017 Standard(2020.12.22)
+* Windows 2016 STD with MS-SQL 2017 Standard(2020. 12. 22.)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
-* Windows 2016 STD with MS-SQL 2019 Standard(2020.12.22)
+* Windows 2016 STD with MS-SQL 2019 Standard(2020. 12. 22.)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
-* Windows 2019 STD with MS-SQL 2019 Standard(2020.12.22)
+* Windows 2019 STD with MS-SQL 2019 Standard(2020. 12. 22.)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
 
 ### 2020. 11. 03.
@@ -56,46 +56,46 @@
 #### Image
 
 * 신규 이미지 추가 
-    * Cent OS 7.8(2020.08.18)
-    * Ubuntu 20.04 LTS(2020.08.18)
-    * Windows 2016 STD with MS-SQL 2019 Express(2020.08.18)
-    * Windows 2016 STD with MS-SQL 2017 Standard(2020.08.18)
-    * Windows 2016 STD with MS-SQL 2019 Standard(2020.08.18)
-    * Windows 2019 STD with MS-SQL 2019 Standard(2020.08.18)
+    * Cent OS 7.8(2020. 08. 18.)
+    * Ubuntu 20.04 LTS(2020. 08. 18.)
+    * Windows 2016 STD with MS-SQL 2019 Express(2020. 08. 18.)
+    * Windows 2016 STD with MS-SQL 2017 Standard(2020. 08. 18.)
+    * Windows 2016 STD with MS-SQL 2019 Standard(2020. 08. 18.)
+    * Windows 2019 STD with MS-SQL 2019 Standard(2020. 08. 18.)
 
-* CentOS 6.10(2020.08.18)
+* CentOS 6.10(2020. 08. 18.)
     * 이미지 업데이트
-* CentOS 7.5(2020.08.18)
+* CentOS 7.5(2020. 08. 18.)
     * 이미지 업데이트
-* CentOS Linux 6.10 with MySQL 5.6.38(2020.08.18)
+* CentOS Linux 6.10 with MySQL 5.6.38(2020. 08. 18.)
     * 이미지 업데이트
-* CentOS Linux 6.10 with MySQL 5.7.20(2020.08.18)
+* CentOS Linux 6.10 with MySQL 5.7.20(2020. 08. 18.)
     * 이미지 업데이트
-* Debian 9.9 Stretch(2020.08.18)
+* Debian 9.9 Stretch(2020. 08. 18.)
     * 이미지 업데이트
-* Debian 10.5 Buster(2020.08.18)
+* Debian 10.5 Buster(2020. 08. 18.)
     * 이미지 업데이트
-* Ubuntu Server 16.04.6 LTS(2020.08.18)
+* Ubuntu Server 16.04.6 LTS(2020. 08. 18.)
     * 이미지 업데이트
-* Ubuntu Server 18.04.4 LTS(2020.08.18)
+* Ubuntu Server 18.04.4 LTS(2020. 08. 18.)
     * 이미지 업데이트
-* Ubuntu Server 18.04.4 LTS with NVIDIA(2020.08.18)
+* Ubuntu Server 18.04.4 LTS with NVIDIA(2020. 08. 18.)
     * 이미지 업데이트
-* Windows 2012 R2 STD(2020.08.18)
+* Windows 2012 R2 STD(2020. 08. 18.)
     * 이미지 업데이트
-* Windows 2016 STD(2020.08.18)
+* Windows 2016 STD(2020. 08. 18.)
     * 이미지 업데이트
-* Windows 2019 STD(2020.08.18)
+* Windows 2019 STD(2020. 08. 18.)
     * 이미지 업데이트
-* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020.08.18)
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020. 08. 18.)
     * 이미지 업데이트
-* Windows 2016 STD with MS-SQL 2016 Standard(2020.08.18)
+* Windows 2016 STD with MS-SQL 2016 Standard(2020. 08. 18.)
     * 이미지 업데이트
 
 * 이미지 지원 종료
-    * Windows 2012 R2 STD with MS-SQL 2012 Standard(2020.02.18)
-    * Windows 2012 R2 STD with MS-SQL 2014 Standard(2020.02.18)
-    * Windows 2012 R2 STD with MS-SQL 2016 Express(2020.02.18)
+    * Windows 2012 R2 STD with MS-SQL 2012 Standard(2020. 02. 18.)
+    * Windows 2012 R2 STD with MS-SQL 2014 Standard(2020. 02. 18.)
+    * Windows 2012 R2 STD with MS-SQL 2016 Express(2020. 02. 18.)
 
 ### 2020. 06. 16.
 
@@ -121,44 +121,44 @@
 #### Image
 * 개인 이미지와 공유받은 이미지가 이미지 목록에 함께 노출되도록 변경
 * 신규 이미지 추가 
-    * Debian 10.2 Buster(2020.02.18)
-    * Windows 2019 STD(2020.02.18)
+    * Debian 10.2 Buster(2020. 02. 18.)
+    * Windows 2019 STD(2020. 02. 18.)
 
-* CentOS 6.10(2020.02.18)
+* CentOS 6.10(2020. 02. 18.)
     * 이미지 업데이트
-* CentOS 7.5(2020.02.18)
+* CentOS 7.5(2020. 02. 18.)
     * 이미지 업데이트
-* CentOS Linux 6.10 with MySQL 5.6.38(2020.02.18)
+* CentOS Linux 6.10 with MySQL 5.6.38(2020. 02. 18.)
     * 이미지 업데이트
-* CentOS Linux 6.10 with MySQL 5.7.20(2020.02.18)
+* CentOS Linux 6.10 with MySQL 5.7.20(2020. 02. 18.)
     * 이미지 업데이트
-* Debian 9.9 Stretch(2020.02.18)
+* Debian 9.9 Stretch(2020. 02. 18.)
     * 이미지 업데이트
-* Ubuntu Server 16.04.2 LTS(2020.02.18)
+* Ubuntu Server 16.04.2 LTS(2020. 02. 18.)
     * 이미지 업데이트
-* Ubuntu Server 18.04.2 LTS(2020.02.18)
+* Ubuntu Server 18.04.2 LTS(2020. 02. 18.)
     * 이미지 업데이트
 * Windows 2012 R2 STD(2020. 02.18)
     * 2019년 12월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
-* Windows 2012 R2 STD with MS-SQL 2012 Standard(2020.02.18)
+* Windows 2012 R2 STD with MS-SQL 2012 Standard(2020. 02. 18.)
     * 2019년 12월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
-* Windows 2012 R2 STD with MS-SQL 2014 Standard(2020.02.18)
+* Windows 2012 R2 STD with MS-SQL 2014 Standard(2020. 02. 18.)
     * 2019년 12월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
-* Windows 2012 R2 STD with MS-SQL 2016 Express(2020.02.18)
+* Windows 2012 R2 STD with MS-SQL 2016 Express(2020. 02. 18.)
     * 2019년 12월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
-* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020.02.18)
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020. 02. 18.)
     * 2019년 12월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4530702/windows-8-1-kb4530702
-* Windows 2016 STD(2020.02.18)
+* Windows 2016 STD(2020. 02. 18.)
     * 2019년 12월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4530689/windows-10-update-kb4530689
-* Windows 2016 R2 STD with MS-SQL 2016 Standard(2020.02.18)
+* Windows 2016 R2 STD with MS-SQL 2016 Standard(2020. 02. 18.)
     * 2019년 12월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4530689/windows-10-update-kb4530689
 
 * 이미지 지원 종료
-    * Debian 8.11 Jessie(2019.07.23)
+    * Debian 8.11 Jessie(2019. 07. 23.)
 
 ### 2019. 11. 12.
 #### Image
-* PLOS-WFK-KS-v2.0.60.0.14 (2019.10.22)
+* PLOS-WFK-KS-v2.0.60.0.14(2019. 10. 22.)
     * WF-KS 페이지의 Storage 크기 표기 오류 수정
 
 ### 2019. 08. 13.
@@ -170,66 +170,66 @@
 * 인스턴스가 구동 중일 때도 이미지를 생성할 수 있도록 기능 추가
 
 #### Image
-* CentOS 6.10 (2019.08.13)
+* CentOS 6.10(2018. 08. 13.)
     * yum update 시 발생하는 에러현상 개선
     * 리전에 따른 timezone 변경 적용
-* CentOS 7.5 (2019.08.13)
+* CentOS 7.5(2018. 08. 13.)
     * yum update 시 발생하는 에러현상 개선
     * 시간 동기화 데몬 변경 (ntpd)
     * 리전에 따른 timezone 변경 적용
 
-* Debian 8.11 Jessie (2019.08.13)
+* Debian 8.11 Jessie(2018. 08. 13.)
     * 리전에 따른 timezone 변경 적용
 
-* Debian 9.9 Stretch (2019.08.13)
+* Debian 9.9 Stretch(2018. 08. 13.)
     * 리전에 따른 timezone 변경 적용
     * 커널 업데이트 : 4.9.168-1
 
-* Ubuntu Server 16.04.6 LTS (2019.08.13)
+* Ubuntu Server 16.04.6 LTS(2018. 08. 13.)
     * 리전에 따른 timezone 변경 적용
     * 커널 업데이트 : 4.4.0-142.168
 
-* Ubuntu Server 18.04.2 LTS (2019.08.13)
+* Ubuntu Server 18.04.2 LTS(2018. 08. 13.)
     * 리전에 따른 timezone 변경 적용
 
-* CentOS Linux 6.10 with MySQL 5.6.38 (2019.08.13)
+* CentOS Linux 6.10 with MySQL 5.6.38(2018. 08. 13.)
     * 이미지 업데이트
-* CentOS Linux 6.10 with MySQL 5.7.20 (2019.08.13)
+* CentOS Linux 6.10 with MySQL 5.7.20(2018. 08. 13.)
     * 이미지 업데이트
 
-* Windows 2012 R2 STD (2019.08.13)
+* Windows 2012 R2 STD(2018. 08. 13.)
     * Windows Bootstrap 과정 기능 개선
     * Region에 따른 timezone 변경 적용
     * 2019년 5월 14일 보안 업데이트 반영 : https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
 
-* Windows 2012 STD with MS-SQL 2008 Standard (2019.05.14)
+* Windows 2012 STD with MS-SQL 2008 Standard(2019. 05. 14.)
     * Windows Bootstrap 과정 기능 개선
     * Region에 따른 timezone 변경 적용
     * 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
-* Windows 2012 STD with MS-SQL 2012 Standard (2019.08.13)
+* Windows 2012 STD with MS-SQL 2012 Standard(2018. 08. 13.)
     * Windows Bootstrap 과정 기능 개선
     * Region에 따른 timezone 변경 적용
     * 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
-* Windows 2012 STD with MS-SQL 2014 Standard (2019.08.13)
+* Windows 2012 STD with MS-SQL 2014 Standard(2018. 08. 13.)
     * Windows Bootstrap 과정 기능 개선
     * Region에 따른 timezone 변경 적용
     * 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
-* Windows 2012 STD with MS-SQL 2016 Express (2019.08.13)
+* Windows 2012 STD with MS-SQL 2016 Express(2018. 08. 13.)
     * Windows Bootstrap 과정 기능 개선
     * Region에 따른 timezone 변경 적용
     * 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
-* Windows 2012 STD with MS-SQL 2016 Standard (2019.08.13)
+* Windows 2012 STD with MS-SQL 2016 Standard(2018. 08. 13.)
     * Windows Bootstrap 과정 기능 개선
     * Region에 따른 timezone 변경 적용
     * 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
 
-* Windows 2016 STD (2019.08.13)
+* Windows 2016 STD(2018. 08. 13.)
     * Windows Bootstrap 과정 기능 개선
     * Region에 따른 timezone 변경 적용
     * 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947
 
 * 신규 이미지 추가
-    * Windows 2016 STD with MS-SQL 2016 Standard (2019.08.13)
+    * Windows 2016 STD with MS-SQL 2016 Standard(2018. 08. 13.)
 
 * OS 이미지 지원 종료
     * CentOS 6.5
@@ -239,63 +239,63 @@
 
 ### 2019. 03. 26.
 #### Image
-* Debian 9.8 Stretch (2019.03.26)
+* Debian 9.8 Stretch(2019. 03. 26.)
     * 커널 업데이트: 4.9.144-3
 
-* CentOS 6.5 (2019.03.26)
+* CentOS 6.5(2019. 03. 26.)
     * Bootstrap 과정의 기능 개선
-* CentOS 6.10 (2019.03.26)
+* CentOS 6.10(2019. 03. 26.)
     * Bootstrap 과정의 기능 개선
-* CentOS 7.1 (2019.03.26)
+* CentOS 7.1(2019. 03. 26.)
     * Bootstrap 과정의 기능 개선
-* CentOS 7.5 (2019.03.26)
+* CentOS 7.5(2019. 03. 26.)
     * Bootstrap 과정의 기능 개선
-* CentOS 6.5 with MySQL 5.6.38 (2019.03.26)
+* CentOS 6.5 with MySQL 5.6.38(2019. 03. 26.)
     * Bootstrap 과정의 기능 개선
-* CentOS 6.5 with MySQL 5.7.20 (2019.03.26)
+* CentOS 6.5 with MySQL 5.7.20(2019. 03. 26.)
     * Bootstrap 과정의 기능 개선
-* Ubuntu Server 14.04.5 LTS (2019.03.26)
+* Ubuntu Server 14.04.5 LTS(2019. 03. 26.)
     * Bootstrap 과정의 기능 개선
-* Ubuntu Server 16.04.5 LTS (2019.03.26)
+* Ubuntu Server 16.04.5 LTS(2019. 03. 26.)
     * Bootstrap 과정의 기능 개선
-* Ubuntu Server 18.04.2 LTS (2019.03.26)
+* Ubuntu Server 18.04.2 LTS(2019. 03. 26.)
     * Bootstrap 과정의 기능 개선
-* Debian 8.11 Jessie (2019.03.26)
+* Debian 8.11 Jessie(2019. 03. 26.)
     * Bootstrap 과정의 기능 개선
-* Debian 9.8 Stretch (2019.03.26)
+* Debian 9.8 Stretch(2019. 03. 26.)
     * Bootstrap 과정의 기능 개선
 
 
 ### 2019. 02. 26.
 #### Image
-* Ubuntu Server 18.04.2 LTS (2019.02.26)
+* Ubuntu Server 18.04.2 LTS(2019. 02. 26.)
     * 커널 업데이트: 4.15.0-45
     * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 추가 해결
 
 
 ### 2018. 12. 27.
 #### Image
-* Ubuntu Server 14.04.5 LTS (2018.12.27)
+* Ubuntu Server 14.04.5 LTS(2018. 12. 27.)
     * default 설정을 "en_US.UTF-8"로 변경
     * /etc/default/locale 수정
         * LC_ALL="en_US.UTF-8"
         * LC_CTYPE="en_US.UTF-8"
-* Ubuntu Server 16.04.5 LTS (2018.12.27)
+* Ubuntu Server 16.04.5 LTS(2018. 12. 27.)
     * default 설정을 "en_US.UTF-8"로 변경
     * /etc/default/locale 수정
         * LC_ALL="en_US.UTF-8"
         * LC_CTYPE="en_US.UTF-8"
-* Ubuntu Server 18.04.2 LTS (2018.12.27)
+* Ubuntu Server 18.04.2 LTS(2018. 12. 27.)
     * default 설정을 "en_US.UTF-8"로 변경
     * /etc/default/locale 수정
         * LC_ALL="en_US.UTF-8"
         * LC_CTYPE="en_US.UTF-8"
-* Debian 8.11 Jessie (2018.12.27)
+* Debian 8.11 Jessie(2018. 12. 27.)
     * default 설정을 "en_US.UTF-8"로 변경
     * /etc/default/locale 수정
         * LC_ALL="en_US.UTF-8"
         * LC_CTYPE="en_US.UTF-8"
-* Debian 9.8 Stretch (2018.12.27)
+* Debian 9.8 Stretch(2018. 12. 27.)
     * default 설정을 "en_US.UTF-8"로 변경
     * /etc/default/locale 수정
         * LC_ALL="en_US.UTF-8"
@@ -304,41 +304,41 @@
 
 ### 2018. 12. 11.
 #### Image
-* CentOS 6.5 (2018.12.11)
+* CentOS 6.5(2018. 12. 11.)
     * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
-* CentOS 6.10 (2018.12.11)
+* CentOS 6.10(2018. 12. 11.)
     * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
-* CentOS 7.1 (2018.12.11)
+* CentOS 7.1(2018. 12. 11.)
     * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
-* CentOS 7.5 (2018.12.11)
+* CentOS 7.5(2018. 12. 11.)
     * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결  
-* Debian 8.11 Jessie (2018.12.11)
+* Debian 8.11 Jessie(2018. 12. 11.)
     * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
-* Debian 9.6 Stretch (2018.12.11)
+* Debian 9.6 Stretch(2018. 12. 11.)
     * 커널 업데이트 : 4.9.0-8
     * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
-* Ubuntu Server 14.04.5 LTS (2018.12.11)
+* Ubuntu Server 14.04.5 LTS(2018. 12. 11.)
     * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
-* Ubuntu Server 16.04.5 LTS (2018.12.11)
+* Ubuntu Server 16.04.5 LTS(2018. 12. 11.)
     * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
-* Ubuntu Server 18.04.1 LTS (2018.12.11)
+* Ubuntu Server 18.04.1 LTS(2018. 12. 11.)
     * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
 
 
 ### 2018. 11. 13.
 #### Image
-* CentOS 6.5 (2018.11.13)
+* CentOS 6.5(2018. 11. 13.)
     * 커널 업데이트 : 2.6.32-754.6.3
     * Yum repository 대상을 최신 repository로 변경
 
-* CentOS 7.1 (2018.11.13)
+* CentOS 7.1(2018. 11. 13.)
     * 커널 업데이트 :  3.10.0-693.21.1
     * Yum repository 대상을 최신 repository로 변경
 
 
 ### 2018. 10. 23.
 #### Image
-* CentOS 6.5 (2018.10.23)
+* CentOS 6.5(2018. 10. 23.)
     * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
         * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
     * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -362,7 +362,7 @@
     * 인스턴스 생성시 swap partition 을  생성하지 않음
     * /etc/hosts 파일의 사용자 추가 설정 유지
 
-* CentOS 6.10 (2018.10.23)
+* CentOS 6.10(2018. 10. 23.)
     * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
         * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
     * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -386,7 +386,7 @@
     * 인스턴스 생성시 swap partition 을  생성하지 않음
     * /etc/hosts 파일의 사용자 추가 설정 유지
 
-* CentOS 7.1 (2018.10.23)
+* CentOS 7.1(2018. 10. 23.)
     * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
         * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
     * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -410,7 +410,7 @@
     * 인스턴스 생성시 swap partition 을  생성하지 않음
     * /etc/hosts 파일의 사용자 추가 설정 유지
 
-* CentOS 7.5 (2018.10.23)
+* CentOS 7.5(2018. 10. 23.)
     * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
         * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
     * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -434,7 +434,7 @@
     * 인스턴스 생성시 swap partition 을  생성하지 않음
     * /etc/hosts 파일의 사용자 추가 설정 유지
 
-* Ubuntu Server 14.04.5 LTS (2018.10.23)
+* Ubuntu Server 14.04.5 LTS(2018. 10. 23.)
     * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
         * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
     * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -455,7 +455,7 @@
     * 인스턴스 생성시 swap partition 을  생성하지 않음
     * /etc/hosts 파일의 사용자 추가 설정 유지
 
-* Ubuntu Server 16.04.5 LTS (2018.10.23)
+* Ubuntu Server 16.04.5 LTS(2018. 10. 23.)
     * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
         * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
     * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -476,7 +476,7 @@
     * 인스턴스 생성시 swap partition 을  생성하지 않음
     * /etc/hosts 파일의 사용자 추가 설정 유지
 
-* Debian 8.11 Jessie (2018.10.23)
+* Debian 8.11 Jessie(2018. 10. 23.)
     * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
         * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
     * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -497,7 +497,7 @@
     * 인스턴스 생성시 swap partition 을  생성하지 않음
     * /etc/hosts 파일의 사용자 추가 설정 유지
 
-* Debian 9.5 Stretch (2018.10.23)
+* Debian 9.5 Stretch(2018. 10. 23.)
     * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
         * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
     * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -530,10 +530,10 @@
     * 예약 스크립트 등록 기능 추가
 
 #### Image
-* Ubuntu Linux 14.04.5 (2018.09.20)
-    * 2018.09.20 신규적용되는 예약스크립트 기능이 정상적으로 적용되지 않는 부분 해결
+* Ubuntu Linux 14.04.5(2018. 09. 20.)
+    * 2018. 09. 20. 신규적용되는 예약스크립트 기능이 정상적으로 적용되지 않는 부분 해결
 
-* Ubuntu Server 18.04.1 LTS (2018.09.20)
+* Ubuntu Server 18.04.1 LTS(2018. 09. 20.)
     * 취약점 패치를 위한 관련 커널 업데이트
         * Kernel 4.15.0-29
         * meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
@@ -559,7 +559,7 @@
 
 ### 2018. 08. 09.
 #### Image
-* Debian 9.4.0 (2018.08.09)
+* Debian 9.4.0(2018. 08. 09.)
     * 취약점 패치를 위한 관련 커널 업데이트
         * Kernel 4.9
         * meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
@@ -607,7 +607,7 @@
     * 시스템 로그인전 배너 설정 제거
         * /etc/issue, /etc/issue.net 삭제
 
-* Windows 2012 R2 STD (2018.08.09)
+* Windows 2012 R2 STD(2018. 08. 09.)
     * 기본으로 영문 버전 제공, 한글 사용시 사용자가 한글 언어팩을 설치하도록 변경
     * 2018년 7월 10일 보안업데이트 적용 ( https://support.microsoft.com/en-us/help/4338815/windows-81-update-kb4338815 )
     * 계정 관리
@@ -623,7 +623,7 @@
         * Network access: Do not allow anonymous enumeration of SAM accounts and shares : Enabled
         * Autologin 기능 제한 :  AutoAdminLogon 값을 0 으로 설정
 
-* Windows 2016 STD (2018.08.09)
+* Windows 2016 STD(2018. 08. 09.)
     * 2018년 7월 24일 (https://support.microsoft.com/en-us/help/4338822/windows-10-update-kb4338822)
     * 계정 관리
         * Interactive logon: Display user information when the session is locked : User display name only
@@ -640,7 +640,7 @@
 
 ### 2018. 07. 16.
 #### Image
-* Ubuntu 16.04.4 LTS  (2018.07.16)
+* Ubuntu 16.04.4 LTS(2018. 07. 16.)
     * 취약점 패치를 위한 관련 커널 업데이트
         * Kernel 4.4.0-130
         * meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
@@ -688,7 +688,7 @@
     * 시스템 로그인전 배너 설정 제거
         * /etc/issue, /etc/issue.net 삭제
 
-* Windows 2008 R2 STD (2018.07.16)
+* Windows 2008 R2 STD(2018. 07. 16.)
     * 2018년 6월 12일자 보안 업데이트 적용 ( https://support.microsoft.com/ko-kr/help/4284826 )
     * 계정 관리
         * Guest 계정 사용 제한 : Guest 계정 사용 안함으로 변경
@@ -704,7 +704,7 @@
         * 로그온 하지 않고 시스템 종료허용  제한 :  로그온하지 않고 시스템 종료 허용 정책을 사용 안함으로 설정
         * Autologin 기능 제한 :  AutoAdminLogon 값을 0 으로 설정
 
-* Windows 2012 R2 STD (2018.07.16)
+* Windows 2012 R2 STD(2018. 07. 16.)
     * Auto scale 기능으로 백신이 포함된 인스턴스 생성시 발생하는 에러 현상 수정
     * CPU 설정 변경  ( CPU Socket 최대 개수  4개 )
     * Network  인터페이스 속도  10G 로 표시
@@ -737,7 +737,7 @@
 * VPC 기능이 추가됨에 따라 인스턴스 생성 시에 서브넷을 지정하도록 변경
 
 #### Image
-* CentOS Linux 6.5 (2018.02.22)
+* CentOS Linux 6.5(2018. 02. 22.)
     * 호스트명 설정 변경
         * 인스턴스 생성시 지정한 이름으로 호스트명 적용되도록 수정
         * [기존] localhost-192.168.0.x -> [변경] 콘솔에서 지정한 이름
@@ -746,7 +746,7 @@
         * Variant 1 (CVE-2017-5753) - patched
         * Variant 3 (CVE-2017-5754) - patched
 
-* CentOS Linux 7.1 (2018.02.22)
+* CentOS Linux 7.1(2018. 02. 22.)
     * 호스트명 설정 변경
         * 인스턴스 생성시 지정한 이름으로 호스트명 적용되도록 수정
         * [기존] localhost-192.168.0.x -> [변경] 콘솔에서 지정한 이름
@@ -759,7 +759,7 @@
         * Variant 1 (CVE-2017-5753) - patched
         * Variant 3 (CVE-2017-5754) - patched
 
-* Debian Linux 8.2.0 (2018.02.22)
+* Debian Linux 8.2.0(2018. 02. 22.)
     * 호스트명 설정 변경
         * 인스턴스 생성시 지정한 이름으로 호스트명 적용되도록 수정
         * [기존] localhost-192.168.0.x -> [변경] 콘솔에서 지정한 이름
@@ -767,23 +767,23 @@
         * Linux Kernel Version : [기존] 3.16.0-4 --> [변경] 3.16.0-5
         * Variant 3 (CVE-2017-5754) - patched
 
-* Ubuntu Linux 14.04.5 (2018.02.22)
+* Ubuntu Linux 14.04.5(2018. 02. 22.)
     * 취약점 패치를 위한 관련 커널 업데이트
         * Linux Kernel Version : [기존] 3.13.0-32 --> [변경] 3.13.0-141
         * Variant 1 (CVE-2017-5753) - patched
         * Variant 3 (CVE-2017-5754) - patched
 
-* Windows 2012 R2 STD (2018.02.22)
+* Windows 2012 R2 STD(2018. 02. 22.)
     * Windows Time Zone 설정 변경
         * 동기화 주기 변경 : [기존) 604800초 (7일) -> [변경] 256초
         * Time Zone Peer 도메인 변경 : [기존] 1.kr.pool.ntp.org , 1.pool.ntp.org -> [변경] 1.pool.ntp.org , time.windows.com
     * 2018년 02월 13일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4074594/windows-81-update-kb-4074594
 
 * 신규 이미지 추가
-    * CentOS Linux 6.5 with MySQL 5.6.38 (2018.02.22)
+    * CentOS Linux 6.5 with MySQL 5.6.38(2018. 02. 22.)
         * MySQL 5.6.38 패키지 설치됨
         * 그외 설정은 CentOS Linux 6.5 이미지와 동일함
-    * CentOS Linux 6.5 with MySQL 5.7.20 (2018.02.22)
+    * CentOS Linux 6.5 with MySQL 5.7.20(2018. 02. 22.)
         * MySQL 5.7.20 패키지 설치됨
         * 그외 설정은 CentOS Linux 6.5 이미지와 동일함
 
@@ -826,7 +826,7 @@
 
 #### Image
 * Windows 계열 이미지 업데이트
-    * Windows 2012 R2 STD (2017.05.25) 추가
+    * Windows 2012 R2 STD(2017. 05. 25.) 추가
 
 
 ### 2017. 04. 25.
