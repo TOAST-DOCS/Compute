@@ -3,7 +3,7 @@
 ## Common Preparations 
 
 ### Check API Endpoints 
-TOAST Infrastructure Service API provides different endpoints for each type and region. However, the Identity API provides the same endpoint in all regions. 
+NHN Cloud Infrastructure Service API provides different endpoints for each type and region. However, the Identity API provides the same endpoint in all regions. 
 
 | Type | Region | Endpoint |
 |---|---|---|
@@ -20,7 +20,7 @@ Check tenant ID included to API request from **API Endpoint Setting** of **Compu
 
 ### Set API Passwords
 
-To enable TOAST Infrastructure Service API, API password must be set up, separate from TOAST password. 
+To enable NHN Cloud Infrastructure Service API, API password must be set up, separate from NHN Cloud password. 
 
 1. Go to **Compute > Instance > Management** and click **API Endpoint Setting**.
 2. Specify API password for **API Password Setting** at the bottom of **API Endpoint Setting** . 
@@ -34,7 +34,7 @@ To enable TOAST Infrastructure Service API, API password must be set up, separat
 
 To get a token issued, use endpoints of the  `identity` type. The  `identity` service endpoint refers to `https://api-identity.infrastructure.cloud.toast.com` regardless of the region. 
 
-Get a token required to call API. TOAST needs project-scoped tokens.  
+Get a token required to call API. NHN Cloud needs project-scoped tokens.  
 
 ```
 POST /v2.0/tokens
@@ -46,7 +46,7 @@ POST /v2.0/tokens
 |---|---|---|---|---|
 | tenantId | Body | String | O | Tenant ID to get a token |
 | passwordCredentials | Body | Object | O | User information object for authentication |
-| username | Body | String | O | TOAST User ID |
+| username | Body | String | O | NHN Cloud User ID |
 | password | Body | String | O | API Password |
 
 #### Example

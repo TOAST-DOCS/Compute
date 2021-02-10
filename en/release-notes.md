@@ -549,7 +549,7 @@
         * 설명 : CentOS 7.5 (2018.10.23)
         * 비트 : 64bit
         * 커널 : 3.10.0-862.14.4.el7
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -580,7 +580,7 @@
         * 설명 : CentOS 6.10 (2018.10.23)
         * 비트 : 64bit
         * 커널 : 2.6.32-754.3.5.el6
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -611,7 +611,7 @@
         * 설명 : CentOS 7.1 (2018.10.23)
         * 비트 : 64bit
         * 커널 : 3.10.0-229.el7
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -642,7 +642,7 @@
         * 설명 : CentOS 6.5 (2018.10.23)
         * 비트 : 64bit
         * 커널 : 2.6.32-431.el6
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -673,7 +673,7 @@
         * 설명 : Ubuntu Server 16.04.5 LTS (2018.10.23)
         * 비트 : 64bit
         * 커널 : 4.4.0-131
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -701,7 +701,7 @@
         * 설명 : Ubuntu Server 14.04.5 LTS (2018.10.23)
         * 비트 : 64bit
         * 커널 : 4.4.0-131
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -729,7 +729,7 @@
         * 설명 : Debian 9.5 Stretch (2018.10.23)
         * 비트 : 64bit
         * 커널 : 4.9.0-7
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -757,7 +757,7 @@
         * 설명 : Debian 8.11 Jessie (2018.10.23)
         * 비트 : 64bit
         * 커널 : 3.16.0-6
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -800,7 +800,7 @@
         * 비트 : 64bit
     * Kernel 4.15.0-29
         * meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -844,7 +844,7 @@
         * 한글 사용시 사용자가 한글 언어팩을 설치 ( 기본으로 영문 버전 제공 )
     * Windows 보안업데이트
         * 2018년 7월 10일 보안업데이트 적용 ( https://support.microsoft.com/en-us/help/4338815/windows-81-update-kb4338815 )
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 계정 관리
             * Interactive logon: Display user information when the session is locked : User display name only
             * Interactive logon: Do not display last user name :  Enabled
@@ -865,7 +865,7 @@
         * 비트 : 64bit
     * Windows 보안업데이트
         * 2018년 7월 24일 (https://support.microsoft.com/en-us/help/4338822/windows-10-update-kb4338822)
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 계정 관리
             * Interactive logon: Display user information when the session is locked : User display name only
             * Interactive logon: Do not display last user name :  Enabled
@@ -885,7 +885,7 @@
         * 비트 : 64bit
     * Kernel 4.9
         * meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 (숫자,영문,특문 조합 + 8자리 이상) : /etc/pam.d/common-password에 아래 line 추가
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * 불필요 계정/그룹 삭제
@@ -951,7 +951,7 @@
         * 커널 비트 : 64bit
     * Windows 보안업데이트
         * 2018년 6월 12일자 보안 업데이트 적용 ( https://support.microsoft.com/ko-kr/help/4284826 )
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 계정 관리
             * Guest 계정 사용 제한 : Guest 계정 사용 안함으로 변경
             * 마지막 사용자 로그인 이름 표시 :  표시 안함으로 설정
@@ -973,7 +973,7 @@
         * 커널 비트 : 64bit
     * Kernel 4.4.0-130
         * meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 (숫자,영문,특문 조합 + 8자리 이상) : /etc/pam.d/common-password에 아래 line 추가
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * 불필요 계정/그룹 삭제
@@ -1118,7 +1118,7 @@
 
 #### 기능 추가
 * Public API 추가
-    * Object Storage에 이어 TOAST Compute를 API로 관리할 수 있습니다.
+    * Object Storage에 이어 NHN Cloud Compute를 API로 관리할 수 있습니다.
     * 현재 제한적인 기능만 이용할 수 있으며, 추후 API 추가를 통해 기능이 확장될 예정입니다.
     * 지원되는 API는 API Guide를 참고하시기 바랍니다.
 
