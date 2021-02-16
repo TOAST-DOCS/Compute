@@ -4,25 +4,25 @@
 
 #### Image
 
-* 신규 이미지 추가
+* 新規イメージ追加
     * CentOS 7.8 with MySQL 5.6.38(2021. 02. 23.)
     * CentOS 7.8 with MySQL 5.6.50(2021. 02. 23.)
     * CentOS 7.8 with MySQL 5.7.20(2021. 02. 23.)
     * CentOS 7.8 with MySQL 5.7.32(2021. 02. 23.)
     * CentOS 7.8 with MySQL 8.0.22(2021. 02. 23.)
 
-* 이미지 지원 종료
+* イメージのサポート終了
     * CentOS 6.10(2020. 12. 22.)
     * CentOS 7.5(2020. 12. 22.)
     * CentOS Linux 6.10 with MySQL 5.6.38(2020. 12. 22.)
     * CentOS Linux 6.10 with MySQL 5.7.20(2020. 12. 22.)
 
 * CentOS 7.8(2021. 02. 23.)
-    * 이미지 업데이트
+    * イメージアップデート
 
-* Linux 보안 취약점 패치 적용
+* Linuxセキュリティ脆弱性パッチ適用
     * Heap-based buffer overflow in Sudo(CVE-2021-3156)
-    * 신규 인스턴스 생성시 적용
+    * 新規インスタンス作成時に適用
   
 ### 2021. 01. 26.
 
