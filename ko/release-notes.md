@@ -22,7 +22,7 @@
 
 * Linux 보안 취약점 패치 적용
     * Heap-based buffer overflow in Sudo(CVE-2021-3156)
-    * 신규 인스턴스 생성시 적용
+    * 신규 인스턴스 생성 시 적용
 
 ### 2021. 01. 26.
 
