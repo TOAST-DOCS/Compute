@@ -4,7 +4,7 @@
 
 ### API Endpoint確認
 
-TOAST基本インフラサービスAPIは、タイプとリージョンごとにエンドポイントが分かれています。ただし、Identity APIはすべてのリージョンで同じendpointを使用します。
+NHN Cloud基本インフラサービスAPIは、タイプとリージョンごとにエンドポイントが分かれています。ただし、Identity APIはすべてのリージョンで同じendpointを使用します。
 
 | タイプ | リージョン | エンドポイント |
 |---|---|---|
@@ -22,7 +22,7 @@ APIリクエストに含まれるテナントIDは、**Compute > Instance > 管�
 
 ### APIパスワード設定
 
-TOAST基本インフラサービスAPIを使用するためにTOASTアカウントパスワードとは別にAPIパスワードを設定する必要があります。
+NHN Cloud基本インフラサービスAPIを使用するためにNHN Cloudアカウントパスワードとは別にAPIパスワードを設定する必要があります。
 
 1. **Compute > Instance > 管理**ページの**APIエンドポイント設定**ボタンを押します。
 2. **APIエンドポイント設定**ダイアログボックスの下部、**APIパスワード設定**にAPIパスワードを指定します。
@@ -36,7 +36,7 @@ TOAST基本インフラサービスAPIを使用するためにTOASTアカウン�
 
 トークンの発行は`identity`タイプエンドポイントを利用します。 `identity`サービスエンドポイントはリージョンに関係なく`https://api-identity.infrastructure.cloud.toast.com`です。
 
-API呼び出し時に必要なトークンを発行します。TOASTでは、プロジェクト限定トークン(project-scoped token)を使用します。
+API呼び出し時に必要なトークンを発行します。NHN Cloudでは、プロジェクト限定トークン(project-scoped token)を使用します。
 
 ```
 POST /v2.0/tokens
@@ -48,7 +48,7 @@ POST /v2.0/tokens
 |---|---|---|---|---|
 | tenantId | Body | String | O | トークンの発行を受けるテナントID |
 | passwordCredentials | Body | Object | O | 認証用のユーザー情報オブジェクト |
-| username | Body | String | O | TOASTユーザーID |
+| username | Body | String | O | NHN CloudユーザーID |
 | password | Body | String | O | APIのパスワード |
 
 #### 例
