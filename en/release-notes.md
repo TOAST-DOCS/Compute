@@ -1,6 +1,6 @@
 ## Compute > Release Notes
 
-### April 27, 2020
+### April 27, 2021
 
 #### Image
 
@@ -10,7 +10,7 @@
 * Image support ended
     * Ubuntu Server 16.04.7 LTS(2020. 12. 22.)
 
-### 2020. 02. 23.
+### February 23, 2021
 
 #### Image
 
