@@ -6,7 +6,7 @@
 
 * 新規イメージ追加(坪村リージョン)
     * CentOS 7.8 for NAT(2021. 04. 27.)
-    * Ubuntu Server 18.04.4 LTS for NAT(2021. 04. 27.)
+    * Ubuntu Server 18.04.5 LTS for NAT(2021. 04. 27.)
 
 * イメージサポート終了
     * Ubuntu Server 16.04.7 LTS(2020. 12. 22.)
