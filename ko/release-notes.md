@@ -6,7 +6,7 @@
 
 * 신규 이미지 추가(평촌 리전)
     * CentOS 7.8 for NAT(2021. 04. 27.)
-    * Ubuntu Server 18.04.4 LTS for NAT(2021. 04. 27.)
+    * Ubuntu Server 18.04.5 LTS for NAT(2021. 04. 27.)
 
 * 이미지 지원 종료
     * Ubuntu Server 16.04.7 LTS(2020. 12. 22.)
