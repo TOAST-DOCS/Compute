@@ -1,6 +1,16 @@
 ## Compute > Release Notes
 
-### 2020. 02. 23.
+### April 27, 2021
+
+#### Image
+
+* Added new image (Pyeongchon region)
+    * CentOS 7.8 for NAT(2021. 04. 22.)
+    * Ubuntu Server 18.04.5 LTS for NAT(2021. 04. 22.)
+* Image support ended
+    * Ubuntu Server 16.04.7 LTS(2020. 12. 22.)
+
+### February 23, 2021
 
 #### Image
 
