@@ -1,5 +1,10 @@
 ## Compute > 릴리스 노트
 
+### 2021. 07. 05.
+
+#### System Monitoring
+* CloudTrail 연동
+
 ### 2021. 01. 19.
 
 #### Image
