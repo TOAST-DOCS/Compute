@@ -1,5 +1,57 @@
 ## Compute > Release Notes
 
+### Jun 29, 2021
+
+#### Image
+
+* Node exporter
+    * The tool is automatically installed upon creating an instance to support Advanced Monitoring.
+
+* CentOS 7.8(2021. 06. 22.)
+    * Image updated
+* CentOS 7.8 for NAT(2021. 06. 22.)
+    * Image updated
+* CentOS 7.8 with MySQL 5.6.38(2021. 06. 22.)
+    * Image updated
+* CentOS 7.8 with MySQL 5.6.50(2021. 06. 22.)
+    * Image updated
+* CentOS 7.8 with MySQL 5.7.20(2021. 06. 22.)
+    * Image updated
+* CentOS 7.8 with MySQL 5.7.32(2021. 06. 22.)
+    * Image updated
+* CentOS 7.8 with MySQL 8.0.22(2021. 06. 22.)
+    * Image updated
+* Debian 9.13 Stretch(2021. 06. 22.)
+    * Image updated
+* Debian 10.9 Buster(2021. 06. 22.)
+    * Image updated
+* Ubuntu Server 18.04.5 LTS(2021. 06. 22.)
+    * Image updated
+* Ubuntu Server 18.04.5 LTS for NAT(2021. 06. 22.)
+    * Image updated
+* Ubuntu Server 18.04.5 LTS with NVIDIA(2021. 06. 22.)
+    * Image updated
+* Ubuntu Server 20.04.2 LTS(2021. 06. 22.)
+    * Image updated
+* Windows 2012 R2 STD(2021. 06. 22.)
+    * May 2021 security update applied: https://support.microsoft.com/en-us/topic/may-11-2021-kb5003209-monthly-rollup-6be347aa-f8f3-4d26-8260-58d0636f3fe7
+* Windows 2016 STD(2021. 06. 22.)
+    * May 2021 security update applied: https://support.microsoft.com/en-us/topic/kb5001402-servicing-stack-update-for-windows-10-version-1607-april-13-2021-0c0367b8-2389-4154-a17e-6df57123423d
+* Windows 2019 STD(2021. 06. 22.)
+    * May 2021 security update applied: https://support.microsoft.com/en-us/topic/may-11-2021-kb5003171-os-build-17763-1935-3f03e74b-4759-4ca3-b9f1-4bc0d5ab5d27
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2021. 06. 22.)
+    * May 2021 security update applied: https://support.microsoft.com/en-us/topic/may-11-2021-kb5003209-monthly-rollup-6be347aa-f8f3-4d26-8260-58d0636f3fe7
+* Windows 2016 STD with MS-SQL 2016 Standard(2021. 06. 22.)
+    * May 2021 security update applied: https://support.microsoft.com/en-us/topic/kb5001402-servicing-stack-update-for-windows-10-version-1607-april-13-2021-0c0367b8-2389-4154-a17e-6df57123423d
+* Windows 2016 STD with MS-SQL 2019 Express(2021. 06. 22.)
+    * May 2021 security update applied: https://support.microsoft.com/en-us/topic/kb5001402-servicing-stack-update-for-windows-10-version-1607-april-13-2021-0c0367b8-2389-4154-a17e-6df57123423d
+* Windows 2016 STD with MS-SQL 2017 Standard(2021. 06. 22.)
+    * May 2021 security update applied: https://support.microsoft.com/en-us/topic/kb5001402-servicing-stack-update-for-windows-10-version-1607-april-13-2021-0c0367b8-2389-4154-a17e-6df57123423d
+* Windows 2016 STD with MS-SQL 2019 Standard(2021. 06. 22.)
+    * May 2021 security update applied: https://support.microsoft.com/en-us/topic/kb5001402-servicing-stack-update-for-windows-10-version-1607-april-13-2021-0c0367b8-2389-4154-a17e-6df57123423d
+* Windows 2019 STD with MS-SQL 2019 Standard(2021. 06. 22.)
+    * May 2021 security update applied: https://support.microsoft.com/en-us/topic/may-11-2021-kb5003171-os-build-17763-1935-3f03e74b-4759-4ca3-b9f1-4bc0d5ab5d27
+
 ### April 27, 2021
 
 #### Image
