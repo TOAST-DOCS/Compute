@@ -1,6 +1,6 @@
 ## Compute > Release Notes
 
-### Jun 22, 2021
+### Jun 29, 2021
 
 #### Image
 
