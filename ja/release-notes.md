@@ -1,10 +1,5 @@
 ## Compute > リリースノート
 
-### 2021. 07. 05.
-
-#### System Monitoring
-* CloudTrail連動
-
 ### 2021. 06. 29.
 
 #### Image
