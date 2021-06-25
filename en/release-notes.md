@@ -52,6 +52,15 @@
 * Windows 2019 STD with MS-SQL 2019 Standard(2021. 06. 22.)
     * May 2021 security update applied: https://support.microsoft.com/en-us/topic/may-11-2021-kb5003171-os-build-17763-1935-3f03e74b-4759-4ca3-b9f1-4bc0d5ab5d27
 
+#### System Monitoring
+
+* Improved OpenMetrics notification group input guide text
+* Improved server/agent status tooltip size in server dashboard
+* Fixed the problem in which some dropdown menu buttons were displayed abnormally on the event status screen
+* Modified the instance name changed in **Compute > Instance** to be reflected in the server list on the server dashboard
+* Modified loading bar
+* Added API compatible to Prometheus (Beta)
+
 ### April 27, 2021
 
 #### Image
