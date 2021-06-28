@@ -1,5 +1,66 @@
 ## Compute > リリースノート
 
+### 2021. 06. 29.
+
+#### Image
+
+* Node exporter
+    * Advanced Monitoringをサポートするためにinstance作成時に該当ツールが自動的にインストールされます。
+
+* CentOS 7.8(2021. 06. 22.)
+    * イメージアップデート
+* CentOS 7.8 for NAT(2021. 06. 22.)
+    * イメージアップデート
+* CentOS 7.8 with MySQL 5.6.38(2021. 06. 22.)
+    * イメージアップデート
+* CentOS 7.8 with MySQL 5.6.50(2021. 06. 22.)
+    * イメージアップデート
+* CentOS 7.8 with MySQL 5.7.20(2021. 06. 22.)
+    * イメージアップデート
+* CentOS 7.8 with MySQL 5.7.32(2021. 06. 22.)
+    * イメージアップデート
+* CentOS 7.8 with MySQL 8.0.22(2021. 06. 22.)
+    * イメージアップデート
+* Debian 9.13 Stretch(2021. 06. 22.)
+    * イメージアップデート
+* Debian 10.9 Buster(2021. 06. 22.)
+    * イメージアップデート
+* Ubuntu Server 18.04.5 LTS(2021. 06. 22.)
+    * イメージアップデート
+* Ubuntu Server 18.04.5 LTS for NAT(2021. 06. 22.)
+    * イメージアップデート
+* Ubuntu Server 18.04.5 LTS with NVIDIA(2021. 06. 22.)
+    * イメージアップデート
+* Ubuntu Server 20.04.2 LTS(2021. 06. 22.)
+    * イメージアップデート
+* Windows 2012 R2 STD(2021. 06. 22.)
+    * 2021年05月セキュリティアップデート反映：https://support.microsoft.com/en-us/topic/may-11-2021-kb5003209-monthly-rollup-6be347aa-f8f3-4d26-8260-58d0636f3fe7
+* Windows 2016 STD(2021. 06. 22.)
+    * 2021年05月セキュリティアップデート反映：https://support.microsoft.com/en-us/topic/kb5001402-servicing-stack-update-for-windows-10-version-1607-april-13-2021-0c0367b8-2389-4154-a17e-6df57123423d
+* Windows 2019 STD(2021. 06. 22.)
+    * 2021年05月セキュリティアップデート反映：https://support.microsoft.com/en-us/topic/may-11-2021-kb5003171-os-build-17763-1935-3f03e74b-4759-4ca3-b9f1-4bc0d5ab5d27
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2021. 06. 22.)
+    * 2021年05月セキュリティアップデート反映：https://support.microsoft.com/en-us/topic/may-11-2021-kb5003209-monthly-rollup-6be347aa-f8f3-4d26-8260-58d0636f3fe7
+* Windows 2016 STD with MS-SQL 2016 Standard(2021. 06. 22.)
+    * 2021年05月セキュリティアップデート反映：https://support.microsoft.com/en-us/topic/kb5001402-servicing-stack-update-for-windows-10-version-1607-april-13-2021-0c0367b8-2389-4154-a17e-6df57123423d
+* Windows 2016 STD with MS-SQL 2019 Express(2021. 06. 22.)
+    * 2021年05月セキュリティアップデート反映：https://support.microsoft.com/en-us/topic/kb5001402-servicing-stack-update-for-windows-10-version-1607-april-13-2021-0c0367b8-2389-4154-a17e-6df57123423d
+* Windows 2016 STD with MS-SQL 2017 Standard(2021. 06. 22.)
+    * 2021年05月セキュリティアップデート反映：https://support.microsoft.com/en-us/topic/kb5001402-servicing-stack-update-for-windows-10-version-1607-april-13-2021-0c0367b8-2389-4154-a17e-6df57123423d
+* Windows 2016 STD with MS-SQL 2019 Standard(2021. 06. 22.)
+    * 2021年05月セキュリティアップデート反映：https://support.microsoft.com/en-us/topic/kb5001402-servicing-stack-update-for-windows-10-version-1607-april-13-2021-0c0367b8-2389-4154-a17e-6df57123423d
+* Windows 2019 STD with MS-SQL 2019 Standard(2021. 06. 22.)
+    * 2021年05月セキュリティアップデート反映：https://support.microsoft.com/en-us/topic/may-11-2021-kb5003171-os-build-17763-1935-3f03e74b-4759-4ca3-b9f1-4bc0d5ab5d27
+
+#### System Monitoring
+
+* OpenMetrics通知グループ入力ガイド文言を改善
+* サーバーダッシュボードのサーバー/エージェント状態ツールチップサイズを改善
+* イベント状況画面で一部ドロップダウンメニューボタンが正常に表示されない現象を修正
+* Compute > Instanceで変更したインスタンス名がサーバーダッシュボードサーバーリストに反映されるように修正
+* ローディングバーを変更
+* Prometheus互換APIを追加(ベータ)
+
 ### 2021. 04. 27.
 
 #### Image
