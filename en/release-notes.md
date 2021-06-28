@@ -61,6 +61,7 @@
 * Modified loading bar
 * Added API compatible to Prometheus (Beta)
 
+
 ### April 27, 2021
 
 #### Image
