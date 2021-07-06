@@ -1,23 +1,30 @@
 ## Compute > 릴리스 노트
 
-### 2021. 06. 29.
+### 2021. 07. 05.
 
 #### Image
+
+* 신규 이미지 추가
+    * CentOS 7.8 with MySQL 5.6.38(2021. 06. 22.)
+    * CentOS 7.8 with MySQL 5.6.50(2021. 06. 22.)
+    * CentOS 7.8 with MySQL 5.7.20(2021. 06. 22.)
+    * CentOS 7.8 with MySQL 5.7.32(2021. 06. 22.)
+    * CentOS 7.8 with MySQL 8.0.22(2021. 06. 22.)
+
+* 이미지 지원 종료
+    * CentOS 6.10(2020. 12. 22.)
+    * CentOS 7.5(2020. 12. 22.)
+    * CentOS Linux 6.10 with MySQL 5.6.38(2020. 12. 22.)
+    * CentOS Linux 6.10 with MySQL 5.7.20(2020. 12. 22.)
+    * Ubuntu Server 16.04.7 LTS(2020. 12. 22.)
 
 * Node exporter
     * Advanced Monitoring 지원을 위해 인스턴스 생성 시 해당 도구가 자동으로 설치됩니다.
 
+* Linux 보안 취약점 패치 적용
+    * Heap-based buffer overflow in Sudo(CVE-2021-3156)
+
 * CentOS 7.8(2021. 06. 22.)
-    * 이미지 업데이트
-* CentOS 7.8 with MySQL 5.6.38(2021. 06. 22.)
-    * 이미지 업데이트
-* CentOS 7.8 with MySQL 5.6.50(2021. 06. 22.)
-    * 이미지 업데이트
-* CentOS 7.8 with MySQL 5.7.20(2021. 06. 22.)
-    * 이미지 업데이트
-* CentOS 7.8 with MySQL 5.7.32(2021. 06. 22.)
-    * 이미지 업데이트
-* CentOS 7.8 with MySQL 8.0.22(2021. 06. 22.)
     * 이미지 업데이트
 * Debian 9.13 Stretch(2021. 06. 22.)
     * 이미지 업데이트
@@ -47,15 +54,6 @@
     * 2021년 05월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/kb5001402-servicing-stack-update-for-windows-10-version-1607-april-13-2021-0c0367b8-2389-4154-a17e-6df57123423d
 * Windows 2019 STD with MS-SQL 2019 Standard(2021. 06. 22.)
     * 2021년 05월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/may-11-2021-kb5003171-os-build-17763-1935-3f03e74b-4759-4ca3-b9f1-4bc0d5ab5d27
-
-#### System Monitoring
-* 신규 기능 추가: Advanced Monitoring(OpenMetrics)
-    * OpenMetrics(Prometheus exposition format) 지표 수집, 조회, 알림 기능 제공
-* 서버 대시보드의 서버/에이전트 상태 툴팁 크기 개선
-* 이벤트 현황 화면에서 일부 드롭다운 메뉴 버튼이 비정상적으로 노출되던 현상 수정
-* **Compute > Instance**에서 변경한 인스턴스명이 서버 대시보드 서버 목록에 반영되도록 수정
-* 로딩 바 변경
-* Prometheus 호환 API 추가(베타)
 
 ### 2021. 01. 19.
 
