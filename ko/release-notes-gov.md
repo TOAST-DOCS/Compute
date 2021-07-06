@@ -9,8 +9,6 @@
 
 * CentOS 7.8(2021. 06. 22.)
     * 이미지 업데이트
-* CentOS 7.8 for NAT(2021. 06. 22.)
-    * 이미지 업데이트
 * CentOS 7.8 with MySQL 5.6.38(2021. 06. 22.)
     * 이미지 업데이트
 * CentOS 7.8 with MySQL 5.6.50(2021. 06. 22.)
@@ -26,8 +24,6 @@
 * Debian 10.9 Buster(2021. 06. 22.)
     * 이미지 업데이트
 * Ubuntu Server 18.04.5 LTS(2021. 06. 22.)
-    * 이미지 업데이트
-* Ubuntu Server 18.04.5 LTS for NAT(2021. 06. 22.)
     * 이미지 업데이트
 * Ubuntu Server 18.04.5 LTS with NVIDIA(2021. 06. 22.)
     * 이미지 업데이트
