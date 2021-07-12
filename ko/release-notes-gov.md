@@ -55,6 +55,10 @@
 * Windows 2019 STD with MS-SQL 2019 Standard(2021. 06. 22.)
     * 2021년 05월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/may-11-2021-kb5003171-os-build-17763-1935-3f03e74b-4759-4ca3-b9f1-4bc0d5ab5d27
 
+#### System Monitoring
+
+* CloudTrail 연동
+
 ### 2021. 01. 19.
 
 #### Image
