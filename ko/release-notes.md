@@ -1,5 +1,13 @@
 ## Compute > 릴리스 노트
 
+### 2021. 07. 27.
+
+#### System Monitoring
+
+* 버그 수정: 알림 그룹의 서버, 사용자 그룹 추가 시 'There are no entires.'가 선택 가능한 현상 수정
+* 버그 수정: Advanced Monitoring 레이아웃 빠르게 생성하면 5개 초과 생성 가능한 현상 수정
+* 버그 수정: **Advanced Monitoring > 작업 공간 > 수집 대상**에서 동일 포트로 동일한 명칭의 다른 인스턴스를 수집 대상으로 추가 불가한 현상 수정
+
 ### 2021. 06. 29.
 
 #### Image
