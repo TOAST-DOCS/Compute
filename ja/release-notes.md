@@ -1,6 +1,6 @@
 ## Compute > リリースノート
 
-### 2021. 06. 22.
+### 2021. 06. 29.
 
 #### Image
 
@@ -51,6 +51,15 @@
     * 2021年05月セキュリティアップデート反映：https://support.microsoft.com/en-us/topic/kb5001402-servicing-stack-update-for-windows-10-version-1607-april-13-2021-0c0367b8-2389-4154-a17e-6df57123423d
 * Windows 2019 STD with MS-SQL 2019 Standard(2021. 06. 22.)
     * 2021年05月セキュリティアップデート反映：https://support.microsoft.com/en-us/topic/may-11-2021-kb5003171-os-build-17763-1935-3f03e74b-4759-4ca3-b9f1-4bc0d5ab5d27
+
+#### System Monitoring
+
+* OpenMetrics通知グループ入力ガイド文言を改善
+* サーバーダッシュボードのサーバー/エージェント状態ツールチップサイズを改善
+* イベント状況画面で一部ドロップダウンメニューボタンが正常に表示されない現象を修正
+* Compute > Instanceで変更したインスタンス名がサーバーダッシュボードサーバーリストに反映されるように修正
+* ローディングバーを変更
+* Prometheus互換APIを追加(ベータ)
 
 ### 2021. 04. 27.
 
