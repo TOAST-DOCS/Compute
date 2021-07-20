@@ -2,6 +2,19 @@
 
 ### 2021. 07. 27.
 
+#### Instance 
+* 인스턴스 템플릿을 이용한 인스턴스 생성 지원
+
+#### Instance Template
+* Instance Template 서비스 추가
+    * 자주 사용하는 인스턴스 구성 요소 정보를 템플릿 형태로 미리 정의해 보관
+    * 사용자가 정의한 템플릿을 Instance 또는 Scaling Group 생성에 사용
+
+#### Auto Scale
+* Instance Template 탭 제거
+    * Instance Template 서비스에서 만든 템플릿으로 Scaling Group 생성
+* 자동 복구 정책 옵션 선택 옵션 추가
+
 #### System Monitoring
 
 * 버그 수정: 알림 그룹의 서버, 사용자 그룹을 추가할 때 'There are no entires.'를 선택할 수 있던 문제 수정
