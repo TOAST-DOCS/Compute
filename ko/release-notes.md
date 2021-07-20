@@ -1,5 +1,11 @@
 ## Compute > 릴리스 노트
 
+### 2021. 07. 27.
+
+#### Instance
+
+인스턴스 템플릿(Instance Template) 기능 추가
+
 ### 2021. 06. 29.
 
 #### Image
