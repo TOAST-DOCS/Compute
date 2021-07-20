@@ -2,6 +2,10 @@
 
 ### 2021. 07. 27.
 
+### Instance
+
+인스턴스 템플릿(Instance Template) 기능 추가
+
 #### System Monitoring
 
 * 버그 수정: 알림 그룹의 서버, 사용자 그룹을 추가할 때 'There are no entires.'를 선택할 수 있던 문제 수정
