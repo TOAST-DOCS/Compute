@@ -1,5 +1,13 @@
 ## Compute > Release Notes
 
+### July 27, 2021
+
+#### System Monitoring
+
+* Bug fixed: Fixed the problem of selecting ‘There are no entires.’ when adding server of notification group and user group. 
+* Bug fixed: Fixed the problem of creating more than 5 when creating advanced monitoring layout quickly
+* Bug fixed: Fixed the problem of not being able to add other instances with same name to the same port as the collection target in **Advanced Monitoring > Work Space > Collection Target**
+
 ### Jun 29, 2021
 
 #### Image
