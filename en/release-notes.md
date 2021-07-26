@@ -1,5 +1,26 @@
 ## Compute > Release Notes
 
+### July 27, 2021
+
+#### Instance 
+* Supports creating instances using Instance Template
+
+#### Instance Template
+* Instance Template service added
+    * Predefines and keeps frequently used instance component information in the form of a template
+    * Uses a user-defined template for creating an Instance or Scaling Group
+
+#### Auto Scale
+* Instance Template tab removed
+    * Scaling Group created using the template made by the Instance Template service
+* Added the option of selecting the auto restoration policy option
+
+#### System Monitoring
+
+* Bug fixed: Fixed the problem of selecting ‘There are no entries.’ when adding server of notification group and user group.
+* Bug fixed: Fixed the problem of creating more than 5 when creating advanced monitoring layout quickly
+* Bug fixed: Fixed the problem of not being able to add other instances with same name to the same port as the collection target in **Advanced Monitoring > Workspace > Collection Target**
+
 ### Jun 29, 2021
 
 #### Image

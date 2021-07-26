@@ -1,5 +1,26 @@
 ## Compute > リリースノート
 
+### 2021. 07. 27.
+
+#### Instance 
+* インスタンステンプレートを利用したインスタンス作成をサポート
+
+#### Instance Template
+* Instance Templateサービス追加
+    * 頻繁に使用するインスタンスコンポーネント情報をテンプレートとして定義して保管
+    * ユーザーが定義したテンプレートをInstanceまたはScaling Groupの作成に使用
+
+#### Auto Scale
+* Instance Templateタブを削除
+    * Instance Templateサービスで作成したテンプレートでScaling Groupを作成
+* 自動復旧ポリシーオプション選択オプションを追加
+
+#### System Monitoring
+
+* バグ修正：通知グループのサーバー、ユーザーグループを追加する時に「There are no entires.」が選択できる現象を修正
+* バグ修正：Advanced Monitoringレイアウトを早く作成すると5個を超えて作成できる現象を修正
+* バグ修正：**Advanced Monitoring > 作業スペース > 収集対象**で同じポートに同じ名称の他のインスタンスを収集対象に追加できない現象を修正
+
 ### 2021. 06. 29.
 
 #### Image
