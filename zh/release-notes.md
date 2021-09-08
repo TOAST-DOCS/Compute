@@ -24,7 +24,7 @@
     * Updated to save changes, by selecting a server and user group and clicking the save button
 
 
-### December 17, 2019 
+### December 17, 2019
 
 #### Auto Scale
 * 修改为可在实例模板列表及详细信息中查看创建时输入的所有信息
@@ -994,7 +994,7 @@
 * 인스턴스 사양을 변경할 수 있도록 기능이 추가되었습니다.
     * 사용하던 인스턴스의 디스크는 그대로 보존하면서 CPU/Memory를 업그레이드 하거나 다운그레이드 할 수 있습니다.
     * 블록 스토리지 크기는 변경이 불가능합니다.
-    * 사양 변경을 위해 인스턴스는 종료 상태여야 합니다.
+    * 사양 변경을 위해 인스턴스는 중지 상태여야 합니다.
     * 자세한 제약 사항은 [인스턴스 사양 변경](/Compute/Instance/ko/console-guide/#_14) 참조
 * Low IOPS SSD 사양(U 타입)이 추가되었습니다.
     * 좀 더 낮은 가격에 인스턴스를 이용할 수 있도록 저사양 인스턴스 사양이 추가되었습니다.
