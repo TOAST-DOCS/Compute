@@ -3,9 +3,9 @@
 ### 2021. 09. 14.
 #### System Monitoring 
 - 신규 API 추가: 작업 공간, 수집 대상 조회/추가/삭제 API 추가
-- `@Linux`, `@Windows` 기본 작업 공간 추가
-    - `@Linux`: 인스턴스에 설치된 node exporter의 지표를 수집합니다. Linux OS 계열 인스턴스 생성시 자동으로 `@Linux`의 수집 대상으로 등록됩니다.
-    - `@Windows`: 인스턴스에 설치된 windows exporter의 지표를 수집합니다. Windows OS 계열 인스턴스 생성시 자동으로 `@Windows`의 수집 대상으로 등록됩니다.
+- @Linux, @Windows 기본 작업 공간 추가
+    - @Linux: 인스턴스에 설치된 node exporter의 지표를 수집합니다. Linux OS 계열 인스턴스 생성시 자동으로 @Linux의 수집 대상으로 등록됩니다.
+    - @Windows: 인스턴스에 설치된 windows exporter의 지표를 수집합니다. Windows OS 계열 인스턴스 생성시 자동으로 @Windows의 수집 대상으로 등록됩니다.
 
 ### 2021. 07. 27.
 
