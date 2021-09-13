@@ -1,5 +1,12 @@
 ## Compute > Release Notes
 
+### September 14, 2021
+#### System Monitoring 
+- Added new APIs: added APIs to view, add, or delete workspaces and collection targets
+- Added `@Linux`, `@Windows` default workspaces
+    - `@Linux`: Collects metrics of node exporter installed on an instance. When you create a Linux OS type instance, it is automatically added as the collection target of `@Linux`.
+    - `@Windows`: Collects metrics of windows exporter installed on an instance. When you create a Windows OS type instance, it is automatically added as the collection target of `@Windows`.
+
 ### July 27, 2021
 
 #### Instance 
