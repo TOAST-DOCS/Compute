@@ -1,5 +1,12 @@
 ## Compute > リリースノート
 
+### 2021. 09. 14.
+#### System Monitoring 
+- 新規API追加：ワークスペース、収集対象照会/追加/削除APIを追加
+- `@Linux`、`@Windows`基本ワークスペースを追加
+    - `@Linux`：インスタンスにインストールされたnode exporterの指標を収集します。Linux OS系列のインスタンス作成時、自動的に`@Linux`の収集対象として登録されます。
+    - `@Windows`：インスタンスにインストールされたwindows exporterの指標を収集します。Windows OS系列のインスタンス作成時、自動的に`@Windows`の収集対象として登録されます。
+
 ### 2021. 07. 27.
 
 #### Instance 
