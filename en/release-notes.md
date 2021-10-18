@@ -1,7 +1,12 @@
 ## Compute > Release Notes
 
+### October 26, 2021
+### Image Builder
+* Image Builder service added
+    * Creates a private image by combining an OS image, application installation components, and user scripts
+
 ### September 14, 2021
-#### System Monitoring 
+#### System Monitoring
 - Added new APIs: added APIs to view, add, or delete workspaces and collection targets
 - Added @Linux, @Windows default workspaces
     - @Linux: Collects metrics of node exporter installed on an instance. When you create a Linux OS type instance, it is automatically added as the collection target of @Linux.
@@ -9,7 +14,7 @@
 
 ### July 27, 2021
 
-#### Instance 
+#### Instance
 * Supports creating instances using Instance Template
 
 #### Instance Template
