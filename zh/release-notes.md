@@ -1,5 +1,264 @@
 ## Compute > Release Notes
 
+### October 26, 2021
+### Image Builder
+* Image Builder service added
+    * Creates a private image by combining an OS image, application installation components, and user scripts
+
+### September 14, 2021
+#### System Monitoring
+- Added new APIs: added APIs to view, add, or delete workspaces and collection targets
+- Added @Linux, @Windows default workspaces
+    - @Linux: Collects metrics of node exporter installed on an instance. When you create a Linux OS type instance, it is automatically added as the collection target of @Linux.
+    - @Windows: Collects metrics of windows exporter installed on an instance. When you create a Windows OS type instance, it is automatically added as the collection target of @Windows.
+
+### July 27, 2021
+
+#### Instance
+* Supports creating instances using Instance Template
+
+#### Instance Template
+* Instance Template service added
+    * Predefines and keeps frequently used instance component information in the form of a template
+    * Uses a user-defined template for creating an Instance or Scaling Group
+
+#### Auto Scale
+* Instance Template tab removed
+    * Scaling Group created using the template made by the Instance Template service
+* Added the option of selecting the auto restoration policy option
+
+#### System Monitoring
+
+* Bug fixed: Fixed the problem of selecting ‘There are no entries.’ when adding server of notification group and user group.
+* Bug fixed: Fixed the problem of creating more than 5 when creating advanced monitoring layout quickly
+* Bug fixed: Fixed the problem of not being able to add other instances with same name to the same port as the collection target in **Advanced Monitoring > Workspace > Collection Target**
+
+### Jun 29, 2021
+
+#### Image
+
+* Node exporter
+    * The tool is automatically installed upon creating an instance to support Advanced Monitoring.
+
+* CentOS 7.8(2021. 06. 22.)
+    * Image updated
+* CentOS 7.8 for NAT(2021. 06. 22.)
+    * Image updated
+* CentOS 7.8 with MySQL 5.6.38(2021. 06. 22.)
+    * Image updated
+* CentOS 7.8 with MySQL 5.6.50(2021. 06. 22.)
+    * Image updated
+* CentOS 7.8 with MySQL 5.7.20(2021. 06. 22.)
+    * Image updated
+* CentOS 7.8 with MySQL 5.7.32(2021. 06. 22.)
+    * Image updated
+* CentOS 7.8 with MySQL 8.0.22(2021. 06. 22.)
+    * Image updated
+* Debian 9.13 Stretch(2021. 06. 22.)
+    * Image updated
+* Debian 10.9 Buster(2021. 06. 22.)
+    * Image updated
+* Ubuntu Server 18.04.5 LTS(2021. 06. 22.)
+    * Image updated
+* Ubuntu Server 18.04.5 LTS for NAT(2021. 06. 22.)
+    * Image updated
+* Ubuntu Server 18.04.5 LTS with NVIDIA(2021. 06. 22.)
+    * Image updated
+* Ubuntu Server 20.04.2 LTS(2021. 06. 22.)
+    * Image updated
+* Windows 2012 R2 STD(2021. 06. 22.)
+    * May 2021 security update applied: https://support.microsoft.com/en-us/topic/may-11-2021-kb5003209-monthly-rollup-6be347aa-f8f3-4d26-8260-58d0636f3fe7
+* Windows 2016 STD(2021. 06. 22.)
+    * May 2021 security update applied: https://support.microsoft.com/en-us/topic/kb5001402-servicing-stack-update-for-windows-10-version-1607-april-13-2021-0c0367b8-2389-4154-a17e-6df57123423d
+* Windows 2019 STD(2021. 06. 22.)
+    * May 2021 security update applied: https://support.microsoft.com/en-us/topic/may-11-2021-kb5003171-os-build-17763-1935-3f03e74b-4759-4ca3-b9f1-4bc0d5ab5d27
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2021. 06. 22.)
+    * May 2021 security update applied: https://support.microsoft.com/en-us/topic/may-11-2021-kb5003209-monthly-rollup-6be347aa-f8f3-4d26-8260-58d0636f3fe7
+* Windows 2016 STD with MS-SQL 2016 Standard(2021. 06. 22.)
+    * May 2021 security update applied: https://support.microsoft.com/en-us/topic/kb5001402-servicing-stack-update-for-windows-10-version-1607-april-13-2021-0c0367b8-2389-4154-a17e-6df57123423d
+* Windows 2016 STD with MS-SQL 2019 Express(2021. 06. 22.)
+    * May 2021 security update applied: https://support.microsoft.com/en-us/topic/kb5001402-servicing-stack-update-for-windows-10-version-1607-april-13-2021-0c0367b8-2389-4154-a17e-6df57123423d
+* Windows 2016 STD with MS-SQL 2017 Standard(2021. 06. 22.)
+    * May 2021 security update applied: https://support.microsoft.com/en-us/topic/kb5001402-servicing-stack-update-for-windows-10-version-1607-april-13-2021-0c0367b8-2389-4154-a17e-6df57123423d
+* Windows 2016 STD with MS-SQL 2019 Standard(2021. 06. 22.)
+    * May 2021 security update applied: https://support.microsoft.com/en-us/topic/kb5001402-servicing-stack-update-for-windows-10-version-1607-april-13-2021-0c0367b8-2389-4154-a17e-6df57123423d
+* Windows 2019 STD with MS-SQL 2019 Standard(2021. 06. 22.)
+    * May 2021 security update applied: https://support.microsoft.com/en-us/topic/may-11-2021-kb5003171-os-build-17763-1935-3f03e74b-4759-4ca3-b9f1-4bc0d5ab5d27
+
+#### System Monitoring
+
+* Improved OpenMetrics notification group input guide text
+* Improved server/agent status tooltip size in server dashboard
+* Fixed the problem in which some dropdown menu buttons were displayed abnormally on the event status screen
+* Modified the instance name changed in **Compute > Instance** to be reflected in the server list on the server dashboard
+* Modified loading bar
+* Added API compatible to Prometheus (Beta)
+
+
+### April 27, 2021
+
+#### Image
+
+* Added new image (Pyeongchon region)
+    * CentOS 7.8 for NAT(2021. 04. 22.)
+    * Ubuntu Server 18.04.5 LTS for NAT(2021. 04. 22.)
+* Image support ended
+    * Ubuntu Server 16.04.7 LTS(2020. 12. 22.)
+
+### February 23, 2021
+
+#### Image
+
+* New images added
+    * CentOS 7.8 with MySQL 5.6.38(2021. 02. 23.)
+    * CentOS 7.8 with MySQL 5.6.50(2021. 02. 23.)
+    * CentOS 7.8 with MySQL 5.7.20(2021. 02. 23.)
+    * CentOS 7.8 with MySQL 5.7.32(2021. 02. 23.)
+    * CentOS 7.8 with MySQL 8.0.22(2021. 02. 23.)
+
+* Image support ended
+    * CentOS 6.10(2020. 12. 22.)
+    * CentOS 7.5(2020. 12. 22.)
+    * CentOS Linux 6.10 with MySQL 5.6.38(2020. 12. 22.)
+    * CentOS Linux 6.10 with MySQL 5.7.20(2020. 12. 22.)
+
+* CentOS 7.8(2021. 02. 23.)
+    * Image updated
+
+* Linux security vulnerability patch applied
+    * Heap-based buffer overflow in Sudo(CVE-2021-3156)
+    * Applied when creating a new instance
+
+### January 26, 2021
+
+#### System Monitoring
+
+- Added new feature: Advanced Monitoring (OpenMetrics)
+  - Provides the OpenMetrics (Prometheus exposition format) index collection, retrieval, and notification features
+
+### December 29, 2020
+
+#### Image
+* CentOS 6.10(2020. 12. 22.)
+    * Image Update
+* CentOS 7.5(2020. 12. 22.)
+    * Image Update
+* CentOS 7.8(2020. 12. 22.)
+    * Image Update
+* CentOS Linux 6.10 with MySQL 5.6.38(2020. 12. 22.)
+    * Image Update
+* CentOS Linux 6.10 with MySQL 5.7.20(2020. 12. 22.)
+    * Image Update
+* Debian 9.13 Stretch(2020. 12. 22.)
+    * Image Update
+* Debian 10.7 Buster(2020. 12. 22.)
+    * Image Update
+* Ubuntu Server 16.04.7 LTS(2020. 12. 22.)
+    * Image Update
+* Ubuntu Server 18.04.5 LTS(2020. 12. 22.)
+    * Image Update
+* Ubuntu Server 20.04.1 LTS(2020. 12. 22.)
+    * Image Update
+* Ubuntu Server 18.04.5 LTS with NVIDIA(2020. 12. 22.)
+    * Image Update
+* Windows 2012 R2 STD(2020. 12. 22.)
+    * November 2020 security updates applied: https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update
+* Windows 2016 STD(2020. 12. 22.)
+    * November 2020 security updates applied: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+* Windows 2019 STD(2020. 12. 22.)
+    * November 2020 security updates applied: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2020. 12. 22.)
+    * November 2020 security updates applied: https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update
+* Windows 2016 STD with MS-SQL 2016 Standard(2020. 12. 22.)
+    * November 2020 security updates applied: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+* Windows 2016 STD with MS-SQL 2019 Express(2020. 12. 22.)
+    * November 2020 security updates applied: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+* Windows 2016 STD with MS-SQL 2017 Standard(2020. 12. 22.)
+    * November 2020 security updates applied: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+* Windows 2016 STD with MS-SQL 2019 Standard(2020. 12. 22.)
+    * November 2020 security updates applied: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+* Windows 2019 STD with MS-SQL 2019 Standard(2020. 12. 22.)
+    * November 2020 security updates applied: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
+
+### November 24, 2020
+
+#### Auto Scale
+* Added the feature of associating with Deploy
+
+### August 25, 2020
+
+#### Instance
+* Added the **Initialize Password** button on the **Windows Instance Access Information** tab.  
+* Added the feature of initializing password of original instance when creating a Windows image
+
+#### Image
+* Added New Images
+    * Cent OS 7.8 (Aug.18,2020)
+    * Ubuntu 20.04 LTS (Aug.18,2020)
+    * Windows 2016 STD with MS-SQL 2019 Express (Aug.18,2020)
+    * Windows 2016 STD with MS-SQL 2017 Standard (Aug.18,2020)
+    * Windows 2016 STD with MS-SQL 2019 Standard (Aug.18,2020)
+    * Windows 2019 STD with MS-SQL 2019 Standard (Aug.18,2020)
+
+* CentOS 6.10 (Aug.18,2020)
+    * Updated image
+* CentOS 7.5 (Aug.18,2020)
+    * Updated image
+* CentOS Linux 6.10 with MySQL 5.6.38 (Aug.18,2020)
+    * Updated image
+* CentOS Linux 6.10 with MySQL 5.7.20 (Aug.18,2020)
+    * Updated image
+* Debian 9.9 Stretch (Aug.18,2020)
+    * Updated image
+* Debian 10.5 Buster (Aug.18,2020)
+    * Updated image
+* Ubuntu Server 16.04.6 LTS (Aug.18,2020)
+    * Updated image
+* Ubuntu Server 18.04.4 LTS (Aug.18,2020)
+    * Updated image
+* Ubuntu Server 18.04.4 LTS with NVIDIA (Aug.18,2020)
+    * Updated image
+* Windows 2012 R2 STD (Aug.18,2020)
+    * Updated image
+* Windows 2016 STD (Aug.18,2020)
+    * Updated image
+* Windows 2019 STD (Aug.18,2020)
+    * Updated image
+* Windows 2012 R2 STD with MS-SQL 2016 Standard (Aug.18,2020)
+    * Updated image
+* Windows 2016 STD with MS-SQL 2016 Standard (Aug.18,2020)
+    * Updated image
+
+* Closed support for image
+    * Windows 2012 R2 STD with MS-SQL 2012 Standard (Feb.18,2020)
+    * Windows 2012 R2 STD with MS-SQL 2014 Standard (Feb.18,2020)
+    * Windows 2012 R2 STD with MS-SQL 2016 Express (Feb.18,2020)
+
+### June 23, 2020
+
+#### System Monitoring
+
+* Updated chart and legend names to clarify  
+* Added detail indications on a chart for items with more details
+
+#### Instance
+* Added the feature of querying public keys registered at keypair
+* Released the service of creating GPU instances readily on console
+* Removed the Delete button from the dialogue box of suspending instances
+
+### May 26, 2020
+
+#### Instance
+
+* Released Public API v2
+    * Updated API specifications to be compatible with Openstack
+    * Supports Terraform
+
+#### Image
+
+* Released Public API v2
+    * Updated API specifications to be compatible with Openstack
+
 ### February 25, 2020
 
 #### System Monitoring
@@ -9,8 +268,8 @@
     * Added the **Forced Stop** button, by which user can  directly close events
 * Agent Updates
     * Optimized communication paths with System Monitoring servers
-        * Indicators can be collected, regardless of internet gateway or security group settings 
-    * Upgraded usage volume for CPU and memory 
+        * Indicators can be collected, regardless of internet gateway or security group settings
+    * Upgraded usage volume for CPU and memory
 
 ### January 21, 2020
 

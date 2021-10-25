@@ -1,7 +1,12 @@
 ## Compute > 릴리스 노트
 
+### 2021. 10. 26.
+### Image Builder
+* Image Builder 서비스 추가
+    * OS 이미지와 애플리케이션 설치 구성 요소, 사용자 스크립트를 조합해 개인 이미지 제작
+
 ### 2021. 09. 14.
-#### System Monitoring 
+#### System Monitoring
 - 신규 API 추가: 작업 공간, 수집 대상 조회/추가/삭제 API 추가
 - @Linux, @Windows 기본 작업 공간 추가
     - @Linux: 인스턴스에 설치된 node exporter의 지표를 수집합니다. Linux OS 계열 인스턴스 생성시 자동으로 @Linux의 수집 대상으로 등록됩니다.
@@ -9,7 +14,7 @@
 
 ### 2021. 07. 27.
 
-#### Instance 
+#### Instance
 * 인스턴스 템플릿을 이용한 인스턴스 생성 지원
 
 #### Instance Template
@@ -158,19 +163,19 @@
 * Windows 2012 R2 STD(2020. 12. 22.)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update
 * Windows 2016 STD(2020. 12. 22.)
-    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830 
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
 * Windows 2019 STD(2020. 12. 22.)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
 * Windows 2012 R2 STD with MS-SQL 2016 Standard(2020. 12. 22.)
-    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update 
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update
 * Windows 2016 STD with MS-SQL 2016 Standard(2020. 12. 22.)
-    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830 
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
 * Windows 2016 STD with MS-SQL 2019 Express(2020. 12. 22.)
-    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830 
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
 * Windows 2016 STD with MS-SQL 2017 Standard(2020. 12. 22.)
-    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830 
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
 * Windows 2016 STD with MS-SQL 2019 Standard(2020. 12. 22.)
-    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830 
+    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
 * Windows 2019 STD with MS-SQL 2019 Standard(2020. 12. 22.)
     * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
 

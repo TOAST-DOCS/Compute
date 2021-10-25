@@ -1,7 +1,12 @@
 ## Compute > リリースノート
 
+### 2021. 10. 26.
+### Image Builder
+* Image Builderサービスを追加
+    * OSイメージとアプリケーションインストールコンポーネント、ユーザースクリプトを組み合わせて個人イメージを製作
+
 ### 2021. 09. 14.
-#### System Monitoring 
+#### System Monitoring
 - 新規API追加：ワークスペース、収集対象照会/追加/削除APIを追加
 - `@Linux`、`@Windows`基本ワークスペースを追加
     - `@Linux`：インスタンスにインストールされたnode exporterの指標を収集します。Linux OS系列のインスタンス作成時、自動的に`@Linux`の収集対象として登録されます。
@@ -9,7 +14,7 @@
 
 ### 2021. 07. 27.
 
-#### Instance 
+#### Instance
 * インスタンステンプレートを利用したインスタンス作成をサポート
 
 #### Instance Template
@@ -123,7 +128,7 @@
 * Linuxセキュリティ脆弱性パッチ適用
     * Heap-based buffer overflow in Sudo(CVE-2021-3156)
     * 新規インスタンス作成時に適用
-  
+
 ### 2021. 01. 26.
 
 #### System Monitoring
