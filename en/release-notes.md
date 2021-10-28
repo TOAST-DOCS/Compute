@@ -1,9 +1,17 @@
 ## Compute > Release Notes
 
 ### October 26, 2021
-### Image Builder
+#### Image Builder
 * Image Builder service added
     * Creates a private image by combining an OS image, application installation components, and user scripts
+
+#### System Monitoring
+
+* OpenMetrics Dashboard > Query
+    * Changed to allow users to select only up to the date one year ago when selecting a query period.
+    * Changed so that guide text regarding data unavailable status or errors is displayed in the chart
+* OpenMetrics Dashboard > Add/Modify Charts
+    * Changed so that, when the user clicks the **Add** button without selecting any metrics, guide text shows up and the location is highlighted.
 
 ### September 14, 2021
 #### System Monitoring
