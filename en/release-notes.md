@@ -5,6 +5,14 @@
 * Image Builder service added
     * Creates a private image by combining an OS image, application installation components, and user scripts
 
+#### System Monitoring
+
+* OpenMetrics 대시보드 > 조회
+    * 조회 기간을 선택할 때 최대 1년 전 날짜까지만 선택 가능하도록 변경
+    * 데이터 없음 또는 오류에 대한 안내 문구가 차트에 표시되도록 변경
+* OpenMetrics 대시보드 > 차트 추가/수정
+    * 지표를 선택하지 않고 **추가** 버튼을 클릭하면 안내 문구가 나타나고 해당 위치가 강조 표시되도록 변경
+
 ### September 14, 2021
 #### System Monitoring
 - Added new APIs: added APIs to view, add, or delete workspaces and collection targets
