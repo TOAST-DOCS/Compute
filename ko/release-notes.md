@@ -1,5 +1,9 @@
 ## Compute > 릴리스 노트
 
+### 2021. 11. 23.
+#### Image
+* GPU 인스턴스를 만들 수 있는 개인 이미지 생성 지원
+
 ### 2021. 10. 26.
 #### Image Builder
 * Image Builder 서비스 추가
