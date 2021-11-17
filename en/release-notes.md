@@ -1,5 +1,9 @@
 ## Compute > Release Notes
 
+### November 23, 2021
+#### Image
+* Supports creating a private image that you can use to create a GPU instance
+
 ### October 26, 2021
 #### Image Builder
 * Image Builder service added
