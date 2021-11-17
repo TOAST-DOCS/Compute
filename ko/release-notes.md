@@ -4,6 +4,14 @@
 #### Image
 * GPU 인스턴스를 만들 수 있는 개인 이미지 생성 지원
 
+#### Image Builder
+* 애플리케이션 추가
+    * Apache Tomcat
+    * Node.js
+    * JEUS
+    * WebtoB
+    * MySQL
+
 ### 2021. 10. 26.
 #### Image Builder
 * Image Builder 서비스 추가
