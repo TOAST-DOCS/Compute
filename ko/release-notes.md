@@ -6,16 +6,21 @@
 
 #### Image Builder
 * 애플리케이션 추가
-    * Apache Tomcat
-    * Node.js
+    * Deep Learning Framework
     * JEUS
     * WebtoB
+    * Apache Tomcat
+    * Node.js
     * MySQL
 
 ### 2021. 10. 26.
 #### Image Builder
 * Image Builder 서비스 추가
     * OS 이미지와 애플리케이션 설치 구성 요소, 사용자 스크립트를 조합해 개인 이미지 제작
+* 애플리케이션 추가
+    * PostgreSQL
+    * MariaDB
+    * CUBRID
 
 #### System Monitoring
 
