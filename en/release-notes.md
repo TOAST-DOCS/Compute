@@ -4,10 +4,23 @@
 #### Image
 * Supports creating a private image that you can use to create a GPU instance
 
+#### Image Builder
+* Added applications
+    * Deep Learning Framework
+    * JEUS
+    * WebtoB
+    * Apache Tomcat
+    * Node.js
+    * MySQL
+
 ### October 26, 2021
 #### Image Builder
 * Image Builder service added
     * Creates a private image by combining an OS image, application installation components, and user scripts
+* Added applications
+    * PostgreSQL
+    * MariaDB
+    * CUBRID
 
 #### System Monitoring
 
