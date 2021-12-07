@@ -4,10 +4,23 @@
 #### Image
 * GPUインスタンスを作成することができる個人イメージの作成をサポート
 
+#### Image Builder
+* アプリケーション追加
+    * Deep Learning Framework
+    * JEUS
+    * WebtoB
+    * Apache Tomcat
+    * Node.js
+    * MySQL
+
 ### 2021. 10. 26.
 #### Image Builder
 * Image Builderサービスを追加
     * OSイメージとアプリケーションインストールコンポーネント、ユーザースクリプトを組み合わせて個人イメージを製作
+* アプリケーション追加
+    * PostgreSQL
+    * MariaDB
+    * CUBRID
 
 #### System Monitoring
 
