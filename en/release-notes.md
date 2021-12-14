@@ -1,6 +1,6 @@
 ## Compute > Release Notes
 
-### 2021. 12. 21.
+### 2021. 12. 28.
 
 #### Image
 * 인스턴스 생성 시 Prometheus 호환 exporter가 자동으로 설치되지 않도록 변경
