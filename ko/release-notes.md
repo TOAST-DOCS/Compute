@@ -1,5 +1,55 @@
 ## Compute > 릴리스 노트
 
+### 2021. 12. 28.
+
+#### Image
+* 인스턴스 생성 시 Prometheus 호환 exporter가 자동으로 설치되지 않도록 변경
+
+* CentOS 7.8(2021. 12. 21.)
+    * 이미지 업데이트
+* CentOS 7.8 for NAT(2021. 12. 21.)
+    * 이미지 업데이트
+* CentOS 7.8 with MySQL 5.6.38(2021. 12. 21.)
+    * 이미지 업데이트
+* CentOS 7.8 with MySQL 5.6.50(2021. 12. 21.)
+    * 이미지 업데이트
+* CentOS 7.8 with MySQL 5.7.20(2021. 12. 21.)
+    * 이미지 업데이트
+* CentOS 7.8 with MySQL 5.7.32(2021. 12. 21.)
+    * 이미지 업데이트
+* CentOS 7.8 with MySQL 8.0.22(2021. 12. 21.)
+    * 이미지 업데이트
+* Debian 9.13 Stretch(2021. 12. 21.)
+    * 이미지 업데이트
+* Debian 10.11 Buster(2021. 12. 21.)
+    * 이미지 업데이트
+* Ubuntu Server 18.04.6 LTS(2021. 12. 21.)
+    * 이미지 업데이트
+* Ubuntu Server 20.04.3 LTS(2021. 12. 21.)
+    * 이미지 업데이트
+* Ubuntu Server 18.04.6 LTS for NAT(2021. 12. 21.)
+    * 이미지 업데이트
+* Ubuntu Server 18.04.6 LTS with NVIDIA(2021. 12. 21.)
+    * 이미지 업데이트
+* Windows 2012 R2 STD(2021. 12. 21.)
+    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007247-monthly-rollup-2c3b6017-82f4-4102-b1e2-36f366bf3520
+* Windows 2016 STD(2021. 12. 21.)
+    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+* Windows 2019 STD(2021. 12. 21.)
+    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
+* Windows Server 2012 R2 with SQL Server 2016 Standard(2021. 12. 21.)
+    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007247-monthly-rollup-2c3b6017-82f4-4102-b1e2-36f366bf3520
+* Windows Server 2016 with SQL Server 2016 Standard(2021. 12. 21.)
+    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+* Windows Server 2016 with SQL Server 2019 Express(2021. 12. 21.)
+    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+* Windows Server 2016 with SQL Server 2017 Standard(2021. 12. 21.)
+    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+* Windows Server 2016 with SQL Server 2019 Standard(2021. 12. 21.)
+    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+* Windows Server 2019 with SQL Server 2019 Standard(2021. 12. 21.)
+    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
+
 ### 2021. 11. 23.
 #### Image
 * GPU 인스턴스를 만들 수 있는 개인 이미지 생성 지원
@@ -62,7 +112,7 @@
 
 #### Image
 
-* Node exporter
+* Prometheus 호환 exporter
     * Advanced Monitoring 지원을 위해 인스턴스 생성 시 해당 도구가 자동으로 설치됩니다.
 
 * CentOS 7.8(2021. 06. 22.)
