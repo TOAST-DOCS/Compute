@@ -3,9 +3,7 @@
 ### 2021. 12. 21.
 
 #### Image
-
-* Prometheus 호환 exporter
-    * Advanced Monitoring 지원을 위해 인스턴스 생성 시 자동으로 설치되던 도구가 더는 설치되지 않습니다.
+* 인스턴스 생성 시 Prometheus 호환 exporter가 자동으로 설치되지 않도록 변경
 
 * CentOS 7.8(2021. 12. 21.)
     * 이미지 업데이트
