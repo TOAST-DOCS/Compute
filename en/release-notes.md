@@ -1,54 +1,54 @@
 ## Compute > Release Notes
 
-### 2021. 12. 28.
+### December 28, 2021
 
 #### Image
-* 인스턴스 생성 시 Prometheus 호환 exporter가 자동으로 설치되지 않도록 변경
+* Changed so that Prometheus compatible exporter is not automatically installed when creating an instance
 
 * CentOS 7.8(2021. 12. 21.)
-    * 이미지 업데이트
+    * Image updated
 * CentOS 7.8 for NAT(2021. 12. 21.)
-    * 이미지 업데이트
+    * Image updated
 * CentOS 7.8 with MySQL 5.6.38(2021. 12. 21.)
-    * 이미지 업데이트
+    * Image updated
 * CentOS 7.8 with MySQL 5.6.50(2021. 12. 21.)
-    * 이미지 업데이트
+    * Image updated
 * CentOS 7.8 with MySQL 5.7.20(2021. 12. 21.)
-    * 이미지 업데이트
+    * Image updated
 * CentOS 7.8 with MySQL 5.7.32(2021. 12. 21.)
-    * 이미지 업데이트
+    * Image updated
 * CentOS 7.8 with MySQL 8.0.22(2021. 12. 21.)
-    * 이미지 업데이트
+    * Image updated
 * Debian 9.13 Stretch(2021. 12. 21.)
-    * 이미지 업데이트
+    * Image updated
 * Debian 10.11 Buster(2021. 12. 21.)
-    * 이미지 업데이트
+    * Image updated
 * Ubuntu Server 18.04.6 LTS(2021. 12. 21.)
-    * 이미지 업데이트
+    * Image updated
 * Ubuntu Server 20.04.3 LTS(2021. 12. 21.)
-    * 이미지 업데이트
+    * Image updated
 * Ubuntu Server 18.04.6 LTS for NAT(2021. 12. 21.)
-    * 이미지 업데이트
+    * Image updated
 * Ubuntu Server 18.04.6 LTS with NVIDIA(2021. 12. 21.)
-    * 이미지 업데이트
+    * Image updated
 * Windows 2012 R2 STD(2021. 12. 21.)
-    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007247-monthly-rollup-2c3b6017-82f4-4102-b1e2-36f366bf3520
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007247-monthly-rollup-2c3b6017-82f4-4102-b1e2-36f366bf3520
 * Windows 2016 STD(2021. 12. 21.)
-    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
 * Windows 2019 STD(2021. 12. 21.)
-    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
 * Windows Server 2012 R2 with SQL Server 2016 Standard(2021. 12. 21.)
-    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007247-monthly-rollup-2c3b6017-82f4-4102-b1e2-36f366bf3520
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007247-monthly-rollup-2c3b6017-82f4-4102-b1e2-36f366bf3520
 * Windows Server 2016 with SQL Server 2016 Standard(2021. 12. 21.)
-    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
 * Windows Server 2016 with SQL Server 2019 Express(2021. 12. 21.)
-    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
 * Windows Server 2016 with SQL Server 2017 Standard(2021. 12. 21.)
-    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
 * Windows Server 2016 with SQL Server 2019 Standard(2021. 12. 21.)
-    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
 * Windows Server 2019 with SQL Server 2019 Standard(2021. 12. 21.)
-    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
 
 ### November 23, 2021
 #### Image
@@ -112,7 +112,7 @@
 
 #### Image
 
-* Prometheus 호환 exporter
+* Prometheus compatible exporter
     * The tool is automatically installed upon creating an instance to support Advanced Monitoring.
 
 * CentOS 7.8(2021. 06. 22.)
@@ -208,8 +208,8 @@
 
 #### System Monitoring
 
-- Added new feature: Advanced Monitoring (OpenMetrics)
-  - Provides the OpenMetrics (Prometheus exposition format) index collection, retrieval, and notification features
+* Added new feature: Advanced Monitoring (OpenMetrics)
+    * Provides the OpenMetrics (Prometheus exposition format) index collection, retrieval, and notification features
   
 ### December 29, 2020
 
@@ -445,51 +445,51 @@
 
 - **KR Region**
 - Image Updated for Debian 9 Stretch
-  - Image Information
-    - Debian 9 Stretch
-    - Description: Debian 9.9 Stretch(2019. 05. 28.)
-    - Language: EN
-    - Bit: 64bit
-    - Kernel: 4.9.168-1
-  - Feature Updates
-    - Kernel updated
-    - Minor version updated
+    - Image Information
+        - Debian 9 Stretch
+        - Description: Debian 9.9 Stretch(2019. 05. 28.)
+        - Language: EN
+        - Bit: 64bit
+        - Kernel: 4.9.168-1
+    - Feature Updates
+        - Kernel updated
+        - Minor version updated
 - Image Updated for Ubuntu Server 16.04 LTS  
-  - Image Information
-    - Ubuntu Server 16.04 LTS
-    - Description: Ubuntu Server 16.04.6 LTS(2019. 05. 28.)
-    - Language: EN
-    - Bit: 64bit
-    - Kernel: 4.4.0-142.168
-  - Feature Updates
-    - Kernel updated
-  - Minor version updated
+    - Image Information
+        - Ubuntu Server 16.04 LTS
+        - Description: Ubuntu Server 16.04.6 LTS(2019. 05. 28.)
+        - Language: EN
+        - Bit: 64bit
+        - Kernel: 4.4.0-142.168
+    - Feature Updates
+        - Kernel updated
+    - Minor version updated
 - Common Image of Linux CentOS Type
-  - Updates
-    - CentOS 6.10(2019. 05. 28.)
-    - CentOS 7.5(2019. 05. 28.)
-    - Debian 8.11 Jessie(2019. 05. 28.)
-    - Debian 9.9 Stretch(2019. 05. 28.)
-    - Ubuntu Server 16.04.6 LTS(2019. 05. 28.)
-    - Ubuntu Server 18.04.2 LTS(2019. 05. 28.)
-  - Application
-    - Change of timezone according to each region
+    - Updates
+        - CentOS 6.10(2019. 05. 28.)
+        - CentOS 7.5(2019. 05. 28.)
+        - Debian 8.11 Jessie(2019. 05. 28.)
+        - Debian 9.9 Stretch(2019. 05. 28.)
+        - Ubuntu Server 16.04.6 LTS(2019. 05. 28.)
+        - Ubuntu Server 18.04.2 LTS(2019. 05. 28.)
+    - Application
+        - Change of timezone according to each region
 - Common Image of Windows Type
-  - Updates
-    - Windows 2012 R2 STD(2019. 05. 28.)
-    - Windows 2016 STD(2019. 05. 28.)
-    - Windows 2012 R2 STD with MS-SQL 2008 R2 Standard(2019. 05. 28.)
-    - Windows 2012 R2 STD with MS-SQL 2012 Standard(2019. 05. 28.)
-    - Windows 2012 R2 STD with MS-SQL 2014 Standard(2019. 05. 28.)
-    - Windows 2012 R2 STD with MS-SQL 2016 Express(2019. 05. 28.)
-    - Windows 2012 R2 STD with MS-SQL 2016 Standard(2019. 05. 28.)
-  - Application
-    - Change of timezone according to each region
-    - Security updated as of May 14, 2019
-      - Windows 2012 R2 ( https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151 )
-      - Windows 2016 ( https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947 )
-  - New Release
-    - Windows 2016 STD with MS-SQL 2016 Standard(2019. 05. 28.)
+    - Updates
+        - Windows 2012 R2 STD(2019. 05. 28.)
+        - Windows 2016 STD(2019. 05. 28.)
+        - Windows 2012 R2 STD with MS-SQL 2008 R2 Standard(2019. 05. 28.)
+        - Windows 2012 R2 STD with MS-SQL 2012 Standard(2019. 05. 28.)
+        - Windows 2012 R2 STD with MS-SQL 2014 Standard(2019. 05. 28.)
+        - Windows 2012 R2 STD with MS-SQL 2016 Express(2019. 05. 28.)
+        - Windows 2012 R2 STD with MS-SQL 2016 Standard(2019. 05. 28.)
+    - Application
+        - Change of timezone according to each region
+        - Security updated as of May 14, 2019
+            - Windows 2012 R2 ( https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151 )
+            - Windows 2016 ( https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947 )
+    - New Release
+        - Windows 2016 STD with MS-SQL 2016 Standard(2019. 05. 28.)
 
 
 ### 2019. 05. 14.
