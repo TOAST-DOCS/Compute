@@ -50,13 +50,16 @@
 * Windows Server 2019 with SQL Server 2019 Standard(2021. 12. 21.)
     * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
 
+#### Image Builder
+* 애플리케이션 추가
+    * Deep Learning Framework
+
 ### 2021. 11. 23.
 #### Image
 * GPU 인스턴스를 만들 수 있는 개인 이미지 생성 지원
 
 #### Image Builder
 * 애플리케이션 추가
-    * Deep Learning Framework
     * JEUS
     * WebtoB
     * Apache Tomcat
