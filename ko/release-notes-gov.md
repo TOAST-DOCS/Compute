@@ -90,7 +90,7 @@
     * CentOS Linux 6.10 with MySQL 5.7.20(2020. 12. 22.)
     * Ubuntu Server 16.04.7 LTS(2020. 12. 22.)
 
-* Node exporter
+* Prometheus 호환 exporter
     * Advanced Monitoring 지원을 위해 인스턴스 생성 시 해당 도구가 자동으로 설치됩니다.
 
 * Linux 보안 취약점 패치 적용
