@@ -1,5 +1,10 @@
 ## Compute > 릴리스 노트
 
+### 2022. 01. 25.
+#### Public API
+* 이미지 조회 API에 GPU 상품 전용 이미지도 노출되도록 변경
+* 이미지 조회 API에 nhncloud_product 쿼리 파라미터 추가
+
 ### 2021. 12. 28.
 
 #### Image
