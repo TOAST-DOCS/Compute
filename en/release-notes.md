@@ -1,5 +1,11 @@
 ## Compute > Release Notes
 
+### January 25, 2022
+
+#### Image Builder
+* Added an application
+    * Slurm
+
 ### December 28, 2021
 
 #### Image
