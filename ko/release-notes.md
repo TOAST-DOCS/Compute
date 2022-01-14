@@ -60,6 +60,11 @@
 * 애플리케이션 추가
     * Deep Learning Framework
 
+#### System Monitoring
+* @Linux, @Windows 기본 작업 공간 추가 기능 삭제 및 생성되어 있는 작업 공간 삭제
+    * 인스턴스 생성시 자동으로 추가되던 @Linux, @Windows 작업공간이 자동으로 추가되지 않습니다.
+    * 기존 인스턴스에 자동으로 생성되어 있는 @Linux, @Windows 작업공간이 모두 삭제 됩니다.
+
 ### 2021. 11. 23.
 #### Image
 * GPU 인스턴스를 만들 수 있는 개인 이미지 생성 지원
