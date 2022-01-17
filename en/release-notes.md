@@ -60,7 +60,12 @@
 * Added an application
     * Deep Learning Framework
 
-### November 23, 2021
+#### System Monitoring
+* Deleted the feature to add @Linux and @Windows default workspaces and deleted the created workspaces
+    * @Linux and @Windows workspaces that were added automatically when creating an instance are no longer added automatically.
+    * All @Linux and @Windows workspaces automatically created in the existing instances are deleted.
+
+### 2021. 11. 23.
 #### Image
 * Supports creating a private image that you can use to create a GPU instance
 
