@@ -2,6 +2,9 @@
 
 ### January 25, 2022
 
+#### Image
+* Added a feature to copy images to another region
+
 #### Image Builder
 * Added an application
     * Slurm
