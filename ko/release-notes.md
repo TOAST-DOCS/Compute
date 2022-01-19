@@ -2,7 +2,7 @@
 
 ### 2022. 01. 25.
 #### Public API
-* 이미지 조회 API에 GPU Instance 서비스 이미지도 나타나도록 변경
+* 이미지 조회 API에 GPU Instance 서비스 이미지도 조회 가능하도록 변경
 * 이미지 조회 API에 인프라 서비스 종류 필터링을 위한 쿼리 파라미터 추가
 
 #### Image Builder
