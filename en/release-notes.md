@@ -1,6 +1,9 @@
 ## Compute > Release Notes
 
 ### January 25, 2022
+#### Public API
+* Changed so that GPU Instance service images can be queried with the image query API
+* Added a query parameter for filtering infrastructure service types to the image query API
 
 #### Image
 * Added a feature to copy images to another region
