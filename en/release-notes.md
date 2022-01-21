@@ -1,5 +1,17 @@
 ## Compute > Release Notes
 
+### January 25, 2022
+#### Public API
+* Changed so that GPU Instance service images can be queried with the image query API
+* Added a query parameter for filtering infrastructure service types to the image query API
+
+#### Image
+* Added a feature to copy images to another region
+
+#### Image Builder
+* Added an application
+    * Slurm
+
 ### December 28, 2021
 
 #### Image
@@ -54,7 +66,12 @@
 * Added an application
     * Deep Learning Framework
 
-### November 23, 2021
+#### System Monitoring
+* Deleted the feature to add @Linux and @Windows default workspaces and deleted the created workspaces
+    * @Linux and @Windows workspaces that were added automatically when creating an instance are no longer added automatically.
+    * All @Linux and @Windows workspaces automatically created in the existing instances are deleted.
+
+### 2021. 11. 23.
 #### Image
 * Supports creating a private image that you can use to create a GPU instance
 

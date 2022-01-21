@@ -1,5 +1,17 @@
 ## Compute > 릴리스 노트
 
+### 2022. 01. 25.
+#### Public API
+* 이미지 조회 API로 GPU Instance 서비스 이미지도 조회 가능하도록 변경
+* 이미지 조회 API에 인프라 서비스 종류 필터링을 위한 쿼리 파라미터 추가
+
+#### Image
+* 다른 리전으로 이미지 복사 기능 추가
+
+#### Image Builder
+* 애플리케이션 추가
+    * Slurm
+
 ### 2021. 12. 28.
 
 #### Image
@@ -53,6 +65,11 @@
 #### Image Builder
 * 애플리케이션 추가
     * Deep Learning Framework
+
+#### System Monitoring
+* @Linux, @Windows 기본 작업 공간 추가 기능 삭제 및 생성되어 있는 작업 공간 삭제
+    * 인스턴스 생성 시 자동으로 추가되던 @Linux, @Windows 작업 공간이 자동으로 추가되지 않습니다.
+    * 기존 인스턴스에 자동으로 생성되어 있는 @Linux, @Windows 작업 공간이 모두 삭제됩니다.
 
 ### 2021. 11. 23.
 #### Image
