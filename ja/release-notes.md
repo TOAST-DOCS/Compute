@@ -5,6 +5,9 @@
 * イメージ照会APIでGPU Instanceサービスイメージも照会できるように変更
 * イメージ照会APIにインフラサービスの種類をフィルタリングするためのクエリパラメータを追加
 
+#### Image
+* 別のリージョンにイメージをコピーする機能を追加
+
 #### Image Builder
 * アプリケーション追加
     * Slurm
@@ -99,7 +102,7 @@
 
 ### 2021. 07. 27.
 
-#### Instance 
+#### Instance
 * インスタンステンプレートを利用したインスタンス作成をサポート
 
 #### Instance Template
@@ -213,7 +216,7 @@
 * Linuxセキュリティ脆弱性パッチ適用
     * Heap-based buffer overflow in Sudo(CVE-2021-3156)
     * 新規インスタンス作成時に適用
-  
+
 ### 2021. 01. 26.
 
 #### System Monitoring
