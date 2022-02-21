@@ -86,7 +86,7 @@
 ### October 26, 2021
 #### Image Builder
 * Image Builder service added
-    * Creates a private image by combining an OS image, application installation components, and user scripts
+    * Allows you to create a private image by combining an OS image, application installation components, and a user script
 * Added applications
     * PostgreSQL
     * MariaDB
@@ -382,9 +382,9 @@
 ### December 17, 2019
 
 #### Auto Scale
-* Updated to show all input data created on the instance template list and detail information
-    * List Table: Availability area
-    * Detail Information: All configured network data, and script for reservation
+* Updated to show all the information entered when creating an instance template on the instance template list and details
+    * List table: Availability zone
+    * Details: All configured network information, user script content
 
 
 ### November 26, 2019
@@ -1015,7 +1015,7 @@
     * 플로팅 IP 사용 여부 선택 기능 추가
     * 보안 그룹 생성 및 정책 확인 기능 추가
     * 추가 블록 스토리지 연결 기능 추가
-    * 예약 스크립트 등록 기능 추가
+    * 사용자 스크립트 등록 기능 추가
 * Ubuntu Server 18.04 LTS 신규 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 18.04 LTS
