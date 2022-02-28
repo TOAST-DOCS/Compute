@@ -1,5 +1,13 @@
 ## Compute > 릴리스 노트
 
+### 2022. 03. 29.
+#### Image
+* 신규 이미지 추가
+    * Debian 11.2 Bullseye(2022. 03. 22.)
+
+* 이미지 지원 종료
+    * Debian 9.13 Stretch(2021. 12. 21.)
+
 ### 2022. 01. 25.
 #### Public API
 * 이미지 조회 API로 GPU Instance 서비스 이미지도 조회 가능하도록 변경
