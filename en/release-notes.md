@@ -1,5 +1,13 @@
 ## Compute > Release Notes
 
+### March 29, 2022
+#### Image
+* Added a new image
+    * Debian 11.2 Bullseye(2022. 03. 22.)
+
+* Image support ended
+    * Debian 9.13 Stretch(2021. 12. 21.)
+
 ### January 25, 2022
 #### Public API
 * Changed so that GPU Instance service images can be queried with the image query API
@@ -194,7 +202,7 @@
 
 #### Image
 
-* Added new image (Pyeongchon region)
+* Added new images (Pyeongchon region)
     * CentOS 7.8 for NAT(2021. 04. 22.)
     * Ubuntu Server 18.04.5 LTS for NAT(2021. 04. 22.)
 * Image support ended
@@ -204,7 +212,7 @@
 
 #### Image
 
-* New images added
+* Added new images
     * CentOS 7.8 with MySQL 5.6.38(2021. 02. 23.)
     * CentOS 7.8 with MySQL 5.6.50(2021. 02. 23.)
     * CentOS 7.8 with MySQL 5.7.20(2021. 02. 23.)
@@ -287,47 +295,47 @@
 * Added the feature of initializing password of original instance when creating a Windows image
 
 #### Image
-* Added New Images
-    * Cent OS 7.8 (Aug.18,2020)
-    * Ubuntu 20.04 LTS (Aug.18,2020)
-    * Windows 2016 STD with MS-SQL 2019 Express (Aug.18,2020)
-    * Windows 2016 STD with MS-SQL 2017 Standard (Aug.18,2020)
-    * Windows 2016 STD with MS-SQL 2019 Standard (Aug.18,2020)
-    * Windows 2019 STD with MS-SQL 2019 Standard (Aug.18,2020)
+* Added new images
+    * Cent OS 7.8 (2020. 08. 18.)
+    * Ubuntu 20.04 LTS (2020. 08. 18.)
+    * Windows 2016 STD with MS-SQL 2019 Express (2020. 08. 18.)
+    * Windows 2016 STD with MS-SQL 2017 Standard (2020. 08. 18.)
+    * Windows 2016 STD with MS-SQL 2019 Standard (2020. 08. 18.)
+    * Windows 2019 STD with MS-SQL 2019 Standard (2020. 08. 18.)
 
-* CentOS 6.10 (Aug.18,2020)
+* CentOS 6.10 (2020. 08. 18.)
     * Updated image
-* CentOS 7.5 (Aug.18,2020)
+* CentOS 7.5 (2020. 08. 18.)
     * Updated image
-* CentOS Linux 6.10 with MySQL 5.6.38 (Aug.18,2020)
+* CentOS Linux 6.10 with MySQL 5.6.38 (2020. 08. 18.)
     * Updated image
-* CentOS Linux 6.10 with MySQL 5.7.20 (Aug.18,2020)
+* CentOS Linux 6.10 with MySQL 5.7.20 (2020. 08. 18.)
     * Updated image
-* Debian 9.9 Stretch (Aug.18,2020)
+* Debian 9.9 Stretch (2020. 08. 18.)
     * Updated image
-* Debian 10.5 Buster (Aug.18,2020)
+* Debian 10.5 Buster (2020. 08. 18.)
     * Updated image
-* Ubuntu Server 16.04.6 LTS (Aug.18,2020)
+* Ubuntu Server 16.04.6 LTS (2020. 08. 18.)
     * Updated image
-* Ubuntu Server 18.04.4 LTS (Aug.18,2020)
+* Ubuntu Server 18.04.4 LTS (2020. 08. 18.)
     * Updated image
-* Ubuntu Server 18.04.4 LTS with NVIDIA (Aug.18,2020)
+* Ubuntu Server 18.04.4 LTS with NVIDIA (2020. 08. 18.)
     * Updated image
-* Windows 2012 R2 STD (Aug.18,2020)
+* Windows 2012 R2 STD (2020. 08. 18.)
     * Updated image
-* Windows 2016 STD (Aug.18,2020)
+* Windows 2016 STD (2020. 08. 18.)
     * Updated image
-* Windows 2019 STD (Aug.18,2020)
+* Windows 2019 STD (2020. 08. 18.)
     * Updated image
-* Windows 2012 R2 STD with MS-SQL 2016 Standard (Aug.18,2020)
+* Windows 2012 R2 STD with MS-SQL 2016 Standard (2020. 08. 18.)
     * Updated image
-* Windows 2016 STD with MS-SQL 2016 Standard (Aug.18,2020)
+* Windows 2016 STD with MS-SQL 2016 Standard (2020. 08. 18.)
     * Updated image
 
 * Closed support for image
-    * Windows 2012 R2 STD with MS-SQL 2012 Standard (Feb.18,2020)
-    * Windows 2012 R2 STD with MS-SQL 2014 Standard (Feb.18,2020)
-    * Windows 2012 R2 STD with MS-SQL 2016 Express (Feb.18,2020)
+    * Windows 2012 R2 STD with MS-SQL 2012 Standard (2020. 02. 18.)
+    * Windows 2012 R2 STD with MS-SQL 2014 Standard (2020. 02. 18.)
+    * Windows 2012 R2 STD with MS-SQL 2016 Express (2020. 02. 18.)
 
 ### June 23, 2020
 
