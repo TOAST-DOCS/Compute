@@ -9,7 +9,7 @@
     * After change: instance1, instance2, ...
 
 #### Image
-* 신규 이미지 추가
+* Added a new image
     * Rocky Linux 8.5 (2022. 05. 24.)
 
 ### March 29, 2022
