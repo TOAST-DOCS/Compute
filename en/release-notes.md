@@ -1,5 +1,17 @@
 ## Compute > Release Notes
 
+### 2022. 05. 24.
+#### Instance
+* Added the instance screenshot feature
+* Made changes so that, when querying an instance with the API, the instance deletion protection attribute (NHN-EXT-ATTR:protect) is displayed
+* Removed a hyphen (`-`) from the names of multiple instances created at the same time
+    * Before change: instance-1, instance-2, ...
+    * After change: instance1, instance2, ...
+
+#### Image
+* 신규 이미지 추가
+    * Rocky Linux 8.5 (2022. 05. 24.)
+
 ### March 29, 2022
 #### Image
 * Added a new image
