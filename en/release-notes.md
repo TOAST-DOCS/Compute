@@ -10,7 +10,7 @@
 
 #### Image
 * Added a new image
-    * Rocky Linux 8.5 (2022. 05. 24.)
+    * Rocky Linux 8.5 (2022. 05. 17.)
 
 ### March 29, 2022
 #### Image
