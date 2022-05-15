@@ -9,8 +9,8 @@
     * 変更後：instance1, instance2, ...
 
 #### Image
-* 신규 이미지 추가
-    * Rocky Linux 8.5 (2022. 05. 24.)
+* 新規イメージ追加
+    * Rocky Linux 8.5 (2022. 05. 17.)
 
 ### 2022. 03. 29.
 #### Image
