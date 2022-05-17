@@ -1,9 +1,124 @@
 ## Compute > Release Notes
 
+### 2022. 05. 24.
+#### Instance
+* Added the instance screenshot feature
+* Made changes so that, when querying an instance with the API, the instance deletion protection attribute (NHN-EXT-ATTR:protect) is displayed
+* Removed a hyphen (`-`) from the names of multiple instances created at the same time
+    * Before change: instance-1, instance-2, ...
+    * After change: instance1, instance2, ...
+
+#### Image
+* Added a new image
+    * Rocky Linux 8.5 (2022. 05. 17.)
+
+### March 29, 2022
+#### Image
+* Added a new image
+    * Debian 11.2 Bullseye(2022. 03. 22.)
+
+* Image support ended
+    * Debian 9.13 Stretch(2021. 12. 21.)
+
+### January 25, 2022
+#### Public API
+* Changed so that GPU Instance service images can be queried with the image query API
+* Added a query parameter for filtering infrastructure service types to the image query API
+
+#### Image
+* Added a feature to copy images to another region
+
+#### Image Builder
+* Added an application
+    * Slurm
+
+### December 28, 2021
+
+#### Image
+* Changed so that Prometheus compatible exporter is not automatically installed when creating an instance
+
+* CentOS 7.8(2021. 12. 21.)
+    * Image updated
+* CentOS 7.8 for NAT(2021. 12. 21.)
+    * Image updated
+* CentOS 7.8 with MySQL 5.6.38(2021. 12. 21.)
+    * Image updated
+* CentOS 7.8 with MySQL 5.6.50(2021. 12. 21.)
+    * Image updated
+* CentOS 7.8 with MySQL 5.7.20(2021. 12. 21.)
+    * Image updated
+* CentOS 7.8 with MySQL 5.7.32(2021. 12. 21.)
+    * Image updated
+* CentOS 7.8 with MySQL 8.0.22(2021. 12. 21.)
+    * Image updated
+* Debian 9.13 Stretch(2021. 12. 21.)
+    * Image updated
+* Debian 10.11 Buster(2021. 12. 21.)
+    * Image updated
+* Ubuntu Server 18.04.6 LTS(2021. 12. 21.)
+    * Image updated
+* Ubuntu Server 20.04.3 LTS(2021. 12. 21.)
+    * Image updated
+* Ubuntu Server 18.04.6 LTS for NAT(2021. 12. 21.)
+    * Image updated
+* Ubuntu Server 18.04.6 LTS with NVIDIA(2021. 12. 21.)
+    * Image updated
+* Windows 2012 R2 STD(2021. 12. 21.)
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007247-monthly-rollup-2c3b6017-82f4-4102-b1e2-36f366bf3520
+* Windows 2016 STD(2021. 12. 21.)
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+* Windows 2019 STD(2021. 12. 21.)
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
+* Windows Server 2012 R2 with SQL Server 2016 Standard(2021. 12. 21.)
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007247-monthly-rollup-2c3b6017-82f4-4102-b1e2-36f366bf3520
+* Windows Server 2016 with SQL Server 2016 Standard(2021. 12. 21.)
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+* Windows Server 2016 with SQL Server 2019 Express(2021. 12. 21.)
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+* Windows Server 2016 with SQL Server 2017 Standard(2021. 12. 21.)
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+* Windows Server 2016 with SQL Server 2019 Standard(2021. 12. 21.)
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+* Windows Server 2019 with SQL Server 2019 Standard(2021. 12. 21.)
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
+
+#### Image Builder
+* Added an application
+    * Deep Learning Framework
+
+#### System Monitoring
+* Deleted the feature to add @Linux and @Windows default workspaces and deleted the created workspaces
+    * @Linux and @Windows workspaces that were added automatically when creating an instance are no longer added automatically.
+    * All @Linux and @Windows workspaces automatically created in the existing instances are deleted.
+
+### 2021. 11. 23.
+#### Image
+* Supports creating a private image that you can use to create a GPU instance
+
+#### Image Builder
+* Added applications
+    * JEUS
+    * WebtoB
+    * Apache Tomcat
+    * Node.js
+    * MySQL
+
 ### October 26, 2021
-### Image Builder
+#### Image Builder
 * Image Builder service added
-    * Creates a private image by combining an OS image, application installation components, and user scripts
+    * Allows you to create a private image by combining an OS image, application installation components, and a user script
+* Added applications
+    * PostgreSQL
+    * MariaDB
+    * CUBRID
+
+#### System Monitoring
+
+* OpenMetrics Dashboard > Query
+    * Changed to allow users to select only up to the date one year ago when selecting a query period.
+    * Changed so that guide text regarding data unavailable status or errors is displayed in the chart
+* OpenMetrics Dashboard > Add/Modify Charts
+    * Changed so that, when the user clicks the **Add** button without selecting any metrics, guide text shows up and the location is highlighted.
 
 ### September 14, 2021
 #### System Monitoring
@@ -37,7 +152,7 @@
 
 #### Image
 
-* Node exporter
+* Prometheus compatible exporter
     * The tool is automatically installed upon creating an instance to support Advanced Monitoring.
 
 * CentOS 7.8(2021. 06. 22.)
@@ -99,7 +214,7 @@
 
 #### Image
 
-* Added new image (Pyeongchon region)
+* Added new images (Pyeongchon region)
     * CentOS 7.8 for NAT(2021. 04. 22.)
     * Ubuntu Server 18.04.5 LTS for NAT(2021. 04. 22.)
 * Image support ended
@@ -109,7 +224,7 @@
 
 #### Image
 
-* New images added
+* Added new images
     * CentOS 7.8 with MySQL 5.6.38(2021. 02. 23.)
     * CentOS 7.8 with MySQL 5.6.50(2021. 02. 23.)
     * CentOS 7.8 with MySQL 5.7.20(2021. 02. 23.)
@@ -133,9 +248,9 @@
 
 #### System Monitoring
 
-- Added new feature: Advanced Monitoring (OpenMetrics)
-  - Provides the OpenMetrics (Prometheus exposition format) index collection, retrieval, and notification features
-
+* Added new feature: Advanced Monitoring (OpenMetrics)
+    * Provides the OpenMetrics (Prometheus exposition format) index collection, retrieval, and notification features
+  
 ### December 29, 2020
 
 #### Image
@@ -192,47 +307,47 @@
 * Added the feature of initializing password of original instance when creating a Windows image
 
 #### Image
-* Added New Images
-    * Cent OS 7.8 (Aug.18,2020)
-    * Ubuntu 20.04 LTS (Aug.18,2020)
-    * Windows 2016 STD with MS-SQL 2019 Express (Aug.18,2020)
-    * Windows 2016 STD with MS-SQL 2017 Standard (Aug.18,2020)
-    * Windows 2016 STD with MS-SQL 2019 Standard (Aug.18,2020)
-    * Windows 2019 STD with MS-SQL 2019 Standard (Aug.18,2020)
+* Added new images
+    * Cent OS 7.8 (2020. 08. 18.)
+    * Ubuntu 20.04 LTS (2020. 08. 18.)
+    * Windows 2016 STD with MS-SQL 2019 Express (2020. 08. 18.)
+    * Windows 2016 STD with MS-SQL 2017 Standard (2020. 08. 18.)
+    * Windows 2016 STD with MS-SQL 2019 Standard (2020. 08. 18.)
+    * Windows 2019 STD with MS-SQL 2019 Standard (2020. 08. 18.)
 
-* CentOS 6.10 (Aug.18,2020)
+* CentOS 6.10 (2020. 08. 18.)
     * Updated image
-* CentOS 7.5 (Aug.18,2020)
+* CentOS 7.5 (2020. 08. 18.)
     * Updated image
-* CentOS Linux 6.10 with MySQL 5.6.38 (Aug.18,2020)
+* CentOS Linux 6.10 with MySQL 5.6.38 (2020. 08. 18.)
     * Updated image
-* CentOS Linux 6.10 with MySQL 5.7.20 (Aug.18,2020)
+* CentOS Linux 6.10 with MySQL 5.7.20 (2020. 08. 18.)
     * Updated image
-* Debian 9.9 Stretch (Aug.18,2020)
+* Debian 9.9 Stretch (2020. 08. 18.)
     * Updated image
-* Debian 10.5 Buster (Aug.18,2020)
+* Debian 10.5 Buster (2020. 08. 18.)
     * Updated image
-* Ubuntu Server 16.04.6 LTS (Aug.18,2020)
+* Ubuntu Server 16.04.6 LTS (2020. 08. 18.)
     * Updated image
-* Ubuntu Server 18.04.4 LTS (Aug.18,2020)
+* Ubuntu Server 18.04.4 LTS (2020. 08. 18.)
     * Updated image
-* Ubuntu Server 18.04.4 LTS with NVIDIA (Aug.18,2020)
+* Ubuntu Server 18.04.4 LTS with NVIDIA (2020. 08. 18.)
     * Updated image
-* Windows 2012 R2 STD (Aug.18,2020)
+* Windows 2012 R2 STD (2020. 08. 18.)
     * Updated image
-* Windows 2016 STD (Aug.18,2020)
+* Windows 2016 STD (2020. 08. 18.)
     * Updated image
-* Windows 2019 STD (Aug.18,2020)
+* Windows 2019 STD (2020. 08. 18.)
     * Updated image
-* Windows 2012 R2 STD with MS-SQL 2016 Standard (Aug.18,2020)
+* Windows 2012 R2 STD with MS-SQL 2016 Standard (2020. 08. 18.)
     * Updated image
-* Windows 2016 STD with MS-SQL 2016 Standard (Aug.18,2020)
+* Windows 2016 STD with MS-SQL 2016 Standard (2020. 08. 18.)
     * Updated image
 
 * Closed support for image
-    * Windows 2012 R2 STD with MS-SQL 2012 Standard (Feb.18,2020)
-    * Windows 2012 R2 STD with MS-SQL 2014 Standard (Feb.18,2020)
-    * Windows 2012 R2 STD with MS-SQL 2016 Express (Feb.18,2020)
+    * Windows 2012 R2 STD with MS-SQL 2012 Standard (2020. 02. 18.)
+    * Windows 2012 R2 STD with MS-SQL 2014 Standard (2020. 02. 18.)
+    * Windows 2012 R2 STD with MS-SQL 2016 Express (2020. 02. 18.)
 
 ### June 23, 2020
 
@@ -271,24 +386,25 @@
         * Indicators can be collected, regardless of internet gateway or security group settings
     * Upgraded usage volume for CPU and memory
 
+
 ### January 21, 2020
 
 #### System Monitoring
 * Added Query Event Page
     * Query events occurred out of surveillance setup
-* Updated`Server List` on Server Dashboard
-    * Upgraded to query all instances in `Compute > Instance`
+* Updated **Server List** on Server Dashboard
+    * Upgraded to query all instances in **Compute > Instance**
     * Updated to show instance status more precisely
-* Updated `Server - User Integration` for Alarm Groups
+* Updated **Server - User Integration** for Alarm Groups
     * Updated to save changes, by selecting a server and user group and clicking the save button
 
 
 ### December 17, 2019
 
 #### Auto Scale
-* 修改为可在实例模板列表及详细信息中查看创建时输入的所有信息
-    * 列表table：可用性区域
-    * 详细信息：设置的所有网络信息、预约脚本内容
+* Updated to show all the information entered when creating an instance template on the instance template list and details
+    * List table: Availability zone
+    * Details: All configured network information, user script content
 
 
 ### November 26, 2019
@@ -297,10 +413,31 @@
 
 ##### Feature Updates
 
-- Instance Search Updated on Server Dashboard: No distinction is required between upper and lower cases
+* Instance Search Updated on Server Dashboard: No distinction is required between upper and lower cases
 
 
 ### Oct 29, 2019
+
+#### Image
+* Application Image
+
+    * Updates
+        * PLOS-WFK-KS-v2.0.60.0.14(2019. 10. 22.)
+    * Change Details
+        * Fixed size error for storage on the WF-KS page
+
+* Common Windows Image
+
+    * Updates
+        * Windows 2012 R2 STD(2019. 10. 22.)
+        * Windows 2016 STD(2019. 10. 22.)
+        * Windows 2012 R2 STD with MS-SQL 2012 Standard(2019. 10. 22.)
+        * Windows 2012 R2 STD with MS-SQL 2014 Standard(2019. 10. 22.)
+        * Windows 2012 R2 STD with MS-SQL 2016 Express(2019. 10. 22.)
+        * Windows 2012 R2 STD with MS-SQL 2016 Standard(2019. 10. 22.)
+        * Windows 2016 R2 STD with MS-SQL 2016 Standard(2019. 10. 22.)
+    * Change Details
+        * Provides images for each language (e.g. KO, EN, JP)
 
 #### System Monitoring
 
@@ -314,99 +451,94 @@
 - Fixed the issue of invalid output of dates for the adding/modifying user/monitoring groups, especially in the US region
 
 
-### 2019.09.24
+### September 24, 2019
 
 #### System Monitoring
-- 웹 콘솔 영어 메시지 지원
-- Internet Explorer 11 브라우저 환경에서 서버 대시보드 레이아웃 선택에 실패하던 현상 수정
+- Supports English for web console messages
+- Fixed failure in the layout selection for server dashboard on Internet Explorer 11
 
-### 2019.08.27
+### August 27, 2019
 
 #### System Monitoring
-- 서버 대시보드 차트 조회 성능 개선
-- Internet Explorer 11 브라우저 환경 UI 개선
+- Improved performance for the query of charts on server dashboard
+- UI improved for the Internet Explorer 11 browser environment
 
-#### 기능 개선
-* 이미지 관리 화면에서 공용 이미지 탭이 제거되었습니다.
+#### Updates
+* Removed the common usage tab from the image management page.
 
-### 2019.07.23
+### July 23, 2019
 
-#### 신규 서비스 출시: System Monitoring
+#### Release of New Service: System Monitoring
 
-- 생성된 가상 서버의 시스템 지표 차트를 제공합니다.
-- 각 시스템 지표 차트를 원하는 레이아웃으로 구성할 수 있으며, 지표가 특정 임계치에 도달할 경우 원하는 특정 사용자 그룹에게 이메일이나 SMS로 알림을 보내도록 설정할 수 있습니다.
+- System metrics are provided on a chart for a newly created virtual server  
+- Each chart of system metrics can be configured under a layout of choice; you may set a notification to be sent to a group of particular users via email or SMS, when a metric reaches a specific threshold.
 
-### 2019.06.25
+### June 25, 2019
 
-#### 기능 개선
+#### Updates
 
-* 인스턴스가 구동 중일 때도 이미지를 생성할 수 있도록 기능이 추가되었습니다.
+* Image creation is available even when instance is running.
 
-### 2019.05.28
+### May 28, 2019
 
-#### 기능 개선
+#### Updates
 
-* **KR 리전**
-* Debian 9 Stretch 이미지 업데이트
-	* 이미지 정보
-		* Debian 9 Stretch
-		* 설명 : Debian 9.9 Stretch (2019.05.28)
-		* 언어 : EN
-		* 비트 : 64bit
-		* 커널 : 4.9.168-1
-	* 기능 개선
-		* 커널 업데이트
-		* 마이너 버전 업데이트
+- **KR Region**
+- Image Updated for Debian 9 Stretch
+    - Image Information
+        - Debian 9 Stretch
+        - Description: Debian 9.9 Stretch(2019. 05. 28.)
+        - Language: EN
+        - Bit: 64bit
+        - Kernel: 4.9.168-1
+    - Feature Updates
+        - Kernel updated
+        - Minor version updated
+- Image Updated for Ubuntu Server 16.04 LTS  
+    - Image Information
+        - Ubuntu Server 16.04 LTS
+        - Description: Ubuntu Server 16.04.6 LTS(2019. 05. 28.)
+        - Language: EN
+        - Bit: 64bit
+        - Kernel: 4.4.0-142.168
+    - Feature Updates
+        - Kernel updated
+    - Minor version updated
+- Common Image of Linux CentOS Type
+    - Updates
+        - CentOS 6.10(2019. 05. 28.)
+        - CentOS 7.5(2019. 05. 28.)
+        - Debian 8.11 Jessie(2019. 05. 28.)
+        - Debian 9.9 Stretch(2019. 05. 28.)
+        - Ubuntu Server 16.04.6 LTS(2019. 05. 28.)
+        - Ubuntu Server 18.04.2 LTS(2019. 05. 28.)
+    - Application
+        - Change of timezone according to each region
+- Common Image of Windows Type
+    - Updates
+        - Windows 2012 R2 STD(2019. 05. 28.)
+        - Windows 2016 STD(2019. 05. 28.)
+        - Windows 2012 R2 STD with MS-SQL 2008 R2 Standard(2019. 05. 28.)
+        - Windows 2012 R2 STD with MS-SQL 2012 Standard(2019. 05. 28.)
+        - Windows 2012 R2 STD with MS-SQL 2014 Standard(2019. 05. 28.)
+        - Windows 2012 R2 STD with MS-SQL 2016 Express(2019. 05. 28.)
+        - Windows 2012 R2 STD with MS-SQL 2016 Standard(2019. 05. 28.)
+    - Application
+        - Change of timezone according to each region
+        - Security updated as of May 14, 2019
+            - Windows 2012 R2 ( https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151 )
+            - Windows 2016 ( https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947 )
+    - New Release
+        - Windows 2016 STD with MS-SQL 2016 Standard(2019. 05. 28.)
 
-* Ubuntu Server 16.04 LTS 이미지 업데이트
-    * 이미지 정보
-        * Ubuntu Server 16.04 LTS
-        * 설명 : Ubuntu Server 16.04.6 LTS (2019.05.28)
-        * 언어 : EN
-        * 비트 : 64bit
-        * 커널 : 4.4.0-142.168
-    * 기능 개선
-        * 커널 업데이트
-	* 마이너 버전 업데이트
 
-* Linux CentOS 계열 공용 이미지
-	* 업데이트
-		* CentOS 6.10 (2019.05.28)
-		* CentOS 7.5 (2019.05.28)
-		* Debian 8.11 Jessie (2019.05.28)
-		* Debian 9.9 Stretch (2019.05.28)
-		* Ubuntu Server 16.04.6 LTS (2019.05.28)
-		* Ubuntu Server 18.04.2 LTS (2019.05.28)
-	* 반영 내용
-		* Region에 따른 timezone 변경 적용
-
-* Windows 계열 공용 이미지
-	* 업데이트
-		* Windows 2012 R2 STD (2019.05.28)
-		* Windows 2016 STD (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.05.28)
-		* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.05.28)
-	* 반영 내용
-		* Region에 따른 timezone 변경 적용
-		* 2019년 5월 14일 보안 업데이트 반영
-			* Windows 2012 R2 ( https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151 )
-			* Windows 2016 ( https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947 )
-	* 신규 릴리즈
-		* Windows 2016 STD with MS-SQL 2016 Standard (2019.05.28)
-
-* Auto Scaling 통계 그래프
-	* Scaling Group의 사용량을 확인할 수 있는 통계 그래프 추가
-
-### 2019.05.14
+### 2019. 05. 14.
 
 #### 기능 개선
 
 * MySQL 이미지 변경
-	* CentOS Linux 6.5 with MySQL 5.6.38  > CentOS 6.10 with MySQL 5.6.38 (2019.05.14)
-	* CentOS Linux 6.5 with MySQL 5.7.20  > CentOS 6.10 with MySQL 5.7.20 (2019.05.14)
+	* CentOS Linux 6.5 with MySQL 5.6.38  > CentOS 6.10 with MySQL 5.6.38(2019. 05. 14.)
+	* CentOS Linux 6.5 with MySQL 5.7.20  > CentOS 6.10 with MySQL 5.7.20(2019. 05. 14.)
 
 * OS 이미지 지원 종료
 	* CentOS 6.5
@@ -415,7 +547,7 @@
 	* Windows 2008 R2 STD
 
 
-### 2019.04.25
+### 2019. 04. 25.
 
 #### 기능 개선
 
@@ -424,35 +556,35 @@
 
 * Linux CentOS 계열 공용 이미지
 	* 업데이트 이미지 명
-		* CentOS 6.5 (2019.04.25)
-		* CentOS 6.10 (2019.04.25)
-		* CentOS 7.1 (2019.04.25)
-		* CentOS 7.5 (2019.04.25)
+		* CentOS 6.5(2019. 04. 25.)
+		* CentOS 6.10(2019. 04. 25.)
+		* CentOS 7.1(2019. 04. 25.)
+		* CentOS 7.5(2019. 04. 25.)
 	* 반영내용
 		* yum update 시 발생하는 에러현상 개선
 		* CentOS 7.X  OS이미지 시간 동기화 데몬 변경 (ntpd)
 * Windows 계열 공용 이미지
 	* 업데이트 이미지 명
-		* Windows 2008 R2 STD (2019.04.25)
-		* Windows 2012 R2 STD (2019.04.25)
-		* Windows 2016 STD (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2012 Standard (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2014 Standard (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2016 Express (2019.04.25)
-		* Windows 2012 R2 STD with MS-SQL 2016 Standard (2019.04.25)
+		* Windows 2008 R2 STD(2019. 04. 25.)
+		* Windows 2012 R2 STD(2019. 04. 25.)
+		* Windows 2016 STD(2019. 04. 25.)
+		* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard(2019. 04. 25.)
+		* Windows 2012 R2 STD with MS-SQL 2012 Standard(2019. 04. 25.)
+		* Windows 2012 R2 STD with MS-SQL 2014 Standard(2019. 04. 25.)
+		* Windows 2012 R2 STD with MS-SQL 2016 Express(2019. 04. 25.)
+		* Windows 2012 R2 STD with MS-SQL 2016 Standard(2019. 04. 25.)
 	* 반영 내용
 		* Windows Bootstrap 과정 기능 개선
 
 
-### 2019.03.26
+### 2019. 03. 26.
 
 #### 기능 개선
 
 * Debian 9 Stretch 이미지 업데이트
 	* 이미지 정보
 		* Debian 9 Stretch
-		* 설명 : Debian 9.8 Stretch (2019.03.26)
+		* 설명 : Debian 9.8 Stretch(2019. 03. 26.)
 		* 언어 : EN
 		* 비트 : 64bit
 		* 커널 : 4.9.144-3
@@ -461,29 +593,29 @@
 
 * 리눅스 계열 이미지 공통 적용
 	* 업데이트 이미지 이름
-		* CentOS 7.1 (2019.03.26)
-		* CentOS 7.5 (2019.03.26)
-		* CentOS 6.10 (2019.03.26)
-		* CentOS 6.5 (2019.03.26)
-		* Ubuntu Server 18.04.2 LTS (2019.03.26)
-		* Ubuntu Server 16.04.5 LTS (2019.03.26)
-		* Ubuntu Server 14.04.5 LTS (2019.03.26)
-		* Debian 9.8 Stretch (2019.03.26)
-		* Debian 8.11 Jessie (2019.03.26)
-		* CentOS 6.5 with MySQL 5.6.38 (2019.03.26)
-		* CentOS 6.5 with MySQL 5.7.20 (2019.03.26)
+		* CentOS 7.1(2019. 03. 26.)
+		* CentOS 7.5(2019. 03. 26.)
+		* CentOS 6.10(2019. 03. 26.)
+		* CentOS 6.5(2019. 03. 26.)
+		* Ubuntu Server 18.04.2 LTS(2019. 03. 26.)
+		* Ubuntu Server 16.04.5 LTS(2019. 03. 26.)
+		* Ubuntu Server 14.04.5 LTS(2019. 03. 26.)
+		* Debian 9.8 Stretch(2019. 03. 26.)
+		* Debian 8.11 Jessie(2019. 03. 26.)
+		* CentOS 6.5 with MySQL 5.6.38(2019. 03. 26.)
+		* CentOS 6.5 with MySQL 5.7.20(2019. 03. 26.)
 
 	* 반영내용
 		* Bootstrap 과정의 기능 개선
 
-### 2019.02.26
+### 2019. 02. 26.
 
 #### 기능 개선
 
 * Ubuntu Server 18.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 18.04 LTS
-        * 설명 : Ubuntu Server 18.04.2 LTS (2019.02.26)
+        * 설명 : Ubuntu Server 18.04.2 LTS(2019. 02. 26.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 4.15.0-45
@@ -501,7 +633,7 @@
   * Image 조회 API에 pagination을 위한 쿼리 파라미터 추가
   * Image 삭제 API 추가
 
-### 2018.12.27
+### 2018. 12. 27.
 
 #### 기능 개선
 
@@ -522,7 +654,7 @@
             * LC_CTYPE="en_US.UTF-8"
 
 
-### 2018.12.11
+### 2018. 12. 11.
 
 #### 기능 개선
 
@@ -534,7 +666,7 @@
 * Debian 9 Stretch 이미지 업데이트
     * 이미지 정보
         * Debian 9 Stretch
-        * 설명 : Debian 9.6 Stretch (2018.12.11)
+        * 설명 : Debian 9.6 Stretch(2018. 12. 11.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 4.9.0-8
@@ -545,7 +677,7 @@
 * Debian 8 Jessie 이미지 업데이트
     * 이미지 정보
         * Debian 8 Jessie
-        * 설명 : Debian 8.11 Jessie (2018.12.11)
+        * 설명 : Debian 8.11 Jessie(2018. 12. 11.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 3.16-0-6
@@ -555,7 +687,7 @@
 * CentOS 7.5 이미지 업데이트
     * 이미지 정보
         * CentOS 7.5
-        * 설명 : CentOS 7.5 (2018.12.11)
+        * 설명 : CentOS 7.5(2018. 12. 11.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 3.10.0-862
@@ -565,7 +697,7 @@
 * CentOS 7.1 이미지 업데이트
     * 이미지 정보
         * CentOS 7.1
-        * 설명 : CentOS 7.1 (2018.12.11)
+        * 설명 : CentOS 7.1(2018. 12. 11.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 3.10.0-693
@@ -575,7 +707,7 @@
 * CentOS 6.10 이미지 업데이트
     * 이미지 정보
         * CentOS 6.10
-        * 설명 : CentOS 6.10 (2018.12.11)
+        * 설명 : CentOS 6.10(2018. 12. 11.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 2.6.32-754
@@ -585,7 +717,7 @@
 * CentOS 6.5 이미지 업데이트
     * 이미지 정보
         * CentOS 6.5
-        * 설명 : CentOS 6.5 (2018.12.11)
+        * 설명 : CentOS 6.5(2018. 12. 11.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 2.6.32-754
@@ -595,7 +727,7 @@
 * Ubuntu Server 18.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 18.04 LTS
-        * 설명 : Ubuntu Server 18.04.1 LTS (2018.12.11)
+        * 설명 : Ubuntu Server 18.04.1 LTS(2018. 12. 11.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 4.15.0-29
@@ -605,7 +737,7 @@
 * Ubuntu Server 16.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 16.04 LTS
-        * 설명 : Ubuntu Server 16.04.5 LTS (2018.12.11)
+        * 설명 : Ubuntu Server 16.04.5 LTS(2018. 12. 11.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 4.4.0-131
@@ -615,7 +747,7 @@
 * Ubuntu Server 14.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 14.04 LTS
-        * 설명 : Ubuntu Server 14.04.5 LTS (2018.12.11)
+        * 설명 : Ubuntu Server 14.04.5 LTS(2018. 12. 11.)
         * 언어 : EN
         * 비트 : 64bit
         * 커널 : 4.4.0-31
@@ -623,7 +755,7 @@
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
 
 
-### 2018.11.13
+### 2018. 11. 13.
 
 #### 기능 개선
 
@@ -631,7 +763,7 @@
     * 이미지 정보
         * CentOS 7.1
         * 언어 : EN
-        * 설명 : CentOS 7.1 (2018.11.13)
+        * 설명 : CentOS 7.1(2018. 11. 13.)
         * 비트 : 64bit
         * 커널 : 3.10.0-693.21.1
     * 커널 업데이트 :  3.10.0-229 -> 3.10.0-693.21.1
@@ -640,13 +772,13 @@
     * 이미지 정보
         * CentOS 6.5
         * 언어 : EN
-        * 설명 : CentOS 6.5 (2018.11.13)
+        * 설명 : CentOS 6.5(2018. 11. 13.)
         * 비트 : 64bit
         * 커널 : 2.6.32-754.6.3
     * 커널 업데이트 :  2.6.32-431 -> 2.6.32-754.6.3
     * Yum repository target 변경 : CentOS 최신 repo
 
-### 2018.10.23
+### 2018. 10. 23.
 
 #### 기능 개선
 
@@ -658,10 +790,10 @@
     * 이미지 정보
         * CentOS 7.5
         * 언어 : EN
-        * 설명 : CentOS 7.5 (2018.10.23)
+        * 설명 : CentOS 7.5(2018. 10. 23.)
         * 비트 : 64bit
         * 커널 : 3.10.0-862.14.4.el7
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -689,10 +821,10 @@
     * 이미지 정보
         * CentOS 6.10
         * 언어 : EN
-        * 설명 : CentOS 6.10 (2018.10.23)
+        * 설명 : CentOS 6.10(2018. 10. 23.)
         * 비트 : 64bit
         * 커널 : 2.6.32-754.3.5.el6
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -720,10 +852,10 @@
     * 이미지 정보
         * CentOS 7.1
         * 언어 : EN
-        * 설명 : CentOS 7.1 (2018.10.23)
+        * 설명 : CentOS 7.1(2018. 10. 23.)
         * 비트 : 64bit
         * 커널 : 3.10.0-229.el7
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -751,10 +883,10 @@
     * 이미지 정보
         * CentOS 6.5
         * 언어 : EN
-        * 설명 : CentOS 6.5 (2018.10.23)
+        * 설명 : CentOS 6.5(2018. 10. 23.)
         * 비트 : 64bit
         * 커널 : 2.6.32-431.el6
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -782,10 +914,10 @@
     * 이미지 정보
         * Ubuntu Server 16.04 LTS
         * 언어 : EN
-        * 설명 : Ubuntu Server 16.04.5 LTS (2018.10.23)
+        * 설명 : Ubuntu Server 16.04.5 LTS(2018. 10. 23.)
         * 비트 : 64bit
         * 커널 : 4.4.0-131
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -810,10 +942,10 @@
     * 이미지 정보
         * Ubuntu Server 14.04 LTS
         * 언어 : EN
-        * 설명 : Ubuntu Server 14.04.5 LTS (2018.10.23)
+        * 설명 : Ubuntu Server 14.04.5 LTS(2018. 10. 23.)
         * 비트 : 64bit
         * 커널 : 4.4.0-131
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -838,10 +970,10 @@
     * 이미지 정보
         * Debian 9 Stretch
         * 언어 : EN
-        * 설명 : Debian 9.5 Stretch (2018.10.23)
+        * 설명 : Debian 9.5 Stretch(2018. 10. 23.)
         * 비트 : 64bit
         * 커널 : 4.9.0-7
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -866,10 +998,10 @@
     * 이미지 정보
         * Debian 8 Jessie
         * 언어 : EN
-        * 설명 : Debian 8.11 Jessie (2018.10.23)
+        * 설명 : Debian 8.11 Jessie(2018. 10. 23.)
         * 비트 : 64bit
         * 커널 : 3.16.0-6
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -892,7 +1024,7 @@
         * /etc/hosts 파일의 사용자 추가 설정 유지
 
 
-### 2018.09.20
+### 2018. 09. 20.
 
 #### 기능 개선
 
@@ -903,16 +1035,16 @@
     * 플로팅 IP 사용 여부 선택 기능 추가
     * 보안 그룹 생성 및 정책 확인 기능 추가
     * 추가 블록 스토리지 연결 기능 추가
-    * 예약 스크립트 등록 기능 추가
+    * 사용자 스크립트 등록 기능 추가
 * Ubuntu Server 18.04 LTS 신규 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 18.04 LTS
         * 언어 : EN
-        * 설명 : Ubuntu Server 18.04.1 LTS (2018.09.20)
+        * 설명 : Ubuntu Server 18.04.1 LTS(2018. 09. 20.)
         * 비트 : 64bit
     * Kernel 4.15.0-29
         * meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
@@ -936,13 +1068,13 @@
     * 이미지 정보
         * Ubuntu Linux 14.04
         * 언어 : EN
-        * 설명 : Ubuntu Linux 14.04.5 (2018.09.20)
+        * 설명 : Ubuntu Linux 14.04.5(2018. 09. 20.)
         * 비트 : 64bit
     * 버그픽스
-        * 2018.09.20 신규적용되는 예약스크립트 기능이 정상적으로 적용되지 않는 부분 해결
+        * 2018. 09. 20. 신규적용되는 예약스크립트 기능이 정상적으로 적용되지 않는 부분 해결
 
 
-### 2018.08.09
+### 2018. 08. 09.
 
 #### 기능 개선
 
@@ -950,13 +1082,13 @@
     * 이미지 정보
         * Windows 2012 R2 STD
         * 언어 : EN
-        * 설명 : Windows 2012 R2 STD (2018.08.09)
+        * 설명 : Windows 2012 R2 STD(2018. 08. 09.)
         * 커널 비트 : 64bit
     * 변경사항
         * 한글 사용시 사용자가 한글 언어팩을 설치 ( 기본으로 영문 버전 제공 )
     * Windows 보안업데이트
         * 2018년 7월 10일 보안업데이트 적용 ( https://support.microsoft.com/en-us/help/4338815/windows-81-update-kb4338815 )
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 계정 관리
             * Interactive logon: Display user information when the session is locked : User display name only
             * Interactive logon: Do not display last user name :  Enabled
@@ -973,11 +1105,11 @@
     * 이미지 정보
         * Windows 2016 STD
         * 언어 : EN
-        * 설명 : Windows 2016 STD (2018.08.09)
+        * 설명 : Windows 2016 STD(2018. 08. 09.)
         * 비트 : 64bit
     * Windows 보안업데이트
         * 2018년 7월 24일 (https://support.microsoft.com/en-us/help/4338822/windows-10-update-kb4338822)
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 계정 관리
             * Interactive logon: Display user information when the session is locked : User display name only
             * Interactive logon: Do not display last user name :  Enabled
@@ -993,11 +1125,11 @@
     * 이미지 정보
         * Debian 9.4
         * 언어 : EN
-        * 설명 : Debian 9.4.0 (2018.08.09)
+        * 설명 : Debian 9.4.0(2018. 08. 09.)
         * 비트 : 64bit
     * Kernel 4.9
         * meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 (숫자,영문,특문 조합 + 8자리 이상) : /etc/pam.d/common-password에 아래 line 추가
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * 불필요 계정/그룹 삭제
@@ -1042,7 +1174,7 @@
 
 
 
-### 2018.07.16
+### 2018. 07. 16.
 
 #### 기능 개선
 
@@ -1050,7 +1182,7 @@
     * 이미지 정보
         * Windows 2012R2std
         * 언어 : KO
-        * 설명 : Windows 2012 R2 STD (2018.07.16)
+        * 설명 : Windows 2012 R2 STD(2018. 07. 16.)
         * 커널 비트 : 64bit
     * Auto scale 기능으로 백신이 포함된 인스턴스 생성시 발생하는 에러 현상 수정
     * CPU 설정 변경  ( CPU Socket 최대 개수  4개 )
@@ -1059,11 +1191,11 @@
     * 이미지 정보
         * Windows 2008R2std
         * 언어 : EN
-        * 설명 : Windows 2008 R2 STD (2018.07.16)
+        * 설명 : Windows 2008 R2 STD(2018. 07. 16.)
         * 커널 비트 : 64bit
     * Windows 보안업데이트
         * 2018년 6월 12일자 보안 업데이트 적용 ( https://support.microsoft.com/ko-kr/help/4284826 )
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 계정 관리
             * Guest 계정 사용 제한 : Guest 계정 사용 안함으로 변경
             * 마지막 사용자 로그인 이름 표시 :  표시 안함으로 설정
@@ -1081,11 +1213,11 @@
     * 이미지 정보
         * Ubuntu 16.04 LTS
         * 언어 : EN
-        * 설명 : Ubuntu 16.04.4 LTS  (2018.07.16)
+        * 설명 : Ubuntu 16.04.4 LTS(2018. 07. 16.)
         * 커널 비트 : 64bit
     * Kernel 4.4.0-130
         * meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
-    * Toast Cloud 보안기준으로 OS 하드닝 적용
+    * NHN Cloud Cloud 보안기준으로 OS 하드닝 적용
         * 패스워드 복잡도 설정 (숫자,영문,특문 조합 + 8자리 이상) : /etc/pam.d/common-password에 아래 line 추가
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * 불필요 계정/그룹 삭제
@@ -1153,7 +1285,7 @@
     * 자세한 내용은 가이드 문서를 참고해 주세요.
 
 
-### 2018.02.22
+### 2018. 02. 22.
 
 #### 기능 개선
 
@@ -1162,7 +1294,7 @@
     * 이미지 정보
         * Name : Windows 2012R2std
         * Language : KO
-        * Description : Windows 2012 R2 STD (2018.02.22)
+        * Description : Windows 2012 R2 STD(2018. 02. 22.)
     * Windows Time Zone 설정 변경
         * 동기화 주기 변경 : [기존) 604800초 (7일) -> [변경] 256초
         * Time Zone Peer 도메인 변경 : [기존] 1.kr.pool.ntp.org , 1.pool.ntp.org -> [변경] 1.pool.ntp.org , time.windows.com
@@ -1171,7 +1303,7 @@
 * Ubuntu Linux 14.04 이미지 업데이트
     * 이미지 정보
         * Name : Ubuntu 14.04
-        * Description : Ubuntu Linux 14.04.5 (2018.02.22)
+        * Description : Ubuntu Linux 14.04.5(2018. 02. 22.)
     * 취약점 패치를 위한 관련 커널 업데이트
         * Linux Kernel Version : [기존] 3.13.0-32 --> [변경] 3.13.0-141
         * Variant 1 (CVE-2017-5753) - patched
@@ -1179,7 +1311,7 @@
 * Debian Linux 8.2 이미지 업데이트
     * 이미지 정보
         * Name : Debian Linux 8.2.0
-        * Description : Debian Linux 8.2.0 (2018.02.22)
+        * Description : Debian Linux 8.2.0(2018. 02. 22.)
     * 호스트명 설정 변경
         * 인스턴스 생성시 지정한 이름으로 호스트명 적용되도록 수정
         * [기존] localhost-192.168.0.x -> [변경] 콘솔에서 지정한 이름
@@ -1189,7 +1321,7 @@
 * CentOS Linux 6.5 이미지 업데이트
     * 이미지 정보
         * Name : CentOS Linux 6.5
-        * Description : CentOS Linux 6.5 (2018.02.22)
+        * Description : CentOS Linux 6.5(2018. 02. 22.)
     * 호스트명 설정 변경
         * 인스턴스 생성시 지정한 이름으로 호스트명 적용되도록 수정
         * [기존] localhost-192.168.0.x -> [변경] 콘솔에서 지정한 이름
@@ -1200,7 +1332,7 @@
 * CentOS Linux 7.1 이미지 업데이트
     * 이미지 정보
         * Name : CentOS Linux 7.1
-        * Description : CentOS Linux 7.1 (2018.02.22)
+        * Description : CentOS Linux 7.1(2018. 02. 22.)
     * 호스트명 설정 변경
         * 인스턴스 생성시 지정한 이름으로 호스트명 적용되도록 수정
         * [기존] localhost-192.168.0.x -> [변경] 콘솔에서 지정한 이름
@@ -1215,13 +1347,13 @@
 * CentOS Linux 6.5 with MySQL 5.6.38 신규 이미지 업데이트
     * 이미지 정보
         * Name : CentOS Linux 6.5
-        * Description : CentOS Linux 6.5 with MySQL 5.6.38 (2018.02.22)
+        * Description : CentOS Linux 6.5 with MySQL 5.6.38(2018. 02. 22.)
     * MySQL 5.6.38 패키지 설치됨
     * 그외 설정은 CentOS Linux 6.5 이미지와 동일함
 * CentOS Linux 6.5 with MySQL 5.7.20 신규 이미지 업데이트
     * 이미지 정보
         * Name : CentOS Linux 6.5
-        * Description : CentOS Linux 6.5 with MySQL 5.7.20 (2018.02.22)
+        * Description : CentOS Linux 6.5 with MySQL 5.7.20(2018. 02. 22.)
     * MySQL 5.7.20 패키지 설치됨
     * 그외 설정은 CentOS Linux 6.5 이미지와 동일함
 
@@ -1230,7 +1362,7 @@
 
 #### 기능 추가
 * Public API 추가
-    * Object Storage에 이어 TOAST Compute를 API로 관리할 수 있습니다.
+    * Object Storage에 이어 NHN Cloud Compute를 API로 관리할 수 있습니다.
     * 현재 제한적인 기능만 이용할 수 있으며, 추후 API 추가를 통해 기능이 확장될 예정입니다.
     * 지원되는 API는 API Guide를 참고하시기 바랍니다.
 
@@ -1268,7 +1400,7 @@
 
 
 
-### 2017.05.25
+### 2017. 05. 25.
 
 #### 기능 추가
 

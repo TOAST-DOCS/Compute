@@ -1,58 +1,59 @@
-## API v2 사용 준비
+## API v2 Preparations
 
-## 공통 준비 사항
+## Common Preparations
 
-### API 엔드포인트 확인
+### Check API Endpoints
+The NHN Cloud Infrastructure Services API provides different endpoints for each type and region. However, the Identity API uses the same endpoint for all regions.
 
-NHN Cloud 기본 인프라 서비스 API는 타입과 리전별로 엔드포인트가 나뉘어 있습니다. 단, Identity API는 모든 리전에서 동일한 엔드포인트를 사용합니다.
-
-| 타입 | 리전 | 엔드포인트 |
+| Type | Region | Endpoint |
 |---|---|---|
-| identity | 모든 리전 | https://api-identity.infrastructure.cloud.toast.com |
-| compute | 한국(판교) 리전<br>일본 리전 | https://kr1-api-instance.infrastructure.cloud.toast.com<br>https://jp1-api-instance.infrastructure.cloud.toast.com |
-| network | 한국(판교) 리전<br>일본 리전 | https://kr1-api-network.infrastructure.cloud.toast.com<br>https://jp1-api-network.infrastructure.cloud.toast.com |
-| image | 한국(판교) 리전<br>일본 리전 | https://kr1-api-image.infrastructure.cloud.toast.com<br>https://jp1-api-image.infrastructure.cloud.toast.com |
-| volumev2 | 한국(판교) 리전<br>일본 리전 | https://kr1-api-block-storage.infrastructure.cloud.toast.com<br>https://jp1-api-block-storage.infrastructure.cloud.toast.com |
-| key-manager | 한국(판교) 리전<br>일본 리전 | https://kr1-api-key-manager.infrastructure.cloud.toast.com<br>https://jp1-api-key-manager.infrastructure.cloud.toast.com |
+| identity | All Regions | https://api-identity.infrastructure.cloud.toast.com |
+| compute | Korea (Pangyo)<br>Korea (Pyeongchon)<br>Japan | https://kr1-api-instance.infrastructure.cloud.toast.com<br>https://kr2-api-instance.infrastructure.cloud.toast.com<br>https://jp1-api-instance.infrastructure.cloud.toast.com |
+| network | Korea (Pangyo)<br>Korea (Pyeongchon)<br>Japan | https://kr1-api-network.infrastructure.cloud.toast.com<br>https://kr2-api-network.infrastructure.cloud.toast.com<br>https://jp1-api-network.infrastructure.cloud.toast.com |
+| image | Korea (Pangyo)<br>Korea (Pyeongchon)<br>Japan | https://kr1-api-image.infrastructure.cloud.toast.com<br>https://kr2-api-image.infrastructure.cloud.toast.com<br>https://jp1-api-image.infrastructure.cloud.toast.com |
+| volumev2 | Korea (Pangyo)<br>Korea (Pyeongchon)<br>Japan | https://kr1-api-block-storage.infrastructure.cloud.toast.com<br>https://kr2-api-block-storage.infrastructure.cloud.toast.com<br>https://jp1-api-block-storage.infrastructure.cloud.toast.com |
+| Object-store | Korea (Pangyo)<br>Korea (Pyeongchon)<br>Japan | https://api-storage.cloud.toast.com<br>https://kr2-api-storage.cloud.toast.com<br>https://jp1-api-storage.cloud.toast.com |
+| key-manager | Korea (Pangyo)<br>Korea (Pyeongchon)<br>Japan | https://kr1-api-key-manager.infrastructure.cloud.toast.com<br>https://kr2-api-key-manager.infrastructure.cloud.toast.com<br>https://jp1-api-key-manager.infrastructure.cloud.toast.com |
 
-### 테넌트 ID 확인
+### Check Tenant ID 
 
-API 요청에 포함되는 테넌트 ID는 **Compute > Instance > 관리** 페이지의 **API 엔드포인트 설정** 대화 상자에서 확인합니다.
+You can check your tenant ID to include in API requests from **Set API Endpoint** in **Compute > Instance > Management**. 
 
-### API 비밀번호 설정
+### Set API Password
 
-NHN Cloud 기본 인프라 서비스 API를 사용하려면 NHN Cloud 계정 비밀번호와는 별개로 API 비밀번호를 설정해야 합니다.
+You must set an API endpoint password, which is separate from your NHN Cloud account password, in order to use the NHN Cloud Infrastructure Services API.
 
-1. **Compute > Instance > 관리** 페이지의 **API 엔드포인트 설정** 버튼을 클릭합니다.
-2. **API 엔드포인트 설정** 대화 상자 아래의 **API 비밀번호 설정**에 원하는 API 비밀번호를 지정합니다.
+1. Go to **Compute > Instance > Management** and click **Set API Endpoint**.
+2. Enter an API password in **Set API Password** under **API Endpoint Settings** . 
 
-> API 비밀번호는 계정별로 설정됩니다. 한 프로젝트에서 설정된 비밀번호는 사용자가 속한 모든 프로젝트에서 사용할 수 있습니다.
+> An API password is set by account. You can use the same password set in one project for all of your other projects. 
 
 
 ## Token
 
-### 토큰 발급하기
+### Obtain a Token
 
-토큰 발급은 `identity` 타입 엔드포인트를 이용합니다. `identity` 서비스 엔드포인트는 리전에 관계없이 `https://api-identity.infrastructure.cloud.toast.com`입니다.
+To obtain a token, use the `identity` type endpoint. The `identity` service endpoint is `https://api-identity.infrastructure.cloud.toast.com` regardless of region.
 
-API를 호출할 때 필요한 토큰을 발급받습니다. NHN Cloud에서는 프로젝트 한정 토큰(project-scoped token)을 사용합니다.
+You must obtain a token to make API calls. NHN Cloud uses project-scoped tokens.
 
 ```
 POST /v2.0/tokens
 ```
 
-#### 요청
+#### Request
 
-| 이름 | 종류 | 형식 | 필수 | 설명 |
+| Name | Type | Format | Required | Description |
 |---|---|---|---|---|
-| tenantId | Body | String | O | 토큰을 발급받을 테넌트 ID |
-| passwordCredentials | Body | Object | O | 인증을 위한 사용자 정보 객체 |
-| username | Body | String | O | NHN Cloud 사용자 ID |
-| password | Body | String | O | API 비밀번호 |
+| tenantId | Body | String | O | Tenant ID to obtain a token |
+| passwordCredentials | Body | Object | O | User information for authentication |
+| username | Body | String | O | NHN Cloud user ID |
+| password | Body | String | O | API password |
 
-#### 예시
-<details><summary>펼쳐 보기</summary>
+#### Example
+<details><summary>Unfold</summary>
 <p>
+
 
 ```json
 {
@@ -69,31 +70,32 @@ POST /v2.0/tokens
 </p>
 </details>
 
-#### 응답
+#### Response
 
-| 이름 | 종류 | 속성 | 설명 |
+| Name | Type | Attributes | Description |
 |---|---|---|---|
-| access | Body | Object | `access` 객체 |
-| access.token | Body | Object | `token` 객체 |
-| access.token.issued_at | Body | Datetime | 토큰 발급 시간(UTC)<br>`YYYY-MM-DDThh:mm:ss.SSSSSS`의 형태 |
-| access.token.expires | Body | Datetime | 토큰 만료 시간(UTC)<br>`YYYY-MM-DDThh:mm:ssZ`의 형태 |
-| access.token.id | Body | String | 토큰 ID |
-| access.token.tenant | Body | Object | `tenant` 객체 |
-| access.token.tenant.description | Body | String | 테넌트 설명 |
-| access.token.tenant.enabled | Body | String | 테넌트의 활성화 여부<br>활성화되지 않으면 토큰 발급 및 API 호출 불가 |
-| access.token.tenant.id | Body | String | 테넌트 ID |
-| access.token.tenant.name | Body | String | 테넌트 이름 |
-| access.serviceCatalog | Body | Object | `serviceCatalog` 객체 |
-| access.serviceCatalog.endpoints | Body | Object | `endpoint` 객체 |
-| access.serviceCatalog.endpoints_links | Body | String | 엔드포인트 링크 |
-| access.serviceCatalog.type | Body | String | 엔드포인트 서비스 타입 |
-| access.serviceCatalog.name | Body | String | 엔드포인트 서비스 이름 |
-| access.user | Body | Object | `user` 객체 |
-| access.metadata | Body | Object | `metadata` 객체 |
+| access | Body | Object | `access` object |
+| access.token | Body | Object | `token` object |
+| access.token.issued_at | Body | Datetime | Token issuance time (UTC)<br>`YYYY-MM-DDThh:mm:ss.SSSSSS` format |
+| access.token.expires | Body | Datetime | Token expiration time (UTC)<br>`YYYY-MM-DDThh:mm:ssZ` format |
+| access.token.id | Body | String | Token ID |
+| access.token.tenant | Body | Object | `tenant` object |
+| access.token.tenant.description | Body | String | Tenant description |
+| access.token.tenant.enabled | Body | Boolean | Indicates whether the tenant is enabled<br>If disabled, unable to obtain token or make API calls |
+| access.token.tenant.id | Body | String | Tenant ID |
+| access.token.tenant.name | Body | String | Tenant name |
+| access.serviceCatalog | Body | Object | `serviceCatalog` object |
+| access.serviceCatalog.endpoints | Body | Object | `endpoint` object |
+| access.serviceCatalog.endpoints_links | Body | String | Endpoint links |
+| access.serviceCatalog.type | Body | String | Endpoint service type |
+| access.serviceCatalog.name | Body | String | Endpoint service name |
+| access.user | Body | Object | `user` object |
+| access.metadata | Body | Object | `metadata` object |
 
-#### 예제
-<details><summary>펼쳐 보기</summary>
+#### Example 
+<details><summary>Unfold</summary>
 <p>
+
 
 ```json
 {
