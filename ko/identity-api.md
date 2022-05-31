@@ -48,7 +48,7 @@ POST /v2.0/tokens
 |---|---|---|---|---|
 | tenantId | Body | String | O | 토큰을 발급받을 테넌트 ID |
 | passwordCredentials | Body | Object | O | 인증을 위한 사용자 정보 객체 |
-| username | Body | String | O | NHN Cloud 사용자 ID |
+| username | Body | String | O | NHN Cloud 회원 ID(이메일 형식), IAM 멤버 ID |
 | password | Body | String | O | API 비밀번호 |
 
 #### 예시
