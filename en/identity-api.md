@@ -47,7 +47,7 @@ POST /v2.0/tokens
 |---|---|---|---|---|
 | tenantId | Body | String | O | Tenant ID to obtain a token |
 | passwordCredentials | Body | Object | O | User information for authentication |
-| username | Body | String | O | NHN Cloud user ID |
+| username | Body | String | O | NHN Cloud user ID(email format), IAM member ID |
 | password | Body | String | O | API password |
 
 #### Example
