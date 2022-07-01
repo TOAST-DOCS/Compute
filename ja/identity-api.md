@@ -48,7 +48,7 @@ POST /v2.0/tokens
 |---|---|---|---|---|
 | tenantId | Body | String | O | トークンの発行を受けるテナントID |
 | passwordCredentials | Body | Object | O | 認証用のユーザー情報オブジェクト |
-| username | Body | String | O | NHN CloudユーザーID |
+| username | Body | String | O | NHN Cloud会員ID(メール形式)、IAMメンバーID |
 | password | Body | String | O | APIのパスワード |
 
 #### 例
