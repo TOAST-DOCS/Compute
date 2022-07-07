@@ -20,9 +20,11 @@
     * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
 * Windows Server 2016 with SQL Server 2019 Standard(2022. 07. 19.)
     * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+    * SQL Server 누적 업데이트 16 반영: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
 * Windows Server 2019 with SQL Server 2019 Standard(2022. 07. 19.)
     * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
     * SQL Server 누적 업데이트 16 반영: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
+    
 ### 2022. 05. 24.
 #### Instance
 * 인스턴스 스크린숏 기능 추가
