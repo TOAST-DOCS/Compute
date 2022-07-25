@@ -1,6 +1,7 @@
 ## Compute > 릴리스 노트
 
 ### 2022. 07. 26.
+#### Image
 * Windows 이미지 Administrator 계정명을 변경하여도 비밀번호 초기화 가능하도록 변경
 
 * Windows 2012 R2 STD(2022. 07. 19.)
