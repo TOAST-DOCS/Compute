@@ -1,5 +1,13 @@
 ## Compute > Release Notes
 
+### July 26, 2022
+#### System Monitoring
+* Added a new feature: Monthly Metrics Report
+  * Allows you to create and download monthly metric reports.
+  * Allows you to create reports on metrics for up to 6 months on a monthly basis.
+  * Among the Select Metrics items, `GENERAL` can be found in `Server Dashboard`, and `PROMQL` found in `OpenMetrics Dashboard`.
+  * Each request can be found in `Monthly Metric Report`, and the report can be downloaded for a month after creation
+
 ### May 24, 2022
 #### Instance
 * Added the instance screenshot feature
