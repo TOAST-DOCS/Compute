@@ -1,6 +1,11 @@
 ## Compute > リリースノート
 
 ### 2022. 07. 26
+
+#### Instance
+* インスタンス作成でインスタンスタイプ(Instance、Ephemeral Storage Instance)選択機能を追加
+* インスタンス管理でイメージタイプ(OS、Application、DBMSなど)検索機能を追加
+
 #### System Monitoring
 * 新規機能追加：月間指標レポート
   * 月間指標レポートの作成およびダウンロードを行うことができます。
