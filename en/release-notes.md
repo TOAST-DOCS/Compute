@@ -1,6 +1,11 @@
 ## Compute > Release Notes
 
 ### July 26, 2022
+
+#### Instance
+* Added a feature to select instance flavors (Instance and Ephemeral Storage Instance) in the Create Instances menu
+* Added a feature to search for image types (OS, Application, DBMS, etc.) in the Instance Management menu. 
+
 #### Image
 * Changed to allow password initialization even when the administrator account name of Windows image is changed 
 
