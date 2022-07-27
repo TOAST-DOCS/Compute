@@ -1,5 +1,43 @@
 ## Compute > 릴리스 노트
 
+### 2022. 07. 26.
+
+#### Instance
+* 인스턴스 생성에서 인스턴스 타입(Instance, Ephemeral Storage Instance) 선택 기능 추가
+* 인스턴스 관리에서 이미지 타입(OS, Application, DBMS 등) 검색 기능 추가
+
+#### Image
+* Windows 이미지 Administrator 계정명을 변경하여도 비밀번호 초기화 가능하도록 변경
+
+* Windows 2012 R2 STD(2022. 07. 19.)
+    * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-au/topic/kb5012672-servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2-april-12-2022-0f0b0460-2483-4d89-868a-56997d1202a5
+* Windows 2016 STD(2022. 07. 19.)
+    * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+* Windows 2019 STD(2022. 07. 19.)
+    * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
+* Windows Server 2012 R2 with SQL Server 2016 Standard(2022. 07. 19.)
+    * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-au/topic/kb5012672-servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2-april-12-2022-0f0b0460-2483-4d89-868a-56997d1202a5
+* Windows Server 2016 with SQL Server 2016 Standard(2022. 07. 19.)
+    * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+* Windows Server 2016 with SQL Server 2019 Express(2022. 07. 19.)
+    * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+    * SQL Server 누적 업데이트 16 반영: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
+* Windows Server 2016 with SQL Server 2017 Standard(2022. 07. 19.)
+    * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+* Windows Server 2016 with SQL Server 2019 Standard(2022. 07. 19.)
+    * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+    * SQL Server 누적 업데이트 16 반영: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
+* Windows Server 2019 with SQL Server 2019 Standard(2022. 07. 19.)
+    * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
+    * SQL Server 누적 업데이트 16 반영: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
+    
+#### System Monitoring
+* 신규 기능 추가: 월간 지표 보고서
+  * 월간 지표 보고서를 생성 및 다운로드할 수 있습니다.
+  * 월 단위로 최대 6 개월 분량의 지표에 대한 보고서를 생성할 수 있습니다.
+  * 지표 선택 항목의 `GENERAL`은 `서버 대시보드`에서, `PROMQL`은 `OpenMetrics 대시보드`에서 확인할 수 있는 지표들입니다.
+  * `월간 지표 보고서`에서 각 요청을 확인할 수 있으며, 보고서 생성 이후 한달간 다운로드가 가능합니다.
+
 ### 2022. 05. 24.
 #### Instance
 * 인스턴스 스크린숏 기능 추가

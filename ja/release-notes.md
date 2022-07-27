@@ -1,5 +1,42 @@
 ## Compute > リリースノート
 
+### 2022. 07. 26.
+#### Image
+* WindowsイメージAdministratorアカウント名を変更してもパスワード初期化できるように変更
+
+* Windows 2012 R2 STD(2022. 07. 19.)
+    * 22年5月セキュリティアップデート反映：https://support.microsoft.com/en-au/topic/kb5012672-servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2-april-12-2022-0f0b0460-2483-4d89-868a-56997d1202a5
+* Windows 2016 STD(2022. 07. 19.)
+    * 22年5月セキュリティアップデート反映： https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+* Windows 2019 STD(2022. 07. 19.)
+    * 22年5月セキュリティアップデート反映： https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
+* Windows Server 2012 R2 with SQL Server 2016 Standard(2022. 07. 19.)
+    * 22年5月セキュリティアップデート反映： https://support.microsoft.com/en-au/topic/kb5012672-servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2-april-12-2022-0f0b0460-2483-4d89-868a-56997d1202a5
+* Windows Server 2016 with SQL Server 2016 Standard(2022. 07. 19.)
+    * 22年5月セキュリティアップデート反映： https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+* Windows Server 2016 with SQL Server 2019 Express(2022. 07. 19.)
+    * 22年5月セキュリティアップデート反映： https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+    * SQL Server累積アップデート16反映： https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
+* Windows Server 2016 with SQL Server 2017 Standard(2022. 07. 19.)
+    * 22年5月セキュリティアップデート反映： https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+* Windows Server 2016 with SQL Server 2019 Standard(2022. 07. 19.)
+    * 22年5月セキュリティアップデート反映： https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+    * SQL Server累積アップデート16反映： https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
+* Windows Server 2019 with SQL Server 2019 Standard(2022. 07. 19.)
+    * 22年5月セキュリティアップデート反映： https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
+    * SQL Server累積アップデート16反映： https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
+
+#### Instance
+* インスタンス作成でインスタンスタイプ(Instance、Ephemeral Storage Instance)選択機能を追加
+* インスタンス管理でイメージタイプ(OS、Application、DBMSなど)検索機能を追加
+
+#### System Monitoring
+* 新規機能追加：月間指標レポート
+  * 月間指標レポートの作成およびダウンロードを行うことができます。
+  * 月単位で最大6か月分の指標のレポートを作成できます。
+  * 指標選択項目の`GENERAL`は`サーバーダッシュボード`で、`PROMQL`は`OpenMetricsダッシュボード`で確認できる指標です。
+  * `月間指標レポート`で各リクエストを確認することができ、レポート作成後、一ヶ月間ダウンロードが可能です。
+
 ### 2022. 05. 24.
 #### Instance
 * インスタンススクリーンショット機能の追加
