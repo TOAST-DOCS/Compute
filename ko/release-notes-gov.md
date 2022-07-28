@@ -7,6 +7,10 @@
 * 인스턴스 관리에서 이미지 타입(OS, Application, DBMS 등) 검색 기능 추가
 
 #### Image
+
+* 신규 이미지 추가
+    * Rocky Linux 8.5 (2022. 05. 17.)
+
 * Windows 이미지 Administrator 계정명을 변경하여도 비밀번호 초기화 가능하도록 변경
 
 * Windows 2012 R2 STD(2022. 07. 19.)
