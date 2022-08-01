@@ -34,13 +34,6 @@
 * Windows Server 2019 with SQL Server 2019 Standard(2022. 07. 19.)
     * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
     * SQL Server 누적 업데이트 16 반영: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
-    
-#### System Monitoring
-* 신규 기능 추가: 월간 지표 보고서
-  * 월간 지표 보고서를 생성 및 다운로드할 수 있습니다.
-  * 월 단위로 최대 6 개월 분량의 지표에 대한 보고서를 생성할 수 있습니다.
-  * 지표 선택 항목의 `GENERAL`은 `서버 대시보드`에서, `PROMQL`은 `OpenMetrics 대시보드`에서 확인할 수 있는 지표들입니다.
-  * `월간 지표 보고서`에서 각 요청을 확인할 수 있으며, 보고서 생성 이후 한달간 다운로드가 가능합니다.
 
 ### 2022. 05. 31.
 #### Instance
