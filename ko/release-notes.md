@@ -1,7 +1,10 @@
 ## Compute > 릴리스 노트
 
+### 2022. 09. 27.
+#### Image
+* 신규 이미지 추가
+    * Windows 2022 STD (2022. 09. 20.)
 ### 2022. 07. 26.
-
 #### Instance
 * 인스턴스 생성에서 인스턴스 타입(Instance, Ephemeral Storage Instance) 선택 기능 추가
 * 인스턴스 관리에서 이미지 타입(OS, Application, DBMS 등) 검색 기능 추가
