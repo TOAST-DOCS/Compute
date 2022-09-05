@@ -1,5 +1,10 @@
 ## Compute > Release Notes
 
+### Septempber 27, 2022
+#### Image
+* Added new images
+    * Windows 2022 STD (2022. 09. 20.)
+
 ### July 26, 2022
 
 #### Instance
@@ -15,19 +20,19 @@
     * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
 * Windows 2019 STD(2022. 07. 19.)
     * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
-* Windows Server 2012 R2 with SQL Server 2016 Standard(2022. 07. 19.)
+* Windows 2012 R2 STD with MS-SQL Server 2016 Standard(2022. 07. 19.)
     * May. 2022 security update applied: https://support.microsoft.com/en-au/topic/kb5012672-servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2-april-12-2022-0f0b0460-2483-4d89-868a-56997d1202a5
-* Windows Server 2016 with SQL Server 2016 Standard(2022. 07. 19.)
+* Windows 2016 STD with MS-SQL Server 2016 Standard(2022. 07. 19.)
     * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
-* Windows Server 2016 with SQL Server 2019 Express(2022. 07. 19.)
-    * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
-    * Cumulative update 16 for SQL Server applied: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
-* Windows Server 2016 with SQL Server 2017 Standard(2022. 07. 19.)
-    * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
-* Windows Server 2016 with SQL Server 2019 Standard(2022. 07. 19.)
+* Windows 2016 with MS-SQL Server 2019 Express(2022. 07. 19.)
     * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
     * Cumulative update 16 for SQL Server applied: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
-* Windows Server 2019 with SQL Server 2019 Standard(2022. 07. 19.)
+* Windows 2016 STD with MS-SQL Server 2017 Standard(2022. 07. 19.)
+    * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+* Windows 2016 STD with MS-SQL Server 2019 Standard(2022. 07. 19.)
+    * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+    * Cumulative update 16 for SQL Server applied: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
+* Windows 2019 with MS-SQL Server 2019 Standard(2022. 07. 19.)
     * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
     * Cumulative update 16 for SQL Server applied: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
     
