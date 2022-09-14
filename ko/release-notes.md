@@ -4,6 +4,9 @@
 #### Image
 * 신규 이미지 추가
     * Windows 2022 STD (2022. 09. 20.)
+
+* PLOS-WFK-KS-v4.0.6.61.25 (2022. 09. 20)
+    * 이미지 업데이트
 ### 2022. 07. 26.
 #### Instance
 * 인스턴스 생성에서 인스턴스 타입(Instance, Ephemeral Storage Instance) 선택 기능 추가
