@@ -1,5 +1,16 @@
 ## Compute > 릴리스 노트
 
+### 2022. 09. 14.
+
+* 신규 이미지 추가
+    * Tibero
+        * CentOS 7.8 with Tibero 6(2022. 01. 25.)
+    * MariaDB
+        * CentOS 7.8 with MariaDB 10.3.31(2021. 12. 21.)
+    * CUBRID
+        * CentOS 7.8 with CUBRID 10.2.4(2021. 12. 21.)
+        * CentOS 7.8 with CUBRID 11.0.2(2021. 12. 21.)
+
 ### 2022. 08. 02.
 
 #### Instance
