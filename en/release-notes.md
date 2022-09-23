@@ -2,8 +2,11 @@
 
 ### Septempber 27, 2022
 #### Image
-* Added new images
+* Added a new image
     * Windows 2022 STD (2022. 09. 20.)
+
+* PLOS-WFK-KS-v4.0.6.61.25
+    * Image updated
 
 ### July 26, 2022
 
