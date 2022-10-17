@@ -1,5 +1,11 @@
 ## Compute > Release Notes
 
+### 2022. 10. 25
+#### Image
+* 이미지 지원 종료
+    * CentOS 7.8 with MySQL 5.6.38(2021. 12. 21.)
+    * CentOS 7.8 with MySQL 5.6.50(2021. 12. 21.)
+
 ### Septempber 27, 2022
 #### Image
 * Added a new image
