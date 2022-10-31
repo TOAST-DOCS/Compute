@@ -1,5 +1,9 @@
 ## Compute > Release Notes
 
+### November 29, 2022
+#### Instance
+* Added deletion protection (all/set/unset) to **Filter Conditions** of Instance Management
+
 ### October 25, 2022
 #### Image
 * Ended image support
