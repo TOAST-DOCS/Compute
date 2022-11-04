@@ -9,6 +9,11 @@
   * Redis
   * Kafka
 
+### 2022. 11. 04
+#### Image Builder
+* 스크립트 수정
+  * MariaDB
+
 ### 2022. 10. 25
 #### Image
 * 이미지 지원 종료
