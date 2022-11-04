@@ -7,14 +7,14 @@
 #### Image Builder
 * 애플리케이션 추가
   * Redis
-  * Kafka
+  * Apache Kafka
 
-### 2022. 11. 04
+### 2022. 11. 04.
 #### Image Builder
 * 스크립트 수정
   * MariaDB
 
-### 2022. 10. 25
+### 2022. 10. 25.
 #### Image
 * 이미지 지원 종료
     * CentOS 7.8 with MySQL 5.6.38(2021. 12. 21.)
