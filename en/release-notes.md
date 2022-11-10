@@ -4,6 +4,16 @@
 #### Instance
 * Added deletion protection (all/set/unset) to **Filter Conditions** of Instance Management
 
+#### Image Builder
+* Added applications
+  * Redis
+  * Apache Kafka
+
+### 2022. 11. 04.
+#### Image Builder
+* Modified a script
+  * MariaDB
+
 ### October 25, 2022
 #### Image
 * Ended image support
