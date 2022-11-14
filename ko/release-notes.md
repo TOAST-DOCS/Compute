@@ -4,6 +4,55 @@
 #### Instance
 * 인스턴스 관리의 **필터 조건**에 삭제 보호(전체/설정/미 설정) 추가
 
+#### Image
+* 신규 이미지 추가
+    * CentOS 7.9(2022. 11. 22.)
+    * CentOS 7.9 for NAT(2022. 11. 22.)
+* Rocky Linux 8.6 (2022. 11. 22.)
+    * 이미지 업데이트
+* Debian 10.13 Buster(2022. 11. 22.)
+    * 이미지 업데이트
+* Debian 11.5 Bullseye(2022. 11. 22.)
+    * 이미지 업데이트
+* Ubuntu Server 18.04.6 LTS(2022. 11. 22.)
+    * 이미지 업데이트
+* Ubuntu Server 20.04.5 LTS(2022. 11. 22.)
+    * 이미지 업데이트
+* Ubuntu Server 18.04.6 LTS for NAT(2022. 11. 22.)
+    * 이미지 업데이트
+* Ubuntu Server 18.04.6 LTS with NVIDIA(2022. 11. 22.)
+    * 이미지 업데이트
+* Windows 2012 R2 STD(2022. 11. 22.)
+    * 일본어 이미지 지원 종료
+    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018474-monthly-rollup-21182931-4a5f-4085-a37b-2e63ac3c8c0a
+* Windows 2016 STD(2022. 11. 22.)
+    * 일본어 이미지 지원 종료
+    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
+* Windows 2019 STD(2022. 11. 22.)
+    * 일본어 이미지 지원 종료
+    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018419-os-build-17763-3532-ca62cca7-b599-44c4-a2a6-347996662623
+* Windows 2022 STD(2022. 11. 22.)
+    * 일본어 이미지 지원 종료
+    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018421-os-build-20348-1129-115b1147-9568-4924-83b8-d27ab5b495be
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2022. 11. 22.)
+    * 일본어 이미지 지원 종료
+    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-au/topic/kb5012672-servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2-april-12-2022-0f0b0460-2483-4d89-868a-56997d1202a5
+* Windows 2016 STD with MS-SQL 2016 Standard(2022. 11. 22.)
+    * 일본어 이미지 지원 종료
+    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018474-monthly-rollup-21182931-4a5f-4085-a37b-2e63ac3c8c0a
+* Windows 2016 STD with MS-SQL 2019 Express(2022. 11. 22.)
+    * 일본어 이미지 지원 종료
+    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
+* Windows 2016 STD with MS-SQL 2017 Standard(2022. 11. 22.)
+    * 일본어 이미지 지원 종료
+    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
+* Windows 2016 STD with MS-SQL 2019 Standard(2022. 11. 22.)
+    * 일본어 이미지 지원 종료
+    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
+* Windows 2019 STD with MS-SQL 2019 Standard(2022. 11. 22.)
+    * 일본어 이미지 지원 종료
+    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018419-os-build-17763-3532-ca62cca7-b599-44c4-a2a6-347996662623
+
 ### 2022. 10. 25
 #### Image
 * 이미지 지원 종료
