@@ -6,13 +6,13 @@
 
 #### Image Builder
 * 애플리케이션 추가
-  * Redis
-  * Apache Kafka
+    * Redis
+    * Apache Kafka
 
 ### 2022. 11. 04.
 #### Image Builder
 * 스크립트 수정
-  * MariaDB
+    * MariaDB
 
 ### 2022. 10. 25.
 #### Image
