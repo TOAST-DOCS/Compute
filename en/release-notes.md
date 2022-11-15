@@ -6,13 +6,13 @@
 
 #### Image Builder
 * Added applications
-  * Redis
-  * Apache Kafka
+    * Redis
+    * Apache Kafka
 
 ### 2022. 11. 04.
 #### Image Builder
 * Modified a script
-  * MariaDB
+    * MariaDB
 
 ### October 25, 2022
 #### Image
