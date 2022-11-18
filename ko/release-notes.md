@@ -8,8 +8,9 @@
 * 신규 이미지 추가
     * CentOS 7.9(2022. 11. 22.)
     * CentOS 7.9 for NAT(2022. 11. 22.)
-* Rocky Linux 8.6(2022. 11. 22.)
-    * 이미지 업데이트
+    * Rocky Linux 8.6(2022. 11. 22.)
+* 이미지 지원 종료
+    * Rocky Linux 8.5(2022. 05. 17.)
 * Debian 10.13 Buster(2022. 11. 22.)
     * 이미지 업데이트
 * Debian 11.5 Bullseye(2022. 11. 22.)
@@ -53,7 +54,21 @@
     * 일본어 이미지 지원 종료
     * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018419-os-build-17763-3532-ca62cca7-b599-44c4-a2a6-347996662623
 
-### 2022. 10. 25
+#### Image Builder
+* 애플리케이션 추가
+    * Redis
+    * Apache Kafka
+
+### 2022. 11. 04.
+#### Image
+* CentOS 7.8 with MariaDB 10.3.31(2022. 11. 04.)
+    * 이미지 업데이트
+
+#### Image Builder
+* 스크립트 수정
+    * MariaDB
+
+### 2022. 10. 25.
 #### Image
 * 이미지 지원 종료
     * CentOS 7.8 with MySQL 5.6.38(2021. 12. 21.)
