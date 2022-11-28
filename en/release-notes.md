@@ -1,5 +1,73 @@
 ## Compute > Release Notes
 
+### November 29, 2022
+#### Instance
+* Added deletion protection (all/set/unset) to **Filter Conditions** of Instance Management
+
+#### Image
+* New images added
+    * CentOS 7.9 (2022. 11. 22.)
+    * CentOS 7.9 for NAT (2022. 11. 22.)
+    * Rocky Linux 8.6 (2022. 11. 22.)
+* Image support ended
+    * Rocky Linux 8.5 (2022. 05. 17.)
+* Debian 10.13 Buster (2022. 11. 22.)
+    * Image update
+* Debian 11.5 Bullseye (2022. 11. 22.)
+    * Image update
+* Ubuntu Server 18.04.6 LTS (2022. 11. 22.)
+    * Image update
+* Ubuntu Server 20.04.5 LTS (2022. 11. 22.)
+    * Image update
+* Ubuntu Server 18.04.6 LTS for NAT (2022. 11. 22.)
+    * Image update
+* Ubuntu Server 18.04.6 LTS with NVIDIA (2022. 11. 22.)
+    * Image update
+* Windows 2012 R2 STD (2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018474-monthly-rollup-21182931-4a5f-4085-a37b-2e63ac3c8c0a
+* Windows 2016 STD(2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
+* Windows 2019 STD (2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018419-os-build-17763-3532-ca62cca7-b599-44c4-a2a6-347996662623
+* Windows 2022 STD(2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018421-os-build-20348-1129-115b1147-9568-4924-83b8-d27ab5b495be
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied: https://support.microsoft.com/en-au/topic/kb5012672-servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2-april-12-2022-0f0b0460-2483-4d89-868a-56997d1202a5
+* Windows 2016 STD with MS-SQL 2016 Standard(2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018474-monthly-rollup-21182931-4a5f-4085-a37b-2e63ac3c8c0a
+* Windows 2016 STD with MS-SQL 2019 Express(2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
+* Windows 2016 STD with MS-SQL 2017 Standard(2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
+* Windows 2016 STD with MS-SQL 2019 Standard(2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
+* Windows 2019 STD with MS-SQL 2019 Standard(2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018419-os-build-17763-3532-ca62cca7-b599-44c4-a2a6-347996662623
+
+#### Image Builder
+* Added applications
+    * Redis
+    * Apache Kafka
+
+### 2022. 11. 04.
+#### Image
+* CentOS 7.8 with MariaDB 10.3.31(2022. 11. 04.)
+    * Image updated
+
+#### Image Builder
+* Modified a script
+    * MariaDB
+
 ### October 25, 2022
 #### Image
 * Ended image support
