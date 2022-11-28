@@ -3,6 +3,10 @@
 ### November 29, 2022
 #### Instance
 * Added deletion protection (all/set/unset) to **Filter Conditions** of Instance Management
+* Improved the feature to change security group configured for each network interface 
+* Improved the UI of instance information 
+* Added the toggle button for deletion protection
+* Improved the feature to set deletion protection in bathes
 
 #### Image
 * New images added
