@@ -1,6 +1,6 @@
 ## Compute > 릴리스 노트
 
-### 2022.12.27
+### 2022.12.27.
 #### Image Builder
 * 스크립트 지원 OS CentOS 7.8 종료 및 CentOS 7.9 추가
   * Slurm 
