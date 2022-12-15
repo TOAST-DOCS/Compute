@@ -1,5 +1,19 @@
 ## Compute > リリースノート
 
+### 2022.12.27.
+#### Image Builder
+* スクリプトサポートOS CentOS 7.8終了およびCentOS 7.9追加
+  * Slurm 
+  * MySQL 
+  * WebtoB 
+  * JEUS(Managed Server)
+  * JEUS(Domain Administrator Server)
+  * Apache Tomcat 
+  * Node.js 
+  * CUBRID 
+  * MariaDB 
+  * PostgreSQL
+
 ### 2022. 11. 29.
 #### Instance
 * インスタンス管理の**フィルタ条件**に削除保護(全体/設定/未設定)を追加
