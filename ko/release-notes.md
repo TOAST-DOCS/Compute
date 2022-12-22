@@ -39,17 +39,10 @@
     * CentOS 7.8 with WebtoB5Fix4(2022. 03. 22.)
 
 #### Image Builder
-* 스크립트 지원 OS CentOS 7.8 종료 및 CentOS 7.9 추가
-  * Slurm 
-  * MySQL 
-  * WebtoB 
-  * JEUS(Managed Server)
-  * JEUS(Domain Administrator Server)
-  * Apache Tomcat 
-  * Node.js 
-  * CUBRID 
-  * MariaDB 
-  * PostgreSQL
+* 신규 베이스 이미지 추가
+  * CentOS 7.9
+* 베이스 이미지 지원 종료
+  * CentOS 7.8
 
 ### 2022. 11. 29.
 #### Instance
