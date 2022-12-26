@@ -1,5 +1,49 @@
 ## Compute > 릴리스 노트
 
+### 2022.12.27.
+
+#### Image
+* 신규 이미지 추가
+    * CentOS 7.9 with Apache Kafka 3.3.1(2022. 12. 20.)
+    * CentOS 7.9 with CUBRID 10.2.4(2022. 12. 20.)
+    * CentOS 7.9 with CUBRID 11.0.2(2022. 12. 20.)
+    * CentOS 7.9 with JEUS8Fix1(Domain Administrator Server 2022. 12. 20.)
+    * CentOS 7.9 with JEUS8Fix1(Managed Server 2022. 12. 20.)
+    * CentOS 7.9 with MariaDB 10.3.31(2022. 12. 20.)
+    * CentOS 7.9 with MySQL 5.7.35(2022. 12. 20.)
+    * CentOS 7.9 with MySQL 8.0.27(2022. 12. 20.)
+    * CentOS 7.9 with PostgreSQL 10.20(2022. 12. 20.)
+    * CentOS 7.9 with PostgreSQL 11.15(2022. 12. 20.)
+    * CentOS 7.9 with PostgreSQL 12.10(2022. 12. 20.)
+    * CentOS 7.9 with PostgreSQL 13.6(2022. 12. 20.)
+    * CentOS 7.9 with PostgreSQL 14.2(2022. 12. 20.)
+    * CentOS 7.9 with Redis 7.0.5(2022. 12. 20.)
+    * CentOS 7.9 with Tibero 6(2022. 12. 20.)
+    * CentOS 7.9 with WebtoB5Fix4(2022. 12. 20.)
+* 이미지 지원 종료
+    * CentOS 7.8(2021. 12. 21.)
+    * CentOS 7.8 with CUBRID 10.2.4(2021. 12. 21.)
+    * CentOS 7.8 with CUBRID 11.0.2(2021. 12. 21.)
+    * CentOS 7.8 with JEUS8Fix1(Domain Administrator Server 2022. 03. 22.)
+    * CentOS 7.8 with JEUS8Fix1(Managed Server 2022. 03. 22.)
+    * CentOS 7.8 with MariaDB 10.3.31(2022.11.4)
+    * CentOS 7.8 with MySQL 5.7.20(2021. 12. 21.)
+    * CentOS 7.8 with MySQL 5.7.32(2021. 12. 21.)
+    * CentOS 7.8 with MySQL 8.0.22(2021. 12. 21.)
+    * CentOS 7.8 with PostgreSQL 10.20(2022. 05. 17.)
+    * CentOS 7.8 with PostgreSQL 11.15(2022. 05. 17.)
+    * CentOS 7.8 with PostgreSQL 12.10(2022. 05. 17.)
+    * CentOS 7.8 with PostgreSQL 13.6(2022. 05. 17.)
+    * CentOS 7.8 with PostgreSQL 14.2(2022. 05. 17.)
+    * CentOS 7.8 with Tibero 6(2022. 01. 25.)
+    * CentOS 7.8 with WebtoB5Fix4(2022. 03. 22.)
+
+#### Image Builder
+* 신규 베이스 이미지 추가
+  * CentOS 7.9
+* 기존 베이스 이미지 지원 종료
+  * CentOS 7.8
+
 ### 2022. 11. 29.
 #### Instance
 * 인스턴스 관리의 **필터 조건**에 삭제 보호(전체/설정/미설정) 추가
