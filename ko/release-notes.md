@@ -40,9 +40,9 @@
 
 #### Image Builder
 * 신규 베이스 이미지 추가
-  * CentOS 7.9
+    * CentOS 7.9
 * 기존 베이스 이미지 지원 종료
-  * CentOS 7.8
+    * CentOS 7.8
 
 ### 2022. 11. 29.
 #### Instance
