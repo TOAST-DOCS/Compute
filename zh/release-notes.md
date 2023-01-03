@@ -1,5 +1,294 @@
 ## Compute > Release Notes
 
+### December 27, 2022
+#### Image
+* Added new images
+    * CentOS 7.9 with Apache Kafka 3.3.1(2022. 12. 20.)
+    * CentOS 7.9 with CUBRID 10.2.4(2022. 12. 20.)
+    * CentOS 7.9 with CUBRID 11.0.2(2022. 12. 20.)
+    * CentOS 7.9 with JEUS8Fix1(Domain Administrator Server 2022. 12. 20.)
+    * CentOS 7.9 with JEUS8Fix1(Managed Server 2022. 12. 20.)
+    * CentOS 7.9 with MariaDB 10.3.31(2022. 12. 20.)
+    * CentOS 7.9 with MySQL 5.7.35(2022. 12. 20.)
+    * CentOS 7.9 with MySQL 8.0.27(2022. 12. 20.)
+    * CentOS 7.9 with PostgreSQL 10.20(2022. 12. 20.)
+    * CentOS 7.9 with PostgreSQL 11.15(2022. 12. 20.)
+    * CentOS 7.9 with PostgreSQL 12.10(2022. 12. 20.)
+    * CentOS 7.9 with PostgreSQL 13.6(2022. 12. 20.)
+    * CentOS 7.9 with PostgreSQL 14.2(2022. 12. 20.)
+    * CentOS 7.9 with Redis 7.0.5(2022. 12. 20.)
+    * CentOS 7.9 with Tibero 6(2022. 12. 20.)
+    * CentOS 7.9 with WebtoB5Fix4(2022. 12. 20.)
+* Ended image support
+    * CentOS 7.8(2021. 12. 21.)
+    * CentOS 7.8 with CUBRID 10.2.4(2021. 12. 21.)
+    * CentOS 7.8 with CUBRID 11.0.2(2021. 12. 21.)
+    * CentOS 7.8 with JEUS8Fix1(Domain Administrator Server 2022. 03. 22.)
+    * CentOS 7.8 with JEUS8Fix1(Managed Server 2022. 03. 22.)
+    * CentOS 7.8 with MariaDB 10.3.31(2022.11.4)
+    * CentOS 7.8 with MySQL 5.7.20(2021. 12. 21.)
+    * CentOS 7.8 with MySQL 5.7.32(2021. 12. 21.)
+    * CentOS 7.8 with MySQL 8.0.22(2021. 12. 21.)
+    * CentOS 7.8 with PostgreSQL 10.20(2022. 05. 17.)
+    * CentOS 7.8 with PostgreSQL 11.15(2022. 05. 17.)
+    * CentOS 7.8 with PostgreSQL 12.10(2022. 05. 17.)
+    * CentOS 7.8 with PostgreSQL 13.6(2022. 05. 17.)
+    * CentOS 7.8 with PostgreSQL 14.2(2022. 05. 17.)
+    * CentOS 7.8 with Tibero 6(2022. 01. 25.)
+    * CentOS 7.8 with WebtoB5Fix4(2022. 03. 22.)
+
+#### Image Builder
+* Added a new base image
+  * CentOS 7.9
+* Ended an existing base image support
+  * CentOS 7.8
+
+### November 29, 2022
+#### Instance
+* Added deletion protection (all/set/unset) to **Filter Conditions** of Instance Management
+* Improved the feature to change security group configured for each network interface
+* Improved the UI of instance information
+* Added the toggle button for deletion protection
+* Improved the feature to set deletion protection in bathes
+
+#### Image
+* Added new images
+    * CentOS 7.9 (2022. 11. 22.)
+    * CentOS 7.9 for NAT (2022. 11. 22.)
+    * Rocky Linux 8.6 (2022. 11. 22.)
+* Ended image support
+    * Rocky Linux 8.5 (2022. 05. 17.)
+* Debian 10.13 Buster (2022. 11. 22.)
+    * Image update
+* Debian 11.5 Bullseye (2022. 11. 22.)
+    * Image update
+* Ubuntu Server 18.04.6 LTS (2022. 11. 22.)
+    * Image update
+* Ubuntu Server 20.04.5 LTS (2022. 11. 22.)
+    * Image update
+* Ubuntu Server 18.04.6 LTS for NAT (2022. 11. 22.)
+    * Image update
+* Ubuntu Server 18.04.6 LTS with NVIDIA (2022. 11. 22.)
+    * Image update
+* Windows 2012 R2 STD (2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018474-monthly-rollup-21182931-4a5f-4085-a37b-2e63ac3c8c0a
+* Windows 2016 STD(2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
+* Windows 2019 STD (2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018419-os-build-17763-3532-ca62cca7-b599-44c4-a2a6-347996662623
+* Windows 2022 STD(2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018421-os-build-20348-1129-115b1147-9568-4924-83b8-d27ab5b495be
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied: https://support.microsoft.com/en-au/topic/kb5012672-servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2-april-12-2022-0f0b0460-2483-4d89-868a-56997d1202a5
+* Windows 2016 STD with MS-SQL 2016 Standard(2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018474-monthly-rollup-21182931-4a5f-4085-a37b-2e63ac3c8c0a
+* Windows 2016 STD with MS-SQL 2019 Express(2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
+* Windows 2016 STD with MS-SQL 2017 Standard(2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
+* Windows 2016 STD with MS-SQL 2019 Standard(2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
+* Windows 2019 STD with MS-SQL 2019 Standard(2022. 11. 22.)
+    * Japanese image support ended
+    * October 2022 security update applied: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018419-os-build-17763-3532-ca62cca7-b599-44c4-a2a6-347996662623
+
+#### Image Builder
+* Added applications
+    * Redis
+    * Apache Kafka
+
+### 2022. 11. 04.
+#### Image
+* CentOS 7.8 with MariaDB 10.3.31(2022. 11. 04.)
+    * Image updated
+
+#### Image Builder
+* Modified a script
+    * MariaDB
+
+### October 25, 2022
+#### Image
+* Ended image support
+    * CentOS 7.8 with MySQL 5.6.38(2021. 12. 21.)
+    * CentOS 7.8 with MySQL 5.6.50(2021. 12. 21.)
+
+### Septempber 27, 2022
+#### Image
+* Added a new image
+    * Windows 2022 STD (2022. 09. 20.)
+
+* PLOS-WFK-KS-v4.0.6.61.25
+    * Image updated
+
+### July 26, 2022
+
+#### Instance
+* Added a feature to select instance flavors (Instance and Ephemeral Storage Instance) in the Create Instances menu
+* Added a feature to search for image types (OS, Application, DBMS, etc.) in the Instance Management menu.
+
+#### Image
+* Changed to allow password initialization even when the administrator account name of Windows image is changed
+
+* Windows 2012 R2 STD(2022. 07. 19.)
+    * May. 2022 security update applied: https://support.microsoft.com/en-au/topic/kb5012672-servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2-april-12-2022-0f0b0460-2483-4d89-868a-56997d1202a5
+* Windows 2016 STD(2022. 07. 19.)
+    * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+* Windows 2019 STD(2022. 07. 19.)
+    * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
+* Windows 2012 R2 STD with MS-SQL Server 2016 Standard(2022. 07. 19.)
+    * May. 2022 security update applied: https://support.microsoft.com/en-au/topic/kb5012672-servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2-april-12-2022-0f0b0460-2483-4d89-868a-56997d1202a5
+* Windows 2016 STD with MS-SQL Server 2016 Standard(2022. 07. 19.)
+    * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+* Windows 2016 with MS-SQL Server 2019 Express(2022. 07. 19.)
+    * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+    * Cumulative update 16 for SQL Server applied: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
+* Windows 2016 STD with MS-SQL Server 2017 Standard(2022. 07. 19.)
+    * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+* Windows 2016 STD with MS-SQL Server 2019 Standard(2022. 07. 19.)
+    * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+    * Cumulative update 16 for SQL Server applied: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
+* Windows 2019 with MS-SQL Server 2019 Standard(2022. 07. 19.)
+    * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
+    * Cumulative update 16 for SQL Server applied: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
+
+#### System Monitoring
+* Added a new feature: Monthly Metrics Report
+  * Allows you to create and download monthly metric reports.
+  * Allows you to create reports on metrics for up to 6 months on a monthly basis.
+  * Among the Select Metrics items, `GENERAL` can be found in `Server Dashboard`, and `PROMQL` found in `OpenMetrics Dashboard`.
+  * Each request can be found in `Monthly Metric Report`, and the report can be downloaded for a month after creation
+
+### May 24, 2022
+#### Instance
+* Added the instance screenshot feature
+* Added the instance deletion protection feature
+* Made changes so that, when querying an instance with the API, the instance deletion protection attribute (NHN-EXT-ATTR:protect) is displayed
+* Removed a hyphen (`-`) from the names of multiple instances created at the same time
+    * Before change: instance-1, instance-2, ...
+    * After change: instance1, instance2, ...
+* Improved OS image selection UI for creating an instance
+
+#### Image
+* Added a new image
+    * Rocky Linux 8.5 (2022. 05. 17.)
+
+### March 29, 2022
+#### Image
+* Added a new image
+    * Debian 11.2 Bullseye(2022. 03. 22.)
+
+* Image support ended
+    * Debian 9.13 Stretch(2021. 12. 21.)
+
+### January 25, 2022
+#### Public API
+* Changed so that GPU Instance service images can be queried with the image query API
+* Added a query parameter for filtering infrastructure service types to the image query API
+
+#### Image
+* Added a feature to copy images to another region
+
+#### Image Builder
+* Added an application
+    * Slurm
+
+### December 28, 2021
+
+#### Image
+* Changed so that Prometheus compatible exporter is not automatically installed when creating an instance
+
+* CentOS 7.8(2021. 12. 21.)
+    * Image updated
+* CentOS 7.8 for NAT(2021. 12. 21.)
+    * Image updated
+* CentOS 7.8 with MySQL 5.6.38(2021. 12. 21.)
+    * Image updated
+* CentOS 7.8 with MySQL 5.6.50(2021. 12. 21.)
+    * Image updated
+* CentOS 7.8 with MySQL 5.7.20(2021. 12. 21.)
+    * Image updated
+* CentOS 7.8 with MySQL 5.7.32(2021. 12. 21.)
+    * Image updated
+* CentOS 7.8 with MySQL 8.0.22(2021. 12. 21.)
+    * Image updated
+* Debian 9.13 Stretch(2021. 12. 21.)
+    * Image updated
+* Debian 10.11 Buster(2021. 12. 21.)
+    * Image updated
+* Ubuntu Server 18.04.6 LTS(2021. 12. 21.)
+    * Image updated
+* Ubuntu Server 20.04.3 LTS(2021. 12. 21.)
+    * Image updated
+* Ubuntu Server 18.04.6 LTS for NAT(2021. 12. 21.)
+    * Image updated
+* Ubuntu Server 18.04.6 LTS with NVIDIA(2021. 12. 21.)
+    * Image updated
+* Windows 2012 R2 STD(2021. 12. 21.)
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007247-monthly-rollup-2c3b6017-82f4-4102-b1e2-36f366bf3520
+* Windows 2016 STD(2021. 12. 21.)
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+* Windows 2019 STD(2021. 12. 21.)
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
+* Windows Server 2012 R2 with SQL Server 2016 Standard(2021. 12. 21.)
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007247-monthly-rollup-2c3b6017-82f4-4102-b1e2-36f366bf3520
+* Windows Server 2016 with SQL Server 2016 Standard(2021. 12. 21.)
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+* Windows Server 2016 with SQL Server 2019 Express(2021. 12. 21.)
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+* Windows Server 2016 with SQL Server 2017 Standard(2021. 12. 21.)
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+* Windows Server 2016 with SQL Server 2019 Standard(2021. 12. 21.)
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+* Windows Server 2019 with SQL Server 2019 Standard(2021. 12. 21.)
+    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
+
+#### Image Builder
+* Added an application
+    * Deep Learning Framework
+
+#### System Monitoring
+* Deleted the feature to add @Linux and @Windows default workspaces and deleted the created workspaces
+    * @Linux and @Windows workspaces that were added automatically when creating an instance are no longer added automatically.
+    * All @Linux and @Windows workspaces automatically created in the existing instances are deleted.
+
+### 2021. 11. 23.
+#### Image
+* Supports creating a private image that you can use to create a GPU instance
+
+#### Image Builder
+* Added applications
+    * JEUS
+    * WebtoB
+    * Apache Tomcat
+    * Node.js
+    * MySQL
+
+### October 26, 2021
+#### Image Builder
+* Image Builder service added
+    * Allows you to create a private image by combining an OS image, application installation components, and a user script
+* Added applications
+    * PostgreSQL
+    * MariaDB
+    * CUBRID
+
+#### System Monitoring
+
+* OpenMetrics Dashboard > Query
+    * Changed to allow users to select only up to the date one year ago when selecting a query period.
+    * Changed so that guide text regarding data unavailable status or errors is displayed in the chart
+* OpenMetrics Dashboard > Add/Modify Charts
+    * Changed so that, when the user clicks the **Add** button without selecting any metrics, guide text shows up and the location is highlighted.
+
 ### Septempber 27, 2022
 #### Image
 * Added a new image
