@@ -42,7 +42,7 @@
     * CentOS 7.9
 * Ended an existing base image support
     * CentOS 7.8
-
+    
 ### November 29, 2022
 #### Instance
 * Added deletion protection (all/set/unset) to **Filter Conditions** of Instance Management
