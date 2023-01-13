@@ -1,6 +1,19 @@
 ## Compute > Release Notes
 
+### January 31, 2023
+
+#### Instance
+* Improved the UI so that setting values can be changed when creating instances with **Instance Template**
+
+#### Instance Template
+* Added the **Change Instance Template Owner** feature
+
+#### Auto Scale
+* Added the **Change Scaling Group Owner** feature
+* Improved the UI so that setting values can be changed when creating scaling groups with **Instance Template**
+
 ### December 27, 2022
+
 #### Image
 * Added new images
     * CentOS 7.9 with Apache Kafka 3.3.1(2022. 12. 20.)
