@@ -53,7 +53,7 @@
 #### Image Builder
 * Added a new base image
     * CentOS 7.9
-* Ended an existing base image support
+* Ended base image support
     * CentOS 7.8
     
 ### November 29, 2022
