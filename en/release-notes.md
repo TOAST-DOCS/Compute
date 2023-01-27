@@ -4,6 +4,7 @@
 
 #### Instance
 * Improved the UI so that setting values can be changed when creating instances with **Instance Template**
+* Improved the UI of instance information 
 
 #### Instance Template
 * Added the **Change Instance Template Owner** feature
