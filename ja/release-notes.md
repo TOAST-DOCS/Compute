@@ -1,5 +1,18 @@
 ## Compute > リリースノート
 
+### 2023. 01. 31.
+
+#### Instance
+* **インスタンステンプレート**でインスタンス作成時に設定値を変更できるようにUI改善
+* インスタンス情報UI改善
+
+#### Instance Template
+* **インスタンステンプレートオーナー変更**機能を追加
+
+#### Auto Scale
+* **スケーリンググループオーナー変更**機能を追加
+* **インスタンステンプレート**でスケーリンググループ作成時に設定値を変更できるようにUI改善
+
 ### 2022.12.27.
 
 #### Image
@@ -39,17 +52,10 @@
     * CentOS 7.8 with WebtoB5Fix4(2022. 03. 22.)
 
 #### Image Builder
-* スクリプトサポートOS CentOS 7.8終了およびCentOS 7.9追加
-  * Slurm 
-  * MySQL 
-  * WebtoB 
-  * JEUS(Managed Server)
-  * JEUS(Domain Administrator Server)
-  * Apache Tomcat 
-  * Node.js 
-  * CUBRID 
-  * MariaDB 
-  * PostgreSQL
+* 新規ベースイメージの追加
+    * CentOS 7.9
+* ベースイメージのサポート終了
+    * CentOS 7.8
 
 ### 2022. 11. 29.
 #### Instance
