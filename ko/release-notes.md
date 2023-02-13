@@ -10,7 +10,8 @@
 * 커널 업데이트
 
 * GPU
-    * nvidia driver 업데이트: 453.51 -> 453.94
+    * nvidia driver 업데이트(Windows): 453.51 -> 453.94
+    * nvidia driver 업데이트(Linux): 450.191.01 -> 450.216.04
 
 * Rocky Linux 8.6 (2023.02.21)
     * 이미지 업데이트
@@ -19,6 +20,8 @@
 * Debian 11.6 Bullseye (2023.02.21)
     * 이미지 업데이트
 * Ubuntu Server 18.04.6 LTS (2023.02.21)
+    * 이미지 업데이트
+* Ubuntu Server 18.04.6 LTS for NAT (2023.02.21)
     * 이미지 업데이트
 * Ubuntu Server 20.04.5 LTS (2023.02.21)
     * 이미지 업데이트
@@ -36,12 +39,6 @@
 * Windows 2022 STD (2023.02.14)
     * 이미지 업데이트
     * 23년 1월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/january-10-2023-kb5022291-os-build-20348-1487-38772acf-103f-463e-9d60-486174e806b2
-* Ubuntu Server 18.04.6 LTS - Container (2023.02.21)
-    * 이미지 업데이트
-* Rocky Linux 8.6 - Container (2023.02.21)
-    * 이미지 업데이트
-* Debian 11.5 Bullseye - Container (2023.02.21)
-    * 이미지 업데이트
 * Windows 2012 R2 STD with MS-SQL 2016 Standard (2023.02.14)
     * 이미지 업데이트
     * 23년 1월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/january-10-2023-kb5022352-monthly-rollup-cf299bf2-707b-47db-89a5-4e22c5ce4e26
