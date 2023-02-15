@@ -5,7 +5,6 @@
 ### Image
 * 신규 이미지 추가
     * Ubuntu Server 22.04.1 LTS (2023.02.21)
-    * Ubuntu Server 20.04.5 LTS with NVIDIA (2023.02.21)
 
 * 커널 업데이트
 
