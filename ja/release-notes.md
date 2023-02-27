@@ -2,6 +2,62 @@
 
 ### 2023. 02. 28.
 
+#### Image
+* 新規イメージ追加
+    * Ubuntu Server 22.04.1 LTS(2023.02.21.)
+    * Ubuntu Server 20.04.5 LTS with NVIDIA(2023.02.21.)
+
+* カーネルアップデート
+
+* GPU
+    * nvidia driverアップデート(Windows)： 453.51 -> 453.94
+    * nvidia driverアップデート(Linux)： 450.191.01 -> 450.216.04
+
+* Rocky Linux 8.6(2023.02.21.)
+    * イメージアップデート
+* Debian 10.13 Buster(2023.02.21.)
+    * イメージアップデート
+* Debian 11.6 Bullseye(2023.02.21.)
+    * イメージアップデート
+* Ubuntu Server 18.04.6 LTS(2023.02.21.)
+    * イメージアップデート
+* Ubuntu Server 18.04.6 LTS for NAT(2023.02.21.)
+    * イメージアップデート
+* Ubuntu Server 20.04.5 LTS(2023.02.21.)
+    * イメージアップデート
+* Ubuntu Server 18.04.6 LTS with NVIDIA(2023.02.21.)
+    * イメージアップデート
+* Windows 2012 R2 STD(2023.02.14.)
+    * イメージアップデート
+    * 23年1月セキュリティアップデート反映：https://support.microsoft.com/en-us/topic/january-10-2023-kb5022352-monthly-rollup-cf299bf2-707b-47db-89a5-4e22c5ce4e26
+* Windows 2016 STD(2023.02.14.)
+    * イメージアップデート： https://support.microsoft.com/en-us/topic/january-10-2023-kb5022289-os-build-14393-5648-36de3673-55d0-4e0f-8b77-d06326b58456
+    * 23年1月セキュリティアップデート反映  
+* Windows 2019 STD(2023.02.14.)
+    * イメージアップデート： https://support.microsoft.com/en-us/topic/january-10-2023-kb5022286-os-build-17763-3887-48683103-7b22-4f36-aa98-0049c7a6e579
+    * 23年1月セキュリティアップデート反映  
+* Windows 2022 STD(2023.02.14.)
+    * イメージアップデート
+    * 23年1月セキュリティアップデート反映： https://support.microsoft.com/en-us/topic/january-10-2023-kb5022291-os-build-20348-1487-38772acf-103f-463e-9d60-486174e806b2
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.02.14.)
+    * イメージアップデート
+    * 23年1月セキュリティアップデート反映： https://support.microsoft.com/en-us/topic/january-10-2023-kb5022352-monthly-rollup-cf299bf2-707b-47db-89a5-4e22c5ce4e26
+* Windows 2016 STD with MS-SQL 2016 Standard(2023.02.14.)
+    * イメージアップデート
+    * 23年1月セキュリティアップデート反映： https://support.microsoft.com/en-us/topic/january-10-2023-kb5022289-os-build-14393-5648-36de3673-55d0-4e0f-8b77-d06326b58456
+* Windows 2016 STD with MS-SQL 2017 Standard(2023.02.14.)
+    * イメージアップデート
+    * 23年1月セキュリティアップデート反映： https://support.microsoft.com/en-us/topic/january-10-2023-kb5022289-os-build-14393-5648-36de3673-55d0-4e0f-8b77-d06326b58456
+* Windows 2016 STD with MS-SQL 2019 Express(2023.02.14.)
+    * イメージアップデート
+    * 23年1月セキュリティアップデート反映： https://support.microsoft.com/en-us/topic/january-10-2023-kb5022289-os-build-14393-5648-36de3673-55d0-4e0f-8b77-d06326b58456
+* Windows 2016 STD with MS-SQL 2019 Standard(2023.02.14.)
+    * イメージアップデート
+    * 23年1月セキュリティアップデート反映： https://support.microsoft.com/en-us/topic/january-10-2023-kb5022289-os-build-14393-5648-36de3673-55d0-4e0f-8b77-d06326b58456
+* Windows 2019 STD with MS-SQL 2019 Standard(2023.02.14.)
+    * イメージアップデート
+    * 23年1月セキュリティアップデート反映： https://support.microsoft.com/en-us/topic/january-10-2023-kb5022286-os-build-17763-3887-48683103-7b22-4f36-aa98-0049c7a6e579
+
 #### Image Builder
 * 新規ベースイメージの追加
     * Ubuntu 20.04
