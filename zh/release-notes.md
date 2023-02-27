@@ -1,5 +1,18 @@
 ## Compute > Release Notes
 
+### February 28, 2023
+
+#### Image Builder
+* Added a new base image
+    * Ubuntu 20.04
+* Added application versions
+    * CUBRID 10.2.10
+    * CUBRID 11.0.10
+    * MariaDB 10.6.11
+* Ended application version support
+    * CUBRID 10.2.4
+    * CUBRID 11.0.2
+
 ### January 31, 2023
 
 #### Instance
