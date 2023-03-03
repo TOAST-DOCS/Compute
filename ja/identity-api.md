@@ -8,13 +8,13 @@ NHN Cloud基本インフラサービスAPIは、タイプとリージョンご�
 
 | タイプ | リージョン | エンドポイント |
 |---|---|---|
-| identity | すべてのリージョン | https://api-identity.infrastructure.cloud.toast.com |
-| compute | 韓国(パンギョ)リージョン<br>韓国(ピョンチョン)リージョン<br>日本リージョン | https://kr1-api-instance.infrastructure.cloud.toast.com<br>https://kr2-api-instance.infrastructure.cloud.toast.com<br>https://jp1-api-instance.infrastructure.cloud.toast.com |
-| network | 韓国(パンギョ)リージョン<br>韓国(ピョンチョン)リージョン<br>日本リージョン | https://kr1-api-network.infrastructure.cloud.toast.com<br>https://kr2-api-network.infrastructure.cloud.toast.com<br>https://jp1-api-network.infrastructure.cloud.toast.com |
-| image | 韓国(パンギョ)リージョン<br>韓国(ピョンチョン)リージョン<br>日本リージョン | https://kr1-api-image.infrastructure.cloud.toast.com<br>https://kr2-api-image.infrastructure.cloud.toast.com<br>https://jp1-api-image.infrastructure.cloud.toast.com |
-| volumev2 | 韓国(パンギョ)リージョン<br>韓国(ピョンチョン)リージョン<br>日本リージョン | https://kr1-api-block-storage.infrastructure.cloud.toast.com<br>https://kr2-api-block-storage.infrastructure.cloud.toast.com<br>https://jp1-api-block-storage.infrastructure.cloud.toast.com |
-| object-store | 韓国(パンギョ)リージョン<br>韓国(ピョンチョン)リージョン<br>日本リージョン | https://api-storage.cloud.toast.com<br>https://kr2-api-storage.cloud.toast.com<br>https://jp1-api-storage.cloud.toast.com |
-| key-manager | 韓国(パンギョ)リージョン<br>韓国(ピョンチョン)リージョン<br>日本リージョン | https://kr1-api-key-manager.infrastructure.cloud.toast.com<br>https://kr2-api-key-manager.infrastructure.cloud.toast.com<br>https://jp1-api-key-manager.infrastructure.cloud.toast.com |
+| identity | すべてのリージョン | https://api-identity-infrastructure.nhncloudservice.com |
+| compute | 韓国(パンギョ)リージョン<br>韓国(ピョンチョン)リージョン<br>日本リージョン | https://kr1-api-instance-infrastructure.nhncloudservice.com<br>https://kr2-api-instance-infrastructure.nhncloudservice.com<br>https://jp1-api-instance-infrastructure.nhncloudservice.com |
+| network | 韓国(パンギョ)リージョン<br>韓国(ピョンチョン)リージョン<br>日本リージョン | https://kr1-api-network-infrastructure.nhncloudservice.com<br>https://kr2-api-network-infrastructure.nhncloudservice.com<br>https://jp1-api-network-infrastructure.nhncloudservice.com |
+| image | 韓国(パンギョ)リージョン<br>韓国(ピョンチョン)リージョン<br>日本リージョン | https://kr1-api-image-infrastructure.nhncloudservice.com<br>https://kr2-api-image-infrastructure.nhncloudservice.com<br>https://jp1-api-image-infrastructure.nhncloudservice.com |
+| volumev2 | 韓国(パンギョ)リージョン<br>韓国(ピョンチョン)リージョン<br>日本リージョン | https://kr1-api-block-storage-infrastructure.nhncloudservice.com<br>https://kr2-api-block-storage-infrastructure.nhncloudservice.com<br>https://jp1-api-block-storage-infrastructure.nhncloudservice.com |
+| object-store | 韓国(パンギョ)リージョン<br>韓国(ピョンチョン)リージョン<br>日本リージョン | https://kr1-api-object-storage.nhncloudservice.com<br>https://kr2-api-object-storage.nhncloudservice.com<br>https://jp1-api-object-storage.nhncloudservice.com |
+| key-manager | 韓国(パンギョ)リージョン<br>韓国(ピョンチョン)リージョン<br>日本リージョン | https://kr1-api-key-manager-infrastructure.nhncloudservice.com<br>https://kr2-api-key-manager-infrastructure.nhncloudservice.com<br>https://jp1-api-key-manager-infrastructure.nhncloudservice.com |
 
 ### テナントID確認
 
@@ -34,7 +34,7 @@ NHN Cloud基本インフラサービスAPIを使用するためにNHN Cloudア�
 
 ### トークンを発行する
 
-トークンの発行は`identity`タイプエンドポイントを利用します。 `identity`サービスエンドポイントはリージョンに関係なく`https://api-identity.infrastructure.cloud.toast.com`です。
+トークンの発行は`identity`タイプエンドポイントを利用します。 `identity`サービスエンドポイントはリージョンに関係なく`https://api-identity-infrastructure.nhncloudservice.com`です。
 
 API呼び出し時に必要なトークンを発行します。NHN Cloudでは、プロジェクト限定トークン(project-scoped token)を使用します。
 
@@ -117,11 +117,11 @@ POST /v2.0/tokens
         "endpoints": [
           {
             "region": "KR2",
-            "publicURL": "https://kr2-api-instance.infrastructure.cloud.toast.com/v2/f5073eaa26b64cffbee89411df94ce01"
+            "publicURL": "https://kr2-api-instance-infrastructure.nhncloudservice.com/v2/f5073eaa26b64cffbee89411df94ce01"
           },
           {
             "region": "KR1",
-            "publicURL": "https://kr1-api-instance.infrastructure.cloud.toast.com/v2/f5073eaa26b64cffbee89411df94ce01"
+            "publicURL": "https://kr1-api-instance-infrastructure.nhncloudservice.com/v2/f5073eaa26b64cffbee89411df94ce01"
           }
         ],
         "type": "compute",
@@ -131,11 +131,11 @@ POST /v2.0/tokens
         "endpoints": [
           {
             "region": "KR2",
-            "publicURL": "https://kr2-api-image.infrastructure.cloud.toast.com"
+            "publicURL": "https://kr2-api-image-infrastructure.nhncloudservice.com"
           },
           {
             "region": "KR1",
-            "publicURL": "https://kr1-api-image.infrastructure.cloud.toast.com"
+            "publicURL": "https://kr1-api-image-infrastructure.nhncloudservice.com"
           }
         ],
         "type": "image",
@@ -145,7 +145,7 @@ POST /v2.0/tokens
         "endpoints": [
           {
             "region": "KR1",
-            "publicURL": "https://api-identity.infrastructure.cloud.toast.com/v2.0"
+            "publicURL": "https://api-identity-infrastructure.nhncloudservice.com/v2.0"
           }
         ],
         "type": "identity",
@@ -155,11 +155,11 @@ POST /v2.0/tokens
         "endpoints": [
           {
             "region": "KR2",
-            "publicURL": "https://kr2-api-key-manager.infrastructure.cloud.toast.com"
+            "publicURL": "https://kr2-api-key-manager-infrastructure.nhncloudservice.com"
           },
           {
             "region": "KR1",
-            "publicURL": "https://kr1-api-key-manager.infrastructure.cloud.toast.com"
+            "publicURL": "https://kr1-api-key-manager-infrastructure.nhncloudservice.com"
           }
         ],
         "type": "key-manager",
@@ -169,11 +169,11 @@ POST /v2.0/tokens
         "endpoints": [
           {
             "region": "KR2",
-            "publicURL": "https://kr2-api-block-storage.infrastructure.cloud.toast.com/v2/f5073eaa26b64cffbee89411df94ce01"
+            "publicURL": "https://kr2-api-block-storage-infrastructure.nhncloudservice.com/v2/f5073eaa26b64cffbee89411df94ce01"
           },
           {
             "region": "KR1",
-            "publicURL": "https://kr1-api-block-storage.infrastructure.cloud.toast.com/v2/f5073eaa26b64cffbee89411df94ce01"
+            "publicURL": "https://kr1-api-block-storage-infrastructure.nhncloudservice.com/v2/f5073eaa26b64cffbee89411df94ce01"
           }
         ],
         "type": "volumev2",
@@ -183,11 +183,11 @@ POST /v2.0/tokens
         "endpoints": [
           {
             "region": "KR2",
-            "publicURL": "https://kr2-api-network.infrastructure.cloud.toast.com"
+            "publicURL": "https://kr2-api-network-infrastructure.nhncloudservice.com"
           },
           {
             "region": "KR1",
-            "publicURL": "https://kr1-api-network.infrastructure.cloud.toast.com"
+            "publicURL": "https://kr1-api-network-infrastructure.nhncloudservice.com"
           }
         ],
         "type": "network",
