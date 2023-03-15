@@ -18,6 +18,9 @@
     * CentOS 7.9 with CUBRID 10.2.4(2022.12.20.)
     * CentOS 7.9 with CUBRID 11.0.2(2022.12.20.)
 
+#### Public API
+* API 엔드포인트 변경
+
 ### 2023. 02. 28.
 
 #### Image
