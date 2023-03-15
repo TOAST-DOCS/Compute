@@ -1,5 +1,23 @@
 ## Compute > 릴리스 노트
 
+### 2023. 03. 28.
+
+#### Image
+* 신규 이미지 추가
+    * CentOS 7.9 with CUBRID 10.2.10(2023.03.28.)
+    * CentOS 7.9 with CUBRID 11.0.10(2023.03.28.)
+    * CentOS 7.9 with MariaDB 10.6.11(2023.03.28.)
+    * Ubuntu Server 20.04.5 LTS with MySQL 8.0.27(2023.03.28.)
+    * Ubuntu Server 20.04.5 LTS with Redis 7.0.5(2023.03.28.)
+    * Ubuntu Server 20.04.5 LTS with Apache Kafka 3.3.1(2023.03.28.)
+    * Ubuntu Server 20.04.5 LTS with CUBRID 10.2.10(2023.03.28.)
+    * Ubuntu Server 20.04.5 LTS with CUBRID 11.0.10(2023.03.28.)
+    * Ubuntu Server 20.04.5 LTS with MariaDB 10.6.11(2023.03.28.)
+
+* 이미지 지원 종료
+    * CentOS 7.9 with CUBRID 10.2.4(2022.12.20.)
+    * CentOS 7.9 with CUBRID 11.0.2(2022.12.20.)
+
 ### 2023. 02. 28.
 
 #### Image
