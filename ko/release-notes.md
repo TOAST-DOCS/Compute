@@ -22,11 +22,7 @@
     * 이미지 업데이트
 * Debian 11.6 Bullseye (2023.03.21)
     * 이미지 업데이트
-* Debian 11.6 Bullseye - Container (2023.03.21)
-    * 이미지 업데이트
 * Rocky Linux 8.6 (2023.03.21)
-    * 이미지 업데이트
-* Rocky Linux 8.6 - Container (2023.03.21)
     * 이미지 업데이트
 * Ubuntu Server 18.04.6 LTS (2023.03.21)
     * 이미지 업데이트
