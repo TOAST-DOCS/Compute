@@ -30,6 +30,8 @@
     * Image update
 * Ubuntu Server 18.04.6 LTS with NVIDIA(2023.03.21.)
     * Image update
+* Ubuntu Server 20.04.6 LTS(2023.03.21.)
+    * Image update
 * Ubuntu Server 20.04.6 LTS with NVIDIA(2023.03.21.)
     * Image update
 * Ubuntu Server 22.04.2 LTS(2023.03.21.)

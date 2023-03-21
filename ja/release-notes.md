@@ -18,21 +18,23 @@
     * CentOS 7.9 with CUBRID 10.2.4(2022.12.20.)
     * CentOS 7.9 with CUBRID 11.0.2(2022.12.20.)
 
-* Debian 10.13 Buster (2023.03.21)
+* Debian 10.13 Buster(2023.03.21)
     * イメージアップデート
-* Debian 11.6 Bullseye (2023.03.21)
+* Debian 11.6 Bullseye(2023.03.21)
     * イメージアップデート
-* Rocky Linux 8.6 (2023.03.21)
+* Rocky Linux 8.6(2023.03.21)
     * イメージアップデート
-* Ubuntu Server 18.04.6 LTS (2023.03.21)
+* Ubuntu Server 18.04.6 LTS(2023.03.21)
     * イメージアップデート
-* Ubuntu Server 18.04.6 LTS for NAT (2023.03.21)
+* Ubuntu Server 18.04.6 LTS for NAT(2023.03.21)
     * イメージアップデート
-* Ubuntu Server 18.04.6 LTS with NVIDIA (2023.03.21)
+* Ubuntu Server 18.04.6 LTS with NVIDIA(2023.03.21)
     * イメージアップデート
-* Ubuntu Server 20.04.6 LTS with NVIDIA (2023.03.21)
+* Ubuntu Server 20.04.6 LTS(2023.03.21)
     * イメージアップデート
-* Ubuntu Server 22.04.2 LTS (2023.03.21)
+* Ubuntu Server 20.04.6 LTS with NVIDIA(2023.03.21)
+    * イメージアップデート
+* Ubuntu Server 22.04.2 LTS(2023.03.21)
     * イメージアップデート
 
 #### Public API
