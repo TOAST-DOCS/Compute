@@ -7,12 +7,12 @@
     * CentOS 7.9 with CUBRID 10.2.10(2023.03.21.)
     * CentOS 7.9 with CUBRID 11.0.10(2023.03.21.)
     * CentOS 7.9 with MariaDB 10.6.11(2023.03.21.)
-    * Ubuntu Server 20.04.5 LTS with MySQL 8.0.27(2023.03.21.)
-    * Ubuntu Server 20.04.5 LTS with Redis 7.0.5(2023.03.21.)
-    * Ubuntu Server 20.04.5 LTS with Apache Kafka 3.3.1(2023.03.21.)
-    * Ubuntu Server 20.04.5 LTS with CUBRID 10.2.10(2023.03.21.)
-    * Ubuntu Server 20.04.5 LTS with CUBRID 11.0.10(2023.03.21.)
-    * Ubuntu Server 20.04.5 LTS with MariaDB 10.6.11(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with MySQL 8.0.27(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with Redis 7.0.5(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with Apache Kafka 3.3.1(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 10.2.10(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 11.0.10(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.6.11(2023.03.21.)
 
 * Ended image support
     * CentOS 7.9 with CUBRID 10.2.4(2022.12.20.)
