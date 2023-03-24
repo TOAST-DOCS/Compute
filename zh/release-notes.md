@@ -36,6 +36,10 @@
     * Image update
 * Ubuntu Server 22.04.2 LTS(2023.03.21.)
     * Image update
+    
+#### Image Builder
+* Added a new feature
+    * Private image can be selected as base image when building images
 
 #### Public API
 * Changed API endpoints
