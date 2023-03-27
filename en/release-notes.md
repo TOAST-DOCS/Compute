@@ -1,9 +1,53 @@
 ## Compute > Release Notes
 
+### March 28, 2023
+
+#### Image
+* Added new images
+    * CentOS 7.9 with CUBRID 10.2.10(2023.03.21.)
+    * CentOS 7.9 with CUBRID 11.0.10(2023.03.21.)
+    * CentOS 7.9 with MariaDB 10.6.11(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with MySQL 8.0.27(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with Redis 7.0.5(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with Apache Kafka 3.3.1(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 10.2.10(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 11.0.10(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.6.11(2023.03.21.)
+
+* Ended image support
+    * CentOS 7.9 with CUBRID 10.2.4(2022.12.20.)
+    * CentOS 7.9 with CUBRID 11.0.2(2022.12.20.)
+
+* Debian 10.13 Buster(2023.03.21.)
+    * Image update
+* Debian 11.6 Bullseye(2023.03.21.)
+    * Image update
+* Rocky Linux 8.6(2023.03.21.)
+    * Image update
+* Ubuntu Server 18.04.6 LTS(2023.03.21.)
+    * Image update
+* Ubuntu Server 18.04.6 LTS for NAT(2023.03.21.)
+    * Image update
+* Ubuntu Server 18.04.6 LTS with NVIDIA(2023.03.21.)
+    * Image update
+* Ubuntu Server 20.04.6 LTS(2023.03.21.)
+    * Image update
+* Ubuntu Server 20.04.6 LTS with NVIDIA(2023.03.21.)
+    * Image update
+* Ubuntu Server 22.04.2 LTS(2023.03.21.)
+    * Image update
+    
+#### Image Builder
+* Added a new feature
+    * Private image can be selected as base image when building images
+
+#### Public API
+* Changed API endpoints
+
 ### February 28, 2023
 
 #### Image
-* Added new image
+* Added new images
     * Ubuntu Server 22.04.1 LTS(2023.02.21.)
     * Ubuntu Server 20.04.5 LTS with NVIDIA(2023.02.21.)
     

@@ -1,5 +1,49 @@
 ## Compute > リリースノート
 
+### 2023. 03. 28.
+
+#### Image
+* 新規イメージ追加
+    * CentOS 7.9 with CUBRID 10.2.10(2023.03.21.)
+    * CentOS 7.9 with CUBRID 11.0.10(2023.03.21.)
+    * CentOS 7.9 with MariaDB 10.6.11(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with MySQL 8.0.27(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with Redis 7.0.5(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with Apache Kafka 3.3.1(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 10.2.10(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 11.0.10(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.6.11(2023.03.21.)
+
+* イメージサポート終了
+    * CentOS 7.9 with CUBRID 10.2.4(2022.12.20.)
+    * CentOS 7.9 with CUBRID 11.0.2(2022.12.20.)
+
+* Debian 10.13 Buster(2023.03.21)
+    * イメージアップデート
+* Debian 11.6 Bullseye(2023.03.21)
+    * イメージアップデート
+* Rocky Linux 8.6(2023.03.21)
+    * イメージアップデート
+* Ubuntu Server 18.04.6 LTS(2023.03.21)
+    * イメージアップデート
+* Ubuntu Server 18.04.6 LTS for NAT(2023.03.21)
+    * イメージアップデート
+* Ubuntu Server 18.04.6 LTS with NVIDIA(2023.03.21)
+    * イメージアップデート
+* Ubuntu Server 20.04.6 LTS(2023.03.21)
+    * イメージアップデート
+* Ubuntu Server 20.04.6 LTS with NVIDIA(2023.03.21)
+    * イメージアップデート
+* Ubuntu Server 22.04.2 LTS(2023.03.21)
+    * イメージアップデート
+
+#### Image Builder
+* 新規機能の追加
+    * イメージビルド時に個人イメージをベースイメージとして選択可能
+
+#### Public API
+* APIエンドポイントの変更
+
 ### 2023. 02. 28.
 
 #### Image
