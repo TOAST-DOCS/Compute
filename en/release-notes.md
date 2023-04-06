@@ -1,7 +1,6 @@
 ## Compute > Release Notes
 
 ### March 28, 2023
-
 #### Image
 * Added new images
     * CentOS 7.9 with CUBRID 10.2.10(2023.03.21.)
@@ -43,6 +42,9 @@
 
 #### Public API
 * Changed API endpoints
+
+#### System Monitoring
+* Removed the interval option `1m` in Monthly Metrics Report
 
 ### February 28, 2023
 
