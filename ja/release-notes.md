@@ -1,5 +1,12 @@
 ## Compute > リリースノート
 
+###2023. 04. 25.
+####Image
+* 新規イメージ追加
+    * Ubuntu Server 20.04.6 LTS for Deep Learning
+* イメージサポート終了
+    * Ubuntu Server 18.04.6 LTS for Deep Learning
+
 ### 2023. 03. 28.
 #### Image
 * 新規イメージ追加
