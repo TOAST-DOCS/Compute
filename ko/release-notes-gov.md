@@ -4,10 +4,12 @@
 
 #### Image
 * 신규 이미지 추가
-    * Ubuntu Server 20.04.6 LTS for Deep Learning
+    * Ubuntu Server 20.04.6 LTS for Deep Learning(2023.04.25.)
+    * PLOS-WFK-KS-v4.0.6.61.28(2023.04.25.)
 
 * 이미지 지원 종료
-    * Ubuntu Server 18.04.6 LTS for Deep Learning
+    * Ubuntu Server 18.04.6 LTS for Deep Learning(2022.01.25.)
+    * PLOS-WFK-KS-v4.0.6.61.25(2022.09.20.)
 
 
 ### 2023. 04. 04.
