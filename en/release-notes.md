@@ -1,5 +1,13 @@
 ## Compute > Release Notes
 
+### April 25, 2023
+#### Image
+* Added new images
+    * Ubuntu Server 20.04.6 LTS for Deep Learning
+
+* Ended image support
+    * Ubuntu Server 18.04.6 LTS for Deep Learning
+
 ### March 28, 2023
 #### Image
 * Added new images
