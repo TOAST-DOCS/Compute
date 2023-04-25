@@ -10,6 +10,10 @@
     * Ubuntu Server 18.04.6 LTS for Deep Learning(2022.01.25.)
     * PLOS-WFK-KS-v4.0.6.61.25(2022.09.20.)
 
+#### System Monitoring
+* 버그 수정
+    * 다운로드한 월간 지표 보고서가 간헐적으로 정상 실행되지 않는 문제 수정
+
 ### 2023. 03. 28.
 #### Image
 * 신규 이미지 추가
