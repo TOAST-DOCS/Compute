@@ -1,5 +1,14 @@
 ## Compute > 릴리스 노트
 
+### 2023. 06. 08.
+
+#### Public API
+* Image 생성 API 추가
+* Image 업로드 API 추가
+
+#### Instance
+* **CloudTrail**의 **인스턴스 생성** 및 **인스턴스 삭제** 로그 개선
+
 ### 2023. 04. 25.
 
 #### Image
