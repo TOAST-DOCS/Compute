@@ -1,5 +1,10 @@
 ## Compute > Release Notes
 
+### May 30, 2023
+
+#### Instance
+* Improved the instance creation and deletion logs of **CloudTrail**
+
 ### April 25, 2023
 #### Image
 * Added new images
