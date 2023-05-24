@@ -6,7 +6,7 @@
 * Improved the instance creation and deletion logs of **CloudTrail**
 * Improved the UI so that multiple existing network interfaces can be specified when creating an instance
 
-### May 25, 2023
+### May 30, 2023
 
 #### Image
 * Added new images
@@ -36,6 +36,8 @@
 * Ubuntu Server 20.04.6 LTS(2023.05.25.)
     * Image update
 * Ubuntu Server 20.04.6 LTS with NVIDIA(2023.05.25.)
+    * Image update
+* Ubuntu Server 20.04.6 LTS for Deep Learning(2023.05.25.)
     * Image update
 * Ubuntu Server 22.04.2 LTS(2023.05.25.)
     * Image update
