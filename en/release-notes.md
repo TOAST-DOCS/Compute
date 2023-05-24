@@ -4,6 +4,7 @@
 
 #### Instance
 * Improved the instance creation and deletion logs of **CloudTrail**
+* Improved the UI so that multiple existing network interfaces can be specified when creating an instance
 
 ### April 25, 2023
 #### Image
