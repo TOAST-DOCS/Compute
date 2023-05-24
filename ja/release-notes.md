@@ -99,11 +99,6 @@
     * イメージアップデート
     * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025229-os-build-17763-4252-e8ead788-2cd3-4c9b-8c77-d677e2d8744f
 
-### 2023. 05. 30.
-
-#### Instance
-* **CloudTrail**のインスタンス作成およびインスタンス削除ログを改善
-
 ### 2023. 04. 25.
 #### Image
 * 新規イメージ追加
