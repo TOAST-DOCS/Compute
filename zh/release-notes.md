@@ -6,7 +6,10 @@
 * Improved the instance creation and deletion logs of **CloudTrail**
 * Improved the UI so that multiple existing network interfaces can be specified when creating an instance
 
-### May 25, 2023
+#### Image Builder
+* Added applications
+    * NHN Kubernetes Service(NKS) Worker Node
+    * NHN Kubernetes Service(NKS) Worker Node(GPU)
 
 #### Image
 * Added new images

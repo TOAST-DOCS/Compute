@@ -6,7 +6,10 @@
 * **CloudTrail**のインスタンス作成およびインスタンス削除ログを改善
 * インスタンス作成時に既存のネットワークインターフェースを複数指定できるようにUIを改善
 
-### 2023. 05. 30.
+#### Image Builder
+* アプリケーション追加
+    * NHN Kubernetes Service(NKS) Worker Node
+    * NHN Kubernetes Service(NKS) Worker Node(GPU)
 
 #### Image
 * 新規イメージ追加
