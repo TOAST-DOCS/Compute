@@ -135,8 +135,6 @@
     * 이미지 업데이트
 * Ubuntu Server 18.04.6 LTS(2023.03.21.)
     * 이미지 업데이트
-* Ubuntu Server 18.04.6 LTS for NAT(2023.03.21.)
-    * 이미지 업데이트
 * Ubuntu Server 18.04.6 LTS with NVIDIA(2023.03.21.)
     * 이미지 업데이트
 * Ubuntu Server 20.04.6 LTS(2023.03.21.)
