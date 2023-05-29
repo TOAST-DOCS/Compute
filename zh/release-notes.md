@@ -1,5 +1,108 @@
 ## Compute > Release Notes
 
+### May 30, 2023
+
+#### Instance
+* Improved the instance creation and deletion logs of **CloudTrail**
+* Improved the UI so that multiple existing network interfaces can be specified when creating an instance
+
+#### Image Builder
+* Added applications
+    * NHN Kubernetes Service(NKS) Worker Node
+    * NHN Kubernetes Service(NKS) Worker Node(GPU)
+
+#### Image
+* Added new images
+    * Rocky Linux 8.7(2023.05.25.)
+    * Ubuntu Server 20.04.6 LTS for NAT(2023.05.25.)
+
+* Ended image support
+    * Rocky Linux 8.6(2023.03.21.)
+    * Ubuntu Server 18.04.6 LTS(2023.02.21.)
+    * Ubuntu Server 18.04.6 LTS for NAT(2023.02.21.)
+    * Ubuntu Server 18.04.5 LTS for AI(2021.06.22.)
+    * Ubuntu Server 18.04.6 LTS with NVIDIA(2023.03.21.)
+
+* GPU
+    * nvidia driver updated (Linux): 450.216.04 -> 470.182.03
+    * nvidia driver updated: 453.94 -> 474.30
+
+* CentOS 7.9(2023.05.25.)
+    * Image update
+* Debian 10.13 Buster(2023.05.25.)
+    * Image update
+    * Fixed inaccessibility issues when setting up Multi NICs
+
+* Debian 11.6 Bullseye(2023.05.25.)
+    * Image update
+    * Set cgroup v2 disable
+* Ubuntu Server 20.04.6 LTS(2023.05.25.)
+    * Image update
+* Ubuntu Server 20.04.6 LTS with NVIDIA(2023.05.25.)
+    * Image update
+* Ubuntu Server 22.04.2 LTS(2023.05.25.)
+    * Image update
+* Windows 2012 R2 STD(2023.05.25.) EN
+    * Image update
+    * November 2023 security update applied: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025285-monthly-rollup-79639041-a60e-423b-845d-64c251ea656c
+* Windows 2012 R2 STD(2023.05.25.) KO
+    * Image update
+    * November 2023 security update applied: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025285-monthly-rollup-79639041-a60e-423b-845d-64c251ea656c
+* Windows 2016 STD(2023.05.25.) EN
+    * Image update
+    * November 2023 security updates applied: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2016 STD(2023.05.25.) KO
+    * Image update
+    * November 2023 security updates applied: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2016 STD(2023.05.25.) EN
+    * Image update
+    * November 2023 security updates applied: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025229-os-build-17763-4252-e8ead788-2cd3-4c9b-8c77-d677e2d8744f
+* Windows 2019 STD(2023.05.25.) KO
+    * Image update
+    * November 2023 security updates applied: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025229-os-build-17763-4252-e8ead788-2cd3-4c9b-8c77-d677e2d8744f
+* Windows 2016 STD(2023.05.25.) EN
+    * Image update
+    * November 2023 security updates applied: https://support.microsoft.com/en-gb/topic/april-11-2023-kb5025230-os-build-20348-1668-28a5446e-6389-4a5b-ae3f-e942a604f2d3
+* Windows 2022 STD(2023.05.25.) KO
+    * Image update
+    * November 2023 security update applied: https://support.microsoft.com/en-gb/topic/april-11-2023-kb5025230-os-build-20348-1668-28a5446e-6389-4a5b-ae3f-e942a604f2d3
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.05.25.) EN
+    * Image update
+    * November 2023 security update applied: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025285-monthly-rollup-79639041-a60e-423b-845d-64c251ea656c
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.05.25.) KO
+    * Image update
+    * November 2023 security update applied: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025285-monthly-rollup-79639041-a60e-423b-845d-64c251ea656c
+* Windows 2016 STD with MS-SQL 2016 Standard(2023.05.25.) EN
+    * Image update
+    * November 2023 security updates applied: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2016 STD with MS-SQL 2016 Standard(2023.05.25.) KO
+    * Image update
+    * November 2023 security updates applied: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2016 STD with MS-SQL 2017 Standard(2023.05.25.) EN
+    * Image update
+    * November 2023 security updates applied: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2016 STD with MS-SQL 2017 Standard(2023.05.25.) KO
+    * Image update
+    * November 2023 security update applied: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2016 STD with MS-SQL 2019 Express(2023.05.25.) EN
+    * Image update
+    * November 2023 security update applied: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2016 STD with MS-SQL 2019 Express(2023.05.25.) KO
+    * Image update
+    * November 2023 security update applied: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2016 STD with MS-SQL 2019 Standard(2023.05.25.) EN
+    * Image update
+    * November 2023 security update applied: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2016 STD with MS-SQL 2016 Standard(2023.05.25.) KO
+    * Image update
+    * November 2023 security update applied: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2019 STD with MS-SQL 2019 Standard(2023.05.25.) EN
+    * Image update
+    * November 2023 security updates applied: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025229-os-build-17763-4252-e8ead788-2cd3-4c9b-8c77-d677e2d8744f
+* Windows 2016 STD with MS-SQL 2016 Standard(2023.05.25.) KO
+    * Image update
+    * November 2023 security updates applied: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025229-os-build-17763-4252-e8ead788-2cd3-4c9b-8c77-d677e2d8744f
+
 ### April 25, 2023
 
 #### Image

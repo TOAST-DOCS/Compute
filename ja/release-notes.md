@@ -1,5 +1,109 @@
 ## Compute > リリースノート
 
+### 2023. 05. 30.
+
+#### Instance
+* **CloudTrail**のインスタンス作成およびインスタンス削除ログを改善
+* インスタンス作成時に既存のネットワークインターフェースを複数指定できるようにUIを改善
+
+#### Image Builder
+* アプリケーション追加
+    * NHN Kubernetes Service(NKS) Worker Node
+    * NHN Kubernetes Service(NKS) Worker Node(GPU)
+
+#### Image
+* 新規イメージ追加
+    * Rocky Linux 8.7(2023.05.25.)
+    * Ubuntu Server 20.04.6 LTS for NAT(2023.05.25.)
+
+* イメージサポート終了
+    * Rocky Linux 8.6(2023.03.21.)
+    * Ubuntu Server 18.04.6 LTS(2023.02.21.)
+    * Ubuntu Server 18.04.6 LTS for NAT(2023.02.21.)
+    * Ubuntu Server 18.04.5 LTS for AI(2021.06.22.)
+    * Ubuntu Server 18.04.6 LTS with NVIDIA(2023.03.21.)
+
+* GPU
+    * NVIDIAドライバーアップデート(Linux): 450.216.04 -> 470.182.03
+    * NVIDIAドライバーアップデート: 453.94 -> 474.30
+
+* CentOS 7.9(2023.05.25.)
+    * イメージアップデート
+* Debian 10.13 Buster(2023.05.25.)
+    * イメージアップデート
+    * Multi NIC設定時のアクセス不可問題を処理
+* Debian 11.6 Bullseye(2023.05.25.)
+    * イメージアップデート
+    * cgroup v2 disable設定
+* Ubuntu Server 20.04.6 LTS(2023.05.25.)
+    * イメージアップデート
+* Ubuntu Server 20.04.6 LTS with NVIDIA(2023.05.25.)
+    * イメージアップデート
+* Ubuntu Server 20.04.6 LTS for Deep Learning(2023.05.25.)
+    * イメージアップデート
+* Ubuntu Server 22.04.2 LTS(2023.05.25.)
+    * イメージアップデート
+* Windows 2012 R2 STD(2023.05.25.) EN
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025285-monthly-rollup-79639041-a60e-423b-845d-64c251ea656c
+* Windows 2012 R2 STD(2023.05.25.) KO
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025285-monthly-rollup-79639041-a60e-423b-845d-64c251ea656c
+* Windows 2016 STD(2023.05.25.) EN
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2016 STD(2023.05.25.) KO
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2019 STD(2023.05.25.) EN
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025229-os-build-17763-4252-e8ead788-2cd3-4c9b-8c77-d677e2d8744f
+* Windows 2019 STD(2023.05.25.) KO
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025229-os-build-17763-4252-e8ead788-2cd3-4c9b-8c77-d677e2d8744f
+* Windows 2022 STD(2023.05.25.) EN
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-gb/topic/april-11-2023-kb5025230-os-build-20348-1668-28a5446e-6389-4a5b-ae3f-e942a604f2d3
+* Windows 2022 STD(2023.05.25.) KO
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-gb/topic/april-11-2023-kb5025230-os-build-20348-1668-28a5446e-6389-4a5b-ae3f-e942a604f2d3
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.05.25.) EN
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025285-monthly-rollup-79639041-a60e-423b-845d-64c251ea656c
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.05.25.) KO
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025285-monthly-rollup-79639041-a60e-423b-845d-64c251ea656c
+* Windows 2016 STD with MS-SQL 2016 Standard(2023.05.25.) EN
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2016 STD with MS-SQL 2016 Standard(2023.05.25.) KO
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2016 STD with MS-SQL 2017 Standard(2023.05.25.) EN
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2016 STD with MS-SQL 2017 Standard(2023.05.25.) KO
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2016 STD with MS-SQL 2019 Express(2023.05.25.) EN
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2016 STD with MS-SQL 2019 Express(2023.05.25.) KO
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2016 STD with MS-SQL 2019 Standard(2023.05.25.) EN
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2016 STD with MS-SQL 2019 Standard(2023.05.25.) KO
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-us/topic/april-11-2023-kb5025228-os-build-14393-5850-23f04722-1b4f-4786-8c06-67e73de414d5
+* Windows 2019 STD with MS-SQL 2019 Standard(2023.05.25.) EN
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025229-os-build-17763-4252-e8ead788-2cd3-4c9b-8c77-d677e2d8744f
+* Windows 2019 STD with MS-SQL 2019 Standard(2023.05.25.) KO
+    * イメージアップデート
+    * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025229-os-build-17763-4252-e8ead788-2cd3-4c9b-8c77-d677e2d8744f
+
 ### 2023. 04. 25.
 #### Image
 * 新規イメージ追加
