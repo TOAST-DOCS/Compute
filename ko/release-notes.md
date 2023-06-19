@@ -1,5 +1,13 @@
 ## Compute > 릴리스 노트
 
+### 2023. 06. 27.
+#### Image
+* GPU
+    * NVIDIA 드라이버 업데이트(Linux): 470.182.03
+
+* Ubuntu Server 20.04.6 LTS for Deep Learning(2023.06.27.)
+    * 이미지 업데이트
+
 ### 2023. 06. 13.
 #### System Monitoring
 * **월간 지표 보고서** 기능을 사용할 때 간헐적으로 엑셀 생성이 완료되지 않는 문제 수정
