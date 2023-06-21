@@ -1,6 +1,6 @@
 ## Compute > Release Notes
 
-### June 13, 2023
+### June 27, 2023
 #### System Monitoring
 * Fixed an issue where, when using the **Monthly Metrics Report**, excel files are not created intermittently
 * Windows agent
