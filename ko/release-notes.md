@@ -7,6 +7,13 @@
     * 고가용성 기능 개선 
     * 로그 추가
 
+#### Image
+* GPU
+    * NVIDIA 드라이버 업데이트(Linux): 470.182.03
+
+* Ubuntu Server 20.04.6 LTS for Deep Learning(2023.06.27.)
+    * 이미지 업데이트
+
 ### 2023. 05. 30.
 
 #### Instance
