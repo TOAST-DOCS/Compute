@@ -7,6 +7,19 @@
   * Improved high availability feature
   * Added logs
 
+#### Image Builder
+* Added application versions
+    * Deep Learning Framework 2.1.0
+* Ended application version support
+    * Deep Learning Framework 2.0.1
+
+#### Image
+* GPU
+    * nvidia driver updated (Linux): 470.182.03
+
+* Ubuntu Server 20.04.6 LTS for Deep Learning(2023.06.27.)
+    * Image update
+
 ### May 30, 2023
 
 #### Instance
