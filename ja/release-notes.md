@@ -1,5 +1,20 @@
 ## Compute > リリースノート
 
+### 2023. 06. 27.
+
+#### Image Builder
+* アプリケーションバージョンの追加
+    * Deep Learning Framework 2.1.0
+* アプリケーションバージョンサポートの終了
+    * Deep Learning Framework 2.0.1
+
+#### Image
+* GPU
+    * NVIDIAドライバーアップデート(Linux): 470.182.03
+
+* Ubuntu Server 20.04.6 LTS for Deep Learning(2023.06.27.)
+    * イメージアップデート
+
 ### 2023. 06. 13.
 #### System Monitoring
 * **月次指標レポート**機能を使用する際、断続的にExcel作成が完了しない問題を修正しました。
