@@ -7,6 +7,19 @@
     * 고가용성 기능 개선 
     * 로그 추가
 
+#### Image Builder
+* 애플리케이션 버전 추가
+    * Deep Learning Framework 2.1.0
+* 애플리케이션 버전 지원 종료
+    * Deep Learning Framework 2.0.1
+
+#### Image
+* GPU
+    * NVIDIA 드라이버 업데이트(Linux): 470.182.03
+
+* Ubuntu Server 20.04.6 LTS for Deep Learning(2023.06.27.)
+    * 이미지 업데이트
+
 ### 2023. 05. 30.
 
 #### Instance

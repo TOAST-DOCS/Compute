@@ -1,5 +1,19 @@
 ## Compute > Release Notes
 
+### June 27, 2023
+#### Image Builder
+* Added application versions
+    * Deep Learning Framework 2.1.0
+* Ended application version support
+    * Deep Learning Framework 2.0.1
+
+#### Image
+* GPU
+    * nvidia driver updated (Linux): 470.182.03
+
+* Ubuntu Server 20.04.6 LTS for Deep Learning(2023.06.27.)
+    * Image update
+
 ### June 13, 2023
 #### System Monitoring
 * Fixed an issue where, when using the **Monthly Metrics Report**, excel files are not created intermittently
