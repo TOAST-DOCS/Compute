@@ -1,5 +1,10 @@
 ## Compute > Release Notes
 
+### July 25, 2023
+#### Image Builder
+* Added application versions
+	* Deep Learning Framework 3.0.0
+
 ### June 27, 2023
 #### System Monitoring
 * Fixed an issue where, when using the **Monthly Metrics Report**, excel files are not created intermittently
