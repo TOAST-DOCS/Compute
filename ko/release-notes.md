@@ -3,7 +3,7 @@
 ### 2023. 07. 25.
 #### Image Builder
 * 애플리케이션 버전 추가
-	* Deep Learning Framework 3.0.0
+    * Deep Learning Framework 3.0.0
 
 ### 2023. 06. 27.
 #### System Monitoring

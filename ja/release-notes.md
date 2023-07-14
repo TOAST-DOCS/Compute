@@ -4,7 +4,7 @@
 
 #### Image Builder
 * アプリケーションバージョンの追加
-	* Deep Learning Framework 3.0.0
+    * Deep Learning Framework 3.0.0
 
 ### 2023. 06. 27.
 
