@@ -1,9 +1,14 @@
 ## Compute > 릴리스 노트
 
+### 2023. 08. 29.
+#### Instance
+* 인스턴스 삭제 시 인스턴스에 연결되어 있는 플로팅 IP와 추가 블록 스토리지를 함께 삭제하는 기능 추가
+
 ### 2023. 07. 25.
 #### Image Builder
 * 애플리케이션 버전 추가
     * Deep Learning Framework 3.0.0
+
 
 ### 2023. 06. 27.
 #### System Monitoring
