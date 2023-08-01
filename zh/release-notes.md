@@ -1,9 +1,14 @@
 ## Compute > Release Notes
 
+### August 29, 2023
+#### Instance
+* Added a feature to delete floating IPs and additional block storage attached to an instance when deleting the instance
+
 ### July 25, 2023
 #### Image Builder
 * Added application versions
     * Deep Learning Framework 3.0.0
+
 
 ### June 27, 2023
 #### System Monitoring
