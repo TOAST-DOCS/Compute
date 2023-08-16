@@ -6,14 +6,14 @@
 
 NHN Cloud 기본 인프라 서비스 API는 타입과 리전별로 엔드포인트가 나뉘어 있습니다. 단, Identity API는 모든 리전에서 동일한 엔드포인트를 사용합니다.
 
-| 타입 | 리전 | 엔드포인트 |
-|---|---|---|
-| identity | 모든 리전 | https://api-identity-infrastructure.gov-nhncloudservice.com |
-| compute | 한국(판교) 리전 | https://kr1-api-instance-infrastructure.gov-nhncloudservice.com |
-| network | 한국(판교) 리전 | https://kr1-api-network-infrastructure.gov-nhncloudservice.com |
-| image | 한국(판교) 리전 | https://kr1-api-image-infrastructure.gov-nhncloudservice.com |
-| volume | 한국(판교) 리전 | https://kr1-api-block-storage-infrastructure.gov-nhncloudservice.com |
-| key-manager | 한국(판교) 리전 | https://kr1-api-key-manager-infrastructure.gov-nhncloudservice.com |
+| 타입 | 리전 | 엔드포인트                                                                                                                                        |
+|---|---|----------------------------------------------------------------------------------------------------------------------------------------------|
+| identity | 모든 리전 | https://api-identity-infrastructure.gov-nhncloudservice.com                                                                                  |
+| compute | 한국(판교) 리전<br>한국(평촌) 리전 | https://kr1-api-instance-infrastructure.gov-nhncloudservice.com<br>https://kr2-api-instance-infrastructure.gov-nhncloudservice.com           |
+| network | 한국(판교) 리전<br>한국(평촌) 리전 | https://kr1-api-network-infrastructure.gov-nhncloudservice.com<br>https://kr2-api-network-infrastructure.gov-nhncloudservice.com             |
+| image | 한국(판교) 리전<br>한국(평촌) 리전 | https://kr1-api-image-infrastructure.gov-nhncloudservice.com<br>https://kr2-api-image-infrastructure.gov-nhncloudservice.com                 |
+| volume | 한국(판교) 리전<br>한국(평촌) 리전 | https://kr1-api-block-storage-infrastructure.gov-nhncloudservice.com<br>https://kr2-api-block-storage-infrastructure.gov-nhncloudservice.com |
+| key-manager | 한국(판교) 리전<br>한국(평촌) 리전 | https://kr1-api-key-manager-infrastructure.gov-nhncloudservice.com<br>https://kr2-api-key-manager-infrastructure.gov-nhncloudservice.com     |
 
 ### 테넌트 ID 확인
 
