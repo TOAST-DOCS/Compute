@@ -95,12 +95,12 @@
 * Windows 2022 STD(2023.08.22.) KO
     * イメージアップデート
     * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-us/topic/july-11-2023-security-update-kb5028171-34557119-e00c-4678-bb87-048a36ed8585
-    * NVIDIAドライバーアップデート(Linux): 450.216.04 > 470.182.03
-    * NVIDIAドライバーアップデート: 453.94 > 474.30
-    * nvidia driverアップデート(Windows): 453.51 > 453.94
-    * nvidia driverアップデート(Linux): 450.191.01 > 450.216.04
-        * 同期周期変更: [従来) 604800秒(7日) > [変更] 256秒
-        * Time Zone Peerドメイン変更: [従来] 1.kr.pool.ntp.org , 1.pool.ntp.org > [変更] 1.pool.ntp.org , time.windows.com
+
+#### Instance
+* インスタンス削除時にインスタンスに接続されているFloating IPと追加ブロックストレージを一緒に削除する機能を追加
+
+### 2023. 07. 25.
+
 #### Image Builder
 * アプリケーションバージョンの追加
     * Deep Learning Framework 3.0.0
