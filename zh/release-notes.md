@@ -1,6 +1,101 @@
 ## Compute > Release Notes
 
 ### August 29, 2023
+#### Image
+* Added new images
+    * Rocky Linux 8.8(2023.08.22.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.0(2023.08.22.)
+    * CentOS 7.9 for NAT(2023.08.22.)
+
+* Ended image support
+    * Rocky Linux 8.7(2023.05.25.)
+
+* GPU
+    * nvidia driver updated (Linux): 470.182.03 > 470.199.02
+    * dcgm updated (Linux): 3.1.7 > 3.1.8
+    * nvidia driver updated (Windows): 474.30 > 474.44
+
+* Changed image name
+    * Ubuntu Server 20.04.6 LTS for Deep Learning(2023.06.27.) > Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.0(2023.06.27.)
+
+* CentOS 7.9(2023.08.22.)
+    * Image update
+* Debian 10.13 Buster(2023.08.22.)
+    * Image update
+* Debian 11.7 Bullseye(2023.08.22.)
+    * Image update
+* Ubuntu Server 20.04.6 LTS(2023.08.22.)
+    * Image update
+* Ubuntu Server 20.04.6 LTS for NAT(2023.08.22.)
+    * Image update
+* Ubuntu Server 20.04.6 LTS with NVIDIA(2023.08.22.)
+    * Image update
+* Ubuntu Server 22.04.2 LTS(2023.08.22.)
+    * Image update
+* Windows 2012 R2 STD(2023.08.22.) EN
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-us/topic/july-11-2023-kb5028228-monthly-rollup-b7ee35a2-91ab-4e36-8e46-7c616d1bd4e4
+* Windows 2012 R2 STD(2023.08.22.) KO
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-us/topic/july-11-2023-kb5028228-monthly-rollup-b7ee35a2-91ab-4e36-8e46-7c616d1bd4e4
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.08.22.) EN
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-us/topic/july-11-2023-kb5028228-monthly-rollup-b7ee35a2-91ab-4e36-8e46-7c616d1bd4e4
+* 
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-us/topic/july-11-2023-kb5028228-monthly-rollup-b7ee35a2-91ab-4e36-8e46-7c616d1bd4e4
+* Windows 2016 STD(2023.08.22.) EN
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD(2023.08.22.) KO
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2016 Standard(2023.08.22.) EN
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2016 Standard(2023.08.22.) KO
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2017 Standard(2023.08.22.) EN
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2017 Standard(2023.08.22.) KO
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2019 Express(2023.08.22.) EN
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2019 Express(2023.08.22.) KO
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2019 Standard(2023.08.22.) EN
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2019 Standard(2023.08.22.) KO
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2019 STD(2023.08.22.) EN
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-gb/topic/july-11-2023-kb5028168-os-build-17763-4645-eff2d1e1-5f91-4d9a-aef1-ae26bdf51321
+* Windows 2019 STD(2023.08.22.) KO
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-gb/topic/july-11-2023-kb5028168-os-build-17763-4645-eff2d1e1-5f91-4d9a-aef1-ae26bdf51321
+* Windows 2019 STD with MS-SQL 2019 Standard(2023.08.22.) EN
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-gb/topic/july-11-2023-kb5028168-os-build-17763-4645-eff2d1e1-5f91-4d9a-aef1-ae26bdf51321
+* Windows 2019 STD with MS-SQL 2019 Standard(2023.08.22.) KO
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-gb/topic/july-11-2023-kb5028168-os-build-17763-4645-eff2d1e1-5f91-4d9a-aef1-ae26bdf51321
+* Windows 2019 STD with NVIDIA(2023.08.22.) KO
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-gb/topic/july-11-2023-kb5028168-os-build-17763-4645-eff2d1e1-5f91-4d9a-aef1-ae26bdf51321
+* Windows 2022 STD(2023.08.22.) EN
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-us/topic/july-11-2023-security-update-kb5028171-34557119-e00c-4678-bb87-048a36ed8585
+* Windows 2019 STD(2023.08.22.) KO
+    * Image update
+    * July 2023 security update applied: https://support.microsoft.com/en-us/topic/july-11-2023-security-update-kb5028171-34557119-e00c-4678-bb87-048a36ed8585
+
 #### Instance
 * Added a feature to delete floating IPs and additional block storage attached to an instance when deleting the instance
 
