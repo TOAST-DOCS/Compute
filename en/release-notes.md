@@ -99,6 +99,13 @@
 #### Instance
 * Added a feature to delete floating IPs and additional block storage attached to an instance when deleting the instance
 
+#### Instance Template
+* Supported the encrypted block storage type
+
+#### Scaling Group
+* Supported the encrypted block storage type
+
+
 ### July 25, 2023
 #### Image Builder
 * Added application versions
