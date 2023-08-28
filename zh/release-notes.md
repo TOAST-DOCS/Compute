@@ -1,6 +1,9 @@
 ## Compute > Release Notes
 
 ### August 29, 2023
+#### Public API
+* Added the image upload/download APIs
+
 #### Image
 * Added new images
     * Rocky Linux 8.8(2023.08.22.)
