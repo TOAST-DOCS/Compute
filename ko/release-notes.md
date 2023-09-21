@@ -1,5 +1,23 @@
 ## Compute > 릴리스 노트
 
+### 2023. 09. 26.
+#### Image
+* 신규 이미지 추가
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.1 (2023.09.26.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.1 (2023.09.26.)
+    * PentaSecurity WAPPLES SA 6.0.6 (2023.09.26.)
+
+* 이미지 지원 종료
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.0 (2023.06.27.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.0 (2023.08.22.)
+    * Windows 2012 R2 STD (2023.08.22.) EN
+    * Windows 2012 R2 STD (2023.08.22.) KO
+    * Windows 2012 R2 STD with MS-SQL 2016 Standard (2023.08.22.) EN
+    * Windows 2012 R2 STD with MS-SQL 2016 Standard (2023.08.22.) KO
+
+* PIOLINK WEBFRONT-KS 4.0.6.61.28 (2023.04.25.)
+    * 이미지 이름 변경 PLOS-WAF-KS-v4.0.6.61.28 (2023.04.25.) > PIOLINK WEBFRONT-KS 4.0.6.61.28 (2023.04.25.)
+
 ### 2023. 08. 29.
 #### Instance
 * 인스턴스 삭제 시 인스턴스에 연결되어 있는 플로팅 IP와 추가 블록 스토리지를 함께 삭제하는 기능 추가
@@ -54,8 +72,8 @@
     * Ubuntu Server 18.04.6 LTS with NVIDIA(2023.03.21.)
 
 * GPU
-    * NVIDIA 드라이버 업데이트(Linux): 450.216.04 -> 470.182.03
-    * NVIDIA 드라이버 업데이트: 453.94 -> 474.30
+    * NVIDIA 드라이버 업데이트(Linux): 450.216.04 > 470.182.03
+    * NVIDIA 드라이버 업데이트: 453.94 > 474.30
 
 * CentOS 7.9(2023.05.25.)
     * 이미지 업데이트
@@ -204,8 +222,8 @@
 * 커널 업데이트
 
 * GPU
-    * nvidia driver 업데이트(Windows): 453.51 -> 453.94
-    * nvidia driver 업데이트(Linux): 450.191.01 -> 450.216.04
+    * nvidia driver 업데이트(Windows): 453.51 > 453.94
+    * nvidia driver 업데이트(Linux): 450.191.01 > 450.216.04
 
 * Rocky Linux 8.6(2023.02.21.)
     * 이미지 업데이트
@@ -1461,8 +1479,8 @@
 #### Image
 * Windows 2012 R2 STD(2018. 02. 22.)
     * Windows Time Zone 설정 변경
-        * 동기화 주기 변경 : [기존) 604800초 (7일) -> [변경] 256초
-        * Time Zone Peer 도메인 변경 : [기존] 1.kr.pool.ntp.org , 1.pool.ntp.org -> [변경] 1.pool.ntp.org , time.windows.com
+        * 동기화 주기 변경 : [기존) 604800초 (7일) > [변경] 256초
+        * Time Zone Peer 도메인 변경 : [기존] 1.kr.pool.ntp.org , 1.pool.ntp.org > [변경] 1.pool.ntp.org , time.windows.com
     * 2018년 2월 13일자 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4074594/windows-81-update-kb-4074594
 
 * Ubuntu Linux 14.04.5(2018. 02. 22.)
