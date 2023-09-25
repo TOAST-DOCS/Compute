@@ -1,5 +1,23 @@
 ## Compute > Release Notes
 
+### September 26, 2023
+#### Image
+* Added new images
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.1(2023.09.26.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.1(2023.09.26.)
+    * PentaSecurity WAPPLES SA 6.0.6(2023.09.26.)
+
+* Ended image support
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.0(2023.06.27.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.0(2023.08.22.)
+    * Windows 2012 R2 STD(2023.08.22.) EN
+    * Windows 2012 R2 STD(2023.08.22.) KO
+    * Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.08.22.) EN
+    * Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.08.22.) KO
+
+* PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
+    * Changed image name PLOS-WAF-KS-v4.0.6.61.28(2023.04.25.) > PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
+
 ### August 29, 2023
 #### Public API
 * Added the image upload/download APIs
@@ -159,8 +177,8 @@
     * Ubuntu Server 18.04.6 LTS with NVIDIA(2023.03.21.)
 
 * GPU
-    * nvidia driver updated (Linux): 450.216.04 -> 470.182.03
-    * nvidia driver updated: 453.94 -> 474.30
+    * nvidia driver updated (Linux): 450.216.04 > 470.182.03
+    * nvidia driver updated: 453.94 > 474.30
 
 * CentOS 7.9(2023.05.25.)
     * Image update
@@ -310,8 +328,8 @@
 * Kernel updated
 
 * GPU
-    * nvidia driver updated (Windows): 453.51 -> 453.94
-    * nvidia driver updated (Linux): 450.191.01 -> 450.216.04
+    * nvidia driver updated (Windows): 453.51 > 453.94
+    * nvidia driver updated (Linux): 450.191.01 > 450.216.04
 
 * Rocky Linux 8.6(2023.02.21.)
     * Image update
