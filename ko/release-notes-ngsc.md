@@ -1,5 +1,14 @@
 ## Compute > 릴리스 노트
 
+### 2023. 09. 26.
+#### Image
+* 이미지 지원 종료
+    * Windows 2012 R2 STD (2023.08.22.) KO
+    * Windows 2012 R2 STD with MS-SQL 2016 Standard (2023.08.22.) KO
+
+* PIOLINK WEBFRONT-KS 4.0.6.61.28 (2023.04.25.)
+    * 이미지 이름 변경 PLOS-WAF-KS-v4.0.6.61.28 (2023.04.25.) > PIOLINK WEBFRONT-KS 4.0.6.61.28 (2023.04.25.)
+
 ### 2023. 09. 12.
 * 블록 스토리지 스냅숏 유료화 
 
