@@ -1,5 +1,23 @@
 ## Compute > リリースノート
 
+### 2023. 09. 26.
+#### Image
+* 新規イメージ追加
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.1 (2023.09.26.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.1 (2023.09.26.)
+    * PentaSecurity WAPPLES SA 6.0.6 (2023.09.26.)
+
+* イメージサポート終了
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.0 (2023.06.27.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.0 (2023.08.22.)
+    * Windows 2012 R2 STD (2023.08.22.) EN
+    * Windows 2012 R2 STD (2023.08.22.) KO
+    * Windows 2012 R2 STD with MS-SQL 2016 Standard (2023.08.22.) EN
+    * Windows 2012 R2 STD with MS-SQL 2016 Standard (2023.08.22.) KO
+
+* PIOLINK WEBFRONT-KS 4.0.6.61.28 (2023.04.25.)
+    * イメージ名変更PLOS-WAF-KS-v4.0.6.61.28 (2023.04.25.) > PIOLINK WEBFRONT-KS 4.0.6.61.28 (2023.04.25.)
+
 ### 2023. 08. 29.
 #### Public API
 * イメージアップロード/ダウンロードAPIを追加
