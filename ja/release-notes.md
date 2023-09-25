@@ -1,8 +1,130 @@
 ## Compute > リリースノート
 
+### 2023. 09. 26.
+#### Image
+* 新規イメージ追加
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.1 (2023.09.26.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.1 (2023.09.26.)
+    * PentaSecurity WAPPLES SA 6.0.6 (2023.09.26.)
+
+* イメージサポート終了
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.0 (2023.06.27.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.0 (2023.08.22.)
+    * Windows 2012 R2 STD (2023.08.22.) EN
+    * Windows 2012 R2 STD (2023.08.22.) KO
+    * Windows 2012 R2 STD with MS-SQL 2016 Standard (2023.08.22.) EN
+    * Windows 2012 R2 STD with MS-SQL 2016 Standard (2023.08.22.) KO
+
+* PIOLINK WEBFRONT-KS 4.0.6.61.28 (2023.04.25.)
+    * イメージ名変更PLOS-WAF-KS-v4.0.6.61.28 (2023.04.25.) > PIOLINK WEBFRONT-KS 4.0.6.61.28 (2023.04.25.)
+
 ### 2023. 08. 29.
+#### Public API
+* イメージアップロード/ダウンロードAPIを追加
+
+#### Image
+* 新規イメージ追加
+    * Rocky Linux 8.8(2023.08.22.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.0(2023.08.22.)
+    * CentOS 7.9 for NAT(2023.08.22.)
+
+* イメージサポート終了
+    * Rocky Linux 8.7(2023.05.25.)
+
+* GPU
+    * NVIDIAドライバーアップデート(Linux): 470.182.03 > 470.199.02
+    * dcgmアップデート(Linux): 3.1.7 > 3.1.8
+    * NVIDIAドライバーアップデート(Windows): 474.30 > 474.44
+
+* イメージ名変更
+    * Ubuntu Server 20.04.6 LTS for Deep Learning(2023.06.27.) > Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.0(2023.06.27.)
+
+* CentOS 7.9(2023.08.22.)
+    * イメージアップデート
+* Debian 10.13 Buster(2023.08.22.)
+    * イメージアップデート
+* Debian 11.7 Bullseye(2023.08.22.)
+    * イメージアップデート
+* Ubuntu Server 20.04.6 LTS(2023.08.22.)
+    * イメージアップデート
+* Ubuntu Server 20.04.6 LTS for NAT(2023.08.22.)
+    * イメージアップデート
+* Ubuntu Server 20.04.6 LTS with NVIDIA(2023.08.22.)
+    * イメージアップデート
+* Ubuntu Server 22.04.2 LTS(2023.08.22.)
+    * イメージアップデート
+* Windows 2012 R2 STD(2023.08.22.) EN
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-us/topic/july-11-2023-kb5028228-monthly-rollup-b7ee35a2-91ab-4e36-8e46-7c616d1bd4e4
+* Windows 2012 R2 STD(2023.08.22.) KO
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-us/topic/july-11-2023-kb5028228-monthly-rollup-b7ee35a2-91ab-4e36-8e46-7c616d1bd4e4
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.08.22.) EN
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-us/topic/july-11-2023-kb5028228-monthly-rollup-b7ee35a2-91ab-4e36-8e46-7c616d1bd4e4
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.08.22.) KO
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-us/topic/july-11-2023-kb5028228-monthly-rollup-b7ee35a2-91ab-4e36-8e46-7c616d1bd4e4
+* Windows 2016 STD(2023.08.22.) EN
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD(2023.08.22.) KO
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2016 Standard(2023.08.22.) EN
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2016 Standard(2023.08.22.) KO
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2017 Standard(2023.08.22.) EN
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2017 Standard(2023.08.22.) KO
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2019 Express(2023.08.22.) EN
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2019 Express(2023.08.22.) KO
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2019 Standard(2023.08.22.) EN
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2019 Standard(2023.08.22.) KO
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2019 STD(2023.08.22.) EN
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-gb/topic/july-11-2023-kb5028168-os-build-17763-4645-eff2d1e1-5f91-4d9a-aef1-ae26bdf51321
+* Windows 2019 STD(2023.08.22.) KO
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-gb/topic/july-11-2023-kb5028168-os-build-17763-4645-eff2d1e1-5f91-4d9a-aef1-ae26bdf51321
+* Windows 2019 STD with MS-SQL 2019 Standard(2023.08.22.) EN
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-gb/topic/july-11-2023-kb5028168-os-build-17763-4645-eff2d1e1-5f91-4d9a-aef1-ae26bdf51321
+* Windows 2019 STD with MS-SQL 2019 Standard(2023.08.22.) KO
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-gb/topic/july-11-2023-kb5028168-os-build-17763-4645-eff2d1e1-5f91-4d9a-aef1-ae26bdf51321
+* Windows 2019 STD with NVIDIA(2023.08.22.) KO
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-gb/topic/july-11-2023-kb5028168-os-build-17763-4645-eff2d1e1-5f91-4d9a-aef1-ae26bdf51321
+* Windows 2022 STD(2023.08.22.) EN
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-us/topic/july-11-2023-security-update-kb5028171-34557119-e00c-4678-bb87-048a36ed8585
+* Windows 2022 STD(2023.08.22.) KO
+    * イメージアップデート
+    * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-us/topic/july-11-2023-security-update-kb5028171-34557119-e00c-4678-bb87-048a36ed8585
+
 #### Instance
 * インスタンス削除時にインスタンスに接続されているFloating IPと追加ブロックストレージを一緒に削除する機能を追加
+
+#### Instance Template
+* 暗号化ブロックストレージタイプをサポート
+
+#### Scaling Group
+* 暗号化ブロックストレージタイプをサポート
 
 ### 2023. 07. 25.
 
@@ -56,8 +178,8 @@
     * Ubuntu Server 18.04.6 LTS with NVIDIA(2023.03.21.)
 
 * GPU
-    * NVIDIAドライバーアップデート(Linux): 450.216.04 -> 470.182.03
-    * NVIDIAドライバーアップデート: 453.94 -> 474.30
+    * NVIDIA 드라이버 업데이트(Linux): 450.216.04 > 470.182.03
+    * NVIDIA 드라이버 업데이트: 453.94 > 474.30
 
 * CentOS 7.9(2023.05.25.)
     * イメージアップデート
@@ -201,8 +323,8 @@
 * カーネルアップデート
 
 * GPU
-    * nvidia driverアップデート(Windows)： 453.51 -> 453.94
-    * nvidia driverアップデート(Linux)： 450.191.01 -> 450.216.04
+    * nvidia driver 업데이트(Windows): 453.51 > 453.94
+    * nvidia driver 업데이트(Linux): 450.191.01 > 450.216.04
 
 * Rocky Linux 8.6(2023.02.21.)
     * イメージアップデート
@@ -1778,8 +1900,8 @@
         * Language : KO
         * Description : Windows 2012 R2 STD(2018. 02. 22.)
     * Windows Time Zone 설정 변경
-        * 동기화 주기 변경 : [기존) 604800초 (7일) -> [변경] 256초
-        * Time Zone Peer 도메인 변경 : [기존] 1.kr.pool.ntp.org , 1.pool.ntp.org -> [변경] 1.pool.ntp.org , time.windows.com
+        * 동기화 주기 변경 : [기존) 604800초 (7일) > [변경] 256초
+        * Time Zone Peer 도메인 변경 : [기존] 1.kr.pool.ntp.org , 1.pool.ntp.org > [변경] 1.pool.ntp.org , time.windows.com
     * MS 2018.02.13 Windows Update 적용
         * https://support.microsoft.com/ko-kr/help/4074594/windows-81-update-kb-4074594
 * Ubuntu Linux 14.04 이미지 업데이트

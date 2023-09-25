@@ -19,8 +19,113 @@
     * 이미지 이름 변경 PLOS-WAF-KS-v4.0.6.61.28 (2023.04.25.) > PIOLINK WEBFRONT-KS 4.0.6.61.28 (2023.04.25.)
 
 ### 2023. 08. 29.
+#### Public API
+* 이미지 업로드/다운로드 API 추가
+
+#### Image
+* 신규 이미지 추가
+    * Rocky Linux 8.8(2023.08.22.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.0(2023.08.22.)
+    * CentOS 7.9 for NAT(2023.08.22.)
+
+* 이미지 지원 종료
+    * Rocky Linux 8.7(2023.05.25.)
+
+* GPU
+    * NVIDIA 드라이버 업데이트(Linux): 470.182.03 > 470.199.02
+    * dcgm 업데이트(Linux): 3.1.7 > 3.1.8
+    * NVIDIA 드라이버 업데이트(Windows): 474.30 > 474.44
+
+* 이미지 이름 변경
+    * Ubuntu Server 20.04.6 LTS for Deep Learning(2023.06.27.) > Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.0(2023.06.27.)
+
+* CentOS 7.9(2023.08.22.)
+    * 이미지 업데이트
+* Debian 10.13 Buster(2023.08.22.)
+    * 이미지 업데이트
+* Debian 11.7 Bullseye(2023.08.22.)
+    * 이미지 업데이트
+* Ubuntu Server 20.04.6 LTS(2023.08.22.)
+    * 이미지 업데이트
+* Ubuntu Server 20.04.6 LTS for NAT(2023.08.22.)
+    * 이미지 업데이트
+* Ubuntu Server 20.04.6 LTS with NVIDIA(2023.08.22.)
+    * 이미지 업데이트
+* Ubuntu Server 22.04.2 LTS(2023.08.22.)
+    * 이미지 업데이트
+* Windows 2012 R2 STD(2023.08.22.) EN
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/july-11-2023-kb5028228-monthly-rollup-b7ee35a2-91ab-4e36-8e46-7c616d1bd4e4
+* Windows 2012 R2 STD(2023.08.22.) KO
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/july-11-2023-kb5028228-monthly-rollup-b7ee35a2-91ab-4e36-8e46-7c616d1bd4e4
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.08.22.) EN
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/july-11-2023-kb5028228-monthly-rollup-b7ee35a2-91ab-4e36-8e46-7c616d1bd4e4
+* Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.08.22.) KO
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/july-11-2023-kb5028228-monthly-rollup-b7ee35a2-91ab-4e36-8e46-7c616d1bd4e4
+* Windows 2016 STD(2023.08.22.) EN
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD(2023.08.22.) KO
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2016 Standard(2023.08.22.) EN
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2016 Standard(2023.08.22.) KO
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2017 Standard(2023.08.22.) EN
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2017 Standard(2023.08.22.) KO
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2019 Express(2023.08.22.) EN
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2019 Express(2023.08.22.) KO
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2019 Standard(2023.08.22.) EN
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2016 STD with MS-SQL 2019 Standard(2023.08.22.) KO
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-au/topic/july-11-2023-kb5028169-os-build-14393-6085-fa5b6c30-1ac8-4b99-b58b-9c434d8a8b98
+* Windows 2019 STD(2023.08.22.) EN
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-gb/topic/july-11-2023-kb5028168-os-build-17763-4645-eff2d1e1-5f91-4d9a-aef1-ae26bdf51321
+* Windows 2019 STD(2023.08.22.) KO
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-gb/topic/july-11-2023-kb5028168-os-build-17763-4645-eff2d1e1-5f91-4d9a-aef1-ae26bdf51321
+* Windows 2019 STD with MS-SQL 2019 Standard(2023.08.22.) EN
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-gb/topic/july-11-2023-kb5028168-os-build-17763-4645-eff2d1e1-5f91-4d9a-aef1-ae26bdf51321
+* Windows 2019 STD with MS-SQL 2019 Standard(2023.08.22.) KO
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-gb/topic/july-11-2023-kb5028168-os-build-17763-4645-eff2d1e1-5f91-4d9a-aef1-ae26bdf51321
+* Windows 2019 STD with NVIDIA(2023.08.22.) KO
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-gb/topic/july-11-2023-kb5028168-os-build-17763-4645-eff2d1e1-5f91-4d9a-aef1-ae26bdf51321
+* Windows 2022 STD(2023.08.22.) EN
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/july-11-2023-security-update-kb5028171-34557119-e00c-4678-bb87-048a36ed8585
+* Windows 2022 STD(2023.08.22.) KO
+    * 이미지 업데이트
+    * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/july-11-2023-security-update-kb5028171-34557119-e00c-4678-bb87-048a36ed8585
+
 #### Instance
 * 인스턴스 삭제 시 인스턴스에 연결되어 있는 플로팅 IP와 추가 블록 스토리지를 함께 삭제하는 기능 추가
+
+#### Instance Template
+* 암호화 블록 스토리지 타입 지원
+
+#### Scaling Group
+* 암호화 블록 스토리지 타입 지원
+
 
 ### 2023. 07. 25.
 #### Image Builder
