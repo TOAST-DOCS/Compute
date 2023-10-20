@@ -1,5 +1,10 @@
 ## Compute > Release Notes
 
+### October 31, 2023
+#### System Monitoring
+* Bug Fixes
+  * Fixed an issue that kept sending notifications to users excluded from projects
+    
 ### September 26, 2023
 #### Image
 * Added new images
