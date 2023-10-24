@@ -1,5 +1,14 @@
 ## Compute > Release Notes
 
+### October 31, 2023
+#### Image
+* Added new images
+    * CentOS 7.9 with Tibero 7 CSE(2023.10.31.)
+    * CentOS 7.9 with Tibero 7 CEE(2023.10.31.)
+
+* Ended image support
+    * CentOS 7.9 with Tibero 6(2022.12.20.)
+      
 ### September 26, 2023
 #### Image
 * Added new images
