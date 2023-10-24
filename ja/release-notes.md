@@ -13,8 +13,8 @@
 ### 2023. 10. 31.
 #### Image
 * 新規イメージ追加
-    * CentOS 7.9 with Tibero 7 CSE (2023.10.24.)
-    * CentOS 7.9 with Tibero 7 CEE (2023.10.24.)
+    * CentOS 7.9 with Tibero 7 CSE (2023.10.31.)
+    * CentOS 7.9 with Tibero 7 CEE (2023.10.31.)
 
 * イメージサポート終了
     * CentOS 7.9 with Tibero 6 (2022.12.20.)
