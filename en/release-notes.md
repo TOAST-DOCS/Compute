@@ -1,6 +1,11 @@
 ## Compute > Release Notes
 
 ### October 31, 2023
+
+#### System Monitoring
+* Bug Fixes
+  * Fixed an issue that kept sending notifications to users excluded from projects
+    
 #### Image
 * Added new images
     * CentOS 7.9 with Tibero 7 CSE(2023.10.31.)
