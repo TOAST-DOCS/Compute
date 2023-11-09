@@ -1,11 +1,19 @@
 ## Compute > 릴리스 노트
 
-### 2023. 11. 30.
-#### Instance
-* 인스턴스 종료 기능 추가
+### 2023. 10. 31.
 
-#### Public API
-* 인스턴스 종료, 종료된 인스턴스 시작 API 추가
+#### System Monitoring
+* 버그 수정
+  * 프로젝트에서 제외한 사용자에게 계속 알람을 보내던 문제 수정
+
+#### Image
+* 신규 이미지 추가
+    * CentOS 7.9 with Tibero 7 CSE (2023.10.31.)
+    * CentOS 7.9 with Tibero 7 CEE (2023.10.31.)
+
+* 이미지 지원 종료
+    * CentOS 7.9 with Tibero 6 (2022.12.20.)
+
 
 ### 2023. 09. 26.
 #### Image
