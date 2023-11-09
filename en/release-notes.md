@@ -8,7 +8,7 @@
 * Added APIs to terminate instances and to resume terminated instances
 
 #### Image
-* Removed limit on number of image sharing members
+* Removed limit on the number of image sharing members
 
 ### October 31, 2023
 
