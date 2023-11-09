@@ -11,6 +11,9 @@
 #### Image
 * 이미지 공유 멤버 수 제한 해제
 
+#### Bare Metal Instance
+* Bare Metal Instance 서비스 출시
+
 ### 2023. 10. 31.
 
 #### System Monitoring

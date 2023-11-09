@@ -10,6 +10,9 @@
 #### Image
 * Removed limit on the number of image sharing members
 
+#### Bare Metal Instance
+* Bare Metal Instance service added
+
 ### October 31, 2023
 
 #### System Monitoring

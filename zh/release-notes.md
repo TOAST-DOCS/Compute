@@ -1,6 +1,24 @@
 ## Compute > Release Notes
 
+### November 28, 2023
+#### Instance
+* Added a feature to terminate instances
+
+#### Public API
+* Added APIs to terminate instances and to resume terminated instances
+
+#### Image
+* Removed limit on the number of image sharing members
+
+#### Bare Metal Instance
+* Bare Metal Instance service added
+
 ### October 31, 2023
+
+#### System Monitoring
+* Bug Fixes
+  * Fixed an issue that kept sending notifications to users excluded from projects
+    
 #### Image
 * Added new images
     * CentOS 7.9 with Tibero 7 CSE(2023.10.31.)
@@ -8,6 +26,24 @@
 
 * Ended image support
     * CentOS 7.9 with Tibero 6(2022.12.20.)
+      
+### September 26, 2023
+#### Image
+* Added new images
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.1(2023.09.26.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.1(2023.09.26.)
+    * PentaSecurity WAPPLES SA 6.0.6(2023.09.26.)
+
+* Ended image support
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.0(2023.06.27.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.0(2023.08.22.)
+    * Windows 2012 R2 STD(2023.08.22.) EN
+    * Windows 2012 R2 STD(2023.08.22.) KO
+    * Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.08.22.) EN
+    * Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.08.22.) KO
+
+* PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
+    * Changed image name PLOS-WAF-KS-v4.0.6.61.28(2023.04.25.) > PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
 
 ### August 29, 2023
 #### Public API
@@ -111,6 +147,13 @@
 #### Instance
 * Added a feature to delete floating IPs and additional block storage attached to an instance when deleting the instance
 
+#### Instance Template
+* Supported the encrypted block storage type
+
+#### Scaling Group
+* Supported the encrypted block storage type
+
+
 ### July 25, 2023
 #### Image Builder
 * Added application versions
@@ -121,9 +164,9 @@
 #### System Monitoring
 * Fixed an issue where, when using the **Monthly Metrics Report**, excel files are not created intermittently
 * Windows agent
-  * Improved high availability feature
-  * Added logs
-
+    * Improved high availability feature 
+    * Added logs
+    
 #### Image Builder
 * Added application versions
     * Deep Learning Framework 2.1.0
@@ -161,8 +204,8 @@
     * Ubuntu Server 18.04.6 LTS with NVIDIA(2023.03.21.)
 
 * GPU
-    * nvidia driver updated (Linux): 450.216.04 -> 470.182.03
-    * nvidia driver updated: 453.94 -> 474.30
+    * nvidia driver updated (Linux): 450.216.04 > 470.182.03
+    * nvidia driver updated: 453.94 > 474.30
 
 * CentOS 7.9(2023.05.25.)
     * Image update
@@ -176,6 +219,8 @@
 * Ubuntu Server 20.04.6 LTS(2023.05.25.)
     * Image update
 * Ubuntu Server 20.04.6 LTS with NVIDIA(2023.05.25.)
+    * Image update
+* Ubuntu Server 20.04.6 LTS for Deep Learning(2023.05.25.)
     * Image update
 * Ubuntu Server 22.04.2 LTS(2023.05.25.)
     * Image update
@@ -241,7 +286,6 @@
     * November 2023 security updates applied: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025229-os-build-17763-4252-e8ead788-2cd3-4c9b-8c77-d677e2d8744f
 
 ### April 25, 2023
-
 #### Image
 * Added new images
     * Ubuntu Server 20.04.6 LTS for Deep Learning(2023.04.25.)
@@ -251,9 +295,11 @@
     * Ubuntu Server 18.04.6 LTS for Deep Learning(2022.01.25.)
     * PLOS-WFK-KS-v4.0.6.61.25(2022.09.20.)
 
+#### System Monitoring
+* Bug Fixes
+    * Fixed an issue where downloaded monthly metrics reports intermittently fail to run
 
 ### March 28, 2023
-
 #### Image
 * Added new images
     * CentOS 7.9 with CUBRID 10.2.10(2023.03.21.)
@@ -296,18 +342,21 @@
 #### Public API
 * Changed API endpoints
 
+#### System Monitoring
+* Removed the interval option `1m` in Monthly Metrics Report
+
 ### February 28, 2023
 
 #### Image
-* Added new image
+* Added new images
     * Ubuntu Server 22.04.1 LTS(2023.02.21.)
     * Ubuntu Server 20.04.5 LTS with NVIDIA(2023.02.21.)
-
+    
 * Kernel updated
 
 * GPU
-    * nvidia driver updated (Windows): 453.51 -> 453.94
-    * nvidia driver updated (Linux): 450.191.01 -> 450.216.04
+    * nvidia driver updated (Windows): 453.51 > 453.94
+    * nvidia driver updated (Linux): 450.191.01 > 450.216.04
 
 * Rocky Linux 8.6(2023.02.21.)
     * Image update
@@ -328,10 +377,10 @@
     * January 2023 security update applied: https://support.microsoft.com/en-us/topic/january-10-2023-kb5022352-monthly-rollup-cf299bf2-707b-47db-89a5-4e22c5ce4e26
 * Windows 2016 STD(2023.02.14.)
     * Image update: https://support.microsoft.com/en-us/topic/january-10-2023-kb5022289-os-build-14393-5648-36de3673-55d0-4e0f-8b77-d06326b58456
-    * January 2023 security update applied
+    * January 2023 security update applied  
 * Windows 2019 STD(2023.02.14.)
     * Image update: https://support.microsoft.com/en-us/topic/january-10-2023-kb5022286-os-build-17763-3887-48683103-7b22-4f36-aa98-0049c7a6e579
-    * January 2023 security update applied
+    * January 2023 security update applied   
 * Windows 2022 STD(2023.02.14.)
     * Image update
     * January 2023 security update applied: https://support.microsoft.com/en-us/topic/january-10-2023-kb5022291-os-build-20348-1487-38772acf-103f-463e-9d60-486174e806b2
@@ -369,7 +418,7 @@
 
 #### Instance
 * Improved the UI so that setting values can be changed when creating instances with **Instance Template**
-* Improved the UI of instance information
+* Improved the UI of instance information 
 
 #### Instance Template
 * Added the **Change Instance Template Owner** feature
@@ -421,12 +470,12 @@
     * CentOS 7.9
 * Ended base image support
     * CentOS 7.8
-
+    
 ### November 29, 2022
 #### Instance
 * Added deletion protection (all/set/unset) to **Filter Conditions** of Instance Management
-* Improved the feature to change security group configured for each network interface
-* Improved the UI of instance information
+* Improved the feature to change security group configured for each network interface 
+* Improved the UI of instance information 
 * Added the toggle button for deletion protection
 * Improved the feature to set deletion protection in bathes
 
@@ -512,174 +561,6 @@
 
 #### Instance
 * Added a feature to select instance flavors (Instance and Ephemeral Storage Instance) in the Create Instances menu
-* Added a feature to search for image types (OS, Application, DBMS, etc.) in the Instance Management menu.
-
-#### Image
-* Changed to allow password initialization even when the administrator account name of Windows image is changed
-
-* Windows 2012 R2 STD(2022. 07. 19.)
-    * May. 2022 security update applied: https://support.microsoft.com/en-au/topic/kb5012672-servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2-april-12-2022-0f0b0460-2483-4d89-868a-56997d1202a5
-* Windows 2016 STD(2022. 07. 19.)
-    * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
-* Windows 2019 STD(2022. 07. 19.)
-    * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
-* Windows 2012 R2 STD with MS-SQL Server 2016 Standard(2022. 07. 19.)
-    * May. 2022 security update applied: https://support.microsoft.com/en-au/topic/kb5012672-servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2-april-12-2022-0f0b0460-2483-4d89-868a-56997d1202a5
-* Windows 2016 STD with MS-SQL Server 2016 Standard(2022. 07. 19.)
-    * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
-* Windows 2016 with MS-SQL Server 2019 Express(2022. 07. 19.)
-    * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
-    * Cumulative update 16 for SQL Server applied: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
-* Windows 2016 STD with MS-SQL Server 2017 Standard(2022. 07. 19.)
-    * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
-* Windows 2016 STD with MS-SQL Server 2019 Standard(2022. 07. 19.)
-    * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
-    * Cumulative update 16 for SQL Server applied: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
-* Windows 2019 with MS-SQL Server 2019 Standard(2022. 07. 19.)
-    * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
-    * Cumulative update 16 for SQL Server applied: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
-
-#### System Monitoring
-* Added a new feature: Monthly Metrics Report
-  * Allows you to create and download monthly metric reports.
-  * Allows you to create reports on metrics for up to 6 months on a monthly basis.
-  * Among the Select Metrics items, `GENERAL` can be found in `Server Dashboard`, and `PROMQL` found in `OpenMetrics Dashboard`.
-  * Each request can be found in `Monthly Metric Report`, and the report can be downloaded for a month after creation
-
-### May 24, 2022
-#### Instance
-* Added the instance screenshot feature
-* Added the instance deletion protection feature
-* Made changes so that, when querying an instance with the API, the instance deletion protection attribute (NHN-EXT-ATTR:protect) is displayed
-* Removed a hyphen (`-`) from the names of multiple instances created at the same time
-    * Before change: instance-1, instance-2, ...
-    * After change: instance1, instance2, ...
-* Improved OS image selection UI for creating an instance
-
-#### Image
-* Added a new image
-    * Rocky Linux 8.5 (2022. 05. 17.)
-
-### March 29, 2022
-#### Image
-* Added a new image
-    * Debian 11.2 Bullseye(2022. 03. 22.)
-
-* Image support ended
-    * Debian 9.13 Stretch(2021. 12. 21.)
-
-### January 25, 2022
-#### Public API
-* Changed so that GPU Instance service images can be queried with the image query API
-* Added a query parameter for filtering infrastructure service types to the image query API
-
-#### Image
-* Added a feature to copy images to another region
-
-#### Image Builder
-* Added an application
-    * Slurm
-
-### December 28, 2021
-
-#### Image
-* Changed so that Prometheus compatible exporter is not automatically installed when creating an instance
-
-* CentOS 7.8(2021. 12. 21.)
-    * Image updated
-* CentOS 7.8 for NAT(2021. 12. 21.)
-    * Image updated
-* CentOS 7.8 with MySQL 5.6.38(2021. 12. 21.)
-    * Image updated
-* CentOS 7.8 with MySQL 5.6.50(2021. 12. 21.)
-    * Image updated
-* CentOS 7.8 with MySQL 5.7.20(2021. 12. 21.)
-    * Image updated
-* CentOS 7.8 with MySQL 5.7.32(2021. 12. 21.)
-    * Image updated
-* CentOS 7.8 with MySQL 8.0.22(2021. 12. 21.)
-    * Image updated
-* Debian 9.13 Stretch(2021. 12. 21.)
-    * Image updated
-* Debian 10.11 Buster(2021. 12. 21.)
-    * Image updated
-* Ubuntu Server 18.04.6 LTS(2021. 12. 21.)
-    * Image updated
-* Ubuntu Server 20.04.3 LTS(2021. 12. 21.)
-    * Image updated
-* Ubuntu Server 18.04.6 LTS for NAT(2021. 12. 21.)
-    * Image updated
-* Ubuntu Server 18.04.6 LTS with NVIDIA(2021. 12. 21.)
-    * Image updated
-* Windows 2012 R2 STD(2021. 12. 21.)
-    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007247-monthly-rollup-2c3b6017-82f4-4102-b1e2-36f366bf3520
-* Windows 2016 STD(2021. 12. 21.)
-    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
-* Windows 2019 STD(2021. 12. 21.)
-    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
-* Windows Server 2012 R2 with SQL Server 2016 Standard(2021. 12. 21.)
-    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007247-monthly-rollup-2c3b6017-82f4-4102-b1e2-36f366bf3520
-* Windows Server 2016 with SQL Server 2016 Standard(2021. 12. 21.)
-    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
-* Windows Server 2016 with SQL Server 2019 Express(2021. 12. 21.)
-    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
-* Windows Server 2016 with SQL Server 2017 Standard(2021. 12. 21.)
-    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
-* Windows Server 2016 with SQL Server 2019 Standard(2021. 12. 21.)
-    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
-* Windows Server 2019 with SQL Server 2019 Standard(2021. 12. 21.)
-    * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
-
-#### Image Builder
-* Added an application
-    * Deep Learning Framework
-
-#### System Monitoring
-* Deleted the feature to add @Linux and @Windows default workspaces and deleted the created workspaces
-    * @Linux and @Windows workspaces that were added automatically when creating an instance are no longer added automatically.
-    * All @Linux and @Windows workspaces automatically created in the existing instances are deleted.
-
-### 2021. 11. 23.
-#### Image
-* Supports creating a private image that you can use to create a GPU instance
-
-#### Image Builder
-* Added applications
-    * JEUS
-    * WebtoB
-    * Apache Tomcat
-    * Node.js
-    * MySQL
-
-### October 26, 2021
-#### Image Builder
-* Image Builder service added
-    * Allows you to create a private image by combining an OS image, application installation components, and a user script
-* Added applications
-    * PostgreSQL
-    * MariaDB
-    * CUBRID
-
-#### System Monitoring
-
-* OpenMetrics Dashboard > Query
-    * Changed to allow users to select only up to the date one year ago when selecting a query period.
-    * Changed so that guide text regarding data unavailable status or errors is displayed in the chart
-* OpenMetrics Dashboard > Add/Modify Charts
-    * Changed so that, when the user clicks the **Add** button without selecting any metrics, guide text shows up and the location is highlighted.
-
-### Septempber 27, 2022
-#### Image
-* Added a new image
-    * Windows 2022 STD (2022. 09. 20.)
-
-* PLOS-WFK-KS-v4.0.6.61.25
-    * Image updated
-
-### July 26, 2022
-
-#### Instance
-* Added a feature to select instance flavors (Instance and Ephemeral Storage Instance) in the Create Instances menu
 * Added a feature to search for image types (OS, Application, DBMS, etc.) in the Instance Management menu. 
 
 #### Image
@@ -717,10 +598,12 @@
 ### May 24, 2022
 #### Instance
 * Added the instance screenshot feature
+* Added the instance deletion protection feature
 * Made changes so that, when querying an instance with the API, the instance deletion protection attribute (NHN-EXT-ATTR:protect) is displayed
 * Removed a hyphen (`-`) from the names of multiple instances created at the same time
     * Before change: instance-1, instance-2, ...
     * After change: instance1, instance2, ...
+* Improved OS image selection UI for creating an instance
 
 #### Image
 * Added a new image
