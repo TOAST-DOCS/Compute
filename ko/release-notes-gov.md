@@ -11,6 +11,12 @@
 #### Image
 * 이미지 공유 멤버 수 제한 해제
 
+#### Image Builder
+* 애플리케이션 추가
+    * NHN Kubernetes Service(NKS) Worker Node
+    * NHN Kubernetes Service(NKS) Worker Node(GPU)
+
+
 ### 2023. 10. 31.
 #### Image
 * 신규 이미지 추가
