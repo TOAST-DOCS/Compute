@@ -1,5 +1,18 @@
 ## Compute > リリースノート
 
+### 2023. 11. 28.
+#### Instance
+* インスタンス停止機能を追加
+
+#### Public API
+* インスタンスの終了、終了したインスタンスの起動APIを追加
+
+#### Image
+* イメージ共有メンバー数制限の解除
+
+#### Bare Metal Instance
+* Bare Metal Instanceサービスを追加
+
 ### 2023. 10. 31.
 #### Image
 * 新規イメージ追加

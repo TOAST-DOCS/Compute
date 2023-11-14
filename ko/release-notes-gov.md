@@ -1,5 +1,22 @@
 ## Compute > 릴리스 노트
 
+
+### 2023. 11. 30.
+#### Instance
+* 인스턴스 종료 기능 추가
+
+#### Public API
+* 인스턴스 종료, 종료된 인스턴스 시작 API 추가
+
+#### Image
+* 이미지 공유 멤버 수 제한 해제
+
+#### Image Builder
+* 애플리케이션 추가
+    * NHN Kubernetes Service(NKS) Worker Node
+    * NHN Kubernetes Service(NKS) Worker Node(GPU)
+
+
 ### 2023. 10. 31.
 #### Image
 * 신규 이미지 추가
@@ -8,6 +25,7 @@
 
 * 이미지 지원 종료
     * CentOS 7.9 with Tibero 6 (2022.12.20.)
+
 
 ### 2023. 09. 26.
 #### Image
