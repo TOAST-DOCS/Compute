@@ -74,6 +74,7 @@
 	* Windows 2019 STD with MS-SQL 2019 Standard (2023.11.21.) KO
 
 
+
 #### Bare Metal Instance
 * Bare Metal Instance 서비스 출시
 
