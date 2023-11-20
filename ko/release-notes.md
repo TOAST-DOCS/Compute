@@ -12,27 +12,27 @@
 * 이미지 공유 멤버 수 제한 해제
 
 * 신규 이미지 추가
-	* Ubuntu Server 22.04.3 LTS with NVIDIA (2023.11.21.)
-	* Ubuntu Server 22.04.3 LTS - Container (2023.11.21.)
-	* Ubuntu Server 22.04.3 LTS for Deep Learning v3.1.0 (2023.11.21.)
+	* Ubuntu Server 22.04.3 LTS with NVIDIA(2023.11.21.)
+	* Ubuntu Server 22.04.3 LTS - Container(2023.11.21.)
+	* Ubuntu Server 22.04.3 LTS for Deep Learning v3.1.0(2023.11.21.)
 
 * 이미지 지원 종료
-	* Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.1 (2023.09.26.)
-    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.1 (2023.09.26.)
+	* Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.1(2023.09.26.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.1(2023.09.26.)
 
-* GPU 및 container 관련 (Linux)
-    * debian 11 container - gpu driver 추가 / gpu flavor 선택 후 클러스터 생성 가능
-    * nvidia driver 업데이트 : 470.199.02 > 535.104.12
-    * cuda 업데이트 : 11.4 > 12.2
-    * mig manager : 0.5.4 > 0.5.5
+* GPU 및 컨테이너 관련(Linux)
+    * debian 11 container - gpu driver 추가/gpu flavor 선택 후 클러스터 생성 가능
+    * nvidia driver 업데이트: 470.199.02 > 535.104.12
+    * cuda 업데이트: 11.4 > 12.2
+    * mig manager: 0.5.4 > 0.5.5
 
-* GPU (Windows)
-	* nvidia driver 업데이트 : 474.44 > 537.13
+* GPU(Windows)
+	* nvidia driver 업데이트: 474.44 > 537.13
 
-* 보안업데이트 (Linux)
-	* CentOS 7.9 : /usr/bin/newgrp, /sbin/unix_chkpwd SetUID 제거
+* 보안업데이트(Linux)
+	* CentOS 7.9: /usr/bin/newgrp, /sbin/unix_chkpwd SetUID 제거
 
-* 보안업데이트 (Windows)
+* 보안업데이트(Windows)
 	* windows 2016: kb5031362
 		* https://support.microsoft.com/en-au/topic/october-10-2023-kb5031362-os-build-14393-6351-0c6e713e-3d6a-4593-8a75-af0a605f249c
 	* windows 2019: kb5031361
@@ -40,38 +40,38 @@
 	* windows 2022: kb5031364
 		* https://support.microsoft.com/en-us/topic/october-10-2023-kb5031364-os-build-20348-2031-7f1d69e7-c468-4566-887a-1902af791bbc
 
-* 이미지 업데이트 (Linux)
-	* CentOS 7.9 (2023.11.21.)
-	* Debian 10.13 Buster (2023.11.21.)
-	* Debian 11.8 Bullseye (2023.11.21.)
-	* Rocky Linux 8.8 (2023.11.21.)
-	* Ubuntu Server 20.04.6 LTS (2023.11.21.)
-	* Ubuntu Server 22.04.3 LTS (2023.11.21.)
-	* CentOS 7.9 for NAT (2023.11.21.)
-	* Ubuntu Server 20.04.6 LTS for NAT (2023.11.21.)
-	* CentOS 7.9 - Container (2023.11.21.)
-	* Debian 11.8 Bullseye - Container (2023.11.21.)
-	* Rocky Linux 8.8 - Container (2023.11.21.)
-	* Ubuntu Server 20.04.6 LTS - Container (2023.11.21.)
-	* Ubuntu Server 20.04.6 LTS with NVIDIA (2023.11.21.)
+* 이미지 업데이트(Linux)
+	* CentOS 7.9(2023.11.21.)
+	* Debian 10.13 Buster(2023.11.21.)
+	* Debian 11.8 Bullseye(2023.11.21.)
+	* Rocky Linux 8.8(2023.11.21.)
+	* Ubuntu Server 20.04.6 LTS(2023.11.21.)
+	* Ubuntu Server 22.04.3 LTS(2023.11.21.)
+	* CentOS 7.9 for NAT(2023.11.21.)
+	* Ubuntu Server 20.04.6 LTS for NAT(2023.11.21.)
+	* CentOS 7.9 - Container(2023.11.21.)
+	* Debian 11.8 Bullseye - Container(2023.11.21.)
+	* Rocky Linux 8.8 - Container(2023.11.21.)
+	* Ubuntu Server 20.04.6 LTS - Container(2023.11.21.)
+	* Ubuntu Server 20.04.6 LTS with NVIDIA(2023.11.21.)
 
-* 이미지 업데이트 (Windows)
-	* Windows 2016 STD (2023.11.21.) EN
-	* Windows 2016 STD (2023.11.21.) KO
-	* Windows 2019 STD (2023.11.21.) EN
-	* Windows 2019 STD (2023.11.21.) KO
-	* Windows 2022 STD (2023.11.21.) EN
-	* Windows 2022 STD (2023.11.21.) KO
-	* Windows 2016 STD with MS-SQL 2016 Standard (2023.11.21.) EN
-	* Windows 2016 STD with MS-SQL 2016 Standard (2023.11.21.) KO
-	* Windows 2016 STD with MS-SQL 2017 Standard (2023.11.21.) EN
-	* Windows 2016 STD with MS-SQL 2017 Standard (2023.11.21.) KO
-	* Windows 2016 STD with MS-SQL 2019 Express (2023.11.21.) EN
-	* Windows 2016 STD with MS-SQL 2019 Express (2023.11.21.) KO
-	* Windows 2016 STD with MS-SQL 2019 Standard (2023.11.21.) EN
-	* Windows 2016 STD with MS-SQL 2019 Standard (2023.11.21.) KO
-	* Windows 2019 STD with MS-SQL 2019 Standard (2023.11.21.) EN
-	* Windows 2019 STD with MS-SQL 2019 Standard (2023.11.21.) KO
+* 이미지 업데이트(Windows)
+	* Windows 2016 STD(2023.11.21.) EN
+	* Windows 2016 STD(2023.11.21.) KO
+	* Windows 2019 STD(2023.11.21.) EN
+	* Windows 2019 STD(2023.11.21.) KO
+	* Windows 2022 STD(2023.11.21.) EN
+	* Windows 2022 STD(2023.11.21.) KO
+	* Windows 2016 STD with MS-SQL 2016 Standard(2023.11.21.) EN
+	* Windows 2016 STD with MS-SQL 2016 Standard(2023.11.21.) KO
+	* Windows 2016 STD with MS-SQL 2017 Standard(2023.11.21.) EN
+	* Windows 2016 STD with MS-SQL 2017 Standard(2023.11.21.) KO
+	* Windows 2016 STD with MS-SQL 2019 Express(2023.11.21.) EN
+	* Windows 2016 STD with MS-SQL 2019 Express(2023.11.21.) KO
+	* Windows 2016 STD with MS-SQL 2019 Standard(2023.11.21.) EN
+	* Windows 2016 STD with MS-SQL 2019 Standard(2023.11.21.) KO
+	* Windows 2019 STD with MS-SQL 2019 Standard(2023.11.21.) EN
+	* Windows 2019 STD with MS-SQL 2019 Standard(2023.11.21.) KO
 
 
 
@@ -86,31 +86,31 @@
 
 #### Image
 * 신규 이미지 추가
-    * CentOS 7.9 with Tibero 7 CSE (2023.10.31.)
-    * CentOS 7.9 with Tibero 7 CEE (2023.10.31.)
+    * CentOS 7.9 with Tibero 7 CSE(2023.10.31.)
+    * CentOS 7.9 with Tibero 7 CEE(2023.10.31.)
 
 * 이미지 지원 종료
-    * CentOS 7.9 with Tibero 6 (2022.12.20.)
+    * CentOS 7.9 with Tibero 6(2022.12.20.)
 
 
 
 ### 2023. 09. 26.
 #### Image
 * 신규 이미지 추가
-    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.1 (2023.09.26.)
-    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.1 (2023.09.26.)
-    * PentaSecurity WAPPLES SA 6.0.6 (2023.09.26.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.1(2023.09.26.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.1(2023.09.26.)
+    * PentaSecurity WAPPLES SA 6.0.6(2023.09.26.)
 
 * 이미지 지원 종료
-    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.0 (2023.06.27.)
-    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.0 (2023.08.22.)
-    * Windows 2012 R2 STD (2023.08.22.) EN
-    * Windows 2012 R2 STD (2023.08.22.) KO
-    * Windows 2012 R2 STD with MS-SQL 2016 Standard (2023.08.22.) EN
-    * Windows 2012 R2 STD with MS-SQL 2016 Standard (2023.08.22.) KO
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.0(2023.06.27.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.0(2023.08.22.)
+    * Windows 2012 R2 STD(2023.08.22.) EN
+    * Windows 2012 R2 STD(2023.08.22.) KO
+    * Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.08.22.) EN
+    * Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.08.22.) KO
 
-* PIOLINK WEBFRONT-KS 4.0.6.61.28 (2023.04.25.)
-    * 이미지 이름 변경 PLOS-WAF-KS-v4.0.6.61.28 (2023.04.25.) > PIOLINK WEBFRONT-KS 4.0.6.61.28 (2023.04.25.)
+* PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
+    * 이미지 이름 변경 PLOS-WAF-KS-v4.0.6.61.28(2023.04.25.) > PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
 
 ### 2023. 08. 29.
 #### Public API
@@ -566,34 +566,34 @@
     * 이미지 업데이트
 * Windows 2012 R2 STD(2022. 11. 22.)
     * 일본어 이미지 지원 종료
-    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018474-monthly-rollup-21182931-4a5f-4085-a37b-2e63ac3c8c0a
+    * 22년 10월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018474-monthly-rollup-21182931-4a5f-4085-a37b-2e63ac3c8c0a
 * Windows 2016 STD(2022. 11. 22.)
     * 일본어 이미지 지원 종료
-    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
+    * 22년 10월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
 * Windows 2019 STD(2022. 11. 22.)
     * 일본어 이미지 지원 종료
-    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018419-os-build-17763-3532-ca62cca7-b599-44c4-a2a6-347996662623
+    * 22년 10월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018419-os-build-17763-3532-ca62cca7-b599-44c4-a2a6-347996662623
 * Windows 2022 STD(2022. 11. 22.)
     * 일본어 이미지 지원 종료
-    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018421-os-build-20348-1129-115b1147-9568-4924-83b8-d27ab5b495be
+    * 22년 10월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018421-os-build-20348-1129-115b1147-9568-4924-83b8-d27ab5b495be
 * Windows 2012 R2 STD with MS-SQL 2016 Standard(2022. 11. 22.)
     * 일본어 이미지 지원 종료
-    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-au/topic/kb5012672-servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2-april-12-2022-0f0b0460-2483-4d89-868a-56997d1202a5
+    * 22년 10월 보안 업데이트 반영: https://support.microsoft.com/en-au/topic/kb5012672-servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2-april-12-2022-0f0b0460-2483-4d89-868a-56997d1202a5
 * Windows 2016 STD with MS-SQL 2016 Standard(2022. 11. 22.)
     * 일본어 이미지 지원 종료
-    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018474-monthly-rollup-21182931-4a5f-4085-a37b-2e63ac3c8c0a
+    * 22년 10월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018474-monthly-rollup-21182931-4a5f-4085-a37b-2e63ac3c8c0a
 * Windows 2016 STD with MS-SQL 2019 Express(2022. 11. 22.)
     * 일본어 이미지 지원 종료
-    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
+    * 22년 10월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
 * Windows 2016 STD with MS-SQL 2017 Standard(2022. 11. 22.)
     * 일본어 이미지 지원 종료
-    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
+    * 22년 10월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
 * Windows 2016 STD with MS-SQL 2019 Standard(2022. 11. 22.)
     * 일본어 이미지 지원 종료
-    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
+    * 22년 10월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018411-os-build-14393-5427-a59be55a-b368-4284-a643-28fc0b9b8314
 * Windows 2019 STD with MS-SQL 2019 Standard(2022. 11. 22.)
     * 일본어 이미지 지원 종료
-    * 22년 10월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/october-11-2022-kb5018419-os-build-17763-3532-ca62cca7-b599-44c4-a2a6-347996662623
+    * 22년 10월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018419-os-build-17763-3532-ca62cca7-b599-44c4-a2a6-347996662623
 
 #### Image Builder
 * 애플리케이션 추가
@@ -631,25 +631,25 @@
 * Windows 이미지 Administrator 계정명을 변경하여도 비밀번호 초기화 가능하도록 변경
 
 * Windows 2012 R2 STD(2022. 07. 19.)
-    * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-au/topic/kb5012672-servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2-april-12-2022-0f0b0460-2483-4d89-868a-56997d1202a5
+    * 22년 5월 보안 업데이트 반영: https://support.microsoft.com/en-au/topic/kb5012672-servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2-april-12-2022-0f0b0460-2483-4d89-868a-56997d1202a5
 * Windows 2016 STD(2022. 07. 19.)
-    * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+    * 22년 5월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
 * Windows 2019 STD(2022. 07. 19.)
-    * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
+    * 22년 5월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
 * Windows 2012 R2 STD with MS-SQL 2016 Standard(2022. 07. 19.)
-    * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-au/topic/kb5012672-servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2-april-12-2022-0f0b0460-2483-4d89-868a-56997d1202a5
+    * 22년 5월 보안 업데이트 반영: https://support.microsoft.com/en-au/topic/kb5012672-servicing-stack-update-for-windows-8-1-rt-8-1-and-server-2012-r2-april-12-2022-0f0b0460-2483-4d89-868a-56997d1202a5
 * Windows 2016 STD with MS-SQL 2016 Standard(2022. 07. 19.)
-    * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+    * 22년 5월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
 * Windows 2016 STD with MS-SQL 2019 Express(2022. 07. 19.)
-    * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+    * 22년 5월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
     * SQL Server 누적 업데이트 16 반영: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
 * Windows 2016 STD with MS-SQL 2017 Standard(2022. 07. 19.)
-    * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+    * 22년 5월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
 * Windows 2016 STD with MS-SQL 2019 Standard(2022. 07. 19.)
-    * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
+    * 22년 5월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/kb5011570-servicing-stack-update-for-windows-10-version-1607-and-server-2016-march-8-2022-ac6cb59b-d9c1-4b5a-95bc-cf88c9d3e216
     * SQL Server 누적 업데이트 16 반영: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
 * Windows 2019 STD with MS-SQL 2019 Standard(2022. 07. 19.)
-    * 22년 5월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
+    * 22년 5월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
     * SQL Server 누적 업데이트 16 반영: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
     
 #### System Monitoring
@@ -725,23 +725,23 @@
 * Ubuntu Server 18.04.6 LTS with NVIDIA(2021. 12. 21.)
     * 이미지 업데이트
 * Windows 2012 R2 STD(2021. 12. 21.)
-    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007247-monthly-rollup-2c3b6017-82f4-4102-b1e2-36f366bf3520
+    * 21년 11월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007247-monthly-rollup-2c3b6017-82f4-4102-b1e2-36f366bf3520
 * Windows 2016 STD(2021. 12. 21.)
-    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+    * 21년 11월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
 * Windows 2019 STD(2021. 12. 21.)
-    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
+    * 21년 11월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
 * Windows Server 2012 R2 with SQL Server 2016 Standard(2021. 12. 21.)
-    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007247-monthly-rollup-2c3b6017-82f4-4102-b1e2-36f366bf3520
+    * 21년 11월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007247-monthly-rollup-2c3b6017-82f4-4102-b1e2-36f366bf3520
 * Windows Server 2016 with SQL Server 2016 Standard(2021. 12. 21.)
-    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+    * 21년 11월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
 * Windows Server 2016 with SQL Server 2019 Express(2021. 12. 21.)
-    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+    * 21년 11월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
 * Windows Server 2016 with SQL Server 2017 Standard(2021. 12. 21.)
-    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+    * 21년 11월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
 * Windows Server 2016 with SQL Server 2019 Standard(2021. 12. 21.)
-    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
+    * 21년 11월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007192-os-build-14393-4770-f534a33a-ed00-4bd2-8248-9424c53e9bde
 * Windows Server 2019 with SQL Server 2019 Standard(2021. 12. 21.)
-    * 21년 11월 보안 업데이트 반영 : https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
+    * 21년 11월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
 
 #### Image Builder
 * 애플리케이션 추가
@@ -1123,19 +1123,19 @@
     * WF-KS 페이지의 Storage 크기 표기 오류 수정
 
 * Windows 2012 R2 STD(2019. 10. 22.)
-    * 언어별 이미지 제공 (KO,EN,JP)
+    * 언어별 이미지 제공(KO,EN,JP)
 * Windows 2016 STD(2019. 10. 22.)
-    * 언어별 이미지 제공 (KO,EN,JP)
+    * 언어별 이미지 제공(KO,EN,JP)
 * Windows 2012 R2 STD with MS-SQL 2012 Standard(2019. 10. 22.)
-    * 언어별 이미지 제공 (KO,EN,JP)
+    * 언어별 이미지 제공(KO,EN,JP)
 * Windows 2012 R2 STD with MS-SQL 2014 Standard(2019. 10. 22.)
-    * 언어별 이미지 제공 (KO,EN,JP)
+    * 언어별 이미지 제공(KO,EN,JP)
 * Windows 2012 R2 STD with MS-SQL 2016 Express(2019. 10. 22.)
-    * 언어별 이미지 제공 (KO,EN,JP)
+    * 언어별 이미지 제공(KO,EN,JP)
 * Windows 2012 R2 STD with MS-SQL 2016 Standard(2019. 10. 22.)
-    * 언어별 이미지 제공 (KO,EN,JP)
+    * 언어별 이미지 제공(KO,EN,JP)
 * Windows 2016 R2 STD with MS-SQL 2016 Standard(2019. 10. 22.)
-    * 언어별 이미지 제공 (KO,EN,JP)
+    * 언어별 이미지 제공(KO,EN,JP)
 
 #### System Monitoring
 * 사용자 상호작용 UI 개선
@@ -1159,20 +1159,20 @@
 * 이미지 관리 화면에서 공용 이미지 탭이 제거됨
 
 * Windows 2012 R2 STD(2019. 08. 27.)
-    * 2019년 7월 10일 보안 업데이트 반영 : https://support.microsoft.com/en-gb/help/4507448/windows-8-1-update-kb4507448
+    * 2019년 7월 10일 보안 업데이트 반영: https://support.microsoft.com/en-gb/help/4507448/windows-8-1-update-kb4507448
 * Windows 2012 R2 STD with MS-SQL 2012 Standard(2019. 08. 27.)
-    * 2019년 7월 10일 보안 업데이트 반영 : https://support.microsoft.com/en-gb/help/4507448/windows-8-1-update-kb4507448
+    * 2019년 7월 10일 보안 업데이트 반영: https://support.microsoft.com/en-gb/help/4507448/windows-8-1-update-kb4507448
 * Windows 2012 R2 STD with MS-SQL 2014 Standard(2019. 08. 27.)
-    * 2019년 7월 10일 보안 업데이트 반영 : https://support.microsoft.com/en-gb/help/4507448/windows-8-1-update-kb4507448
+    * 2019년 7월 10일 보안 업데이트 반영: https://support.microsoft.com/en-gb/help/4507448/windows-8-1-update-kb4507448
 * Windows 2012 R2 STD with MS-SQL 2016 Express(2019. 08. 27.)
-    * 2019년 7월 10일 보안 업데이트 반영 : https://support.microsoft.com/en-gb/help/4507448/windows-8-1-update-kb4507448
+    * 2019년 7월 10일 보안 업데이트 반영: https://support.microsoft.com/en-gb/help/4507448/windows-8-1-update-kb4507448
 * Windows 2012 R2 STD with MS-SQL 2016 Standard(2019. 08. 27.)
-    * 2019년 7월 10일 보안 업데이트 반영 : https://support.microsoft.com/en-gb/help/4507448/windows-8-1-update-kb4507448
+    * 2019년 7월 10일 보안 업데이트 반영: https://support.microsoft.com/en-gb/help/4507448/windows-8-1-update-kb4507448
 
 * Windows 2016 STD(2019. 08. 27.)
-    * 2019년 7월 10일 보안 업데이트 반영 : https://support.microsoft.com/en-us/help/4507460/windows-10-update-kb4507460
+    * 2019년 7월 10일 보안 업데이트 반영: https://support.microsoft.com/en-us/help/4507460/windows-10-update-kb4507460
 * Windows 2016 R2 STD with MS-SQL 2016 Standard(2019. 08. 27.)
-    * 2019년 7월 10일 보안 업데이트 반영 : https://support.microsoft.com/en-us/help/4507460/windows-10-update-kb4507460
+    * 2019년 7월 10일 보안 업데이트 반영: https://support.microsoft.com/en-us/help/4507460/windows-10-update-kb4507460
 
 * OS 이미지 지원 종료
     * Windows 2012 R2 STD with MS-SQL 2008 R2 Standard
@@ -1207,35 +1207,35 @@
     * 리전에 따른 timezone 변경 적용
 * Ubuntu Server 16.04.6 LTS(2019. 05. 28.)
     * 리전에 따른 timezone 변경 적용
-    * 커널 업데이트 : 4.4.0-142.168
+    * 커널 업데이트: 4.4.0-142.168
 * Ubuntu Server 18.04.2 LTS(2019. 05. 28.)
     * 리전에 따른 timezone 변경 적용
 
 * Debian 9.9 Stretch(2019. 05. 28.)
-    * 커널 업데이트 : 4.9.168-1
+    * 커널 업데이트: 4.9.168-1
 
 * Windows 2012 R2 STD(2019. 05. 28.)
     * Region에 따른 timezone 변경 적용
-    * 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
+    * 2019년 5월 14일 보안 업데이트: https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
 * Windows 2012 R2 STD with MS-SQL 2008 R2 Standard(2019. 05. 28.)
     * Region에 따른 timezone 변경 적용
-    * 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
+    * 2019년 5월 14일 보안 업데이트: https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
 * Windows 2012 R2 STD with MS-SQL 2012 Standard(2019. 05. 28.)
     * Region에 따른 timezone 변경 적용
-    * 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
+    * 2019년 5월 14일 보안 업데이트: https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
 * Windows 2012 R2 STD with MS-SQL 2014 Standard(2019. 05. 28.)
     * Region에 따른 timezone 변경 적용
-    * 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
+    * 2019년 5월 14일 보안 업데이트: https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
 * Windows 2012 R2 STD with MS-SQL 2016 Express(2019. 05. 28.)
     * Region에 따른 timezone 변경 적용
-    * 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
+    * 2019년 5월 14일 보안 업데이트: https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
 * Windows 2012 R2 STD with MS-SQL 2016 Standard(2019. 05. 28.)
     * Region에 따른 timezone 변경 적용
-    * 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
+    * 2019년 5월 14일 보안 업데이트: https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151
 
 * Windows 2016 STD(2019. 05. 28.)
     * Region에 따른 timezone 변경 적용
-    * 2019년 5월 14일 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947
+    * 2019년 5월 14일 보안 업데이트: https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947
 
 * 신규 이미지 추가
     * Windows 2016 STD with MS-SQL 2016 Standard(2019. 05. 28.)
@@ -1266,10 +1266,10 @@
     * yum update 시 발생하는 에러현상 개선
 * CentOS 7.1(2019. 04. 25.)
     * yum update 시 발생하는 에러현상 개선
-    * 시간 동기화 데몬 변경 (ntpd)
+    * 시간 동기화 데몬 변경(ntpd)
 * CentOS 7.5(2019. 04. 25.)
     * yum update 시 발생하는 에러현상 개선
-    * 시간 동기화 데몬 변경 (ntpd)
+    * 시간 동기화 데몬 변경(ntpd)
 
 * Windows 2008 R2 STD(2019. 04. 25.)
     * Windows Bootstrap 과정 기능 개선
@@ -1319,7 +1319,7 @@
 ### 2019. 02. 26.
 #### Image
 * Ubuntu Server 18.04.2 LTS(2019. 02. 26.)
-    * 커널 업데이트 : 4.15.0-45
+    * 커널 업데이트: 4.15.0-45
     * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 추가 해결
 
 
@@ -1334,31 +1334,31 @@
 
 #### Image
 * Ubuntu Server 14.04.5 LTS(2018. 12. 27.)
-    * shell 상에서 자동완성 (tab) 기능 사용시 LC_CTYPE 관련 warning message 발생 하는 현상 수정
+    * shell 상에서 자동완성(tab) 기능 사용시 LC_CTYPE 관련 warning message 발생 하는 현상 수정
         * default 설정을 "en_US.UTF-8"로 변경
         * /etc/default/locale 수정
             * LC_ALL="en_US.UTF-8"
             * LC_CTYPE="en_US.UTF-8"
 * Ubuntu Server 16.04.5 LTS(2018. 12. 27.)
-    * shell 상에서 자동완성 (tab) 기능 사용시 LC_CTYPE 관련 warning message 발생 하는 현상 수정
+    * shell 상에서 자동완성(tab) 기능 사용시 LC_CTYPE 관련 warning message 발생 하는 현상 수정
         * default 설정을 "en_US.UTF-8"로 변경
         * /etc/default/locale 수정
             * LC_ALL="en_US.UTF-8"
             * LC_CTYPE="en_US.UTF-8"
 * Ubuntu Server 18.04.2 LTS(2018. 12. 27.)
-    * shell 상에서 자동완성 (tab) 기능 사용시 LC_CTYPE 관련 warning message 발생 하는 현상 수정
+    * shell 상에서 자동완성(tab) 기능 사용시 LC_CTYPE 관련 warning message 발생 하는 현상 수정
         * default 설정을 "en_US.UTF-8"로 변경
         * /etc/default/locale 수정
             * LC_ALL="en_US.UTF-8"
             * LC_CTYPE="en_US.UTF-8"
 * Debian 8.11 Jessie(2019. 03. 26.)
-    * shell 상에서 자동완성 (tab) 기능 사용시 LC_CTYPE 관련 warning message 발생 하는 현상 수정
+    * shell 상에서 자동완성(tab) 기능 사용시 LC_CTYPE 관련 warning message 발생 하는 현상 수정
         * default 설정을 "en_US.UTF-8"로 변경
         * /etc/default/locale 수정
             * LC_ALL="en_US.UTF-8"
             * LC_CTYPE="en_US.UTF-8"
 * Debian 9.8 Stretch(2019. 03. 26.)
-    * shell 상에서 자동완성 (tab) 기능 사용시 LC_CTYPE 관련 warning message 발생 하는 현상 수정
+    * shell 상에서 자동완성(tab) 기능 사용시 LC_CTYPE 관련 warning message 발생 하는 현상 수정
         * default 설정을 "en_US.UTF-8"로 변경
         * /etc/default/locale 수정
             * LC_ALL="en_US.UTF-8"
@@ -1369,99 +1369,99 @@
 #### Image
 * 네트워크 인터페이스 또는 Subnet 추가 삭제 시 간헐적으로 발생하는 통신 오류 해결
 * Debian 8.11 Jessie(2018. 12. 11.)
-    * 커널 업데이트 : 3.16-0-6
+    * 커널 업데이트: 3.16-0-6
 * Debian 9.6 Stretch(2018. 12. 11.)
-    * 커널 업데이트 : 4.9.0-8
+    * 커널 업데이트: 4.9.0-8
 
 * CentOS 6.5(2018. 12. 11.)
-    * 커널 업데이트 : 2.6.32-754
+    * 커널 업데이트: 2.6.32-754
 * CentOS 6.10(2018. 12. 11.)
-    * 커널 업데이트 : 2.6.32-754
+    * 커널 업데이트: 2.6.32-754
 * CentOS 7.5(2018. 12. 11.)
-    * 커널 업데이트 : 3.10.0-862
+    * 커널 업데이트: 3.10.0-862
 * CentOS 7.1(2018. 12. 11.)
-    * 커널 업데이트 : 3.10.0-693
+    * 커널 업데이트: 3.10.0-693
 
 * Ubuntu Server 18.04.1 LTS(2018. 12. 11.)
-    * 커널 업데이트 : 4.15.0-29
+    * 커널 업데이트: 4.15.0-29
 * Ubuntu Server 16.04.5 LTS(2018. 12. 11.)
-    * 커널 업데이트 : 4.4.0-131
+    * 커널 업데이트: 4.4.0-131
 * Ubuntu Server 14.04.5 LTS(2018. 12. 11.)
-    * 커널 업데이트 : 4.4.0-31
+    * 커널 업데이트: 4.4.0-31
 
 
 ### 2018. 11. 13.
 #### Image
 * CentOS 6.5(2018. 11. 13.)
-    * 커널 업데이트 : 2.6.32-754.6.3
+    * 커널 업데이트: 2.6.32-754.6.3
     * Yum repository 대상을 최신 repository로 변경
 * CentOS 7.1(2018. 11. 13.)
-    * 커널 업데이트 : 3.10.0-693.21.1
+    * 커널 업데이트: 3.10.0-693.21.1
     * Yum repository 대상을 최신 repository로 변경
 
 ### 2018. 10. 23.
 #### Image
 * CentOS 7.5(2018. 10. 23.), CentOS 7.1(2018. 10. 23.), CentOS 6.10(2018. 10. 23.), CentOS 6.5(2018. 10. 23.)
-    * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+    * 패스워드 복잡도 설정: 숫자,영문,특문 조합 + 8자리 이상)(/etc/pam.d/common-password 수정)
         * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
-    * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+    * ssh 설정 변경(/etc/ssh/sshd_config 수정)
         * PermitRootLogin no                # root 접속 비활성화
         * PasswordAuthentication no         # 패스워드 인증 비활성화
-    * 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+    * 취약점 대비 커널 파라메터 변경(/etc/sysctl.conf 수정)
         * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
         * net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
         * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
         * net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
         * net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
         * net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
-    * 터미널 접근 제한 (/etc/securetty 수정)
+    * 터미널 접근 제한(/etc/securetty 수정)
         * console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
-    * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+    * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료(/etc/profile 수정)
         * TMOUT=7200
     * 나머지 설정은 CentOS Upstream을 유지함
     * 접근 보안성 강화를 위한 root 계정 접속 제한
-        * 기존 : root 계정의 ssh 접속 허용
-        * 변경 : 일반 User 계정인 "centos" 로 접속 후 전환
+        * 기존: root 계정의 ssh 접속 허용
+        * 변경: 일반 User 계정인 "centos" 로 접속 후 전환
     * 인스턴스 생성시 swap partition 을  생성하지 않음
     * /etc/hosts 파일의 사용자 추가 설정 유지
 
 * Ubuntu Server 16.04.5 LTS(2018. 10. 23.)
-    * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+    * 패스워드 복잡도 설정: 숫자,영문,특문 조합 + 8자리 이상)(/etc/pam.d/common-password 수정)
         * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
-    * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+    * ssh 설정 변경(/etc/ssh/sshd_config 수정)
         * PermitRootLogin no                # root 접속 비활성화
         * PasswordAuthentication no         # 패스워드 인증 비활성화
-    * 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+    * 취약점 대비 커널 파라메터 변경(/etc/sysctl.conf 수정)
         * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
         * net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
         * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
         * net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
         * net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
         * net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
-    * 터미널 접근 제한 ( /etc/securetty 수정)
+    * 터미널 접근 제한( /etc/securetty 수정)
         * console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
-    * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+    * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료(/etc/profile 수정)
         * TMOUT=7200
     * 나머지 설정은 Ubuntu Server 16.04 LTS Upstream을 유지함
     * 인스턴스 생성시 swap partition 을  생성하지 않음
     * /etc/hosts 파일의 사용자 추가 설정 유지
 
 * Debian 9.5 Stretch(2018. 10. 23.), Debian 8.11 Jessie(2018. 10. 23.)
-    * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+    * 패스워드 복잡도 설정: 숫자,영문,특문 조합 + 8자리 이상)(/etc/pam.d/common-password 수정)
         * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
-    * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+    * ssh 설정 변경(/etc/ssh/sshd_config 수정)
         * PermitRootLogin no                # root 접속 비활성화
         * PasswordAuthentication no         # 패스워드 인증 비활성화
-    * 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+    * 취약점 대비 커널 파라메터 변경(/etc/sysctl.conf 수정)
         * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
         * net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
         * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
         * net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
         * net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
         * net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
-    * 터미널 접근 제한 ( /etc/securetty 수정)
+    * 터미널 접근 제한( /etc/securetty 수정)
         * console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
-    * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+    * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료(/etc/profile 수정)
         * TMOUT=7200
     * 나머지 설정은 Debian 9 Upstream을 유지함
     * 인스턴스 생성시 swap partition 을  생성하지 않음
@@ -1483,24 +1483,24 @@
 * 사용자 스크립트 기능이 정상적으로 적용되지 않는 부분 수정
 
 * Ubuntu Server 18.04.1 LTS(2018. 09. 20.)
-    * Kernel 4.15.0-29:  meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
-    * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+    * Kernel 4.15.0-29:  meltdown/spectre variant 1,2,3(CVE-2017-5753, 5715, 5754) 패치(retpoline)
+    * 패스워드 복잡도 설정: 숫자,영문,특문 조합 + 8자리 이상)(/etc/pam.d/common-password 수정)
         * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
-    * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+    * ssh 설정 변경(/etc/ssh/sshd_config 수정)
         * PermitRootLogin no                # root 접속 비활성화
         * PasswordAuthentication no         # 패스워드 인증 비활성화
-    * 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+    * 취약점 대비 커널 파라메터 변경(/etc/sysctl.conf 수정)
         * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
         * net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
         * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
         * net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
         * net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
         * net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
-    * 터미널 접근 제한 ( /etc/securetty 수정)
+    * 터미널 접근 제한( /etc/securetty 수정)
         * console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
-    * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+    * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료(/etc/profile 수정)
         * TMOUT=7200
-    * Instance 생성시 swap partition 을 생성하지 않음 (필요시 사용자가 별도 생성)
+    * Instance 생성시 swap partition 을 생성하지 않음(필요시 사용자가 별도 생성)
     * 나머지 설정은 Ubuntu Server 18.04 LTS upstream 을 유지함
 
 * 신규 이미지 추가
@@ -1510,43 +1510,43 @@
 ### 2018. 08. 09.
 #### Image
 * Windows 2012 R2 STD(2018. 08. 09.)
-    * 한글 사용시 사용자가 한글 언어팩을 설치 (기본으로 영문 버전 제공)
-    * 2018년 7월 10일 보안업데이트 : https://support.microsoft.com/en-us/help/4338815/windows-81-update-kb4338815
+    * 한글 사용시 사용자가 한글 언어팩을 설치(기본으로 영문 버전 제공)
+    * 2018년 7월 10일 보안업데이트: https://support.microsoft.com/en-us/help/4338815/windows-81-update-kb4338815
     * 계정 관리
         * Interactive logon: Display user information when the session is locked : User display name only
         * Interactive logon: Do not display last user name :  Enabled
         * Interactive logon: Prompt user to change password before expiration : 14days
         * Shut down the system : Administrators
     * 서비스 관리
-        * NTP 설정 : 1.pool.ntp.org, time,windows.com
-        * NTP 동기화 주기 :  256초
+        * NTP 설정: 1.pool.ntp.org, time,windows.com
+        * NTP 동기화 주기:  256초
     * 시스템 관리
         * Network access: Do not allow anonymous enumeration of SAM accounts : Enabled
         * Network access: Do not allow anonymous enumeration of SAM accounts and shares : Enabled
-        * Autologin 기능 제한 :  AutoAdminLogon 값을 0 으로 설정
+        * Autologin 기능 제한:  AutoAdminLogon 값을 0 으로 설정
 
 * Windows 2016 STD(2018. 08. 09.)
-    * 2018년 7월 24일 보안 업데이트 : https://support.microsoft.com/en-us/help/4338822/windows-10-update-kb4338822
+    * 2018년 7월 24일 보안 업데이트: https://support.microsoft.com/en-us/help/4338822/windows-10-update-kb4338822
     * 계정 관리
         * Interactive logon: Display user information when the session is locked : User display name only
         * Interactive logon: Do not display last user name :  Enabled
         * Interactive logon: Prompt user to change password before expiration : 14days
         * Shut down the system : Administrators
     * 서비스 관리
-        * NTP 설정 : 1.pool.ntp.org, time,windows.com
-        * NTP 동기화 주기 :  256초
+        * NTP 설정: 1.pool.ntp.org, time,windows.com
+        * NTP 동기화 주기:  256초
     * 시스템 관리
         * Network access: Do not allow anonymous enumeration of SAM accounts : Enabled
         * Network access: Do not allow anonymous enumeration of SAM accounts and shares : Enabled
 
 * Debian 9.4.0(2018. 08. 09.)
-    * Kernel 4.9 업데이트: meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
-    * 패스워드 복잡도 설정 (숫자,영문,특문 조합 + 8자리 이상) : /etc/pam.d/common-password에 아래 line 추가
+    * Kernel 4.9 업데이트: meltdown/spectre variant 1,2,3(CVE-2017-5753, 5715, 5754) 패치(retpoline)
+    * 패스워드 복잡도 설정(숫자,영문,특문 조합 + 8자리 이상): /etc/pam.d/common-password에 아래 line 추가
         * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
     * 불필요 계정/그룹 삭제
-        * user : lp, sync, uucp, games
-        * group : dip
-    * 취약점 대비 커널 파라메터 변경 (sysctl)
+        * user: lp, sync, uucp, games
+        * group: dip
+    * 취약점 대비 커널 파라메터 변경(sysctl)
         * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
         * net.ipv4\.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
         * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
@@ -1575,8 +1575,8 @@
         * /etc/shadow 400
         * /etc/gshadow 400
         * /etc/login.defs 400
-    * 터미널 접근 제한 : /etc/securetty 수정
-    * profile 추가 (/etc/profile)
+    * 터미널 접근 제한: /etc/securetty 수정
+    * profile 추가(/etc/profile)
         * TMOUT=7200      # 터미널로 부터 사용자입력없을때 세선 종료
         * HISTSIZE=500       # history list에 저장될 command 수 제한
         * HISTFILESIZE=0     # history file에 저장될 command 없음
@@ -1588,33 +1588,33 @@
 #### Image
 * Windows 2012 R2 STD(2018. 07. 16.)
     * Auto scale 기능으로 백신이 포함된 인스턴스 생성시 발생하는 에러 현상 수정
-    * CPU 설정 변경  (CPU Socket 최대 개수  4개)
+    * CPU 설정 변경(CPU Socket 최대 개수  4개)
     * Network  인터페이스 속도  10G로 표시되도록 수정
 
 * Windows 2008 R2 STD(2018. 07. 16.)
-    * 2018년 6월 12일자 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4284826
+    * 2018년 6월 12일자 보안 업데이트: https://support.microsoft.com/ko-kr/help/4284826
     * 계정 관리
-        * Guest 계정 사용 제한 : Guest 계정 사용 안함으로 변경
-        * 마지막 사용자 로그인 이름 표시 :  표시 안함으로 설정
-        * 세션이 잠긴경우 사용자 정보표시 : 사용자 이름만 표시로 설정
-        * 암호만료 전에 변경 알림 : 변경 알림 14일로 설정
-        * 일반 사용자의 시스템 종료 제한 : 시스템 종료 정책을 Administrator 로 설정
+        * Guest 계정 사용 제한: Guest 계정 사용 안함으로 변경
+        * 마지막 사용자 로그인 이름 표시:  표시 안함으로 설정
+        * 세션이 잠긴경우 사용자 정보표시: 사용자 이름만 표시로 설정
+        * 암호만료 전에 변경 알림: 변경 알림 14일로 설정
+        * 일반 사용자의 시스템 종료 제한: 시스템 종료 정책을 Administrator 로 설정
     * 서비스 관리
-        * NTP 설정 : 1.pool.ntp.org, time,windows.com
-        * NTP 동기화 주기 :  256초
+        * NTP 설정: 1.pool.ntp.org, time,windows.com
+        * NTP 동기화 주기:  256초
     * 시스템 관리
-        * SAM 계정과 공유의 익명열거 허용 안함 :  SAM 계정관련  익명열거 허용 안함 항목 사용
-        * 로그온 하지 않고 시스템 종료허용  제한 :  로그온하지 않고 시스템 종료 허용 정책을 사용 안함으로 설정
-        * Autologin 기능 제한 :  AutoAdminLogon 값을 0 으로 설정
+        * SAM 계정과 공유의 익명열거 허용 안함:  SAM 계정관련  익명열거 허용 안함 항목 사용
+        * 로그온 하지 않고 시스템 종료허용  제한:  로그온하지 않고 시스템 종료 허용 정책을 사용 안함으로 설정
+        * Autologin 기능 제한:  AutoAdminLogon 값을 0 으로 설정
 
 * Ubuntu 16.04.4 LTS(2018. 07. 16.)
-    * Kernel 4.4.0-130: meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
-    * 패스워드 복잡도 설정 (숫자,영문,특문 조합 + 8자리 이상) : /etc/pam.d/common-password에 아래 line 추가
+    * Kernel 4.4.0-130: meltdown/spectre variant 1,2,3(CVE-2017-5753, 5715, 5754) 패치(retpoline)
+    * 패스워드 복잡도 설정(숫자,영문,특문 조합 + 8자리 이상): /etc/pam.d/common-password에 아래 line 추가
         * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
     * 불필요 계정/그룹 삭제
-        * user : lp, sync, uucp, games
-        * group : dip
-    * 취약점 대비 커널 파라메터 변경 (sysctl)
+        * user: lp, sync, uucp, games
+        * group: dip
+    * 취약점 대비 커널 파라메터 변경(sysctl)
         * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
         * net.ipv4\.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
         * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
@@ -1643,8 +1643,8 @@
         * /etc/shadow 400
         * /etc/gshadow 400
         * /etc/login.defs 400
-    * 터미널 접근 제한 : /etc/securetty 수정
-    * profile 추가 (/etc/profile)
+    * 터미널 접근 제한: /etc/securetty 수정
+    * profile 추가(/etc/profile)
         * TMOUT=7200      # 터미널로 부터 사용자입력없을때 세선 종료
         * HISTSIZE=500       # history list에 저장될 command 수 제한
         * HISTFILESIZE=0     # history file에 저장될 command 없음
@@ -1678,28 +1678,28 @@
 #### Image
 * Windows 2012 R2 STD(2018. 02. 22.)
     * Windows Time Zone 설정 변경
-        * 동기화 주기 변경 : [기존) 604800초 (7일) > [변경] 256초
-        * Time Zone Peer 도메인 변경 : [기존] 1.kr.pool.ntp.org , 1.pool.ntp.org > [변경] 1.pool.ntp.org , time.windows.com
-    * 2018년 2월 13일자 보안 업데이트 : https://support.microsoft.com/ko-kr/help/4074594/windows-81-update-kb-4074594
+        * 동기화 주기 변경: [기존) 604800초(7일) > [변경] 256초
+        * Time Zone Peer 도메인 변경: [기존] 1.kr.pool.ntp.org , 1.pool.ntp.org > [변경] 1.pool.ntp.org , time.windows.com
+    * 2018년 2월 13일자 보안 업데이트: https://support.microsoft.com/ko-kr/help/4074594/windows-81-update-kb-4074594
 
 * Ubuntu Linux 14.04.5(2018. 02. 22.)
     * 취약점 패치를 위한 관련 커널 업데이트
-        * Linux Kernel Version : 3.13.0-141
-        * Variant 1 (CVE-2017-5753) - patched
-        * Variant 3 (CVE-2017-5754) - patched
+        * Linux Kernel Version: 3.13.0-141
+        * Variant 1(CVE-2017-5753) - patched
+        * Variant 3(CVE-2017-5754) - patched
 
 * Debian Linux 8.2.0(2018. 02. 22.)
     * 인스턴스 생성시 지정한 이름으로 호스트명 적용되도록 수정
     * 취약점 패치를 위한 관련 커널 업데이트
-        * Linux Kernel Version : 3.16.0-5
-        * Variant 3 (CVE-2017-5754) - patched
+        * Linux Kernel Version: 3.16.0-5
+        * Variant 3(CVE-2017-5754) - patched
 
 * CentOS Linux 6.5(2018. 02. 22.)
     * 인스턴스 생성시 지정한 이름으로 호스트명 적용되도록 수정
     * 취약점 패치를 위한 관련 커널 업데이트
-        * Linux Kernel Version : 2.6.32-696.20.1
-        * Variant 1 (CVE-2017-5753) - patched
-        * Variant 3 (CVE-2017-5754) - patched
+        * Linux Kernel Version: 2.6.32-696.20.1
+        * Variant 1(CVE-2017-5753) - patched
+        * Variant 3(CVE-2017-5754) - patched
 
 * CentOS Linux 7.1(2018. 02. 22.)
     * 인스턴스 생성시 지정한 이름으로 호스트명 적용되도록 수정
@@ -1708,9 +1708,9 @@
     * Swap Disk Mount 설정 변경
         * 신규 인스턴스 생성시 swap 파티션 자동 마운트되도록 설정 변경
     * 취약점 패치를 위한 관련 커널 업데이트
-        * Linux Kernel Version : 3.10.0-693.17.1
-        * Variant 1 (CVE-2017-5753) - patched
-        * Variant 3 (CVE-2017-5754) - patched
+        * Linux Kernel Version: 3.10.0-693.17.1
+        * Variant 1(CVE-2017-5753) - patched
+        * Variant 3(CVE-2017-5754) - patched
 
 * 신규 이미지 추가
     * CentOS Linux 6.5 with MySQL 5.6.38(2018. 02. 22.)
@@ -1748,7 +1748,7 @@
     * Linux 계열 OS만 지원
     * Local Disk를 이용하기 때문에 하드웨어 장애시 데이터 복구가 불가능
 * High IOPS SSD 사양(I 타입)이 추가
-    * 높은 IOPS를 보장 (보장 IOPS는 가격표 참조)
+    * 높은 IOPS를 보장(보장 IOPS는 가격표 참조)
     * Linux 계열 OS만 지원
 * 인스턴스 사용량 조회시 값이 조회되지 않는 버그가 수정
 
@@ -1779,7 +1779,7 @@
 * 인스턴스 기본 정보의 IP 주소 정보에서 서브넷 명칭을 제외
     * 명칭 표기로 행의 넓이가 넓어져 가독성이 떨어지는 것을 방지
 * 인스턴스 이름 길이 및 특수문자 제한
-    * 인스턴스의 이름은 20자 이하 영숫자와 **.** (dot),**-** (dash) 문자만 허용
+    * 인스턴스의 이름은 20자 이하 영숫자와 **.**(dot),**-**(dash) 문자만 허용
 * 인스턴스 생성 기능을 이미지 생성 기능으로 변경
     * 탭과 일관된 기능으로 변경
 
