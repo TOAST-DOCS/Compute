@@ -10,6 +10,70 @@
 #### Image
 * Removed limit on the number of image sharing members
 
+* Added new images
+    * Ubuntu Server 22.04.3 LTS with NVIDIA(2023.11.21.)
+    * Ubuntu Server 22.04.3 LTS - Container(2023.11.21.)
+    * Ubuntu Server 22.04.3 LTS for Deep Learning v3.1.0(2023.11.21.)
+
+* Ended image support
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.1(2023.09.26.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.1(2023.09.26.)
+
+* Related to GPU and container (Linux)
+    * debian 11 container - Added gpu driver/Select gpu flavor to create clusters
+    * nvidia driver updated: 470.199.02 > 535.104.12
+    * cuda updated: 11.4 > 12.2
+    * mig manager: 0.5.4 > 0.5.5
+
+* GPU (Windows)
+    * nvidia driver updated: 474.44 > 537.13
+
+* Security update (Linux)
+    * CentOS 7.9: Removed /usr/bin/newgrp, /sbin/unix_chkpwd SetUID
+
+* Security update (Windows)
+    * windows 2016: kb5031362
+        * https://support.microsoft.com/en-au/topic/october-10-2023-kb5031362-os-build-14393-6351-0c6e713e-3d6a-4593-8a75-af0a605f249c
+    * windows 2019: kb5031361
+        * https://support.microsoft.com/en-gb/topic/october-10-2023-kb5031361-os-build-17763-4974-766593db-b47a-4b18-a698-906426860313
+    * windows 2022: kb5031364
+        * https://support.microsoft.com/en-us/topic/october-10-2023-kb5031364-os-build-20348-2031-7f1d69e7-c468-4566-887a-1902af791bbc
+
+* Image update (Linux)
+    * CentOS 7.9(2023.11.21.)
+    * Debian 10.13 Buster(2023.11.21.)
+    * Debian 11.8 Bullseye(2023.11.21.)
+    * Rocky Linux 8.8(2023.11.21.)
+    * Ubuntu Server 20.04.6 LTS(2023.11.21.)
+    * Ubuntu Server 22.04.3 LTS(2023.11.21.)
+    * CentOS 7.9 for NAT(2023.11.21.)
+    * Ubuntu Server 20.04.6 LTS for NAT(2023.11.21.)
+    * CentOS 7.9 - Container(2023.11.21.)
+    * Debian 11.8 Bullseye - Container(2023.11.21.)
+    * Rocky Linux 8.8 - Container(2023.11.21.)
+    * Ubuntu Server 20.04.6 LTS - Container(2023.11.21.)
+    * Ubuntu Server 20.04.6 LTS with NVIDIA(2023.11.21.)
+
+* Image update (Windows)
+    * Windows 2016 STD(2023.11.21.) EN
+    * Windows 2016 STD(2023.11.21.) KO
+    * Windows 2019 STD(2023.11.21.) EN
+    * Windows 2019 STD(2023.11.21.) KO
+    * Windows 2022 STD(2023.11.21.) EN
+    * Windows 2022 STD(2023.11.21.) KO
+    * Windows 2016 STD with MS-SQL 2016 Standard(2023.11.21.) EN
+    * Windows 2016 STD with MS-SQL 2016 Standard(2023.11.21.) KO
+    * Windows 2016 STD with MS-SQL 2017 Standard(2023.11.21.) EN
+    * Windows 2016 STD with MS-SQL 2017 Standard(2023.11.21.) KO
+    * Windows 2016 STD with MS-SQL 2019 Express(2023.11.21.) EN
+    * Windows 2016 STD with MS-SQL 2019 Express(2023.11.21.) KO
+    * Windows 2016 STD with MS-SQL 2019 Standard(2023.11.21.) EN
+    * Windows 2016 STD with MS-SQL 2019 Standard(2023.11.21.) KO
+    * Windows 2019 STD with MS-SQL 2019 Standard(2023.11.21.) EN
+    * Windows 2019 STD with MS-SQL 2019 Standard(2023.11.21.) KO
+
+
+
 #### Bare Metal Instance
 * Bare Metal Instance service added
 
