@@ -74,7 +74,6 @@
 	* Windows 2019 STD with MS-SQL 2019 Standard(2023.11.21.) KO
 
 
-
 #### Bare Metal Instance
 * Bare Metal Instance 서비스 출시
 
@@ -91,6 +90,8 @@
 
 * 이미지 지원 종료
     * CentOS 7.9 with Tibero 6(2022.12.20.)
+
+
 
 
 

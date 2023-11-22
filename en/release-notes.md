@@ -1,6 +1,24 @@
 ## Compute > Release Notes
 
+### November 28, 2023
+#### Instance
+* Added a feature to terminate instances
+
+#### Public API
+* Added APIs to terminate instances and to resume terminated instances
+
+#### Image
+* Removed limit on the number of image sharing members
+
+#### Bare Metal Instance
+* Bare Metal Instance service added
+
 ### October 31, 2023
+
+#### System Monitoring
+* Bug Fixes
+  * Fixed an issue that kept sending notifications to users excluded from projects
+    
 #### Image
 * Added new images
     * CentOS 7.9 with Tibero 7 CSE(2023.10.31.)

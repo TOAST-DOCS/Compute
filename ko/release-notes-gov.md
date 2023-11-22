@@ -66,6 +66,7 @@
 	* Windows 2019 STD with MS-SQL 2019 Standard(2023.11.21.) EN
 	* Windows 2019 STD with MS-SQL 2019 Standard(2023.11.21.) KO
 
+
 #### Image Builder
 * 애플리케이션 추가
     * NHN Kubernetes Service(NKS) Worker Node
@@ -80,6 +81,7 @@
 
 * 이미지 지원 종료
     * CentOS 7.9 with Tibero 6(2022.12.20.)
+
 
 
 ### 2023. 09. 26.
