@@ -1,5 +1,6 @@
 ## Compute > Release Notes
 
+
 ### November 28, 2023
 #### Instance
 * Added a feature to terminate instances
