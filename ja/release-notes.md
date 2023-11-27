@@ -1,13 +1,94 @@
 ## Compute > リリースノート
 
-### 2023. 10. 31.
+### 2023. 11. 28.
+#### Instance
+* インスタンス終了機能追加
+
+#### Public API
+* インスタンス終了、終了したインスタンスの起動APIを追加
+
 #### Image
+* イメージ共有メンバー数制限を解除
+
 * 新規イメージ追加
-    * CentOS 7.9 with Tibero 7 CSE (2023.10.31.)
-    * CentOS 7.9 with Tibero 7 CEE (2023.10.31.)
+	* Ubuntu Server 22.04.3 LTS with NVIDIA(2023.11.21.)
+	* Ubuntu Server 22.04.3 LTS - Container(2023.11.21.)
+	* Ubuntu Server 22.04.3 LTS for Deep Learning v3.1.0(2023.11.21.)
 
 * イメージサポート終了
-    * CentOS 7.9 with Tibero 6 (2022.12.20.)
+	* Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.1(2023.09.26.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.1(2023.09.26.)
+
+* GPUおよびコンテナ関連(Linux)
+    * debian 11 container - gpu driver追加/gpu flavor選択後、クラスタ作成が可能
+    * nvidia driverアップデート: 470.199.02 > 535.104.12
+    * cudaアップデート: 11.4 > 12.2
+    * mig manager: 0.5.4 > 0.5.5
+
+* GPU(Windows)
+	* nvidia driverアップデート: 474.44 > 537.13
+
+* セキュリティアップデート(Linux)
+	* CentOS 7.9: /usr/bin/newgrp, /sbin/unix_chkpwd SetUID除去
+
+* セキュリティアップデート(Windows)
+	* windows 2016: kb5031362
+		* https://support.microsoft.com/en-au/topic/october-10-2023-kb5031362-os-build-14393-6351-0c6e713e-3d6a-4593-8a75-af0a605f249c
+	* windows 2019: kb5031361
+		* https://support.microsoft.com/en-gb/topic/october-10-2023-kb5031361-os-build-17763-4974-766593db-b47a-4b18-a698-906426860313
+	* windows 2022: kb5031364
+		* https://support.microsoft.com/en-us/topic/october-10-2023-kb5031364-os-build-20348-2031-7f1d69e7-c468-4566-887a-1902af791bbc
+
+* イメージアップデート(Linux)
+	* CentOS 7.9(2023.11.21.)
+	* Debian 10.13 Buster(2023.11.21.)
+	* Debian 11.8 Bullseye(2023.11.21.)
+	* Rocky Linux 8.8(2023.11.21.)
+	* Ubuntu Server 20.04.6 LTS(2023.11.21.)
+	* Ubuntu Server 22.04.3 LTS(2023.11.21.)
+	* CentOS 7.9 for NAT(2023.11.21.)
+	* Ubuntu Server 20.04.6 LTS for NAT(2023.11.21.)
+	* CentOS 7.9 - Container(2023.11.21.)
+	* Debian 11.8 Bullseye - Container(2023.11.21.)
+	* Rocky Linux 8.8 - Container(2023.11.21.)
+	* Ubuntu Server 20.04.6 LTS - Container(2023.11.21.)
+	* Ubuntu Server 20.04.6 LTS with NVIDIA(2023.11.21.)
+
+* イメージアップデート(Windows)
+	* Windows 2016 STD(2023.11.21.) EN
+	* Windows 2016 STD(2023.11.21.) KO
+	* Windows 2019 STD(2023.11.21.) EN
+	* Windows 2019 STD(2023.11.21.) KO
+	* Windows 2022 STD(2023.11.21.) EN
+	* Windows 2022 STD(2023.11.21.) KO
+	* Windows 2016 STD with MS-SQL 2016 Standard(2023.11.21.) EN
+	* Windows 2016 STD with MS-SQL 2016 Standard(2023.11.21.) KO
+	* Windows 2016 STD with MS-SQL 2017 Standard(2023.11.21.) EN
+	* Windows 2016 STD with MS-SQL 2017 Standard(2023.11.21.) KO
+	* Windows 2016 STD with MS-SQL 2019 Express(2023.11.21.) EN
+	* Windows 2016 STD with MS-SQL 2019 Express(2023.11.21.) KO
+	* Windows 2016 STD with MS-SQL 2019 Standard(2023.11.21.) EN
+	* Windows 2016 STD with MS-SQL 2019 Standard(2023.11.21.) KO
+	* Windows 2019 STD with MS-SQL 2019 Standard(2023.11.21.) EN
+	* Windows 2019 STD with MS-SQL 2019 Standard(2023.11.21.) KO
+
+
+
+#### Bare Metal Instance
+* Bare Metal Instanceサービスリリース
+
+### 2023. 10. 31.
+#### System Monitoring
+* バグ修正
+  * プロジェクトから除外したユーザーにアラームを送り続ける問題を修正
+
+#### Image
+* 新規イメージ追加
+    * CentOS 7.9 with Tibero 7 CSE(2023.10.31.)
+    * CentOS 7.9 with Tibero 7 CEE(2023.10.31.)
+
+* イメージサポート終了
+    * CentOS 7.9 with Tibero 6(2022.12.20.)
 
 #### System Monitoring
 * バグ修正
@@ -16,20 +97,20 @@
 ### 2023. 09. 26.
 #### Image
 * 新規イメージ追加
-    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.1 (2023.09.26.)
-    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.1 (2023.09.26.)
-    * PentaSecurity WAPPLES SA 6.0.6 (2023.09.26.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.1(2023.09.26.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.1(2023.09.26.)
+    * PentaSecurity WAPPLES SA 6.0.6(2023.09.26.)
 
 * イメージサポート終了
-    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.0 (2023.06.27.)
-    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.0 (2023.08.22.)
-    * Windows 2012 R2 STD (2023.08.22.) EN
-    * Windows 2012 R2 STD (2023.08.22.) KO
-    * Windows 2012 R2 STD with MS-SQL 2016 Standard (2023.08.22.) EN
-    * Windows 2012 R2 STD with MS-SQL 2016 Standard (2023.08.22.) KO
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.0(2023.06.27.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.0(2023.08.22.)
+    * Windows 2012 R2 STD(2023.08.22.) EN
+    * Windows 2012 R2 STD(2023.08.22.) KO
+    * Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.08.22.) EN
+    * Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.08.22.) KO
 
-* PIOLINK WEBFRONT-KS 4.0.6.61.28 (2023.04.25.)
-    * イメージ名変更PLOS-WAF-KS-v4.0.6.61.28 (2023.04.25.) > PIOLINK WEBFRONT-KS 4.0.6.61.28 (2023.04.25.)
+* PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
+    * イメージ名変更PLOS-WAF-KS-v4.0.6.61.28(2023.04.25.) > PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
 
 ### 2023. 08. 29.
 #### Public API
@@ -537,7 +618,7 @@
 ### 2022. 09. 27.
 #### Image
 * 新規イメージ追加
-    * Windows 2022 STD (2022. 09. 20.)
+    * Windows 2022 STD(2022. 09. 20.)
 
 ### 2022. 07. 26.
 #### Image
@@ -588,7 +669,7 @@
 
 #### Image
 * 新規イメージ追加
-    * Rocky Linux 8.5 (2022. 05. 17.)
+    * Rocky Linux 8.5(2022. 05. 17.)
 
 ### 2022. 03. 29.
 #### Image
@@ -1037,7 +1118,7 @@
 * Applicationイメージ アップデート
 	* PLOS-WFK-KS-v2.0.60.0.14(2019. 10. 22.)
 	* WF-KSページのStorageサイズ表記エラーを修正
-* Windows系列のイメージ アップデート : 言語別イメージを提供(KO,EN,JP)
+* Windows系列のイメージ アップデート: 言語別イメージを提供(KO,EN,JP)
 	* Windows 2012 R2 STD(2019. 10. 22.)
 	* Windows 2016 STD(2019. 10. 22.)
 	* Windows 2012 R2 STD with MS-SQL 2012 Standard(2019. 10. 22.)
@@ -1134,8 +1215,8 @@
   - 反映内容
     - Regionに応じてtimezone変更を適用
     - 2019年5月14日セキュリティアップデートを反映
-      - Windows 2012 R2 ( https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151 )
-      - Windows 2016 ( https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947 )
+      - Windows 2012 R2( https://support.microsoft.com/ko-kr/help/4499151/windows-8-1-update-kb4499151 )
+      - Windows 2016( https://support.microsoft.com/ko-kr/help/4498947/windows-10-update-kb4498947 )
   - 新規リリース
     - Windows 2016 STD with MS-SQL 2016 Standard(2019. 05. 28.)
 * Auto Scaling 통계 그래프
@@ -1163,9 +1244,9 @@
 
 * 기존 OS 이미지 커널 업데이트
 	* Ubuntu 16.04 LTS
-		* 커널 : 4.4.0-142.168
+		* 커널: 4.4.0-142.168
 	* Debian 9 Stretch
-		* 커널 : 4.9.168-1
+		* 커널: 4.9.168-1
 
 
 ### 2019. 04. 25.
@@ -1183,7 +1264,7 @@
 		* CentOS 7.5(2019. 04. 25.)
 	* 반영내용
 		* yum update 시 발생하는 에러현상 개선
-		* CentOS 7.X  OS이미지 시간 동기화 데몬 변경 (ntpd)
+		* CentOS 7.X  OS이미지 시간 동기화 데몬 변경(ntpd)
 * Windows 계열 공용 이미지
 	* 업데이트 이미지 명
 		* Windows 2008 R2 STD(2019. 04. 25.)
@@ -1205,10 +1286,10 @@
 * Debian 9 Stretch 이미지 업데이트
 	* 이미지 정보
 		* Debian 9 Stretch
-		* 설명 : Debian 9.8 Stretch(2019. 03. 26.)
-		* 언어 : EN
-		* 비트 : 64bit
-		* 커널 : 4.9.144-3
+		* 설명: Debian 9.8 Stretch(2019. 03. 26.)
+		* 언어: EN
+		* 비트: 64bit
+		* 커널: 4.9.144-3
 	* 기능 개선
 		* 커널 업데이트
 
@@ -1236,12 +1317,12 @@
 * Ubuntu Server 18.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 18.04 LTS
-        * 설명 : Ubuntu Server 18.04.2 LTS(2019. 02. 26.)
-        * 언어 : EN
-        * 비트 : 64bit
-        * 커널 : 4.15.0-45
+        * 설명: Ubuntu Server 18.04.2 LTS(2019. 02. 26.)
+        * 언어: EN
+        * 비트: 64bit
+        * 커널: 4.15.0-45
     * 기능 개선
-        * 커널 업데이트 ( 4.15.0-29 -> 4.15.0-45 )
+        * 커널 업데이트( 4.15.0-29 -> 4.15.0-45 )
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 추가 해결
 
 
@@ -1263,9 +1344,9 @@
 * Ubuntu Server 14.04 LTS 이미지 업데이트
 * Debian 9 Stretch 이미지 업데이트
 * Debian 8 Jessie 이미지 업데이트
-* (공통) 이미지 업데이트 변경 내용
+*(공통) 이미지 업데이트 변경 내용
     * 현상
-        * shell 상에서 자동완성 (tab) 기능 사용시 LC_CTYPE 관련 warning message 발생
+        * shell 상에서 자동완성(tab) 기능 사용시 LC_CTYPE 관련 warning message 발생
     * 원인
         * 설치되지 않은 "ko_KR.UTF-8"로 설정됨
     * 수정
@@ -1287,91 +1368,91 @@
 * Debian 9 Stretch 이미지 업데이트
     * 이미지 정보
         * Debian 9 Stretch
-        * 설명 : Debian 9.6 Stretch(2018. 12. 11.)
-        * 언어 : EN
-        * 비트 : 64bit
-        * 커널 : 4.9.0-8
+        * 설명: Debian 9.6 Stretch(2018. 12. 11.)
+        * 언어: EN
+        * 비트: 64bit
+        * 커널: 4.9.0-8
     * 기능 개선
-        * 커널 업데이트 :  기존 4.9.0-7 > 변경 4.9.0-8
+        * 커널 업데이트:  기존 4.9.0-7 > 변경 4.9.0-8
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
 
 * Debian 8 Jessie 이미지 업데이트
     * 이미지 정보
         * Debian 8 Jessie
-        * 설명 : Debian 8.11 Jessie(2018. 12. 11.)
-        * 언어 : EN
-        * 비트 : 64bit
-        * 커널 : 3.16-0-6
+        * 설명: Debian 8.11 Jessie(2018. 12. 11.)
+        * 언어: EN
+        * 비트: 64bit
+        * 커널: 3.16-0-6
     * 기능 개선
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
 
 * CentOS 7.5 이미지 업데이트
     * 이미지 정보
         * CentOS 7.5
-        * 설명 : CentOS 7.5(2018. 12. 11.)
-        * 언어 : EN
-        * 비트 : 64bit
-        * 커널 : 3.10.0-862
+        * 설명: CentOS 7.5(2018. 12. 11.)
+        * 언어: EN
+        * 비트: 64bit
+        * 커널: 3.10.0-862
     * 기능 개선
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
 
 * CentOS 7.1 이미지 업데이트
     * 이미지 정보
         * CentOS 7.1
-        * 설명 : CentOS 7.1(2018. 12. 11.)
-        * 언어 : EN
-        * 비트 : 64bit
-        * 커널 : 3.10.0-693
+        * 설명: CentOS 7.1(2018. 12. 11.)
+        * 언어: EN
+        * 비트: 64bit
+        * 커널: 3.10.0-693
     * 기능 개선
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
 
 * CentOS 6.10 이미지 업데이트
     * 이미지 정보
         * CentOS 6.10
-        * 설명 : CentOS 6.10(2018. 12. 11.)
-        * 언어 : EN
-        * 비트 : 64bit
-        * 커널 : 2.6.32-754
+        * 설명: CentOS 6.10(2018. 12. 11.)
+        * 언어: EN
+        * 비트: 64bit
+        * 커널: 2.6.32-754
     * 기능 개선
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
 
 * CentOS 6.5 이미지 업데이트
     * 이미지 정보
         * CentOS 6.5
-        * 설명 : CentOS 6.5(2018. 12. 11.)
-        * 언어 : EN
-        * 비트 : 64bit
-        * 커널 : 2.6.32-754
+        * 설명: CentOS 6.5(2018. 12. 11.)
+        * 언어: EN
+        * 비트: 64bit
+        * 커널: 2.6.32-754
     * 기능 개선
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
 
 * Ubuntu Server 18.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 18.04 LTS
-        * 설명 : Ubuntu Server 18.04.1 LTS(2018. 12. 11.)
-        * 언어 : EN
-        * 비트 : 64bit
-        * 커널 : 4.15.0-29
+        * 설명: Ubuntu Server 18.04.1 LTS(2018. 12. 11.)
+        * 언어: EN
+        * 비트: 64bit
+        * 커널: 4.15.0-29
     * 기능 개선
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
 
 * Ubuntu Server 16.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 16.04 LTS
-        * 설명 : Ubuntu Server 16.04.5 LTS(2018. 12. 11.)
-        * 언어 : EN
-        * 비트 : 64bit
-        * 커널 : 4.4.0-131
+        * 설명: Ubuntu Server 16.04.5 LTS(2018. 12. 11.)
+        * 언어: EN
+        * 비트: 64bit
+        * 커널: 4.4.0-131
     * 기능 개선
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
 
 * Ubuntu Server 14.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 14.04 LTS
-        * 설명 : Ubuntu Server 14.04.5 LTS(2018. 12. 11.)
-        * 언어 : EN
-        * 비트 : 64bit
-        * 커널 : 4.4.0-31
+        * 설명: Ubuntu Server 14.04.5 LTS(2018. 12. 11.)
+        * 언어: EN
+        * 비트: 64bit
+        * 커널: 4.4.0-31
     * 기능 개선
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
 
@@ -1383,177 +1464,177 @@
 * CentOS 7.1 이미지 업데이트
     * 이미지 정보
         * CentOS 7.1
-        * 언어 : EN
-        * 설명 : CentOS 7.1(2018. 11. 13.)
-        * 비트 : 64bit
-        * 커널 : 3.10.0-693.21.1
-    * 커널 업데이트 :  3.10.0-229 -> 3.10.0-693.21.1
-    * Yum repository target 변경 : CentOS 최신 repo
+        * 언어: EN
+        * 설명: CentOS 7.1(2018. 11. 13.)
+        * 비트: 64bit
+        * 커널: 3.10.0-693.21.1
+    * 커널 업데이트:  3.10.0-229 -> 3.10.0-693.21.1
+    * Yum repository target 변경: CentOS 최신 repo
 * CentOS 6.5 이미지 업데이트
     * 이미지 정보
         * CentOS 6.5
-        * 언어 : EN
-        * 설명 : CentOS 6.5(2018. 11. 13.)
-        * 비트 : 64bit
-        * 커널 : 2.6.32-754.6.3
-    * 커널 업데이트 :  2.6.32-431 -> 2.6.32-754.6.3
-    * Yum repository target 변경 : CentOS 최신 repo
+        * 언어: EN
+        * 설명: CentOS 6.5(2018. 11. 13.)
+        * 비트: 64bit
+        * 커널: 2.6.32-754.6.3
+    * 커널 업데이트:  2.6.32-431 -> 2.6.32-754.6.3
+    * Yum repository target 변경: CentOS 최신 repo
 
 ### 2018. 10. 23.
 
 #### 기능 개선
 
 * 이미지 업데이트 관련 주요 변경 사항 요약
-    * 신규 이미지 릴리즈 : CentOS 7.5 , CentOS 6.10
+    * 신규 이미지 릴리즈: CentOS 7.5 , CentOS 6.10
     * 인스턴스 생성시 OS Swap Partition을 기본으로 설정하지 않음.
     * CentOS 인스턴스 ssh 접근시 root 계정 접속 허용 에서 일반 계정 "centos" 접속 후 root 전환으로 변경
 * CentOS 7.5 신규 이미지 업데이트
     * 이미지 정보
         * CentOS 7.5
-        * 언어 : EN
-        * 설명 : CentOS 7.5(2018. 10. 23.)
-        * 비트 : 64bit
-        * 커널 : 3.10.0-862.14.4.el7
+        * 언어: EN
+        * 설명: CentOS 7.5(2018. 10. 23.)
+        * 비트: 64bit
+        * 커널: 3.10.0-862.14.4.el7
     * Toast Cloud 보안기준으로 OS 하드닝 적용
-        * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+        * 패스워드 복잡도 설정: 숫자,영문,특문 조합 + 8자리 이상)(/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
-        * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+        * ssh 설정 변경(/etc/ssh/sshd_config 수정)
             * PermitRootLogin no                # root 접속 비활성화
             * PasswordAuthentication no         # 패스워드 인증 비활성화
-        * 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+        * 취약점 대비 커널 파라메터 변경(/etc/sysctl.conf 수정)
             * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
             * net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
             * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
             * net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
             * net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
             * net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
-        * 터미널 접근 제한 ( /etc/securetty 수정)
+        * 터미널 접근 제한( /etc/securetty 수정)
             * console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
-        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료(/etc/profile 수정)
             * TMOUT=7200
         * 나머지 설정은 CentOS Upstream을 유지함
     * 기능개선
         * 접근 보안성 강화를 위한 root 계정 접속 제한
-            * 기존 : root 계정의 ssh 접속 허용
-            * 변경 : 일반 User 계정인 "centos" 로 접속 후 전환
+            * 기존: root 계정의 ssh 접속 허용
+            * 변경: 일반 User 계정인 "centos" 로 접속 후 전환
         * 인스턴스 생성시 swap partition 을  생성하지 않음
         * /etc/hosts 파일의 사용자 추가 설정 유지
 * CentOS 6.10 신규 이미지 업데이트
     * 이미지 정보
         * CentOS 6.10
-        * 언어 : EN
-        * 설명 : CentOS 6.10(2018. 10. 23.)
-        * 비트 : 64bit
-        * 커널 : 2.6.32-754.3.5.el6
+        * 언어: EN
+        * 설명: CentOS 6.10(2018. 10. 23.)
+        * 비트: 64bit
+        * 커널: 2.6.32-754.3.5.el6
     * Toast Cloud 보안기준으로 OS 하드닝 적용
-        * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+        * 패스워드 복잡도 설정: 숫자,영문,특문 조합 + 8자리 이상)(/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
-        * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+        * ssh 설정 변경(/etc/ssh/sshd_config 수정)
             * PermitRootLogin no                # root 접속 비활성화
             * PasswordAuthentication no         # 패스워드 인증 비활성화
-        * 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+        * 취약점 대비 커널 파라메터 변경(/etc/sysctl.conf 수정)
             * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
             * net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
             * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
             * net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
             * net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
             * net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
-        * 터미널 접근 제한 ( /etc/securetty 수정)
+        * 터미널 접근 제한( /etc/securetty 수정)
             * console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
-        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료(/etc/profile 수정)
             * TMOUT=7200
         * 나머지 설정은 CentOS Upstream을 유지함
     * 기능개선
         * 접근 보안성 강화를 위한 root 계정 접속 제한
-            * 기존 : root 계정의 ssh 접속 허용
-            * 변경 : 일반 User 계정인 "centos" 로 접속 후 전환
+            * 기존: root 계정의 ssh 접속 허용
+            * 변경: 일반 User 계정인 "centos" 로 접속 후 전환
         * 인스턴스 생성시 swap partition 을  생성하지 않음
         * /etc/hosts 파일의 사용자 추가 설정 유지
 * CentOS 7.1 이미지 업데이트
     * 이미지 정보
         * CentOS 7.1
-        * 언어 : EN
-        * 설명 : CentOS 7.1(2018. 10. 23.)
-        * 비트 : 64bit
-        * 커널 : 3.10.0-229.el7
+        * 언어: EN
+        * 설명: CentOS 7.1(2018. 10. 23.)
+        * 비트: 64bit
+        * 커널: 3.10.0-229.el7
     * Toast Cloud 보안기준으로 OS 하드닝 적용
-        * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+        * 패스워드 복잡도 설정: 숫자,영문,특문 조합 + 8자리 이상)(/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
-        * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+        * ssh 설정 변경(/etc/ssh/sshd_config 수정)
             * PermitRootLogin no                # root 접속 비활성화
             * PasswordAuthentication no         # 패스워드 인증 비활성화
-        * 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+        * 취약점 대비 커널 파라메터 변경(/etc/sysctl.conf 수정)
             * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
             * net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
             * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
             * net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
             * net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
             * net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
-        * 터미널 접근 제한 ( /etc/securetty 수정)
+        * 터미널 접근 제한( /etc/securetty 수정)
             * console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
-        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료(/etc/profile 수정)
             * TMOUT=7200
         * 나머지 설정은 CentOS Upstream을 유지함
     * 기능개선
         * 접근 보안성 강화를 위한 root 계정 접속 제한
-            * 기존 : root 계정의 ssh 접속 허용
-            * 변경 : 일반 User 계정인 "centos" 로 접속 후 전환
+            * 기존: root 계정의 ssh 접속 허용
+            * 변경: 일반 User 계정인 "centos" 로 접속 후 전환
         * 인스턴스 생성시 swap partition 을  생성하지 않음
         * /etc/hosts 파일의 사용자 추가 설정 유지
 * CentOS 6.5 이미지 업데이트
     * 이미지 정보
         * CentOS 6.5
-        * 언어 : EN
-        * 설명 : CentOS 6.5(2018. 10. 23.)
-        * 비트 : 64bit
-        * 커널 : 2.6.32-431.el6
+        * 언어: EN
+        * 설명: CentOS 6.5(2018. 10. 23.)
+        * 비트: 64bit
+        * 커널: 2.6.32-431.el6
     * Toast Cloud 보안기준으로 OS 하드닝 적용
-        * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+        * 패스워드 복잡도 설정: 숫자,영문,특문 조합 + 8자리 이상)(/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
-        * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+        * ssh 설정 변경(/etc/ssh/sshd_config 수정)
             * PermitRootLogin no                # root 접속 비활성화
             * PasswordAuthentication no         # 패스워드 인증 비활성화
-        * 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+        * 취약점 대비 커널 파라메터 변경(/etc/sysctl.conf 수정)
             * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
             * net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
             * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
             * net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
             * net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
             * net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
-        * 터미널 접근 제한 ( /etc/securetty 수정)
+        * 터미널 접근 제한( /etc/securetty 수정)
             * console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
-        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료(/etc/profile 수정)
             * TMOUT=7200
         * 나머지 설정은 CentOS Upstream을 유지함
     * 기능개선
         * 접근 보안성 강화를 위한 root 계정 접속 제한
-            * 기존 : root 계정의 ssh 접속 허용
-            * 변경 : 일반 User 계정인 "centos" 로 접속 후 전환
+            * 기존: root 계정의 ssh 접속 허용
+            * 변경: 일반 User 계정인 "centos" 로 접속 후 전환
         * 인스턴스 생성시 swap partition 을  생성하지 않음
         * /etc/hosts 파일의 사용자 추가 설정 유지
 * Ubuntu Server 16.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 16.04 LTS
-        * 언어 : EN
-        * 설명 : Ubuntu Server 16.04.5 LTS(2018. 10. 23.)
-        * 비트 : 64bit
-        * 커널 : 4.4.0-131
+        * 언어: EN
+        * 설명: Ubuntu Server 16.04.5 LTS(2018. 10. 23.)
+        * 비트: 64bit
+        * 커널: 4.4.0-131
     * Toast Cloud 보안기준으로 OS 하드닝 적용
-        * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+        * 패스워드 복잡도 설정: 숫자,영문,특문 조합 + 8자리 이상)(/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
-        * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+        * ssh 설정 변경(/etc/ssh/sshd_config 수정)
             * PermitRootLogin no                # root 접속 비활성화
             * PasswordAuthentication no         # 패스워드 인증 비활성화
-        * 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+        * 취약점 대비 커널 파라메터 변경(/etc/sysctl.conf 수정)
             * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
             * net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
             * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
             * net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
             * net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
             * net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
-        * 터미널 접근 제한 ( /etc/securetty 수정)
+        * 터미널 접근 제한( /etc/securetty 수정)
             * console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
-        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료(/etc/profile 수정)
             * TMOUT=7200
         * 나머지 설정은 Ubuntu Server 16.04 LTS Upstream을 유지함
     * 기능개선
@@ -1562,26 +1643,26 @@
 * Ubuntu Server 14.04 LTS 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 14.04 LTS
-        * 언어 : EN
-        * 설명 : Ubuntu Server 14.04.5 LTS(2018. 10. 23.)
-        * 비트 : 64bit
-        * 커널 : 4.4.0-131
+        * 언어: EN
+        * 설명: Ubuntu Server 14.04.5 LTS(2018. 10. 23.)
+        * 비트: 64bit
+        * 커널: 4.4.0-131
     * Toast Cloud 보안기준으로 OS 하드닝 적용
-        * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+        * 패스워드 복잡도 설정: 숫자,영문,특문 조합 + 8자리 이상)(/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
-        * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+        * ssh 설정 변경(/etc/ssh/sshd_config 수정)
             * PermitRootLogin no                # root 접속 비활성화
             * PasswordAuthentication no         # 패스워드 인증 비활성화
-        * 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+        * 취약점 대비 커널 파라메터 변경(/etc/sysctl.conf 수정)
             * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
             * net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
             * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
             * net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
             * net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
             * net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
-        * 터미널 접근 제한 ( /etc/securetty 수정)
+        * 터미널 접근 제한( /etc/securetty 수정)
             * console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
-        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료(/etc/profile 수정)
             * TMOUT=7200
         * 나머지 설정은 Ubuntu Server 14.04 LTS Upstream을 유지함
     * 기능개선
@@ -1590,26 +1671,26 @@
 * Debian 9 Stretch 이미지 업데이트
     * 이미지 정보
         * Debian 9 Stretch
-        * 언어 : EN
-        * 설명 : Debian 9.5 Stretch(2018. 10. 23.)
-        * 비트 : 64bit
-        * 커널 : 4.9.0-7
+        * 언어: EN
+        * 설명: Debian 9.5 Stretch(2018. 10. 23.)
+        * 비트: 64bit
+        * 커널: 4.9.0-7
     * Toast Cloud 보안기준으로 OS 하드닝 적용
-        * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+        * 패스워드 복잡도 설정: 숫자,영문,특문 조합 + 8자리 이상)(/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
-        * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+        * ssh 설정 변경(/etc/ssh/sshd_config 수정)
             * PermitRootLogin no                # root 접속 비활성화
             * PasswordAuthentication no         # 패스워드 인증 비활성화
-        * 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+        * 취약점 대비 커널 파라메터 변경(/etc/sysctl.conf 수정)
             * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
             * net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
             * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
             * net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
             * net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
             * net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
-        * 터미널 접근 제한 ( /etc/securetty 수정)
+        * 터미널 접근 제한( /etc/securetty 수정)
             * console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
-        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료(/etc/profile 수정)
             * TMOUT=7200
         * 나머지 설정은 Debian 9 Upstream을 유지함
     * 기능개선
@@ -1618,26 +1699,26 @@
 * Debian 8 Jessie 이미지 업데이트
     * 이미지 정보
         * Debian 8 Jessie
-        * 언어 : EN
-        * 설명 : Debian 8.11 Jessie(2018. 10. 23.)
-        * 비트 : 64bit
-        * 커널 : 3.16.0-6
+        * 언어: EN
+        * 설명: Debian 8.11 Jessie(2018. 10. 23.)
+        * 비트: 64bit
+        * 커널: 3.16.0-6
     * Toast Cloud 보안기준으로 OS 하드닝 적용
-        * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+        * 패스워드 복잡도 설정: 숫자,영문,특문 조합 + 8자리 이상)(/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
-        * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+        * ssh 설정 변경(/etc/ssh/sshd_config 수정)
             * PermitRootLogin no                # root 접속 비활성화
             * PasswordAuthentication no         # 패스워드 인증 비활성화
-        * 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+        * 취약점 대비 커널 파라메터 변경(/etc/sysctl.conf 수정)
             * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
             * net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
             * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
             * net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
             * net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
             * net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
-        * 터미널 접근 제한 ( /etc/securetty 수정)
+        * 터미널 접근 제한( /etc/securetty 수정)
             * console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
-        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료(/etc/profile 수정)
             * TMOUT=7200
         * 나머지 설정은 Debian 8 Upstream을 유지함
     * 기능개선
@@ -1660,37 +1741,37 @@
 * Ubuntu Server 18.04 LTS 신규 이미지 업데이트
     * 이미지 정보
         * Ubuntu Server 18.04 LTS
-        * 언어 : EN
-        * 설명 : Ubuntu Server 18.04.1 LTS(2018. 09. 20.)
-        * 비트 : 64bit
+        * 언어: EN
+        * 설명: Ubuntu Server 18.04.1 LTS(2018. 09. 20.)
+        * 비트: 64bit
     * Kernel 4.15.0-29
-        * meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
+        * meltdown/spectre variant 1,2,3(CVE-2017-5753, 5715, 5754) 패치(retpoline)
     * Toast Cloud 보안기준으로 OS 하드닝 적용
-        * 패스워드 복잡도 설정 : 숫자,영문,특문 조합 + 8자리 이상) (/etc/pam.d/common-password 수정)
+        * 패스워드 복잡도 설정: 숫자,영문,특문 조합 + 8자리 이상)(/etc/pam.d/common-password 수정)
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
-        * ssh 설정 변경 (/etc/ssh/sshd_config 수정)
+        * ssh 설정 변경(/etc/ssh/sshd_config 수정)
             * PermitRootLogin no                # root 접속 비활성화
             * PasswordAuthentication no         # 패스워드 인증 비활성화
-        * 취약점 대비 커널 파라메터 변경 (/etc/sysctl.conf 수정)
+        * 취약점 대비 커널 파라메터 변경(/etc/sysctl.conf 수정)
             * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
             * net.ipv4.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
             * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
             * net.ipv4.icmp_echo_ignore_broadcasts = 1 # smurf dos 공격 방어
             * net.ipv4.icmp_ignore_bogus_error_responses = 1 # ip 혹은 tcp 헤더가 깨진 bad icmp 패킷 무시
             * net.ipv4.tcp_syncookies=1 # syn 플루딩 공격 방어를 위한 syn cookies 사용
-        * 터미널 접근 제한 ( /etc/securetty 수정)
+        * 터미널 접근 제한( /etc/securetty 수정)
             * console, vc/1, vc/2, tty1, tty2, ttyS0 외 접근 불가
-        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료 (/etc/profile 수정)
+        * 터미널로부터 120분 이상 사용자입력 없을시 세션 종료(/etc/profile 수정)
             * TMOUT=7200
         * 추가 변경 사항
-            * Instance 생성시 swap partition 을 생성하지 않음 ( 필요시 사용자가 별도 생성 )
+            * Instance 생성시 swap partition 을 생성하지 않음( 필요시 사용자가 별도 생성 )
         * 나머지 설정은 Ubuntu Server 18.04 LTS upstream 을 유지함
 * Ubuntu Linux 14.04 LTS 신규 이미지 업데이트
     * 이미지 정보
         * Ubuntu Linux 14.04
-        * 언어 : EN
-        * 설명 : Ubuntu Linux 14.04.5(2018. 09. 20.)
-        * 비트 : 64bit
+        * 언어: EN
+        * 설명: Ubuntu Linux 14.04.5(2018. 09. 20.)
+        * 비트: 64bit
     * 버그픽스
         * 2018. 09. 20. 신규적용되는 예약스크립트 기능이 정상적으로 적용되지 않는 부분 해결
 
@@ -1702,13 +1783,13 @@
 * Windows 2012 R2 Standard 이미지 업데이트
     * 이미지 정보
         * Windows 2012 R2 STD
-        * 언어 : EN
-        * 설명 : Windows 2012 R2 STD(2018. 08. 09.)
-        * 커널 비트 : 64bit
+        * 언어: EN
+        * 설명: Windows 2012 R2 STD(2018. 08. 09.)
+        * 커널 비트: 64bit
     * 변경사항
-        * 한글 사용시 사용자가 한글 언어팩을 설치 ( 기본으로 영문 버전 제공 )
+        * 한글 사용시 사용자가 한글 언어팩을 설치( 기본으로 영문 버전 제공 )
     * Windows 보안업데이트
-        * 2018년 7월 10일 보안업데이트 적용 ( https://support.microsoft.com/en-us/help/4338815/windows-81-update-kb4338815 )
+        * 2018년 7월 10일 보안업데이트 적용( https://support.microsoft.com/en-us/help/4338815/windows-81-update-kb4338815 )
     * Toast Cloud 보안기준으로 OS 하드닝 적용
         * 계정 관리
             * Interactive logon: Display user information when the session is locked : User display name only
@@ -1716,20 +1797,20 @@
             * Interactive logon: Prompt user to change password before expiration : 14days
             * Shut down the system : Administrators
         * 서비스 관리
-            * NTP 설정 : 1.pool.ntp.org, time,windows.com
-            * NTP 동기화 주기 :  256초
+            * NTP 설정: 1.pool.ntp.org, time,windows.com
+            * NTP 동기화 주기:  256초
         * 시스템 관리
             * Network access: Do not allow anonymous enumeration of SAM accounts : Enabled
             * Network access: Do not allow anonymous enumeration of SAM accounts and shares : Enabled
-            * Autologin 기능 제한 :  AutoAdminLogon 값을 0 으로 설정
+            * Autologin 기능 제한:  AutoAdminLogon 값을 0 으로 설정
 * Windows 2016 Standard 신규 이미지 업데이트
     * 이미지 정보
         * Windows 2016 STD
-        * 언어 : EN
-        * 설명 : Windows 2016 STD(2018. 08. 09.)
-        * 비트 : 64bit
+        * 언어: EN
+        * 설명: Windows 2016 STD(2018. 08. 09.)
+        * 비트: 64bit
     * Windows 보안업데이트
-        * 2018년 7월 24일 (https://support.microsoft.com/en-us/help/4338822/windows-10-update-kb4338822)
+        * 2018년 7월 24일(https://support.microsoft.com/en-us/help/4338822/windows-10-update-kb4338822)
     * Toast Cloud 보안기준으로 OS 하드닝 적용
         * 계정 관리
             * Interactive logon: Display user information when the session is locked : User display name only
@@ -1737,26 +1818,26 @@
             * Interactive logon: Prompt user to change password before expiration : 14days
             * Shut down the system : Administrators
         * 서비스 관리
-            * NTP 설정 : 1.pool.ntp.org, time,windows.com
-            * NTP 동기화 주기 :  256초
+            * NTP 설정: 1.pool.ntp.org, time,windows.com
+            * NTP 동기화 주기:  256초
         * 시스템 관리
             * Network access: Do not allow anonymous enumeration of SAM accounts : Enabled
             * Network access: Do not allow anonymous enumeration of SAM accounts and shares : Enabled
 * Debian 9.4 신규 이미지 업데이트
     * 이미지 정보
         * Debian 9.4
-        * 언어 : EN
-        * 설명 : Debian 9.4.0(2018. 08. 09.)
-        * 비트 : 64bit
+        * 언어: EN
+        * 설명: Debian 9.4.0(2018. 08. 09.)
+        * 비트: 64bit
     * Kernel 4.9
-        * meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
+        * meltdown/spectre variant 1,2,3(CVE-2017-5753, 5715, 5754) 패치(retpoline)
     * Toast Cloud 보안기준으로 OS 하드닝 적용
-        * 패스워드 복잡도 설정 (숫자,영문,특문 조합 + 8자리 이상) : /etc/pam.d/common-password에 아래 line 추가
+        * 패스워드 복잡도 설정(숫자,영문,특문 조합 + 8자리 이상): /etc/pam.d/common-password에 아래 line 추가
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * 불필요 계정/그룹 삭제
-            * user : lp, sync, uucp, games
-            * group : dip
-        * 취약점 대비 커널 파라메터 변경 (sysctl)
+            * user: lp, sync, uucp, games
+            * group: dip
+        * 취약점 대비 커널 파라메터 변경(sysctl)
             * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
             * net.ipv4\.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
             * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
@@ -1785,8 +1866,8 @@
             * /etc/shadow 400
             * /etc/gshadow 400
             * /etc/login.defs 400
-        * 터미널 접근 제한 : /etc/securetty 수정
-        * profile 추가 (/etc/profile)
+        * 터미널 접근 제한: /etc/securetty 수정
+        * profile 추가(/etc/profile)
             * TMOUT=7200      # 터미널로 부터 사용자입력없을때 세선 종료
             * HISTSIZE=500       # history list에 저장될 command 수 제한
             * HISTFILESIZE=0     # history file에 저장될 command 없음
@@ -1802,49 +1883,49 @@
 * Windows 2012 R2 Standard 이미지 업데이트
     * 이미지 정보
         * Windows 2012R2std
-        * 언어 : KO
-        * 설명 : Windows 2012 R2 STD(2018. 07. 16.)
-        * 커널 비트 : 64bit
+        * 언어: KO
+        * 설명: Windows 2012 R2 STD(2018. 07. 16.)
+        * 커널 비트: 64bit
     * Auto scale 기능으로 백신이 포함된 인스턴스 생성시 발생하는 에러 현상 수정
-    * CPU 설정 변경  ( CPU Socket 최대 개수  4개 )
+    * CPU 설정 변경 ( CPU Socket 최대 개수  4개 )
     * Network  인터페이스 속도  10G 로 표시
 * Windows 2008 R2 Standard 신규 이미지 업데이트
     * 이미지 정보
         * Windows 2008R2std
-        * 언어 : EN
-        * 설명 : Windows 2008 R2 STD(2018. 07. 16.)
-        * 커널 비트 : 64bit
+        * 언어: EN
+        * 설명: Windows 2008 R2 STD(2018. 07. 16.)
+        * 커널 비트: 64bit
     * Windows 보안업데이트
-        * 2018년 6월 12일자 보안 업데이트 적용 ( https://support.microsoft.com/ko-kr/help/4284826 )
+        * 2018년 6월 12일자 보안 업데이트 적용( https://support.microsoft.com/ko-kr/help/4284826 )
     * Toast Cloud 보안기준으로 OS 하드닝 적용
         * 계정 관리
-            * Guest 계정 사용 제한 : Guest 계정 사용 안함으로 변경
-            * 마지막 사용자 로그인 이름 표시 :  표시 안함으로 설정
-            * 세션이 잠긴경우 사용자 정보표시 : 사용자 이름만 표시로 설정
-            * 암호만료 전에 변경 알림 : 변경 알림 14일로 설정
-            * 일반 사용자의 시스템 종료 제한 : 시스템 종료 정책을 Administrator 로 설정
+            * Guest 계정 사용 제한: Guest 계정 사용 안함으로 변경
+            * 마지막 사용자 로그인 이름 표시:  표시 안함으로 설정
+            * 세션이 잠긴경우 사용자 정보표시: 사용자 이름만 표시로 설정
+            * 암호만료 전에 변경 알림: 변경 알림 14일로 설정
+            * 일반 사용자의 시스템 종료 제한: 시스템 종료 정책을 Administrator 로 설정
         * 서비스 관리
-            * NTP 설정 : 1.pool.ntp.org, time,windows.com
-            * NTP 동기화 주기 :  256초
+            * NTP 설정: 1.pool.ntp.org, time,windows.com
+            * NTP 동기화 주기:  256초
         * 시스템 관리
-            * SAM 계정과 공유의 익명열거 허용 안함 :  SAM 계정관련  익명열거 허용 안함 항목 사용
-            * 로그온 하지 않고 시스템 종료허용  제한 :  로그온하지 않고 시스템 종료 허용 정책을 사용 안함으로 설정
-            * Autologin 기능 제한 :  AutoAdminLogon 값을 0 으로 설정
+            * SAM 계정과 공유의 익명열거 허용 안함:  SAM 계정관련  익명열거 허용 안함 항목 사용
+            * 로그온 하지 않고 시스템 종료허용  제한:  로그온하지 않고 시스템 종료 허용 정책을 사용 안함으로 설정
+            * Autologin 기능 제한:  AutoAdminLogon 값을 0 으로 설정
 * Ubuntu Linux 16.04 LTS 신규 이미지 업데이트
     * 이미지 정보
         * Ubuntu 16.04 LTS
-        * 언어 : EN
-        * 설명 : Ubuntu 16.04.4 LTS(2018. 07. 16.)
-        * 커널 비트 : 64bit
+        * 언어: EN
+        * 설명: Ubuntu 16.04.4 LTS(2018. 07. 16.)
+        * 커널 비트: 64bit
     * Kernel 4.4.0-130
-        * meltdown/spectre variant 1,2,3 (CVE-2017-5753, 5715, 5754) 패치 (retpoline)
+        * meltdown/spectre variant 1,2,3(CVE-2017-5753, 5715, 5754) 패치(retpoline)
     * Toast Cloud 보안기준으로 OS 하드닝 적용
-        * 패스워드 복잡도 설정 (숫자,영문,특문 조합 + 8자리 이상) : /etc/pam.d/common-password에 아래 line 추가
+        * 패스워드 복잡도 설정(숫자,영문,특문 조합 + 8자리 이상): /etc/pam.d/common-password에 아래 line 추가
             * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
         * 불필요 계정/그룹 삭제
-            * user : lp, sync, uucp, games
-            * group : dip
-        * 취약점 대비 커널 파라메터 변경 (sysctl)
+            * user: lp, sync, uucp, games
+            * group: dip
+        * 취약점 대비 커널 파라메터 변경(sysctl)
             * net.ipv4.conf.all.accept_redirects = 0 # icmp redirect 공격 차단
             * net.ipv4\.conf.all.accept_source_route = 0 # 소스라우팅 차단을 통한 ip 스푸핑 방지
             * net.ipv4.conf.all.log_martians = 1 # 스푸핑 로깅
@@ -1873,8 +1954,8 @@
             * /etc/shadow 400
             * /etc/gshadow 400
             * /etc/login.defs 400
-        * 터미널 접근 제한 : /etc/securetty 수정
-        * profile 추가 (/etc/profile)
+        * 터미널 접근 제한: /etc/securetty 수정
+        * profile 추가(/etc/profile)
             * TMOUT=7200      # 터미널로 부터 사용자입력없을때 세선 종료
             * HISTSIZE=500       # history list에 저장될 command 수 제한
             * HISTFILESIZE=0     # history file에 저장될 command 없음
@@ -1913,47 +1994,47 @@
 * VPC 기능이 추가됨에 따라 인스턴스 생성 시에 서브넷을 지정하도록 변경되었습니다.
 * Windows 2012 R2 Standard 이미지 업데이트
     * 이미지 정보
-        * Name : Windows 2012R2std
-        * Language : KO
-        * Description : Windows 2012 R2 STD(2018. 02. 22.)
+        * Name: Windows 2012R2std
+        * Language: KO
+        * Description: Windows 2012 R2 STD(2018. 02. 22.)
     * Windows Time Zone 설정 변경
-        * 동기화 주기 변경 : [기존) 604800초 (7일) > [변경] 256초
-        * Time Zone Peer 도메인 변경 : [기존] 1.kr.pool.ntp.org , 1.pool.ntp.org > [변경] 1.pool.ntp.org , time.windows.com
+        * 동기화 주기 변경: [기존) 604800초(7일) > [변경] 256초
+        * Time Zone Peer 도메인 변경: [기존] 1.kr.pool.ntp.org , 1.pool.ntp.org > [변경] 1.pool.ntp.org , time.windows.com
     * MS 2018.02.13 Windows Update 적용
         * https://support.microsoft.com/ko-kr/help/4074594/windows-81-update-kb-4074594
 * Ubuntu Linux 14.04 이미지 업데이트
     * 이미지 정보
-        * Name : Ubuntu 14.04
-        * Description : Ubuntu Linux 14.04.5(2018. 02. 22.)
+        * Name: Ubuntu 14.04
+        * Description: Ubuntu Linux 14.04.5(2018. 02. 22.)
     * 취약점 패치를 위한 관련 커널 업데이트
-        * Linux Kernel Version : [기존] 3.13.0-32 --> [변경] 3.13.0-141
-        * Variant 1 (CVE-2017-5753) - patched
-        * Variant 3 (CVE-2017-5754) - patched
+        * Linux Kernel Version: [기존] 3.13.0-32 --> [변경] 3.13.0-141
+        * Variant 1(CVE-2017-5753) - patched
+        * Variant 3(CVE-2017-5754) - patched
 * Debian Linux 8.2 이미지 업데이트
     * 이미지 정보
-        * Name : Debian Linux 8.2.0
-        * Description : Debian Linux 8.2.0(2018. 02. 22.)
+        * Name: Debian Linux 8.2.0
+        * Description: Debian Linux 8.2.0(2018. 02. 22.)
     * 호스트명 설정 변경
         * 인스턴스 생성시 지정한 이름으로 호스트명 적용되도록 수정
         * [기존] localhost-192.168.0.x -> [변경] 콘솔에서 지정한 이름
     * 취약점 패치를 위한 관련 커널 업데이트
-        * Linux Kernel Version : [기존] 3.16.0-4 --> [변경] 3.16.0-5
-        * Variant 3 (CVE-2017-5754) - patched
+        * Linux Kernel Version: [기존] 3.16.0-4 --> [변경] 3.16.0-5
+        * Variant 3(CVE-2017-5754) - patched
 * CentOS Linux 6.5 이미지 업데이트
     * 이미지 정보
-        * Name : CentOS Linux 6.5
-        * Description : CentOS Linux 6.5(2018. 02. 22.)
+        * Name: CentOS Linux 6.5
+        * Description: CentOS Linux 6.5(2018. 02. 22.)
     * 호스트명 설정 변경
         * 인스턴스 생성시 지정한 이름으로 호스트명 적용되도록 수정
         * [기존] localhost-192.168.0.x -> [변경] 콘솔에서 지정한 이름
     * 취약점 패치를 위한 관련 커널 업데이트
-        * Linux Kernel Version : [기존] 2.6.32-431 --> [변경] 2.6.32-696.20.1
-        * Variant 1 (CVE-2017-5753) - patched
-        * Variant 3 (CVE-2017-5754) - patched
+        * Linux Kernel Version: [기존] 2.6.32-431 --> [변경] 2.6.32-696.20.1
+        * Variant 1(CVE-2017-5753) - patched
+        * Variant 3(CVE-2017-5754) - patched
 * CentOS Linux 7.1 이미지 업데이트
     * 이미지 정보
-        * Name : CentOS Linux 7.1
-        * Description : CentOS Linux 7.1(2018. 02. 22.)
+        * Name: CentOS Linux 7.1
+        * Description: CentOS Linux 7.1(2018. 02. 22.)
     * 호스트명 설정 변경
         * 인스턴스 생성시 지정한 이름으로 호스트명 적용되도록 수정
         * [기존] localhost-192.168.0.x -> [변경] 콘솔에서 지정한 이름
@@ -1962,19 +2043,19 @@
     * Swap Disk Mount 설정 변경
         * 신규 인스턴스 생성시 swap 파티션 자동 마운트되도록 설정 변경
     * 취약점 패치를 위한 관련 커널 업데이트
-        * Linux Kernel Version : [기존] 3.10.0-229.20.1 --> [변경] 3.10.0-693.17.1
-        * Variant 1 (CVE-2017-5753) - patched
-        * Variant 3 (CVE-2017-5754) - patched
+        * Linux Kernel Version: [기존] 3.10.0-229.20.1 --> [변경] 3.10.0-693.17.1
+        * Variant 1(CVE-2017-5753) - patched
+        * Variant 3(CVE-2017-5754) - patched
 * CentOS Linux 6.5 with MySQL 5.6.38 신규 이미지 업데이트
     * 이미지 정보
-        * Name : CentOS Linux 6.5
-        * Description : CentOS Linux 6.5 with MySQL 5.6.38(2018. 02. 22.)
+        * Name: CentOS Linux 6.5
+        * Description: CentOS Linux 6.5 with MySQL 5.6.38(2018. 02. 22.)
     * MySQL 5.6.38 패키지 설치됨
     * 그외 설정은 CentOS Linux 6.5 이미지와 동일함
 * CentOS Linux 6.5 with MySQL 5.7.20 신규 이미지 업데이트
     * 이미지 정보
-        * Name : CentOS Linux 6.5
-        * Description : CentOS Linux 6.5 with MySQL 5.7.20(2018. 02. 22.)
+        * Name: CentOS Linux 6.5
+        * Description: CentOS Linux 6.5 with MySQL 5.7.20(2018. 02. 22.)
     * MySQL 5.7.20 패키지 설치됨
     * 그외 설정은 CentOS Linux 6.5 이미지와 동일함
 
@@ -2013,7 +2094,7 @@
     * 리눅스 OS만 지원합니다.
     * Local Disk를 이용하기 때문에 하드웨어 장애시 데이터 복구가 불가능할 수 있습니다.
 * High IOPS SSD 사양(I 타입)이 추가되었습니다.
-    * 높은 IOPS가 필요한 경우 I타입을 이용하면 수준의 높은 IOPS를 보장 받을 수 있습니다. (보장 IOPS는 가격표 참조)
+    * 높은 IOPS가 필요한 경우 I타입을 이용하면 수준의 높은 IOPS를 보장 받을 수 있습니다.(보장 IOPS는 가격표 참조)
     * 리눅스 OS만 지원합니다.
 
 #### 버그 수정
@@ -2057,7 +2138,7 @@
 - 인스턴스 기본 정보의 IP 주소 정보에서 서브넷 명칭을 표시하지 않습니다.
     - 명칭 표기로 행의 넓이가 넓어져 가독성이 떨어지는 것을 방지합니다.
 - 인스턴스 이름 길이 및 특수문자 제한합니다.
-    - 이제부터 생성 및 수정되는 인스턴스의 이름은 20자 이하 영숫자와 **.** (dot),**-** (dash) 문자만 허용합니다.
+    - 이제부터 생성 및 수정되는 인스턴스의 이름은 20자 이하 영숫자와 **.**(dot),**-**(dash) 문자만 허용합니다.
 - 인스턴스 생성 기능을 이미지 생성 기능으로 변경합니다.
     - 탭과 일관된 기능으로 변경하였습니다.
 
