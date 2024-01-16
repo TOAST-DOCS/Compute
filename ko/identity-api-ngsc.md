@@ -6,13 +6,13 @@
 
 NHN Government Security Cloud에서는 다음과 같은 엔드포인트를 사용합니다.
 
-| 타입          | 엔드포인트                                               |
-|-------------|------------------------------------------------------------|
-| identity    | https://api-identity-infrastructure.gncloud.go.kr          |
-| compute     | https://kr1-api-instance-infrastructure.gncloud.go.kr      |
-| network     | https://kr1-api-network-infrastructure.gncloud.go.kr       |
-| image       | https://kr1-api-image-infrastructure.gncloud.go.kr         |
-| volumev2    | https://kr1-api-block-storage-infrastructure.gncloud.go.kr |
+| 타입          | 리전 | 엔드포인트                                               |
+|-------------|---|---------------------------------------------------------|
+| identity    | 모든 리전 | https://api-identity-infrastructure.gncloud.go.kr          |
+| compute     | 한국(판교) 리전 | https://kr1-api-instance-infrastructure.gncloud.go.kr      |
+| network     | 한국(판교) 리전 | https://kr1-api-network-infrastructure.gncloud.go.kr       |
+| image       | 한국(판교) 리전 | https://kr1-api-image-infrastructure.gncloud.go.kr         |
+| volumev2    | 한국(판교) 리전 | https://kr1-api-block-storage-infrastructure.gncloud.go.kr |
 
 ### 테넌트 ID 확인
 
