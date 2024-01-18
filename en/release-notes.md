@@ -1,5 +1,8 @@
 ## Compute > Release Notes
 
+### February 27, 2024
+#### Instance
+* Added a feature to create images from encrypted root block storage instances
 
 ### November 28, 2023
 #### Instance
