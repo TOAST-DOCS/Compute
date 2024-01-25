@@ -1,5 +1,8 @@
 ## Compute > 릴리스 노트
 
+### 2024. 03. 05.
+#### Instance
+* GPU Instance에서 인스턴스 종료 기능 비활성화
 
 ### 2023. 11. 30.
 #### Instance
