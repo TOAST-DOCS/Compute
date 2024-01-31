@@ -3,6 +3,7 @@
 ### February 27, 2024
 #### Instance
 * Added a feature to create images from encrypted root block storage instances
+* Deactivated the feature to terminate instances from GPU Instance
 
 ### November 28, 2023
 #### Instance
