@@ -1,9 +1,62 @@
 ## Compute > 릴리스 노트
 
 ### 2024. 02. 27.
+#### Image
+* 신규 이미지 추가
+    * Rocky Linux 8.9(2024.02.20.)
+
+* 이미지 지원 종료
+    * Rocky Linux 8.8(2023.11.21.)
+
+* GPU 및 컨테이너 관련(Linux)
+    * containerd : 1.6.22 > 1.6.27
+    * nvidia driver 업데이트 : 535.104.12 > 535.154.05
+    * cuda 업데이트 : 12.2 > 변경 없음
+    * mig manager : 0.5.5 > 변경 없음
+
+* GPU(Windows)
+    * nvidia driver 업데이트 : 537.13 > 538.15
+
+* 보안업데이트(Windows)
+    * windows 2016: KB5034119
+        * https://support.microsoft.com/en-us/topic/january-9-2024-kb5034119-os-build-14393-6614-7e7dae78-5944-4041-bf3d-4660e5ef7bb4
+    * windows 2019: KB5034127
+        * https://support.microsoft.com/en-gb/topic/january-9-2024-kb5034127-os-build-17763-5329-4de58ce5-eb0d-4b9a-95d1-aa15fe30b082
+    * windows 2022: KB5034129
+        * https://support.microsoft.com/en-us/topic/january-9-2024-kb5034129-os-build-20348-2227-6958a36f-efaf-4ef5-a576-c5931072a89a
+
+* 이미지 업데이트(Linux)
+    * CentOS 7.9(2024.02.20.)
+    * CentOS 7.9 for NAT(2024.02.20.)
+    * Debian 10.13 Buster(2024.02.20.)
+    * Debian 11.8 Bullseye(2024.02.20.)
+    * Rocky Linux 8.9(2024.02.20.)
+    * Ubuntu Server 20.04.6 LTS(2024.02.20.)
+    * Ubuntu Server 20.04.6 LTS for NAT(2024.02.20.)
+    * Ubuntu Server 22.04.3 LTS(2024.02.20.)
+
+* 이미지 업데이트(Windows)
+    * Windows 2016 STD(2024.02.20.) EN
+    * Windows 2016 STD(2024.02.20.) KO
+    * Windows 2019 STD(2024.02.20.) EN
+    * Windows 2019 STD(2024.02.20.) KO
+    * Windows 2022 STD(2024.02.20.) EN
+    * Windows 2022 STD(2024.02.20.) KO
+    * Windows 2016 STD with MS-SQL 2016 Standard(2024.02.20.) EN
+    * Windows 2016 STD with MS-SQL 2016 Standard(2024.02.20.) KO
+    * Windows 2016 STD with MS-SQL 2017 Standard(2024.02.20.) EN
+    * Windows 2016 STD with MS-SQL 2017 Standard(2024.02.20.) KO
+    * Windows 2016 STD with MS-SQL 2019 Express(2024.02.20.) EN
+    * Windows 2016 STD with MS-SQL 2019 Express(2024.02.20.) KO
+    * Windows 2016 STD with MS-SQL 2019 Standard(2024.02.20.) EN
+    * Windows 2016 STD with MS-SQL 2019 Standard(2024.02.20.) KO
+    * Windows 2019 STD with MS-SQL 2019 Standard(2024.02.20.) EN
+    * Windows 2019 STD with MS-SQL 2019 Standard(2024.02.20.) KO
+
 #### Instance
 * 암호화 루트 블록 스토리지 인스턴스로부터 이미지 생성 기능 추가
 * GPU Instance에서 인스턴스 종료 기능 비활성화
+
 
 ### 2023. 11. 28.
 #### Instance
