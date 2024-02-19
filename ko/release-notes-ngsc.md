@@ -9,20 +9,20 @@
     * Rocky Linux 8.8(2023.11.21.)
 
 * GPU 및 컨테이너 관련(Linux)
-    * containerd : 1.6.22 > 1.6.27
-    * nvidia driver 업데이트 : 535.104.12 > 535.154.05
-    * cuda 업데이트 : 12.2 > 변경 없음
-    * mig manager : 0.5.5 > 변경 없음
+    * containerd: 1.6.22 > 1.6.27
+    * NVIDIA 드라이버 업데이트: 535.104.12 > 535.154.05
+    * CUDA 업데이트: 12.2 > 변경 없음
+    * MIG Manager: 0.5.5 > 변경 없음
 
 * GPU(Windows)
-    * nvidia driver 업데이트 : 537.13 > 538.15
+    * NVIDIA 드라이버 업데이트: 537.13 > 538.15
 
-* 보안업데이트(Windows)
-    * windows 2016: KB5034119
+* 보안 업데이트(Windows)
+    * Windows 2016: KB5034119
         * https://support.microsoft.com/en-us/topic/january-9-2024-kb5034119-os-build-14393-6614-7e7dae78-5944-4041-bf3d-4660e5ef7bb4
-    * windows 2019: KB5034127
+    * Windows 2019: KB5034127
         * https://support.microsoft.com/en-gb/topic/january-9-2024-kb5034127-os-build-17763-5329-4de58ce5-eb0d-4b9a-95d1-aa15fe30b082
-    * windows 2022: KB5034129
+    * Windows 2022: KB5034129
         * https://support.microsoft.com/en-us/topic/january-9-2024-kb5034129-os-build-20348-2227-6958a36f-efaf-4ef5-a576-c5931072a89a
 
 * 이미지 업데이트(Linux)
@@ -57,15 +57,15 @@
 ### 2023. 12. 05.
 #### Image
 
-* 보안업데이트(Linux)
+* 보안 업데이트(Linux)
 	* CentOS 7.9: /usr/bin/newgrp, /sbin/unix_chkpwd SetUID 제거
 
-* 보안업데이트(Windows)
-	* windows 2016: kb5031362
+* 보안 업데이트(Windows)
+	* Windows 2016: kb5031362
 		* https://support.microsoft.com/en-au/topic/october-10-2023-kb5031362-os-build-14393-6351-0c6e713e-3d6a-4593-8a75-af0a605f249c
-	* windows 2019: kb5031361
+	* Windows 2019: kb5031361
 		* https://support.microsoft.com/en-gb/topic/october-10-2023-kb5031361-os-build-17763-4974-766593db-b47a-4b18-a698-906426860313
-	* windows 2022: kb5031364
+	* Windows 2022: kb5031364
 		* https://support.microsoft.com/en-us/topic/october-10-2023-kb5031364-os-build-20348-2031-7f1d69e7-c468-4566-887a-1902af791bbc
 
 * 이미지 업데이트(Linux)

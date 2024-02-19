@@ -9,20 +9,20 @@
     * Rocky Linux 8.8(2023.11.21.)
 
 * GPU 및 컨테이너 관련(Linux)
-    * containerd : 1.6.22 > 1.6.27
-    * nvidia driver 업데이트 : 535.104.12 > 535.154.05
-    * cuda 업데이트 : 12.2 > 변경 없음
-    * mig manager : 0.5.5 > 변경 없음
+    * containerd: 1.6.22 > 1.6.27
+    * NVIDIA 드라이버 업데이트: 535.104.12 > 535.154.05
+    * CUDA 업데이트: 12.2 > 변경 없음
+    * MIG Manager: 0.5.5 > 변경 없음
 
 * GPU(Windows)
-    * nvidia driver 업데이트 : 537.13 > 538.15
+    * NVIDIA 드라이버 업데이트: 537.13 > 538.15
 
-* 보안업데이트(Windows)
-    * windows 2016: KB5034119
+* 보안 업데이트(Windows)
+    * Windows 2016: KB5034119
         * https://support.microsoft.com/en-us/topic/january-9-2024-kb5034119-os-build-14393-6614-7e7dae78-5944-4041-bf3d-4660e5ef7bb4
-    * windows 2019: KB5034127
+    * Windows 2019: KB5034127
         * https://support.microsoft.com/en-gb/topic/january-9-2024-kb5034127-os-build-17763-5329-4de58ce5-eb0d-4b9a-95d1-aa15fe30b082
-    * windows 2022: KB5034129
+    * Windows 2022: KB5034129
         * https://support.microsoft.com/en-us/topic/january-9-2024-kb5034129-os-build-20348-2227-6958a36f-efaf-4ef5-a576-c5931072a89a
 
 * 이미지 업데이트(Linux)
@@ -71,22 +71,22 @@
 
 * GPU 및 container 관련(Linux)
     * debian 11 container - gpu driver 추가 / gpu flavor 선택 후 클러스터 생성 가능
-    * nvidia driver 업데이트: 470.199.02 > 535.104.12
-    * cuda 업데이트: 11.4 > 12.2
-    * mig manager: 0.5.4 > 0.5.5
+    * NVIDIA 드라이버 업데이트: 470.199.02 > 535.104.12
+    * CUDA 업데이트: 11.4 > 12.2
+    * MIG Manager: 0.5.4 > 0.5.5
 
 * GPU(Windows)
-	* nvidia driver 업데이트: 474.44 > 537.13
+	* NVIDIA 드라이버 업데이트: 474.44 > 537.13
 
-* 보안업데이트(Linux)
+* 보안 업데이트(Linux)
 	* CentOS 7.9: /usr/bin/newgrp, /sbin/unix_chkpwd SetUID 제거
 
-* 보안업데이트(Windows)
-	* windows 2016: kb5031362
+* 보안 업데이트(Windows)
+	* Windows 2016: kb5031362
 		* https://support.microsoft.com/en-au/topic/october-10-2023-kb5031362-os-build-14393-6351-0c6e713e-3d6a-4593-8a75-af0a605f249c
-	* windows 2019: kb5031361
+	* Windows 2019: kb5031361
 		* https://support.microsoft.com/en-gb/topic/october-10-2023-kb5031361-os-build-17763-4974-766593db-b47a-4b18-a698-906426860313
-	* windows 2022: kb5031364
+	* Windows 2022: kb5031364
 		* https://support.microsoft.com/en-us/topic/october-10-2023-kb5031364-os-build-20348-2031-7f1d69e7-c468-4566-887a-1902af791bbc
 
 * 이미지 업데이트(Linux)
@@ -406,8 +406,8 @@
 * 커널 업데이트
 
 * GPU
-    * nvidia driver 업데이트(Windows): 453.51 > 453.94
-    * nvidia driver 업데이트(Linux): 450.191.01 > 450.216.04
+    * NVIDIA 드라이버 업데이트(Windows): 453.51 > 453.94
+    * NVIDIA 드라이버 업데이트(Linux): 450.191.01 > 450.216.04
 
 * Rocky Linux 8.6(2023.02.21.)
     * 이미지 업데이트
@@ -779,23 +779,23 @@
 * Ubuntu Server 18.04.5 LTS with NVIDIA(2020. 12. 22.)
     * 이미지 업데이트
 * Windows 2012 R2 STD(2020. 12. 22.)
-    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update
+    * 2020년 11월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update
 * Windows 2016 STD(2020. 12. 22.)
-    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+    * 2020년 11월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
 * Windows 2019 STD(2020. 12. 22.)
-    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
+    * 2020년 11월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
 * Windows 2012 R2 STD with MS-SQL 2016 Standard(2020. 12. 22.)
-    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update
+    * 2020년 11월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4586845/windows-8-1-update
 * Windows 2016 STD with MS-SQL 2016 Standard(2020. 12. 22.)
-    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+    * 2020년 11월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
 * Windows 2016 STD with MS-SQL 2019 Express(2020. 12. 22.)
-    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+    * 2020년 11월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
 * Windows 2016 STD with MS-SQL 2017 Standard(2020. 12. 22.)
-    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+    * 2020년 11월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
 * Windows 2016 STD with MS-SQL 2019 Standard(2020. 12. 22.)
-    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
+    * 2020년 11월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4586830/windows-10-update-kb4586830
 * Windows 2019 STD with MS-SQL 2019 Standard(2020. 12. 22.)
-    * 2020년 11월 보안업데이트 반영: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
+    * 2020년 11월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
 
 ### 2020. 11. 03.
 
@@ -1362,7 +1362,7 @@
 
 * Windows 2012 R2 STD(2018. 08. 09.)
     * 기본으로 영문 버전 제공, 한글 사용시 사용자가 한글 언어팩을 설치하도록 변경
-    * 2018년 7월 10일 보안업데이트 적용( https://support.microsoft.com/en-us/help/4338815/windows-81-update-kb4338815 )
+    * 2018년 7월 10일 보안 업데이트 적용( https://support.microsoft.com/en-us/help/4338815/windows-81-update-kb4338815 )
     * 계정 관리
         * Interactive logon: Display user information when the session is locked : User display name only
         * Interactive logon: Do not display last user name :  Enabled
