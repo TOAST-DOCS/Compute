@@ -1,9 +1,62 @@
 ## Compute > Release Notes
 
 ### February 27, 2024
+#### Image
+* Added new images
+    * Rocky Linux 8.9(2024.02.20.)
+
+* Ended image support
+    * Rocky Linux 8.8(2023.11.21.)
+
+* Related to GPU and container (Linux)
+    * containerd: 1.6.22 > 1.6.27
+    * NVIDIA drive updated: 535.104.12 > 535.154.05
+    * CUDA updated: 12.2 > Unchanged
+    * MIG Manager: 0.5.5 > Unchanged
+
+* GPU(Windows)
+    * NVIDIA driver updated: 537.13 > 538.15
+
+* Security update (Windows)
+    * Windows 2016: KB5034119
+        * https://support.microsoft.com/en-us/topic/january-9-2024-kb5034119-os-build-14393-6614-7e7dae78-5944-4041-bf3d-4660e5ef7bb4
+    * Windows 2019: KB5034127
+        * https://support.microsoft.com/en-gb/topic/january-9-2024-kb5034127-os-build-17763-5329-4de58ce5-eb0d-4b9a-95d1-aa15fe30b082
+    * Windows 2022: KB5034129
+        * https://support.microsoft.com/en-us/topic/january-9-2024-kb5034129-os-build-20348-2227-6958a36f-efaf-4ef5-a576-c5931072a89a
+
+* Image update (Linux)
+    * CentOS 7.9(2024.02.20.)
+    * CentOS 7.9 for NAT(2024.02.20.)
+    * Debian 10.13 Buster(2024.02.20.)
+    * Debian 11.8 Bullseye(2024.02.20.)
+    * Rocky Linux 8.9(2024.02.20.)
+    * Ubuntu Server 20.04.6 LTS(2024.02.20.)
+    * Ubuntu Server 20.04.6 LTS for NAT(2024.02.20.)
+    * Ubuntu Server 22.04.3 LTS(2024.02.20.)
+
+* Image update (Windows)
+    * Windows 2016 STD(2024.02.20.) EN
+    * Windows 2016 STD(2024.02.20.) KO
+    * Windows 2019 STD(2024.02.20.) EN
+    * Windows 2019 STD(2024.02.20.) KO
+    * Windows 2022 STD(2024.02.20.) EN
+    * Windows 2022 STD(2024.02.20.) KO
+    * Windows 2016 STD with MS-SQL 2016 Standard(2024.02.20.) EN
+    * Windows 2016 STD with MS-SQL 2016 Standard(2024.02.20.) KO
+    * Windows 2016 STD with MS-SQL 2017 Standard(2024.02.20.) EN
+    * Windows 2016 STD with MS-SQL 2017 Standard(2024.02.20.) KO
+    * Windows 2016 STD with MS-SQL 2019 Express(2024.02.20.) EN
+    * Windows 2016 STD with MS-SQL 2019 Express(2024.02.20.) KO
+    * Windows 2016 STD with MS-SQL 2019 Standard(2024.02.20.) EN
+    * Windows 2016 STD with MS-SQL 2019 Standard(2024.02.20.) KO
+    * Windows 2019 STD with MS-SQL 2019 Standard(2024.02.20.) EN
+    * Windows 2019 STD with MS-SQL 2019 Standard(2024.02.20.) KO
+
 #### Instance
 * Added a feature to create images from encrypted root block storage instances
 * Deactivated the feature to terminate instances from GPU Instance
+
 
 ### November 28, 2023
 #### Instance
@@ -26,12 +79,12 @@
 
 * Related to GPU and container (Linux)
     * debian 11 container - Added gpu driver/Select gpu flavor to create clusters
-    * nvidia driver updated: 470.199.02 > 535.104.12
-    * cuda updated: 11.4 > 12.2
-    * mig manager: 0.5.4 > 0.5.5
+    * NVIDIA driver updated: 470.199.02 > 535.104.12
+    * CUDA updated: 11.4 > 12.2
+    * MIG manager: 0.5.4 > 0.5.5
 
 * GPU (Windows)
-	* nvidia driver updated: 474.44 > 537.13
+	* NVIDIA driver updated: 474.44 > 537.13
 
 * Security update (Linux)
 	* CentOS 7.9: Removed /usr/bin/newgrp, /sbin/unix_chkpwd SetUID 
@@ -128,9 +181,9 @@
     * Rocky Linux 8.7(2023.05.25.)
 
 * GPU
-    * nvidia driver updated (Linux): 470.182.03 > 470.199.02
+    * NVIDIA driver updated (Linux): 470.182.03 > 470.199.02
     * dcgm updated (Linux): 3.1.7 > 3.1.8
-    * nvidia driver updated (Windows): 474.30 > 474.44
+    * NVIDIA driver updated (Windows): 474.30 > 474.44
 
 * Changed image name
     * Ubuntu Server 20.04.6 LTS for Deep Learning(2023.06.27.) > Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.0(2023.06.27.)
@@ -244,7 +297,7 @@
 
 #### Image
 * GPU
-    * nvidia driver updated (Linux): 470.182.03
+    * NVIDIA driver updated (Linux): 470.182.03
 
 * Ubuntu Server 20.04.6 LTS for Deep Learning(2023.06.27.)
     * Image update
@@ -273,8 +326,8 @@
     * Ubuntu Server 18.04.6 LTS with NVIDIA(2023.03.21.)
 
 * GPU
-    * nvidia driver updated (Linux): 450.216.04 > 470.182.03
-    * nvidia driver updated: 453.94 > 474.30
+    * NVIDIA driver updated (Linux): 450.216.04 > 470.182.03
+    * NVIDIA driver updated: 453.94 > 474.30
 
 * CentOS 7.9(2023.05.25.)
     * Image update
@@ -424,8 +477,8 @@
 * Kernel updated
 
 * GPU
-    * nvidia driver updated (Windows): 453.51 > 453.94
-    * nvidia driver updated (Linux): 450.191.01 > 450.216.04
+    * NVIDIA driver updated (Windows): 453.51 > 453.94
+    * NVIDIA driver updated (Linux): 450.191.01 > 450.216.04
 
 * Rocky Linux 8.6(2023.02.21.)
     * Image update
