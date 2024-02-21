@@ -14,7 +14,7 @@
     * CUDA updated: 12.2 > Unchanged
     * MIG Manager: 0.5.5 > Unchanged
 
-* GPU(Windows)
+* GPU (Windows)
     * NVIDIA driver updated: 537.13 > 538.15
 
 * Security update (Windows)
