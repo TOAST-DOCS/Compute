@@ -1,5 +1,63 @@
 ## Compute > リリースノート
 
+### 2024. 02. 27.
+#### Image
+* 新規イメージ追加
+    * Rocky Linux 8.9(2024.02.20.)
+
+* イメージサポート終了
+    * Rocky Linux 8.8(2023.11.21.)
+
+* GPU及びコンテナ関連(Linux)
+    * containerd: 1.6.22 > 1.6.27
+    * NVIDIAドライバーアップデート: 535.104.12 > 535.154.05
+    * CUDAアップデート: 12.2 > 変更なし
+    * MIG Manager: 0.5.5 > 変更なし
+
+* GPU(Windows)
+    * NVIDIAドライバーアップデート: 537.13 > 538.15
+
+* セキュリティアップデート(Windows)
+    * Windows 2016: KB5034119
+        * https://support.microsoft.com/en-us/topic/january-9-2024-kb5034119-os-build-14393-6614-7e7dae78-5944-4041-bf3d-4660e5ef7bb4
+    * Windows 2019: KB5034127
+        * https://support.microsoft.com/en-gb/topic/january-9-2024-kb5034127-os-build-17763-5329-4de58ce5-eb0d-4b9a-95d1-aa15fe30b082
+    * Windows 2022: KB5034129
+        * https://support.microsoft.com/en-us/topic/january-9-2024-kb5034129-os-build-20348-2227-6958a36f-efaf-4ef5-a576-c5931072a89a
+
+* イメージアップデート(Linux)
+    * CentOS 7.9(2024.02.20.)
+    * CentOS 7.9 for NAT(2024.02.20.)
+    * Debian 10.13 Buster(2024.02.20.)
+    * Debian 11.8 Bullseye(2024.02.20.)
+    * Rocky Linux 8.9(2024.02.20.)
+    * Ubuntu Server 20.04.6 LTS(2024.02.20.)
+    * Ubuntu Server 20.04.6 LTS for NAT(2024.02.20.)
+    * Ubuntu Server 22.04.3 LTS(2024.02.20.)
+
+* イメージアップデート(Windows)
+    * Windows 2016 STD(2024.02.20.) EN
+    * Windows 2016 STD(2024.02.20.) KO
+    * Windows 2019 STD(2024.02.20.) EN
+    * Windows 2019 STD(2024.02.20.) KO
+    * Windows 2022 STD(2024.02.20.) EN
+    * Windows 2022 STD(2024.02.20.) KO
+    * Windows 2016 STD with MS-SQL 2016 Standard(2024.02.20.) EN
+    * Windows 2016 STD with MS-SQL 2016 Standard(2024.02.20.) KO
+    * Windows 2016 STD with MS-SQL 2017 Standard(2024.02.20.) EN
+    * Windows 2016 STD with MS-SQL 2017 Standard(2024.02.20.) KO
+    * Windows 2016 STD with MS-SQL 2019 Express(2024.02.20.) EN
+    * Windows 2016 STD with MS-SQL 2019 Express(2024.02.20.) KO
+    * Windows 2016 STD with MS-SQL 2019 Standard(2024.02.20.) EN
+    * Windows 2016 STD with MS-SQL 2019 Standard(2024.02.20.) KO
+    * Windows 2019 STD with MS-SQL 2019 Standard(2024.02.20.) EN
+    * Windows 2019 STD with MS-SQL 2019 Standard(2024.02.20.) KO
+
+#### Instance
+* 暗号化ルートブロックストレージインスタンスからイメージ作成機能を追加
+* GPU Instanceでインスタンス停止機能の無効化
+
+
 ### 2023. 11. 28.
 #### Instance
 * インスタンス終了機能追加
@@ -21,22 +79,22 @@
 
 * GPUおよびコンテナ関連(Linux)
     * debian 11 container - gpu driver追加/gpu flavor選択後、クラスタ作成が可能
-    * nvidia driverアップデート: 470.199.02 > 535.104.12
-    * cudaアップデート: 11.4 > 12.2
-    * mig manager: 0.5.4 > 0.5.5
+    * NVIDIAドライバーアップデート: 470.199.02 > 535.104.12
+    * CUDAアップデート: 11.4 > 12.2
+    * MIG Manager: 0.5.4 > 0.5.5
 
 * GPU(Windows)
-	* nvidia driverアップデート: 474.44 > 537.13
+	* NVIDIAドライバーアップデート: 474.44 > 537.13
 
 * セキュリティアップデート(Linux)
 	* CentOS 7.9: /usr/bin/newgrp, /sbin/unix_chkpwd SetUID除去
 
 * セキュリティアップデート(Windows)
-	* windows 2016: kb5031362
+	* Windows 2016: kb5031362
 		* https://support.microsoft.com/en-au/topic/october-10-2023-kb5031362-os-build-14393-6351-0c6e713e-3d6a-4593-8a75-af0a605f249c
-	* windows 2019: kb5031361
+	* Windows 2019: kb5031361
 		* https://support.microsoft.com/en-gb/topic/october-10-2023-kb5031361-os-build-17763-4974-766593db-b47a-4b18-a698-906426860313
-	* windows 2022: kb5031364
+	* Windows 2022: kb5031364
 		* https://support.microsoft.com/en-us/topic/october-10-2023-kb5031364-os-build-20348-2031-7f1d69e7-c468-4566-887a-1902af791bbc
 
 * イメージアップデート(Linux)
@@ -272,8 +330,8 @@
     * Ubuntu Server 18.04.6 LTS with NVIDIA(2023.03.21.)
 
 * GPU
-    * NVIDIA 드라이버 업데이트(Linux): 450.216.04 > 470.182.03
-    * NVIDIA 드라이버 업데이트: 453.94 > 474.30
+    * NVIDIAドライバーアップデート(Linux): 450.216.04 > 470.182.03
+    * NVIDIAドライバーアップデート: 453.94 > 474.30
 
 * CentOS 7.9(2023.05.25.)
     * イメージアップデート
@@ -421,8 +479,8 @@
 * カーネルアップデート
 
 * GPU
-    * nvidia driver 업데이트(Windows): 453.51 > 453.94
-    * nvidia driver 업데이트(Linux): 450.191.01 > 450.216.04
+    * NVIDIAドライバーアップデート(Windows): 453.51 > 453.94
+    * NVIDIAドライバーアップデート(Linux): 450.191.01 > 450.216.04
 
 * Rocky Linux 8.6(2023.02.21.)
     * イメージアップデート
