@@ -1,4 +1,8 @@
 ## Compute > リリースノート
+### 2024. 03. 26.
+#### Image Builder
+* アプリケーションバージョンの追加
+    * Deep Learning Framework 4.0
 
 ### 2024. 02. 27.
 #### Image
