@@ -1,4 +1,8 @@
 ## Compute > Release Notes
+### March 26, 2024
+#### Image Builder
+* Added application versions
+    * Deep Learning Framework 4.0
 
 ### February 27, 2024
 #### Instance
