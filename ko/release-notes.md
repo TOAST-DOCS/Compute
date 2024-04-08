@@ -1,4 +1,9 @@
 ## Compute > 릴리스 노트
+### 2024. 04. 23.
+#### Instance 
+* 인스턴스 타입 이용 종료 - 한국(판교) 리전에 해당 
+    * u2(Ephemeral Storage Instance)
+
 ### 2024. 03. 26.
 #### Image Builder
 * 애플리케이션 버전 추가
