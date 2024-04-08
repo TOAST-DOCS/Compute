@@ -1,7 +1,7 @@
 ## Compute > Release Notes
 ### April 23, 2024
 #### Instance 
-* Ended usage of instance type - Korea (Pangyo) region 
+* Ended the usage of instance flavor - Korea (Pangyo) region 
     * u2 (Ephemeral Storage Instance)
   
 ### March 26, 2024
