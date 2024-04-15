@@ -1,4 +1,9 @@
 ## Compute > Release Notes
+### April 23, 2024
+#### Instance 
+* Ended the usage of instance flavor - Korea (Pangyo) region 
+    * u2 (Ephemeral Storage Instance)
+  
 ### March 26, 2024
 #### Image Builder
 * Added application versions
