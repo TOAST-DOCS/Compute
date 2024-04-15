@@ -1,4 +1,9 @@
 ## Compute > リリースノート
+### 2024. 04. 23.
+#### Instance 
+* インスタンスタイプ利用終了 - 韓国(パンギョ)リージョンに該当 
+    * u2(Ephemeral Storage Instance)
+
 ### 2024. 03. 26.
 #### Image Builder
 * アプリケーションバージョンの追加
