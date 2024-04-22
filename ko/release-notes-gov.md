@@ -1,4 +1,46 @@
 ## Compute > 릴리스 노트
+### 2024. 04. 23.
+#### Image
+* 신규 이미지 추가
+    * CentOS 7.9 with Apache Kafka 3.6.1(2024.04.23.)
+    * CentOS 7.9 with CUBRID 10.2.14(2024.04.23.)
+    * CentOS 7.9 with CUBRID 11.0.13(2024.04.23.)
+    * CentOS 7.9 with MariaDB 10.11.7(2024.04.23.)
+    * CentOS 7.9 with MySQL 8.0.36(2024.04.23.)
+    * CentOS 7.9 with PostgreSQL 15.6(2024.04.23.)
+    * CentOS 7.9 with Redis 7.2.4(2024.04.23.)
+    * CentOS 7.9 with Tibero 7 CEE(2024.04.23.)
+    * CentOS 7.9 with Tibero 7 CSE(2024.04.23.)
+    * Ubuntu Server 20.04.6 LTS with Apache Kafka 3.6.1(2024.04.23.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 10.2.14(2024.04.23.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 11.0.13(2024.04.23.)
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7(2024.04.23.)
+    * Ubuntu Server 20.04.6 LTS with MySQL 8.0.36(2024.04.23.)
+    * Ubuntu Server 20.04.6 LTS with PostgreSQL 15.6(2024.04.23.)
+    * Ubuntu Server 20.04.6 LTS with Redis 7.2.4(2024.04.23.)
+
+* 이미지 지원 종료
+    * CentOS 7.9 with Apache Kafka 3.3.1(2022.12.20.)
+    * CentOS 7.9 with CUBRID 10.2.10(2023.03.21.)
+    * CentOS 7.9 with CUBRID 11.0.10(2023.03.21.)
+    * CentOS 7.9 with MariaDB 10.3.31(2022.12.20.)
+    * CentOS 7.9 with MariaDB 10.6.11(2023.03.21.)
+    * CentOS 7.9 with MySQL 5.7.35(2022.12.20.)
+    * CentOS 7.9 with MySQL 8.0.27(2022.12.20.)
+    * CentOS 7.9 with PostgreSQL 10.20(2022.12.20.)
+    * CentOS 7.9 with PostgreSQL 11.15(2022.12.20.)
+    * CentOS 7.9 with PostgreSQL 12.10(2022.12.20.)
+    * CentOS 7.9 with PostgreSQL 13.6(2022.12.20.)
+    * CentOS 7.9 with PostgreSQL 14.2(2022.12.20.)
+    * CentOS 7.9 with Redis 7.0.5(2022.12.20.)
+    * CentOS 7.9 with Tibero 7 CEE(2023.10.31.)
+    * CentOS 7.9 with Tibero 7 CSE(2023.10.31.)
+    * Ubuntu Server 20.04.6 LTS with Apache Kafka 3.3.1(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 10.2.10(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 11.0.10(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.6.11(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with MySQL 8.0.27(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with Redis 7.0.5(2023.03.21.)
 
 ### 2024. 03. 05.
 #### Image
