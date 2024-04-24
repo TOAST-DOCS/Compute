@@ -46,7 +46,6 @@
     * Ubuntu Server 20.04.6 LTS with MariaDB 10.6.11(2023.03.21.)
     * Ubuntu Server 20.04.6 LTS with MySQL 8.0.27(2023.03.21.)
     * Ubuntu Server 20.04.6 LTS with Redis 7.0.5(2023.03.21.)
-    * Ubuntu Server 22.04.3 LTS for Deep Learning v3.1.0(2023.11.21.)
 
 ### April 15, 2024
 #### Image
