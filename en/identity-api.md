@@ -3,6 +3,7 @@
 ## Common Preparations
 
 ### Check API Endpoints
+
 The NHN Cloud Infrastructure Services API provides different endpoints for each type and region. However, the Identity API uses the same endpoint for all regions.
 
 | Type | Region | Endpoint |
@@ -22,11 +23,13 @@ You can check your tenant ID to include in API requests from **Set API Endpoint*
 ### Set API Password
 
 You must set an API endpoint password, which is separate from your NHN Cloud account password, in order to use the NHN Cloud Infrastructure Services API.
+An API password is set by account. You can use the same password set in one project for all of your other projects.
 
 1. Go to **Compute > Instance > Management** and click **Set API Endpoint**.
 2. Enter an API password in **Set API Password** under **API Endpoint Settings** . 
 
-> An API password is set by account. You can use the same password set in one project for all of your other projects. 
+> [Caution]
+> When changing your API password, you must obtain a new authentication token because the existing token is no longer available.
 
 
 ## Token
@@ -36,6 +39,10 @@ You must set an API endpoint password, which is separate from your NHN Cloud acc
 To obtain a token, use the `identity` type endpoint. The `identity` service endpoint is `https://api-identity-infrastructure.nhncloudservice.com` regardless of region.
 
 You must obtain a token to make API calls. NHN Cloud uses project-scoped tokens.
+
+> [Caution]
+> When a user loses permissions from a project, the credentials expire and become unavailable.
+> If you leave NHN Cloud and your account is deleted, all credentials issued to that account will expire and become unavailable.
 
 ```
 POST /v2.0/tokens
