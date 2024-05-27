@@ -1,8 +1,116 @@
 ## Compute > Release Notes
+### May 28, 2024
+#### Instance
+* Added search/filter conditions in the instance list and improved the UI
+    * Added search condtions
+        * Instance name
+        * Instance type
+        * Image ID
+    * Added filter conditions
+        * Image type
+        * Instance status
+        
+#### Image
+* Related to GPU and container (Linux)
+    * containerd: 1.6.27 > 1.6.31
+    * NVIDIA driver updated: 535.154.05 > 535.161.08
+    * CUDA: 12.2 > Unchanged
+    * MIG Manager: 0.5.5 > 0.7.0
+    * NVIDIA DCGM: 3.1.8 > 3.3.5
+    * NVIDIA DCGM Exporter: 3.1.5 > 3.4.1
+
+* GPU(Windows)
+    * NVIDIA driver updated: 538.46 > 538.15
+
+* Security update (Windows)
+    * Windows 2016: KB5036899
+        * https://support.microsoft.com/en-us/topic/april-9-2024-kb5036899-os-build-14393-6897-6a0b7cdd-dd67-4ef8-8c38-8a936b2f952c
+    * Windows 2019: KB5036896
+        * https://support.microsoft.com/en-us/topic/april-9-2024-kb5036896-os-build-17763-5696-efb580f1-2ce4-4695-b76c-d2068a00fb92
+    * Windows 2022: KB5036909
+        * https://support.microsoft.com/en-us/topic/april-9-2024-kb5036909-os-build-20348-2402-36062ce9-f426-40c6-9fb9-ee5ab428da8c
+
+* Image update (Linux)
+    * CentOS 7.9(2024.05.21.)
+    * CentOS 7.9 - Container(2024.05.21.)
+    * CentOS 7.9 for NAT(2024.05.21.)
+    * Debian 10.13 Buster(2024.05.21.)
+    * Debian 11.9 Bullseye(2024.05.21.)
+    * Rocky Linux 8.9(2024.05.21.)
+    * Ubuntu Server 20.04.6 LTS(2024.05.21.)
+    * Ubuntu Server 20.04.6 LTS for NAT(2024.05.21.)
+    * Ubuntu Server 22.04.4 LTS(2024.05.21.)
+
+* Image update (Windows)
+    * Windows 2016 STD(2024.05.21.) EN
+    * Windows 2016 STD(2024.05.21.) KO
+    * Windows 2016 STD with MS-SQL 2016 Standard(2024.05.21.) EN
+    * Windows 2016 STD with MS-SQL 2016 Standard(2024.05.21.) KO
+    * Windows 2016 STD with MS-SQL 2017 Standard(2024.05.21.) EN
+    * Windows 2016 STD with MS-SQL 2017 Standard(2024.05.21.) KO
+    * Windows 2016 STD with MS-SQL 2019 Express(2024.05.21.) EN
+    * Windows 2016 STD with MS-SQL 2019 Express(2024.05.21.) KO
+    * Windows 2016 STD with MS-SQL 2019 Standard(2024.05.21.) EN
+    * Windows 2016 STD with MS-SQL 2019 Standard(2024.05.21.) KO
+    * Windows 2019 STD(2024.05.21.) EN
+    * Windows 2019 STD(2024.05.21.) KO
+    * Windows 2019 STD with MS-SQL 2019 Standard(2024.05.21.) EN
+    * Windows 2019 STD with MS-SQL 2019 Standard(2024.05.21.) KO
+    * Windows 2022 STD(2024.05.21.) EN
+    * Windows 2022 STD(2024.05.21.) KO
+
 ### April 23, 2024
 #### Instance 
 * Ended the usage of instance flavor - Korea (Pangyo) region 
     * u2 (Ephemeral Storage Instance)
+
+#### Image
+* Added new images
+    * CentOS 7.9 with Apache Kafka 3.6.1(2024.04.23.)
+    * CentOS 7.9 with CUBRID 10.2.14(2024.04.23.)
+    * CentOS 7.9 with CUBRID 11.0.13(2024.04.23.)
+    * CentOS 7.9 with MariaDB 10.11.7(2024.04.23.)
+    * CentOS 7.9 with MySQL 8.0.36(2024.04.23.)
+    * CentOS 7.9 with PostgreSQL 15.6(2024.04.23.)
+    * CentOS 7.9 with Redis 7.2.4(2024.04.23.)
+    * CentOS 7.9 with Tibero 7 CEE(2024.04.23.)
+    * CentOS 7.9 with Tibero 7 CSE(2024.04.23.)
+    * Ubuntu Server 20.04.6 LTS with Apache Kafka 3.6.1(2024.04.23.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 10.2.14(2024.04.23.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 11.0.13(2024.04.23.)
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7(2024.04.23.)
+    * Ubuntu Server 20.04.6 LTS with MySQL 8.0.36(2024.04.23.)
+    * Ubuntu Server 20.04.6 LTS with PostgreSQL 15.6(2024.04.23.)
+    * Ubuntu Server 20.04.6 LTS with Redis 7.2.4(2024.04.23.)
+    * Ubuntu Server 22.04.3 LTS for Deep Learning v4.0.0(2024.04.23.)
+
+* Ended image support
+    * CentOS 7.9 with Apache Kafka 3.3.1(2022.12.20.)
+    * CentOS 7.9 with CUBRID 10.2.10(2023.03.21.)
+    * CentOS 7.9 with CUBRID 11.0.10(2023.03.21.)
+    * CentOS 7.9 with MariaDB 10.3.31(2022.12.20.)
+    * CentOS 7.9 with MariaDB 10.6.11(2023.03.21.)
+    * CentOS 7.9 with MySQL 5.7.35(2022.12.20.)
+    * CentOS 7.9 with MySQL 8.0.27(2022.12.20.)
+    * CentOS 7.9 with PostgreSQL 10.20(2022.12.20.)
+    * CentOS 7.9 with PostgreSQL 11.15(2022.12.20.)
+    * CentOS 7.9 with PostgreSQL 12.10(2022.12.20.)
+    * CentOS 7.9 with PostgreSQL 13.6(2022.12.20.)
+    * CentOS 7.9 with PostgreSQL 14.2(2022.12.20.)
+    * CentOS 7.9 with Redis 7.0.5(2022.12.20.)
+    * CentOS 7.9 with Tibero 7 CEE(2023.10.31.)
+    * CentOS 7.9 with Tibero 7 CSE(2023.10.31.)
+    * Ubuntu Server 20.04.6 LTS with Apache Kafka 3.3.1(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 10.2.10(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 11.0.10(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.6.11(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with MySQL 8.0.27(2023.03.21.)
+    * Ubuntu Server 20.04.6 LTS with Redis 7.0.5(2023.03.21.)
+
+### April 15, 2024
+#### Image
+* Image update
+    * PentaSecurity WAPPLES SA 6.0.6(2024.04.15.)
   
 ### March 26, 2024
 #### Image Builder
