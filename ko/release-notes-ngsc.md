@@ -1,4 +1,64 @@
 ## Compute > 릴리스 노트
+### 2024. 06. 04.
+#### Instance
+* 인스턴스 목록 내 검색/필터 조건 확장 및 UI 개선
+    * 검색 조건 추가
+        * 인스턴스 이름
+        * 인스턴스 타입
+        * 이미지 ID
+    * 필터 조건 추가
+        * 이미지 유형
+        * 인스턴스 상태
+
+#### Image
+* GPU 및 컨테이너 관련(Linux)
+    * containerd: 1.6.27 > 1.6.31
+    * NVIDIA 드라이버 업데이트: 535.154.05 > 535.161.08
+    * CUDA 업데이트: 12.2 > 변경 없음
+    * MIG Manager: 0.5.5 > 0.7.0
+    * NVIDIA DCGM: 3.1.8 > 3.3.5
+    * NVIDIA DCGM Exporter: 3.1.5 > 3.4.1
+
+* GPU(Windows)
+    * NVIDIA 드라이버 업데이트: 538.46 > 538.15
+
+* 보안 업데이트(Windows)
+    * Windows 2016: KB5036899
+        * https://support.microsoft.com/en-us/topic/april-9-2024-kb5036899-os-build-14393-6897-6a0b7cdd-dd67-4ef8-8c38-8a936b2f952c
+    * Windows 2019: KB5036896
+        * https://support.microsoft.com/en-us/topic/april-9-2024-kb5036896-os-build-17763-5696-efb580f1-2ce4-4695-b76c-d2068a00fb92
+    * Windows 2022: KB5036909
+        * https://support.microsoft.com/en-us/topic/april-9-2024-kb5036909-os-build-20348-2402-36062ce9-f426-40c6-9fb9-ee5ab428da8c
+
+* 이미지 업데이트(Linux)
+    * CentOS 7.9(2024.05.21.)
+    * CentOS 7.9 - Container(2024.05.21.)
+    * CentOS 7.9 for NAT(2024.05.21.)
+    * Debian 10.13 Buster(2024.05.21.)
+    * Debian 11.9 Bullseye(2024.05.21.)
+    * Rocky Linux 8.9(2024.05.21.)
+    * Ubuntu Server 20.04.6 LTS(2024.05.21.)
+    * Ubuntu Server 20.04.6 LTS for NAT(2024.05.21.)
+    * Ubuntu Server 22.04.4 LTS(2024.05.21.)
+
+* 이미지 업데이트(Windows)
+    * Windows 2016 STD(2024.05.21.) EN
+    * Windows 2016 STD(2024.05.21.) KO
+    * Windows 2016 STD with MS-SQL 2016 Standard(2024.05.21.) EN
+    * Windows 2016 STD with MS-SQL 2016 Standard(2024.05.21.) KO
+    * Windows 2016 STD with MS-SQL 2017 Standard(2024.05.21.) EN
+    * Windows 2016 STD with MS-SQL 2017 Standard(2024.05.21.) KO
+    * Windows 2016 STD with MS-SQL 2019 Express(2024.05.21.) EN
+    * Windows 2016 STD with MS-SQL 2019 Express(2024.05.21.) KO
+    * Windows 2016 STD with MS-SQL 2019 Standard(2024.05.21.) EN
+    * Windows 2016 STD with MS-SQL 2019 Standard(2024.05.21.) KO
+    * Windows 2019 STD(2024.05.21.) EN
+    * Windows 2019 STD(2024.05.21.) KO
+    * Windows 2019 STD with MS-SQL 2019 Standard(2024.05.21.) EN
+    * Windows 2019 STD with MS-SQL 2019 Standard(2024.05.21.) KO
+    * Windows 2022 STD(2024.05.21.) EN
+    * Windows 2022 STD(2024.05.21.) KO
+
 ### 2024. 04. 23.
 #### Image
 * 신규 이미지 추가
