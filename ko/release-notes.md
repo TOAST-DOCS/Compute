@@ -1,4 +1,22 @@
 ## Compute > 릴리스 노트
+### 2024. 08. 27.
+#### Instance
+* 인스턴스 키페어 변경 기능 추가
+
+#### Image Builder
+* 애플리케이션 버전 추가
+    * PostgreSQL 15
+* 애플리케이션 버전 지원 종료
+    * PostgreSQL 10
+    * PostgreSQL 11
+    * PostgreSQL 12
+    * PostgreSQL 13
+    * PostgreSQL 14
+    * Slurm 21.08
+    * WebtoB 5.0
+    * JEUS(Domain Administrator Server) 8
+    * JEUS(Managed Server) 8
+
 ### 2024. 05. 28.
 #### Instance
 * 인스턴스 목록 내 검색/필터 조건 확장 및 UI 개선
