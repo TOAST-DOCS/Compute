@@ -1,4 +1,22 @@
 ## Compute > Release Notes
+### August 27, 2024
+#### Instance
+* Added a feature to change instance key pairs
+
+#### Image Builder
+* Added supported application version
+    * PostgreSQL 15
+* Ended application version support
+    * PostgreSQL 10
+    * PostgreSQL 11
+    * PostgreSQL 12
+    * PostgreSQL 13
+    * PostgreSQL 14
+    * Slurm 21.08
+    * WebtoB 5.0
+    * JEUS (Domain Administrator Server) 8
+    * JEUS (Managed Server) 8
+
 ### May 28, 2024
 #### Instance
 * Added search/filter conditions in the instance list and improved the UI
