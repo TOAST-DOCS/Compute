@@ -1,4 +1,22 @@
 ## Compute > リリースノート
+### 2024. 08. 27.
+#### Instance
+* インスタンスキーペア変更機能の追加
+
+#### Image Builder
+* アプリケーションサポートバージョンの追加
+    * PostgreSQL 15
+* アプリケーションバージョンサポートの終了
+    * PostgreSQL 10
+    * PostgreSQL 11
+    * PostgreSQL 12
+    * PostgreSQL 13
+    * PostgreSQL 14
+    * Slurm 21.08
+    * WebtoB 5.0
+    * JEUS(Domain Administrator Server) 8
+    * JEUS(Managed Server) 8
+
 ### 2024. 05. 28.
 #### Instance
 * インスタンスリスト内検索/フィルタ条件拡張及びUIの改善
