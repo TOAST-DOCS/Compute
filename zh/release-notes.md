@@ -1,5 +1,8 @@
 ## Compute > Release Notes
 ### August 27, 2024
+#### Public API
+* Added US (California) region
+
 #### Instance
 * Added a feature to change instance key pairs
 
