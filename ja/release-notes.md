@@ -1,4 +1,92 @@
 ## Compute > リリースノート
+### 2024. 08. 27.
+#### Image
+* GPU及びコンテナ関連(Linux)
+    * containerd: 1.6.31 > 1.6.32
+    * NVIDIAドライバーアップデート: 535.161.08 > 535.183.06
+    * CUDAアップデート: 12.2 > 変更なし
+    * MIG Manager: 0.7.0 > 変更なし
+    * NVIDIA DCGM: 3.3.5 > 変更なし
+    * NVIDIA DCGM Exporter: 3.4.1 > 変更なし
+
+* GPU(Windows)
+    * NVIDIAドライバーアップデート: 538.46 > 538.78
+
+* セキュリティアップデート(Windows)
+    * Windows 2016: KB5040434
+        * https://support.microsoft.com/en-us/topic/july-9-2024-kb5040434-os-build-14393-7159-40d1baef-65b4-467f-9bd9-729d369fcc4c
+    * Windows 2019: KB5040430
+        * https://support.microsoft.com/en-us/topic/july-9-2024-kb5040430-os-build-17763-6054-0bb10c24-db8c-47eb-8fa9-9ebc06afa4e7
+    * Windows 2022: KB5040437
+        * https://support.microsoft.com/en-us/topic/july-9-2024-kb5040437-os-build-20348-2582-5b28d9b8-fcba-43bb-91e6-062f43c7ec7c
+
+* 新規イメージ追加
+    * PentaSecurity WAPPLES SA 6.0.6(2024.08.20.)
+    * Debian 12.6 Bookworm(2024.08.20.) 
+    * Rocky Linux 8.10(2024.08.20.)
+
+* イメージサポート終了
+    * Debian 10.13 Buster(2024.05.21.)
+    * Rocky Linux 8.9(2024.05.21.)
+
+* イメージアップデート(Linux)
+    * CentOS 7.9(2024.08.20.)
+    * CentOS 7.9 for NAT(2024.08.20.)
+    * Debian 11.10 Bullseye(2024.08.20.)
+    * Ubuntu Server 20.04.6 LTS(2024.08.20.)
+    * Ubuntu Server 20.04.6 LTS for NAT(2024.08.20.)
+    * Ubuntu Server 20.04.6 LTS with NVIDIA(2024.08.20.)
+    * Ubuntu Server 22.04.4 LTS(2024.08.20.)
+    * Ubuntu Server 22.04.4 LTS with NVIDIA(2024.08.20.)
+
+* イメージアップデート(Windows)
+    * Windows 2016 STD(2024.08.20.) EN
+    * Windows 2016 STD(2024.08.20.) KO
+    * Windows 2016 STD with MS-SQL 2016 Standard(2024.08.20.) EN
+    * Windows 2016 STD with MS-SQL 2016 Standard(2024.08.20.) KO
+    * Windows 2016 STD with MS-SQL 2017 Standard(2024.08.20.) EN
+    * Windows 2016 STD with MS-SQL 2017 Standard(2024.08.20.) KO
+    * Windows 2016 STD with MS-SQL 2019 Express(2024.08.20.) EN
+    * Windows 2016 STD with MS-SQL 2019 Express(2024.08.20.) KO
+    * Windows 2016 STD with MS-SQL 2019 Standard(2024.08.20.) EN
+    * Windows 2016 STD with MS-SQL 2019 Standard(2024.08.20.) KO
+    * Windows 2019 STD(2024.08.20.) EN
+    * Windows 2019 STD(2024.08.20.) KO
+    * Windows 2019 STD with MS-SQL 2019 Standard(2024.08.20.) EN
+    * Windows 2019 STD with MS-SQL 2019 Standard(2024.08.20.) KO
+    * Windows 2022 STD(2024.08.20.) EN
+    * Windows 2022 STD(2024.08.20.) KO
+
+#### Public API
+* 米国(カリフォルニア)リージョン追加
+
+#### Instance
+* インスタンスキーペア変更機能の追加
+
+#### Image Builder
+* アプリケーションサポートバージョンの追加
+    * PostgreSQL 15
+    * NHN Kubernetes Service(NKS) Worker Node 1.6
+	* NHN Kubernetes Service(NKS) Worker Node(GPU) 1.6
+* アプリケーションバージョンサポートの終了
+    * PostgreSQL 10
+    * PostgreSQL 11
+    * PostgreSQL 12
+    * PostgreSQL 13
+    * PostgreSQL 14
+    * Slurm 21.08
+    * WebtoB 5.0
+    * JEUS(Domain Administrator Server) 8
+    * JEUS(Managed Server) 8
+* 新規ベースイメージの追加
+	* Rocky Linux 8.10
+	* Debian 12 Bookworm
+* ベースイメージのサポート終了
+	* Rocky Linux 8.9
+	* Debian 10 Buster
+	* Debian 11 Bullseye
+	    * NHN Kubernetes Service(NKS) Worker Node / NHN Kubernetes Service(NKS) Worker Node(GPU)
+
 ### 2024. 05. 28.
 #### Instance
 * インスタンスリスト内検索/フィルタ条件拡張及びUIの改善
