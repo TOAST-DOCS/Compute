@@ -66,6 +66,8 @@
 #### Image Builder
 * アプリケーションサポートバージョンの追加
     * PostgreSQL 15
+    * NHN Kubernetes Service(NKS) Worker Node 1.6
+	* NHN Kubernetes Service(NKS) Worker Node(GPU) 1.6
 * アプリケーションバージョンサポートの終了
     * PostgreSQL 10
     * PostgreSQL 11
@@ -76,6 +78,14 @@
     * WebtoB 5.0
     * JEUS(Domain Administrator Server) 8
     * JEUS(Managed Server) 8
+* 新規ベースイメージの追加
+	* Rocky Linux 8.10
+	* Debian 12 Bookworm
+* ベースイメージのサポート終了
+	* Rocky Linux 8.9
+	* Debian 10 Buster
+	* Debian 11 Bullseye
+	    * NHN Kubernetes Service(NKS) Worker Node / NHN Kubernetes Service(NKS) Worker Node(GPU)
 
 ### 2024. 05. 28.
 #### Instance
