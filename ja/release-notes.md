@@ -21,6 +21,7 @@
         * https://support.microsoft.com/en-us/topic/july-9-2024-kb5040437-os-build-20348-2582-5b28d9b8-fcba-43bb-91e6-062f43c7ec7c
 
 * 新規イメージ追加
+    * PentaSecurity WAPPLES SA 6.0.6(2024.08.20.)
     * Debian 12.6 Bookworm(2024.08.20.) 
     * Rocky Linux 8.10(2024.08.20.)
 
