@@ -1,5 +1,59 @@
 ## Compute > 릴리스 노트
 ### 2024. 08. 27.
+#### Image
+* GPU 및 컨테이너 관련(Linux)
+    * containerd: 1.6.31 > 1.6.32
+    * NVIDIA 드라이버 업데이트: 535.161.08 > 535.183.06
+    * CUDA 업데이트: 12.2 > 변경 없음
+    * MIG Manager: 0.7.0 > 변경 없음
+    * NVIDIA DCGM: 3.3.5 > 변경 없음
+    * NVIDIA DCGM Exporter: 3.4.1 > 변경 없음
+
+* GPU(Windows)
+    * NVIDIA 드라이버 업데이트: 538.46 > 538.78
+
+* 보안 업데이트(Windows)
+    * Windows 2016: KB5040434
+        * https://support.microsoft.com/en-us/topic/july-9-2024-kb5040434-os-build-14393-7159-40d1baef-65b4-467f-9bd9-729d369fcc4c
+    * Windows 2019: KB5040430
+        * https://support.microsoft.com/en-us/topic/july-9-2024-kb5040430-os-build-17763-6054-0bb10c24-db8c-47eb-8fa9-9ebc06afa4e7
+    * Windows 2022: KB5040437
+        * https://support.microsoft.com/en-us/topic/july-9-2024-kb5040437-os-build-20348-2582-5b28d9b8-fcba-43bb-91e6-062f43c7ec7c
+
+* 신규 이미지 추가
+    * Debian 12.6 Bookworm(2024.08.20.)
+    * Rocky Linux 8.10(2024.08.20.)
+
+* 이미지 지원 종료
+    * Debian 10.13 Buster(2024.05.21.)
+    * Rocky Linux 8.9(2024.05.21.)
+
+* 이미지 업데이트(Linux)
+    * CentOS 7.9(2024.08.20.)
+    * CentOS 7.9 for NAT(2024.08.20.)
+    * Debian 11.10 Bullseye(2024.08.20.)
+    * Ubuntu Server 20.04.6 LTS(2024.08.20.)
+    * Ubuntu Server 20.04.6 LTS for NAT(2024.08.20.)
+    * Ubuntu Server 22.04.4 LTS(2024.08.20.)
+
+* 이미지 업데이트(Windows)
+    * Windows 2016 STD(2024.08.20.) EN
+    * Windows 2016 STD(2024.08.20.) KO
+    * Windows 2016 STD with MS-SQL 2016 Standard(2024.08.20.) EN
+    * Windows 2016 STD with MS-SQL 2016 Standard(2024.08.20.) KO
+    * Windows 2016 STD with MS-SQL 2017 Standard(2024.08.20.) EN
+    * Windows 2016 STD with MS-SQL 2017 Standard(2024.08.20.) KO
+    * Windows 2016 STD with MS-SQL 2019 Express(2024.08.20.) EN
+    * Windows 2016 STD with MS-SQL 2019 Express(2024.08.20.) KO
+    * Windows 2016 STD with MS-SQL 2019 Standard(2024.08.20.) EN
+    * Windows 2016 STD with MS-SQL 2019 Standard(2024.08.20.) KO
+    * Windows 2019 STD(2024.08.20.) EN
+    * Windows 2019 STD(2024.08.20.) KO
+    * Windows 2019 STD with MS-SQL 2019 Standard(2024.08.20.) EN
+    * Windows 2019 STD with MS-SQL 2019 Standard(2024.08.20.) KO
+    * Windows 2022 STD(2024.08.20.) EN
+    * Windows 2022 STD(2024.08.20.) KO
+
 #### Instance
 * 인스턴스 키페어 변경 기능 추가
 
