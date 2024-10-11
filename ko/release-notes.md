@@ -1,4 +1,9 @@
 ## Compute > 릴리스 노트
+### 2024. 10. 29.
+#### Image Builder
+* 애플리케이션 버전 추가
+    * Deep Learning Framework 5.0
+
 ### 2024. 08. 27.
 #### Image
 * GPU 및 컨테이너 관련(Linux)
