@@ -1,4 +1,5 @@
 ## Compute > 릴리스 노트
+
 ### 2024. 10. 29.
 * 이미지 업데이트(Linux)
     * Ubuntu Server 20.04.6 LTS with Apache Kafka 3.6.1(2024.10.29.)
@@ -8,6 +9,7 @@
     * Ubuntu Server 20.04.6 LTS with MySQL 8.0.36(2024.10.29.)
     * Ubuntu Server 20.04.6 LTS with PostgreSQL 15.8(2024.10.29.)
     * Ubuntu Server 20.04.6 LTS with Redis 7.2.4(2024.10.29.)
+
 
 ### 2024. 09. 05.
 #### Image

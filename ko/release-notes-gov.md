@@ -11,6 +11,7 @@
     * Ubuntu Server 20.04.6 LTS with PostgreSQL 15.8(2024.10.29.)
     * Ubuntu Server 20.04.6 LTS with Redis 7.2.4(2024.10.29.)
 
+
 ### 2024. 09. 05.
 #### Image
 * GPU 및 컨테이너 관련(Linux)
