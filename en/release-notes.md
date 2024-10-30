@@ -1,4 +1,9 @@
 ## Compute > Release Notes
+### October 29, 2024
+#### Image Builder
+* Added application version
+    * Deep Learning Framework 5.0
+    
 ### August 27, 2024
 #### Image
 * Related to GPU and Container (Linux)

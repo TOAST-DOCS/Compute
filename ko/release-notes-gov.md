@@ -15,6 +15,19 @@
     * 사용자 스크립트 기능 사용 여부 설정
     * 사용 대상 서비스 설정
 
+
+### 2024. 10. 29.
+#### Image
+* 이미지 업데이트(Linux)
+    * Ubuntu Server 20.04.6 LTS with Apache Kafka 3.6.1(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 10.2.14(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 11.0.13(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with MySQL 8.0.36(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with PostgreSQL 15.8(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with Redis 7.2.4(2024.10.29.)
+
+
 ### 2024. 09. 05.
 #### Image
 * GPU 및 컨테이너 관련(Linux)
