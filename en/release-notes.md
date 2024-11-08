@@ -1,4 +1,20 @@
 ## Compute > Release Notes
+### November 26, 2024
+#### Instance
+* Added the feature to change the OS details of an instance
+
+#### Image
+* Improved the image modification feature
+  * Added items for modifiction
+    * OS version value
+    * Maximum CPU value 
+    * Minimum CPU value
+    * Minimum memory value
+    * Minimum block storage value
+    * Enable/disable image creation
+    * Enable/disable user script
+    * Set applicable services
+
 ### October 29, 2024
 #### Image Builder
 * Added application version
