@@ -19,6 +19,25 @@
 #### Image Builder
 * Added application version
     * Deep Learning Framework 5.0
+
+#### Image
+* Added new images
+    * Ubuntu Server 22.04.4 LTS for Deep Learning v3.1.1(2024.10.29.)
+    * Ubuntu Server 22.04.4 LTS for Deep Learning v4.0.1(2024.10.29.)
+    * Ubuntu Server 22.04.4 LTS for Deep Learning v5.0.0(2024.10.29.)
+
+* Ended image support
+    * Ubuntu Server 22.04.3 LTS for Deep Learning v3.1.0(2023.11.21.)
+    * Ubuntu Server 22.04.3 LTS for Deep Learning v4.0.0(2024.04.23.)
+
+* image update (Linux)
+    * Ubuntu Server 20.04.6 LTS with Apache Kafka 3.6.1(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 10.2.14(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 11.0.13(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with MySQL 8.0.36(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with PostgreSQL 15.8(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with Redis 7.2.4(2024.10.29.)
     
 ### August 27, 2024
 #### Image
