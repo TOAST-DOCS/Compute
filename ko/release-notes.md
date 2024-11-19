@@ -15,6 +15,76 @@
     * 사용자 스크립트 기능 사용 여부 설정
     * 사용 대상 서비스 설정
 
+* GPU 및 container 관련(Linux)
+    * containerd : 1.6.32 -> 변경 없음
+    * nvidia driver 업데이트 : 535.183.06 -> 535.216.01
+    * cuda 업데이트 : 12.2 -> 변경 없음
+    * dcgm : 3.3.5 -> 변경 없음
+    * dcgm-exporter : 3.4.1 -> 변경 없음
+    * mig manager : 0.7.0 -> 변경 없음
+    * min disk size(GB) : 20 -> 30
+    * dcgm-exporter 미설치 이슈 패치(NVIDIA, Deep Learning 이미지)
+
+* GPU(Windows)
+    * nvidia driver 업데이트: 538.78 -> 538.95
+    * cuda 버전: 12.2
+
+* 보안업데이트
+    * windows 2016: KB5044293
+        * https://support.microsoft.com/en-us/topic/october-8-2024-kb5044293-os-build-14393-7428-3f172048-e2d1-4eb2-b6b9-41abd891e52f
+    * windows 2019: KB5044277
+        * https://support.microsoft.com/en-us/topic/october-8-2024-kb5044277-os-build-17763-6414-edccc872-2f4e-4ac6-b224-50ca8f1acd4f
+    * windows 2022 : KB5044281
+        * https://support.microsoft.com/en-us/topic/october-8-2024-kb5044281-os-build-20348-2762-e063059c-9122-4324-86e8-4f6f3383a20a
+
+* 신규 이미지 추가
+     * Rocky Linux 8.10 for NAT(2024.11.19.)
+     * Rocky Linux 8.10 with Tibero 7 Enterprise(2024.11.19.)
+     * Rocky Linux 8.10 with Tibero 7 Standard(2024.11.19.)
+     * Rocky Linux 9.4(2024.11.19.)
+
+* 이미지 지원 종료
+     * CentOS 7.9 with Tibero 7 CEE(2024.04.23.)
+     * CentOS 7.9 with Tibero 7 CSE(2024.04.23.)
+     * CentOS 7.9 - Container(2024.08.20.)
+     * CentOS 7.9 for NAT(2024.08.20.)
+
+* 이미지 업데이트(Linux)
+     * Debian 11.11 Bullseye(2024.11.19.)
+     * Debian 12.7 Bookworm(2024.11.19.)
+     * Rocky Linux 8.10(2024.11.19.)
+     * Rocky Linux 8.10 - Container(2024.11.19.)
+     * Ubuntu Server 20.04.6 LTS(2024.11.19.)
+     * Ubuntu Server 20.04.6 LTS - Container(2024.11.19.)
+     * Ubuntu Server 20.04.6 LTS for NAT(2024.11.19.)
+     * Ubuntu Server 22.04.4 LTS for Deep Learning v3.1.1(2024.10.29.)
+     * Ubuntu Server 22.04.4 LTS for Deep Learning v4.0.1(2024.10.29.)
+     * Ubuntu Server 22.04.4 LTS for Deep Learning v5.0.0(2024.10.29.)
+     * Ubuntu Server 20.04.6 LTS with NVIDIA(2024.11.19.)
+     * Ubuntu Server 22.04.5 LTS(2024.11.19.)
+     * Ubuntu Server 22.04.5 LTS - Container(2024.11.19.)
+     * Ubuntu Server 22.04.5 LTS with NVIDIA(2024.11.19.)
+
+* 이미지 업데이트(Windows)
+     * Windows 2016 STD(2024.11.19.) EN
+     * Windows 2016 STD(2024.11.19.) KO
+     * Windows 2016 STD with MS-SQL 2016 Standard(2024.11.19.) EN
+     * Windows 2016 STD with MS-SQL 2016 Standard(2024.11.19.) KO
+     * Windows 2016 STD with MS-SQL 2017 Standard(2024.11.19.) EN
+     * Windows 2016 STD with MS-SQL 2017 Standard(2024.11.19.) KO
+     * Windows 2016 STD with MS-SQL 2019 Express(2024.11.19.) EN
+     * Windows 2016 STD with MS-SQL 2019 Express(2024.11.19.) KO
+     * Windows 2016 STD with MS-SQL 2019 Standard(2024.11.19.) EN
+     * Windows 2016 STD with MS-SQL 2019 Standard(2024.11.19.) KO
+     * Windows 2019 STD(2024.11.19.) EN
+     * Windows 2019 STD(2024.11.19.) KO
+     * Windows 2019 STD with MS-SQL 2019 Standard(2024.11.19.) EN
+     * Windows 2019 STD with MS-SQL 2019 Standard(2024.11.19.) KO
+     * Windows 2019 STD with NVIDIA(2024.11.19.) KO
+     * Windows 2022 STD(2024.11.19.) EN
+     * Windows 2022 STD(2024.11.19.) KO
+
+
 ### 2024. 10. 29.
 #### Image Builder
 * 애플리케이션 버전 추가
