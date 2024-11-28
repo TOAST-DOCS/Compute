@@ -1,5 +1,20 @@
 ## Compute > Release Notes
 ### November 26, 2024
+#### Instance
+* Added the feature to change the OS details of an instance
+
+#### Image
+* Improved the image modification feature
+  * Added items for modifiction
+    * OS version value
+    * Maximum CPU value 
+    * Minimum CPU value
+    * Minimum memory value
+    * Minimum block storage value
+    * Enable/disable image creation
+    * Enable/disable user script
+    * Set applicable services
+
 #### Image Builder
 * Ended application version support
     * NHN Kubernetes Service(NKS) Worker Node 1.0
@@ -14,7 +29,82 @@
 * Added application version
     * Deep Learning Framework 5.0
 
+#### Image
+* Added new images
+    * Ubuntu Server 22.04.4 LTS for Deep Learning v3.1.1(2024.10.29.)
+    * Ubuntu Server 22.04.4 LTS for Deep Learning v4.0.1(2024.10.29.)
+    * Ubuntu Server 22.04.4 LTS for Deep Learning v5.0.0(2024.10.29.)
+
+* Ended image support
+    * Ubuntu Server 22.04.3 LTS for Deep Learning v3.1.0(2023.11.21.)
+    * Ubuntu Server 22.04.3 LTS for Deep Learning v4.0.0(2024.04.23.)
+
+* image update (Linux)
+    * Ubuntu Server 20.04.6 LTS with Apache Kafka 3.6.1(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 10.2.14(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 11.0.13(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with MySQL 8.0.36(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with PostgreSQL 15.8(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with Redis 7.2.4(2024.10.29.)
+    
 ### August 27, 2024
+#### Image
+* Related to GPU and Container (Linux)
+    * containerd: 1.6.31 > 1.6.32
+    * NVIDIA driver updated: 535.161.08 > 535.183.06
+    * CUDA updated: 12.2 > Unchanged
+    * MIG Manager: 0.7.0 > Unchanged
+    * NVIDIA DCGM: 3.3.5 > Unchanged
+    * NVIDIA DCGM Exporter: 3.4.1 > Unchanged
+
+* GPU (Windows)
+    * NVIDIA driver updated: 538.46 > 538.78
+
+* Security update (Windows)
+    * Windows 2016: KB5040434
+        * https://support.microsoft.com/en-us/topic/july-9-2024-kb5040434-os-build-14393-7159-40d1baef-65b4-467f-9bd9-729d369fcc4c
+    * Windows 2019: KB5040430
+        * https://support.microsoft.com/en-us/topic/july-9-2024-kb5040430-os-build-17763-6054-0bb10c24-db8c-47eb-8fa9-9ebc06afa4e7
+    * Windows 2022: KB5040437
+        * https://support.microsoft.com/en-us/topic/july-9-2024-kb5040437-os-build-20348-2582-5b28d9b8-fcba-43bb-91e6-062f43c7ec7c
+
+* Added new images
+    * Debian 12.6 Bookworm(2024.08.20.) 
+    * Rocky Linux 8.10(2024.08.20.)
+
+* Ended image support
+    * Debian 10.13 Buster(2024.05.21.)
+    * Rocky Linux 8.9(2024.05.21.)
+
+* Image update (Linux)
+    * CentOS 7.9(2024.08.20.)
+    * CentOS 7.9 for NAT(2024.08.20.)
+    * Debian 11.10 Bullseye(2024.08.20.)
+    * Ubuntu Server 20.04.6 LTS(2024.08.20.)
+    * Ubuntu Server 20.04.6 LTS for NAT(2024.08.20.)
+    * Ubuntu Server 20.04.6 LTS with NVIDIA(2024.08.20.)
+    * Ubuntu Server 22.04.4 LTS(2024.08.20.)
+    * Ubuntu Server 22.04.4 LTS with NVIDIA(2024.08.20.)
+
+* Image update (Windows)
+    * Windows 2016 STD(2024.08.20.) EN
+    * Windows 2016 STD(2024.08.20.) KO
+    * Windows 2016 STD with MS-SQL 2016 Standard(2024.08.20.) EN
+    * Windows 2016 STD with MS-SQL 2016 Standard(2024.08.20.) KO
+    * Windows 2016 STD with MS-SQL 2017 Standard(2024.08.20.) EN
+    * Windows 2016 STD with MS-SQL 2017 Standard(2024.08.20.) KO
+    * Windows 2016 STD with MS-SQL 2019 Express(2024.08.20.) EN
+    * Windows 2016 STD with MS-SQL 2019 Express(2024.08.20.) KO
+    * Windows 2016 STD with MS-SQL 2019 Standard(2024.08.20.) EN
+    * Windows 2016 STD with MS-SQL 2019 Standard(2024.08.20.) KO
+    * Windows 2019 STD(2024.08.20.) EN
+    * Windows 2019 STD(2024.08.20.) KO
+    * Windows 2019 STD with MS-SQL 2019 Standard(2024.08.20.) EN
+    * Windows 2019 STD with MS-SQL 2019 Standard(2024.08.20.) KO
+    * Windows 2022 STD(2024.08.20.) EN
+    * Windows 2022 STD(2024.08.20.) KO
+
 #### Public API
 * Added US (California) region
 
@@ -44,67 +134,6 @@
 	* Debian 10 Buster
 	* Debian 11 Bullseye
 	    * NHN Kubernetes Service(NKS) Worker Node / NHN Kubernetes Service(NKS) Worker Node(GPU)
-
-
-### May 28, 2024
-#### Instance
-* Added search/filter conditions in the instance list and improved the UI
-    * Added search condtions
-        * Instance name
-        * Instance type
-        * Image ID
-    * Added filter conditions
-        * Image type
-        * Instance status
-        
-#### Image
-* Related to GPU and container (Linux)
-    * containerd: 1.6.27 > 1.6.31
-    * NVIDIA driver updated: 535.154.05 > 535.161.08
-    * CUDA: 12.2 > Unchanged
-    * MIG Manager: 0.5.5 > 0.7.0
-    * NVIDIA DCGM: 3.1.8 > 3.3.5
-    * NVIDIA DCGM Exporter: 3.1.5 > 3.4.1
-
-* GPU(Windows)
-    * NVIDIA driver updated: 538.46 > 538.15
-
-* Security update (Windows)
-    * Windows 2016: KB5036899
-        * https://support.microsoft.com/en-us/topic/april-9-2024-kb5036899-os-build-14393-6897-6a0b7cdd-dd67-4ef8-8c38-8a936b2f952c
-    * Windows 2019: KB5036896
-        * https://support.microsoft.com/en-us/topic/april-9-2024-kb5036896-os-build-17763-5696-efb580f1-2ce4-4695-b76c-d2068a00fb92
-    * Windows 2022: KB5036909
-        * https://support.microsoft.com/en-us/topic/april-9-2024-kb5036909-os-build-20348-2402-36062ce9-f426-40c6-9fb9-ee5ab428da8c
-
-* Image update (Linux)
-    * CentOS 7.9(2024.05.21.)
-    * CentOS 7.9 - Container(2024.05.21.)
-    * CentOS 7.9 for NAT(2024.05.21.)
-    * Debian 10.13 Buster(2024.05.21.)
-    * Debian 11.9 Bullseye(2024.05.21.)
-    * Rocky Linux 8.9(2024.05.21.)
-    * Ubuntu Server 20.04.6 LTS(2024.05.21.)
-    * Ubuntu Server 20.04.6 LTS for NAT(2024.05.21.)
-    * Ubuntu Server 22.04.4 LTS(2024.05.21.)
-
-* Image update (Windows)
-    * Windows 2016 STD(2024.05.21.) EN
-    * Windows 2016 STD(2024.05.21.) KO
-    * Windows 2016 STD with MS-SQL 2016 Standard(2024.05.21.) EN
-    * Windows 2016 STD with MS-SQL 2016 Standard(2024.05.21.) KO
-    * Windows 2016 STD with MS-SQL 2017 Standard(2024.05.21.) EN
-    * Windows 2016 STD with MS-SQL 2017 Standard(2024.05.21.) KO
-    * Windows 2016 STD with MS-SQL 2019 Express(2024.05.21.) EN
-    * Windows 2016 STD with MS-SQL 2019 Express(2024.05.21.) KO
-    * Windows 2016 STD with MS-SQL 2019 Standard(2024.05.21.) EN
-    * Windows 2016 STD with MS-SQL 2019 Standard(2024.05.21.) KO
-    * Windows 2019 STD(2024.05.21.) EN
-    * Windows 2019 STD(2024.05.21.) KO
-    * Windows 2019 STD with MS-SQL 2019 Standard(2024.05.21.) EN
-    * Windows 2019 STD with MS-SQL 2019 Standard(2024.05.21.) KO
-    * Windows 2022 STD(2024.05.21.) EN
-    * Windows 2022 STD(2024.05.21.) KO
 
 ### May 28, 2024
 #### Instance
