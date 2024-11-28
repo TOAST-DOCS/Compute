@@ -15,6 +15,14 @@
     * ユーザースクリプト機能使用有無の設定
     * 使用対象サービス設定
 
+* アプリケーションバージョンサポートの終了
+    * NHN Kubernetes Service(NKS) Worker Node 1.0
+    * NHN Kubernetes Service(NKS) Worker Node(GPU) 1.0
+    * MySQL 5.7
+    * MariaDB 10.3
+* ベースイメージのサポート終了
+    * CentOS 7.9
+
 ### 2024. 10. 29.
 #### Image Builder
 * アプリケーションバージョン追加
