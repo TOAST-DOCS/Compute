@@ -15,6 +15,15 @@
     * Enable/disable user script
     * Set applicable services
 
+#### Image Builder
+* Ended application version support
+    * NHN Kubernetes Service(NKS) Worker Node 1.0
+    * NHN Kubernetes Service(NKS) Worker Node(GPU) 1.0
+    * MySQL 5.7
+    * MariaDB 10.3
+* Ended base image support
+    * CentOS 7.9
+
 ### October 29, 2024
 #### Image Builder
 * Added application version
