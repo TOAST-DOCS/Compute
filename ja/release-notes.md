@@ -15,6 +15,89 @@
     * ユーザースクリプト機能使用有無の設定
     * 使用対象サービス設定
 
+* GPU及びコンテナ関連(Linux)
+    * containerd: 1.6.32 > 変更なし
+    * NVIDIAドライバーアップデート: 535.183.06 > 535.216.01
+    * CUDAアップデート: 12.2 > 変更なし
+    * DCGM: 3.3.5 > 変更なし
+    * DCGM-Exporter: 3.4.1 > 変更なし
+    * MIG Manager: 0.7.0 > 変更なし
+    * 最小ディスクサイズ(GB): 20 > 30
+    * DCGM-Exporter 未インストールイシューパッチ(NVIDIAイメージ)
+
+* GPU(Windows)
+    * NVIDIAドライバーアップデート: 538.78 > 538.95
+    * CUDAバージョン: 12.2
+
+* セキュリティアップデート
+    * windows 2016: KB5044293
+        * https://support.microsoft.com/en-us/topic/october-8-2024-kb5044293-os-build-14393-7428-3f172048-e2d1-4eb2-b6b9-41abd891e52f
+    * windows 2019: KB5044277
+        * https://support.microsoft.com/en-us/topic/october-8-2024-kb5044277-os-build-17763-6414-edccc872-2f4e-4ac6-b224-50ca8f1acd4f
+    * windows 2022: KB5044281
+        * https://support.microsoft.com/en-us/topic/october-8-2024-kb5044281-os-build-20348-2762-e063059c-9122-4324-86e8-4f6f3383a20a
+
+* 新規イメージ追加
+     * Rocky Linux 8.10 for NAT(2024.11.19.)
+     * Rocky Linux 8.10 with Tibero 7 Enterprise(2024.11.19.)
+     * Rocky Linux 8.10 with Tibero 7 Standard(2024.11.19.)
+     * Rocky Linux 9.4(2024.11.19.)
+
+* イメージサポート終了
+     * CentOS 7.9(2024.08.20.)
+     * CentOS 7.9 - Container(2024.08.20.)
+     * CentOS 7.9 for NAT(2024.08.20.)
+     * CentOS 7.9 with Apache Kafka 3.6.1(2024.04.23.)
+     * CentOS 7.9 with CUBRID 10.2.14(2024.04.23.)
+     * CentOS 7.9 with CUBRID 11.0.13(2024.04.23.)
+     * CentOS 7.9 with MariaDB 10.11.7(2024.04.23.)
+     * CentOS 7.9 with MySQL 8.0.36(2024.04.23.)
+     * CentOS 7.9 with PostgreSQL 15.6(2024.04.23.)
+     * CentOS 7.9 with Redis 7.2.4(2024.04.23.)
+     * CentOS 7.9 with Tibero 7 CEE(2024.04.23.)
+     * CentOS 7.9 with Tibero 7 CSE(2024.04.23.)
+
+* イメージアップデート(Linux)
+     * Debian 11.11 Bullseye(2024.11.19.)
+     * Debian 12.7 Bookworm(2024.11.19.)
+     * Rocky Linux 8.10(2024.11.19.)
+     * Rocky Linux 8.10 - Container(2024.11.19.)
+     * Ubuntu Server 20.04.6 LTS(2024.11.19.)
+     * Ubuntu Server 20.04.6 LTS - Container(2024.11.19.)
+     * Ubuntu Server 20.04.6 LTS for NAT(2024.11.19.)
+     * Ubuntu Server 20.04.6 LTS with NVIDIA(2024.11.19.)
+     * Ubuntu Server 22.04.5 LTS(2024.11.19.)
+     * Ubuntu Server 22.04.5 LTS - Container(2024.11.19.)
+     * Ubuntu Server 22.04.5 LTS with NVIDIA(2024.11.19.)
+
+* イメージアップデート(Windows)
+     * Windows 2016 STD(2024.11.19.) EN
+     * Windows 2016 STD(2024.11.19.) KO
+     * Windows 2016 STD with MS-SQL 2016 Standard(2024.11.19.) EN
+     * Windows 2016 STD with MS-SQL 2016 Standard(2024.11.19.) KO
+     * Windows 2016 STD with MS-SQL 2017 Standard(2024.11.19.) EN
+     * Windows 2016 STD with MS-SQL 2017 Standard(2024.11.19.) KO
+     * Windows 2016 STD with MS-SQL 2019 Express(2024.11.19.) EN
+     * Windows 2016 STD with MS-SQL 2019 Express(2024.11.19.) KO
+     * Windows 2016 STD with MS-SQL 2019 Standard(2024.11.19.) EN
+     * Windows 2016 STD with MS-SQL 2019 Standard(2024.11.19.) KO
+     * Windows 2019 STD(2024.11.19.) EN
+     * Windows 2019 STD(2024.11.19.) KO
+     * Windows 2019 STD with MS-SQL 2019 Standard(2024.11.19.) EN
+     * Windows 2019 STD with MS-SQL 2019 Standard(2024.11.19.) KO
+     * Windows 2019 STD with NVIDIA(2024.11.19.) KO
+     * Windows 2022 STD(2024.11.19.) EN
+     * Windows 2022 STD(2024.11.19.) KO
+
+* アプリケーションバージョンサポートの終了
+    * NHN Kubernetes Service(NKS) Worker Node 1.0
+    * NHN Kubernetes Service(NKS) Worker Node(GPU) 1.0
+    * MySQL 5.7
+    * MariaDB 10.3
+* ベースイメージのサポート終了
+    * CentOS 7.9
+
+
 ### 2024. 10. 29.
 #### Image Builder
 * アプリケーションバージョン追加
