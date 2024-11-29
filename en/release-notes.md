@@ -15,6 +15,84 @@
     * Enable/disable user script
     * Set applicable services
 
+* About GPU and container (Linux)
+    * containerd: 1.6.32 > Unchanged
+    * NVIDIA driver update: 535.183.06 > 535.216.01
+    * CUDA update: 12.2 > Unchanged
+    * DCGM: 3.3.5 > Unchanged
+    * DCGM-Exporter: 3.4.1 > Unchanged
+    * MIG Manager: 0.7.0 > Unchanged
+    * Minimum disk size (GB): 20 > 30
+    * Patch for DCGM-Exporter to resolve the uninstall issue (NVIDIA, Deep Learning image)
+
+* GPU(Windows)
+    * NVIDIA driver update: 538.78 > 538.95
+    * CUDA version: 12.2
+
+* Security update
+    * windows 2016: KB5044293
+        * https://support.microsoft.com/en-us/topic/october-8-2024-kb5044293-os-build-14393-7428-3f172048-e2d1-4eb2-b6b9-41abd891e52f
+    * windows 2019: KB5044277
+        * https://support.microsoft.com/en-us/topic/october-8-2024-kb5044277-os-build-17763-6414-edccc872-2f4e-4ac6-b224-50ca8f1acd4f
+    * windows 2022: KB5044281
+        * https://support.microsoft.com/en-us/topic/october-8-2024-kb5044281-os-build-20348-2762-e063059c-9122-4324-86e8-4f6f3383a20a
+
+* Added new images
+     * Rocky Linux 8.10 for NAT(2024.11.19.)
+     * Rocky Linux 8.10 with Tibero 7 Enterprise(2024.11.19.)
+     * Rocky Linux 8.10 with Tibero 7 Standard(2024.11.19.)
+     * Rocky Linux 9.4(2024.11.19.)
+
+* Ended image support
+     * CentOS 7.9(2024.08.20.)
+     * CentOS 7.9 - Container(2024.08.20.)
+     * CentOS 7.9 for NAT(2024.08.20.)
+     * CentOS 7.9 with Apache Kafka 3.6.1(2024.04.23.)
+     * CentOS 7.9 with CUBRID 10.2.14(2024.04.23.)
+     * CentOS 7.9 with CUBRID 11.0.13(2024.04.23.)
+     * CentOS 7.9 with MariaDB 10.11.7(2024.04.23.)
+     * CentOS 7.9 with MySQL 8.0.36(2024.04.23.)
+     * CentOS 7.9 with PostgreSQL 15.6(2024.04.23.)
+     * CentOS 7.9 with Redis 7.2.4(2024.04.23.)
+     * CentOS 7.9 with Tibero 7 CEE(2024.04.23.)
+     * CentOS 7.9 with Tibero 7 CSE(2024.04.23.)
+
+
+* Image update (Linux)
+     * Debian 11.11 Bullseye(2024.11.19.)
+     * Debian 12.7 Bookworm(2024.11.19.)
+     * Rocky Linux 8.10(2024.11.19.)
+     * Rocky Linux 8.10 - Container(2024.11.19.)
+     * Ubuntu Server 20.04.6 LTS(2024.11.19.)
+     * Ubuntu Server 20.04.6 LTS - Container(2024.11.19.)
+     * Ubuntu Server 20.04.6 LTS for NAT(2024.11.19.)
+     * Ubuntu Server 22.04.4 LTS for Deep Learning v3.1.1(2024.10.29.)
+     * Ubuntu Server 22.04.4 LTS for Deep Learning v4.0.1(2024.10.29.)
+     * Ubuntu Server 22.04.4 LTS for Deep Learning v5.0.0(2024.10.29.)
+     * Ubuntu Server 20.04.6 LTS with NVIDIA(2024.11.19.)
+     * Ubuntu Server 22.04.5 LTS(2024.11.19.)
+     * Ubuntu Server 22.04.5 LTS - Container(2024.11.19.)
+     * Ubuntu Server 22.04.5 LTS with NVIDIA(2024.11.19.)
+
+* Image update (Windows)
+     * Windows 2016 STD(2024.11.19.) EN
+     * Windows 2016 STD(2024.11.19.) KO
+     * Windows 2016 STD with MS-SQL 2016 Standard(2024.11.19.) EN
+     * Windows 2016 STD with MS-SQL 2016 Standard(2024.11.19.) KO
+     * Windows 2016 STD with MS-SQL 2017 Standard(2024.11.19.) EN
+     * Windows 2016 STD with MS-SQL 2017 Standard(2024.11.19.) KO
+     * Windows 2016 STD with MS-SQL 2019 Express(2024.11.19.) EN
+     * Windows 2016 STD with MS-SQL 2019 Express(2024.11.19.) KO
+     * Windows 2016 STD with MS-SQL 2019 Standard(2024.11.19.) EN
+     * Windows 2016 STD with MS-SQL 2019 Standard(2024.11.19.) KO
+     * Windows 2019 STD(2024.11.19.) EN
+     * Windows 2019 STD(2024.11.19.) KO
+     * Windows 2019 STD with MS-SQL 2019 Standard(2024.11.19.) EN
+     * Windows 2019 STD with MS-SQL 2019 Standard(2024.11.19.) KO
+     * Windows 2019 STD with NVIDIA(2024.11.19.) KO
+     * Windows 2022 STD(2024.11.19.) EN
+     * Windows 2022 STD(2024.11.19.) KO
+
 #### Image Builder
 * Ended application version support
     * NHN Kubernetes Service(NKS) Worker Node 1.0
@@ -23,6 +101,7 @@
     * MariaDB 10.3
 * Ended base image support
     * CentOS 7.9
+
 
 ### October 29, 2024
 #### Image Builder
@@ -50,7 +129,7 @@
     
 ### August 27, 2024
 #### Image
-* Related to GPU and Container (Linux)
+* About GPU and Container (Linux)
     * containerd: 1.6.31 > 1.6.32
     * NVIDIA driver updated: 535.161.08 > 535.183.06
     * CUDA updated: 12.2 > Unchanged
@@ -147,7 +226,7 @@
         * Instance status
         
 #### Image
-* Related to GPU and container (Linux)
+* About GPU and Container (Linux)
     * containerd: 1.6.27 > 1.6.31
     * NVIDIA driver updated: 535.154.05 > 535.161.08
     * CUDA: 12.2 > Unchanged
@@ -261,7 +340,7 @@
 * Ended image support
     * Rocky Linux 8.8(2023.11.21.)
 
-* Related to GPU and container (Linux)
+* About GPU and Container (Linux)
     * containerd: 1.6.22 > 1.6.27
     * NVIDIA drive updated: 535.104.12 > 535.154.05
     * CUDA updated: 12.2 > Unchanged
@@ -330,7 +409,7 @@
 	* Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.1(2023.09.26.)
     * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.1(2023.09.26.)
 
-* Related to GPU and container (Linux)
+* About GPU and Container (Linux)
     * debian 11 container - Added gpu driver/Select gpu flavor to create clusters
     * NVIDIA driver updated: 470.199.02 > 535.104.12
     * CUDA updated: 11.4 > 12.2
