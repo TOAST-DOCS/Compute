@@ -90,6 +90,16 @@
      * Windows 2022 STD(2024.11.19.) KO
 
 
+#### Image Builder
+* 애플리케이션 버전 지원 종료
+    * NHN Kubernetes Service(NKS) Worker Node 1.0
+    * NHN Kubernetes Service(NKS) Worker Node(GPU) 1.0
+    * MySQL 5.7
+    * MariaDB 10.3
+* 베이스 이미지 지원 종료
+    * CentOS 7.9
+
+
 ### 2024. 10. 29.
 #### Image
 * 이미지 업데이트(Linux)
