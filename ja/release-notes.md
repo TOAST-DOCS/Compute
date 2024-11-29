@@ -89,6 +89,7 @@
      * Windows 2022 STD(2024.11.19.) EN
      * Windows 2022 STD(2024.11.19.) KO
 
+#### Image Builder
 * アプリケーションバージョンサポートの終了
     * NHN Kubernetes Service(NKS) Worker Node 1.0
     * NHN Kubernetes Service(NKS) Worker Node(GPU) 1.0
