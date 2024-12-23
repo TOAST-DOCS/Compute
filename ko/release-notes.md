@@ -1,4 +1,11 @@
 ## Compute > 릴리스 노트
+### 2024. 12. 24.
+#### Image
+* Tibero 이미지명 변경
+  * Rocky Linux 8.10 with Tibero 7 Enterprise(2024.11.19.) > Rocky Linux 8.10 with Tibero 7 Enterprise 277758(2024.11.19.)
+  * Rocky Linux 8.10 with Tibero 7 Standard(2024.11.19.) > Rocky Linux 8.10 with Tibero 7 Standard 277758(2024.11.19.)
+
+
 ### 2024. 11. 26.
 #### Instance
 * 인스턴스 OS 정보 변경 기능 추가
@@ -16,17 +23,17 @@
     * 사용 대상 서비스 설정
 
 * GPU 및 container 관련(Linux)
-    * containerd : 1.6.32 -> 변경 없음
-    * nvidia driver 업데이트 : 535.183.06 -> 535.216.01
-    * cuda 업데이트 : 12.2 -> 변경 없음
-    * dcgm : 3.3.5 -> 변경 없음
-    * dcgm-exporter : 3.4.1 -> 변경 없음
-    * mig manager : 0.7.0 -> 변경 없음
-    * min disk size(GB) : 20 -> 30
+    * containerd : 1.6.32 > 변경 없음
+    * nvidia driver 업데이트 : 535.183.06 > 535.216.01
+    * cuda 업데이트 : 12.2 > 변경 없음
+    * dcgm : 3.3.5 > 변경 없음
+    * dcgm-exporter : 3.4.1 > 변경 없음
+    * mig manager : 0.7.0 > 변경 없음
+    * min disk size(GB) : 20 > 30
     * dcgm-exporter 미설치 이슈 패치(NVIDIA, Deep Learning 이미지)
 
 * GPU(Windows)
-    * nvidia driver 업데이트: 538.78 -> 538.95
+    * nvidia driver 업데이트: 538.78 > 538.95
     * cuda 버전: 12.2
 
 * 보안업데이트
