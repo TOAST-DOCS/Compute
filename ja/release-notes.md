@@ -1,4 +1,10 @@
 ## Compute > リリースノート
+### 2024. 12. 24.
+#### Image
+* Tiberoイメージ名変更
+  * Rocky Linux 8.10 with Tibero 7 Enterprise(2024.11.19.) > Rocky Linux 8.10 with Tibero 7 Enterprise 277758(2024.11.19.)
+  * Rocky Linux 8.10 with Tibero 7 Standard(2024.11.19.) > Rocky Linux 8.10 with Tibero 7 Standard 277758(2024.11.19.)
+
 ### 2024. 11. 26.
 #### Instance
 * インスタンスOS情報変更機能を追加
