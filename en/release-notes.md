@@ -1,4 +1,10 @@
 ## Compute > Release Notes
+### December 24, 2024
+#### Image
+* Changed Tibero image name
+  * Rocky Linux 8.10 with Tibero 7 Enterprise(2024.11.19.) > Rocky Linux 8.10 with Tibero 7 Enterprise 277758(2024.11.19.)
+  * Rocky Linux 8.10 with Tibero 7 Standard(2024.11.19.) > Rocky Linux 8.10 with Tibero 7 Standard 277758(2024.11.19.)
+
 ### November 26, 2024
 #### Instance
 * Added the feature to change the OS details of an instance
