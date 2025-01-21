@@ -1,4 +1,10 @@
 ## Compute > Release Notes
+### March 4, 2025
+#### Instance
+* Added the feature to change the instance description
+* Added restriction on using the current password when changing API passwords
+* Added the feature to create instances from block storage and snapshots
+
 ### November 26, 2024
 #### Instance
 * Added the feature to change the OS details of an instance

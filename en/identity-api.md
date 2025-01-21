@@ -29,6 +29,7 @@ An API password is set by account. You can use the same password set in one proj
 2. Enter an API password in **Set API Password** under **API Endpoint Settings** . 
 
 > [Caution]
+> You can't change to the password you're currently using.
 > When changing your API password, you must obtain a new authentication token because the existing token is no longer available.
 
 
