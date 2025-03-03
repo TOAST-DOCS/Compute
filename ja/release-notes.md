@@ -5,6 +5,96 @@
 * APIパスワードの変更時に既存のパスワードと同じパスワードに変更できないように制限
 * ブロックストレージ及びスナップショットからインスタンス作成機能を追加
 
+#### Image
+* Rocky 8.10 default pythonがplatform pythonに変更(python 3.11 > 3.6)
+
+* GPU及びコンテナ関連(Linux)
+    * containerd: 1.6.32 > 変更なし
+    * NVIDIAドライバーアップデート: 535.216.01 > 535.230.02
+    * CUDAアップデート: 12.2 > 変更なし
+    * DCGM: 3.3.5 > 変更なし
+    * DCGM-Exporter: 3.3.5 > 変更なし
+    * MIG Manager: 0.7.0 > 変更なし
+
+* GPU(Windows)
+    * NVIDIAドライバーアップデート: 538.95 > 539.19
+    * CUDAアップデート: 12.2 > 変更なし
+
+* セキュリティアップデート
+    * windows 2016: KB5049993
+        * https://support.microsoft.com/en-us/topic/january-14-2025-kb5049993-os-build-14393-7699-b148c0ad-29fd-460e-b4a2-db38e88ae937
+    * windows 2019: KB5050008
+        * https://support.microsoft.com/en-us/topic/january-14-2025-kb5050008-os-build-17763-6775-9a174725-a7ea-4e37-a6f8-e86f7c4d3f31
+    * windows 2022: KB5049983
+        * https://support.microsoft.com/en-us/topic/january-14-2025-kb5049983-os-build-20348-3091-789bf923-7777-419d-9c3a-23f7c814930f
+
+* 新規イメージ追加
+    * Debian 11.11 Bullseye(2025.02.25)
+    * Debian 12.9 Bookworm(2025.02.25)
+    * Rocky Linux 8.10(2025.02.25)
+    * Rocky Linux 8.10 - Container(2025.02.25)
+    * Rocky Linux 8.10 for NAT(2025.02.25)
+    * Rocky Linux 9.5(2025.02.25)
+    * Ubuntu Server 20.04.6 LTS(2025.02.25)
+    * Ubuntu Server 20.04.6 LTS - Container(2025.02.25)
+    * Ubuntu Server 20.04.6 LTS for NAT(2025.02.25)
+    * Ubuntu Server 20.04.6 LTS with NVIDIA(2025.02.25)
+    * Ubuntu Server 22.04.5 LTS(2025.02.25)
+    * Ubuntu Server 22.04.5 LTS - Container(2025.02.25)
+    * Ubuntu Server 22.04.5 LTS with NVIDIA(2025.02.25)
+    * Ubuntu Server 24.04.1 LTS(2025.02.25)
+    * Windows 2016 STD(2025.02.25) EN
+    * Windows 2016 STD(2025.02.25) KO
+    * Windows 2016 STD with MS-SQL 2016 Standard(2025.02.25) EN
+    * Windows 2016 STD with MS-SQL 2016 Standard(2025.02.25) KO
+    * Windows 2016 STD with MS-SQL 2017 Standard(2025.02.25) EN
+    * Windows 2016 STD with MS-SQL 2017 Standard(2025.02.25) KO
+    * Windows 2016 STD with MS-SQL 2019 Express(2025.02.25) EN
+    * Windows 2016 STD with MS-SQL 2019 Express(2025.02.25) KO
+    * Windows 2016 STD with MS-SQL 2019 Standard(2025.02.25) EN
+    * Windows 2016 STD with MS-SQL 2019 Standard(2025.02.25) KO
+    * Windows 2019 STD(2025.02.25) EN
+    * Windows 2019 STD(2025.02.25) KO
+    * Windows 2019 STD with MS-SQL 2019 Standard(2025.02.25) EN
+    * Windows 2019 STD with MS-SQL 2019 Standard(2025.02.25) KO
+    * Windows 2019 STD with NVIDIA(2025.02.25) KO
+    * Windows 2022 STD(2025.02.25) EN
+    * Windows 2022 STD(2025.02.25) KO
+    * Windows 2022 STD with MS-SQL 2022 Standard(2025.02.25) EN
+    * Windows 2022 STD with MS-SQL 2022 Standard(2025.02.25) KO
+
+* イメージサポート終了
+    * Debian 11.11 Bullseye(2024.11.19)
+    * Debian 12.7 Bookworm(2024.11.19)
+    * Rocky Linux 8.10(2024.11.19)
+    * Rocky Linux 8.10 - Container(2024.11.19)
+    * Rocky Linux 8.10 for NAT(2024.11.19)
+    * Rocky Linux 9.4(2024.11.19)
+    * Ubuntu Server 20.04.6 LTS(2024.11.19)
+    * Ubuntu Server 20.04.6 LTS - Container(2024.11.19)
+    * Ubuntu Server 20.04.6 LTS for NAT(2024.11.19)
+    * Ubuntu Server 20.04.6 LTS with NVIDIA(2024.11.19)
+    * Ubuntu Server 22.04.5 LTS(2024.11.19)
+    * Ubuntu Server 22.04.5 LTS - Container(2024.11.19)
+    * Ubuntu Server 22.04.5 LTS with NVIDIA(2024.11.19)
+    * Windows 2016 STD(2024.11.19) EN
+    * Windows 2016 STD(2024.11.19) KO
+    * Windows 2016 STD with MS-SQL 2016 Standard(2024.11.19) EN
+    * Windows 2016 STD with MS-SQL 2016 Standard(2024.11.19) KO
+    * Windows 2016 STD with MS-SQL 2017 Standard(2024.11.19) EN
+    * Windows 2016 STD with MS-SQL 2017 Standard(2024.11.19) KO
+    * Windows 2016 STD with MS-SQL 2019 Express(2024.11.19) EN
+    * Windows 2016 STD with MS-SQL 2019 Express(2024.11.19) KO
+    * Windows 2016 STD with MS-SQL 2019 Standard(2024.11.19) EN
+    * Windows 2016 STD with MS-SQL 2019 Standard(2024.11.19) KO
+    * Windows 2019 STD(2024.11.19) EN
+    * Windows 2019 STD(2024.11.19) KO
+    * Windows 2019 STD with MS-SQL 2019 Standard(2024.11.19) EN
+    * Windows 2019 STD with MS-SQL 2019 Standard(2024.11.19) KO
+    * Windows 2022 STD(2024.11.19) EN
+    * Windows 2022 STD(2024.11.19) KO
+
+
 ### 2024. 11. 26.
 #### Instance
 * インスタンスOS情報変更機能を追加
