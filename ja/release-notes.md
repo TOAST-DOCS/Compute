@@ -1,4 +1,29 @@
 ## Compute > リリースノート
+
+### 2025. 03. 25.
+#### Image
+* 新規イメージ追加
+    * Ubuntu Server 20.04.6 LTS with PostgreSQL 15(2025.03.25.)
+    * Ubuntu Server 20.04.6 LTS with MySQL 8.0.36(2025.03.25.)
+    * Ubuntu Server 20.04.6 LTS with Apache Kafka 3.6.1(2024.03.25)
+    * Ubuntu Server 20.04.6 LTS with Redis 7.2.4(2025.03.25.)
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7(2025.03.25.)
+    * Ubuntu Server 20.04.6 LTS with Cubrid 10.2.14(2025.03.25.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 11.0.13(2025.03.25.)
+    * Rocky Linux 8.10 with Tibero 7 Enterprise 277758(2025.03.25.)
+    * Rocky Linux 8.10 with Tibero 7 Standard 277758(2025.03.25.)
+
+* イメージサポート終了
+    * Ubuntu Server 20.04.6 LTS with Apache Kafka 3.6.1(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 10.2.14(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 11.0.13(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with MySQL 8.0.36(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with PostgreSQL 15.8(2024.10.29.)
+    * Ubuntu Server 20.04.6 LTS with Redis 7.2.4(2024.10.29.)
+    * Rocky Linux 8.10 with Tibero 7 Enterprise 277758(2024.11.19.)
+    * Rocky Linux 8.10 with Tibero 7 Standard 277758(2024.11.19.)
+
 ### 2025. 02. 27.
 #### Instance
 * インスタンス説明変更機能を追加
