@@ -719,6 +719,10 @@
     * Deep Learning Framework 3.0.0
 
 
+### 2023. 07. 25.
+#### System Monitoring
+* **월간 지표 보고서** 기능을 사용할 때 instance의 갯수가 100개가 넘을 경우, 엑셀을 100개 instance 단위로 나누어 생성하도록 변경
+
 ### 2023. 06. 27.
 #### System Monitoring
 * **월간 지표 보고서** 기능을 사용할 때 간헐적으로 엑셀 생성이 완료되지 않는 문제 수정
