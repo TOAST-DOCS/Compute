@@ -1,4 +1,13 @@
 ## Compute > 릴리스 노트
+
+### 2025. 04. 29.
+#### Image
+* 신규 이미지 추가
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7 (2025.04.29)
+
+* 이미지 지원 종료
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7 (2025.03.25)
+
 ### 2025. 03. 25.
 #### Image
 * 신규 이미지 추가
