@@ -1,5 +1,20 @@
 ## Compute > Release Notes
 
+### April 29, 2025
+#### Image
+* Added new images
+    * Ubuntu Server 22.04.5 LTS for Deep Learning v6.0.0 (2025.04.29)
+    * Ubuntu Server 22.04.5 LTS for Deep Learning v5.0.1 (2025.04.29)
+    * Ubuntu Server 22.04.5 LTS for Deep Learning v4.0.2 (2025.04.29)
+    * Ubuntu Server 22.04.5 LTS for Deep Learning v3.1.2 (2025.04.29)
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7 (2025.04.29)
+
+* Ended image support
+    * Ubuntu Server 22.04.4 LTS for Deep Learning v5.0.0 (2024.10.29)
+    * Ubuntu Server 22.04.4 LTS for Deep Learning v4.0.1 (2024.10.29)
+    * Ubuntu Server 22.04.4 LTS for Deep Learning v3.1.1 (2024.10.29)
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7 (2025.03.25)
+
 ### March 25, 2025
 #### Image
 * Added new images
