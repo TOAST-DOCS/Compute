@@ -8,6 +8,21 @@
 * 콘솔에서 인스턴스 삭제 시 연결된 리소스 삭제 정책 개편
     * 블록 스토리지 삭제 시 존재하는 스냅숏 함께 삭제
 
+### 2025. 04. 29.
+#### Image
+* 신규 이미지 추가
+    * Ubuntu Server 22.04.5 LTS for Deep Learning v6.0.0(2025.04.29.)
+    * Ubuntu Server 22.04.5 LTS for Deep Learning v5.0.1(2025.04.29.)
+    * Ubuntu Server 22.04.5 LTS for Deep Learning v4.0.2(2025.04.29.)
+    * Ubuntu Server 22.04.5 LTS for Deep Learning v3.1.2(2025.04.29.)
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7(2025.04.29.)
+
+* 이미지 지원 종료
+    * Ubuntu Server 22.04.4 LTS for Deep Learning v5.0.0 (2024.10.29)
+    * Ubuntu Server 22.04.4 LTS for Deep Learning v4.0.1 (2024.10.29)
+    * Ubuntu Server 22.04.4 LTS for Deep Learning v3.1.1 (2024.10.29)
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7 (2025.03.25)
+
 ### 2025. 03. 25.
 #### Image
 * 신규 이미지 추가
