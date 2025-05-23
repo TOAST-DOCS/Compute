@@ -1,5 +1,13 @@
 ## Compute > Release Notes
 
+### May 27, 2025
+#### Instance
+* Added the placement policy
+* Added the feature set whether to delete network interfaces when disconnected
+* Added the feature to set the block storage deletion policy during instance creation or block storage attachment
+* Revised policy for deleting connected resources when deleting an instance from the console
+    * Deletes existing snapshots when deleting block storage
+
 ### April 29, 2025
 #### Image
 * Added new images
