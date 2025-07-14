@@ -1,5 +1,102 @@
 ## Compute > リリースノート
 
+### 2025. 07. 15.
+#### Image
+* 新規イメージ追加
+    * Debian 11.11 Bullseye(2025.07.15.)
+    * Debian 12.10 Bookworm(2025.07.15.)
+    * PIOLINK WEBFRONT-KS 4.0.6.61.32(2025.07.15.)
+    * Rocky Linux 8.10(2025.07.15.)
+    * Rocky Linux 8.10 - Container(2025.07.15.)
+    * Rocky Linux 8.10 for NAT(2025.07.15.)
+    * Rocky Linux 8.10 with Tibero 7 Enterprise 294582(2025.07.15.)
+    * Rocky Linux 8.10 with Tibero 7 Standard 294582(2025.07.15.)
+    * Rocky Linux 9.5(2025.07.15.)
+    * Rocky Linux 9.5 with Tibero 7 Enterprise 294582(2025.07.15.)
+    * Rocky Linux 9.5 with Tibero 7 Standard 294582(2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS(2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS - Container(2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS for Deep Learning v5.0.2(2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS for Deep Learning v6.0.1(2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS for NAT(2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS with Apache Kafka 3.6.1(2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS with CUBRID 10.2.14(2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS with CUBRID 11.0.13(2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS with MariaDB 10.11.7(2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS with MySQL 8.0.36(2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS with NVIDIA(2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS with PostgreSQL 15(2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS with Redis 7.2.4(2025.07.15.)
+    * Ubuntu Server 24.04.2 LTS(2025.07.15.)
+    * Windows 2016 STD(2025.07.15.) EN
+    * Windows 2016 STD(2025.07.15.) KO
+    * Windows 2016 STD with MS-SQL 2016 Standard(2025.07.15.) EN
+    * Windows 2016 STD with MS-SQL 2016 Standard(2025.07.15.) KO
+    * Windows 2016 STD with MS-SQL 2017 Standard(2025.07.15.) EN
+    * Windows 2016 STD with MS-SQL 2017 Standard(2025.07.15.) KO
+    * Windows 2016 STD with MS-SQL 2019 Express(2025.07.15.) EN
+    * Windows 2016 STD with MS-SQL 2019 Express(2025.07.15.) KO
+    * Windows 2016 STD with MS-SQL 2019 Standard(2025.07.15.) EN
+    * Windows 2016 STD with MS-SQL 2019 Standard(2025.07.15.) KO
+    * Windows 2019 STD(2025.07.15.) EN
+    * Windows 2019 STD(2025.07.15.) KO
+    * Windows 2019 STD with MS-SQL 2019 Standard(2025.07.15.) EN
+    * Windows 2019 STD with MS-SQL 2019 Standard(2025.07.15.) KO
+    * Windows 2019 STD with NVIDIA(2025.07.15.) KO
+    * Windows 2022 STD(2025.07.15.) EN
+    * Windows 2022 STD(2025.07.15.) KO
+    * Windows 2022 STD with MS-SQL 2022 Standard(2025.07.15.) EN
+    * Windows 2022 STD with MS-SQL 2022 Standard(2025.07.15.) KO
+
+* イメージサポート終了
+    * Debian 11.11 Bullseye(2025.02.25.)
+    * Debian 12.9 Bookworm(2025.02.25.)
+    * PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
+    * Rocky Linux 8.10(2025.02.25.)
+    * Rocky Linux 8.10 - Container(2025.02.25.)
+    * Rocky Linux 8.10 for NAT(2025.02.25.)
+    * Rocky Linux 8.10 with Tibero 7 Enterprise 277758(2025.03.25.)
+    * Rocky Linux 8.10 with Tibero 7 Standard 277758(2025.03.25.)
+    * Rocky Linux 9.5(2025.02.25.)
+    * Ubuntu Server 20.04.6 LTS(2025.02.25.)
+    * Ubuntu Server 20.04.6 LTS - Container(2025.02.25.)
+    * Ubuntu Server 20.04.6 LTS for NAT(2025.02.25.)
+    * Ubuntu Server 20.04.6 LTS with Apache Kafka 3.6.1(2025.03.25.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 10.2.14(2025.03.25.)
+    * Ubuntu Server 20.04.6 LTS with CUBRID 11.0.13(2025.03.25.)
+    * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7(2025.04.29.)
+    * Ubuntu Server 20.04.6 LTS with MySQL 8.0.36(2025.03.25.)
+    * Ubuntu Server 20.04.6 LTS with NVIDIA(2025.02.25.)
+    * Ubuntu Server 20.04.6 LTS with PostgreSQL 15(2025.03.25.)
+    * Ubuntu Server 20.04.6 LTS with Redis 7.2.4(2025.03.25.)
+    * Ubuntu Server 22.04.5 LTS(2025.02.25.)
+    * Ubuntu Server 22.04.5 LTS - Container(2025.02.25.)
+    * Ubuntu Server 22.04.5 LTS for Deep Learning v3.1.2(2025.04.29.)
+    * Ubuntu Server 22.04.5 LTS for Deep Learning v4.0.2(2025.04.29.)
+    * Ubuntu Server 22.04.5 LTS for Deep Learning v5.0.1(2025.04.29.)
+    * Ubuntu Server 22.04.5 LTS for Deep Learning v6.0.0(2025.04.29.)
+    * Ubuntu Server 22.04.5 LTS with NVIDIA(2025.02.25.)
+    * Ubuntu Server 24.04.1 LTS(2025.02.25.)
+    * Windows 2016 STD(2025.02.25.) EN
+    * Windows 2016 STD(2025.02.25.) KO
+    * Windows 2016 STD with MS-SQL 2016 Standard(2025.02.25.) EN
+    * Windows 2016 STD with MS-SQL 2016 Standard(2025.02.25.) KO
+    * Windows 2016 STD with MS-SQL 2017 Standard(2025.02.25.) EN
+    * Windows 2016 STD with MS-SQL 2017 Standard(2025.02.25.) KO
+    * Windows 2016 STD with MS-SQL 2019 Express(2025.02.25.) EN
+    * Windows 2016 STD with MS-SQL 2019 Express(2025.02.25.) KO
+    * Windows 2016 STD with MS-SQL 2019 Standard(2025.02.25.) EN
+    * Windows 2016 STD with MS-SQL 2019 Standard(2025.02.25.) KO
+    * Windows 2019 STD(2025.02.25.) EN
+    * Windows 2019 STD(2025.02.25.) KO
+    * Windows 2019 STD with MS-SQL 2019 Standard(2025.02.25.) EN
+    * Windows 2019 STD with MS-SQL 2019 Standard(2025.02.25.) KO
+    * Windows 2019 STD with NVIDIA(2025.02.25.) KO
+    * Windows 2022 STD(2025.02.25.) EN
+    * Windows 2022 STD(2025.02.25.) KO
+    * Windows 2022 STD with MS-SQL 2022 Standard(2025.02.25.) EN
+    * Windows 2022 STD with MS-SQL 2022 Standard(2025.02.25.) KO
+
 ### 2025. 05. 27.
 #### Instance
 * バッチポリシー機能の追加
