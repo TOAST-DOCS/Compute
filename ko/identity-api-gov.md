@@ -13,6 +13,7 @@ NHN Cloud 기본 인프라 서비스 API는 타입과 리전별로 엔드포인�
 | network     | 한국(판교) 리전<br>한국(평촌) 리전 | https://kr1-api-network-infrastructure.gov-nhncloudservice.com<br>https://kr2-api-network-infrastructure.gov-nhncloudservice.com             |
 | image       | 한국(판교) 리전<br>한국(평촌) 리전 | https://kr1-api-image-infrastructure.gov-nhncloudservice.com<br>https://kr2-api-image-infrastructure.gov-nhncloudservice.com                 |
 | volumev2    | 한국(판교) 리전<br>한국(평촌) 리전 | https://kr1-api-block-storage-infrastructure.gov-nhncloudservice.com<br>https://kr2-api-block-storage-infrastructure.gov-nhncloudservice.com |
+| nasv1       | 한국(판교) 리전<br>한국(평촌) 리전 | https://kr1-api-nas-infrastructure.gov-nhncloudservice.com<br>https://kr2-api-nas-infrastructure.gov-nhncloudservice.com |
 | key-manager | 한국(판교) 리전<br>한국(평촌) 리전 | https://kr1-api-key-manager-infrastructure.gov-nhncloudservice.com<br>https://kr2-api-key-manager-infrastructure.gov-nhncloudservice.com     |
 
 ### 테넌트 ID 확인
