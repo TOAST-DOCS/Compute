@@ -4,7 +4,7 @@
 
 ### API 엔드포인트 확인
 
-NHN Government Security Cloud에서는 다음과 같은 엔드포인트를 사용합니다.
+NHN Cloud 기본 인프라 서비스 API는 타입과 리전별로 엔드포인트가 나뉘어 있습니다. 단, Identity API는 모든 리전에서 동일한 엔드포인트를 사용합니다.
 
 | 타입          | 리전        | 엔드포인트                                               |
 |-------------|-----------|---------------------------------------------------------|
@@ -105,7 +105,7 @@ POST /v2.0/tokens
   "access": {
     "token": {
       "id": "e42a092ed6ee4d99949bf25f5f6ecc60",
-      "expires": "2020-04-29T15:31:21Z",
+      "expires": "2025-11-29T15:31:21Z",
       "tenant": {
         "id": "f5073eaa26b64cffbee89411df94ce01",
         "name": "c_VKkasVsh",
@@ -114,7 +114,7 @@ POST /v2.0/tokens
         "enabled": true,
         "project_domain": "NORMAL"
       },
-      "issued_at": "2020-04-29T03:32:28.000405"
+      "issued_at": "2025-11-29T03:32:28.000405"
     },
     "serviceCatalog": [
       {

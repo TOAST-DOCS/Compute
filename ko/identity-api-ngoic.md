@@ -1,11 +1,17 @@
+## API v2 사용 준비
+
+## 공통 준비 사항
+
 ### API 엔드포인트 확인
+
+NHN Government Internet Cloud 기본 인프라 서비스 API는 타입과 리전별로 엔드포인트가 나뉘어 있습니다. 단, Identity API는 모든 리전에서 동일한 엔드포인트를 사용합니다.
 
 | 타입          | 리전        | 엔드포인트 |
 |-------------|-----------|---|
 | identity    | 모든 리전     | https://api-identity-infrastructure.ngoic.com |
 | compute | 한국(대구) 리전 | https://kr4-api-instance-infrastructure.ngoic.com |
 | image | 한국(대구) 리전 | https://kr4-api-image-infrastructure.ngoic.com |
-| block storage | 한국(대구) 리전 | https://kr4-api-block-storage-infrastructure.ngoic.com |
+| volumev2 | 한국(대구) 리전 | https://kr4-api-block-storage-infrastructure.ngoic.com |
 | network | 한국(대구) 리전 | https://kr4-api-network-infrastructure.ngoic.com |
 | key-manager | 한국(대구) 리전 | https://kr4-api-key-manager-infrastructure.ngoic.com |
 | kubernetes | 한국(대구) 리전 | https://kr4-api-kubernetes-infrastructure.ngoic.com |
@@ -104,7 +110,7 @@ POST /v2.0/tokens
   "access": {
     "token": {
       "id": "e42a092ed6ee4d99949bf25f5f6ecc60",
-      "expires": "2020-04-29T15:31:21Z",
+      "expires": "2025-11-29T15:31:21Z",
       "tenant": {
         "id": "f5073eaa26b64cffbee89411df94ce01",
         "name": "c_VKkasVsh",
@@ -113,14 +119,14 @@ POST /v2.0/tokens
         "enabled": true,
         "project_domain": "NORMAL"
       },
-      "issued_at": "2020-04-29T03:32:28.000405"
+      "issued_at": "2025-11-29T03:32:28.000405"
     },
     "serviceCatalog": [
       {
         "endpoints": [
           {
-            "region": "KR1",
-            "publicURL": "https://kr1-api-instance-infrastructure.ngoic.go.kr/v2/f5073eaa26b64cffbee89411df94ce01"
+            "region": "KR4",
+            "publicURL": "https://kr4-api-instance-infrastructure.ngoic.go.kr/v2/f5073eaa26b64cffbee89411df94ce01"
           }
         ],
         "type": "compute",
@@ -129,8 +135,8 @@ POST /v2.0/tokens
       {
         "endpoints": [
           {
-            "region": "KR1",
-            "publicURL": "https://kr1-api-image-infrastructure.ngoic.go.kr"
+            "region": "KR4",
+            "publicURL": "https://kr4-api-image-infrastructure.ngoic.go.kr"
           }
         ],
         "type": "image",
@@ -139,7 +145,7 @@ POST /v2.0/tokens
       {
         "endpoints": [
           {
-            "region": "KR1",
+            "region": "KR4",
             "publicURL": "https://api-identity-infrastructure.ngoic.go.kr/v2.0"
           }
         ],
@@ -149,8 +155,8 @@ POST /v2.0/tokens
       {
         "endpoints": [
           {
-            "region": "KR1",
-            "publicURL": "https://kr1-api-block-storage-infrastructure.ngoic.go.kr/v2/f5073eaa26b64cffbee89411df94ce01"
+            "region": "KR4",
+            "publicURL": "https://kr4-api-block-storage-infrastructure.ngoic.go.kr/v2/f5073eaa26b64cffbee89411df94ce01"
           }
         ],
         "type": "volumev2",
@@ -159,8 +165,8 @@ POST /v2.0/tokens
       {
         "endpoints": [
           {
-            "region": "KR1",
-            "publicURL": "https://kr1-api-network-infrastructure.ngoic.go.kr"
+            "region": "KR4",
+            "publicURL": "https://kr4-api-network-infrastructure.ngoic.go.kr"
           }
         ],
         "type": "network",

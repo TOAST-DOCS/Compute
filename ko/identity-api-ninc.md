@@ -1,11 +1,17 @@
+## API v2 사용 준비
+
+## 공통 준비 사항
+
 ### API 엔드포인트 확인
+
+NHN Internet Cloud 기본 인프라 서비스 API는 타입과 리전별로 엔드포인트가 나뉘어 있습니다. 단, Identity API는 모든 리전에서 동일한 엔드포인트를 사용합니다.
 
 | 타입          | 리전        | 엔드포인트 |
 |-------------|-----------|---|
 | identity    | 모든 리전     | https://api-identity-infrastructure.ninc.go.kr |
 | compute | 한국(대구) 리전 | https://kr4-api-instance-infrastructure.ninc.go.kr |
 | image | 한국(대구) 리전 | https://kr4-api-image-infrastructure.ninc.go.kr |
-| block storage | 한국(대구) 리전 | https://kr4-api-block-storage-infrastructure.ninc.go.kr |
+| volumev2 | 한국(대구) 리전 | https://kr4-api-block-storage-infrastructure.ninc.go.kr |
 | network | 한국(대구) 리전 | https://kr4-api-network-infrastructure.ninc.go.kr |
 | key-manager | 한국(대구) 리전 | https://kr4-api-key-manager-infrastructure.ninc.go.kr |
 | kubernetes | 한국(대구) 리전 | https://kr4-api-kubernetes-infrastructure.ninc.go.kr |
@@ -25,6 +31,7 @@ API 비밀번호는 계정별로 설정됩니다. 한 프로젝트에서 설정�
 2. **API 엔드포인트 설정** 대화 상자 아래의 **API 비밀번호 설정**에 원하는 API 비밀번호를 지정합니다.
 
 > [주의]  
+> 현재 사용 중인 비밀번호로는 변경할 수 없습니다.  
 > API 비밀번호 변경 시 기존 인증 토큰은 더 이상 사용할 수 없으며 재발급이 필요합니다.  
 
 
@@ -103,7 +110,7 @@ POST /v2.0/tokens
   "access": {
     "token": {
       "id": "e42a092ed6ee4d99949bf25f5f6ecc60",
-      "expires": "2020-04-29T15:31:21Z",
+      "expires": "2025-11-29T15:31:21Z",
       "tenant": {
         "id": "f5073eaa26b64cffbee89411df94ce01",
         "name": "c_VKkasVsh",
@@ -112,14 +119,14 @@ POST /v2.0/tokens
         "enabled": true,
         "project_domain": "NORMAL"
       },
-      "issued_at": "2020-04-29T03:32:28.000405"
+      "issued_at": "2025-11-29T03:32:28.000405"
     },
     "serviceCatalog": [
       {
         "endpoints": [
           {
-            "region": "KR1",
-            "publicURL": "https://kr1-api-instance-infrastructure.ninc.go.kr/v2/f5073eaa26b64cffbee89411df94ce01"
+            "region": "KR4",
+            "publicURL": "https://kr4-api-instance-infrastructure.ninc.go.kr/v2/f5073eaa26b64cffbee89411df94ce01"
           }
         ],
         "type": "compute",
@@ -128,8 +135,8 @@ POST /v2.0/tokens
       {
         "endpoints": [
           {
-            "region": "KR1",
-            "publicURL": "https://kr1-api-image-infrastructure.ninc.go.kr"
+            "region": "KR4",
+            "publicURL": "https://kr4-api-image-infrastructure.ninc.go.kr"
           }
         ],
         "type": "image",
@@ -138,7 +145,7 @@ POST /v2.0/tokens
       {
         "endpoints": [
           {
-            "region": "KR1",
+            "region": "KR4",
             "publicURL": "https://api-identity-infrastructure.ninc.go.kr/v2.0"
           }
         ],
@@ -148,8 +155,8 @@ POST /v2.0/tokens
       {
         "endpoints": [
           {
-            "region": "KR1",
-            "publicURL": "https://kr1-api-block-storage-infrastructure.ninc.go.kr/v2/f5073eaa26b64cffbee89411df94ce01"
+            "region": "KR4",
+            "publicURL": "https://kr4-api-block-storage-infrastructure.ninc.go.kr/v2/f5073eaa26b64cffbee89411df94ce01"
           }
         ],
         "type": "volumev2",
@@ -158,8 +165,8 @@ POST /v2.0/tokens
       {
         "endpoints": [
           {
-            "region": "KR1",
-            "publicURL": "https://kr1-api-network-infrastructure.ninc.go.kr"
+            "region": "KR4",
+            "publicURL": "https://kr4-api-network-infrastructure.ninc.go.kr"
           }
         ],
         "type": "network",
