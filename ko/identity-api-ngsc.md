@@ -1,18 +1,16 @@
-## API v2 사용 준비
-
-## 공통 준비 사항
-
 ### API 엔드포인트 확인
 
-NHN Government Security Cloud에서는 다음과 같은 엔드포인트를 사용합니다.
-
-| 타입          | 리전 | 엔드포인트                                               |
-|-------------|---|---------------------------------------------------------|
-| identity    | 모든 리전 | https://api-identity-infrastructure.gncloud.go.kr          |
-| compute     | 한국(판교) 리전 | https://kr1-api-instance-infrastructure.gncloud.go.kr      |
-| network     | 한국(판교) 리전 | https://kr1-api-network-infrastructure.gncloud.go.kr       |
-| image       | 한국(판교) 리전 | https://kr1-api-image-infrastructure.gncloud.go.kr         |
-| volumev2    | 한국(판교) 리전 | https://kr1-api-block-storage-infrastructure.gncloud.go.kr |
+| 타입          | 리전        | 엔드포인트 |
+|-------------|-----------|---|
+| identity    | 모든 리전     | https://api-identity-infrastructure.gncloud.go.kr |
+| compute | 한국(대구) 리전 | https://kr4-api-instance-infrastructure.ngsc.go.kr |
+| image | 한국(대구) 리전 | https://kr4-api-image-infrastructure.ngsc.go.kr |
+| block storage | 한국(대구) 리전 | https://kr4-api-block-storage-infrastructure.ngsc.go.kr |
+| network | 한국(대구) 리전 | https://kr4-api-network-infrastructure.ngsc.go.kr |
+| key-manager | 한국(대구) 리전 | https://kr4-api-key-manager-infrastructure.ngsc.go.kr |
+| kubernetes | 한국(대구) 리전 | https://kr4-api-kubernetes-infrastructure.ngsc.go.kr |
+| orchestration | 한국(대구) 리전 | https://kr4-api-orchestration-infrastructure.ngsc.go.kr |
+| nas | 한국(대구) 리전 | https://kr4-api-nas-infrastructure.ngsc.go.kr |
 
 ### 테넌트 ID 확인
 
