@@ -1,5 +1,13 @@
 ## Compute > Release Notes
 
+### December 2, 2025
+#### Image
+* Improved the feature to modify images
+    * Added the setting to enable or disable image download features
+
+#### Instance Template
+* Added the feature to create an instance from snapshots
+
 ### September 23, 2025
 #### Image
 * Added new images
