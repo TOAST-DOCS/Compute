@@ -1,5 +1,13 @@
 ## Compute > Release Notes
 
+### September 23, 2025
+#### Image
+* Added new images
+    * PIOLINK WEBFRONT-KS 4.0.6.62.20(2025.09.23.)
+    * PIOLINK WEBFRONT-KS 4.0.6.61.33(2025.09.23.)
+* Ended image support
+    * PIOLINK WEBFRONT-KS 4.0.6.61.32(2025.07.15.)
+
 ### July 15, 2025
 #### Image
 * Added new images
