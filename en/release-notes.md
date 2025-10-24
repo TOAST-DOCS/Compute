@@ -1,7 +1,9 @@
 ## Compute > Release Notes
 
-### December 2, 2025
-#### Image
+### November 25, 2025
+#### Instance
+* Added the serial console feature
+
 * Improved the feature to modify images
     * Added the setting to enable or disable image download features
 
