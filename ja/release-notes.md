@@ -1,5 +1,12 @@
 ## Compute > リリースノート
 
+### 2025. 10. 28
+#### Image
+* 新規イメージ追加
+    * Ubuntu Server 22.04.5 LTS for Deep Learning v7.0.0(2025.10.28.)
+* イメージサポート終了
+    * Ubuntu Server 22.04.5 LTS for Deep Learning v5.0.2(2025.07.15.)
+
 ### 2025. 09. 23.
 #### Image
 * 新規イメージ追加
