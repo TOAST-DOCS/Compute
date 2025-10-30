@@ -11,6 +11,9 @@
 #### Instance Template
 * Added the feature to create an instance from snapshots
 
+#### Auto Scale
+* Added the feature to create an instance from snapshots
+
 ### October 28, 2025
 #### Image
 * Added new images
