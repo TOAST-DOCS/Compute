@@ -4,6 +4,7 @@
 #### Instance
 * Added the serial console feature
 
+#### Image
 * Improved the feature to modify images
     * Added the setting to enable or disable image download features
 
