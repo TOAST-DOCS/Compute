@@ -4,19 +4,15 @@
 
 ### API 엔드포인트 확인
 
-NHN Government Security Cloud 기본 인프라 서비스 API는 타입과 리전별로 엔드포인트가 나뉘어 있습니다. 단, Identity API는 모든 리전에서 동일한 엔드포인트를 사용합니다.
+NHN Cloud 기본 인프라 서비스 API는 타입과 리전별로 엔드포인트가 나뉘어 있습니다. 단, Identity API는 모든 리전에서 동일한 엔드포인트를 사용합니다.
 
-| 타입          | 리전        | 엔드포인트 |
-|-------------|-----------|---|
-| identity    | 모든 리전     | https://api-identity-infrastructure.ngsc.go.kr |
-| compute | 한국(대구) 리전 | https://kr4-api-instance-infrastructure.ngsc.go.kr |
-| image | 한국(대구) 리전 | https://kr4-api-image-infrastructure.ngsc.go.kr |
-| volumev2 | 한국(대구) 리전 | https://kr4-api-block-storage-infrastructure.ngsc.go.kr |
-| network | 한국(대구) 리전 | https://kr4-api-network-infrastructure.ngsc.go.kr |
-| key-manager | 한국(대구) 리전 | https://kr4-api-key-manager-infrastructure.ngsc.go.kr |
-| kubernetes | 한국(대구) 리전 | https://kr4-api-kubernetes-infrastructure.ngsc.go.kr |
-| orchestration | 한국(대구) 리전 | https://kr4-api-orchestration-infrastructure.ngsc.go.kr |
-| nas | 한국(대구) 리전 | https://kr4-api-nas-infrastructure.ngsc.go.kr |
+| 타입          | 리전        | 엔드포인트                                               |
+|-------------|-----------|---------------------------------------------------------|
+| identity    | 모든 리전     | https://api-identity-infrastructure.gncloud.go.kr          |
+| compute     | 한국(대구) 리전 | https://kr1-api-instance-infrastructure.gncloud.go.kr      |
+| network     | 한국(대구) 리전 | https://kr1-api-network-infrastructure.gncloud.go.kr       |
+| image       | 한국(대구) 리전 | https://kr1-api-image-infrastructure.gncloud.go.kr         |
+| volumev2    | 한국(대구) 리전 | https://kr1-api-block-storage-infrastructure.gncloud.go.kr |
 
 ### 테넌트 ID 확인
 
@@ -31,7 +27,6 @@ API 비밀번호는 계정별로 설정됩니다. 한 프로젝트에서 설정�
 2. **API 엔드포인트 설정** 대화 상자 아래의 **API 비밀번호 설정**에 원하는 API 비밀번호를 지정합니다.
 
 > [주의]  
-> 현재 사용 중인 비밀번호로는 변경할 수 없습니다.  
 > API 비밀번호 변경 시 기존 인증 토큰은 더 이상 사용할 수 없으며 재발급이 필요합니다.  
 
 
@@ -125,8 +120,8 @@ POST /v2.0/tokens
       {
         "endpoints": [
           {
-            "region": "KR4",
-            "publicURL": "https://kr4-api-instance-infrastructure.ngsc.go.kr/v2/f5073eaa26b64cffbee89411df94ce01"
+            "region": "KR1",
+            "publicURL": "https://kr1-api-instance-infrastructure.gncloud.go.kr/v2/f5073eaa26b64cffbee89411df94ce01"
           }
         ],
         "type": "compute",
@@ -135,8 +130,8 @@ POST /v2.0/tokens
       {
         "endpoints": [
           {
-            "region": "KR4",
-            "publicURL": "https://kr4-api-image-infrastructure.ngsc.go.kr"
+            "region": "KR1",
+            "publicURL": "https://kr1-api-image-infrastructure.gncloud.go.kr"
           }
         ],
         "type": "image",
@@ -145,8 +140,8 @@ POST /v2.0/tokens
       {
         "endpoints": [
           {
-            "region": "KR4",
-            "publicURL": "https://api-identity-infrastructure.ngsc.go.kr/v2.0"
+            "region": "KR1",
+            "publicURL": "https://api-identity-infrastructure.gncloud.go.kr/v2.0"
           }
         ],
         "type": "identity",
@@ -155,8 +150,8 @@ POST /v2.0/tokens
       {
         "endpoints": [
           {
-            "region": "KR4",
-            "publicURL": "https://kr4-api-block-storage-infrastructure.ngsc.go.kr/v2/f5073eaa26b64cffbee89411df94ce01"
+            "region": "KR1",
+            "publicURL": "https://kr1-api-block-storage-infrastructure.gncloud.go.kr/v2/f5073eaa26b64cffbee89411df94ce01"
           }
         ],
         "type": "volumev2",
@@ -165,8 +160,8 @@ POST /v2.0/tokens
       {
         "endpoints": [
           {
-            "region": "ď"4
-            "publicURL": "https://kr4-api-network-infrastructure.ngsc.go.kr"
+            "region": "KR1",
+            "publicURL": "https://kr1-api-network-infrastructure.gncloud.go.kr"
           }
         ],
         "type": "network",

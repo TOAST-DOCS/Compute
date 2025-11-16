@@ -1,5 +1,19 @@
 ## Compute > Release Notes
 
+### November 25, 2025
+#### Instance
+* Added the serial console feature
+
+#### Image
+* Improved the feature to modify images
+    * Added the setting to enable or disable image download features
+
+#### Instance Template
+* Added the feature to create an instance from snapshots
+
+#### Auto Scale
+* Added the feature to create an instance from snapshots
+
 ### October 28, 2025
 #### Image
 * Added new images
