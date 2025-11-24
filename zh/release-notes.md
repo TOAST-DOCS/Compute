@@ -5,6 +5,10 @@
 * Improved the feature to modify images
     * Added the setting to enable or disable image download features
 
+* Added new images
+    * Rocky Linux 9.5 - Container(2025.11.18.)
+    * Ubuntu Server 24.04.3 LTS - Container(2025.11.18.)
+
 #### Instance Template
 * Added the feature to create an instance from snapshots
 
