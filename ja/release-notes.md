@@ -5,6 +5,10 @@
 * イメージ修正機能の改善
     * イメージダウンロード機能の使用可否設定を追加
 
+* 新規イメージ追加
+    * Rocky Linux 9.5 - Container(2025.11.18.)
+    * Ubuntu Server 24.04.3 LTS - Container(2025.11.18.)
+
 #### Instance Template
 * スナップショットからのインスタンス作成機能を追加
 
