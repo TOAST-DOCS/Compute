@@ -1,5 +1,20 @@
 ## Compute > Release Notes
 
+### November 25, 2025
+#### Image
+* Improved the feature to modify images
+    * Added the setting to enable or disable image download features
+
+* Added new images
+    * Rocky Linux 9.5 - Container(2025.11.18.)
+    * Ubuntu Server 24.04.3 LTS - Container(2025.11.18.)
+
+#### Instance Template
+* Added the feature to create an instance from snapshots
+
+#### Auto Scale
+* Added the feature to create an instance from snapshots
+
 ### October 28, 2025
 #### Image
 * Added new images
@@ -14,6 +29,7 @@
     * PIOLINK WEBFRONT-KS 4.0.6.61.33(2025.09.23.)
 * Ended image support
     * PIOLINK WEBFRONT-KS 4.0.6.61.32(2025.07.15.)
+
 
 ### July 15, 2025
 #### Image
