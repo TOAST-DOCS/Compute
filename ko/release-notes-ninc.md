@@ -1,5 +1,12 @@
 ## Compute > 릴리스 노트
 
+### 2025. 11. 28.
+#### Instance
+* Public API v2 출시
+
+#### Image
+* Public API v2 출시
+
 ### 2025. 04. 29.
 #### Image
 * 신규 이미지 추가
