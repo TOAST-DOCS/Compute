@@ -1,4 +1,4 @@
-한국(평촌) 리전## API v2 Preparations
+## API v2 Preparations
 
 ## Common Preparations
 
@@ -226,3 +226,4 @@ POST /v2.0/tokens
 
 </p>
 </details>
+
