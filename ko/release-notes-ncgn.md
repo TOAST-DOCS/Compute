@@ -1,7 +1,5 @@
-<a id="compute-release-notes"></a>
 ## Compute > 릴리스 노트
 
-<a id="november-25-2025"></a>
 ### 2025. 12. 02.
 #### Image
 * 이미지 수정 기능 개선
@@ -13,14 +11,12 @@
 #### Auto Scale
 * 스냅숏으로부터 인스턴스 생성 기능 추가
 
-<a id="october-28-2025"></a>
 ### 2025. 11. 25.
 #### Image
 * 신규 이미지 추가
     * Rocky Linux 9.5 - Container(2025.11.18.)
     * Ubuntu Server 24.04.3 LTS - Container(2025.11.18.)
 
-<a id="september-23-2025"></a>
 ### 2025. 07. 15.
 #### Image
 * 신규 이미지 추가
@@ -108,7 +104,6 @@
     * Windows 2022 STD with MS-SQL 2022 Standard(2025.02.25.) EN
     * Windows 2022 STD with MS-SQL 2022 Standard(2025.02.25.) KO
 
-<a id="july-15-2025"></a>
 ### 2025. 05. 29.
 #### Instance
 * 배치 정책 기능 추가
@@ -117,7 +112,6 @@
 * 콘솔에서 인스턴스 삭제 시 연결된 리소스 삭제 정책 개편
     * 블록 스토리지 삭제 시 존재하는 스냅숏 함께 삭제
 
-<a id="may-27-2025"></a>
 ### 2025. 04. 29.
 #### Image
 * 신규 이미지 추가
@@ -126,7 +120,6 @@
 * 이미지 지원 종료
     * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7 (2025.03.25)
 
-<a id="april-29-2025"></a>
 ### 2025. 03. 25.
 #### Image
 * 신규 이미지 추가
@@ -151,7 +144,6 @@
     * Rocky Linux 8.10 with Tibero 7 Enterprise 277758(2024.11.19.)
     * Rocky Linux 8.10 with Tibero 7 Standard 277758(2024.11.19.)
 
-<a id="march-25-2025"></a>
 ### 2025. 03. 06.
 #### Instance
 * 인스턴스 설명 변경 기능 추가
@@ -232,14 +224,12 @@
     * Windows 2022 STD(2024.11.19.) KO
 
 
-<a id="march-4-2025"></a>
 ### 2024. 12. 24.
 #### Image
 * Tibero 이미지명 변경
   * Rocky Linux 8.10 with Tibero 7 Enterprise(2024.11.19.) > Rocky Linux 8.10 with Tibero 7 Enterprise 277758(2024.11.19.)
   * Rocky Linux 8.10 with Tibero 7 Standard(2024.11.19.) > Rocky Linux 8.10 with Tibero 7 Standard 277758(2024.11.19.)
 
-<a id="november-26-2024"></a>
 ### 2024. 12. 03.
 #### Instance
 * 인스턴스 OS 정보 변경 기능 추가
@@ -257,7 +247,6 @@
     * 사용 대상 서비스 설정
 
 
-<a id="october-29-2024"></a>
 ### 2024. 10. 29.
 * 이미지 업데이트(Linux)
     * Ubuntu Server 20.04.6 LTS with Apache Kafka 3.6.1(2024.10.29.)
@@ -269,7 +258,6 @@
     * Ubuntu Server 20.04.6 LTS with Redis 7.2.4(2024.10.29.)
 
 
-<a id="august-27-2024"></a>
 ### 2024. 09. 05.
 #### Image
 * GPU 및 컨테이너 관련(Linux)
@@ -328,7 +316,6 @@
 #### Instance
 * 인스턴스 키페어 변경 기능 추가
 
-<a id="may-28-2024"></a>
 ### 2024. 06. 04.
 #### Instance
 * 인스턴스 목록 내 검색/필터 조건 확장 및 UI 개선
@@ -389,7 +376,6 @@
     * Windows 2022 STD(2024.05.21.) EN
     * Windows 2022 STD(2024.05.21.) KO
 
-<a id="april-23-2024"></a>
 ### 2024. 04. 23.
 #### Image
 * 신규 이미지 추가
@@ -433,7 +419,6 @@
     * Ubuntu Server 20.04.6 LTS with MySQL 8.0.27(2023.03.21.)
     * Ubuntu Server 20.04.6 LTS with Redis 7.0.5(2023.03.21.)
 
-<a id="april-15-2024"></a>
 ### 2024. 03. 05.
 #### Image
 * 신규 이미지 추가
@@ -488,7 +473,6 @@
     * Windows 2019 STD with MS-SQL 2019 Standard(2024.02.20.) KO
 
 
-<a id="march-26-2024"></a>
 ### 2023. 12. 05.
 #### Image
 
@@ -527,7 +511,6 @@
 	* Windows 2016 STD with MS-SQL 2019 Standard(2023.11.21.) KO
 	* Windows 2019 STD with MS-SQL 2019 Standard(2023.11.21.) KO
 
-<a id="february-27-2024"></a>
 ### 2023. 10. 31.
 #### Image
 * 신규 이미지 추가
@@ -537,7 +520,6 @@
 * 이미지 지원 종료
     * CentOS 7.9 with Tibero 6(2022.12.20.)
 
-<a id="november-28-2023"></a>
 ### 2023. 09. 26.
 #### Image
 * 이미지 지원 종료
@@ -547,10 +529,8 @@
 * PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
     * 이미지 이름 변경 PLOS-WAF-KS-v4.0.6.61.28(2023.04.25.) > PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
 
-<a id="october-31-2023"></a>
 ### 2023. 09. 12.
 * 블록 스토리지 스냅숏 유료화 
 
-<a id="september-26-2023"></a>
 ### 2023. 02. 06.
 * 신규 서비스 출시
