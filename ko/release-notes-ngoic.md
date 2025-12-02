@@ -1,5 +1,7 @@
+<a id="compute-release-notes"></a>
 ## Compute > 릴리스 노트
 
+<a id="november-25-2025"></a>
 ### 2025. 11. 28.
 #### Instance
 * 배치 정책 기능 추가
@@ -20,11 +22,13 @@
 #### Auto Scale
 * 스냅숏으로부터 인스턴스 생성 기능 추가
 
+<a id="october-28-2025"></a>
 ### 2025. 11. 25.
 #### Image
 * 신규 이미지 추가
     * Rocky Linux 9.5 - Container(2025.11.18.)
     * Ubuntu Server 24.04.3 LTS - Container(2025.11.18.)
 
+<a id="september-23-2025"></a>
 ### 2025. 09. 01.
 * 신규 서비스 출시
