@@ -1,4 +1,5 @@
-한국(평촌) 리전## API v2 Preparations
+<a id="api-v2-preparations"></a>
+## API v2 Preparations
 
 <a id="common-preparations"></a>
 ## Common Preparations
