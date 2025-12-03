@@ -1,7 +1,10 @@
+<a id="common-preparations"></a>
 ## API v2使用準備
 
+<a id="check-api-endpoints"></a>
 ## 共通準備事項
 
+<a id="check-tenant-id"></a>
 ### API Endpoint確認
 
 NHN Cloud基本インフラサービスAPIは、タイプとリージョンごとにエンドポイントが分かれています。ただし、Identity APIはすべてのリージョンで同じendpointを使用します。
@@ -16,10 +19,12 @@ NHN Cloud基本インフラサービスAPIは、タイプとリージョンご�
 | object-store | 韓国(パンギョ)リージョン<br>韓国(ピョンチョン)リージョン<br>日本リージョン<br>米国(カリフォルニア)リージョン | https://kr1-api-object-storage.nhncloudservice.com<br>https://kr2-api-object-storage.nhncloudservice.com<br>https://jp1-api-object-storage.nhncloudservice.com<br>https://us1-api-object-storage.nhncloudservice.com |
 | key-manager | 韓国(パンギョ)リージョン<br>韓国(ピョンチョン)リージョン<br>日本リージョン<br>米国(カリフォルニア)リージョン | https://kr1-api-key-manager-infrastructure.nhncloudservice.com<br>https://kr2-api-key-manager-infrastructure.nhncloudservice.com<br>https://jp1-api-key-manager-infrastructure.nhncloudservice.com<br>https://us1-api-key-manager-infrastructure.nhncloudservice.com |
 
+<a id="set-api-password"></a>
 ### テナントID確認
 
 APIリクエストに含まれるテナントIDは、**Compute > Instance > 管理**ページの**APIエンドポイント設定**ウィンドウで確認します。
 
+<a id="token"></a>
 ### APIパスワード設定
 
 NHN Cloud基本インフラサービスAPIを使用するためにNHN Cloudアカウントパスワードとは別にAPIパスワードを設定する必要があります。
@@ -33,6 +38,7 @@ APIパスワードはアカウントごとに設定されます。1つのプロ�
 > API パスワードを変更すると、既存の認証トークンは使用できなくなり、再発行が必要です。 
 
 
+<a id="obtain-a-token"></a>
 ## Token
 
 ### トークンを発行する

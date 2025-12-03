@@ -1,7 +1,9 @@
 한국(평촌) 리전## API v2 Preparations
 
+<a id="common-preparations"></a>
 ## Common Preparations
 
+<a id="check-api-endpoints"></a>
 ### Check API Endpoints
 
 The NHN Cloud Infrastructure Services API provides different endpoints for each type and region. However, the Identity API uses the same endpoint for all regions.
@@ -16,10 +18,12 @@ The NHN Cloud Infrastructure Services API provides different endpoints for each 
 | object-store | Korea (Pangyo) Region<br>Korea (Pyeongchon) Region<br>Japan Region<br>US (California) Region | https://kr1-api-object-storage.nhncloudservice.com<br>https://kr2-api-object-storage.nhncloudservice.com<br>https://jp1-api-object-storage.nhncloudservice.com<br>https://us1-api-object-storage.nhncloudservice.com |
 | key-manager | Korea (Pangyo) Region<br>Korea (Pyeongchon) Region<br>Japan Region<br>US (California) Region | https://kr1-api-key-manager-infrastructure.nhncloudservice.com<br>https://kr2-api-key-manager-infrastructure.nhncloudservice.com<br>https://jp1-api-key-manager-infrastructure.nhncloudservice.com<br>https://us1-api-key-manager-infrastructure.nhncloudservice.com |
 
+<a id="check-tenant-id"></a>
 ### Check Tenant ID 
 
 You can check your tenant ID to include in API requests from **Set API Endpoint** in **Compute > Instance > Management**. 
 
+<a id="set-api-password"></a>
 ### Set API Password
 
 You must set an API endpoint password, which is separate from your NHN Cloud account password, in order to use the NHN Cloud Infrastructure Services API.
@@ -33,8 +37,10 @@ An API password is set by account. You can use the same password set in one proj
 > When changing your API password, you must obtain a new authentication token because the existing token is no longer available.
 
 
+<a id="token"></a>
 ## Token
 
+<a id="obtain-a-token"></a>
 ### Obtain a Token
 
 To obtain a token, use the `identity` type endpoint. The `identity` service endpoint is `https://api-identity-infrastructure.nhncloudservice.com` regardless of region.
