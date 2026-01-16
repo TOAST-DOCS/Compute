@@ -2492,7 +2492,7 @@
     * 사용하던 인스턴스의 디스크는 그대로 보존하면서 CPU/Memory를 업그레이드 하거나 다운그레이드 가능
     * 블록 스토리지 크기는 변경 불가
     * 사양 변경을 위해 인스턴스는 중지 상태여야 함
-    * 자세한 제약 사항은 가이드 문서 [인스턴스 사양 변경](/Compute/Instance/ko/console-guide/#_14) 참조
+    * 자세한 제약 사항은 가이드 문서 [인스턴스 사양 변경](/Compute/Instance/ko/console-guide/#modify-flavor) 참조
 * Low IOPS SSD 사양(U 타입)이 추가
     * 합리적인 가격의 저사양 인스턴스 지원
     * Linux 계열 OS만 지원
