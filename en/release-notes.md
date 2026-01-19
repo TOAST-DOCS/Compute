@@ -1,5 +1,9 @@
 ## Compute > Release Notes
 
+### January 27, 2026
+#### Instance
+* Added the serial console feature
+
 ### November 25, 2025
 #### Image
 * Improved the feature to modify images
