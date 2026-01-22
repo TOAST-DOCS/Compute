@@ -1,5 +1,7 @@
+<a id="compute-release-notes"></a>
 ## Compute > 릴리스 노트
 
+<a id="november-28-2025"></a>
 ### 2025. 11. 28.
 #### Instance
 * Public API v2 출시
@@ -7,6 +9,7 @@
 #### Image
 * Public API v2 출시
 
+<a id="april-29-2025"></a>
 ### 2025. 04. 29.
 #### Image
 * 신규 이미지 추가
@@ -15,6 +18,7 @@
 * 이미지 지원 종료
     * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7 (2025.03.25)
 
+<a id="march-25-2025"></a>
 ### 2025. 03. 25.
 #### Image
 * 신규 이미지 추가
@@ -39,6 +43,7 @@
     * Rocky Linux 8.10 with Tibero 7 Enterprise 277758(2024.11.19.)
     * Rocky Linux 8.10 with Tibero 7 Standard 277758(2024.11.19.)
 
+<a id="march-13-2025"></a>
 ### 2025. 03. 13.
 #### Instance
 * 인스턴스 설명 변경 기능 추가
@@ -119,5 +124,7 @@
     * Windows 2022 STD(2024.11.19.) KO
 
 
+<a id="january-24-2025"></a>
 ### 2025. 01. 24.
 * 신규 서비스 출시
+
