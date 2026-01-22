@@ -1,6 +1,11 @@
 <a id="compute-release-notes"></a>
 ## Compute > 릴리스 노트
 
+<a id="january-27-2026"></a>
+### 2026. 01. 27.
+#### Instance
+* 시리얼 콘솔 기능 추가
+
 <a id="november-25-2025"></a>
 ### 2025. 11. 25.
 #### Image

@@ -1,6 +1,11 @@
 <a id="compute-release-notes"></a>
 ## Compute > Release Notes
 
+<a id="january-27-2026"></a>
+### January 27, 2026
+#### Instance
+* Added the serial console feature
+
 <a id="november-25-2025"></a>
 ### November 25, 2025
 #### Image
