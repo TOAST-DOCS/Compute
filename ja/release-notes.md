@@ -1,6 +1,97 @@
 <a id="compute-release-notes"></a>
 ## Compute > リリースノート
 
+<a id="march-10-2026"></a>
+### 2026. 03. 10.
+#### Image
+* Rocky 9.7 イメージで GRUB BLS 設定を無効化
+* Debian 11.11 の bullseye-backports リポジトリのサポート終了により、sources.list から削除
+
+* GPU 及びコンテナ関連(Linux)
+    * containerd: 1.6.32 > 2.2.1
+    * NVIDIA ドライバーアップデート: 535.230.02 > 580.105.08
+    * CUDA アップデート: 12.2 > 13.0
+    * DCGM: 3.3.5 > 4.5.0
+    * DCGM-Exporter: 3.3.5 > 4.5.0
+    * MIG Manager: 0.7.0 > 0.13.1
+
+* GPU(Windows)
+    * NVIDIA ドライバーアップデート: 539.19 > 581.80
+    * CUDA アップデート: 12.2 > 13.0
+
+* セキュリティアップデート
+    * windows 2016: KB5071543
+        * https://support.microsoft.com/en-us/topic/december-9-2025-kb5071543-os-build-14393-8688-ec93aa63-f343-4a7e-ab3c-faa096e17395
+    * windows 2019: KB5071544
+        * https://support.microsoft.com/en-us/topic/december-9-2025-kb5071544-os-build-17763-8146-630aa62e-f399-4e42-9f7a-2a4d38dd1210
+    * windows 2022: KB5071547
+        * https://support.microsoft.com/en-us/topic/december-9-2025-kb5071547-os-build-20348-4529-7935ca9f-cac3-4d17-93bb-fe8e57c6db32
+
+* 新規イメージ追加
+    * Debian 11.11 Bullseye(2026.03.10.)
+    * Debian 12.13 Bookworm(2026.03.10.)
+    * Rocky Linux 8.10(2026.03.10.)
+    * Rocky Linux 8.10 - Container(2026.03.10.)
+    * Rocky Linux 8.10 for NAT(2026.03.10.)
+    * Rocky Linux 9.7(2026.03.10.)
+    * Rocky Linux 9.7 - Container(2026.03.10.)
+    * Ubuntu Server 22.04.5 LTS(2026.03.10.)
+    * Ubuntu Server 22.04.5 LTS - Container(2026.03.10.)
+    * Ubuntu Server 22.04.5 LTS for NAT(2026.03.10.)
+    * Ubuntu Server 22.04.5 LTS with NVIDIA(2026.03.10.)
+    * Ubuntu Server 24.04.3 LTS(2026.03.10.)
+    * Ubuntu Server 24.04.4 LTS - Container(2026.03.10.)
+    * Windows 2016 STD(2026.03.10.) EN
+    * Windows 2016 STD(2026.03.10.) KO
+    * Windows 2016 STD with MS-SQL 2016 Standard(2026.03.10.) EN
+    * Windows 2016 STD with MS-SQL 2016 Standard(2026.03.10.) KO
+    * Windows 2016 STD with MS-SQL 2017 Standard(2026.03.10.) EN
+    * Windows 2016 STD with MS-SQL 2017 Standard(2026.03.10.) KO
+    * Windows 2016 STD with MS-SQL 2019 Express(2026.03.10.) EN
+    * Windows 2016 STD with MS-SQL 2019 Express(2026.03.10.) KO
+    * Windows 2016 STD with MS-SQL 2019 Standard(2026.03.10.) EN
+    * Windows 2016 STD with MS-SQL 2019 Standard(2026.03.10.) KO
+    * Windows 2019 STD(2026.03.10.) EN
+    * Windows 2019 STD(2026.03.10.) KO
+    * Windows 2019 STD with MS-SQL 2019 Standard(2026.03.10.) EN
+    * Windows 2019 STD with MS-SQL 2019 Standard(2026.03.10.) KO
+    * Windows 2022 STD(2026.03.10.) EN
+    * Windows 2022 STD(2026.03.10.) KO
+    * Windows 2022 STD with MS-SQL 2022 Standard(2026.03.10.) EN
+    * Windows 2022 STD with MS-SQL 2022 Standard(2026.03.10.) KO
+* イメージサポート終了
+    * Debian 11.11 Bullseye(2025.07.15.)
+    * Debian 12.10 Bookworm(2025.07.15.)
+    * Rocky Linux 8.10(2025.07.15.)
+    * Rocky Linux 8.10 for NAT(2025.07.15.)
+    * Rocky Linux 8.10 - Container(2025.07.15.)
+    * Rocky Linux 9.5(2025.07.15.)
+    * Rocky Linux 9.5 - Container(2025.11.18.)
+    * Ubuntu Server 22.04.5 LTS(2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS - Container(2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS for NAT(2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS with NVIDIA(2025.07.15.)
+    * Ubuntu Server 24.04.2 LTS(2025.07.15.)
+    * Ubuntu Server 24.04.3 LTS - Container(2025.11.18.)
+    * Windows 2016 STD(2025.07.15.) EN
+    * Windows 2016 STD(2025.07.15.) KO
+    * Windows 2016 STD with MS-SQL 2016 Standard(2025.07.15.) EN
+    * Windows 2016 STD with MS-SQL 2016 Standard(2025.07.15.) KO
+    * Windows 2016 STD with MS-SQL 2017 Standard(2025.07.15.) EN
+    * Windows 2016 STD with MS-SQL 2017 Standard(2025.07.15.) KO
+    * Windows 2016 STD with MS-SQL 2019 Express(2025.07.15.) EN
+    * Windows 2016 STD with MS-SQL 2019 Express(2025.07.15.) KO
+    * Windows 2016 STD with MS-SQL 2019 Standard(2025.07.15.) EN
+    * Windows 2016 STD with MS-SQL 2019 Standard(2025.07.15.) KO
+    * Windows 2019 STD(2025.07.15.) EN
+    * Windows 2019 STD(2025.07.15.) KO
+    * Windows 2019 STD with MS-SQL 2019 Standard(2025.07.15.) EN
+    * Windows 2019 STD with MS-SQL 2019 Standard(2025.07.15.) KO
+    * Windows 2022 STD(2025.07.15.) EN
+    * Windows 2022 STD(2025.07.15.) KO
+    * Windows 2022 STD with MS-SQL 2022 Standard(2025.07.15.) EN
+    * Windows 2022 STD with MS-SQL 2022 Standard(2025.07.15.) KO
+
 <a id="january-27-2026"></a>
 ### 2026. 01. 27.
 #### Instance
