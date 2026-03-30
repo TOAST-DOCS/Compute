@@ -1,6 +1,10 @@
 <a id="compute-release-notes"></a>
 ## Compute > 릴리스 노트
 
+<a id="march-31-2026"></a>
+### 2026. 03. 31.
+* 미국(캘리포니아) 리전 서비스 종료
+
 <a id="march-10-2026"></a>
 ### 2026. 03. 10.
 #### Image
