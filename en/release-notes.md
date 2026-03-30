@@ -1,6 +1,10 @@
 <a id="compute-release-notes"></a>
 ## Compute > Release Notes
 
+<a id="march-31-2026"></a>
+### 2026. 03. 31.
+* Ended service in US (California) region
+
 <a id="march-10-2026"></a>
 ### 2026. 03. 10.
 #### Image
