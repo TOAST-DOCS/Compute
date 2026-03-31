@@ -106,13 +106,23 @@
 #### Instance
 * Added the serial console feature
 
+<a id="november-25-2025"></a>
+### November 25, 2025
 #### Image
 * Improved the feature to modify images
     * Added the setting to enable or disable image download features
 
+* Added new images
+    * Rocky Linux 9.5 - Container(2025.11.18.)
+    * Ubuntu Server 24.04.3 LTS - Container(2025.11.18.)
+
 #### Instance Template
 * Added the feature to create an instance from snapshots
 
+#### Auto Scale
+* Added the feature to create an instance from snapshots
+
+<a id="october-28-2025"></a>
 ### October 28, 2025
 #### Image
 * Added new images
@@ -120,6 +130,7 @@
 * Ended image support
     * Ubuntu Server 22.04.5 LTS for Deep Learning v5.0.2(2025.07.15.)
 
+<a id="september-23-2025"></a>
 ### September 23, 2025
 #### Image
 * Added new images
@@ -129,6 +140,7 @@
     * PIOLINK WEBFRONT-KS 4.0.6.61.32(2025.07.15.)
 
 
+<a id="july-15-2025"></a>
 ### July 15, 2025
 #### Image
 * Added new images
@@ -226,6 +238,7 @@
     * Windows 2022 STD with MS-SQL 2022 Standard(2025.02.25.) EN
     * Windows 2022 STD with MS-SQL 2022 Standard(2025.02.25.) KO
 
+<a id="may-27-2025"></a>
 ### May 27, 2025
 #### Instance
 * Added the placement policy
@@ -234,6 +247,7 @@
 * Revised policy for deleting connected resources when deleting an instance from the console
     * Deletes existing snapshots when deleting block storage
 
+<a id="april-29-2025"></a>
 ### April 29, 2025
 #### Image
 * Added new images
@@ -249,6 +263,7 @@
     * Ubuntu Server 22.04.4 LTS for Deep Learning v3.1.1 (2024.10.29)
     * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7 (2025.03.25)
 
+<a id="march-25-2025"></a>
 ### March 25, 2025
 #### Image
 * Added new images
@@ -274,6 +289,7 @@
     * Rocky Linux 8.10 with Tibero 7 Standard 277758(2024.11.19.)
 
 
+<a id="march-4-2025"></a>
 ### March 4, 2025
 #### Instance
 * Added the feature to change the instance description
@@ -369,6 +385,7 @@
     * Windows 2022 STD(2024.11.19) EN
     * Windows 2022 STD(2024.11.19) KO
 
+<a id="november-26-2024"></a>
 ### November 26, 2024
 #### Instance
 * Added the feature to change the OS details of an instance
@@ -473,6 +490,7 @@
     * CentOS 7.9
 
 
+<a id="october-29-2024"></a>
 ### October 29, 2024
 #### Image Builder
 * Added application version
@@ -497,6 +515,7 @@
     * Ubuntu Server 20.04.6 LTS with PostgreSQL 15.8(2024.10.29.)
     * Ubuntu Server 20.04.6 LTS with Redis 7.2.4(2024.10.29.)
     
+<a id="august-27-2024"></a>
 ### August 27, 2024
 #### Image
 * About GPU and Container (Linux)
@@ -584,6 +603,7 @@
 	* Debian 11 Bullseye
 	    * NHN Kubernetes Service(NKS) Worker Node / NHN Kubernetes Service(NKS) Worker Node(GPU)
 
+<a id="may-28-2024"></a>
 ### May 28, 2024
 #### Instance
 * Added search/filter conditions in the instance list and improved the UI
@@ -644,6 +664,7 @@
     * Windows 2022 STD(2024.05.21.) EN
     * Windows 2022 STD(2024.05.21.) KO
 
+<a id="april-23-2024"></a>
 ### April 23, 2024
 #### Instance 
 * Ended the usage of instance flavor - Korea (Pangyo) region 
@@ -692,16 +713,19 @@
     * Ubuntu Server 20.04.6 LTS with MySQL 8.0.27(2023.03.21.)
     * Ubuntu Server 20.04.6 LTS with Redis 7.0.5(2023.03.21.)
 
+<a id="april-15-2024"></a>
 ### April 15, 2024
 #### Image
 * Image update
     * PentaSecurity WAPPLES SA 6.0.6(2024.04.15.)
   
+<a id="march-26-2024"></a>
 ### March 26, 2024
 #### Image Builder
 * Added application versions
     * Deep Learning Framework 4.0
 
+<a id="february-27-2024"></a>
 ### February 27, 2024
 #### Image
 * Added new images
@@ -760,6 +784,7 @@
 * Deactivated the feature to terminate instances from GPU Instance
 
 
+<a id="november-28-2023"></a>
 ### November 28, 2023
 #### Instance
 * Added a feature to terminate instances
@@ -837,6 +862,7 @@
 #### Bare Metal Instance
 * Bare Metal Instance service added
 
+<a id="october-31-2023"></a>
 ### October 31, 2023
 
 #### System Monitoring
@@ -851,6 +877,7 @@
 * Ended image support
     * CentOS 7.9 with Tibero 6(2022.12.20.)
       
+<a id="september-26-2023"></a>
 ### September 26, 2023
 #### Image
 * Added new images
@@ -869,6 +896,7 @@
 * PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
     * Changed image name PLOS-WAF-KS-v4.0.6.61.28(2023.04.25.) > PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
 
+<a id="august-29-2023"></a>
 ### August 29, 2023
 #### Public API
 * Added the image upload/download APIs
@@ -978,12 +1006,14 @@
 * Supported the encrypted block storage type
 
 
+<a id="july-25-2023"></a>
 ### July 25, 2023
 #### Image Builder
 * Added application versions
     * Deep Learning Framework 3.0.0
 
 
+<a id="june-27-2023"></a>
 ### June 27, 2023
 #### System Monitoring
 * Fixed an issue where, when using the **Monthly Metrics Report**, excel files are not created intermittently
@@ -1004,6 +1034,7 @@
 * Ubuntu Server 20.04.6 LTS for Deep Learning(2023.06.27.)
     * Image update
 
+<a id="may-30-2023"></a>
 ### May 30, 2023
 
 #### Instance
@@ -1109,6 +1140,7 @@
     * Image update
     * November 2023 security updates applied: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025229-os-build-17763-4252-e8ead788-2cd3-4c9b-8c77-d677e2d8744f
 
+<a id="april-25-2023"></a>
 ### April 25, 2023
 #### Image
 * Added new images
@@ -1123,6 +1155,7 @@
 * Bug Fixes
     * Fixed an issue where downloaded monthly metrics reports intermittently fail to run
 
+<a id="march-28-2023"></a>
 ### March 28, 2023
 #### Image
 * Added new images
@@ -1169,6 +1202,7 @@
 #### System Monitoring
 * Removed the interval option `1m` in Monthly Metrics Report
 
+<a id="february-28-2023"></a>
 ### February 28, 2023
 
 #### Image
@@ -1238,6 +1272,7 @@
     * CUBRID 10.2.4
     * CUBRID 11.0.2
 
+<a id="january-31-2023"></a>
 ### January 31, 2023
 
 #### Instance
@@ -1251,6 +1286,7 @@
 * Added the **Change Scaling Group Owner** feature
 * Improved the UI so that setting values can be changed when creating scaling groups with **Instance Template**
 
+<a id="december-27-2022"></a>
 ### December 27, 2022
 
 #### Image
@@ -1295,6 +1331,7 @@
 * Ended base image support
     * CentOS 7.8
     
+<a id="november-29-2022"></a>
 ### November 29, 2022
 #### Instance
 * Added deletion protection (all/set/unset) to **Filter Conditions** of Instance Management
@@ -1358,6 +1395,7 @@
     * Redis
     * Apache Kafka
 
+<a id="november-4-2022"></a>
 ### 2022. 11. 04.
 #### Image
 * CentOS 7.8 with MariaDB 10.3.31(2022. 11. 04.)
@@ -1367,12 +1405,14 @@
 * Modified a script
     * MariaDB
 
+<a id="october-25-2022"></a>
 ### October 25, 2022
 #### Image
 * Ended image support
     * CentOS 7.8 with MySQL 5.6.38(2021. 12. 21.)
     * CentOS 7.8 with MySQL 5.6.50(2021. 12. 21.)
 
+<a id="septempber-27-2022"></a>
 ### Septempber 27, 2022
 #### Image
 * Added a new image
@@ -1381,6 +1421,7 @@
 * PLOS-WFK-KS-v4.0.6.61.25
     * Image updated
 
+<a id="july-26-2022"></a>
 ### July 26, 2022
 
 #### Instance
@@ -1419,6 +1460,7 @@
   * Among the Select Metrics items, `GENERAL` can be found in `Server Dashboard`, and `PROMQL` found in `OpenMetrics Dashboard`.
   * Each request can be found in `Monthly Metric Report`, and the report can be downloaded for a month after creation
 
+<a id="may-24-2022"></a>
 ### May 24, 2022
 #### Instance
 * Added the instance screenshot feature
@@ -1433,6 +1475,7 @@
 * Added a new image
     * Rocky Linux 8.5 (2022. 05. 17.)
 
+<a id="march-29-2022"></a>
 ### March 29, 2022
 #### Image
 * Added a new image
@@ -1441,6 +1484,7 @@
 * Image support ended
     * Debian 9.13 Stretch(2021. 12. 21.)
 
+<a id="january-25-2022"></a>
 ### January 25, 2022
 #### Public API
 * Changed so that GPU Instance service images can be queried with the image query API
@@ -1453,6 +1497,7 @@
 * Added an application
     * Slurm
 
+<a id="december-28-2021"></a>
 ### December 28, 2021
 
 #### Image
@@ -1512,6 +1557,7 @@
     * @Linux and @Windows workspaces that were added automatically when creating an instance are no longer added automatically.
     * All @Linux and @Windows workspaces automatically created in the existing instances are deleted.
 
+<a id="november-23-2021"></a>
 ### 2021. 11. 23.
 #### Image
 * Supports creating a private image that you can use to create a GPU instance
@@ -1524,6 +1570,7 @@
     * Node.js
     * MySQL
 
+<a id="october-26-2021"></a>
 ### October 26, 2021
 #### Image Builder
 * Image Builder service added
@@ -1541,6 +1588,7 @@
 * OpenMetrics Dashboard > Add/Modify Charts
     * Changed so that, when the user clicks the **Add** button without selecting any metrics, guide text shows up and the location is highlighted.
 
+<a id="september-14-2021"></a>
 ### September 14, 2021
 #### System Monitoring
 - Added new APIs: added APIs to view, add, or delete workspaces and collection targets
@@ -1548,6 +1596,7 @@
     - @Linux: Collects metrics of node exporter installed on an instance. When you create a Linux OS type instance, it is automatically added as the collection target of @Linux.
     - @Windows: Collects metrics of windows exporter installed on an instance. When you create a Windows OS type instance, it is automatically added as the collection target of @Windows.
 
+<a id="july-27-2021"></a>
 ### July 27, 2021
 
 #### Instance
@@ -1569,6 +1618,7 @@
 * Bug fixed: Fixed the problem of creating more than 5 when creating advanced monitoring layout quickly
 * Bug fixed: Fixed the problem of not being able to add other instances with same name to the same port as the collection target in **Advanced Monitoring > Workspace > Collection Target**
 
+<a id="jun-29-2021"></a>
 ### Jun 29, 2021
 
 #### Image
@@ -1631,6 +1681,7 @@
 * Added API compatible to Prometheus (Beta)
 
 
+<a id="april-27-2021"></a>
 ### April 27, 2021
 
 #### Image
@@ -1641,6 +1692,7 @@
 * Image support ended
     * Ubuntu Server 16.04.7 LTS(2020. 12. 22.)
 
+<a id="february-23-2021"></a>
 ### February 23, 2021
 
 #### Image
@@ -1665,6 +1717,7 @@
     * Heap-based buffer overflow in Sudo(CVE-2021-3156)
     * Applied when creating a new instance
 
+<a id="january-26-2021"></a>
 ### January 26, 2021
 
 #### System Monitoring
@@ -1672,6 +1725,7 @@
 * Added new feature: Advanced Monitoring (OpenMetrics)
     * Provides the OpenMetrics (Prometheus exposition format) index collection, retrieval, and notification features
   
+<a id="december-29-2020"></a>
 ### December 29, 2020
 
 #### Image
@@ -1716,11 +1770,13 @@
 * Windows 2019 STD with MS-SQL 2019 Standard(2020. 12. 22.)
     * November 2020 security updates applied: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
 
+<a id="november-24-2020"></a>
 ### November 24, 2020
 
 #### Auto Scale
 * Added the feature of associating with Deploy
 
+<a id="august-25-2020"></a>
 ### August 25, 2020
 
 #### Instance
@@ -1770,6 +1826,7 @@
     * Windows 2012 R2 STD with MS-SQL 2014 Standard (2020. 02. 18.)
     * Windows 2012 R2 STD with MS-SQL 2016 Express (2020. 02. 18.)
 
+<a id="june-23-2020"></a>
 ### June 23, 2020
 
 #### System Monitoring
@@ -1782,6 +1839,7 @@
 * Released the service of creating GPU instances readily on console
 * Removed the Delete button from the dialogue box of suspending instances
 
+<a id="may-26-2020"></a>
 ### May 26, 2020
 
 #### Instance
@@ -1795,6 +1853,7 @@
 * Released Public API v2
     * Updated API specifications to be compatible with Openstack
 
+<a id="february-25-2020"></a>
 ### February 25, 2020
 
 #### System Monitoring
@@ -1808,6 +1867,7 @@
     * Upgraded usage volume for CPU and memory
 
 
+<a id="january-21-2020"></a>
 ### January 21, 2020
 
 #### System Monitoring
@@ -1820,6 +1880,7 @@
     * Updated to save changes, by selecting a server and user group and clicking the save button
 
 
+<a id="december-17-2019"></a>
 ### December 17, 2019
 
 #### Auto Scale
@@ -1828,6 +1889,7 @@
     * Details: All configured network information, user script content
 
 
+<a id="november-26-2019"></a>
 ### November 26, 2019
 
 #### System Monitoring
@@ -1837,6 +1899,7 @@
 * Instance Search Updated on Server Dashboard: No distinction is required between upper and lower cases
 
 
+<a id="oct-29-2019"></a>
 ### Oct 29, 2019
 
 #### Image
@@ -1872,12 +1935,14 @@
 - Fixed the issue of invalid output of dates for the adding/modifying user/monitoring groups, especially in the US region
 
 
+<a id="september-24-2019"></a>
 ### September 24, 2019
 
 #### System Monitoring
 - Supports English for web console messages
 - Fixed failure in the layout selection for server dashboard on Internet Explorer 11
 
+<a id="august-27-2019"></a>
 ### August 27, 2019
 
 #### System Monitoring
@@ -1887,6 +1952,7 @@
 #### Updates
 * Removed the common usage tab from the image management page.
 
+<a id="july-23-2019"></a>
 ### July 23, 2019
 
 #### Release of New Service: System Monitoring
@@ -1894,12 +1960,14 @@
 - System metrics are provided on a chart for a newly created virtual server  
 - Each chart of system metrics can be configured under a layout of choice; you may set a notification to be sent to a group of particular users via email or SMS, when a metric reaches a specific threshold.
 
+<a id="june-25-2019"></a>
 ### June 25, 2019
 
 #### Updates
 
 * Image creation is available even when instance is running.
 
+<a id="may-28-2019"></a>
 ### May 28, 2019
 
 #### Updates
@@ -1953,6 +2021,7 @@
         - Windows 2016 STD with MS-SQL 2016 Standard(2019. 05. 28.)
 
 
+<a id="may-14-2019"></a>
 ### 2019. 05. 14.
 
 #### 기능 개선
@@ -1968,6 +2037,7 @@
 	* Windows 2008 R2 STD
 
 
+<a id="april-25-2019"></a>
 ### 2019. 04. 25.
 
 #### 기능 개선
@@ -1998,6 +2068,7 @@
 		* Windows Bootstrap 과정 기능 개선
 
 
+<a id="march-26-2019"></a>
 ### 2019. 03. 26.
 
 #### 기능 개선
@@ -2029,6 +2100,7 @@
 	* 반영내용
 		* Bootstrap 과정의 기능 개선
 
+<a id="february-26-2019"></a>
 ### 2019. 02. 26.
 
 #### 기능 개선
@@ -2045,6 +2117,7 @@
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 추가 해결
 
 
+<a id="january-29-2019"></a>
 ### 2019.01.29
 
 #### 기능 개선
@@ -2054,6 +2127,7 @@
   * Image 조회 API에 pagination을 위한 쿼리 파라미터 추가
   * Image 삭제 API 추가
 
+<a id="december-27-2018"></a>
 ### 2018. 12. 27.
 
 #### 기능 개선
@@ -2075,6 +2149,7 @@
             * LC_CTYPE="en_US.UTF-8"
 
 
+<a id="december-11-2018"></a>
 ### 2018. 12. 11.
 
 #### 기능 개선
@@ -2176,6 +2251,7 @@
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
 
 
+<a id="november-13-2018"></a>
 ### 2018. 11. 13.
 
 #### 기능 개선
@@ -2199,6 +2275,7 @@
     * 커널 업데이트 :  2.6.32-431 -> 2.6.32-754.6.3
     * Yum repository target 변경 : CentOS 최신 repo
 
+<a id="october-23-2018"></a>
 ### 2018. 10. 23.
 
 #### 기능 개선
@@ -2445,6 +2522,7 @@
         * /etc/hosts 파일의 사용자 추가 설정 유지
 
 
+<a id="september-20-2018"></a>
 ### 2018. 09. 20.
 
 #### 기능 개선
@@ -2495,6 +2573,7 @@
         * 2018. 09. 20. 신규적용되는 예약스크립트 기능이 정상적으로 적용되지 않는 부분 해결
 
 
+<a id="august-9-2018"></a>
 ### 2018. 08. 09.
 
 #### 기능 개선
@@ -2595,6 +2674,7 @@
 
 
 
+<a id="july-16-2018"></a>
 ### 2018. 07. 16.
 
 #### 기능 개선
@@ -2681,6 +2761,7 @@
         * 시스템 로그인전 배너 설정 제거
             * /etc/issue, /etc/issue.net 삭제
 
+<a id="may-29-2018"></a>
 ### 2018.05.29
 
 #### 버그 수정
@@ -2692,10 +2773,12 @@
 * Instance 생성 시 volume type 설정 기능이 추가되었습니다.
 * Block Storage 생성 시 volume type 설정 기능이 추가되었습니다.
 
+<a id="april-24-2018"></a>
 ### 2018.04.24
 
 * Windows 인스턴스 Log 탭이 일시적으로 삭제 되었습니다.
 
+<a id="march-22-2018"></a>
 ### 2018.03.22
 
 #### 신규 상품 추가
@@ -2706,6 +2789,7 @@
     * 자세한 내용은 가이드 문서를 참고해 주세요.
 
 
+<a id="february-22-2018"></a>
 ### 2018. 02. 22.
 
 #### 기능 개선
@@ -2779,6 +2863,7 @@
     * 그외 설정은 CentOS Linux 6.5 이미지와 동일함
 
 
+<a id="september-21-2017"></a>
 ### 2017.09.21
 
 #### 기능 추가
@@ -2792,6 +2877,7 @@
 
 
 
+<a id="july-20-2017"></a>
 ### 2017.07.20
 
 #### 버그 수정
@@ -2799,6 +2885,7 @@
 
 
 
+<a id="august-24-2017"></a>
 ### 2017.08.24
 
 #### 기능 추가
@@ -2807,7 +2894,7 @@
     * 사용하던 인스턴스의 디스크는 그대로 보존하면서 CPU/Memory를 업그레이드 하거나 다운그레이드 할 수 있습니다.
     * 블록 스토리지 크기는 변경이 불가능합니다.
     * 사양 변경을 위해 인스턴스는 중지 상태여야 합니다.
-    * 자세한 제약 사항은 [인스턴스 사양 변경](/Compute/Instance/ko/console-guide/#_14) 참조
+    * 자세한 제약 사항은 [인스턴스 사양 변경](/Compute/Instance/ko/console-guide/#modify-flavor) 참조
 * Low IOPS SSD 사양(U 타입)이 추가되었습니다.
     * 좀 더 낮은 가격에 인스턴스를 이용할 수 있도록 저사양 인스턴스 사양이 추가되었습니다.
     * 리눅스 OS만 지원합니다.
@@ -2821,6 +2908,7 @@
 
 
 
+<a id="may-25-2017"></a>
 ### 2017. 05. 25.
 
 #### 기능 추가
@@ -2833,6 +2921,7 @@
 
 
 
+<a id="april-25-2017"></a>
 ### 2017.04.25
 
 #### 기능 개선
@@ -2841,6 +2930,7 @@
 
 
 
+<a id="march-23-2017"></a>
 ### 2017.03.23
 
 #### 기능 개선
@@ -2851,6 +2941,7 @@
 
 
 
+<a id="january-19-2017"></a>
 ### 2017.01.19
 
 #### 기능 개선/변경
@@ -2866,6 +2957,7 @@
 
 
 
+<a id="december-22-2016"></a>
 ### 2016.12.22
 
 #### 기능 개선/변경
