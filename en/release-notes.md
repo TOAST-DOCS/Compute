@@ -2,33 +2,33 @@
 ## Compute > Release Notes
 
 <a id="march-31-2026"></a>
-### 2026. 03. 31.
-* Ended service in US (California) region
+### March 31, 2026
+* End of service for the US (California) region
 
 <a id="march-10-2026"></a>
-### 2026. 03. 10.
+### March 10, 2026
 #### Image
-* Disable GRUB BLS configuration in the Rocky 9.7 image
-* Remove bullseye-backports from sources.list because support for the Debian 11.11 bullseye-backports repository has ended
+* Disabled GRUB BLS configuration in the Rocky 9.7 image.
+* Removed bullseye-backports from sources.list because support for the Debian 11.11 bullseye-backports repository has ended.
 
-* About GPU and container(Linux)
+* About GPU and container (Linux)
     * containerd: 1.6.32 > 2.2.1
     * NVIDIA driver update: 535.230.02 > 580.105.08
-    * CUDA update: 12.2 > 13.0
+    * CUDA update: 12.2 > 13.0
     * DCGM: 3.3.5 > 4.5.0
     * DCGM-Exporter: 3.3.5 > 4.5.0
-    * MIG Manager: 0.7.0 > 0.13.1
+    * MIG Manager: 0.7.0 > 0.13.1
 
-* GPU(Windows)
+* GPU (Windows)
     * NVIDIA driver update: 539.19 > 581.80
-    * CUDA update: 12.2 > 13.0
+    * CUDA update: 12.2 > 13.0
 
 * Security update
-    * windows 2016: KB5071543
+    * Windows 2016: KB5071543
         * https://support.microsoft.com/en-us/topic/december-9-2025-kb5071543-os-build-14393-8688-ec93aa63-f343-4a7e-ab3c-faa096e17395
-    * windows 2019: KB5071544
+    * Windows 2019: KB5071544
         * https://support.microsoft.com/en-us/topic/december-9-2025-kb5071544-os-build-17763-8146-630aa62e-f399-4e42-9f7a-2a4d38dd1210
-    * windows 2022: KB5071547
+    * Windows 2022: KB5071547
         * https://support.microsoft.com/en-us/topic/december-9-2025-kb5071547-os-build-20348-4529-7935ca9f-cac3-4d17-93bb-fe8e57c6db32
 
 * Added new images
@@ -63,7 +63,8 @@
     * Windows 2022 STD(2026.03.10.) KO
     * Windows 2022 STD with MS-SQL 2022 Standard(2026.03.10.) EN
     * Windows 2022 STD with MS-SQL 2022 Standard(2026.03.10.) KO
-* Ended image support
+
+* End of image support
     * Debian 11.11 Bullseye(2025.07.15.)
     * Debian 12.10 Bookworm(2025.07.15.)
     * Rocky Linux 8.10(2025.07.15.)
@@ -98,6 +99,10 @@
 
 <a id="january-27-2026"></a>
 ### January 27, 2026
+#### Instance
+* Added the serial console feature.
+
+### November 25, 2025
 #### Instance
 * Added the serial console feature
 
