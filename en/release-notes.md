@@ -1,9 +1,18 @@
 <a id="compute-release-notes"></a>
 ## Compute > Release Notes
 
+<a id="may-27-2026"></a>
+## May 27, 2026
+### Instance
+* Adjusted the default value of the limit parameter for the instance list retrieval API to 100 and the maximum value to 1,000
+* Added information on whether the cumulative instance suspension period has exceeded 90 days
+
+### Image
+* Adjusted the default value of the limit parameter for the image list retrieval API to 100 and the maximum value to 1,000
+
 <a id="april-28-2026"></a>
-### 2026. 04. 28.
-#### Image
+## April 28, 2026
+### Image
 
 * Added new images
     * Ubuntu Server 22.04.5 LTS for Deep Learning v8.0.0(2026.04.28.)
@@ -35,26 +44,26 @@
     * Ubuntu Server 22.04.5 LTS with PostgreSQL 15(2025.07.15.)
 
 <a id="march-31-2026"></a>
-### March 31, 2026
+## March 31, 2026
 * End of service for the US (California) region
 
 <a id="march-10-2026"></a>
-### March 10, 2026
-#### Image
+## March 10, 2026
+### Image
 * Disabled GRUB BLS configuration in the Rocky 9.7 image.
 * Removed bullseye-backports from sources.list because support for the Debian 11.11 bullseye-backports repository has ended.
 
 * About GPU and container (Linux)
-    * containerd: 1.6.32 > 2.2.1
-    * NVIDIA driver update: 535.230.02 > 580.105.08
-    * CUDA update: 12.2 > 13.0
-    * DCGM: 3.3.5 > 4.5.0
-    * DCGM-Exporter: 3.3.5 > 4.5.0
-    * MIG Manager: 0.7.0 > 0.13.1
+    * containerd: 1.6.32 → 2.2.1
+    * NVIDIA driver update: 535.230.02 → 580.105.08
+    * CUDA update: 12.2 → 13.0
+    * DCGM: 3.3.5 → 4.5.0
+    * DCGM-Exporter: 3.3.5 → 4.5.0
+    * MIG Manager: 0.7.0 → 0.13.1
 
 * GPU (Windows)
-    * NVIDIA driver update: 539.19 > 581.80
-    * CUDA update: 12.2 > 13.0
+    * NVIDIA driver update: 539.19 → 581.80
+    * CUDA update: 12.2 → 13.0
 
 * Security update
     * Windows 2016: KB5071543
@@ -131,17 +140,13 @@
     * Windows 2022 STD with MS-SQL 2022 Standard(2025.07.15.) KO
 
 <a id="january-27-2026"></a>
-### January 27, 2026
-#### Instance
+## January 27, 2026
+### Instance
 * Added the serial console feature.
 
-### November 25, 2025
-#### Instance
-* Added the serial console feature
-
 <a id="november-25-2025"></a>
-### November 25, 2025
-#### Image
+## November 25, 2025
+### Image
 * Improved the feature to modify images
     * Added the setting to enable or disable image download features
 
@@ -149,23 +154,23 @@
     * Rocky Linux 9.5 - Container(2025.11.18.)
     * Ubuntu Server 24.04.3 LTS - Container(2025.11.18.)
 
-#### Instance Template
+### Instance Template
 * Added the feature to create an instance from snapshots
 
-#### Auto Scale
+### Auto Scale
 * Added the feature to create an instance from snapshots
 
 <a id="october-28-2025"></a>
-### October 28, 2025
-#### Image
+## October 28, 2025
+### Image
 * Added new images
     * Ubuntu Server 22.04.5 LTS for Deep Learning v7.0.0(2025.10.28.)
 * Ended image support
     * Ubuntu Server 22.04.5 LTS for Deep Learning v5.0.2(2025.07.15.)
 
 <a id="september-23-2025"></a>
-### September 23, 2025
-#### Image
+## September 23, 2025
+### Image
 * Added new images
     * PIOLINK WEBFRONT-KS 4.0.6.62.20(2025.09.23.)
     * PIOLINK WEBFRONT-KS 4.0.6.61.33(2025.09.23.)
@@ -174,8 +179,8 @@
 
 
 <a id="july-15-2025"></a>
-### July 15, 2025
-#### Image
+## July 15, 2025
+### Image
 * Added new images
     * Debian 11.11 Bullseye(2025.07.15.)
     * Debian 12.10 Bookworm(2025.07.15.)
@@ -272,8 +277,8 @@
     * Windows 2022 STD with MS-SQL 2022 Standard(2025.02.25.) KO
 
 <a id="may-27-2025"></a>
-### May 27, 2025
-#### Instance
+## May 27, 2025
+### Instance
 * Added the placement policy
 * Added the feature set whether to delete network interfaces when disconnected
 * Added the feature to set the block storage deletion policy during instance creation or block storage attachment
@@ -281,8 +286,8 @@
     * Deletes existing snapshots when deleting block storage
 
 <a id="april-29-2025"></a>
-### April 29, 2025
-#### Image
+## April 29, 2025
+### Image
 * Added new images
     * Ubuntu Server 22.04.5 LTS for Deep Learning v6.0.0(2025.04.29.)
     * Ubuntu Server 22.04.5 LTS for Deep Learning v5.0.1(2025.04.29.)
@@ -297,8 +302,8 @@
     * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7 (2025.03.25)
 
 <a id="march-25-2025"></a>
-### March 25, 2025
-#### Image
+## March 25, 2025
+### Image
 * Added new images
     * Ubuntu Server 20.04.6 LTS with PostgreSQL 15(2025.03.25.)
     * Ubuntu Server 20.04.6 LTS with MySQL 8.0.36(2025.03.25.)
@@ -323,33 +328,33 @@
 
 
 <a id="march-4-2025"></a>
-### March 4, 2025
-#### Instance
+## March 4, 2025
+### Instance
 * Added the feature to change the instance description
 * Added restriction on using the current password when changing API passwords
 * Added the feature to create instances from block storage and snapshots
 
-#### Image
-* Changed from Rocky 8.10 default python to platform python (python 3.11 > 3.6)
+### Image
+* Changed from Rocky 8.10 default python to platform python (python 3.11 → 3.6)
 
 * About GPU and container (Linux)
-    * containerd: 1.6.32 > Unchanged
-    * NVIDIA driver update: 535.216.01 > 535.230.02
-    * CUDA update: 12.2 > Unchanged
-    * DCGM: 3.3.5 > Unchanged
-    * DCGM-Exporter: 3.3.5 > Unchanged
-    * MIG Manager: 0.7.0 > Unchanged
+    * containerd: 1.6.32 → Unchanged
+    * NVIDIA driver update: 535.216.01 → 535.230.02
+    * CUDA update: 12.2 → Unchanged
+    * DCGM: 3.3.5 → Unchanged
+    * DCGM-Exporter: 3.3.5 → Unchanged
+    * MIG Manager: 0.7.0 → Unchanged
 
 * GPU(Windows)
-    * NVIDIA driver update: 538.95 > 539.19
-    * CUDA update: 12.2 > Unchanged
+    * NVIDIA driver update: 538.95 → 539.19
+    * CUDA update: 12.2 → Unchanged
 
 * Security update
-    * windows 2016: KB5049993
+    * Windows 2016: KB5049993
         * https://support.microsoft.com/en-us/topic/january-14-2025-kb5049993-os-build-14393-7699-b148c0ad-29fd-460e-b4a2-db38e88ae937
-    * windows 2019: KB5050008
+    * Windows 2019: KB5050008
         * https://support.microsoft.com/en-us/topic/january-14-2025-kb5050008-os-build-17763-6775-9a174725-a7ea-4e37-a6f8-e86f7c4d3f31
-    * windows 2022: KB5049983
+    * Windows 2022: KB5049983
         * https://support.microsoft.com/en-us/topic/january-14-2025-kb5049983-os-build-20348-3091-789bf923-7777-419d-9c3a-23f7c814930f
 
 * Added new images
@@ -419,11 +424,11 @@
     * Windows 2022 STD(2024.11.19) KO
 
 <a id="november-26-2024"></a>
-### November 26, 2024
-#### Instance
+## November 26, 2024
+### Instance
 * Added the feature to change the OS details of an instance
 
-#### Image
+### Image
 * Improved the image modification feature
   * Added items for modifiction
     * OS version value
@@ -436,17 +441,17 @@
     * Set applicable services
 
 * About GPU and container (Linux)
-    * containerd: 1.6.32 > Unchanged
-    * NVIDIA driver update: 535.183.06 > 535.216.01
-    * CUDA update: 12.2 > Unchanged
-    * DCGM: 3.3.5 > Unchanged
-    * DCGM-Exporter: 3.4.1 > Unchanged
-    * MIG Manager: 0.7.0 > Unchanged
-    * Minimum disk size (GB): 20 > 30
+    * containerd: 1.6.32 → Unchanged
+    * NVIDIA driver update: 535.183.06 → 535.216.01
+    * CUDA update: 12.2 → Unchanged
+    * DCGM: 3.3.5 → Unchanged
+    * DCGM-Exporter: 3.4.1 → Unchanged
+    * MIG Manager: 0.7.0 → Unchanged
+    * Minimum disk size (GB): 20 → 30
     * Patch for DCGM-Exporter to resolve the uninstall issue (NVIDIA, Deep Learning image)
 
 * GPU(Windows)
-    * NVIDIA driver update: 538.78 > 538.95
+    * NVIDIA driver update: 538.78 → 538.95
     * CUDA version: 12.2
 
 * Security update
@@ -513,7 +518,7 @@
      * Windows 2022 STD(2024.11.19.) EN
      * Windows 2022 STD(2024.11.19.) KO
 
-#### Image Builder
+### Image Builder
 * Ended application version support
     * NHN Kubernetes Service(NKS) Worker Node 1.0
     * NHN Kubernetes Service(NKS) Worker Node(GPU) 1.0
@@ -524,12 +529,12 @@
 
 
 <a id="october-29-2024"></a>
-### October 29, 2024
-#### Image Builder
+## October 29, 2024
+### Image Builder
 * Added application version
     * Deep Learning Framework 5.0
 
-#### Image
+### Image
 * Added new images
     * Ubuntu Server 22.04.4 LTS for Deep Learning v3.1.1(2024.10.29.)
     * Ubuntu Server 22.04.4 LTS for Deep Learning v4.0.1(2024.10.29.)
@@ -549,18 +554,18 @@
     * Ubuntu Server 20.04.6 LTS with Redis 7.2.4(2024.10.29.)
     
 <a id="august-27-2024"></a>
-### August 27, 2024
-#### Image
+## August 27, 2024
+### Image
 * About GPU and Container (Linux)
-    * containerd: 1.6.31 > 1.6.32
-    * NVIDIA driver updated: 535.161.08 > 535.183.06
-    * CUDA updated: 12.2 > Unchanged
-    * MIG Manager: 0.7.0 > Unchanged
-    * NVIDIA DCGM: 3.3.5 > Unchanged
-    * NVIDIA DCGM Exporter: 3.4.1 > Unchanged
+    * containerd: 1.6.31 → 1.6.32
+    * NVIDIA driver updated: 535.161.08 → 535.183.06
+    * CUDA updated: 12.2 → Unchanged
+    * MIG Manager: 0.7.0 → Unchanged
+    * NVIDIA DCGM: 3.3.5 → Unchanged
+    * NVIDIA DCGM Exporter: 3.4.1 → Unchanged
 
 * GPU (Windows)
-    * NVIDIA driver updated: 538.46 > 538.78
+    * NVIDIA driver updated: 538.46 → 538.78
 
 * Security update (Windows)
     * Windows 2016: KB5040434
@@ -606,13 +611,13 @@
     * Windows 2022 STD(2024.08.20.) EN
     * Windows 2022 STD(2024.08.20.) KO
 
-#### Public API
+### Public API
 * Added US (California) region
 
-#### Instance
+### Instance
 * Added a feature to change instance key pairs
 
-#### Image Builder
+### Image Builder
 * Added supported application version
     * PostgreSQL 15
     * NHN Kubernetes Service(NKS) Worker Node 1.6
@@ -637,8 +642,8 @@
 	    * NHN Kubernetes Service(NKS) Worker Node / NHN Kubernetes Service(NKS) Worker Node(GPU)
 
 <a id="may-28-2024"></a>
-### May 28, 2024
-#### Instance
+## May 28, 2024
+### Instance
 * Added search/filter conditions in the instance list and improved the UI
     * Added search condtions
         * Instance name
@@ -648,17 +653,17 @@
         * Image type
         * Instance status
         
-#### Image
+### Image
 * About GPU and Container (Linux)
-    * containerd: 1.6.27 > 1.6.31
-    * NVIDIA driver updated: 535.154.05 > 535.161.08
-    * CUDA: 12.2 > Unchanged
-    * MIG Manager: 0.5.5 > 0.7.0
-    * NVIDIA DCGM: 3.1.8 > 3.3.5
-    * NVIDIA DCGM Exporter: 3.1.5 > 3.4.1
+    * containerd: 1.6.27 → 1.6.31
+    * NVIDIA driver updated: 535.154.05 → 535.161.08
+    * CUDA: 12.2 → Unchanged
+    * MIG Manager: 0.5.5 → 0.7.0
+    * NVIDIA DCGM: 3.1.8 → 3.3.5
+    * NVIDIA DCGM Exporter: 3.1.5 → 3.4.1
 
 * GPU(Windows)
-    * NVIDIA driver updated: 538.46 > 538.15
+    * NVIDIA driver updated: 538.46 → 538.15
 
 * Security update (Windows)
     * Windows 2016: KB5036899
@@ -698,12 +703,12 @@
     * Windows 2022 STD(2024.05.21.) KO
 
 <a id="april-23-2024"></a>
-### April 23, 2024
-#### Instance 
+## April 23, 2024
+### Instance 
 * Ended the usage of instance flavor - Korea (Pangyo) region 
     * u2 (Ephemeral Storage Instance)
 
-#### Image
+### Image
 * Added new images
     * CentOS 7.9 with Apache Kafka 3.6.1(2024.04.23.)
     * CentOS 7.9 with CUBRID 10.2.14(2024.04.23.)
@@ -747,20 +752,20 @@
     * Ubuntu Server 20.04.6 LTS with Redis 7.0.5(2023.03.21.)
 
 <a id="april-15-2024"></a>
-### April 15, 2024
-#### Image
+## April 15, 2024
+### Image
 * Image update
     * PentaSecurity WAPPLES SA 6.0.6(2024.04.15.)
   
 <a id="march-26-2024"></a>
-### March 26, 2024
-#### Image Builder
+## March 26, 2024
+### Image Builder
 * Added application versions
     * Deep Learning Framework 4.0
 
 <a id="february-27-2024"></a>
-### February 27, 2024
-#### Image
+## February 27, 2024
+### Image
 * Added new images
     * Rocky Linux 8.9(2024.02.20.)
 
@@ -768,13 +773,13 @@
     * Rocky Linux 8.8(2023.11.21.)
 
 * About GPU and Container (Linux)
-    * containerd: 1.6.22 > 1.6.27
-    * NVIDIA drive updated: 535.104.12 > 535.154.05
-    * CUDA updated: 12.2 > Unchanged
-    * MIG Manager: 0.5.5 > Unchanged
+    * containerd: 1.6.22 → 1.6.27
+    * NVIDIA drive updated: 535.104.12 → 535.154.05
+    * CUDA updated: 12.2 → Unchanged
+    * MIG Manager: 0.5.5 → Unchanged
 
 * GPU (Windows)
-    * NVIDIA driver updated: 537.13 > 538.15
+    * NVIDIA driver updated: 537.13 → 538.15
 
 * Security update (Windows)
     * Windows 2016: KB5034119
@@ -812,20 +817,20 @@
     * Windows 2019 STD with MS-SQL 2019 Standard(2024.02.20.) EN
     * Windows 2019 STD with MS-SQL 2019 Standard(2024.02.20.) KO
 
-#### Instance
+### Instance
 * Added a feature to create images from encrypted root block storage instances
 * Deactivated the feature to terminate instances from GPU Instance
 
 
 <a id="november-28-2023"></a>
-### November 28, 2023
-#### Instance
+## November 28, 2023
+### Instance
 * Added a feature to terminate instances
 
-#### Public API
+### Public API
 * Added APIs to terminate instances and to resume terminated instances
 
-#### Image
+### Image
 * Removed limit on the number of image sharing members
 
 * Added new images
@@ -839,22 +844,22 @@
 
 * About GPU and Container (Linux)
     * debian 11 container - Added gpu driver/Select gpu flavor to create clusters
-    * NVIDIA driver updated: 470.199.02 > 535.104.12
-    * CUDA updated: 11.4 > 12.2
-    * MIG manager: 0.5.4 > 0.5.5
+    * NVIDIA driver updated: 470.199.02 → 535.104.12
+    * CUDA updated: 11.4 → 12.2
+    * MIG manager: 0.5.4 → 0.5.5
 
 * GPU (Windows)
-	* NVIDIA driver updated: 474.44 > 537.13
+	* NVIDIA driver updated: 474.44 → 537.13
 
 * Security update (Linux)
 	* CentOS 7.9: Removed /usr/bin/newgrp, /sbin/unix_chkpwd SetUID 
 
 * Security update (Windows)
-	* windows 2016: kb5031362
+	* Windows 2016: KB5031362
 		* https://support.microsoft.com/en-au/topic/october-10-2023-kb5031362-os-build-14393-6351-0c6e713e-3d6a-4593-8a75-af0a605f249c
-	* windows 2019: kb5031361
+	* Windows 2019: KB5031361
 		* https://support.microsoft.com/en-gb/topic/october-10-2023-kb5031361-os-build-17763-4974-766593db-b47a-4b18-a698-906426860313
-	* windows 2022: kb5031364
+	* Windows 2022: KB5031364
 		* https://support.microsoft.com/en-us/topic/october-10-2023-kb5031364-os-build-20348-2031-7f1d69e7-c468-4566-887a-1902af791bbc
 
 * Image update (Linux)
@@ -892,17 +897,17 @@
 
 
 
-#### Bare Metal Instance
+### Bare Metal Instance
 * Bare Metal Instance service added
 
 <a id="october-31-2023"></a>
-### October 31, 2023
+## October 31, 2023
 
-#### System Monitoring
+### System Monitoring
 * Bug Fixes
   * Fixed an issue that kept sending notifications to users excluded from projects
     
-#### Image
+### Image
 * Added new images
     * CentOS 7.9 with Tibero 7 CSE(2023.10.31.)
     * CentOS 7.9 with Tibero 7 CEE(2023.10.31.)
@@ -911,8 +916,8 @@
     * CentOS 7.9 with Tibero 6(2022.12.20.)
       
 <a id="september-26-2023"></a>
-### September 26, 2023
-#### Image
+## September 26, 2023
+### Image
 * Added new images
     * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.1(2023.09.26.)
     * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.1(2023.09.26.)
@@ -927,14 +932,14 @@
     * Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.08.22.) KO
 
 * PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
-    * Changed image name PLOS-WAF-KS-v4.0.6.61.28(2023.04.25.) > PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
+    * Changed image name PLOS-WAF-KS-v4.0.6.61.28(2023.04.25.) → PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
 
 <a id="august-29-2023"></a>
-### August 29, 2023
-#### Public API
+## August 29, 2023
+### Public API
 * Added the image upload/download APIs
 
-#### Image
+### Image
 * Added new images
     * Rocky Linux 8.8(2023.08.22.)
     * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.0(2023.08.22.)
@@ -944,12 +949,12 @@
     * Rocky Linux 8.7(2023.05.25.)
 
 * GPU
-    * NVIDIA driver updated (Linux): 470.182.03 > 470.199.02
-    * dcgm updated (Linux): 3.1.7 > 3.1.8
-    * NVIDIA driver updated (Windows): 474.30 > 474.44
+    * NVIDIA driver updated (Linux): 470.182.03 → 470.199.02
+    * dcgm updated (Linux): 3.1.7 → 3.1.8
+    * NVIDIA driver updated (Windows): 474.30 → 474.44
 
 * Changed image name
-    * Ubuntu Server 20.04.6 LTS for Deep Learning(2023.06.27.) > Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.0(2023.06.27.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning(2023.06.27.) → Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.0(2023.06.27.)
 
 * CentOS 7.9(2023.08.22.)
     * Image update
@@ -1029,38 +1034,38 @@
     * Image update
     * July 2023 security update applied: https://support.microsoft.com/en-us/topic/july-11-2023-security-update-kb5028171-34557119-e00c-4678-bb87-048a36ed8585
 
-#### Instance
+### Instance
 * Added a feature to delete floating IPs and additional block storage attached to an instance when deleting the instance
 
-#### Instance Template
+### Instance Template
 * Supported the encrypted block storage type
 
-#### Scaling Group
+### Scaling Group
 * Supported the encrypted block storage type
 
 
 <a id="july-25-2023"></a>
-### July 25, 2023
-#### Image Builder
+## July 25, 2023
+### Image Builder
 * Added application versions
     * Deep Learning Framework 3.0.0
 
 
 <a id="june-27-2023"></a>
-### June 27, 2023
-#### System Monitoring
+## June 27, 2023
+### System Monitoring
 * Fixed an issue where, when using the **Monthly Metrics Report**, excel files are not created intermittently
 * Windows agent
     * Improved high availability feature 
     * Added logs
     
-#### Image Builder
+### Image Builder
 * Added application versions
     * Deep Learning Framework 2.1.0
 * Ended application version support
     * Deep Learning Framework 2.0.1
 
-#### Image
+### Image
 * GPU
     * NVIDIA driver updated (Linux): 470.182.03
 
@@ -1068,18 +1073,18 @@
     * Image update
 
 <a id="may-30-2023"></a>
-### May 30, 2023
+## May 30, 2023
 
-#### Instance
+### Instance
 * Improved the instance creation and deletion logs of **CloudTrail**
 * Improved the UI so that multiple existing network interfaces can be specified when creating an instance
 
-#### Image Builder
+### Image Builder
 * Added applications
     * NHN Kubernetes Service(NKS) Worker Node
     * NHN Kubernetes Service(NKS) Worker Node(GPU)
 
-#### Image
+### Image
 * Added new images
     * Rocky Linux 8.7(2023.05.25.)
     * Ubuntu Server 20.04.6 LTS for NAT(2023.05.25.)
@@ -1092,8 +1097,8 @@
     * Ubuntu Server 18.04.6 LTS with NVIDIA(2023.03.21.)
 
 * GPU
-    * NVIDIA driver updated (Linux): 450.216.04 > 470.182.03
-    * NVIDIA driver updated: 453.94 > 474.30
+    * NVIDIA driver updated (Linux): 450.216.04 → 470.182.03
+    * NVIDIA driver updated: 453.94 → 474.30
 
 * CentOS 7.9(2023.05.25.)
     * Image update
@@ -1174,8 +1179,8 @@
     * November 2023 security updates applied: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025229-os-build-17763-4252-e8ead788-2cd3-4c9b-8c77-d677e2d8744f
 
 <a id="april-25-2023"></a>
-### April 25, 2023
-#### Image
+## April 25, 2023
+### Image
 * Added new images
     * Ubuntu Server 20.04.6 LTS for Deep Learning(2023.04.25.)
     * PLOS-WFK-KS-v4.0.6.61.28(2023.04.25.)
@@ -1184,13 +1189,13 @@
     * Ubuntu Server 18.04.6 LTS for Deep Learning(2022.01.25.)
     * PLOS-WFK-KS-v4.0.6.61.25(2022.09.20.)
 
-#### System Monitoring
+### System Monitoring
 * Bug Fixes
     * Fixed an issue where downloaded monthly metrics reports intermittently fail to run
 
 <a id="march-28-2023"></a>
-### March 28, 2023
-#### Image
+## March 28, 2023
+### Image
 * Added new images
     * CentOS 7.9 with CUBRID 10.2.10(2023.03.21.)
     * CentOS 7.9 with CUBRID 11.0.10(2023.03.21.)
@@ -1225,20 +1230,20 @@
 * Ubuntu Server 22.04.2 LTS(2023.03.21.)
     * Image update
     
-#### Image Builder
+### Image Builder
 * Added a new feature
     * Private image can be selected as base image when building images
 
-#### Public API
+### Public API
 * Changed API endpoints
 
-#### System Monitoring
+### System Monitoring
 * Removed the interval option `1m` in Monthly Metrics Report
 
 <a id="february-28-2023"></a>
-### February 28, 2023
+## February 28, 2023
 
-#### Image
+### Image
 * Added new images
     * Ubuntu Server 22.04.1 LTS(2023.02.21.)
     * Ubuntu Server 20.04.5 LTS with NVIDIA(2023.02.21.)
@@ -1246,8 +1251,8 @@
 * Kernel updated
 
 * GPU
-    * NVIDIA driver updated (Windows): 453.51 > 453.94
-    * NVIDIA driver updated (Linux): 450.191.01 > 450.216.04
+    * NVIDIA driver updated (Windows): 453.51 → 453.94
+    * NVIDIA driver updated (Linux): 450.191.01 → 450.216.04
 
 * Rocky Linux 8.6(2023.02.21.)
     * Image update
@@ -1294,7 +1299,7 @@
     * Image update
     * January 2023 security update applied: https://support.microsoft.com/en-us/topic/january-10-2023-kb5022286-os-build-17763-3887-48683103-7b22-4f36-aa98-0049c7a6e579
 
-#### Image Builder
+### Image Builder
 * Added a new base image
     * Ubuntu 20.04
 * Added application versions
@@ -1306,23 +1311,23 @@
     * CUBRID 11.0.2
 
 <a id="january-31-2023"></a>
-### January 31, 2023
+## January 31, 2023
 
-#### Instance
+### Instance
 * Improved the UI so that setting values can be changed when creating instances with **Instance Template**
 * Improved the UI of instance information 
 
-#### Instance Template
+### Instance Template
 * Added the **Change Instance Template Owner** feature
 
-#### Auto Scale
+### Auto Scale
 * Added the **Change Scaling Group Owner** feature
 * Improved the UI so that setting values can be changed when creating scaling groups with **Instance Template**
 
 <a id="december-27-2022"></a>
-### December 27, 2022
+## December 27, 2022
 
-#### Image
+### Image
 * Added new images
     * CentOS 7.9 with Apache Kafka 3.3.1(2022. 12. 20.)
     * CentOS 7.9 with CUBRID 10.2.4(2022. 12. 20.)
@@ -1358,22 +1363,22 @@
     * CentOS 7.8 with Tibero 6(2022. 01. 25.)
     * CentOS 7.8 with WebtoB5Fix4(2022. 03. 22.)
 
-#### Image Builder
+### Image Builder
 * Added a new base image
     * CentOS 7.9
 * Ended base image support
     * CentOS 7.8
     
 <a id="november-29-2022"></a>
-### November 29, 2022
-#### Instance
+## November 29, 2022
+### Instance
 * Added deletion protection (all/set/unset) to **Filter Conditions** of Instance Management
 * Improved the feature to change security group configured for each network interface 
 * Improved the UI of instance information 
 * Added the toggle button for deletion protection
 * Improved the feature to set deletion protection in bathes
 
-#### Image
+### Image
 * Added new images
     * CentOS 7.9 (2022. 11. 22.)
     * CentOS 7.9 for NAT (2022. 11. 22.)
@@ -1423,45 +1428,45 @@
     * Japanese image support ended
     * October 2022 security update applied: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018419-os-build-17763-3532-ca62cca7-b599-44c4-a2a6-347996662623
 
-#### Image Builder
+### Image Builder
 * Added applications
     * Redis
     * Apache Kafka
 
 <a id="november-4-2022"></a>
-### 2022. 11. 04.
-#### Image
-* CentOS 7.8 with MariaDB 10.3.31(2022. 11. 04.)
+## November 4, 2022
+### Image
+* CentOS 7.8 with MariaDB 10.3.31 (November 4, 2022)
     * Image updated
 
-#### Image Builder
+### Image Builder
 * Modified a script
     * MariaDB
 
 <a id="october-25-2022"></a>
-### October 25, 2022
-#### Image
+## October 25, 2022
+### Image
 * Ended image support
-    * CentOS 7.8 with MySQL 5.6.38(2021. 12. 21.)
-    * CentOS 7.8 with MySQL 5.6.50(2021. 12. 21.)
+    * CentOS 7.8 with MySQL 5.6.38 (December 21, 2021)
+    * CentOS 7.8 with MySQL 5.6.50 (December 21, 2021)
 
 <a id="septempber-27-2022"></a>
-### Septempber 27, 2022
-#### Image
+## Septempber 27, 2022
+### Image
 * Added a new image
-    * Windows 2022 STD (2022. 09. 20.)
+    * Windows 2022 STD (September 20, 2022)
 
 * PLOS-WFK-KS-v4.0.6.61.25
     * Image updated
 
 <a id="july-26-2022"></a>
-### July 26, 2022
+## July 26, 2022
 
-#### Instance
+### Instance
 * Added a feature to select instance flavors (Instance and Ephemeral Storage Instance) in the Create Instances menu
 * Added a feature to search for image types (OS, Application, DBMS, etc.) in the Instance Management menu. 
 
-#### Image
+### Image
 * Changed to allow password initialization even when the administrator account name of Windows image is changed 
 
 * Windows 2012 R2 STD(2022. 07. 19.)
@@ -1486,7 +1491,7 @@
     * May. 2022 security update applied: https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
     * Cumulative update 16 for SQL Server applied: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
     
-#### System Monitoring
+### System Monitoring
 * Added a new feature: Monthly Metrics Report
   * Allows you to create and download monthly metric reports.
   * Allows you to create reports on metrics for up to 6 months on a monthly basis.
@@ -1494,8 +1499,8 @@
   * Each request can be found in `Monthly Metric Report`, and the report can be downloaded for a month after creation
 
 <a id="may-24-2022"></a>
-### May 24, 2022
-#### Instance
+## May 24, 2022
+### Instance
 * Added the instance screenshot feature
 * Added the instance deletion protection feature
 * Made changes so that, when querying an instance with the API, the instance deletion protection attribute (NHN-EXT-ATTR:protect) is displayed
@@ -1504,13 +1509,13 @@
     * After change: instance1, instance2, ...
 * Improved OS image selection UI for creating an instance
 
-#### Image
+### Image
 * Added a new image
     * Rocky Linux 8.5 (2022. 05. 17.)
 
 <a id="march-29-2022"></a>
-### March 29, 2022
-#### Image
+## March 29, 2022
+### Image
 * Added a new image
     * Debian 11.2 Bullseye(2022. 03. 22.)
 
@@ -1518,22 +1523,22 @@
     * Debian 9.13 Stretch(2021. 12. 21.)
 
 <a id="january-25-2022"></a>
-### January 25, 2022
-#### Public API
+## January 25, 2022
+### Public API
 * Changed so that GPU Instance service images can be queried with the image query API
 * Added a query parameter for filtering infrastructure service types to the image query API
 
-#### Image
+### Image
 * Added a feature to copy images to another region
 
-#### Image Builder
+### Image Builder
 * Added an application
     * Slurm
 
 <a id="december-28-2021"></a>
-### December 28, 2021
+## December 28, 2021
 
-#### Image
+### Image
 * Changed so that Prometheus compatible exporter is not automatically installed when creating an instance
 
 * CentOS 7.8(2021. 12. 21.)
@@ -1581,21 +1586,21 @@
 * Windows Server 2019 with SQL Server 2019 Standard(2021. 12. 21.)
     * Nov. 2021 security update applied: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
 
-#### Image Builder
+### Image Builder
 * Added an application
     * Deep Learning Framework
 
-#### System Monitoring
+### System Monitoring
 * Deleted the feature to add @Linux and @Windows default workspaces and deleted the created workspaces
     * @Linux and @Windows workspaces that were added automatically when creating an instance are no longer added automatically.
     * All @Linux and @Windows workspaces automatically created in the existing instances are deleted.
 
 <a id="november-23-2021"></a>
-### 2021. 11. 23.
-#### Image
+## 2021. 11. 23.
+### Image
 * Supports creating a private image that you can use to create a GPU instance
 
-#### Image Builder
+### Image Builder
 * Added applications
     * JEUS
     * WebtoB
@@ -1604,8 +1609,8 @@
     * MySQL
 
 <a id="october-26-2021"></a>
-### October 26, 2021
-#### Image Builder
+## October 26, 2021
+### Image Builder
 * Image Builder service added
     * Allows you to create a private image by combining an OS image, application installation components, and a user script
 * Added applications
@@ -1613,48 +1618,48 @@
     * MariaDB
     * CUBRID
 
-#### System Monitoring
+### System Monitoring
 
-* OpenMetrics Dashboard > Query
+* OpenMetrics Dashboard → Query
     * Changed to allow users to select only up to the date one year ago when selecting a query period.
     * Changed so that guide text regarding data unavailable status or errors is displayed in the chart
-* OpenMetrics Dashboard > Add/Modify Charts
+* OpenMetrics Dashboard → Add/Modify Charts
     * Changed so that, when the user clicks the **Add** button without selecting any metrics, guide text shows up and the location is highlighted.
 
 <a id="september-14-2021"></a>
-### September 14, 2021
-#### System Monitoring
+## September 14, 2021
+### System Monitoring
 - Added new APIs: added APIs to view, add, or delete workspaces and collection targets
 - Added @Linux, @Windows default workspaces
     - @Linux: Collects metrics of node exporter installed on an instance. When you create a Linux OS type instance, it is automatically added as the collection target of @Linux.
     - @Windows: Collects metrics of windows exporter installed on an instance. When you create a Windows OS type instance, it is automatically added as the collection target of @Windows.
 
 <a id="july-27-2021"></a>
-### July 27, 2021
+## July 27, 2021
 
-#### Instance
+### Instance
 * Supports creating instances using Instance Template
 
-#### Instance Template
+### Instance Template
 * Instance Template service added
     * Predefines and keeps frequently used instance component information in the form of a template
     * Uses a user-defined template for creating an Instance or Scaling Group
 
-#### Auto Scale
+### Auto Scale
 * Instance Template tab removed
     * Scaling Group created using the template made by the Instance Template service
 * Added the option of selecting the auto restoration policy option
 
-#### System Monitoring
+### System Monitoring
 
 * Bug fixed: Fixed the problem of selecting ‘There are no entries.’ when adding server of notification group and user group.
 * Bug fixed: Fixed the problem of creating more than 5 when creating advanced monitoring layout quickly
-* Bug fixed: Fixed the problem of not being able to add other instances with same name to the same port as the collection target in **Advanced Monitoring > Workspace > Collection Target**
+* Bug fixed: Fixed the problem of not being able to add other instances with same name to the same port as the collection target in **Advanced Monitoring → Workspace → Collection Target**
 
 <a id="jun-29-2021"></a>
-### Jun 29, 2021
+## Jun 29, 2021
 
-#### Image
+### Image
 
 * Prometheus compatible exporter
     * The tool is automatically installed upon creating an instance to support Advanced Monitoring.
@@ -1704,20 +1709,20 @@
 * Windows 2019 STD with MS-SQL 2019 Standard(2021. 06. 22.)
     * May 2021 security update applied: https://support.microsoft.com/en-us/topic/may-11-2021-kb5003171-os-build-17763-1935-3f03e74b-4759-4ca3-b9f1-4bc0d5ab5d27
 
-#### System Monitoring
+### System Monitoring
 
 * Improved OpenMetrics notification group input guide text
 * Improved server/agent status tooltip size in server dashboard
 * Fixed the problem in which some dropdown menu buttons were displayed abnormally on the event status screen
-* Modified the instance name changed in **Compute > Instance** to be reflected in the server list on the server dashboard
+* Modified the instance name changed in **Compute → Instance** to be reflected in the server list on the server dashboard
 * Modified loading bar
 * Added API compatible to Prometheus (Beta)
 
 
 <a id="april-27-2021"></a>
-### April 27, 2021
+## April 27, 2021
 
-#### Image
+### Image
 
 * Added new images (Pyeongchon region)
     * CentOS 7.8 for NAT(2021. 04. 22.)
@@ -1726,9 +1731,9 @@
     * Ubuntu Server 16.04.7 LTS(2020. 12. 22.)
 
 <a id="february-23-2021"></a>
-### February 23, 2021
+## February 23, 2021
 
-#### Image
+### Image
 
 * Added new images
     * CentOS 7.8 with MySQL 5.6.38(2021. 02. 23.)
@@ -1751,17 +1756,17 @@
     * Applied when creating a new instance
 
 <a id="january-26-2021"></a>
-### January 26, 2021
+## January 26, 2021
 
-#### System Monitoring
+### System Monitoring
 
 * Added new feature: Advanced Monitoring (OpenMetrics)
     * Provides the OpenMetrics (Prometheus exposition format) index collection, retrieval, and notification features
   
 <a id="december-29-2020"></a>
-### December 29, 2020
+## December 29, 2020
 
-#### Image
+### Image
 * CentOS 6.10(2020. 12. 22.)
     * Image Update
 * CentOS 7.5(2020. 12. 22.)
@@ -1804,19 +1809,19 @@
     * November 2020 security updates applied: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
 
 <a id="november-24-2020"></a>
-### November 24, 2020
+## November 24, 2020
 
-#### Auto Scale
+### Auto Scale
 * Added the feature of associating with Deploy
 
 <a id="august-25-2020"></a>
-### August 25, 2020
+## August 25, 2020
 
-#### Instance
+### Instance
 * Added the **Initialize Password** button on the **Windows Instance Access Information** tab.  
 * Added the feature of initializing password of original instance when creating a Windows image
 
-#### Image
+### Image
 * Added new images
     * Cent OS 7.8 (2020. 08. 18.)
     * Ubuntu 20.04 LTS (2020. 08. 18.)
@@ -1860,28 +1865,28 @@
     * Windows 2012 R2 STD with MS-SQL 2016 Express (2020. 02. 18.)
 
 <a id="june-23-2020"></a>
-### June 23, 2020
+## June 23, 2020
 
-#### System Monitoring
+### System Monitoring
 
 * Updated chart and legend names to clarify  
 * Added detail indications on a chart for items with more details
 
-#### Instance
+### Instance
 * Added the feature of querying public keys registered at keypair
 * Released the service of creating GPU instances readily on console
 * Removed the Delete button from the dialogue box of suspending instances
 
 <a id="may-26-2020"></a>
-### May 26, 2020
+## May 26, 2020
 
-#### Instance
+### Instance
 
 * Released Public API v2
     * Updated API specifications to be compatible with Openstack
     * Supports Terraform
 
-#### Image
+### Image
 
 * Released Public API v2
     * Updated API specifications to be compatible with Openstack
@@ -1889,7 +1894,7 @@
 <a id="february-25-2020"></a>
 ### February 25, 2020
 
-#### System Monitoring
+### System Monitoring
 * Updates in Event Status Page
     * Updated to query events by each region
     * Added 'All' as status item for event search filters
@@ -1901,41 +1906,41 @@
 
 
 <a id="january-21-2020"></a>
-### January 21, 2020
+## January 21, 2020
 
-#### System Monitoring
+### System Monitoring
 * Added Query Event Page
     * Query events occurred out of surveillance setup
 * Updated **Server List** on Server Dashboard
-    * Upgraded to query all instances in **Compute > Instance**
+    * Upgraded to query all instances in **Compute → Instance**
     * Updated to show instance status more precisely
 * Updated **Server - User Integration** for Alarm Groups
     * Updated to save changes, by selecting a server and user group and clicking the save button
 
 
 <a id="december-17-2019"></a>
-### December 17, 2019
+## December 17, 2019
 
-#### Auto Scale
+### Auto Scale
 * Updated to show all the information entered when creating an instance template on the instance template list and details
     * List table: Availability zone
     * Details: All configured network information, user script content
 
 
 <a id="november-26-2019"></a>
-### November 26, 2019
+## November 26, 2019
 
-#### System Monitoring
+### System Monitoring
 
-##### Feature Updates
+### Feature Updates
 
 * Instance Search Updated on Server Dashboard: No distinction is required between upper and lower cases
 
 
 <a id="oct-29-2019"></a>
-### Oct 29, 2019
+## Oct 29, 2019
 
-#### Image
+### Image
 * Application Image
 
     * Updates
@@ -1956,54 +1961,54 @@
     * Change Details
         * Provides images for each language (e.g. KO, EN, JP)
 
-#### System Monitoring
+### System Monitoring
 
-##### Feature Updates
+### Feature Updates
 - Updated UI for User Interactions
     - Updated to show the loading bar to search/add/modify/delete monitoring data, including user group, monitoring group, or monitoring setting.
     - Allowed to disable unnecessary buttons for interactions
 
-##### Bug Fixes
+### Bug Fixes
 - Fixed the error in the Japan and US region, where indicator collecting was temporarily suspended for servers with changed monitoring setting
 - Fixed the issue of invalid output of dates for the adding/modifying user/monitoring groups, especially in the US region
 
 
 <a id="september-24-2019"></a>
-### September 24, 2019
+## September 24, 2019
 
-#### System Monitoring
+### System Monitoring
 - Supports English for web console messages
 - Fixed failure in the layout selection for server dashboard on Internet Explorer 11
 
 <a id="august-27-2019"></a>
-### August 27, 2019
+## August 27, 2019
 
-#### System Monitoring
+### System Monitoring
 - Improved performance for the query of charts on server dashboard
 - UI improved for the Internet Explorer 11 browser environment
 
-#### Updates
+### Updates
 * Removed the common usage tab from the image management page.
 
 <a id="july-23-2019"></a>
-### July 23, 2019
+## July 23, 2019
 
-#### Release of New Service: System Monitoring
+### Release of New Service: System Monitoring
 
 - System metrics are provided on a chart for a newly created virtual server  
 - Each chart of system metrics can be configured under a layout of choice; you may set a notification to be sent to a group of particular users via email or SMS, when a metric reaches a specific threshold.
 
 <a id="june-25-2019"></a>
-### June 25, 2019
+## June 25, 2019
 
-#### Updates
+### Updates
 
 * Image creation is available even when instance is running.
 
 <a id="may-28-2019"></a>
-### May 28, 2019
+## May 28, 2019
 
-#### Updates
+### Updates
 
 - **KR Region**
 - Image Updated for Debian 9 Stretch
@@ -2055,13 +2060,13 @@
 
 
 <a id="may-14-2019"></a>
-### 2019. 05. 14.
+## 2019. 05. 14.
 
-#### 기능 개선
+### 기능 개선
 
 * MySQL 이미지 변경
-	* CentOS Linux 6.5 with MySQL 5.6.38  > CentOS 6.10 with MySQL 5.6.38(2019. 05. 14.)
-	* CentOS Linux 6.5 with MySQL 5.7.20  > CentOS 6.10 with MySQL 5.7.20(2019. 05. 14.)
+	* CentOS Linux 6.5 with MySQL 5.6.38  → CentOS 6.10 with MySQL 5.6.38(2019. 05. 14.)
+	* CentOS Linux 6.5 with MySQL 5.7.20  → CentOS 6.10 with MySQL 5.7.20(2019. 05. 14.)
 
 * OS 이미지 지원 종료
 	* CentOS 6.5
@@ -2071,9 +2076,9 @@
 
 
 <a id="april-25-2019"></a>
-### 2019. 04. 25.
+## 2019. 04. 25.
 
-#### 기능 개선
+### 기능 개선
 
 * Auto Scaling 예약 작업
 	* 예약 작업 생성 시 타임존 설정 기능 추가
@@ -2102,9 +2107,9 @@
 
 
 <a id="march-26-2019"></a>
-### 2019. 03. 26.
+## 2019. 03. 26.
 
-#### 기능 개선
+### 기능 개선
 
 * Debian 9 Stretch 이미지 업데이트
 	* 이미지 정보
@@ -2134,9 +2139,9 @@
 		* Bootstrap 과정의 기능 개선
 
 <a id="february-26-2019"></a>
-### 2019. 02. 26.
+## 2019. 02. 26.
 
-#### 기능 개선
+### 기능 개선
 
 * Ubuntu Server 18.04 LTS 이미지 업데이트
     * 이미지 정보
@@ -2151,9 +2156,9 @@
 
 
 <a id="january-29-2019"></a>
-### 2019.01.29
+## 2019.01.29
 
-#### 기능 개선
+### 기능 개선
 
 * Public API 변경
   * Instance 생성시 Subnet을 지정할 수 있도록 수정
@@ -2161,9 +2166,9 @@
   * Image 삭제 API 추가
 
 <a id="december-27-2018"></a>
-### 2018. 12. 27.
+## 2018. 12. 27.
 
-#### 기능 개선
+### 기능 개선
 
 * Ubuntu Server 18.04 LTS 이미지 업데이트
 * Ubuntu Server 16.04 LTS 이미지 업데이트
@@ -2183,9 +2188,9 @@
 
 
 <a id="december-11-2018"></a>
-### 2018. 12. 11.
+## 2018. 12. 11.
 
-#### 기능 개선
+### 기능 개선
 
 * 이미지 업데이트 관련 주요 변경 사항 요약
     * 이미지 공통 기능개선
@@ -2200,7 +2205,7 @@
         * 비트 : 64bit
         * 커널 : 4.9.0-8
     * 기능 개선
-        * 커널 업데이트 :  기존 4.9.0-7 > 변경 4.9.0-8
+        * 커널 업데이트 :  기존 4.9.0-7 → 변경 4.9.0-8
         * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 해결
 
 * Debian 8 Jessie 이미지 업데이트
@@ -2285,9 +2290,9 @@
 
 
 <a id="november-13-2018"></a>
-### 2018. 11. 13.
+## 2018. 11. 13.
 
-#### 기능 개선
+### 기능 개선
 
 * CentOS 7.1 이미지 업데이트
     * 이미지 정보
@@ -2309,9 +2314,9 @@
     * Yum repository target 변경 : CentOS 최신 repo
 
 <a id="october-23-2018"></a>
-### 2018. 10. 23.
+## 2018. 10. 23.
 
-#### 기능 개선
+### 기능 개선
 
 * 이미지 업데이트 관련 주요 변경 사항 요약
     * 신규 이미지 릴리즈 : CentOS 7.5 , CentOS 6.10
@@ -2556,9 +2561,9 @@
 
 
 <a id="september-20-2018"></a>
-### 2018. 09. 20.
+## 2018. 09. 20.
 
-#### 기능 개선
+### 기능 개선
 
 * Instance 관리 화면 UX/UI가 개선되었습니다.
     * 인스턴스 이름 조회 기능 추가
@@ -2607,9 +2612,9 @@
 
 
 <a id="august-9-2018"></a>
-### 2018. 08. 09.
+## 2018. 08. 09.
 
-#### 기능 개선
+### 기능 개선
 
 * Windows 2012 R2 Standard 이미지 업데이트
     * 이미지 정보
@@ -2708,9 +2713,9 @@
 
 
 <a id="july-16-2018"></a>
-### 2018. 07. 16.
+## 2018. 07. 16.
 
-#### 기능 개선
+### 기능 개선
 
 * Windows 2012 R2 Standard 이미지 업데이트
     * 이미지 정보
@@ -2795,26 +2800,26 @@
             * /etc/issue, /etc/issue.net 삭제
 
 <a id="may-29-2018"></a>
-### 2018.05.29
+## 2018.05.29
 
-#### 버그 수정
+### 버그 수정
 * Auto Scale의 반복성 예약 작업(cron expression 기반) 관련 오류가 수정되었습니다.
     * 반복성 예약 작업 실행 시점이  UTC를 기반으로  동작하는 오류 수정
     * 반복성 예약 작업의 최초 실행이 cron expression을 따르지 않고, 예약 작업 생성 시 설정한 '시작 시각'에 수행되는 오류 수정
 
-#### 기능 추가
+### 기능 추가
 * Instance 생성 시 volume type 설정 기능이 추가되었습니다.
 * Block Storage 생성 시 volume type 설정 기능이 추가되었습니다.
 
 <a id="april-24-2018"></a>
-### 2018.04.24
+## 2018.04.24
 
 * Windows 인스턴스 Log 탭이 일시적으로 삭제 되었습니다.
 
 <a id="march-22-2018"></a>
-### 2018.03.22
+## 2018.03.22
 
-#### 신규 상품 추가
+### 신규 상품 추가
 
 * Auto Scale 상품이 추가되었습니다.
     * 사용자가 생성한 Instance Template을 바탕으로, Scaling Group을 생성할 수 있습니다.
@@ -2823,9 +2828,9 @@
 
 
 <a id="february-22-2018"></a>
-### 2018. 02. 22.
+## 2018. 02. 22.
 
-#### 기능 개선
+### 기능 개선
 
 * VPC 기능이 추가됨에 따라 인스턴스 생성 시에 서브넷을 지정하도록 변경되었습니다.
 * Windows 2012 R2 Standard 이미지 업데이트
@@ -2897,31 +2902,31 @@
 
 
 <a id="september-21-2017"></a>
-### 2017.09.21
+## 2017.09.21
 
-#### 기능 추가
+### 기능 추가
 * Public API 추가
     * Object Storage에 이어 NHN Cloud Compute를 API로 관리할 수 있습니다.
     * 현재 제한적인 기능만 이용할 수 있으며, 추후 API 추가를 통해 기능이 확장될 예정입니다.
     * 지원되는 API는 API Guide를 참고하시기 바랍니다.
 
-#### 버그 수정
+### 버그 수정
 * 키페어를 지정하지 않고 인스턴스를 생성할 수 있었던 버그가 수정되었습니다.
 
 
 
 <a id="july-20-2017"></a>
-### 2017.07.20
+## 2017.07.20
 
-#### 버그 수정
+### 버그 수정
 * 대용량 이미지 생성시 간헐적으로 생성이 완료되지 않던 버그가 수정되었습니다.
 
 
 
 <a id="august-24-2017"></a>
-### 2017.08.24
+## 2017.08.24
 
-#### 기능 추가
+### 기능 추가
 
 * 인스턴스 사양을 변경할 수 있도록 기능이 추가되었습니다.
     * 사용하던 인스턴스의 디스크는 그대로 보존하면서 CPU/Memory를 업그레이드 하거나 다운그레이드 할 수 있습니다.
@@ -2936,37 +2941,37 @@
     * 높은 IOPS가 필요한 경우 I타입을 이용하면 수준의 높은 IOPS를 보장 받을 수 있습니다. (보장 IOPS는 가격표 참조)
     * 리눅스 OS만 지원합니다.
 
-#### 버그 수정
+### 버그 수정
 * 인스턴스 사용량 조회시 값이 조회되지 않는 버그가 수정되었습니다.
 
 
 
 <a id="may-25-2017"></a>
-### 2017. 05. 25.
+## 2017. 05. 25.
 
-#### 기능 추가
+### 기능 추가
 
 * 윈도우 이미지(Windows 2012 r2)가 추가됩니다.
 
-#### 버그 수정
+### 버그 수정
 
 * 서비스 종료된 이미지로 생성된 인스턴스가 조회 되지 않는 버그가 수정되었습니다.
 
 
 
 <a id="april-25-2017"></a>
-### 2017.04.25
+## 2017.04.25
 
-#### 기능 개선
+### 기능 개선
 
 * 인스턴스 생성시 초기 불륨 크기의 최대값이 600GB에서 1TB(1000GB)로 변경됩니다.
 
 
 
 <a id="march-23-2017"></a>
-### 2017.03.23
+## 2017.03.23
 
-#### 기능 개선
+### 기능 개선
 
 * 인스턴스 생성시 사용자가 초기 볼륨의 크기를 지정할 수 있게 됩니다.
     * [기존] 인스턴스 사양에 지정된 크기로 초기 볼륨 생성 -> [변경] 사용자가 지정한 크기 만큼 초기 볼륨을 생성
@@ -2975,9 +2980,9 @@
 
 
 <a id="january-19-2017"></a>
-### 2017.01.19
+## 2017.01.19
 
-#### 기능 개선/변경
+### 기능 개선/변경
 - 인스턴스 기본 정보의 IP 주소 정보에서 서브넷 명칭을 표시하지 않습니다.
     - 명칭 표기로 행의 넓이가 넓어져 가독성이 떨어지는 것을 방지합니다.
 - 인스턴스 이름 길이 및 특수문자 제한합니다.
@@ -2985,15 +2990,15 @@
 - 인스턴스 생성 기능을 이미지 생성 기능으로 변경합니다.
     - 탭과 일관된 기능으로 변경하였습니다.
 
-#### 버그 수정
+### 버그 수정
 * 이미지 탭(Private, Shared, Public) 변경시 이미지 선택이 해제되지 않던 문제를 수정하였습니다.
 
 
 
 <a id="december-22-2016"></a>
-### 2016.12.22
+## 2016.12.22
 
-#### 기능 개선/변경
+### 기능 개선/변경
 
 * 정지된 인스턴스의 보안 그룹 수정이 가능하도록 변경합니다.
     * 의도와 다르게 기존에는 정지되어 있는 인스턴스에 보안 그룹 수정이 불가능하였습니다. 이를 수정하여 정지된 인스턴스도 보안 그룹을 변경할 수 있도록 하였습니다.
