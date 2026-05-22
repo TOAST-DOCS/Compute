@@ -1,6 +1,15 @@
 <a id="compute-release-notes"></a>
 ## Compute > 릴리스 노트
 
+<a id="june-2-2026"></a>
+## 2026. 06. 02.
+### Instance
+* 인스턴스 목록 조회 API의 limit 파라미터 기본값(default) 100개, 최댓값(max) 1,000개로 조정
+* 인스턴스 누적 중지 기간 90일 초과 여부 정보 제공
+
+### Image
+* 이미지 목록 조회 API의 limit 파라미터 기본값(default) 100개, 최댓값(max) 1,000개로 조정
+
 <a id="april-28-2026"></a>
 ### 2026. 04. 28.
 #### Image
@@ -31,29 +40,29 @@
     * Ubuntu Server 22.04.5 LTS with PostgreSQL 15(2025.07.15.)
 
 <a id="march-10-2026"></a>
-### 2026. 03. 10.
-#### Image
-* Rocky 9.7 이미지 GRUB BLS 설정 disable
-* Debian 11.11 bullseye-backports 레포 지원 종료로 source.list에서 삭제
+## 2026. 03. 10.
+### Image
+* Rocky 9.7 이미지 GRUB BLS 설정 비활성화
+* Debian 11.11 bullseye-backports 리포지터리 지원 종료로 sources.list에서 삭제
 
 * GPU 및 컨테이너 관련(Linux)
-    * containerd: 1.6.32 > 2.2.1
-    * NVIDIA 드라이버 업데이트: 535.230.02 > 580.105.08
-    * CUDA 업데이트: 12.2 > 13.0
-    * DCGM: 3.3.5 > 4.5.0
-    * DCGM-Exporter: 3.3.5 > 4.5.0
-    * MIG Manager: 0.7.0 > 0.13.1
+    * containerd: 1.6.32 → 2.2.1
+    * NVIDIA 드라이버 업데이트: 535.230.02 → 580.105.08
+    * CUDA 업데이트: 12.2 → 13.0
+    * DCGM: 3.3.5 → 4.5.0
+    * DCGM-Exporter: 3.3.5 → 4.5.0
+    * MIG Manager: 0.7.0 → 0.13.1
 
 * GPU(Windows)
-    * NVIDIA 드라이버 업데이트: 539.19 > 581.80
-    * CUDA 업데이트: 12.2 > 13.0
+    * NVIDIA 드라이버 업데이트: 539.19 → 581.80
+    * CUDA 업데이트: 12.2 → 13.0
 
 * 보안 업데이트
-    * windows 2016: KB5071543
+    * Windows 2016: KB5071543
         * https://support.microsoft.com/en-us/topic/december-9-2025-kb5071543-os-build-14393-8688-ec93aa63-f343-4a7e-ab3c-faa096e17395
-    * windows 2019: KB5071544
+    * Windows 2019: KB5071544
         * https://support.microsoft.com/en-us/topic/december-9-2025-kb5071544-os-build-17763-8146-630aa62e-f399-4e42-9f7a-2a4d38dd1210
-    * windows 2022: KB5071547
+    * Windows 2022: KB5071547
         * https://support.microsoft.com/en-us/topic/december-9-2025-kb5071547-os-build-20348-4529-7935ca9f-cac3-4d17-93bb-fe8e57c6db32
 
 * 신규 이미지 추가
@@ -120,27 +129,27 @@
     * Windows 2022 STD with MS-SQL 2022 Standard(2025.07.15.) KO
 
 <a id="december-2-2025"></a>
-### 2025. 12. 02.
-#### Image
+## 2025. 12. 02.
+### Image
 * 이미지 수정 기능 개선
     * 이미지 다운로드 기능 사용 여부 설정 추가
 
-#### Instance Template
+### Instance Template
 * 스냅숏으로부터 인스턴스 생성 기능 추가
 
-#### Auto Scale
+### Auto Scale
 * 스냅숏으로부터 인스턴스 생성 기능 추가
 
 <a id="november-25-2025"></a>
-### 2025. 11. 25.
-#### Image
+## 2025. 11. 25.
+### Image
 * 신규 이미지 추가
     * Rocky Linux 9.5 - Container(2025.11.18.)
     * Ubuntu Server 24.04.3 LTS - Container(2025.11.18.)
 
 <a id="july-15-2025"></a>
-### 2025. 07. 15.
-#### Image
+## 2025. 07. 15.
+### Image
 * 신규 이미지 추가
     * Debian 11.11 Bullseye(2025.07.15.)
     * Debian 12.10 Bookworm(2025.07.15.)
@@ -227,8 +236,8 @@
     * Windows 2022 STD with MS-SQL 2022 Standard(2025.02.25.) KO
 
 <a id="may-29-2025"></a>
-### 2025. 05. 29.
-#### Instance
+## 2025. 05. 29.
+### Instance
 * 배치 정책 기능 추가
 * 네트워크 인터페이스 연결 해제 시 삭제 여부 설정 기능 추가
 * 인스턴스 생성 또는 블록 스토리지 연결 시 블록 스토리지 삭제 정책 설정 기능 추가
@@ -236,8 +245,8 @@
     * 블록 스토리지 삭제 시 존재하는 스냅숏 함께 삭제
 
 <a id="april-29-2025"></a>
-### 2025. 04. 29.
-#### Image
+## 2025. 04. 29.
+### Image
 * 신규 이미지 추가
     * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7(2025.04.29.)
 
@@ -245,8 +254,8 @@
     * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7 (2025.03.25)
 
 <a id="march-25-2025"></a>
-### 2025. 03. 25.
-#### Image
+## 2025. 03. 25.
+### Image
 * 신규 이미지 추가
     * Ubuntu Server 20.04.6 LTS with PostgreSQL 15(2025.03.25.)
     * Ubuntu Server 20.04.6 LTS with MySQL 8.0.36(2025.03.25.)
@@ -270,21 +279,21 @@
     * Rocky Linux 8.10 with Tibero 7 Standard 277758(2024.11.19.)
 
 <a id="march-6-2025"></a>
-### 2025. 03. 06.
-#### Instance
+## 2025. 03. 06.
+### Instance
 * 인스턴스 설명 변경 기능 추가
 * API 비밀번호 변경 시 기존 비밀번호와 동일한 비밀번호로 변경할 수 없도록 제한
 * 블록 스토리지 및 스냅숏으로부터 인스턴스 생성 기능 추가
 
-#### Image
-* Rocky 8.10 default python이 platform python으로 변경(python 3.11 > 3.6)
+### Image
+* Rocky 8.10 default python이 platform python으로 변경(python 3.11 → 3.6)
 
 * 보안 업데이트
-    * windows 2016: KB5049993
+    * Windows 2016: KB5049993
         * https://support.microsoft.com/en-us/topic/january-14-2025-kb5049993-os-build-14393-7699-b148c0ad-29fd-460e-b4a2-db38e88ae937
-    * windows 2019: KB5050008
+    * Windows 2019: KB5050008
         * https://support.microsoft.com/en-us/topic/january-14-2025-kb5050008-os-build-17763-6775-9a174725-a7ea-4e37-a6f8-e86f7c4d3f31
-    * windows 2022: KB5049983
+    * Windows 2022: KB5049983
         * https://support.microsoft.com/en-us/topic/january-14-2025-kb5049983-os-build-20348-3091-789bf923-7777-419d-9c3a-23f7c814930f
 
 * 신규 이미지 추가
@@ -351,18 +360,18 @@
 
 
 <a id="december-24-2024"></a>
-### 2024. 12. 24.
-#### Image
+## 2024. 12. 24.
+### Image
 * Tibero 이미지명 변경
-  * Rocky Linux 8.10 with Tibero 7 Enterprise(2024.11.19.) > Rocky Linux 8.10 with Tibero 7 Enterprise 277758(2024.11.19.)
-  * Rocky Linux 8.10 with Tibero 7 Standard(2024.11.19.) > Rocky Linux 8.10 with Tibero 7 Standard 277758(2024.11.19.)
+  * Rocky Linux 8.10 with Tibero 7 Enterprise(2024.11.19.) → Rocky Linux 8.10 with Tibero 7 Enterprise 277758(2024.11.19.)
+  * Rocky Linux 8.10 with Tibero 7 Standard(2024.11.19.) → Rocky Linux 8.10 with Tibero 7 Standard 277758(2024.11.19.)
 
 <a id="december-3-2024"></a>
-### 2024. 12. 03.
-#### Instance
+## 2024. 12. 03.
+### Instance
 * 인스턴스 OS 정보 변경 기능 추가
 
-#### Image
+### Image
 * 이미지 수정 기능 개선
   * 수정 가능 항목 추가
     * OS 버전 값 설정
@@ -376,7 +385,7 @@
 
 
 <a id="october-29-2024"></a>
-### 2024. 10. 29.
+## 2024. 10. 29.
 * 이미지 업데이트(Linux)
     * Ubuntu Server 20.04.6 LTS with Apache Kafka 3.6.1(2024.10.29.)
     * Ubuntu Server 20.04.6 LTS with CUBRID 10.2.14(2024.10.29.)
@@ -388,18 +397,18 @@
 
 
 <a id="september-5-2024"></a>
-### 2024. 09. 05.
-#### Image
+## 2024. 09. 05.
+### Image
 * GPU 및 컨테이너 관련(Linux)
-    * containerd: 1.6.31 > 1.6.32
-    * NVIDIA 드라이버 업데이트: 535.161.08 > 535.183.06
-    * CUDA 업데이트: 12.2 > 변경 없음
-    * MIG Manager: 0.7.0 > 변경 없음
-    * NVIDIA DCGM: 3.3.5 > 변경 없음
-    * NVIDIA DCGM Exporter: 3.4.1 > 변경 없음
+    * containerd: 1.6.31 → 1.6.32
+    * NVIDIA 드라이버 업데이트: 535.161.08 → 535.183.06
+    * CUDA 업데이트: 12.2 → 변경 없음
+    * MIG Manager: 0.7.0 → 변경 없음
+    * NVIDIA DCGM: 3.3.5 → 변경 없음
+    * NVIDIA DCGM Exporter: 3.4.1 → 변경 없음
 
 * GPU(Windows)
-    * NVIDIA 드라이버 업데이트: 538.46 > 538.78
+    * NVIDIA 드라이버 업데이트: 538.46 → 538.78
 
 * 보안 업데이트(Windows)
     * Windows 2016: KB5040434
@@ -443,12 +452,12 @@
     * Windows 2022 STD(2024.08.20.) EN
     * Windows 2022 STD(2024.08.20.) KO
 
-#### Instance
+### Instance
 * 인스턴스 키페어 변경 기능 추가
 
 <a id="june-4-2024"></a>
-### 2024. 06. 04.
-#### Instance
+## 2024. 06. 04.
+### Instance
 * 인스턴스 목록 내 검색/필터 조건 확장 및 UI 개선
     * 검색 조건 추가
         * 인스턴스 이름
@@ -458,17 +467,17 @@
         * 이미지 유형
         * 인스턴스 상태
 
-#### Image
+### Image
 * GPU 및 컨테이너 관련(Linux)
-    * containerd: 1.6.27 > 1.6.31
-    * NVIDIA 드라이버 업데이트: 535.154.05 > 535.161.08
-    * CUDA 업데이트: 12.2 > 변경 없음
-    * MIG Manager: 0.5.5 > 0.7.0
-    * NVIDIA DCGM: 3.1.8 > 3.3.5
-    * NVIDIA DCGM Exporter: 3.1.5 > 3.4.1
+    * containerd: 1.6.27 → 1.6.31
+    * NVIDIA 드라이버 업데이트: 535.154.05 → 535.161.08
+    * CUDA 업데이트: 12.2 → 변경 없음
+    * MIG Manager: 0.5.5 → 0.7.0
+    * NVIDIA DCGM: 3.1.8 → 3.3.5
+    * NVIDIA DCGM Exporter: 3.1.5 → 3.4.1
 
 * GPU(Windows)
-    * NVIDIA 드라이버 업데이트: 538.46 > 538.15
+    * NVIDIA 드라이버 업데이트: 538.46 → 538.15
 
 * 보안 업데이트(Windows)
     * Windows 2016: KB5036899
@@ -508,8 +517,8 @@
     * Windows 2022 STD(2024.05.21.) KO
 
 <a id="april-23-2024"></a>
-### 2024. 04. 23.
-#### Image
+## 2024. 04. 23.
+### Image
 * 신규 이미지 추가
     * CentOS 7.9 with Apache Kafka 3.6.1(2024.04.23.)
     * CentOS 7.9 with CUBRID 10.2.14(2024.04.23.)
@@ -552,8 +561,8 @@
     * Ubuntu Server 20.04.6 LTS with Redis 7.0.5(2023.03.21.)
 
 <a id="march-5-2024"></a>
-### 2024. 03. 05.
-#### Image
+## 2024. 03. 05.
+### Image
 * 신규 이미지 추가
     * Rocky Linux 8.9(2024.02.20.)
 
@@ -561,13 +570,13 @@
     * Rocky Linux 8.8(2023.11.21.)
 
 * GPU 및 컨테이너 관련(Linux)
-    * containerd: 1.6.22 > 1.6.27
-    * NVIDIA 드라이버 업데이트: 535.104.12 > 535.154.05
-    * CUDA 업데이트: 12.2 > 변경 없음
-    * MIG Manager: 0.5.5 > 변경 없음
+    * containerd: 1.6.22 → 1.6.27
+    * NVIDIA 드라이버 업데이트: 535.104.12 → 535.154.05
+    * CUDA 업데이트: 12.2 → 변경 없음
+    * MIG Manager: 0.5.5 → 변경 없음
 
 * GPU(Windows)
-    * NVIDIA 드라이버 업데이트: 537.13 > 538.15
+    * NVIDIA 드라이버 업데이트: 537.13 → 538.15
 
 * 보안 업데이트(Windows)
     * Windows 2016: KB5034119
@@ -607,18 +616,18 @@
 
 
 <a id="december-5-2023"></a>
-### 2023. 12. 05.
-#### Image
+## 2023. 12. 05.
+### Image
 
 * 보안 업데이트(Linux)
 	* CentOS 7.9: /usr/bin/newgrp, /sbin/unix_chkpwd SetUID 제거
 
 * 보안 업데이트(Windows)
-	* Windows 2016: kb5031362
+	* Windows 2016: KB5031362
 		* https://support.microsoft.com/en-au/topic/october-10-2023-kb5031362-os-build-14393-6351-0c6e713e-3d6a-4593-8a75-af0a605f249c
-	* Windows 2019: kb5031361
+	* Windows 2019: KB5031361
 		* https://support.microsoft.com/en-gb/topic/october-10-2023-kb5031361-os-build-17763-4974-766593db-b47a-4b18-a698-906426860313
-	* Windows 2022: kb5031364
+	* Windows 2022: KB5031364
 		* https://support.microsoft.com/en-us/topic/october-10-2023-kb5031364-os-build-20348-2031-7f1d69e7-c468-4566-887a-1902af791bbc
 
 * 이미지 업데이트(Linux)
@@ -646,8 +655,8 @@
 	* Windows 2019 STD with MS-SQL 2019 Standard(2023.11.21.) KO
 
 <a id="october-31-2023"></a>
-### 2023. 10. 31.
-#### Image
+## 2023. 10. 31.
+### Image
 * 신규 이미지 추가
     * CentOS 7.9 with Tibero 7 CSE(2023.10.31.)
     * CentOS 7.9 with Tibero 7 CEE(2023.10.31.)
@@ -656,20 +665,20 @@
     * CentOS 7.9 with Tibero 6(2022.12.20.)
 
 <a id="september-26-2023"></a>
-### 2023. 09. 26.
-#### Image
+## 2023. 09. 26.
+### Image
 * 이미지 지원 종료
     * Windows 2012 R2 STD(2023.08.22.) KO
     * Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.08.22.) KO
 
 * PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
-    * 이미지 이름 변경 PLOS-WAF-KS-v4.0.6.61.28(2023.04.25.) > PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
+    * 이미지 이름 변경 PLOS-WAF-KS-v4.0.6.61.28(2023.04.25.) → PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
 
 <a id="september-12-2023"></a>
-### 2023. 09. 12.
+## 2023. 09. 12.
 * 블록 스토리지 스냅숏 유료화 
 
 <a id="february-6-2023"></a>
-### 2023. 02. 06.
+## 2023. 02. 06.
 * 신규 서비스 출시
 
