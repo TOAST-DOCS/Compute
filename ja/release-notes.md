@@ -1,9 +1,18 @@
 <a id="compute-release-notes"></a>
 ## Compute > リリースノート
 
+<a id="may-27-2026"></a>
+## 2026. 05. 27.
+### Instance
+* インスタンス一覧照会APIのlimitパラメータのデフォルト値(default)を100個、最大値(max)を1,000個に調整
+* インスタンスの累積停止期間が90日を超過しているかどうかの情報を提供
+
+### Image
+* 画像一覧照会APIのlimitパラメータのデフォルト値(default)を100個、最大値(max)を1,000個に調整
+
 <a id="april-28-2026"></a>
-### 2026. 04. 28.
-#### Image
+## 2026. 04. 28.
+### Image
 
 * 新規イメージ追加
     * Ubuntu Server 22.04.5 LTS for Deep Learning v8.0.0(2026.04.28.)
@@ -35,33 +44,33 @@
     * Ubuntu Server 22.04.5 LTS with PostgreSQL 15(2025.07.15.)
 
 <a id="march-31-2026"></a>
-### 2026. 03. 31.
+## 2026. 03. 31.
 * 米国（カリフォルニア）リージョンサービス終了
 
 <a id="march-10-2026"></a>
-### 2026. 03. 10.
-#### Image
+## 2026. 03. 10.
+### Image
 * Rocky 9.7 イメージで GRUB BLS 設定を無効化
 * Debian 11.11 の bullseye-backports リポジトリのサポート終了により、sources.list から削除
 
 * GPU 及びコンテナ関連(Linux)
-    * containerd: 1.6.32 > 2.2.1
-    * NVIDIA ドライバーアップデート: 535.230.02 > 580.105.08
-    * CUDA アップデート: 12.2 > 13.0
-    * DCGM: 3.3.5 > 4.5.0
-    * DCGM-Exporter: 3.3.5 > 4.5.0
-    * MIG Manager: 0.7.0 > 0.13.1
+    * containerd: 1.6.32 → 2.2.1
+    * NVIDIA ドライバーアップデート: 535.230.02 → 580.105.08
+    * CUDA アップデート: 12.2 → 13.0
+    * DCGM: 3.3.5 → 4.5.0
+    * DCGM-Exporter: 3.3.5 → 4.5.0
+    * MIG Manager: 0.7.0 → 0.13.1
 
 * GPU(Windows)
-    * NVIDIA ドライバーアップデート: 539.19 > 581.80
-    * CUDA アップデート: 12.2 > 13.0
+    * NVIDIA ドライバーアップデート: 539.19 → 581.80
+    * CUDA アップデート: 12.2 → 13.0
 
 * セキュリティアップデート
-    * windows 2016: KB5071543
+    * Windows 2016: KB5071543
         * https://support.microsoft.com/en-us/topic/december-9-2025-kb5071543-os-build-14393-8688-ec93aa63-f343-4a7e-ab3c-faa096e17395
-    * windows 2019: KB5071544
+    * Windows 2019: KB5071544
         * https://support.microsoft.com/en-us/topic/december-9-2025-kb5071544-os-build-17763-8146-630aa62e-f399-4e42-9f7a-2a4d38dd1210
-    * windows 2022: KB5071547
+    * Windows 2022: KB5071547
         * https://support.microsoft.com/en-us/topic/december-9-2025-kb5071547-os-build-20348-4529-7935ca9f-cac3-4d17-93bb-fe8e57c6db32
 
 * 新規イメージ追加
@@ -130,13 +139,13 @@
     * Windows 2022 STD with MS-SQL 2022 Standard(2025.07.15.) KO
 
 <a id="january-27-2026"></a>
-### 2026. 01. 27.
-#### Instance
+## 2026. 01. 27.
+### Instance
 * シリアルコンソール機能の追加
 
 <a id="november-25-2025"></a>
-### 2025. 11. 25.
-#### Image
+## 2025. 11. 25.
+### Image
 * イメージ修正機能の改善
     * イメージダウンロード機能の使用可否設定を追加
 
@@ -144,23 +153,23 @@
     * Rocky Linux 9.5 - Container(2025.11.18.)
     * Ubuntu Server 24.04.3 LTS - Container(2025.11.18.)
 
-#### Instance Template
+### Instance Template
 * スナップショットからのインスタンス作成機能を追加
 
-#### Auto Scale
+### Auto Scale
 * スナップショットからのインスタンス作成機能を追加
 
 <a id="october-28-2025"></a>
-### 2025. 10. 28
-#### Image
+## 2025. 10. 28
+### Image
 * 新規イメージ追加
     * Ubuntu Server 22.04.5 LTS for Deep Learning v7.0.0(2025.10.28.)
 * イメージサポート終了
     * Ubuntu Server 22.04.5 LTS for Deep Learning v5.0.2(2025.07.15.)
 
 <a id="september-23-2025"></a>
-### 2025. 09. 23.
-#### Image
+## 2025. 09. 23.
+### Image
 * 新規イメージ追加
     * PIOLINK WEBFRONT-KS 4.0.6.62.20(2025.09.23.)
     * PIOLINK WEBFRONT-KS 4.0.6.61.33(2025.09.23.)
@@ -168,8 +177,8 @@
     * PIOLINK WEBFRONT-KS 4.0.6.61.32(2025.07.15.)
 
 <a id="july-15-2025"></a>
-### 2025. 07. 15.
-#### Image
+## 2025. 07. 15.
+### Image
 * 新規イメージ追加
     * Debian 11.11 Bullseye(2025.07.15.)
     * Debian 12.10 Bookworm(2025.07.15.)
@@ -266,8 +275,8 @@
     * Windows 2022 STD with MS-SQL 2022 Standard(2025.02.25.) KO
 
 <a id="may-27-2025"></a>
-### 2025. 05. 27.
-#### Instance
+## 2025. 05. 27.
+### Instance
 * バッチポリシー機能の追加
 * ネットワークインターフェース切断時の削除有無設定機能の追加
 * インスタンス作成時またはブロックストレージ接続時に、ブロックストレージの削除ポリシー設定機能を追加
@@ -275,8 +284,8 @@
     * ブロックストレージを削除する際、存在するスナップショットも一緒に削除
 
 <a id="april-29-2025"></a>
-### 2025. 04. 29.
-#### Image
+## 2025. 04. 29.
+### Image
 * 新規イメージ追加
     * Ubuntu Server 22.04.5 LTS for Deep Learning v6.0.0(2025.04.29.)
     * Ubuntu Server 22.04.5 LTS for Deep Learning v5.0.1(2025.04.29.)
@@ -291,8 +300,8 @@
     * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7 (2025.03.25)
 
 <a id="march-25-2025"></a>
-### 2025. 03. 25.
-#### Image
+## 2025. 03. 25.
+### Image
 * 新規イメージ追加
     * Ubuntu Server 20.04.6 LTS with PostgreSQL 15(2025.03.25.)
     * Ubuntu Server 20.04.6 LTS with MySQL 8.0.36(2025.03.25.)
@@ -316,33 +325,33 @@
     * Rocky Linux 8.10 with Tibero 7 Standard 277758(2024.11.19.)
 
 <a id="february-27-2025"></a>
-### 2025. 02. 27.
-#### Instance
+## 2025. 02. 27.
+### Instance
 * インスタンス説明変更機能を追加
 * APIパスワードの変更時に既存のパスワードと同じパスワードに変更できないように制限
 * ブロックストレージ及びスナップショットからインスタンス作成機能を追加
 
-#### Image
-* Rocky 8.10 default pythonがplatform pythonに変更(python 3.11 > 3.6)
+### Image
+* Rocky 8.10 default pythonがplatform pythonに変更(python 3.11 → 3.6)
 
 * GPU及びコンテナ関連(Linux)
-    * containerd: 1.6.32 > 変更なし
-    * NVIDIAドライバーアップデート: 535.216.01 > 535.230.02
-    * CUDAアップデート: 12.2 > 変更なし
-    * DCGM: 3.3.5 > 変更なし
-    * DCGM-Exporter: 3.3.5 > 変更なし
-    * MIG Manager: 0.7.0 > 変更なし
+    * containerd: 1.6.32 → 変更なし
+    * NVIDIAドライバーアップデート: 535.216.01 → 535.230.02
+    * CUDAアップデート: 12.2 → 変更なし
+    * DCGM: 3.3.5 → 変更なし
+    * DCGM-Exporter: 3.3.5 → 変更なし
+    * MIG Manager: 0.7.0 → 変更なし
 
 * GPU(Windows)
-    * NVIDIAドライバーアップデート: 538.95 > 539.19
-    * CUDAアップデート: 12.2 > 変更なし
+    * NVIDIAドライバーアップデート: 538.95 → 539.19
+    * CUDAアップデート: 12.2 → 変更なし
 
 * セキュリティアップデート
-    * windows 2016: KB5049993
+    * Windows 2016: KB5049993
         * https://support.microsoft.com/en-us/topic/january-14-2025-kb5049993-os-build-14393-7699-b148c0ad-29fd-460e-b4a2-db38e88ae937
-    * windows 2019: KB5050008
+    * Windows 2019: KB5050008
         * https://support.microsoft.com/en-us/topic/january-14-2025-kb5050008-os-build-17763-6775-9a174725-a7ea-4e37-a6f8-e86f7c4d3f31
-    * windows 2022: KB5049983
+    * Windows 2022: KB5049983
         * https://support.microsoft.com/en-us/topic/january-14-2025-kb5049983-os-build-20348-3091-789bf923-7777-419d-9c3a-23f7c814930f
 
 * 新規イメージ追加
@@ -413,11 +422,11 @@
 
 
 <a id="november-26-2024"></a>
-### 2024. 11. 26.
-#### Instance
+## 2024. 11. 26.
+### Instance
 * インスタンスOS情報変更機能を追加
 
-#### Image
+### Image
 * イメージ修正機能を改善
   * 修正可能項目を追加
     * OSバージョン値設定
@@ -430,25 +439,25 @@
     * 使用対象サービス設定
 
 * GPU及びコンテナ関連(Linux)
-    * containerd: 1.6.32 > 変更なし
-    * NVIDIAドライバーアップデート: 535.183.06 > 535.216.01
-    * CUDAアップデート: 12.2 > 変更なし
-    * DCGM: 3.3.5 > 変更なし
-    * DCGM-Exporter: 3.4.1 > 変更なし
-    * MIG Manager: 0.7.0 > 変更なし
-    * 最小ディスクサイズ(GB): 20 > 30
+    * containerd: 1.6.32 → 変更なし
+    * NVIDIAドライバーアップデート: 535.183.06 → 535.216.01
+    * CUDAアップデート: 12.2 → 変更なし
+    * DCGM: 3.3.5 → 変更なし
+    * DCGM-Exporter: 3.4.1 → 変更なし
+    * MIG Manager: 0.7.0 → 変更なし
+    * 最小ディスクサイズ(GB): 20 → 30
     * DCGM-Exporter 未インストールイシューパッチ(NVIDIAイメージ)
 
 * GPU(Windows)
-    * NVIDIAドライバーアップデート: 538.78 > 538.95
+    * NVIDIAドライバーアップデート: 538.78 → 538.95
     * CUDAバージョン: 12.2
 
 * セキュリティアップデート
-    * windows 2016: KB5044293
+    * Windows 2016: KB5044293
         * https://support.microsoft.com/en-us/topic/october-8-2024-kb5044293-os-build-14393-7428-3f172048-e2d1-4eb2-b6b9-41abd891e52f
-    * windows 2019: KB5044277
+    * Windows 2019: KB5044277
         * https://support.microsoft.com/en-us/topic/october-8-2024-kb5044277-os-build-17763-6414-edccc872-2f4e-4ac6-b224-50ca8f1acd4f
-    * windows 2022: KB5044281
+    * Windows 2022: KB5044281
         * https://support.microsoft.com/en-us/topic/october-8-2024-kb5044281-os-build-20348-2762-e063059c-9122-4324-86e8-4f6f3383a20a
 
 * 新規イメージ追加
@@ -503,7 +512,7 @@
      * Windows 2022 STD(2024.11.19.) EN
      * Windows 2022 STD(2024.11.19.) KO
 
-#### Image Builder
+### Image Builder
 * アプリケーションバージョンサポートの終了
     * NHN Kubernetes Service(NKS) Worker Node 1.0
     * NHN Kubernetes Service(NKS) Worker Node(GPU) 1.0
@@ -514,12 +523,12 @@
 
 
 <a id="october-29-2024"></a>
-### 2024. 10. 29.
-#### Image Builder
+## 2024. 10. 29.
+### Image Builder
 * アプリケーションバージョン追加
     * Deep Learning Framework 5.0
 
-#### Image
+### Image
 * 新規イメージ追加
     * Ubuntu Server 22.04.4 LTS for Deep Learning v3.1.1(2024.10.29.)
     * Ubuntu Server 22.04.4 LTS for Deep Learning v4.0.1(2024.10.29.)
@@ -539,18 +548,18 @@
     * Ubuntu Server 20.04.6 LTS with Redis 7.2.4(2024.10.29.)
 
 <a id="august-27-2024"></a>
-### 2024. 08. 27.
-#### Image
+## 2024. 08. 27.
+### Image
 * GPU及びコンテナ関連(Linux)
-    * containerd: 1.6.31 > 1.6.32
-    * NVIDIAドライバーアップデート: 535.161.08 > 535.183.06
-    * CUDAアップデート: 12.2 > 変更なし
-    * MIG Manager: 0.7.0 > 変更なし
-    * NVIDIA DCGM: 3.3.5 > 変更なし
-    * NVIDIA DCGM Exporter: 3.4.1 > 変更なし
+    * containerd: 1.6.31 → 1.6.32
+    * NVIDIAドライバーアップデート: 535.161.08 → 535.183.06
+    * CUDAアップデート: 12.2 → 変更なし
+    * MIG Manager: 0.7.0 → 変更なし
+    * NVIDIA DCGM: 3.3.5 → 変更なし
+    * NVIDIA DCGM Exporter: 3.4.1 → 変更なし
 
 * GPU(Windows)
-    * NVIDIAドライバーアップデート: 538.46 > 538.78
+    * NVIDIAドライバーアップデート: 538.46 → 538.78
 
 * セキュリティアップデート(Windows)
     * Windows 2016: KB5040434
@@ -597,13 +606,13 @@
     * Windows 2022 STD(2024.08.20.) EN
     * Windows 2022 STD(2024.08.20.) KO
 
-#### Public API
+### Public API
 * 米国(カリフォルニア)リージョン追加
 
-#### Instance
+### Instance
 * インスタンスキーペア変更機能の追加
 
-#### Image Builder
+### Image Builder
 * アプリケーションサポートバージョンの追加
     * PostgreSQL 15
     * NHN Kubernetes Service(NKS) Worker Node 1.6
@@ -628,8 +637,8 @@
 	    * NHN Kubernetes Service(NKS) Worker Node / NHN Kubernetes Service(NKS) Worker Node(GPU)
 
 <a id="may-28-2024"></a>
-### 2024. 05. 28.
-#### Instance
+## 2024. 05. 28.
+### Instance
 * インスタンスリスト内検索/フィルタ条件拡張及びUIの改善
     * 検索条件の追加
         * インスタンス名
@@ -639,17 +648,17 @@
         * イメージタイプ
         * インスタンス状態
 
-#### Image
+### Image
 * GPU及びコンテナ関連(Linux)
-    * containerd: 1.6.27 > 1.6.31
-    * NVIDIAドライバーアップデート: 535.154.05 > 535.161.08
-    * CUDAアップデート: 12.2 > 変更なし
-    * MIG Manager: 0.5.5 > 0.7.0
-    * NVIDIA DCGM: 3.1.8 > 3.3.5
-    * NVIDIA DCGM Exporter: 3.1.5 > 3.4.1
+    * containerd: 1.6.27 → 1.6.31
+    * NVIDIAドライバーアップデート: 535.154.05 → 535.161.08
+    * CUDAアップデート: 12.2 → 変更なし
+    * MIG Manager: 0.5.5 → 0.7.0
+    * NVIDIA DCGM: 3.1.8 → 3.3.5
+    * NVIDIA DCGM Exporter: 3.1.5 → 3.4.1
 
 * GPU(Windows)
-    * NVIDIAドライバーアップデート: 538.46 > 538.15
+    * NVIDIAドライバーアップデート: 538.46 → 538.15
 
 * セキュリティアップデート(Windows)
     * Windows 2016: KB5036899
@@ -689,12 +698,12 @@
     * Windows 2022 STD(2024.05.21.) KO
 
 <a id="april-23-2024"></a>
-### 2024. 04. 23.
-#### Instance 
+## 2024. 04. 23.
+### Instance 
 * インスタンスタイプ利用終了 - 韓国(パンギョ)リージョンに該当 
     * u2(Ephemeral Storage Instance)
 
-#### Image
+### Image
 * 新規イメージ追加
     * CentOS 7.9 with Apache Kafka 3.6.1(2024.04.23.)
     * CentOS 7.9 with CUBRID 10.2.14(2024.04.23.)
@@ -738,21 +747,21 @@
     * Ubuntu Server 20.04.6 LTS with Redis 7.0.5(2023.03.21.)
 
 <a id="april-15-2024"></a>
-### 2024. 04. 15.
-#### Image
+## 2024. 04. 15.
+### Image
 * イメージアップデート
     * PentaSecurity WAPPLES SA 6.0.6(2024.04.15.)
 
 
 <a id="march-26-2024"></a>
-### 2024. 03. 26.
-#### Image Builder
+## 2024. 03. 26.
+### Image Builder
 * アプリケーションバージョンの追加
     * Deep Learning Framework 4.0
 
 <a id="february-27-2024"></a>
-### 2024. 02. 27.
-#### Image
+## 2024. 02. 27.
+### Image
 * 新規イメージ追加
     * Rocky Linux 8.9(2024.02.20.)
 
@@ -760,13 +769,13 @@
     * Rocky Linux 8.8(2023.11.21.)
 
 * GPU及びコンテナ関連(Linux)
-    * containerd: 1.6.22 > 1.6.27
-    * NVIDIAドライバーアップデート: 535.104.12 > 535.154.05
-    * CUDAアップデート: 12.2 > 変更なし
-    * MIG Manager: 0.5.5 > 変更なし
+    * containerd: 1.6.22 → 1.6.27
+    * NVIDIAドライバーアップデート: 535.104.12 → 535.154.05
+    * CUDAアップデート: 12.2 → 変更なし
+    * MIG Manager: 0.5.5 → 変更なし
 
 * GPU(Windows)
-    * NVIDIAドライバーアップデート: 537.13 > 538.15
+    * NVIDIAドライバーアップデート: 537.13 → 538.15
 
 * セキュリティアップデート(Windows)
     * Windows 2016: KB5034119
@@ -804,20 +813,20 @@
     * Windows 2019 STD with MS-SQL 2019 Standard(2024.02.20.) EN
     * Windows 2019 STD with MS-SQL 2019 Standard(2024.02.20.) KO
 
-#### Instance
+### Instance
 * 暗号化ルートブロックストレージインスタンスからイメージ作成機能を追加
 * GPU Instanceでインスタンス停止機能の無効化
 
 
 <a id="november-28-2023"></a>
-### 2023. 11. 28.
-#### Instance
+## 2023. 11. 28.
+### Instance
 * インスタンス終了機能追加
 
-#### Public API
+### Public API
 * インスタンス終了、終了したインスタンスの起動APIを追加
 
-#### Image
+### Image
 * イメージ共有メンバー数制限を解除
 
 * 新規イメージ追加
@@ -831,12 +840,12 @@
 
 * GPUおよびコンテナ関連(Linux)
     * debian 11 container - gpu driver追加/gpu flavor選択後、クラスタ作成が可能
-    * NVIDIAドライバーアップデート: 470.199.02 > 535.104.12
-    * CUDAアップデート: 11.4 > 12.2
-    * MIG Manager: 0.5.4 > 0.5.5
+    * NVIDIAドライバーアップデート: 470.199.02 → 535.104.12
+    * CUDAアップデート: 11.4 → 12.2
+    * MIG Manager: 0.5.4 → 0.5.5
 
 * GPU(Windows)
-	* NVIDIAドライバーアップデート: 474.44 > 537.13
+	* NVIDIAドライバーアップデート: 474.44 → 537.13
 
 * セキュリティアップデート(Linux)
 	* CentOS 7.9: /usr/bin/newgrp, /sbin/unix_chkpwd SetUID除去
@@ -884,16 +893,16 @@
 
 
 
-#### Bare Metal Instance
+### Bare Metal Instance
 * Bare Metal Instanceサービスリリース
 
 <a id="october-31-2023"></a>
-### 2023. 10. 31.
-#### System Monitoring
+## 2023. 10. 31.
+### System Monitoring
 * バグ修正
   * プロジェクトから除外したユーザーにアラームを送り続ける問題を修正
 
-#### Image
+### Image
 * 新規イメージ追加
     * CentOS 7.9 with Tibero 7 CSE(2023.10.31.)
     * CentOS 7.9 with Tibero 7 CEE(2023.10.31.)
@@ -901,13 +910,13 @@
 * イメージサポート終了
     * CentOS 7.9 with Tibero 6(2022.12.20.)
 
-#### System Monitoring
+### System Monitoring
 * バグ修正
 * プロジェクトから除外したユーザーにアラームを送信し続ける問題を修正
 
 <a id="september-26-2023"></a>
-### 2023. 09. 26.
-#### Image
+## 2023. 09. 26.
+### Image
 * 新規イメージ追加
     * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.1(2023.09.26.)
     * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.1(2023.09.26.)
@@ -922,14 +931,14 @@
     * Windows 2012 R2 STD with MS-SQL 2016 Standard(2023.08.22.) KO
 
 * PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
-    * イメージ名変更PLOS-WAF-KS-v4.0.6.61.28(2023.04.25.) > PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
+    * イメージ名変更PLOS-WAF-KS-v4.0.6.61.28(2023.04.25.) → PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
 
 <a id="august-29-2023"></a>
-### 2023. 08. 29.
-#### Public API
+## 2023. 08. 29.
+### Public API
 * イメージアップロード/ダウンロードAPIを追加
 
-#### Image
+### Image
 * 新規イメージ追加
     * Rocky Linux 8.8(2023.08.22.)
     * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.0(2023.08.22.)
@@ -939,12 +948,12 @@
     * Rocky Linux 8.7(2023.05.25.)
 
 * GPU
-    * NVIDIAドライバーアップデート(Linux): 470.182.03 > 470.199.02
-    * dcgmアップデート(Linux): 3.1.7 > 3.1.8
-    * NVIDIAドライバーアップデート(Windows): 474.30 > 474.44
+    * NVIDIAドライバーアップデート(Linux): 470.182.03 → 470.199.02
+    * dcgmアップデート(Linux): 3.1.7 → 3.1.8
+    * NVIDIAドライバーアップデート(Windows): 474.30 → 474.44
 
 * イメージ名変更
-    * Ubuntu Server 20.04.6 LTS for Deep Learning(2023.06.27.) > Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.0(2023.06.27.)
+    * Ubuntu Server 20.04.6 LTS for Deep Learning(2023.06.27.) → Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.0(2023.06.27.)
 
 * CentOS 7.9(2023.08.22.)
     * イメージアップデート
@@ -1024,32 +1033,32 @@
     * イメージアップデート
     * 23年7月セキュリティアップデート反映: https://support.microsoft.com/en-us/topic/july-11-2023-security-update-kb5028171-34557119-e00c-4678-bb87-048a36ed8585
 
-#### Instance
+### Instance
 * インスタンス削除時にインスタンスに接続されているFloating IPと追加ブロックストレージを一緒に削除する機能を追加
 
-#### Instance Template
+### Instance Template
 * 暗号化ブロックストレージタイプをサポート
 
-#### Scaling Group
+### Scaling Group
 * 暗号化ブロックストレージタイプをサポート
 
 <a id="july-25-2023"></a>
-### 2023. 07. 25.
+## 2023. 07. 25.
 
-#### Image Builder
+### Image Builder
 * アプリケーションバージョンの追加
     * Deep Learning Framework 3.0.0
 
 <a id="june-27-2023"></a>
-### 2023. 06. 27.
+## 2023. 06. 27.
 
-#### Image Builder
+### Image Builder
 * アプリケーションバージョンの追加
     * Deep Learning Framework 2.1.0
 * アプリケーションバージョンサポートの終了
     * Deep Learning Framework 2.0.1
 
-#### Image
+### Image
 * GPU
     * NVIDIAドライバーアップデート(Linux): 470.182.03
 
@@ -1057,26 +1066,26 @@
     * イメージアップデート
 
 <a id="june-13-2023"></a>
-### 2023. 06. 13.
-#### System Monitoring
+## 2023. 06. 13.
+### System Monitoring
 * **月次指標レポート**機能を使用する際、断続的にExcel作成が完了しない問題を修正しました。
 * Windows agent
     * 高可用性機能の改善 
     * ログの追加
 
 <a id="may-30-2023"></a>
-### 2023. 05. 30.
+## 2023. 05. 30.
 
-#### Instance
+### Instance
 * **CloudTrail**のインスタンス作成およびインスタンス削除ログを改善
 * インスタンス作成時に既存のネットワークインターフェースを複数指定できるようにUIを改善
 
-#### Image Builder
+### Image Builder
 * アプリケーション追加
     * NHN Kubernetes Service(NKS) Worker Node
     * NHN Kubernetes Service(NKS) Worker Node(GPU)
 
-#### Image
+### Image
 * 新規イメージ追加
     * Rocky Linux 8.7(2023.05.25.)
     * Ubuntu Server 20.04.6 LTS for NAT(2023.05.25.)
@@ -1089,8 +1098,8 @@
     * Ubuntu Server 18.04.6 LTS with NVIDIA(2023.03.21.)
 
 * GPU
-    * NVIDIAドライバーアップデート(Linux): 450.216.04 > 470.182.03
-    * NVIDIAドライバーアップデート: 453.94 > 474.30
+    * NVIDIAドライバーアップデート(Linux): 450.216.04 → 470.182.03
+    * NVIDIAドライバーアップデート: 453.94 → 474.30
 
 * CentOS 7.9(2023.05.25.)
     * イメージアップデート
@@ -1170,8 +1179,8 @@
     * 23年11月セキュリティアップデート反映: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025229-os-build-17763-4252-e8ead788-2cd3-4c9b-8c77-d677e2d8744f
 
 <a id="april-25-2023"></a>
-### 2023. 04. 25.
-#### Image
+## 2023. 04. 25.
+### Image
 * 新規イメージ追加
     * Ubuntu Server 20.04.6 LTS for Deep Learning(2023.04.25.)
     * PLOS-WFK-KS-v4.0.6.61.28(2023.04.25.)
@@ -1179,13 +1188,13 @@
     * Ubuntu Server 18.04.6 LTS for Deep Learning(2022.01.25.)
     * PLOS-WFK-KS-v4.0.6.61.25(2022.09.20.)
 
-#### System Monitoring
+### System Monitoring
 * バグ修正
     * ダウンロードした月間指標レポートが断続的に正常に実行されない問題を修正
 
 <a id="march-28-2023"></a>
-### 2023. 03. 28.
-#### Image
+## 2023. 03. 28.
+### Image
 * 新規イメージ追加
     * CentOS 7.9 with CUBRID 10.2.10(2023.03.21.)
     * CentOS 7.9 with CUBRID 11.0.10(2023.03.21.)
@@ -1220,20 +1229,20 @@
 * Ubuntu Server 22.04.2 LTS(2023.03.21)
     * イメージアップデート
 
-#### Image Builder
+### Image Builder
 * 新規機能の追加
     * イメージビルド時に個人イメージをベースイメージとして選択可能
 
-#### Public API
+### Public API
 * APIエンドポイントの変更
 
-#### System Monitoring
+### System Monitoring
 * 月間指標レポートの周期選択条件から`1分`オプションを削除
 
 <a id="february-28-2023"></a>
-### 2023. 02. 28.
+## 2023. 02. 28.
 
-#### Image
+### Image
 * 新規イメージ追加
     * Ubuntu Server 22.04.1 LTS(2023.02.21.)
     * Ubuntu Server 20.04.5 LTS with NVIDIA(2023.02.21.)
@@ -1241,8 +1250,8 @@
 * カーネルアップデート
 
 * GPU
-    * NVIDIAドライバーアップデート(Windows): 453.51 > 453.94
-    * NVIDIAドライバーアップデート(Linux): 450.191.01 > 450.216.04
+    * NVIDIAドライバーアップデート(Windows): 453.51 → 453.94
+    * NVIDIAドライバーアップデート(Linux): 450.191.01 → 450.216.04
 
 * Rocky Linux 8.6(2023.02.21.)
     * イメージアップデート
@@ -1289,7 +1298,7 @@
     * イメージアップデート
     * 23年1月セキュリティアップデート反映： https://support.microsoft.com/en-us/topic/january-10-2023-kb5022286-os-build-17763-3887-48683103-7b22-4f36-aa98-0049c7a6e579
 
-#### Image Builder
+### Image Builder
 * 新規ベースイメージの追加
     * Ubuntu 20.04
 * アプリケーションバージョンの追加
@@ -1301,23 +1310,23 @@
     * CUBRID 11.0.2
 
 <a id="january-31-2023"></a>
-### 2023. 01. 31.
+## 2023. 01. 31.
 
-#### Instance
+### Instance
 * **インスタンステンプレート**でインスタンス作成時に設定値を変更できるようにUI改善
 * インスタンス情報UI改善
 
-#### Instance Template
+### Instance Template
 * **インスタンステンプレートオーナー変更**機能を追加
 
-#### Auto Scale
+### Auto Scale
 * **スケーリンググループオーナー変更**機能を追加
 * **インスタンステンプレート**でスケーリンググループ作成時に設定値を変更できるようにUI改善
 
 <a id="december-27-2022"></a>
-### 2022.12.27.
+## 2022.12.27.
 
-#### Image
+### Image
 * 新規イメージ追加
     * CentOS 7.9 with Apache Kafka 3.3.1(2022. 12. 20.)
     * CentOS 7.9 with CUBRID 10.2.4(2022. 12. 20.)
@@ -1353,22 +1362,22 @@
     * CentOS 7.8 with Tibero 6(2022. 01. 25.)
     * CentOS 7.8 with WebtoB5Fix4(2022. 03. 22.)
 
-#### Image Builder
+### Image Builder
 * 新規ベースイメージの追加
     * CentOS 7.9
 * ベースイメージのサポート終了
     * CentOS 7.8
 
 <a id="november-29-2022"></a>
-### 2022. 11. 29.
-#### Instance
+## 2022. 11. 29.
+### Instance
 * インスタンス管理の**フィルタ条件**に削除保護(全体/設定/未設定)を追加
 * ネットワークインタフェースごとに設定されたセキュリティグループ変更機能を改善 
 * インスタンス情報UIを改善 
 * 削除保護トグルボタンを追加 
 * 削除保護一括設定機能を改善
 
-#### Image
+### Image
 * 新規イメージ追加
     * CentOS 7.9(2022. 11. 22.)
     * CentOS 7.9 for NAT(2022. 11. 22.)
@@ -1418,37 +1427,37 @@
     * 日本語イメージサポート終了
     * 22年10月セキュリティアップデート反映： https://support.microsoft.com/en-us/topic/october-11-2022-kb5018419-os-build-17763-3532-ca62cca7-b599-44c4-a2a6-347996662623
 
-#### Image Builder
+### Image Builder
 * アプリケーション追加
     * Redis
     * Apache Kafka
 
 <a id="november-4-2022"></a>
-### 2022. 11. 04.
-#### Image
+## 2022. 11. 04.
+### Image
 * CentOS 7.8 with MariaDB 10.3.31(2022. 11. 04.)
     * イメージアップデート
 
-#### Image Builder
+### Image Builder
 * スクリプト修正
     * MariaDB
 
 <a id="october-25-2022"></a>
-### 2022. 10. 25.
-#### Image
+## 2022. 10. 25.
+### Image
 * イメージサポート終了
     * CentOS 7.8 with MySQL 5.6.38(2021. 12. 21.)
     * CentOS 7.8 with MySQL 5.6.50(2021. 12. 21.)
 
 <a id="september-27-2022"></a>
-### 2022. 09. 27.
-#### Image
+## 2022. 09. 27.
+### Image
 * 新規イメージ追加
     * Windows 2022 STD(2022. 09. 20.)
 
 <a id="july-26-2022"></a>
-### 2022. 07. 26.
-#### Image
+## 2022. 07. 26.
+### Image
 * WindowsイメージAdministratorアカウント名を変更してもパスワード初期化できるように変更
 
 * Windows 2012 R2 STD(2022. 07. 19.)
@@ -1473,11 +1482,11 @@
     * 22年5月セキュリティアップデート反映： https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
     * SQL Server累積アップデート16反映： https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
 
-#### Instance
+### Instance
 * インスタンス作成でインスタンスタイプ(Instance、Ephemeral Storage Instance)選択機能を追加
 * インスタンス管理でイメージタイプ(OS、Application、DBMSなど)検索機能を追加
 
-#### System Monitoring
+### System Monitoring
 * 新規機能追加：月間指標レポート
   * 月間指標レポートの作成およびダウンロードを行うことができます。
   * 月単位で最大6か月分の指標のレポートを作成できます。
@@ -1485,8 +1494,8 @@
   * `月間指標レポート`で各リクエストを確認することができ、レポート作成後、一ヶ月間ダウンロードが可能です。
 
 <a id="may-24-2022"></a>
-### 2022. 05. 24.
-#### Instance
+## 2022. 05. 24.
+### Instance
 * インスタンススクリーンショット機能の追加
 * インスタンス削除保護機能の追加
 * APIでインスタンス照会時、インスタンス削除保護プロパティ(NHN-EXT-ATTR:protect)が表示されるように変更
@@ -1495,13 +1504,13 @@
     * 変更後：instance1, instance2, ...
 * インスタンス作成時のOSイメージ選択UIを改善
 
-#### Image
+### Image
 * 新規イメージ追加
     * Rocky Linux 8.5(2022. 05. 17.)
 
 <a id="march-29-2022"></a>
-### 2022. 03. 29.
-#### Image
+## 2022. 03. 29.
+### Image
 * 新規イメージ追加
     * Debian 11.2 Bullseye(2022. 03. 22.)
 
@@ -1509,22 +1518,22 @@
     * Debian 9.13 Stretch(2021. 12. 21.)
 
 <a id="january-25-2022"></a>
-### 2022. 01. 25.
-#### Public API
+## 2022. 01. 25.
+### Public API
 * イメージ照会APIでGPU Instanceサービスイメージも照会できるように変更
 * イメージ照会APIにインフラサービスの種類をフィルタリングするためのクエリパラメータを追加
 
-#### Image
+### Image
 * 別のリージョンにイメージをコピーする機能を追加
 
-#### Image Builder
+### Image Builder
 * アプリケーション追加
     * Slurm
 
 <a id="december-28-2021"></a>
-### 2021. 12. 28.
+## 2021. 12. 28.
 
-#### Image
+### Image
 * インスタンス作成 時に、Prometheus互換exporterが自動的にインストールされないように変更
 
 * CentOS 7.8(2021. 12. 21.)
@@ -1572,21 +1581,21 @@
 * Windows Server 2019 with SQL Server 2019 Standard(2021. 12. 21.)
     * 21年11月セキュリティアップデート反映： https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
 
-#### Image Builder
+### Image Builder
 * アプリケーション追加
     * Deep Learning Framework
 
-#### System Monitoring
+### System Monitoring
 * @Linux、@Windows基本ワークスペース追加機能の削除および作成済みのワークスペースの削除
     * インスタンス作成時、自動的に追加されていた@Linux、@Windowsワークスペースが自動的に追加されません。
     * 既存インスタンスに自動的に作成されている@Linux、@Windowsワークスペースが全て削除されます。
 
 <a id="november-23-2021"></a>
-### 2021. 11. 23.
-#### Image
+## 2021. 11. 23.
+### Image
 * GPUインスタンスを作成することができる個人イメージの作成をサポート
 
-#### Image Builder
+### Image Builder
 * アプリケーション追加
     * JEUS
     * WebtoB
@@ -1595,8 +1604,8 @@
     * MySQL
 
 <a id="october-26-2021"></a>
-### 2021. 10. 26.
-#### Image Builder
+## 2021. 10. 26.
+### Image Builder
 * Image Builderサービスを追加
     * OSイメージとアプリケーションインストールコンポーネント、ユーザースクリプトを組み合わせて個人イメージを製作
 * アプリケーション追加
@@ -1604,7 +1613,7 @@
     * MariaDB
     * CUBRID
 
-#### System Monitoring
+### System Monitoring
 
 * OpenMetricsダッシュボード > 照会
     * 照会期間を選択する時、最大1年前の日付までのみ選択できるように変更
@@ -1613,31 +1622,31 @@
     * 指標を選択せずに**追加**ボタンを押した場合、案内文言が表示され該当位置が強調表示されるように変更
 
 <a id="july-27-2021"></a>
-### 2021. 07. 27.
+## 2021. 07. 27.
 
-#### Instance
+### Instance
 * インスタンステンプレートを利用したインスタンス作成をサポート
 
-#### Instance Template
+### Instance Template
 * Instance Templateサービス追加
     * 頻繁に使用するインスタンスコンポーネント情報をテンプレートとして定義して保管
     * ユーザーが定義したテンプレートをInstanceまたはScaling Groupの作成に使用
 
-#### Auto Scale
+### Auto Scale
 * Instance Templateタブを削除
     * Instance Templateサービスで作成したテンプレートでScaling Groupを作成
 * 自動復旧ポリシーオプション選択オプションを追加
 
-#### System Monitoring
+### System Monitoring
 
 * バグ修正：通知グループのサーバー、ユーザーグループを追加する時に「There are no entires.」が選択できる現象を修正
 * バグ修正：Advanced Monitoringレイアウトを早く作成すると5個を超えて作成できる現象を修正
 * バグ修正：**Advanced Monitoring > 作業スペース > 収集対象**で同じポートに同じ名称の他のインスタンスを収集対象に追加できない現象を修正
 
 <a id="june-29-2021"></a>
-### 2021. 06. 29.
+## 2021. 06. 29.
 
-#### Image
+### Image
 
 * Prometheus互換exporter
     * Advanced Monitoringをサポートするためにinstance作成時に該当ツールが自動的にインストールされます。
@@ -1687,19 +1696,19 @@
 * Windows 2019 STD with MS-SQL 2019 Standard(2021. 06. 22.)
     * 2021年05月セキュリティアップデート反映：https://support.microsoft.com/en-us/topic/may-11-2021-kb5003171-os-build-17763-1935-3f03e74b-4759-4ca3-b9f1-4bc0d5ab5d27
 
-#### System Monitoring
+### System Monitoring
 
 * OpenMetrics通知グループ入力ガイド文言を改善
 * サーバーダッシュボードのサーバー/エージェント状態ツールチップサイズを改善
 * イベント状況画面で一部ドロップダウンメニューボタンが正常に表示されない現象を修正
-* Compute > Instanceで変更したインスタンス名がサーバーダッシュボードサーバーリストに反映されるように修正
+* Compute → Instanceで変更したインスタンス名がサーバーダッシュボードサーバーリストに反映されるように修正
 * ローディングバーを変更
 * Prometheus互換APIを追加(ベータ)
 
 <a id="april-27-2021"></a>
-### 2021. 04. 27.
+## 2021. 04. 27.
 
-#### Image
+### Image
 
 * 新規イメージ追加(ピョンチョンリージョン)
     * CentOS 7.8 for NAT(2021. 04. 22.)
@@ -1709,9 +1718,9 @@
     * Ubuntu Server 16.04.7 LTS(2020. 12. 22.)
 
 <a id="february-23-2021"></a>
-### 2021. 02. 23.
+## 2021. 02. 23.
 
-#### Image
+### Image
 
 * 新規イメージ追加
     * CentOS 7.8 with MySQL 5.6.38(2021. 02. 23.)
@@ -1734,16 +1743,16 @@
     * 新規インスタンス作成時に適用
 
 <a id="january-26-2021"></a>
-### 2021. 01. 26.
+## 2021. 01. 26.
 
-#### System Monitoring
+### System Monitoring
 * 新規機能追加：Advanced Monitoring(OpenMetrics)
     * OpenMetrics(Prometheus exposition format)指標収集、照会、通知機能を提供
 
 <a id="december-29-2020"></a>
-### 2020. 12. 29.
+## 2020. 12. 29.
 
-#### Image
+### Image
 * CentOS 6.10(2020. 12. 22.)
     * イメージアップデート
 * CentOS 7.5(2020. 12. 22.)
@@ -1786,19 +1795,19 @@
     * 2020年11月セキュリティアップデート反映：https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
 
 <a id="november-24-2020"></a>
-### 2020. 11. 24.
+## 2020. 11. 24.
 
-#### Auto Scale
+### Auto Scale
 * Deployサービス連携機能を追加
 
 <a id="august-25-2020"></a>
-### 2020. 08. 25.
+## 2020. 08. 25.
 
-#### Instance
+### Instance
 * **Windowsインスタンス接続情報**タブに**パスワード初期化**ボタンを追加
 * Windowsイメージ作成時に原本インスタンスのパスワードを初期化する機能を追加
 
-#### Image
+### Image
 * 新規イメージ追加
     * Cent OS 7.8(2020. 08. 18.)
     * Ubuntu 20.04 LTS(2020. 08. 18.)
@@ -1842,37 +1851,37 @@
     * Windows 2012 R2 STD with MS-SQL 2016 Express(2020. 02. 18.)
 
 <a id="june-23-2020"></a>
-### 2020. 06. 23.
+## 2020. 06. 23.
 
-#### System Monitoring
+### System Monitoring
 
 * 意味をより明確に表すことができるようにチャートおよび凡例名を変更
 * 詳細項目がある収集項目に詳細チャート表示機能を追加
 
-#### Instance
+### Instance
 
 * キーペアに登録された公開鍵の照会機能を追加
 * GPUインスタンスをコンソールから直接作成できるサービスを開始
 * インスタンス停止ダイアログボックスの削除ボタンを削除
 
 <a id="may-26-2020"></a>
-### 2020. 05. 26.
+## 2020. 05. 26.
 
-#### Instance
+### Instance
 
 * Public API v2リリース
     * Openstack互換API仕様に変更
     * Terraformサポート
 
-#### Image
+### Image
 
 * Public API v2リリース
     * Openstack互換API仕様に変更
 
 <a id="february-25-2020"></a>
-### 2020. 02. 25.
+## 2020. 02. 25.
 
-#### Image
+### Image
 
 * OS新規イメージ
     * Debian 10.2 Buster(2020. 02. 18.)
@@ -1910,7 +1919,7 @@
 * OSイメージサポート終了
     * Debian 8.11 Jessie(2019. 07. 23.)
 
-#### System Monitoring
+### System Monitoring
 * イベント状況ページの改善
     * リージョンごとにイベントを照会できるように改善
     * イベント検索フィルタの状態項目にAll選択肢を追加
@@ -1921,47 +1930,47 @@
     * CPU、メモリ使用量を改善
 
 <a id="january-21-2019"></a>
-### 2019.01.21
-#### System Monitoring
+## 2019.01.21
+### System Monitoring
 * イベント照会ページを追加
     * 設定した**監視設定**により発生したイベントを照会する機能を提供
 * サーバーダッシュボードの**サーバーリスト**機能を改善
-    * **Compute > Instance**のすべてのインスタンスを照会できるように改善
+    * **Compute → Instance**のすべてのインスタンスを照会できるように改善
     * インスタンスの状態が正確に表示されるように改善
 * 通知グループの**サーバーおよびユーザーグループ連携**機能を改善
     * サーバーおよびユーザーグループを選択し、**保存**ボタンをクリックすると変更事項が保存されるように変更
 
 <a id="december-17-2019"></a>
-### 2019.12.17
+## 2019.12.17
 
-#### Auto Scale
+### Auto Scale
 
 - インスタンステンプレートリスト及び詳細情報から作成する時、入力した全ての情報を確認できるように修正
     - リストテーブル：アベイラビリティゾーン
     - 詳細情報：設定した全てのネットワーク情報、ユーザースクリプトの内容
 
 <a id="november-26-2019"></a>
-### 2019.11.26
+## 2019.11.26
 
-#### Instance
+### Instance
 
 - インスタンスリストからIPを利用してインスタンスを検索する時に一部の特殊文字入力の際にエラーが発生する問題解決
 
-#### Auto Scale
+### Auto Scale
 
 - Auto Scaling 自動復旧
     - Scaling Groupに属する個別インスタンスにネットワーク切断などの障害が発生すると自動に新たなインスタンスを生成して障害が発生したインスタンスを代替する機能追加
 
 
-#### System Monitoring
+### System Monitoring
 
 - サーバーダッシュボードのインスタンス検索機能を改善：大文字/小文字を区別しないように修正
 
 
 <a id="october-29-2019"></a>
-### 2019.10.29
+## 2019.10.29
 
-#### イメージ
+### イメージ
 
 * Applicationイメージ アップデート
 	* PLOS-WFK-KS-v2.0.60.0.14(2019. 10. 22.)
@@ -1975,7 +1984,7 @@
 	* Windows 2012 R2 STD with MS-SQL 2016 Standard(2019. 10. 22.)
 	* Windows 2016 R2 STD with MS-SQL 2016 Standard(2019. 10. 22.)
 
-#### System Monitoring
+### System Monitoring
 
 ##### 機能改善
 - ユーザー相互作用UIの改善
@@ -1988,42 +1997,42 @@
 
 
 <a id="september-24-2019"></a>
-### 2019.09.24
+## 2019.09.24
 
-#### System Monitoring
+### System Monitoring
 - Webコンソール英語メッセージをサポート
 - Internet Explorer 11ブラウザ環境で、サーバーダッシュボードレイアウトの選択に失敗する現象を修正
 
 <a id="august-27-2019"></a>
-### 2019. 08. 27.
+## 2019. 08. 27.
 
-#### System Monitoring
+### System Monitoring
 - サーバーダッシュボードチャート照会性能を改善
 - IE11環境でのUIを改善
 
-#### 機能改善
+### 機能改善
 * イメージ管理画面で共用イメージタブが削除されました。
 
 <a id="july-23-2019"></a>
-### 2019. 07. 23.
+## 2019. 07. 23.
 
-#### 新規サービスリリース：System Monitoring
+### 新規サービスリリース：System Monitoring
 
 - 作成された仮想サーバーのシステム指標チャートを提供します。
 - 各システム指標チャートを任意のレイアウトで構成でき、指標が特定のしきい値に達した場合、任意の特定ユーザーグループにメールやSMSで通知を送るように設定できます。
 
 <a id="june-25-2019"></a>
-### 2019.06.25
+## 2019.06.25
 
-#### 機能改善
+### 機能改善
 
 * インスタンスが起動中の時もイメージが作成できるように機能を追加しました。
 
 
 <a id="may-28-2019"></a>
-### 2019. 05. 28.
+## 2019. 05. 28.
 
-#### 機能改善
+### 機能改善
 
 - KRリージョン
 - Debian 9 Stretchイメージアップデート
@@ -2076,9 +2085,9 @@
 	* Scaling Group의 사용량을 확인할 수 있는 통계 그래프 추가
 
 <a id="may-14-2019"></a>
-### 2019. 05. 14.
+## 2019. 05. 14.
 
-#### 기능 개선
+### 기능 개선
 
 * 신규 이미지 제공
 	* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard(2019. 05. 14.)
@@ -2104,9 +2113,9 @@
 
 
 <a id="april-25-2019"></a>
-### 2019. 04. 25.
+## 2019. 04. 25.
 
-#### 기능 개선
+### 기능 개선
 
 * Auto Scaling 예약 작업
 	* 예약 작업 생성 시 타임존 설정 기능 추가
@@ -2135,9 +2144,9 @@
 
 
 <a id="march-26-2019"></a>
-### 2019. 03. 26.
+## 2019. 03. 26.
 
-#### 기능 개선
+### 기능 개선
 
 * Debian 9 Stretch 이미지 업데이트
 	* 이미지 정보
@@ -2167,9 +2176,9 @@
 		* Bootstrap 과정의 기능 개선
 
 <a id="february-26-2019"></a>
-### 2019. 02. 26.
+## 2019. 02. 26.
 
-#### 기능 개선
+### 기능 개선
 
 * Ubuntu Server 18.04 LTS 이미지 업데이트
     * 이미지 정보
@@ -2184,9 +2193,9 @@
 
 
 <a id="january-29-2019"></a>
-### 2019.01.29
+## 2019.01.29
 
-#### 기능 개선
+### 기능 개선
 
 * Public API 변경
   * Instance 생성시 Subnet을 지정할 수 있도록 수정
@@ -2194,9 +2203,9 @@
   * Image 삭제 API 추가
 
 <a id="december-27-2018"></a>
-### 2018. 12. 27.
+## 2018. 12. 27.
 
-#### 기능 개선
+### 기능 개선
 
 * Ubuntu Server 18.04 LTS 이미지 업데이트
 * Ubuntu Server 16.04 LTS 이미지 업데이트
@@ -2216,9 +2225,9 @@
 
 
 <a id="december-11-2018"></a>
-### 2018. 12. 11.
+## 2018. 12. 11.
 
-#### 기능 개선
+### 기능 개선
 
 * 이미지 업데이트 관련 주요 변경 사항 요약
     * 이미지 공통 기능개선
@@ -2318,9 +2327,9 @@
 
 
 <a id="november-13-2018"></a>
-### 2018. 11. 13.
+## 2018. 11. 13.
 
-#### 기능 개선
+### 기능 개선
 
 * CentOS 7.1 이미지 업데이트
     * 이미지 정보
@@ -2342,9 +2351,9 @@
     * Yum repository target 변경: CentOS 최신 repo
 
 <a id="october-23-2018"></a>
-### 2018. 10. 23.
+## 2018. 10. 23.
 
-#### 기능 개선
+### 기능 개선
 
 * 이미지 업데이트 관련 주요 변경 사항 요약
     * 신규 이미지 릴리즈: CentOS 7.5 , CentOS 6.10
@@ -2589,9 +2598,9 @@
 
 
 <a id="september-20-2018"></a>
-### 2018. 09. 20.
+## 2018. 09. 20.
 
-#### 기능 개선
+### 기능 개선
 
 * Instance 관리 화면 UX/UI가 개선되었습니다.
     * 인스턴스 이름 조회 기능 추가
@@ -2640,9 +2649,9 @@
 
 
 <a id="august-9-2018"></a>
-### 2018. 08. 09.
+## 2018. 08. 09.
 
-#### 기능 개선
+### 기능 개선
 
 * Windows 2012 R2 Standard 이미지 업데이트
     * 이미지 정보
@@ -2741,9 +2750,9 @@
 
 
 <a id="july-16-2018"></a>
-### 2018. 07. 16.
+## 2018. 07. 16.
 
-#### 기능 개선
+### 기능 개선
 
 * Windows 2012 R2 Standard 이미지 업데이트
     * 이미지 정보
@@ -2828,26 +2837,26 @@
             * /etc/issue, /etc/issue.net 삭제
 
 <a id="may-29-2018"></a>
-### 2018.05.29
+## 2018.05.29
 
-#### 버그 수정
+### 버그 수정
 * Auto Scale의 반복성 예약 작업(cron expression 기반) 관련 오류가 수정되었습니다.
     * 반복성 예약 작업 실행 시점이  UTC를 기반으로  동작하는 오류 수정
     * 반복성 예약 작업의 최초 실행이 cron expression을 따르지 않고, 예약 작업 생성 시 설정한 '시작 시각'에 수행되는 오류 수정
 
-#### 기능 추가
+### 기능 추가
 * Instance 생성 시 volume type 설정 기능이 추가되었습니다.
 * Block Storage 생성 시 volume type 설정 기능이 추가되었습니다.
 
 <a id="april-24-2018"></a>
-### 2018.04.24
+## 2018.04.24
 
 * Windows 인스턴스 Log 탭이 일시적으로 삭제 되었습니다.
 
 <a id="march-22-2018"></a>
-### 2018.03.22
+## 2018.03.22
 
-#### 신규 상품 추가
+### 신규 상품 추가
 
 * Auto Scale 상품이 추가되었습니다.
     * 사용자가 생성한 Instance Template을 바탕으로, Scaling Group을 생성할 수 있습니다.
@@ -2856,9 +2865,9 @@
 
 
 <a id="february-22-2018"></a>
-### 2018. 02. 22.
+## 2018. 02. 22.
 
-#### 기능 개선
+### 기능 개선
 
 * VPC 기능이 추가됨에 따라 인스턴스 생성 시에 서브넷을 지정하도록 변경되었습니다.
 * Windows 2012 R2 Standard 이미지 업데이트
@@ -2930,31 +2939,31 @@
 
 
 <a id="september-21-2017"></a>
-### 2017.09.21
+## 2017.09.21
 
-#### 기능 추가
+### 기능 추가
 * Public API 추가
     * Object Storage에 이어 TOAST Compute를 API로 관리할 수 있습니다.
     * 현재 제한적인 기능만 이용할 수 있으며, 추후 API 추가를 통해 기능이 확장될 예정입니다.
     * 지원되는 API는 API Guide를 참고하시기 바랍니다.
 
-#### 버그 수정
+### 버그 수정
 * 키페어를 지정하지 않고 인스턴스를 생성할 수 있었던 버그가 수정되었습니다.
 
 
 
 <a id="july-20-2017"></a>
-### 2017.07.20
+## 2017.07.20
 
-#### 버그 수정
+### 버그 수정
 * 대용량 이미지 생성시 간헐적으로 생성이 완료되지 않던 버그가 수정되었습니다.
 
 
 
 <a id="august-24-2017"></a>
-### 2017.08.24
+## 2017.08.24
 
-#### 기능 추가
+### 기능 추가
 
 * 인스턴스 사양을 변경할 수 있도록 기능이 추가되었습니다.
     * 사용하던 인스턴스의 디스크는 그대로 보존하면서 CPU/Memory를 업그레이드 하거나 다운그레이드 할 수 있습니다.
@@ -2969,37 +2978,37 @@
     * 높은 IOPS가 필요한 경우 I타입을 이용하면 수준의 높은 IOPS를 보장 받을 수 있습니다.(보장 IOPS는 가격표 참조)
     * 리눅스 OS만 지원합니다.
 
-#### 버그 수정
+### 버그 수정
 * 인스턴스 사용량 조회시 값이 조회되지 않는 버그가 수정되었습니다.
 
 
 
 <a id="may-25-2017"></a>
-### 2017. 05. 25.
+## 2017. 05. 25.
 
-#### 기능 추가
+### 기능 추가
 
 * 윈도우 이미지(Windows 2012 r2)가 추가됩니다.
 
-#### 버그 수정
+### 버그 수정
 
 * 서비스 종료된 이미지로 생성된 인스턴스가 조회 되지 않는 버그가 수정되었습니다.
 
 
 
 <a id="april-25-2017"></a>
-### 2017.04.25
+## 2017.04.25
 
-#### 기능 개선
+### 기능 개선
 
 * 인스턴스 생성시 초기 불륨 크기의 최대값이 600GB에서 1TB(1000GB)로 변경됩니다.
 
 
 
 <a id="march-23-2017"></a>
-### 2017.03.23
+## 2017.03.23
 
-#### 기능 개선
+### 기능 개선
 
 * 인스턴스 생성시 사용자가 초기 볼륨의 크기를 지정할 수 있게 됩니다.
     * [기존] 인스턴스 사양에 지정된 크기로 초기 볼륨 생성 -> [변경] 사용자가 지정한 크기 만큼 초기 볼륨을 생성
@@ -3008,9 +3017,9 @@
 
 
 <a id="january-19-2017"></a>
-### 2017.01.19
+## 2017.01.19
 
-#### 기능 개선/변경
+### 기능 개선/변경
 - 인스턴스 기본 정보의 IP 주소 정보에서 서브넷 명칭을 표시하지 않습니다.
     - 명칭 표기로 행의 넓이가 넓어져 가독성이 떨어지는 것을 방지합니다.
 - 인스턴스 이름 길이 및 특수문자 제한합니다.
@@ -3018,15 +3027,15 @@
 - 인스턴스 생성 기능을 이미지 생성 기능으로 변경합니다.
     - 탭과 일관된 기능으로 변경하였습니다.
 
-#### 버그 수정
+### 버그 수정
 * 이미지 탭(Private, Shared, Public) 변경시 이미지 선택이 해제되지 않던 문제를 수정하였습니다.
 
 
 
 <a id="december-22-2016"></a>
-### 2016.12.22
+## 2016.12.22
 
-#### 기능 개선/변경
+### 기능 개선/변경
 
 * 정지된 인스턴스의 보안 그룹 수정이 가능하도록 변경합니다.
     * 의도와 다르게 기존에는 정지되어 있는 인스턴스에 보안 그룹 수정이 불가능하였습니다. 이를 수정하여 정지된 인스턴스도 보안 그룹을 변경할 수 있도록 하였습니다.
