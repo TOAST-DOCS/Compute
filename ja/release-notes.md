@@ -339,15 +339,41 @@
     * Rocky Linux 8.10 with Tibero 7 Standard 277758(2024.11.19.)
 
 <a id="march-4-2025"></a>
-## 2025. 02. 27. { #march-4-2025 }
+## 2025. 03. 04. { #march-4-2025 }
+
+<!-- TODO: translate body -->
+
 <a id="march-4-2025-instance"></a>
 ### Instance { #march-4-2025-instance }
+
+<!-- TODO: translate body -->
+
+<a id="march-4-2025-image"></a>
+### Image { #march-4-2025-image }
+
+<!-- TODO: translate body -->
+
+<a id="december-24-2024"></a>
+## 2024. 12. 24. { #december-24-2024 }
+
+<!-- TODO: translate body -->
+
+<a id="december-24-2024-1"></a>
+### Image { #december-24-2024-1 }
+
+<!-- TODO: translate body -->
+
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Date '2025. 02. 27.' has no ko counterpart; ko has 2025. 03. 04. which is missing) -->
+<a id="february-27-2025"></a>
+## 2025. 02. 27. { #february-27-2025 }
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Instance under t28 (2025.02.27.) has no ko counterpart) -->
+### Instance
 * インスタンス説明変更機能を追加
 * APIパスワードの変更時に既存のパスワードと同じパスワードに変更できないように制限
 * ブロックストレージ及びスナップショットからインスタンス作成機能を追加
 
-<a id="march-4-2025-image"></a>
-### Image { #march-4-2025-image }
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Image under t28 (2025.02.27.) has no ko counterpart) -->
+### Image
 * Rocky 8.10 default pythonがplatform pythonに変更(python 3.11 → 3.6)
 
 * GPU及びコンテナ関連(Linux)
@@ -436,16 +462,6 @@
     * Windows 2022 STD(2024.11.19) EN
     * Windows 2022 STD(2024.11.19) KO
 
-
-<a id="december-24-2024"></a>
-## 2024. 12. 24. { #december-24-2024 }
-
-<!-- TODO: translate body -->
-
-<a id="december-24-2024-1"></a>
-### Image { #december-24-2024-1 }
-
-<!-- TODO: translate body -->
 
 <a id="november-26-2024"></a>
 ## 2024. 11. 26. { #november-26-2024 }
@@ -959,7 +975,7 @@
 * イメージサポート終了
     * CentOS 7.9 with Tibero 6(2022.12.20.)
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Duplicate System Monitoring heading under 2023.10.31. section; no corresponding ko heading) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Duplicate System Monitoring under 2023.10.31.; ko has only one such subheading (k64 already matched to t62)) -->
 ### System Monitoring
 * バグ修正
 * プロジェクトから除外したユーザーにアラームを送信し続ける問題を修正
@@ -1129,10 +1145,10 @@
 * Ubuntu Server 20.04.6 LTS for Deep Learning(2023.06.27.)
     * イメージアップデート
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Date heading '2023.06.13.' has no counterpart in ko outline) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Date '2023. 06. 13.' has no ko counterpart) -->
 <a id="june-13-2023"></a>
 ## 2023. 06. 13. { #june-13-2023 }
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (System Monitoring under extra date '2023.06.13.' has no counterpart in ko outline) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (System Monitoring under t78 (2023.06.13.) has no ko counterpart) -->
 ### System Monitoring
 * **月次指標レポート**機能を使用する際、断続的にExcel作成が完了しない問題を修正しました。
 * Windows agent
@@ -2142,13 +2158,13 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (L5 '機能改善' subheading under System Monitoring has no ko counterpart) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (L5 '機能改善' under System Monitoring (2019.10.29.) has no ko counterpart subheading) -->
 ##### 機能改善
 - ユーザー相互作用UIの改善
     - ユーザーグループ、監視グループ、監視設定などのモニタリング情報を照会/追加/修正/削除した時、ローディングバーが表示されるように修正
     - 相互作用中、不要なボタンは無効化されるように修正
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (L5 'バグ修正' subheading under System Monitoring has no ko counterpart) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (L5 'バグ修正' under System Monitoring (2019.10.29.) has no ko counterpart subheading) -->
 ##### バグ修正
 - JP/USリージョンで監視設定を変更したサーバーの指標収集が一時的に中断されていた問題を修正
 - USリージョンでユーザーグループと監視グループの追加/修正日が誤って出力されていた問題を修正
@@ -2175,7 +2191,7 @@
 - サーバーダッシュボードチャート照会性能を改善
 - IE11環境でのUIを改善
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (機能改善 subheading under 2019.08.27. has no ko counterpart (ko has Image as subheading)) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 ('機能改善' under t181 (2019.08.27.) has no ko counterpart subheading; ko k184 has only Image and System Monitoring) -->
 ### 機能改善
 * イメージ管理画面で共用イメージタブが削除されました。
 
@@ -2191,13 +2207,8 @@
 <a id="june-25-2019"></a>
 ## 2019.06.25 { #june-25-2019 }
 
-<a id="updates"></a>
-### Instance { #updates }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (機能改善 subheading under 2019.06.25. has no ko counterpart (ko has Instance)) -->
-### 機能改善
+<a id="june-25-2019-1"></a>
+### 機能改善 { #june-25-2019-1 }
 
 * インスタンスが起動中の時もイメージが作成できるように機能を追加しました。
 
@@ -2210,12 +2221,12 @@
 
 <!-- TODO: translate body -->
 
-<a id="may-28-2019-updates"></a>
-### Image { #may-28-2019-updates }
+<a id="may-28-2019-2"></a>
+### Image { #may-28-2019-2 }
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (機能改善 subheading under 2019.05.28. has no ko counterpart (ko has Auto Scale and Image)) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 ('機能改善' under t188 (2019.05.28.) has no ko counterpart; ko k191 subheadings (Auto Scale, Image) are both missing) -->
 ### 機能改善
 
 - KRリージョン
@@ -2272,12 +2283,7 @@
 ## 2019. 05. 14. { #may-14-2019 }
 
 <a id="may-14-2019-1"></a>
-### Image { #may-14-2019-1 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 개선 subheading under 2019.05.14. has no ko counterpart (ko has Image)) -->
-### 기능 개선
+### 기능 개선 { #may-14-2019-1 }
 
 * 신규 이미지 제공
 	* Windows 2012 R2 STD with MS-SQL 2008 R2 Standard(2019. 05. 14.)
@@ -2306,17 +2312,7 @@
 ## 2019. 04. 25. { #april-25-2019 }
 
 <a id="april-25-2019-1"></a>
-### Auto Scale { #april-25-2019-1 }
-
-<!-- TODO: translate body -->
-
-<a id="april-25-2019-2"></a>
-### Image { #april-25-2019-2 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 개선 subheading under 2019.04.25. has no ko counterpart (ko has Auto Scale and Image)) -->
-### 기능 개선
+### 기능 개선 { #april-25-2019-1 }
 
 * Auto Scaling 예약 작업
 	* 예약 작업 생성 시 타임존 설정 기능 추가
@@ -2344,16 +2340,16 @@
 		* Windows Bootstrap 과정 기능 개선
 
 
+<a id="april-25-2019-2"></a>
+### Image { #april-25-2019-2 }
+
+<!-- TODO: translate body -->
+
 <a id="march-26-2019"></a>
 ## 2019. 03. 26. { #march-26-2019 }
 
 <a id="march-26-2019-1"></a>
-### Image { #march-26-2019-1 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 개선 subheading under 2019.03.26. has no ko counterpart (ko has Image)) -->
-### 기능 개선
+### 기능 개선 { #march-26-2019-1 }
 
 * Debian 9 Stretch 이미지 업데이트
 	* 이미지 정보
@@ -2386,12 +2382,7 @@
 ## 2019. 02. 26. { #february-26-2019 }
 
 <a id="february-26-2019-1"></a>
-### Image { #february-26-2019-1 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 개선 subheading under 2019.02.26. has no ko counterpart (ko has Image)) -->
-### 기능 개선
+### 기능 개선 { #february-26-2019-1 }
 
 * Ubuntu Server 18.04 LTS 이미지 업데이트
     * 이미지 정보
@@ -2409,12 +2400,7 @@
 ## 2019.01.29 { #january-29-2019 }
 
 <a id="january-29-2019-1"></a>
-### Public API { #january-29-2019-1 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 개선 subheading under t198/'29' has no ko counterpart (ko has Public API)) -->
-### 기능 개선
+### 기능 개선 { #january-29-2019-1 }
 
 * Public API 변경
   * Instance 생성시 Subnet을 지정할 수 있도록 수정
@@ -2425,12 +2411,7 @@
 ## 2018. 12. 27. { #december-27-2018 }
 
 <a id="december-27-2018-1"></a>
-### Image { #december-27-2018-1 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 개선 subheading under 2018.12.27. has no ko counterpart (ko has Image)) -->
-### 기능 개선
+### 기능 개선 { #december-27-2018-1 }
 
 * Ubuntu Server 18.04 LTS 이미지 업데이트
 * Ubuntu Server 16.04 LTS 이미지 업데이트
@@ -2453,12 +2434,7 @@
 ## 2018. 12. 11. { #december-11-2018 }
 
 <a id="december-11-2018-1"></a>
-### Image { #december-11-2018-1 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 개선 subheading under 2018.12.11. has no ko counterpart (ko has Image)) -->
-### 기능 개선
+### 기능 개선 { #december-11-2018-1 }
 
 * 이미지 업데이트 관련 주요 변경 사항 요약
     * 이미지 공통 기능개선
@@ -2561,12 +2537,7 @@
 ## 2018. 11. 13. { #november-13-2018 }
 
 <a id="november-13-2018-1"></a>
-### Image { #november-13-2018-1 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 개선 subheading under 2018.11.13. has no ko counterpart (ko has Image)) -->
-### 기능 개선
+### 기능 개선 { #november-13-2018-1 }
 
 * CentOS 7.1 이미지 업데이트
     * 이미지 정보
@@ -2591,12 +2562,7 @@
 ## 2018. 10. 23. { #october-23-2018 }
 
 <a id="october-23-2018-1"></a>
-### Image { #october-23-2018-1 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 개선 subheading under 2018.10.23. has no ko counterpart (ko has Image)) -->
-### 기능 개선
+### 기능 개선 { #october-23-2018-1 }
 
 * 이미지 업데이트 관련 주요 변경 사항 요약
     * 신규 이미지 릴리즈: CentOS 7.5 , CentOS 6.10
@@ -2844,17 +2810,7 @@
 ## 2018. 09. 20. { #september-20-2018 }
 
 <a id="september-20-2018-1"></a>
-### Instance { #september-20-2018-1 }
-
-<!-- TODO: translate body -->
-
-<a id="september-20-2018-2"></a>
-### Image { #september-20-2018-2 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 개선 subheading under 2018.09.20. has no ko counterpart (ko has Instance and Image)) -->
-### 기능 개선
+### 기능 개선 { #september-20-2018-1 }
 
 * Instance 관리 화면 UX/UI가 개선되었습니다.
     * 인스턴스 이름 조회 기능 추가
@@ -2902,16 +2858,16 @@
         * 2018. 09. 20. 신규적용되는 예약스크립트 기능이 정상적으로 적용되지 않는 부분 해결
 
 
+<a id="september-20-2018-2"></a>
+### Image { #september-20-2018-2 }
+
+<!-- TODO: translate body -->
+
 <a id="august-9-2018"></a>
 ## 2018. 08. 09. { #august-9-2018 }
 
 <a id="august-9-2018-1"></a>
-### Image { #august-9-2018-1 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 개선 subheading under 2018.08.09. has no ko counterpart (ko has Image)) -->
-### 기능 개선
+### 기능 개선 { #august-9-2018-1 }
 
 * Windows 2012 R2 Standard 이미지 업데이트
     * 이미지 정보
@@ -3013,12 +2969,7 @@
 ## 2018. 07. 16. { #july-16-2018 }
 
 <a id="july-16-2018-1"></a>
-### Image { #july-16-2018-1 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 개선 subheading under 2018.07.16. has no ko counterpart (ko has Image)) -->
-### 기능 개선
+### 기능 개선 { #july-16-2018-1 }
 
 * Windows 2012 R2 Standard 이미지 업데이트
     * 이미지 정보
@@ -3105,26 +3056,21 @@
 <a id="may-29-2018"></a>
 ## 2018.05.29 { #may-29-2018 }
 
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 ('버그 수정' under t214 (2018.05.29.) has no ko counterpart subheading) -->
 <a id="may-29-2018-1"></a>
-### Auto Scale { #may-29-2018-1 }
-
-<!-- TODO: translate body -->
-
-<a id="may-29-2018-2"></a>
-### Instance { #may-29-2018-2 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (버그 수정 subheading under t214/'29' has no ko counterpart) -->
-### 버그 수정
+### 버그 수정 { #may-29-2018-1 }
 * Auto Scale의 반복성 예약 작업(cron expression 기반) 관련 오류가 수정되었습니다.
     * 반복성 예약 작업 실행 시점이  UTC를 기반으로  동작하는 오류 수정
     * 반복성 예약 작업의 최초 실행이 cron expression을 따르지 않고, 예약 작업 생성 시 설정한 '시작 시각'에 수행되는 오류 수정
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 추가 subheading under t214/'29' has no ko counterpart (ko has Auto Scale, Instance, 24, Instance)) -->
-### 기능 추가
+<a id="may-29-2018-2"></a>
+### 기능 추가 { #may-29-2018-2 }
 * Instance 생성 시 volume type 설정 기능이 추가되었습니다.
 * Block Storage 생성 시 volume type 설정 기능이 추가되었습니다.
+
+### Instance
+
+<!-- TODO: translate body -->
 
 <a id="april-24-2018"></a>
 ### 2018.04.24 { #april-24-2018 }
@@ -3140,12 +3086,7 @@
 ## 2018.03.22 { #march-22-2018 }
 
 <a id="march-22-2018-1"></a>
-### Auto Scale { #march-22-2018-1 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (신규 상품 추가 subheading under t218/'22' has no ko counterpart (ko has Auto Scale)) -->
-### 신규 상품 추가
+### 신규 상품 추가 { #march-22-2018-1 }
 
 * Auto Scale 상품이 추가되었습니다.
     * 사용자가 생성한 Instance Template을 바탕으로, Scaling Group을 생성할 수 있습니다.
@@ -3157,17 +3098,7 @@
 ## 2018. 02. 22. { #february-22-2018 }
 
 <a id="february-22-2018-1"></a>
-### Instance { #february-22-2018-1 }
-
-<!-- TODO: translate body -->
-
-<a id="february-22-2018-2"></a>
-### Image { #february-22-2018-2 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 개선 subheading under 2018.02.22. has no ko counterpart (ko has Instance and Image)) -->
-### 기능 개선
+### 기능 개선 { #february-22-2018-1 }
 
 * VPC 기능이 추가됨에 따라 인스턴스 생성 시에 서브넷을 지정하도록 변경되었습니다.
 * Windows 2012 R2 Standard 이미지 업데이트
@@ -3238,28 +3169,23 @@
     * 그외 설정은 CentOS Linux 6.5 이미지와 동일함
 
 
+<a id="february-22-2018-2"></a>
+### Image { #february-22-2018-2 }
+
+<!-- TODO: translate body -->
+
 <a id="september-21-2017"></a>
 ## 2017.09.21 { #september-21-2017 }
 
 <a id="september-21-2017-1"></a>
-### Public API { #september-21-2017-1 }
-
-<!-- TODO: translate body -->
-
-<a id="september-21-2017-2"></a>
-### Instance { #september-21-2017-2 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 추가 subheading under t222/'21' has no ko counterpart (ko has Public API and Instance)) -->
-### 기능 추가
+### 기능 추가 { #september-21-2017-1 }
 * Public API 추가
     * Object Storage에 이어 TOAST Compute를 API로 관리할 수 있습니다.
     * 현재 제한적인 기능만 이용할 수 있으며, 추후 API 추가를 통해 기능이 확장될 예정입니다.
     * 지원되는 API는 API Guide를 참고하시기 바랍니다.
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (버그 수정 subheading under t222/'21' has no ko counterpart) -->
-### 버그 수정
+<a id="september-21-2017-2"></a>
+### 버그 수정 { #september-21-2017-2 }
 * 키페어를 지정하지 않고 인스턴스를 생성할 수 있었던 버그가 수정되었습니다.
 
 
@@ -3268,12 +3194,7 @@
 ## 2017.07.20 { #july-20-2017 }
 
 <a id="july-20-2017-1"></a>
-### Image { #july-20-2017-1 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (버그 수정 subheading under t225/'20' has no ko counterpart) -->
-### 버그 수정
+### 버그 수정 { #july-20-2017-1 }
 * 대용량 이미지 생성시 간헐적으로 생성이 완료되지 않던 버그가 수정되었습니다.
 
 
@@ -3282,12 +3203,7 @@
 ## 2017.08.24 { #august-24-2017 }
 
 <a id="august-24-2017-1"></a>
-### Instance { #august-24-2017-1 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 추가 subheading under t227/'24' has no ko counterpart (ko has Instance)) -->
-### 기능 추가
+### 기능 추가 { #august-24-2017-1 }
 
 * 인스턴스 사양을 변경할 수 있도록 기능이 추가되었습니다.
     * 사용하던 인스턴스의 디스크는 그대로 보존하면서 CPU/Memory를 업그레이드 하거나 다운그레이드 할 수 있습니다.
@@ -3302,7 +3218,7 @@
     * 높은 IOPS가 필요한 경우 I타입을 이용하면 수준의 높은 IOPS를 보장 받을 수 있습니다.(보장 IOPS는 가격표 참조)
     * 리눅스 OS만 지원합니다.
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (버그 수정 subheading under t227/'24' has no ko counterpart) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 ('버그 수정' under t227 (2017.08.24.) has no ko counterpart subheading; ko k235 has only Instance) -->
 ### 버그 수정
 * 인스턴스 사용량 조회시 값이 조회되지 않는 버그가 수정되었습니다.
 
@@ -3312,22 +3228,12 @@
 ## 2017. 05. 25. { #may-25-2017 }
 
 <a id="may-25-2017-1"></a>
-### Instance { #may-25-2017-1 }
-
-<!-- TODO: translate body -->
-
-<a id="may-25-2017-2"></a>
-### Image { #may-25-2017-2 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 추가 subheading under 2017.05.25. has no ko counterpart (ko has Instance and Image)) -->
-### 기능 추가
+### 기능 추가 { #may-25-2017-1 }
 
 * 윈도우 이미지(Windows 2012 r2)가 추가됩니다.
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (버그 수정 subheading under 2017.05.25. has no ko counterpart) -->
-### 버그 수정
+<a id="may-25-2017-2"></a>
+### 버그 수정 { #may-25-2017-2 }
 
 * 서비스 종료된 이미지로 생성된 인스턴스가 조회 되지 않는 버그가 수정되었습니다.
 
@@ -3337,12 +3243,7 @@
 ## 2017.04.25 { #april-25-2017 }
 
 <a id="april-25-2017-1"></a>
-### Instance { #april-25-2017-1 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 개선 subheading under t233/'25' has no ko counterpart (ko has Instance)) -->
-### 기능 개선
+### 기능 개선 { #april-25-2017-1 }
 
 * 인스턴스 생성시 초기 불륨 크기의 최대값이 600GB에서 1TB(1000GB)로 변경됩니다.
 
@@ -3352,12 +3253,7 @@
 ## 2017.03.23 { #march-23-2017 }
 
 <a id="march-23-2017-1"></a>
-### Instance { #march-23-2017-1 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 개선 subheading under t235/'23' has no ko counterpart (ko has Instance)) -->
-### 기능 개선
+### 기능 개선 { #march-23-2017-1 }
 
 * 인스턴스 생성시 사용자가 초기 볼륨의 크기를 지정할 수 있게 됩니다.
     * [기존] 인스턴스 사양에 지정된 크기로 초기 볼륨 생성 -> [변경] 사용자가 지정한 크기 만큼 초기 볼륨을 생성
@@ -3369,17 +3265,7 @@
 ## 2017.01.19 { #january-19-2017 }
 
 <a id="january-19-2017-1"></a>
-### Instance { #january-19-2017-1 }
-
-<!-- TODO: translate body -->
-
-<a id="january-19-2017-2"></a>
-### Image { #january-19-2017-2 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 개선/변경 subheading under t237/'19' has no ko counterpart (ko has Instance and Image)) -->
-### 기능 개선/변경
+### 기능 개선/변경 { #january-19-2017-1 }
 - 인스턴스 기본 정보의 IP 주소 정보에서 서브넷 명칭을 표시하지 않습니다.
     - 명칭 표기로 행의 넓이가 넓어져 가독성이 떨어지는 것을 방지합니다.
 - 인스턴스 이름 길이 및 특수문자 제한합니다.
@@ -3387,8 +3273,8 @@
 - 인스턴스 생성 기능을 이미지 생성 기능으로 변경합니다.
     - 탭과 일관된 기능으로 변경하였습니다.
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (버그 수정 subheading under t237/'19' has no ko counterpart) -->
-### 버그 수정
+<a id="january-19-2017-2"></a>
+### 버그 수정 { #january-19-2017-2 }
 * 이미지 탭(Private, Shared, Public) 변경시 이미지 선택이 해제되지 않던 문제를 수정하였습니다.
 
 
@@ -3397,12 +3283,7 @@
 ## 2016.12.22 { #december-22-2016 }
 
 <a id="december-22-2016-1"></a>
-### Instance { #december-22-2016-1 }
-
-<!-- TODO: translate body -->
-
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (기능 개선/변경 subheading under t240/'22' has no ko counterpart (ko has Instance)) -->
-### 기능 개선/변경
+### 기능 개선/변경 { #december-22-2016-1 }
 
 * 정지된 인스턴스의 보안 그룹 수정이 가능하도록 변경합니다.
     * 의도와 다르게 기존에는 정지되어 있는 인스턴스에 보안 그룹 수정이 불가능하였습니다. 이를 수정하여 정지된 인스턴스도 보안 그룹을 변경할 수 있도록 하였습니다.

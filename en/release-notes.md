@@ -2077,7 +2077,7 @@
 <a id="november-26-2019-system-monitoring"></a>
 ### System Monitoring { #november-26-2019-system-monitoring }
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (No ko counterpart: 'Feature Updates' subheading under Nov 26 2019 not present in ko outline) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (No ko counterpart: 'Feature Updates' is a generic subheading under November 26, 2019 with no equivalent ko product-named subheading) -->
 ### Feature Updates
 
 * Instance Search Updated on Server Dashboard: No distinction is required between upper and lower cases
@@ -2116,13 +2116,13 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (No ko counterpart: 'Feature Updates' subheading under Oct 29 2019 not present in ko outline) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (No ko counterpart: 'Feature Updates' is a generic subheading under October 29, 2019; ko has VPC as the third subheading which has no target match) -->
 ### Feature Updates
 - Updated UI for User Interactions
     - Updated to show the loading bar to search/add/modify/delete monitoring data, including user group, monitoring group, or monitoring setting.
     - Allowed to disable unnecessary buttons for interactions
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (No ko counterpart: 'Bug Fixes' subheading under Oct 29 2019 not present in ko outline) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (No ko counterpart: 'Bug Fixes' is a generic subheading under October 29, 2019 with no equivalent ko subheading) -->
 ### Bug Fixes
 - Fixed the error in the Japan and US region, where indicator collecting was temporarily suspended for servers with changed monitoring setting
 - Fixed the issue of invalid output of dates for the adding/modifying user/monitoring groups, especially in the US region
@@ -2149,7 +2149,7 @@
 - Improved performance for the query of charts on server dashboard
 - UI improved for the Internet Explorer 11 browser environment
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (No ko counterpart: 'Updates' subheading under Aug 27 2019; ko has Image and System Monitoring, both matched elsewhere) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (No ko counterpart: 'Updates' is a generic subheading under August 27, 2019; ko Image subheading for that date has no target match) -->
 ### Updates
 * Removed the common usage tab from the image management page.
 
@@ -2165,8 +2165,13 @@
 <a id="june-25-2019"></a>
 ## June 25, 2019 { #june-25-2019 }
 
-<a id="updates"></a>
-### Updates { #updates }
+<a id="june-25-2019-1"></a>
+### Instance { #june-25-2019-1 }
+
+<!-- TODO: translate body -->
+
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (No ko counterpart: 'Updates' is a generic subheading under June 25, 2019; ko Instance subheading for that date has no target match) -->
+### Updates
 
 * Image creation is available even when instance is running.
 
@@ -2178,8 +2183,13 @@
 
 <!-- TODO: translate body -->
 
-<a id="may-28-2019-updates"></a>
-### Updates { #may-28-2019-updates }
+<a id="may-28-2019-2"></a>
+### Image { #may-28-2019-2 }
+
+<!-- TODO: translate body -->
+
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (No ko counterpart: 'Updates' is a generic subheading under May 28, 2019; ko Auto Scale and Image subheadings for that date have no target match) -->
+### Updates
 
 - **KR Region**
 - Image Updated for Debian 9 Stretch
@@ -2238,7 +2248,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 개선' under 2019.05.14.; ko child is 'Image' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 개선' under 2019.05.14.; ko Image subheading has no translated target match) -->
 ### 기능 개선
 
 * MySQL 이미지 변경
@@ -2265,7 +2275,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 개선' under 2019.04.25.; ko children are 'Auto Scale' and 'Image' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 개선' under 2019.04.25.; ko Auto Scale/Image subheadings have no translated target match) -->
 ### 기능 개선
 
 * Auto Scaling 예약 작업
@@ -2302,7 +2312,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 개선' under 2019.03.26.; ko child is 'Image' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 개선' under 2019.03.26.; ko Image subheading has no translated target match) -->
 ### 기능 개선
 
 * Debian 9 Stretch 이미지 업데이트
@@ -2340,7 +2350,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 개선' under 2019.02.26.; ko child is 'Image' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 개선' under 2019.02.26.; ko Image subheading has no translated target match) -->
 ### 기능 개선
 
 * Ubuntu Server 18.04 LTS 이미지 업데이트
@@ -2363,7 +2373,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 개선' under t196 '29'; ko child is 'Public API' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 개선' under t196 '29'; ko Public API subheading has no translated target match) -->
 ### 기능 개선
 
 * Public API 변경
@@ -2379,7 +2389,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 개선' under 2018.12.27.; ko child is 'Image' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 개선' under 2018.12.27.; ko Image subheading has no translated target match) -->
 ### 기능 개선
 
 * Ubuntu Server 18.04 LTS 이미지 업데이트
@@ -2407,7 +2417,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 개선' under 2018.12.11.; ko child is 'Image' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 개선' under 2018.12.11.; ko Image subheading has no translated target match) -->
 ### 기능 개선
 
 * 이미지 업데이트 관련 주요 변경 사항 요약
@@ -2515,7 +2525,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 개선' under 2018.11.13.; ko child is 'Image' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 개선' under 2018.11.13.; ko Image subheading has no translated target match) -->
 ### 기능 개선
 
 * CentOS 7.1 이미지 업데이트
@@ -2545,7 +2555,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 개선' under 2018.10.23.; ko child is 'Image' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 개선' under 2018.10.23.; ko Image subheading has no translated target match) -->
 ### 기능 개선
 
 * 이미지 업데이트 관련 주요 변경 사항 요약
@@ -2803,7 +2813,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 개선' under 2018.09.20.; ko children are 'Instance' and 'Image' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 개선' under 2018.09.20.; ko Instance/Image subheadings have no translated target match) -->
 ### 기능 개선
 
 * Instance 관리 화면 UX/UI가 개선되었습니다.
@@ -2860,7 +2870,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 개선' under 2018.08.09.; ko child is 'Image' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 개선' under 2018.08.09.; ko Image subheading has no translated target match) -->
 ### 기능 개선
 
 * Windows 2012 R2 Standard 이미지 업데이트
@@ -2967,7 +2977,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 개선' under 2018.07.16.; ko child is 'Image' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 개선' under 2018.07.16.; ko Image subheading has no translated target match) -->
 ### 기능 개선
 
 * Windows 2012 R2 Standard 이미지 업데이트
@@ -3065,13 +3075,13 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '버그 수정' under t212 '29' (2018.05.29.); ko children are 'Auto Scale','Instance','24','Instance' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '버그 수정' under t212 '29'; no ko counterpart subheading) -->
 ### 버그 수정
 * Auto Scale의 반복성 예약 작업(cron expression 기반) 관련 오류가 수정되었습니다.
     * 반복성 예약 작업 실행 시점이  UTC를 기반으로  동작하는 오류 수정
     * 반복성 예약 작업의 최초 실행이 cron expression을 따르지 않고, 예약 작업 생성 시 설정한 '시작 시각'에 수행되는 오류 수정
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 추가' under t212 '29' (2018.05.29.); ko children are 'Auto Scale','Instance','24','Instance' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 추가' under t212 '29'; no ko counterpart subheading) -->
 ### 기능 추가
 * Instance 생성 시 volume type 설정 기능이 추가되었습니다.
 * Block Storage 생성 시 volume type 설정 기능이 추가되었습니다.
@@ -3094,7 +3104,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '신규 상품 추가' under t216 '22' (2018.03.22.); ko child is 'Auto Scale' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '신규 상품 추가' under t216 '22'; ko Auto Scale subheading has no translated target match) -->
 ### 신규 상품 추가
 
 * Auto Scale 상품이 추가되었습니다.
@@ -3116,7 +3126,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 개선' under 2018.02.22.; ko children are 'Instance' and 'Image' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 개선' under 2018.02.22.; ko Instance subheading has no translated target match) -->
 ### 기능 개선
 
 * VPC 기능이 추가됨에 따라 인스턴스 생성 시에 서브넷을 지정하도록 변경되었습니다.
@@ -3201,14 +3211,14 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 추가' under t220 '21' (2017.09.21.); ko children are 'Public API' and 'Instance' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 추가' under t220 '21'; no ko counterpart subheading) -->
 ### 기능 추가
 * Public API 추가
     * Object Storage에 이어 NHN Cloud Compute를 API로 관리할 수 있습니다.
     * 현재 제한적인 기능만 이용할 수 있으며, 추후 API 추가를 통해 기능이 확장될 예정입니다.
     * 지원되는 API는 API Guide를 참고하시기 바랍니다.
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '버그 수정' under t220 '21' (2017.09.21.); ko children are 'Public API' and 'Instance' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '버그 수정' under t220 '21'; no ko counterpart subheading) -->
 ### 버그 수정
 * 키페어를 지정하지 않고 인스턴스를 생성할 수 있었던 버그가 수정되었습니다.
 
@@ -3222,7 +3232,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '버그 수정' under t223 '20' (2017.07.20.); ko child is 'Image' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '버그 수정' under t223 '20'; no ko counterpart subheading) -->
 ### 버그 수정
 * 대용량 이미지 생성시 간헐적으로 생성이 완료되지 않던 버그가 수정되었습니다.
 
@@ -3236,7 +3246,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 추가' under t225 '24' (2017.08.24.); ko child is 'Instance' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 추가' under t225 '24'; no ko counterpart subheading) -->
 ### 기능 추가
 
 * 인스턴스 사양을 변경할 수 있도록 기능이 추가되었습니다.
@@ -3252,7 +3262,7 @@
     * 높은 IOPS가 필요한 경우 I타입을 이용하면 수준의 높은 IOPS를 보장 받을 수 있습니다. (보장 IOPS는 가격표 참조)
     * 리눅스 OS만 지원합니다.
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '버그 수정' under t225 '24' (2017.08.24.); ko child is 'Instance' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '버그 수정' under t225 '24'; no ko counterpart subheading) -->
 ### 버그 수정
 * 인스턴스 사용량 조회시 값이 조회되지 않는 버그가 수정되었습니다.
 
@@ -3271,12 +3281,12 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 추가' under 2017.05.25.; ko children are 'Instance' and 'Image' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 추가' under 2017.05.25.; ko Instance subheading has no translated target match) -->
 ### 기능 추가
 
 * 윈도우 이미지(Windows 2012 r2)가 추가됩니다.
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '버그 수정' under 2017.05.25.; ko children are 'Instance' and 'Image' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '버그 수정' under 2017.05.25.; ko Image subheading has no translated target match) -->
 ### 버그 수정
 
 * 서비스 종료된 이미지로 생성된 인스턴스가 조회 되지 않는 버그가 수정되었습니다.
@@ -3291,7 +3301,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 개선' under t231 '25' (2017.04.25.); ko child is 'Instance' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 개선' under t231 '25'; ko Instance subheading has no translated target match) -->
 ### 기능 개선
 
 * 인스턴스 생성시 초기 불륨 크기의 최대값이 600GB에서 1TB(1000GB)로 변경됩니다.
@@ -3306,7 +3316,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 개선' under t233 '23' (2017.03.23.); ko child is 'Instance' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 개선' under t233 '23'; ko Instance subheading has no translated target match) -->
 ### 기능 개선
 
 * 인스턴스 생성시 사용자가 초기 볼륨의 크기를 지정할 수 있게 됩니다.
@@ -3328,7 +3338,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 개선/변경' under t235 '19' (2017.01.19.); ko children are 'Instance' and 'Image' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 개선/변경' under t235 '19'; ko Instance subheading has no translated target match) -->
 ### 기능 개선/변경
 - 인스턴스 기본 정보의 IP 주소 정보에서 서브넷 명칭을 표시하지 않습니다.
     - 명칭 표기로 행의 넓이가 넓어져 가독성이 떨어지는 것을 방지합니다.
@@ -3337,7 +3347,7 @@
 - 인스턴스 생성 기능을 이미지 생성 기능으로 변경합니다.
     - 탭과 일관된 기능으로 변경하였습니다.
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '버그 수정' under t235 '19' (2017.01.19.); ko children are 'Instance' and 'Image' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '버그 수정' under t235 '19'; no ko counterpart subheading) -->
 ### 버그 수정
 * 이미지 탭(Private, Shared, Public) 변경시 이미지 선택이 해제되지 않던 문제를 수정하였습니다.
 
@@ -3351,7 +3361,7 @@
 
 <!-- TODO: translate body -->
 
-<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated subheading '기능 개선/변경' under t238 '22' (2016.12.22.); ko child is 'Instance' — no semantic match) -->
+<!-- pre-align: ko에 대응 섹션 없음 — 검토 필요 (Untranslated Korean subheading '기능 개선/변경' under t238 '22'; ko Instance subheading has no translated target match) -->
 ### 기능 개선/변경
 
 * 정지된 인스턴스의 보안 그룹 수정이 가능하도록 변경합니다.

@@ -2184,8 +2184,8 @@
 
 <a id="june-25-2019"></a>
 ## 2019. 06. 25. { #june-25-2019 }
-<a id="updates"></a>
-### Instance { #updates }
+<a id="june-25-2019-1"></a>
+### Instance { #june-25-2019-1 }
 * 인스턴스가 구동 중일 때도 이미지를 생성할 수 있도록 수정
 
 <a id="may-28-2019"></a>
@@ -2194,8 +2194,8 @@
 ### Auto Scale { #may-28-2019-1 }
 * Scaling Group의 사용량을 확인할 수 있는 통계 그래프 추가
 
-<a id="may-28-2019-updates"></a>
-### Image { #may-28-2019-updates }
+<a id="may-28-2019-2"></a>
+### Image { #may-28-2019-2 }
 * CentOS 6.10(2019. 05. 28.)
     * 리전에 따른 timezone 변경 적용
 * CentOS 7.5(2019. 05. 28.)
