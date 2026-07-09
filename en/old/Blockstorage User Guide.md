@@ -1,4 +1,7 @@
-## Infrastructure > Compute & Network > Block Storage User Guide
+<!-- pre-align:aligned sig=4c4d7415f936 -->
+
+<a id="infrastructure-compute-network-block-storage-user-guide"></a>
+## Infrastructure > Compute & Network > Block Storage User Guide { #infrastructure-compute-network-block-storage-user-guide }
 
 Block Storage는 Instance에 추가할 수 있는 disk입니다. 기본 제공되는 disk 외에 추가적인 저장 공간이 더 필요한 경우 기존 Instance에 연결하여 사용할 수 있습니다. 또한 Instance 간 자료 이동 시에도 사용할 수 있습니다.
 
@@ -8,7 +11,8 @@ Block Storage는 Instance에 추가할 수 있는 disk입니다. 기본 제공�
 - Snapshot 생성, 사용, 삭제
 - 리눅스, 윈도우 추가 스토리지 적용 방법
 
-## Block Storage 생성
+<a id="block-storage"></a>
+## Block Storage 생성 { #block-storage }
 
 1.[Infrastructure] > [Compute & Network] > [Block Storage]으로 이동한 뒤, [+ Block Storage 생성]버튼을 클릭합니다.
 
@@ -34,7 +38,8 @@ Block Storage는 Instance에 추가할 수 있는 disk입니다. 기본 제공�
 ![[그림 3] 생성된 Block Storage 확인](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img003.png)
 <center>[그림 3] 생성된 Block Storage 확인</center>
 
-## Block Storage 연결
+<a id="block-storage-2"></a>
+## Block Storage 연결 { #block-storage-2 }
 
 생성한 Block Storage를 Instance에서 사용하기 위해서는 Instance에 Block Storage를 연결해야 합니다.
 
@@ -78,7 +83,8 @@ Block Storage는 Instance에 추가할 수 있는 disk입니다. 기본 제공�
 ![[그림 11] Block Storage 연결 관리 대화창](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img011.png)
 <center>[그림 11] Block Storage 연결 관리 대화창</center>
 
-## Block Storage 삭제
+<a id="block-storage-3"></a>
+## Block Storage 삭제 { #block-storage-3 }
 
 더 이상 사용하지 않는 Block Storage들은 불필요한 과금을 막기 위해 삭제하도록 합니다.
 
@@ -102,7 +108,8 @@ Block Storage는 Instance에 추가할 수 있는 disk입니다. 기본 제공�
 ![[그림 15] Block Storage 삭제 대화창](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img015.png)
 <center>[그림 15] Block Storage 삭제 대화창</center>
 
-## Snapshot 생성
+<a id="snapshot"></a>
+## Snapshot 생성 { #snapshot }
 
 Snapshot은 현재 Block Storage의 상태를 그대로 저장해둡니다. Snapshot을 통해 새 Block Storage를 생성함으로써 특정 시점의 Block Storage를 그대로 복구 가능합니다.
 
@@ -129,7 +136,8 @@ Snapshot은 현재 Block Storage의 상태를 그대로 저장해둡니다. Snap
 ![[그림 20] Snapshot 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img020.png)
 <center>[그림 20] Snapshot 생성 확인</center>
 
-## Snapshot을 통한 Block Storage 생성
+<a id="snapshot-block-storage"></a>
+## Snapshot을 통한 Block Storage 생성 { #snapshot-block-storage }
 
 1.[Infrastructure] > [Compute & Network] > [Block StorageBlock Storage]에서, Snapshot탭을 선택합니다.
 
@@ -159,7 +167,8 @@ Snapshot은 현재 Block Storage의 상태를 그대로 저장해둡니다. Snap
 ![[그림 25] Block Storage 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img025.png)
 <center>[그림 25] Block Storage 생성 확인</center>
 
-## Snapshot 삭제
+<a id="snapshot-2"></a>
+## Snapshot 삭제 { #snapshot-2 }
 
 1.[Infrastructure] > [Compute & Network] > [Block Storage]에서 Snapshot탭을 선택합니다.
 
@@ -186,7 +195,8 @@ Snapshot은 현재 Block Storage의 상태를 그대로 저장해둡니다. Snap
 ![[그림 30] Snapshot 삭제 확인](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img030.png)
 <center>[그림 30] Snapshot 삭제 확인</center>
 
-## 리눅스 추가 스토리지 적용 방법
+<a id="section-1"></a>
+## 리눅스 추가 스토리지 적용 방법 { #section-1 }
 
 1.인스턴스에 접속 후 ’fdisk -l’ 을 통해 추가 스토리지가 구성되어 있는지 확인합니다.
 
@@ -208,7 +218,8 @@ Snapshot은 현재 Block Storage의 상태를 그대로 저장해둡니다. Snap
 
 5.스토리지 해제시에 ‘unmount {마운트 디렉토리}’로 해제하실 수 있습니다.
 
-## 윈도우 추가 스토리지 적용 방법
+<a id="section-2"></a>
+## 윈도우 추가 스토리지 적용 방법 { #section-2 }
 
 1.서버관리자 > 파일 및 저장소 서비스 > 볼륨 > 디스크로 이동하여 추가 스토리지를 확인합니다.
 

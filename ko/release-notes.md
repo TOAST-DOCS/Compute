@@ -1,17 +1,20 @@
 <a id="compute-release-notes"></a>
-## Compute > 릴리스 노트
+## Compute > 릴리스 노트 { #compute-release-notes }
 
 <a id="may-27-2026"></a>
-## 2026. 05. 27.
-### Instance
+## 2026. 05. 27. { #may-27-2026 }
+<a id="instance"></a>
+### Instance { #instance }
 * 인스턴스 목록 조회 API의 limit 파라미터 기본값(default) 100개, 최댓값(max) 1,000개로 조정
 * 인스턴스 누적 중지 기간 90일 초과 여부 정보 제공
 
-### Image
+<a id="image"></a>
+### Image { #image }
 * 이미지 목록 조회 API의 limit 파라미터 기본값(default) 100개, 최댓값(max) 1,000개로 조정
 
 <a id="april-28-2026"></a>
-### 2026. 04. 28.
+### 2026. 04. 28. { #april-28-2026 }
+<a id="april-28-2026-image"></a>
 #### Image
 
 * 신규 이미지 추가
@@ -45,12 +48,13 @@
 
 
 <a id="march-31-2026"></a>
-## 2026. 03. 31.
+## 2026. 03. 31. { #march-31-2026 }
 * 미국(캘리포니아) 리전 서비스 종료
 
 <a id="march-10-2026"></a>
-## 2026. 03. 10.
-### Image
+## 2026. 03. 10. { #march-10-2026 }
+<a id="march-10-2026-image"></a>
+### Image { #march-10-2026-image }
 * Rocky 9.7 이미지 GRUB BLS 설정 비활성화
 * Debian 11.11 bullseye-backports 리포지터리 지원 종료로 sources.list에서 삭제
 
@@ -140,13 +144,15 @@
     * Windows 2022 STD with MS-SQL 2022 Standard(2025.07.15.) KO
 
 <a id="january-27-2026"></a>
-## 2026. 01. 27.
-### Instance
+## 2026. 01. 27. { #january-27-2026 }
+<a id="january-27-2026-instance"></a>
+### Instance { #january-27-2026-instance }
 * 시리얼 콘솔 기능 추가
 
 <a id="november-25-2025"></a>
-## 2025. 11. 25.
-### Image
+## 2025. 11. 25. { #november-25-2025 }
+<a id="november-25-2025-image"></a>
+### Image { #november-25-2025-image }
 * 이미지 수정 기능 개선
     * 이미지 다운로드 기능 사용 여부 설정 추가
 
@@ -154,23 +160,27 @@
     * Rocky Linux 9.5 - Container(2025.11.18.)
     * Ubuntu Server 24.04.3 LTS - Container(2025.11.18.)
 
-### Instance Template
+<a id="instance-template"></a>
+### Instance Template { #instance-template }
 * 스냅숏으로부터 인스턴스 생성 기능 추가
 
-### Auto Scale
+<a id="auto-scale"></a>
+### Auto Scale { #auto-scale }
 * 스냅숏으로부터 인스턴스 생성 기능 추가
 
 <a id="october-28-2025"></a>
-## 2025. 10. 28.
-### Image
+## 2025. 10. 28. { #october-28-2025 }
+<a id="october-28-2025-image"></a>
+### Image { #october-28-2025-image }
 * 신규 이미지 추가
     * Ubuntu Server 22.04.5 LTS for Deep Learning v7.0.0(2025.10.28.)
 * 이미지 지원 종료
     * Ubuntu Server 22.04.5 LTS for Deep Learning v5.0.2(2025.07.15.)
 
 <a id="september-23-2025"></a>
-## 2025. 09. 23.
-### Image
+## 2025. 09. 23. { #september-23-2025 }
+<a id="september-23-2025-image"></a>
+### Image { #september-23-2025-image }
 * 신규 이미지 추가
     * PIOLINK WEBFRONT-KS 4.0.6.62.20(2025.09.23.) 
     * PIOLINK WEBFRONT-KS 4.0.6.61.33(2025.09.23.)
@@ -178,8 +188,9 @@
     * PIOLINK WEBFRONT-KS 4.0.6.61.32(2025.07.15.)
 
 <a id="july-15-2025"></a>
-## 2025. 07. 15.
-### Image
+## 2025. 07. 15. { #july-15-2025 }
+<a id="july-15-2025-image"></a>
+### Image { #july-15-2025-image }
 * 신규 이미지 추가
     * Debian 11.11 Bullseye(2025.07.15.)
     * Debian 12.10 Bookworm(2025.07.15.)
@@ -276,8 +287,9 @@
     * Windows 2022 STD with MS-SQL 2022 Standard(2025.02.25.) KO
 
 <a id="may-27-2025"></a>
-## 2025. 05. 27.
-### Instance
+## 2025. 05. 27. { #may-27-2025 }
+<a id="may-27-2025-instance"></a>
+### Instance { #may-27-2025-instance }
 * 배치 정책 기능 추가
 * 네트워크 인터페이스 연결 해제 시 삭제 여부 설정 기능 추가
 * 인스턴스 생성 또는 블록 스토리지 연결 시 블록 스토리지 삭제 정책 설정 기능 추가
@@ -285,8 +297,9 @@
     * 블록 스토리지 삭제 시 존재하는 스냅숏 함께 삭제
 
 <a id="april-29-2025"></a>
-## 2025. 04. 29.
-### Image
+## 2025. 04. 29. { #april-29-2025 }
+<a id="april-29-2025-image"></a>
+### Image { #april-29-2025-image }
 * 신규 이미지 추가
     * Ubuntu Server 22.04.5 LTS for Deep Learning v6.0.0(2025.04.29.)
     * Ubuntu Server 22.04.5 LTS for Deep Learning v5.0.1(2025.04.29.)
@@ -301,8 +314,9 @@
     * Ubuntu Server 20.04.6 LTS with MariaDB 10.11.7(2025.03.25)
 
 <a id="march-25-2025"></a>
-## 2025. 03. 25.
-### Image
+## 2025. 03. 25. { #march-25-2025 }
+<a id="march-25-2025-image"></a>
+### Image { #march-25-2025-image }
 * 신규 이미지 추가
     * Ubuntu Server 20.04.6 LTS with PostgreSQL 15(2025.03.25.)
     * Ubuntu Server 20.04.6 LTS with MySQL 8.0.36(2025.03.25.)
@@ -326,13 +340,15 @@
     * Rocky Linux 8.10 with Tibero 7 Standard 277758(2024.11.19.)
 
 <a id="march-4-2025"></a>
-## 2025. 03. 04.
-### Instance
+## 2025. 03. 04. { #march-4-2025 }
+<a id="march-4-2025-instance"></a>
+### Instance { #march-4-2025-instance }
 * 인스턴스 설명 변경 기능 추가
 * API 비밀번호 변경 시 기존 비밀번호와 동일한 비밀번호로 변경할 수 없도록 제한
 * 블록 스토리지 및 스냅숏으로부터 인스턴스 생성 기능 추가
 
-### Image
+<a id="march-4-2025-image"></a>
+### Image { #march-4-2025-image }
 * Rocky 8.10 default python이 platform python으로 변경(python 3.11 → 3.6)
 
 * GPU 및 컨테이너 관련(Linux)
@@ -423,18 +439,21 @@
 
 
 <a id="december-24-2024"></a>
-## 2024. 12. 24.
-### Image
+## 2024. 12. 24. { #december-24-2024 }
+<a id="december-24-2024-1"></a>
+### Image { #december-24-2024-1 }
 * Tibero 이미지명 변경
   * Rocky Linux 8.10 with Tibero 7 Enterprise(2024.11.19.) → Rocky Linux 8.10 with Tibero 7 Enterprise 277758(2024.11.19.)
   * Rocky Linux 8.10 with Tibero 7 Standard(2024.11.19.) → Rocky Linux 8.10 with Tibero 7 Standard 277758(2024.11.19.)
 
 <a id="november-26-2024"></a>
-## 2024. 11. 26.
-### Instance
+## 2024. 11. 26. { #november-26-2024 }
+<a id="november-26-2024-instance"></a>
+### Instance { #november-26-2024-instance }
 * 인스턴스 OS 정보 변경 기능 추가
 
-### Image
+<a id="november-26-2024-image"></a>
+### Image { #november-26-2024-image }
 * 이미지 수정 기능 개선
   * 수정 가능 항목 추가
     * OS 버전 값 설정
@@ -524,7 +543,8 @@
      * Windows 2022 STD(2024.11.19.) EN
      * Windows 2022 STD(2024.11.19.) KO
 
-### Image Builder
+<a id="image-builder"></a>
+### Image Builder { #image-builder }
 * 애플리케이션 버전 지원 종료
     * NHN Kubernetes Service(NKS) Worker Node 1.0
     * NHN Kubernetes Service(NKS) Worker Node(GPU) 1.0
@@ -534,12 +554,14 @@
     * CentOS 7.9
 
 <a id="october-29-2024"></a>
-## 2024. 10. 29.
-### Image Builder
+## 2024. 10. 29. { #october-29-2024 }
+<a id="october-29-2024-image-builder"></a>
+### Image Builder { #october-29-2024-image-builder }
 * 애플리케이션 버전 추가
     * Deep Learning Framework 5.0
 
-### Image
+<a id="october-29-2024-image"></a>
+### Image { #october-29-2024-image }
 * 신규 이미지 추가
     * Ubuntu Server 22.04.4 LTS for Deep Learning v3.1.1(2024.10.29.)
     * Ubuntu Server 22.04.4 LTS for Deep Learning v4.0.1(2024.10.29.)
@@ -559,8 +581,9 @@
     * Ubuntu Server 20.04.6 LTS with Redis 7.2.4(2024.10.29.)
 
 <a id="august-27-2024"></a>
-## 2024. 08. 27.
-### Image
+## 2024. 08. 27. { #august-27-2024 }
+<a id="august-27-2024-image"></a>
+### Image { #august-27-2024-image }
 * GPU 및 컨테이너 관련(Linux)
     * containerd: 1.6.31 → 1.6.32
     * NVIDIA 드라이버 업데이트: 535.161.08 → 535.183.06
@@ -616,13 +639,16 @@
     * Windows 2022 STD(2024.08.20.) EN
     * Windows 2022 STD(2024.08.20.) KO
 
-### Public API
+<a id="public-api"></a>
+### Public API { #public-api }
 * 미국(캘리포니아) 리전 추가
 
-### Instance
+<a id="august-27-2024-instance"></a>
+### Instance { #august-27-2024-instance }
 * 인스턴스 키페어 변경 기능 추가
 
-### Image Builder
+<a id="august-27-2024-image-builder"></a>
+### Image Builder { #august-27-2024-image-builder }
 * 애플리케이션 지원 버전 추가
     * PostgreSQL 15
     * NHN Kubernetes Service(NKS) Worker Node 1.6
@@ -647,8 +673,9 @@
 	    * NHN Kubernetes Service(NKS) Worker Node / NHN Kubernetes Service(NKS) Worker Node(GPU) 해당
 
 <a id="may-28-2024"></a>
-## 2024. 05. 28.
-### Instance
+## 2024. 05. 28. { #may-28-2024 }
+<a id="may-28-2024-instance"></a>
+### Instance { #may-28-2024-instance }
 * 인스턴스 목록 내 검색/필터 조건 확장 및 UI 개선
     * 검색 조건 추가
         * 인스턴스 이름
@@ -658,7 +685,8 @@
         * 이미지 유형
         * 인스턴스 상태
 
-### Image
+<a id="may-28-2024-image"></a>
+### Image { #may-28-2024-image }
 * GPU 및 컨테이너 관련(Linux)
     * containerd: 1.6.27 → 1.6.31
     * NVIDIA 드라이버 업데이트: 535.154.05 → 535.161.08
@@ -709,12 +737,14 @@
 
 
 <a id="april-23-2024"></a>
-## 2024. 04. 23.
-### Instance 
+## 2024. 04. 23. { #april-23-2024 }
+<a id="april-23-2024-instance"></a>
+### Instance { #april-23-2024-instance }
 * 인스턴스 타입 이용 종료 - 한국(판교) 리전에 해당 
     * u2(Ephemeral Storage Instance)
 
-### Image
+<a id="april-23-2024-image"></a>
+### Image { #april-23-2024-image }
 * 신규 이미지 추가
     * CentOS 7.9 with Apache Kafka 3.6.1(2024.04.23.)
     * CentOS 7.9 with CUBRID 10.2.14(2024.04.23.)
@@ -758,20 +788,23 @@
     * Ubuntu Server 20.04.6 LTS with Redis 7.0.5(2023.03.21.)
 
 <a id="april-15-2024"></a>
-## 2024. 04. 15.
-### Image
+## 2024. 04. 15. { #april-15-2024 }
+<a id="april-15-2024-image"></a>
+### Image { #april-15-2024-image }
 * 이미지 업데이트
     * PentaSecurity WAPPLES SA 6.0.6(2024.04.15.)
 
 <a id="march-26-2024"></a>
-## 2024. 03. 26.
-### Image Builder
+## 2024. 03. 26. { #march-26-2024 }
+<a id="march-26-2024-image-builder"></a>
+### Image Builder { #march-26-2024-image-builder }
 * 애플리케이션 버전 추가
     * Deep Learning Framework 4.0
 
 <a id="february-27-2024"></a>
-## 2024. 02. 27.
-### Image
+## 2024. 02. 27. { #february-27-2024 }
+<a id="february-27-2024-image"></a>
+### Image { #february-27-2024-image }
 * 신규 이미지 추가
     * Rocky Linux 8.9(2024.02.20.)
 
@@ -823,20 +856,24 @@
     * Windows 2019 STD with MS-SQL 2019 Standard(2024.02.20.) EN
     * Windows 2019 STD with MS-SQL 2019 Standard(2024.02.20.) KO
 
-### Instance
+<a id="february-27-2024-instance"></a>
+### Instance { #february-27-2024-instance }
 * 암호화 루트 블록 스토리지 인스턴스로부터 이미지 생성 기능 추가
 * GPU Instance에서 인스턴스 종료 기능 비활성화
 
 
 <a id="november-28-2023"></a>
-## 2023. 11. 28.
-### Instance
+## 2023. 11. 28. { #november-28-2023 }
+<a id="november-28-2023-instance"></a>
+### Instance { #november-28-2023-instance }
 * 인스턴스 종료 기능 추가
 
-### Public API
+<a id="november-28-2023-public-api"></a>
+### Public API { #november-28-2023-public-api }
 * 인스턴스 종료, 종료된 인스턴스 시작 API 추가
 
-### Image
+<a id="november-28-2023-image"></a>
+### Image { #november-28-2023-image }
 * 이미지 공유 멤버 수 제한 해제
 
 * 신규 이미지 추가
@@ -902,17 +939,20 @@
 	* Windows 2019 STD with MS-SQL 2019 Standard(2023.11.21.) KO
 
 
-### Bare Metal Instance
+<a id="bare-metal-instance"></a>
+### Bare Metal Instance { #bare-metal-instance }
 * Bare Metal Instance 서비스 출시
 
 <a id="october-31-2023"></a>
-## 2023. 10. 31.
+## 2023. 10. 31. { #october-31-2023 }
 
-### System Monitoring
+<a id="system-monitoring"></a>
+### System Monitoring { #system-monitoring }
 * 버그 수정
   * 프로젝트에서 제외한 사용자에게 계속 알람을 보내던 문제 수정
 
-### Image
+<a id="october-31-2023-image"></a>
+### Image { #october-31-2023-image }
 * 신규 이미지 추가
     * CentOS 7.9 with Tibero 7 CSE(2023.10.31.)
     * CentOS 7.9 with Tibero 7 CEE(2023.10.31.)
@@ -925,8 +965,9 @@
 
 
 <a id="september-26-2023"></a>
-## 2023. 09. 26.
-### Image
+## 2023. 09. 26. { #september-26-2023 }
+<a id="september-26-2023-image"></a>
+### Image { #september-26-2023-image }
 * 신규 이미지 추가
     * Ubuntu Server 20.04.6 LTS for Deep Learning v2.1.1(2023.09.26.)
     * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.1(2023.09.26.)
@@ -944,11 +985,13 @@
     * 이미지 이름 변경 PLOS-WAF-KS-v4.0.6.61.28(2023.04.25.) → PIOLINK WEBFRONT-KS 4.0.6.61.28(2023.04.25.)
 
 <a id="august-29-2023"></a>
-## 2023. 08. 29.
-### Public API
+## 2023. 08. 29. { #august-29-2023 }
+<a id="august-29-2023-public-api"></a>
+### Public API { #august-29-2023-public-api }
 * 이미지 업로드/다운로드 API 추가
 
-### Image
+<a id="august-29-2023-image"></a>
+### Image { #august-29-2023-image }
 * 신규 이미지 추가
     * Rocky Linux 8.8(2023.08.22.)
     * Ubuntu Server 20.04.6 LTS for Deep Learning v3.0.0(2023.08.22.)
@@ -1043,38 +1086,45 @@
     * 이미지 업데이트
     * 23년 7월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/july-11-2023-security-update-kb5028171-34557119-e00c-4678-bb87-048a36ed8585
 
-### Instance
+<a id="august-29-2023-instance"></a>
+### Instance { #august-29-2023-instance }
 * 인스턴스 삭제 시 인스턴스에 연결되어 있는 플로팅 IP와 추가 블록 스토리지를 함께 삭제하는 기능 추가
 
-### Instance Template
+<a id="august-29-2023-instance-template"></a>
+### Instance Template { #august-29-2023-instance-template }
 * 암호화 블록 스토리지 타입 지원
 
-### Scaling Group
+<a id="scaling-group"></a>
+### Scaling Group { #scaling-group }
 * 암호화 블록 스토리지 타입 지원
 
 
 <a id="july-25-2023"></a>
-## 2023. 07. 25.
-### Image Builder
+## 2023. 07. 25. { #july-25-2023 }
+<a id="july-25-2023-image-builder"></a>
+### Image Builder { #july-25-2023-image-builder }
 * 애플리케이션 버전 추가
     * Deep Learning Framework 3.0.0
 
 
 <a id="june-27-2023"></a>
-## 2023. 06. 27.
-### System Monitoring
+## 2023. 06. 27. { #june-27-2023 }
+<a id="june-27-2023-system-monitoring"></a>
+### System Monitoring { #june-27-2023-system-monitoring }
 * **월간 지표 보고서** 기능을 사용할 때 간헐적으로 엑셀 생성이 완료되지 않는 문제 수정
 * Windows agent
     * 고가용성 기능 개선 
     * 로그 추가
 
-### Image Builder
+<a id="june-27-2023-image-builder"></a>
+### Image Builder { #june-27-2023-image-builder }
 * 애플리케이션 버전 추가
     * Deep Learning Framework 2.1.0
 * 애플리케이션 버전 지원 종료
     * Deep Learning Framework 2.0.1
 
-### Image
+<a id="june-27-2023-image"></a>
+### Image { #june-27-2023-image }
 * GPU
     * NVIDIA 드라이버 업데이트(Linux): 470.182.03
 
@@ -1082,18 +1132,21 @@
     * 이미지 업데이트
 
 <a id="may-30-2023"></a>
-## 2023. 05. 30.
+## 2023. 05. 30. { #may-30-2023 }
 
-### Instance
+<a id="may-30-2023-instance"></a>
+### Instance { #may-30-2023-instance }
 * **CloudTrail**의 인스턴스 생성 및 인스턴스 삭제 로그 개선
 * 인스턴스 생성 시 기존 네트워크 인터페이스를 여러 개 지정할 수 있도록 UI 개선
 
-### Image Builder
+<a id="may-30-2023-image-builder"></a>
+### Image Builder { #may-30-2023-image-builder }
 * 애플리케이션 추가
     * NHN Kubernetes Service(NKS) Worker Node
     * NHN Kubernetes Service(NKS) Worker Node(GPU)
 
-### Image
+<a id="may-30-2023-image"></a>
+### Image { #may-30-2023-image }
 * 신규 이미지 추가
     * Rocky Linux 8.7(2023.05.25.)
     * Ubuntu Server 20.04.6 LTS for NAT(2023.05.25.)
@@ -1187,8 +1240,9 @@
     * 23년 11월 보안 업데이트 반영: https://support.microsoft.com/en-au/topic/april-11-2023-kb5025229-os-build-17763-4252-e8ead788-2cd3-4c9b-8c77-d677e2d8744f
 
 <a id="april-25-2023"></a>
-## 2023. 04. 25.
-### Image
+## 2023. 04. 25. { #april-25-2023 }
+<a id="april-25-2023-image"></a>
+### Image { #april-25-2023-image }
 * 신규 이미지 추가
     * Ubuntu Server 20.04.6 LTS for Deep Learning(2023.04.25.)
     * PLOS-WFK-KS-v4.0.6.61.28(2023.04.25.)
@@ -1197,13 +1251,15 @@
     * Ubuntu Server 18.04.6 LTS for Deep Learning(2022.01.25.)
     * PLOS-WFK-KS-v4.0.6.61.25(2022.09.20.)
 
-### System Monitoring
+<a id="april-25-2023-system-monitoring"></a>
+### System Monitoring { #april-25-2023-system-monitoring }
 * 버그 수정
     * 다운로드한 월간 지표 보고서가 간헐적으로 정상 실행되지 않는 문제 수정
 
 <a id="march-28-2023"></a>
-## 2023. 03. 28.
-### Image
+## 2023. 03. 28. { #march-28-2023 }
+<a id="march-28-2023-image"></a>
+### Image { #march-28-2023-image }
 * 신규 이미지 추가
     * CentOS 7.9 with CUBRID 10.2.10(2023.03.21.)
     * CentOS 7.9 with CUBRID 11.0.10(2023.03.21.)
@@ -1238,20 +1294,24 @@
 * Ubuntu Server 22.04.2 LTS(2023.03.21.)
     * 이미지 업데이트
 
-### Image Builder
+<a id="march-28-2023-image-builder"></a>
+### Image Builder { #march-28-2023-image-builder }
 * 신규 기능 추가
     * 이미지 빌드 시 개인 이미지를 베이스 이미지로 선택 가능
 
-### Public API
+<a id="march-28-2023-public-api"></a>
+### Public API { #march-28-2023-public-api }
 * API 엔드포인트 변경
 
-### System Monitoring
+<a id="march-28-2023-system-monitoring"></a>
+### System Monitoring { #march-28-2023-system-monitoring }
 * 월간 지표 보고서의 주기 선택 조건에서 `1분` 옵션 제외
 
 <a id="february-28-2023"></a>
-## 2023. 02. 28.
+## 2023. 02. 28. { #february-28-2023 }
 
-### Image
+<a id="february-28-2023-image"></a>
+### Image { #february-28-2023-image }
 * 신규 이미지 추가
     * Ubuntu Server 22.04.1 LTS(2023.02.21.)
     * Ubuntu Server 20.04.5 LTS with NVIDIA(2023.02.21.)
@@ -1307,7 +1367,8 @@
     * 이미지 업데이트
     * 23년 1월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/january-10-2023-kb5022286-os-build-17763-3887-48683103-7b22-4f36-aa98-0049c7a6e579
 
-### Image Builder
+<a id="february-28-2023-image-builder"></a>
+### Image Builder { #february-28-2023-image-builder }
 * 신규 베이스 이미지 추가
     * Ubuntu 20.04
 * 애플리케이션 버전 추가
@@ -1319,23 +1380,27 @@
     * CUBRID 11.0.2
 
 <a id="january-31-2023"></a>
-## 2023. 01. 31.
+## 2023. 01. 31. { #january-31-2023 }
 
-### Instance
+<a id="january-31-2023-instance"></a>
+### Instance { #january-31-2023-instance }
 * **인스턴스 템플릿**으로 인스턴스 생성 시 설정값 변경 가능하도록 UI 개선
 * 인스턴스 정보 UI 개선
 
-### Instance Template
+<a id="january-31-2023-instance-template"></a>
+### Instance Template { #january-31-2023-instance-template }
 * **인스턴스 템플릿 오너 변경** 기능 추가
 
-### Auto Scale
+<a id="january-31-2023-auto-scale"></a>
+### Auto Scale { #january-31-2023-auto-scale }
 * **스케일링 그룹 오너 변경** 기능 추가
 * **인스턴스 템플릿**으로 스케일링 그룹 생성 시 설정값 변경 가능하도록 UI 개선
 
 <a id="december-27-2022"></a>
-## 2022. 12. 27.
+## 2022. 12. 27. { #december-27-2022 }
 
-### Image
+<a id="december-27-2022-image"></a>
+### Image { #december-27-2022-image }
 * 신규 이미지 추가
     * CentOS 7.9 with Apache Kafka 3.3.1(2022. 12. 20.)
     * CentOS 7.9 with CUBRID 10.2.4(2022. 12. 20.)
@@ -1371,22 +1436,25 @@
     * CentOS 7.8 with Tibero 6(2022. 01. 25.)
     * CentOS 7.8 with WebtoB5Fix4(2022. 03. 22.)
 
-### Image Builder
+<a id="december-27-2022-image-builder"></a>
+### Image Builder { #december-27-2022-image-builder }
 * 신규 베이스 이미지 추가
     * CentOS 7.9
 * 베이스 이미지 지원 종료
     * CentOS 7.8
     
 <a id="november-29-2022"></a>
-## 2022. 11. 29.
-### Instance
+## 2022. 11. 29. { #november-29-2022 }
+<a id="november-29-2022-instance"></a>
+### Instance { #november-29-2022-instance }
 * 인스턴스 관리의 **필터 조건**에 삭제 보호(전체/설정/미설정) 추가
 * 네트워크 인터페이스 별로 설정된 보안 그룹 변경 기능 개선 
 * 인스턴스 정보 UI 개선 
 * 삭제 보호 토글 버튼 추가 
 * 삭제 보호 일괄 설정 기능 개선
 
-### Image
+<a id="november-29-2022-image"></a>
+### Image { #november-29-2022-image }
 * 신규 이미지 추가
     * CentOS 7.9(2022. 11. 22.)
     * CentOS 7.9 for NAT(2022. 11. 22.)
@@ -1436,31 +1504,36 @@
     * 일본어 이미지 지원 종료
     * 22년 10월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/october-11-2022-kb5018419-os-build-17763-3532-ca62cca7-b599-44c4-a2a6-347996662623
 
-### Image Builder
+<a id="november-29-2022-image-builder"></a>
+### Image Builder { #november-29-2022-image-builder }
 * 애플리케이션 추가
     * Redis
     * Apache Kafka
 
 <a id="november-4-2022"></a>
-## 2022. 11. 04.
-### Image
+## 2022. 11. 04. { #november-4-2022 }
+<a id="november-4-2022-image"></a>
+### Image { #november-4-2022-image }
 * CentOS 7.8 with MariaDB 10.3.31(2022. 11. 04.)
     * 이미지 업데이트
 
-### Image Builder
+<a id="november-4-2022-image-builder"></a>
+### Image Builder { #november-4-2022-image-builder }
 * 스크립트 수정
     * MariaDB
 
 <a id="october-25-2022"></a>
-## 2022. 10. 25.
-### Image
+## 2022. 10. 25. { #october-25-2022 }
+<a id="october-25-2022-image"></a>
+### Image { #october-25-2022-image }
 * 이미지 지원 종료
     * CentOS 7.8 with MySQL 5.6.38(2021. 12. 21.)
     * CentOS 7.8 with MySQL 5.6.50(2021. 12. 21.)
 
 <a id="september-27-2022"></a>
-## 2022. 09. 27.
-### Image
+## 2022. 09. 27. { #september-27-2022 }
+<a id="september-27-2022-image"></a>
+### Image { #september-27-2022-image }
 * 신규 이미지 추가
     * Windows 2022 STD(2022. 09. 20.)
 
@@ -1468,12 +1541,14 @@
     * 이미지 업데이트
 
 <a id="july-26-2022"></a>
-## 2022. 07. 26.
-### Instance
+## 2022. 07. 26. { #july-26-2022 }
+<a id="july-26-2022-instance"></a>
+### Instance { #july-26-2022-instance }
 * 인스턴스 생성에서 인스턴스 타입(Instance, Ephemeral Storage Instance) 선택 기능 추가
 * 인스턴스 관리에서 이미지 타입(OS, Application, DBMS 등) 검색 기능 추가
 
-### Image
+<a id="july-26-2022-image"></a>
+### Image { #july-26-2022-image }
 * Windows 이미지 Administrator 계정명을 변경하여도 비밀번호 초기화 가능하도록 변경
 
 * Windows 2012 R2 STD(2022. 07. 19.)
@@ -1498,7 +1573,8 @@
     * 22년 5월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/april-12-2022-kb5012647-os-build-17763-2803-9a10c5c9-e65f-4ae1-a9c4-2db9a8eca4fc
     * SQL Server 누적 업데이트 16 반영: https://support.microsoft.com/en-us/topic/kb5011644-cumulative-update-16-for-sql-server-2019-74377be1-4340-4445-93a7-ff843d346896
     
-### System Monitoring
+<a id="july-26-2022-system-monitoring"></a>
+### System Monitoring { #july-26-2022-system-monitoring }
 * 신규 기능 추가: 월간 지표 보고서
   * 월간 지표 보고서를 생성 및 다운로드할 수 있습니다.
   * 월 단위로 최대 6 개월 분량의 지표에 대한 보고서를 생성할 수 있습니다.
@@ -1506,8 +1582,9 @@
   * `월간 지표 보고서`에서 각 요청을 확인할 수 있으며, 보고서 생성 이후 한달간 다운로드가 가능합니다.
 
 <a id="may-24-2022"></a>
-## 2022. 05. 24.
-### Instance
+## 2022. 05. 24. { #may-24-2022 }
+<a id="may-24-2022-instance"></a>
+### Instance { #may-24-2022-instance }
 * 인스턴스 스크린숏 기능 추가
 * 인스턴스 삭제 보호 기능 추가
 * API로 인스턴스 조회 시 인스턴스 삭제 보호 속성(NHN-EXT-ATTR:protect) 나타나도록 변경
@@ -1516,13 +1593,15 @@
     * 변경: instance1, instance2, ...
 * 인스턴스 생성 시 OS 이미지 선택 UI 개선
 
-### Image
+<a id="may-24-2022-image"></a>
+### Image { #may-24-2022-image }
 * 신규 이미지 추가
     * Rocky Linux 8.5(2022. 05. 17.)
 
 <a id="march-29-2022"></a>
-## 2022. 03. 29.
-### Image
+## 2022. 03. 29. { #march-29-2022 }
+<a id="march-29-2022-image"></a>
+### Image { #march-29-2022-image }
 * 신규 이미지 추가
     * Debian 11.2 Bullseye(2022. 03. 22.)
 
@@ -1530,22 +1609,26 @@
     * Debian 9.13 Stretch(2021. 12. 21.)
 
 <a id="january-25-2022"></a>
-## 2022. 01. 25.
-### Public API
+## 2022. 01. 25. { #january-25-2022 }
+<a id="january-25-2022-public-api"></a>
+### Public API { #january-25-2022-public-api }
 * 이미지 조회 API로 GPU Instance 서비스 이미지도 조회 가능하도록 변경
 * 이미지 조회 API에 인프라 서비스 종류 필터링을 위한 쿼리 파라미터 추가
 
-### Image
+<a id="january-25-2022-image"></a>
+### Image { #january-25-2022-image }
 * 다른 리전으로 이미지 복제 기능 추가
 
-### Image Builder
+<a id="january-25-2022-image-builder"></a>
+### Image Builder { #january-25-2022-image-builder }
 * 애플리케이션 추가
     * Slurm
 
 <a id="december-28-2021"></a>
-## 2021. 12. 28.
+## 2021. 12. 28. { #december-28-2021 }
 
-### Image
+<a id="december-28-2021-image"></a>
+### Image { #december-28-2021-image }
 * 인스턴스 생성 시 Prometheus 호환 exporter가 자동으로 설치되지 않도록 변경
 
 * CentOS 7.8(2021. 12. 21.)
@@ -1593,21 +1676,25 @@
 * Windows Server 2019 with SQL Server 2019 Standard(2021. 12. 21.)
     * 21년 11월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/november-9-2021-kb5007206-os-build-17763-2300-c63b76fa-a9b4-4685-b17c-7d866bb50e48
 
-### Image Builder
+<a id="december-28-2021-image-builder"></a>
+### Image Builder { #december-28-2021-image-builder }
 * 애플리케이션 추가
     * Deep Learning Framework
 
-### System Monitoring
+<a id="december-28-2021-system-monitoring"></a>
+### System Monitoring { #december-28-2021-system-monitoring }
 * @Linux, @Windows 기본 작업 공간 추가 기능 삭제 및 생성되어 있는 작업 공간 삭제
     * 인스턴스 생성 시 자동으로 추가되던 @Linux, @Windows 작업 공간이 자동으로 추가되지 않습니다.
     * 기존 인스턴스에 자동으로 생성되어 있는 @Linux, @Windows 작업 공간이 모두 삭제됩니다.
 
 <a id="november-23-2021"></a>
-## 2021. 11. 23.
-### Image
+## 2021. 11. 23. { #november-23-2021 }
+<a id="november-23-2021-image"></a>
+### Image { #november-23-2021-image }
 * GPU 인스턴스를 만들 수 있는 개인 이미지 생성 지원
 
-### Image Builder
+<a id="november-23-2021-image-builder"></a>
+### Image Builder { #november-23-2021-image-builder }
 * 애플리케이션 추가
     * JEUS
     * WebtoB
@@ -1616,8 +1703,9 @@
     * MySQL
 
 <a id="october-26-2021"></a>
-## 2021. 10. 26.
-### Image Builder
+## 2021. 10. 26. { #october-26-2021 }
+<a id="october-26-2021-image-builder"></a>
+### Image Builder { #october-26-2021-image-builder }
 * Image Builder 서비스 추가
     * OS 이미지와 애플리케이션 설치 구성 요소, 사용자 스크립트를 조합해 개인 이미지 제작
 * 애플리케이션 추가
@@ -1625,7 +1713,8 @@
     * MariaDB
     * CUBRID
 
-### System Monitoring
+<a id="october-26-2021-system-monitoring"></a>
+### System Monitoring { #october-26-2021-system-monitoring }
 
 * OpenMetrics 대시보드 → 조회
     * 조회 기간을 선택할 때 최대 1년 전 날짜까지만 선택 가능하도록 변경 
@@ -1634,39 +1723,45 @@
     * 지표를 선택하지 않고 **추가** 버튼을 클릭하면 안내 문구가 나타나고 해당 위치가 강조 표시되도록 변경
 
 <a id="september-14-2021"></a>
-## 2021. 09. 14.
-### System Monitoring
+## 2021. 09. 14. { #september-14-2021 }
+<a id="september-14-2021-system-monitoring"></a>
+### System Monitoring { #september-14-2021-system-monitoring }
 - 신규 API 추가: 작업 공간, 수집 대상 조회/추가/삭제 API 추가
 - @Linux, @Windows 기본 작업 공간 추가
     - @Linux: 인스턴스에 설치된 node exporter의 지표를 수집합니다. Linux OS 계열 인스턴스 생성시 자동으로 @Linux의 수집 대상으로 등록됩니다.
     - @Windows: 인스턴스에 설치된 windows exporter의 지표를 수집합니다. Windows OS 계열 인스턴스 생성시 자동으로 @Windows의 수집 대상으로 등록됩니다.
 
 <a id="july-27-2021"></a>
-## 2021. 07. 27.
+## 2021. 07. 27. { #july-27-2021 }
 
-### Instance
+<a id="july-27-2021-instance"></a>
+### Instance { #july-27-2021-instance }
 * 인스턴스 템플릿을 이용한 인스턴스 생성 지원
 
-### Instance Template
+<a id="july-27-2021-instance-template"></a>
+### Instance Template { #july-27-2021-instance-template }
 * Instance Template 서비스 추가
     * 자주 사용하는 인스턴스 구성 요소 정보를 템플릿 형태로 미리 정의해 보관
     * 사용자가 정의한 템플릿을 Instance 또는 Scaling Group 생성에 사용
 
-### Auto Scale
+<a id="july-27-2021-auto-scale"></a>
+### Auto Scale { #july-27-2021-auto-scale }
 * Instance Template 탭 제거
     * Instance Template 서비스에서 만든 템플릿으로 Scaling Group 생성
 * 자동 복구 정책 옵션 선택 옵션 추가
 
-### System Monitoring
+<a id="july-27-2021-system-monitoring"></a>
+### System Monitoring { #july-27-2021-system-monitoring }
 
 * 버그 수정: 알림 그룹의 서버, 사용자 그룹을 추가할 때 'There are no entires.'를 선택할 수 있던 문제 수정
 * 버그 수정: Advanced Monitoring 레이아웃을 빠르게 생성하면 5개를 초과해 생성할 수 있던 문제 수정
 * 버그 수정: **Advanced Monitoring → 작업 공간 → 수집 대상**에서 동일 포트로 동일한 명칭의 다른 인스턴스를 수집 대상으로 추가하지 못하던 문제 수정
 
 <a id="june-29-2021"></a>
-## 2021. 06. 29.
+## 2021. 06. 29. { #june-29-2021 }
 
-### Image
+<a id="june-29-2021-image"></a>
+### Image { #june-29-2021-image }
 
 * Prometheus 호환 exporter
     * Advanced Monitoring 지원을 위해 인스턴스 생성 시 해당 도구가 자동으로 설치됩니다.
@@ -1716,7 +1811,8 @@
 * Windows 2019 STD with MS-SQL 2019 Standard(2021. 06. 22.)
     * 2021년 05월 보안 업데이트 반영: https://support.microsoft.com/en-us/topic/may-11-2021-kb5003171-os-build-17763-1935-3f03e74b-4759-4ca3-b9f1-4bc0d5ab5d27
 
-### System Monitoring
+<a id="june-29-2021-system-monitoring"></a>
+### System Monitoring { #june-29-2021-system-monitoring }
 
 * OpenMetrics 알림 그룹 입력 가이드 문구 개선
 * 서버 대시보드의 서버/에이전트 상태 툴팁 크기 개선
@@ -1726,9 +1822,10 @@
 * Prometheus 호환 API 추가(베타)
 
 <a id="april-27-2021"></a>
-## 2021. 04. 27.
+## 2021. 04. 27. { #april-27-2021 }
 
-### Image
+<a id="april-27-2021-image"></a>
+### Image { #april-27-2021-image }
 
 * 신규 이미지 추가(평촌 리전)
     * CentOS 7.8 for NAT(2021. 04. 22.)
@@ -1738,9 +1835,10 @@
     * Ubuntu Server 16.04.7 LTS(2020. 12. 22.)
 
 <a id="february-23-2021"></a>
-## 2021. 02. 23.
+## 2021. 02. 23. { #february-23-2021 }
 
-### Image
+<a id="february-23-2021-image"></a>
+### Image { #february-23-2021-image }
 
 * 신규 이미지 추가
     * CentOS 7.8 with MySQL 5.6.38(2021. 02. 23.)
@@ -1763,16 +1861,18 @@
     * 신규 인스턴스 생성 시 적용
 
 <a id="january-26-2021"></a>
-## 2021. 01. 26.
+## 2021. 01. 26. { #january-26-2021 }
 
-### System Monitoring
+<a id="january-26-2021-system-monitoring"></a>
+### System Monitoring { #january-26-2021-system-monitoring }
 * 신규 기능 추가: Advanced Monitoring(OpenMetrics)
     * OpenMetrics(Prometheus exposition format) 지표 수집, 조회, 알림 기능 제공
 
 <a id="december-29-2020"></a>
-## 2020. 12. 29.
+## 2020. 12. 29. { #december-29-2020 }
 
-### Image
+<a id="december-29-2020-image"></a>
+### Image { #december-29-2020-image }
 * CentOS 6.10(2020. 12. 22.)
     * 이미지 업데이트
 * CentOS 7.5(2020. 12. 22.)
@@ -1815,19 +1915,22 @@
     * 2020년 11월 보안 업데이트 반영: https://support.microsoft.com/ko-kr/help/4586839/windows-10-update-kb4586839
 
 <a id="november-24-2020"></a>
-## 2020. 11. 24.
+## 2020. 11. 24. { #november-24-2020 }
 
-### Auto Scale
+<a id="november-24-2020-auto-scale"></a>
+### Auto Scale { #november-24-2020-auto-scale }
 * Deploy 서비스 연계 기능 추가
 
 <a id="august-25-2020"></a>
-## 2020. 08. 25.
+## 2020. 08. 25. { #august-25-2020 }
 
-### Instance
+<a id="august-25-2020-instance"></a>
+### Instance { #august-25-2020-instance }
 * **Windows 인스턴스 접속 정보** 탭에 **비밀번호 초기화** 버튼 추가
 * Windows 이미지 생성 시 원본 인스턴스 비밀번호 초기화 기능 추가
 
-### Image
+<a id="august-25-2020-image"></a>
+### Image { #august-25-2020-image }
 * 신규 이미지 추가
     * Cent OS 7.8(2020. 08. 18.)
     * Ubuntu 20.04 LTS(2020. 08. 18.)
@@ -1871,35 +1974,40 @@
     * Windows 2012 R2 STD with MS-SQL 2016 Express(2020. 02. 18.)
 
 <a id="june-23-2020"></a>
-## 2020. 06. 23.
+## 2020. 06. 23. { #june-23-2020 }
 
-### System Monitoring
+<a id="june-23-2020-system-monitoring"></a>
+### System Monitoring { #june-23-2020-system-monitoring }
 
 * 보다 의미를 명확하게 나타낼 수 있도록 차트 및 범례 이름 변경
 * 세부 항목이 있는 수집 항목에 상세 차트 표시 기능 추가
 
-### Instance
+<a id="june-23-2020-instance"></a>
+### Instance { #june-23-2020-instance }
 * 키페어에 등록된 공개 키 조회 기능 추가
 * GPU 인스턴스를 콘솔에서 직접 생성할 수 있도록 서비스 오픈
 * **인스턴스 정지** 대화 상자에서 **삭제** 버튼 제거
 
 <a id="may-26-2020"></a>
-## 2020. 05. 26.
+## 2020. 05. 26. { #may-26-2020 }
 
-### Instance
+<a id="may-26-2020-instance"></a>
+### Instance { #may-26-2020-instance }
 
 * Public API v2 출시
     * Openstack 호환 API 스펙으로 변경
     * Terraform 지원
 
-### Image
+<a id="may-26-2020-image"></a>
+### Image { #may-26-2020-image }
 
 * Public API v2 출시
     * Openstack 호환 API 스펙으로 변경
 
 <a id="february-25-2020"></a>
-## 2020. 02. 25.
-### Image
+## 2020. 02. 25. { #february-25-2020 }
+<a id="february-25-2020-1"></a>
+### Image { #february-25-2020-1 }
 * 개인 이미지와 공유받은 이미지가 이미지 목록에 함께 노출되도록 변경
 * 신규 이미지 추가
     * Debian 10.2 Buster(2020. 02. 18.)
@@ -1938,7 +2046,8 @@
 * 이미지 지원 종료
     * Debian 8.11 Jessie(2019. 07. 23.)
 
-### System Monitoring
+<a id="february-25-2020-system-monitoring"></a>
+### System Monitoring { #february-25-2020-system-monitoring }
 * 이벤트 현황 페이지 개선
     * 각 리전별로 이벤트를 조회할 수 있도록 개선
     * 이벤트 검색 필터 중 상태 항목에 All 옵션 추가
@@ -1949,14 +2058,16 @@
     * CPU, 메모리 사용량 개선
 
 <a id="january-31-2020"></a>
-## 2020. 01. 31.
-### Image
+## 2020. 01. 31. { #january-31-2020 }
+<a id="january-31-2020-1"></a>
+### Image { #january-31-2020-1 }
 * 신규 이미지 추가
     * Windows 2019 STD(2020. 01. 31.)
 
 <a id="january-21-2020"></a>
-## 2020. 01. 21.
-### System Monitoring
+## 2020. 01. 21. { #january-21-2020 }
+<a id="january-21-2020-system-monitoring"></a>
+### System Monitoring { #january-21-2020-system-monitoring }
 * 이벤트 조회 페이지 추가
     * 설정한 **감시 설정**에 의해 발생한 이벤트를 조회하는 기능 제공
 * 서버 대시보드의 **서버 목록** 기능 개선
@@ -1966,28 +2077,33 @@
     * 서버 및 사용자 그룹을 선택하고 **저장** 버튼을 클릭해야 변경 사항이 저장되도록 변경
 
 <a id="december-17-2019"></a>
-## 2019. 12. 17.
-### Auto Scale
+## 2019. 12. 17. { #december-17-2019 }
+<a id="december-17-2019-auto-scale"></a>
+### Auto Scale { #december-17-2019-auto-scale }
 * 인스턴스 템플릿 목록 및 상세 정보에서, 생성할 때 입력한 모든 정보를 볼 수 있도록 수정
     * 목록 테이블: 가용성 영역
     * 상세 정보: 설정한 모든 네트워크 정보, 사용자 스크립트 내용
 
 <a id="november-26-2019"></a>
-## 2019. 11. 26.
-### Auto Scale
+## 2019. 11. 26. { #november-26-2019 }
+<a id="november-26-2019-1"></a>
+### Auto Scale { #november-26-2019-1 }
 * Auto Scaling 자동 복구
     * Scaling Group에 속한 개별 인스턴스에 네트워크 단절 등의 장애가 발생하면 자동으로 새로운 인스턴스를 생성해 장애가 발생한 인스턴스를 대체하는 기능 추가
 
-### Instance
+<a id="november-26-2019-2"></a>
+### Instance { #november-26-2019-2 }
 * 인스턴스 목록에서 IP를 이용하여 인스턴스를 검색할 때, 일부 특수 문자 입력시 오류가 발생하는 문제 해결
 
-### System Monitoring
+<a id="november-26-2019-system-monitoring"></a>
+### System Monitoring { #november-26-2019-system-monitoring }
 * 서버 대시보드의 인스턴스 검색 기능 개선: 대소문자를 구분하지 않도록 수정
 
 
 <a id="october-29-2019"></a>
-## 2019. 10. 29.
-### Image
+## 2019. 10. 29. { #october-29-2019 }
+<a id="october-29-2019-image"></a>
+### Image { #october-29-2019-image }
 * PLOS-WFK-KS-v2.0.60.0.14(2019. 10. 22.)
     * WF-KS 페이지의 Storage 크기 표기 오류 수정
 
@@ -2006,7 +2122,8 @@
 * Windows 2016 R2 STD with MS-SQL 2016 Standard(2019. 10. 22.)
     * 언어별 이미지 제공(KO,EN,JP)
 
-### System Monitoring
+<a id="october-29-2019-system-monitoring"></a>
+### System Monitoring { #october-29-2019-system-monitoring }
 * 사용자 상호작용 UI 개선
     * 사용자 그룹, 감시 그룹, 감시 설정 등 모니터링 정보 조회/추가/수정/삭제 시 로딩 바가 노출되도록 수정
     * 상호작용 중 불필요한 버튼은 비활성화되도록 수정
@@ -2014,19 +2131,22 @@
     * 일본, 미국 리전에서 감시 설정을 변경한 서버의 지표 수집이 일시적으로 중단되던 문제 수정
     * 미국 리전에서 사용자 그룹과 감시 그룹의 추가/수정 날짜가 잘못 출력되던 문제 수정
 
-### VPC
+<a id="october-29-2019-1"></a>
+### VPC { #october-29-2019-1 }
 * Default VPC 삭제 기능 추가
     * Default VPC를 사용자가 삭제할 수 있도록 수정
 
 <a id="september-24-2019"></a>
-## 2019. 09. 24.
-### System Monitoring
+## 2019. 09. 24. { #september-24-2019 }
+<a id="september-24-2019-system-monitoring"></a>
+### System Monitoring { #september-24-2019-system-monitoring }
 * 웹 콘솔 영어 메시지 지원
 * Internet Explorer 11 브라우저 환경에서 서버 대시보드 레이아웃 선택에 실패하던 현상 수정
 
 <a id="august-27-2019"></a>
-## 2019. 08. 27.
-### Image
+## 2019. 08. 27. { #august-27-2019 }
+<a id="august-27-2019-1"></a>
+### Image { #august-27-2019-1 }
 * 이미지 관리 화면에서 공용 이미지 탭이 제거됨
 
 * Windows 2012 R2 STD(2019. 08. 27.)
@@ -2048,29 +2168,34 @@
 * OS 이미지 지원 종료
     * Windows 2012 R2 STD with MS-SQL 2008 R2 Standard
 
-### System Monitoring
+<a id="august-27-2019-system-monitoring"></a>
+### System Monitoring { #august-27-2019-system-monitoring }
 * 서버 대시보드 차트 조회 성능 개선
 * Internet Explorer 11 브라우저 환경 UI 개선
 
 <a id="july-23-2019"></a>
-## 2019. 07. 23.
-### System Monitoring
+## 2019. 07. 23. { #july-23-2019 }
+<a id="release-of-new-service-system-monitoring"></a>
+### System Monitoring { #release-of-new-service-system-monitoring }
 * System Monitoring 서비스 추가
     * 생성된 가상 서버의 시스템 지표 차트를 제공
     * 각 시스템 지표 차트를 원하는 레이아웃으로 구성
     * 지표가 특정 임계치에 도달할 경우 원하는 특정 사용자 그룹에게 알림을 보내도록 설정
 
 <a id="june-25-2019"></a>
-## 2019. 06. 25.
-### Instance
+## 2019. 06. 25. { #june-25-2019 }
+<a id="updates"></a>
+### Instance { #updates }
 * 인스턴스가 구동 중일 때도 이미지를 생성할 수 있도록 수정
 
 <a id="may-28-2019"></a>
-## 2019. 05. 28.
-### Auto Scale
+## 2019. 05. 28. { #may-28-2019 }
+<a id="may-28-2019-updates"></a>
+### Auto Scale { #may-28-2019-updates }
 * Scaling Group의 사용량을 확인할 수 있는 통계 그래프 추가
 
-### Image
+<a id="may-28-2019-1"></a>
+### Image { #may-28-2019-1 }
 * CentOS 6.10(2019. 05. 28.)
     * 리전에 따른 timezone 변경 적용
 * CentOS 7.5(2019. 05. 28.)
@@ -2116,8 +2241,9 @@
 
 
 <a id="may-14-2019"></a>
-## 2019. 05. 14.
-### Image
+## 2019. 05. 14. { #may-14-2019 }
+<a id="may-14-2019-1"></a>
+### Image { #may-14-2019-1 }
 * CentOS 6.10 with MySQL 5.6.38(2019. 05. 14.)
     * 이미지 업데이트
 * CentOS 6.10 with MySQL 5.7.20(2019. 05. 14.)
@@ -2131,11 +2257,13 @@
 
 
 <a id="april-25-2019"></a>
-## 2019. 04. 25.
-### Auto Scale
+## 2019. 04. 25. { #april-25-2019 }
+<a id="april-25-2019-1"></a>
+### Auto Scale { #april-25-2019-1 }
 * 예약 작업 생성 시 타임존 설정 기능 추가
 
-### Image
+<a id="april-25-2019-2"></a>
+### Image { #april-25-2019-2 }
 * CentOS 6.5(2019. 04. 25.)
     * yum update 시 발생하는 에러현상 개선
 * CentOS 6.10(2019. 04. 25.)
@@ -2166,8 +2294,9 @@
 
 
 <a id="march-26-2019"></a>
-## 2019. 03. 26.
-### Image
+## 2019. 03. 26. { #march-26-2019 }
+<a id="march-26-2019-1"></a>
+### Image { #march-26-2019-1 }
 * CentOS 6.5(2019. 03. 26.)
     * Bootstrap 과정의 기능 개선
 * CentOS 6.10(2019. 03. 26.)
@@ -2194,25 +2323,28 @@
 
 
 <a id="february-26-2019"></a>
-## 2019. 02. 26.
-### Image
+## 2019. 02. 26. { #february-26-2019 }
+<a id="february-26-2019-1"></a>
+### Image { #february-26-2019-1 }
 * Ubuntu Server 18.04.2 LTS(2019. 02. 26.)
     * 커널 업데이트: 4.15.0-45
     * 네트워크 인터페이스 또는 Subnet 추가/삭제 시 간헐적으로 발생하는 통신 오류 추가 해결
 
 
 <a id="january-29-2019"></a>
-## 2019. 01. 29.
-### Public API
+## 2019. 01. 29. { #january-29-2019 }
+<a id="january-29-2019-1"></a>
+### Public API { #january-29-2019-1 }
 * Instance 생성시 Subnet을 지정할 수 있도록 수정
 * Image 조회 API에 pagination을 위한 쿼리 파라미터 추가
 * Image 삭제 API 추가
 
 
 <a id="december-27-2018"></a>
-## 2018. 12. 27.
+## 2018. 12. 27. { #december-27-2018 }
 
-### Image
+<a id="december-27-2018-1"></a>
+### Image { #december-27-2018-1 }
 * Ubuntu Server 14.04.5 LTS(2018. 12. 27.)
     * shell 상에서 자동완성(tab) 기능 사용시 LC_CTYPE 관련 warning message 발생 하는 현상 수정
         * default 설정을 "en_US.UTF-8"로 변경
@@ -2246,8 +2378,9 @@
 
 
 <a id="december-11-2018"></a>
-## 2018. 12. 11.
-### Image
+## 2018. 12. 11. { #december-11-2018 }
+<a id="december-11-2018-1"></a>
+### Image { #december-11-2018-1 }
 * 네트워크 인터페이스 또는 Subnet 추가 삭제 시 간헐적으로 발생하는 통신 오류 해결
 * Debian 8.11 Jessie(2018. 12. 11.)
     * 커널 업데이트: 3.16-0-6
@@ -2272,8 +2405,9 @@
 
 
 <a id="november-13-2018"></a>
-## 2018. 11. 13.
-### Image
+## 2018. 11. 13. { #november-13-2018 }
+<a id="november-13-2018-1"></a>
+### Image { #november-13-2018-1 }
 * CentOS 6.5(2018. 11. 13.)
     * 커널 업데이트: 2.6.32-754.6.3
     * Yum repository 대상을 최신 repository로 변경
@@ -2282,8 +2416,9 @@
     * Yum repository 대상을 최신 repository로 변경
 
 <a id="october-23-2018"></a>
-## 2018. 10. 23.
-### Image
+## 2018. 10. 23. { #october-23-2018 }
+<a id="october-23-2018-1"></a>
+### Image { #october-23-2018-1 }
 * CentOS 7.5(2018. 10. 23.), CentOS 7.1(2018. 10. 23.), CentOS 6.10(2018. 10. 23.), CentOS 6.5(2018. 10. 23.)
     * 패스워드 복잡도 설정: 숫자,영문,특문 조합 + 8자리 이상)(/etc/pam.d/common-password 수정)
         * password requisite  pam_cracklib.so try_first_pass retry=3 minlen=8 lcredit=-1 dcredit=-1 ocredit=-1 type=
@@ -2352,8 +2487,9 @@
 
 
 <a id="september-20-2018"></a>
-## 2018. 09. 20.
-### Instance
+## 2018. 09. 20. { #september-20-2018 }
+<a id="september-20-2018-1"></a>
+### Instance { #september-20-2018-1 }
 * Instance 관리 화면 UX/UI 개선
     * 인스턴스 이름 조회 기능 추가
     * 가용성 영역, 인스턴스 상태 필터 추가
@@ -2363,7 +2499,8 @@
     * 추가 블록 스토리지 연결 기능 추가
     * 사용자 스크립트 등록 기능 추가
 
-### Image
+<a id="september-20-2018-2"></a>
+### Image { #september-20-2018-2 }
 * 사용자 스크립트 기능이 정상적으로 적용되지 않는 부분 수정
 
 * Ubuntu Server 18.04.1 LTS(2018. 09. 20.)
@@ -2392,8 +2529,9 @@
 
 
 <a id="august-9-2018"></a>
-## 2018. 08. 09.
-### Image
+## 2018. 08. 09. { #august-9-2018 }
+<a id="august-9-2018-1"></a>
+### Image { #august-9-2018-1 }
 * Windows 2012 R2 STD(2018. 08. 09.)
     * 한글 사용시 사용자가 한글 언어팩을 설치(기본으로 영문 버전 제공)
     * 2018년 7월 10일 보안 업데이트: https://support.microsoft.com/en-us/help/4338815/windows-81-update-kb4338815
@@ -2470,8 +2608,9 @@
 
 
 <a id="july-16-2018"></a>
-## 2018. 07. 16.
-### Image
+## 2018. 07. 16. { #july-16-2018 }
+<a id="july-16-2018-1"></a>
+### Image { #july-16-2018-1 }
 * Windows 2012 R2 STD(2018. 07. 16.)
     * Auto scale 기능으로 백신이 포함된 인스턴스 생성시 발생하는 에러 현상 수정
     * CPU 설정 변경(CPU Socket 최대 개수  4개)
@@ -2538,34 +2677,40 @@
         * /etc/issue, /etc/issue.net 삭제
 
 <a id="may-29-2018"></a>
-## 2018. 05. 29.
-### Auto Scale
+## 2018. 05. 29. { #may-29-2018 }
+<a id="may-29-2018-1"></a>
+### Auto Scale { #may-29-2018-1 }
 * 반복성 예약 작업(cron expression 기반) 관련 오류 수정
     * 반복성 예약 작업 실행 시점이  UTC를 기반으로  동작하는 오류 수정
     * 반복성 예약 작업의 최초 실행이 cron expression을 따르지 않고, 예약 작업 생성 시 설정한 '시작 시각'에 수행되는 오류 수정
 
-### Instance
+<a id="may-29-2018-2"></a>
+### Instance { #may-29-2018-2 }
 * Instance 생성 시 volume type 설정 기능 추가
 
 <a id="april-24-2018"></a>
-### 2018.04.24
-### Instance
+### 2018.04.24 { #april-24-2018 }
+<a id="may-29-2018-3"></a>
+### Instance { #may-29-2018-3 }
 * Windows 인스턴스 로그 보기 기능 삭제
 
 <a id="march-22-2018"></a>
-## 2018. 03. 22.
-### Auto Scale
+## 2018. 03. 22. { #march-22-2018 }
+<a id="march-22-2018-1"></a>
+### Auto Scale { #march-22-2018-1 }
 * Auto Scale 서비스 추가
     * 사용자가 생성한 Instance Template을 바탕으로, Scaling Group을 생성
     * Scaling Group에 속한 인스턴스의 개수를 인스턴스 상태 혹은 예약 작업을 통해 동적으로 관리
     * 자세한 내용은 가이드 문서 참고
 
 <a id="february-22-2018"></a>
-## 2018. 02. 22.
-### Instance
+## 2018. 02. 22. { #february-22-2018 }
+<a id="february-22-2018-1"></a>
+### Instance { #february-22-2018-1 }
 * VPC 기능이 추가됨에 따라 인스턴스 생성 시에 서브넷을 지정하도록 변경
 
-### Image
+<a id="february-22-2018-2"></a>
+### Image { #february-22-2018-2 }
 * Windows 2012 R2 STD(2018. 02. 22.)
     * Windows Time Zone 설정 변경
         * 동기화 주기 변경: [기존) 604800초(7일) → [변경] 256초
@@ -2612,25 +2757,29 @@
 
 
 <a id="september-21-2017"></a>
-## 2017. 09. 21.
-### Public API
+## 2017. 09. 21. { #september-21-2017 }
+<a id="september-21-2017-1"></a>
+### Public API { #september-21-2017-1 }
 * TOAST Compute 서비스에 대한 API 제공
     * 현재 제한적인 기능만 이용할 수 있으며, 추후 API 추가를 통해 기능 확장 예정
     * 지원되는 API는 가이드 문서 참고
 
-### Instance
+<a id="september-21-2017-2"></a>
+### Instance { #september-21-2017-2 }
 * 키페어를 지정하지 않고 인스턴스를 생성할 수 있었던 버그 수정
 
 
 <a id="july-20-2017"></a>
-## 2017. 07. 20.
-### Image
+## 2017. 07. 20. { #july-20-2017 }
+<a id="july-20-2017-1"></a>
+### Image { #july-20-2017-1 }
 * 대용량 이미지 생성시 간헐적으로 생성이 완료되지 않던 버그가 수정
 
 
 <a id="august-24-2017"></a>
-## 2017. 08. 24.
-### Instance
+## 2017. 08. 24. { #august-24-2017 }
+<a id="august-24-2017-1"></a>
+### Instance { #august-24-2017-1 }
 * 인스턴스 사양 변경 기능 추가
     * 사용하던 인스턴스의 디스크는 그대로 보존하면서 CPU/Memory를 업그레이드 하거나 다운그레이드 가능
     * 블록 스토리지 크기는 변경 불가
@@ -2647,32 +2796,37 @@
 
 
 <a id="may-25-2017"></a>
-## 2017. 05. 25.
-### Instance
+## 2017. 05. 25. { #may-25-2017 }
+<a id="may-25-2017-1"></a>
+### Instance { #may-25-2017-1 }
 * 서비스 종료된 이미지로 생성된 인스턴스가 조회 되지 않는 버그 수정
 
-### Image
+<a id="may-25-2017-2"></a>
+### Image { #may-25-2017-2 }
 * Windows 계열 이미지 업데이트
     * Windows 2012 R2 STD(2017. 05. 25.) 추가
 
 
 <a id="april-25-2017"></a>
-## 2017. 04. 25.
-### Instance
+## 2017. 04. 25. { #april-25-2017 }
+<a id="april-25-2017-1"></a>
+### Instance { #april-25-2017-1 }
 * 인스턴스 생성시 초기 볼륨 크기의 최대값이 600GB에서 1TB(1,000GB)로 변경
 
 
 <a id="march-23-2017"></a>
-## 2017. 03. 23.
-### Instance
+## 2017. 03. 23. { #march-23-2017 }
+<a id="march-23-2017-1"></a>
+### Instance { #march-23-2017-1 }
 * 인스턴스 생성시 초기 볼륨의 크기 지정 기능 추가
     * 사용자가 지정한 크기 만큼 초기 볼륨을 생성
     * 기본 디스크의 크기는 이미지별 최소 요구 사항에서 최대 600GB까지 설정 가능
 
 
 <a id="january-19-2017"></a>
-## 2017. 01. 19.
-### Instance
+## 2017. 01. 19. { #january-19-2017 }
+<a id="january-19-2017-1"></a>
+### Instance { #january-19-2017-1 }
 * 인스턴스 기본 정보의 IP 주소 정보에서 서브넷 명칭을 제외
     * 명칭 표기로 행의 넓이가 넓어져 가독성이 떨어지는 것을 방지
 * 인스턴스 이름 길이 및 특수문자 제한
@@ -2680,13 +2834,15 @@
 * 인스턴스 생성 기능을 이미지 생성 기능으로 변경
     * 탭과 일관된 기능으로 변경
 
-### Image
+<a id="january-19-2017-2"></a>
+### Image { #january-19-2017-2 }
 * 이미지 탭(Private, Shared, Public) 변경시 이미지 선택이 해제되지 않던 문제 수정
 
 
 <a id="december-22-2016"></a>
-## 2016. 12. 22.
-### Instance
+## 2016. 12. 22. { #december-22-2016 }
+<a id="december-22-2016-1"></a>
+### Instance { #december-22-2016-1 }
 * 정지된 인스턴스의 보안 그룹 수정이 가능하도록 변경
 * 인스턴스 생성시 선택 가능한 보안 그룹이 하나일 경우 자동 선택되도록 변경
 

@@ -1,4 +1,7 @@
-## Infrastructure > Compute & Network > NAS (Offline) User Guide
+<!-- pre-align:aligned sig=e5e8a74de456 -->
+
+<a id="infrastructure-compute-network-nas-offline-user-guide"></a>
+## Infrastructure > Compute & Network > NAS (Offline) User Guide { #infrastructure-compute-network-nas-offline-user-guide }
 ```
 [Notice]
 공공클라우드 서비스는 해당 기능을 제공하지 않습니다.
@@ -12,7 +15,8 @@ NAS 는 여러 개의 인스턴스에서 네트워크를 통해 액세스 할 �
 - Volume 증설 방법
 - Volume 삭제 방법
 
-## NAS 신청 
+<a id="nas"></a>
+## NAS 신청 { #nas }
 1.[Infrastructure] > [Compute & Network] > [NAS(offline)]으로 이동한 뒤, [이용요금] 탭의 [상품 이용 신청]버튼을 클릭합니다.
 ![[그림 1] NAS (Offline) 상품](http://static.toastoven.net/prod_infrastructure/compute/nas/nas_1.png)
 <center>[그림 1] NAS (Offline) 상품</center>
@@ -43,26 +47,30 @@ NAS 정보는 실제 할당된 NAS Volume 명입니다. 전문 엔지니어가 N
 ![[그림 4] NAS (Offline) 완료 메일](http://static.toastoven.net/prod_infrastructure/compute/nas/nas_4.png)
 <center>[그림 4] NAS(offline) 완료 메일</center>
 
-## NAS 이용내역
+<a id="nas-2"></a>
+## NAS 이용내역 { #nas-2 }
 1.[Infrastructure] > [Compute & Network] > [NAS(offline)]의 상품 이용 신청 후, [이용내역] 탭을 선택합니다. 
 ![[그림 5] NAS (Offline) 이용내역](http://static.toastoven.net/prod_infrastructure/compute/nas/nas_5.png)
 <center>[그림 5] NAS(offline) 이용내역</center>
 
-## Volume 증설
+<a id="volume"></a>
+## Volume 증설 { #volume }
 NAS 이용내역에서 Volume 증설을 할 수 있습니다. Volume증설은 NAS 의 상태가 [신청접수], [이용중] 일 경우에만 버튼이 활성화됩니다.
 [그림 5]에서 [Volume 증설] 버튼을 클릭합니다. [그림 6]의 대화창에서 증설할 추가 용량 정보를 입력합니다.
 
 ![[그림 6] NAS (Offline) Volume 증설](http://static.toastoven.net/prod_infrastructure/compute/nas/nas_6.png)
 <center>[그림 6] NAS(offline) Volume 증설</center> 
 
-## Volume 삭제
+<a id="volume-2"></a>
+## Volume 삭제 { #volume-2 }
 NAS 이용내역에서 Volume 을 삭제 할 수 있습니다. 
 [그림 7]의 내용 확인 후 [신청] 버튼을 클릭합니다. 
 
 ![[그림 7] NAS (Offline) Volume 삭제](http://static.toastoven.net/prod_infrastructure/compute/nas/nas_7.png)
 <center>[그림 7] NAS(offline) Volume 삭제</center>
 
-## Volume 연결
+<a id="volume-3"></a>
+## Volume 연결 { #volume-3 }
 nfs 패키지 설치
 
  - Debian, Ubuntu: nfs-common, rpcbind

@@ -1,4 +1,7 @@
-## Infrastructure > Compute & Network > Load Balancers Guide Guide
+<!-- pre-align:aligned sig=eeac09197aaf -->
+
+<a id="infrastructure-compute-network-load-balancers-guide-guide"></a>
+## Infrastructure > Compute & Network > Load Balancers Guide Guide { #infrastructure-compute-network-load-balancers-guide-guide }
 
 Load Balancer는 여러 대의 Instance에 Network 트래픽을 분산시키는 장비입니다. 사용자는 TOAST Cloud 웹 콘솔을 통해 Load Balancer를 생성한 뒤 여러 Instance를 연결하여 부하를 분산시킬 수 있습니다. 뿐만 아니라 고객이 설정한 health check 패턴에 따라 장애가 발생한 Instance를 자동으로 검출하여 트래픽을 분산 제어하기 때문에 HA상황에 대한 보완책으로서도 이용할 수 있습니다.
 
@@ -9,7 +12,8 @@ Load Balancer는 여러 대의 Instance에 Network 트래픽을 분산시키는 
 - Instance 연결, 해제
 - Floating IP
 
-## Load Balancer 생성
+<a id="load-balancer"></a>
+## Load Balancer 생성 { #load-balancer }
 
 1.[Infrastructure] > [Compute & Network] > [Load Balancers]으로 이동한 후 [그림 1]의 [+ Load Balancer 생성] 버튼을 클릭합니다.
 
@@ -95,11 +99,13 @@ Load Balancer가 처리할 수 있는 최대 connection 수를 설정합니다. 
 ![[그림 8] Load Balancer 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_008.png)
 <center>[그림 8] Load Balancer 생성 확인</center>
 
-## Load Balancer 상세 정보 수정
+<a id="load-balancer-2"></a>
+## Load Balancer 상세 정보 수정 { #load-balancer-2 }
 
 필요한 경우 이미 생성된 Load Balancer의 속성을 변경할 수 있습니다.
 
-### Load Balancer 속성 변경
+<a id="load-balancer-2-load-balancer"></a>
+### Load Balancer 속성 변경 { #load-balancer-2-load-balancer }
 
 1.[Infrastructure] > [Compute & Network] > [Load Balancers]에서 수정할 Load Balancer를 선택합니다.
 
@@ -113,7 +119,8 @@ Load Balancer가 처리할 수 있는 최대 connection 수를 설정합니다. 
 
 3.<Load Balancer 수정> 대화창에서 원하는 항목을 수정한 후, "변경사항을 저장" 버튼을 누르면 반영됩니다.
 
-### Listener 속성 변경
+<a id="listener"></a>
+### Listener 속성 변경 { #listener }
 
 1.보다 세부적인 구성을 변경하기 위해 <Listener> 탭을 선택합니다.
 
@@ -151,7 +158,8 @@ Load Balancer가 처리할 수 있는 최대 connection 수를 설정합니다. 
 > [주의]
 > Listener가 하나인 경우에는 삭제할 수 없습니다.
 
-## Load Balancer와 Instance 연결
+<a id="load-balancer-instance"></a>
+## Load Balancer와 Instance 연결 { #load-balancer-instance }
 
 필요한 경우 새로운 Instance를 추가로 연결하거나 기존에 연결된 Instance를 제거 할 수 있습니다.
 
@@ -195,7 +203,8 @@ Load Balancer가 처리할 수 있는 최대 connection 수를 설정합니다. 
 ![[그림 24] Instance 삭제 확인](http://static.toastoven.net/prod_infrastructure/compute/loadbalancer/img_022.png)
 <center>[그림 24] Instance 삭제 확인</center>
 
-## Floating IP 연결
+<a id="floating-ip"></a>
+## Floating IP 연결 { #floating-ip }
 
 외부 서비스를 하기 위해서는 Load Balancer에게 Floating IP를 부여해야 합니다.
 

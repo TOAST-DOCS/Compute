@@ -1,13 +1,18 @@
-## Infrastructure > Compute & Network > CIDR Guide
+<!-- pre-align:aligned sig=5ad477079f60 -->
+
+<a id="infrastructure-compute-network-cidr-guide"></a>
+## Infrastructure > Compute & Network > CIDR Guide { #infrastructure-compute-network-cidr-guide }
 
 TOAST Cloud > Infrastructure 서비스를 사용하다 보면 CIDR(사이더라고 읽음)란 용어가 빈번하게 나옵니다. 이 문서에서는 CIDR가 무엇인지 어떻게 표기하는지 설명합니다.
 
-## CIDR
+<a id="cidr"></a>
+## CIDR { #cidr }
 
 CIDR는 클래스 없는 도메인간 라우팅 기법 Classless Inter-Domain Routing의 약자입니다. 1992년 기존의 A, B, C 클래스 주소 방식을 계속 사용하다가는 모든 IP주소의 고갈이 우려되기 시작하였는데 이를 방지하기 위하여 1993년 CIDR가 나왔습니다. CIDR 표기법을 사용하면 기존의 클래스형 방법보다 효율적으로 IP 주소를 지정할 수 있습니다. 클래스형 방법은 10진 표기법을 사용하는 반면, CIDR는 이진 표기법을 사용합니다. CIDR에서는 모든 IP 주소와 서브넷 마스크를 이진 표기법으로 변환합니다. 기존 클래스 방식은 할당하고 사용하지 않는 주소들이 많았는데 CIDR를 사용하면 네트워크 크기를 더 다양하게 선택할 수 있고 IP주소 지정을 최적화하여 더 많은 주소를 사용 할 수 있습니다.  
 CIDR가 무엇인지 알아보았습니다. 다음으로 CIDR는 어떻게 정의하는지 알아보겠습니다.
 
-## CIDR 표기법
+<a id="cidr-2"></a>
+## CIDR 표기법 { #cidr-2 }
 
 주소를 적을 때, 네트워크와 마스크를 모두 명시하는 것은 귀찮은 일입니다. 그래서 CIDR는 다음과 같은 간단한 형식으로 주소와 마스크를 표현합니다.
 
@@ -23,13 +28,15 @@ xxx.xxx.xxx.xxx/n
 |192.168.0.100/31|	192.168.0.100~192.168.0.101|	2|
 |1192.168.0.0/24|	192.168.0.0~192.168.0.255|	256|
 
-## 마치며
+<a id="section-1"></a>
+## 마치며 { #section-1 }
 
 CIDR는 IP 고갈을 막기 위하여 10진 표기법인 클래스형 방법을 대체하는 이진 표기법입니다. CIDR 주소는 xxx.xxx.xxx.xxx/n 형식을 사용하며 /n은 첫 n비트는 네트워크 인식에 나머지 비트는 호스트 인식에 사용합니다.  
 실무에 활용할 수 있도록 부록으로 IPv4 CIDR 표를 수록하였습니다. 표 사용이 힘들다면 IP 대역을 CIDR 주소로 변환하여 보여주는 다음 사이트를 참고하기 바랍니다.  
 IP to CIDR : http://ip2cidr.com/
 
-### 참고 자료
+<a id="section-1-1"></a>
+### 참고 자료 { #section-1-1 }
 
 - TCP/IP 네트워크 관리
 - 위키피디아: http://ko.wikipedia.org/wiki/CIDR
@@ -37,7 +44,8 @@ IP to CIDR : http://ip2cidr.com/
 - About.com(CIDR): http://compnetworking.about.com/od/workingwithipaddresses/a/cidr_notation.htm
 - WirelessTEK(What is CIDR?): http://www.wirelesstek.com/cidr.htm
 
-### IPv4 CIDR
+<a id="ipv4-cidr"></a>
+### IPv4 CIDR { #ipv4-cidr }
 
 |IP/CIDR|	마지막 IP주소|	마스크|	호스트수(*)|
 |---|---|---|---|

@@ -1,4 +1,7 @@
-## Infrastructure > Compute & Network > Image User Guide
+<!-- pre-align:aligned sig=992278f73195 -->
+
+<a id="infrastructure-compute-network-image-user-guide"></a>
+## Infrastructure > Compute & Network > Image User Guide { #infrastructure-compute-network-image-user-guide }
 
 Image는 OS와 각종 애플리케이션 및 설정들이 포함된 파일입니다. 기본 제공 Image 이외에 사용자가 생성한 Instance로부터 새로운 Image를 생성 할 수 있습니다. 서비스의 부하가 늘어나는 경우, Instance를 복제하여 부하를 분산시킬 때 사용할 수 있습니다.
 
@@ -7,7 +10,8 @@ Image는 OS와 각종 애플리케이션 및 설정들이 포함된 파일입니
 - Image 종류
 - Image 생성, 공유
 
-## Image의 종류
+<a id="image"></a>
+## Image의 종류 { #image }
 
 Image 는 [표 1]의 3가지 종류가 있으며 고객이 생성한 Image는 기본적으로 Private Image입니다. Private Image는 공유 기능을 이용해 공유 Image로 전환할 수 있습니다.
 
@@ -23,7 +27,8 @@ Image 는 [표 1]의 3가지 종류가 있으며 고객이 생성한 Image는 �
 TOAST Cloud G 서비스는 이미지 공유 기능을 제공하지 않습니다.
 ```
 
-## Image 생성
+<a id="image-2"></a>
+## Image 생성 { #image-2 }
 
 Image를 생성하기 위해서는 먼저 Image를 생성할 Instance를 정지해야 합니다.
 
@@ -52,7 +57,8 @@ Windows Instance의 경우 Image 생성하기 전에 Sysprep을 이용하여 사
 ![[그림 4] 생성된 Image 확인](http://static.toastoven.net/prod_infrastructure/compute/img_261.png)
 <center>[그림 4] 생성된 Image 확인</center>
 
-## Image 공유
+<a id="image-3"></a>
+## Image 공유 { #image-3 }
 ```
 [Notice]
 TOAST Cloud G 서비스는 이미지 공유 기능을 제공하지 않습니다.

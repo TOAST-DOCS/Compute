@@ -1,4 +1,7 @@
-## Infrastructure > Compute & Network > Security Groups User Guide
+<!-- pre-align:aligned sig=03768c6e9165 -->
+
+<a id="infrastructure-compute-network-security-groups-user-guide"></a>
+## Infrastructure > Compute & Network > Security Groups User Guide { #infrastructure-compute-network-security-groups-user-guide }
 
 Security Group은 IP 필터 Rule의 집합입니다. 이 필터 Rule들은 Project 내 Instance들의 inbound 및 outbound Network 트래픽에 적용되어, 허용되지 않은 외부로부터의 접근을 막는 데 사용할 수 있습니다. 사용자는 기본 제공하는 Security Group 이외에 새로운 Security Group을 생성하여 자신만의 Network 제어를 위한 Rule들을 관리할 수 있습니다.
 
@@ -11,7 +14,8 @@ Security Group은 IP 필터 Rule의 집합입니다. 이 필터 Rule들은 Proje
 > 참고  
 > Security Group 설정하기는 Admin 권한을 가진 사용자만이 이용 가능합니다. 다만 Member 권한을 가진 사용자도 Security Group 목록과 규칙은 조회 가능합니다.
 
-## Security Group 생성
+<a id="security-group"></a>
+## Security Group 생성 { #security-group }
 
 1.[Infrastructure] > [Compute & Network] > [Security Groups]으로 이동한 후 [+ Security Group 생성] 버튼을 클릭합니다.
 
@@ -28,7 +32,8 @@ Security Group은 IP 필터 Rule의 집합입니다. 이 필터 Rule들은 Proje
 ![[그림3] 생성된 Security Group 확인](http://static.toastoven.net/prod_infrastructure/compute/img_290.png)
 <center>[그림3] 생성된 Security Group 확인</center>
 
-## Security Group 삭제
+<a id="security-group-2"></a>
+## Security Group 삭제 { #security-group-2 }
 
 1.[Infrastructure] > [Compute & Network] > [Security Groups]에서 삭제할 Security Group을 선택합니다.
 
@@ -50,7 +55,8 @@ Security Group은 IP 필터 Rule의 집합입니다. 이 필터 Rule들은 Proje
 ![[그림7] Security Group 삭제 확인](http://static.toastoven.net/prod_infrastructure/compute/img_294.png)
 <center>[그림7] Security Group 삭제 확인</center>
 
-## Rule 추가
+<a id="rule"></a>
+## Rule 추가 { #rule }
 
 1.[Infrastructure] > [Compute & Network] > [Security Groups]에서 Rule을 추가할 Security Group을 선택합니다. 그러면 웹 콘솔 하단에 해당 Security Group에 포함된 Rule들의 목록을 보여줍니다. [그림 4]에서 알 수 있듯이, 현재 추가된 Rule은 외부로 나가는(‘Engress’) 모든(포트 범위: ‘-‘, 원격 주소: ‘0.0.0.0/0’, ‘::/0’) IPv4 혹은 IPv6 트래픽을 허용합니다. 다만 외부에서 들어오는 트래픽에 대한 Rule이 없으므로, 현재 어떠한 방식으로도 접근할 수 없습니다. Rule을 추가하기 위해서 [Rule 추가]버튼을 클릭합니다.
 
@@ -83,7 +89,8 @@ Security Group은 IP 필터 Rule의 집합입니다. 이 필터 Rule들은 Proje
 ![[그림10] Rule 추가 성공](http://static.toastoven.net/prod_infrastructure/compute/img_296.png)
 <center>[그림10] Rule 추가 성공</center>
 
-## Rule 삭제
+<a id="rule-2"></a>
+## Rule 삭제 { #rule-2 }
 
 1.[Infrastructure] > [Compute & Network] > [Security Groups]에서 [그림 11]와 같이 상단 영역의 Security Group목록에서 Rule을 삭제할 Security Group을 선택하여 하단 영역에 Rule 목록을 조회합니다.
 

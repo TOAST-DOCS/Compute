@@ -1,15 +1,20 @@
-## Infrastructure > Compute & Network > Windows SSH Guide
+<!-- pre-align:aligned sig=922a7c94c93b -->
+
+<a id="infrastructure-compute-network-windows-ssh-guide"></a>
+## Infrastructure > Compute & Network > Windows SSH Guide { #infrastructure-compute-network-windows-ssh-guide }
 
 리눅스에 익숙하지 않은 사용자에게 ssh 접속은 낯설기만 합니다. 이 문서는 윈도우즈 ssh 프로그램인 PuTTY를 사용하여 인스턴스 접속하는 방법에 대하여 설명합니다.
 
-## 사용 파일
+<a id="section-1"></a>
+## 사용 파일 { #section-1 }
 
 다음 파일 2개를 사용합니다.
 
 - PuTTY 인스톨러: PuTTY와 PuTTYgen 프로그램을 설치 및 사용합니다.
 - .pem 파일: 이 파일은 .ppk 변환에 사용합니다.
 
-## PuTTY, PuTTYgen 설치
+<a id="putty-puttygen"></a>
+## PuTTY, PuTTYgen 설치 { #putty-puttygen }
 
 [그림 1]과 같이 PuTTY 다운로드 페이지에서 [putty-0.xx-installer.exe]를 다운로드 및 설치합니다.  
 다운로드링크: http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
@@ -17,7 +22,8 @@
 ![[그림 1] PuTTY 인스톨러 다운로드](http://static.toastoven.net/toastcloud/static/common/img/cms_img/infra/putty_1.gif)
 <center>[그림 1] PuTTY 인스톨러 다운로드</center>
 
-## ppk 파일 변환
+<a id="ppk"></a>
+## ppk 파일 변환 { #ppk }
 
 pem파일은 인스턴스 생성시 만든 파일을 사용합니다.  
 (pem파일 생성 방법은 인스턴스 시작하기 참고)  
@@ -60,7 +66,8 @@ putty.exe에서는 pem파일을 바로 사용할 수 없으므로 PuTTYgen을 �
 파일명 지정 후 [저장] 버튼 클릭
 ```
 
-## ssh 접속
+<a id="ssh"></a>
+## ssh 접속 { #ssh }
 
 ```
 [Windows] > [모든 프로그램] > [PuTTY] > [PuTTY] 실행
@@ -109,7 +116,8 @@ putty.exe에서는 pem파일을 바로 사용할 수 없으므로 PuTTYgen을 �
 ![[그림 12] 로그인 성공 화면](http://static.toastoven.net/toastcloud/static/common/img/cms_img/infra/putty_12.gif)
 <center>[그림 12] 로그인 성공 화면</center>
 
-## 마치며
+<a id="section-2"></a>
+## 마치며 { #section-2 }
 
 윈도우즈에서 VM인스턴스로 ssh 접속하기 위하여 다음 단계를 순서대로 수행해보았습니다.
 

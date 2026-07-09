@@ -1,4 +1,7 @@
-## Infrastructure > Compute & Network > Networks User Guide
+<!-- pre-align:aligned sig=00b6482b3794 -->
+
+<a id="infrastructure-compute-network-networks-user-guide"></a>
+## Infrastructure > Compute & Network > Networks User Guide { #infrastructure-compute-network-networks-user-guide }
 
 TOAST Cloud에서 Network는 Instance들을 연결하는 가상 Network로서 사용됩니다. TOAST Cloud의 Network는 하위에 하나의 Subnet만을 가지고 있습니다. 여러 개의 Subnet을 이용하고 싶은 경우 새로운 Network를 생성해야 합니다. 또한 Router를 통해 다른 Network와 연결함으로써 논리적으로 확장 가능합니다.
 
@@ -12,7 +15,8 @@ TOAST Cloud에서 Network는 Instance들을 연결하는 가상 Network로서 �
 > 참고  
 > Network 생성하기는 Admin 권한을 가진 사용자만이 이용 가능합니다.
 
-## Network 생성
+<a id="network"></a>
+## Network 생성 { #network }
 
 1.[Infrastructure] > [Compute & Network] > [Networks]으로 이동한 후 [그림 1]의 [+ Network 생성] 버튼을 클릭합니다.
 
@@ -42,7 +46,8 @@ TOAST Cloud에서 Network는 Instance들을 연결하는 가상 Network로서 �
 ![[그림 3] Network 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/img_302.png)
 <center>[그림 3] Network 생성 확인</center>
 
-## Network 삭제
+<a id="network-2"></a>
+## Network 삭제 { #network-2 }
 
 1.[Infrastructure] > [Compute & Network] > [Networks]으로 이동한 후 Network 탭을 선택합니다.
 
@@ -72,7 +77,8 @@ TOAST Cloud에서 Network는 Instance들을 연결하는 가상 Network로서 �
 > [주의]  
 > 삭제하려는 Network에 Interface가 추가되어 있는 경우, 삭제가 진행되지 않습니다. 해당 Interface를 먼저 삭제하고 Network 삭제를 시도하시기 바랍니다.
 
-## Router 생성
+<a id="router"></a>
+## Router 생성 { #router }
 
 생성된 Network는 Network 내 Instance들 간의 통신은 지원하지만 아직 다른 Network와 연결되지 않아서 외부와의 통신이 불가능합니다. 다른 Network와 연결하기 위해서는 Router를 생성해야 합니다.
 
@@ -96,7 +102,8 @@ TOAST Cloud에서 Network는 Instance들을 연결하는 가상 Network로서 �
 ![[그림 12] Router 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/img_309.png)
 <center>[그림 12] Router 생성 확인</center>
 
-## Router 게이트웨이 설정
+<a id="router-2"></a>
+## Router 게이트웨이 설정 { #router-2 }
 
 사용자가 생성한 Network는 생성 직후에는 격리되어 외부와 통신이 불가능합니다. 이를 해결하기 위해서는 Router를 통해 외부 Network와 연결해야 합니다. 먼저 Router의 게이트웨이 설정을 함으로써 외부 Network와 연결되도록 설정할 수 있습니다.
 
@@ -129,7 +136,8 @@ TOAST Cloud에서 Network는 Instance들을 연결하는 가상 Network로서 �
 <center>[그림 18] 게이트웨이 설정 확인</center>
 
 
-## Router 게이트웨이 제거
+<a id="router-3"></a>
+## Router 게이트웨이 제거 { #router-3 }
 
 외부 Network와의 연결을 해제하기 위해서는 Router의 게이트웨이를 제거해야 합니다.
 
@@ -158,7 +166,8 @@ TOAST Cloud에서 Network는 Instance들을 연결하는 가상 Network로서 �
 ![[그림 23] 게이트웨이 제거 확인](http://static.toastoven.net/prod_infrastructure/compute/img_319.png)
 <center>[그림 23] 게이트웨이 제거 확인</center>
 
-## Router Interface 추가
+<a id="router-interface"></a>
+## Router Interface 추가 { #router-interface }
 
 생성한 Router를 외부 Network가 아닌 다른 특정 Network에게 연결하기 위해서는 Interface를 추가해야 합니다.
 
@@ -182,7 +191,8 @@ TOAST Cloud에서 Network는 Instance들을 연결하는 가상 Network로서 �
 ![[그림 27] Interface 추가 확인](http://static.toastoven.net/prod_infrastructure/compute/img_323.png)
 <center>[그림 27] Interface 추가 확인</center>
 
-## Router Interface 삭제
+<a id="router-interface-2"></a>
+## Router Interface 삭제 { #router-interface-2 }
 
 Router를 삭제하기 위해서는 먼저 해당 Router에 추가된 Interface들을 삭제해야 합니다.
 
@@ -211,7 +221,8 @@ Router를 삭제하기 위해서는 먼저 해당 Router에 추가된 Interface�
 ![[그림 17] Interface 삭제 확인](http://static.toastoven.net/prod_infrastructure/compute/img_328.png)
 <center>[그림 17] Interface 삭제 확인</center>
 
-## Router 삭제
+<a id="router-4"></a>
+## Router 삭제 { #router-4 }
 1.[Infrastructure] > [Compute & Network] > [Networks]의 Routers 탭으로 이동합니다.
 
 ![[그림 18] Router 목록](http://static.toastoven.net/prod_infrastructure/compute/img_329.png)
@@ -240,7 +251,8 @@ Router를 삭제하기 위해서는 먼저 해당 Router에 추가된 Interface�
 > [주의]  
 > 삭제하려는 Router에 Interface가 추가되어 있는 경우, 삭제가 진행되지 않습니다. 해당 Interface를 먼저 삭제하고 Router 삭제를 시도하시기 바랍니다.
 
-## Network Topology 확인
+<a id="network-topology"></a>
+## Network Topology 확인 { #network-topology }
 
 현재 Network 구성을 TOAST Cloud 웹 콘솔에서 시각적으로 확인할 수 있습니다.
 

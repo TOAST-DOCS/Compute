@@ -1,8 +1,12 @@
-## Infrastructure > Compute & Network > Windows SFTP Guide
+<!-- pre-align:aligned sig=3d00ee26837a -->
+
+<a id="infrastructure-compute-network-windows-sftp-guide"></a>
+## Infrastructure > Compute & Network > Windows SFTP Guide { #infrastructure-compute-network-windows-sftp-guide }
 
 이 문서는 윈도우즈에서 WinSCP를 이용하여 인스턴스에 데이터를 SFTP로 전송하는 방법에 대하여 설명합니다.
 
-## 사용 파일
+<a id="section-1"></a>
+## 사용 파일 { #section-1 }
 
 다음 파일 2개를 사용합니다.
 - WinSCP 인스톨러 : SFTP 전송 프로그램입니다.
@@ -11,7 +15,8 @@
 > [참고]  
 > .ppk파일 생성 방법은 Windows SSH Guide > ppk파일 변환 내용을 참고해 주십시오.
 
-## WinSCP 설치
+<a id="winscp"></a>
+## WinSCP 설치 { #winscp }
 
 WinSCP 다운로드 페이지에서 [Installation package] 링크를 클릭하여 다운로드 및 설치합니다.
 
@@ -21,7 +26,8 @@ http://winscp.net/eng/download.php#download2 접속
 ```
 ![](http://static.toastoven.net/toastcloud/static/common/img/cms_img/compute/img_01.jpg)
 
-## 서버 등록
+<a id="section-2"></a>
+## 서버 등록 { #section-2 }
 
 WinSCP를 실행하고 로그인 정보를 등록합니다.
 
@@ -55,7 +61,8 @@ WinSCP를 실행하고 로그인 정보를 등록합니다.
 ![](http://static.toastoven.net/toastcloud/static/common/img/cms_img/compute/img_04.jpg)
 <center>[그림 3] [저장] 버튼 클릭</center>
 
-## 서버 접속
+<a id="section-3"></a>
+## 서버 접속 { #section-3 }
 
 좌측 리스트에서 서버를 선택하고 접속합니다.
 
@@ -81,7 +88,8 @@ WinSCP를 실행하고 로그인 정보를 등록합니다.
 ![[그림 6] 파일 전송 화면](http://static.toastoven.net/toastcloud/static/common/img/cms_img/compute/img_07.jpg)
 <center>[그림 6] 파일 전송 화면</center>
 
-## 마치며
+<a id="section-4"></a>
+## 마치며 { #section-4 }
 
 다음과 같이 윈도우즈에서 SFTP 사용하는 방법을 알아보았습니다.
 

@@ -1,4 +1,7 @@
-## Infrastructure > Compute & Network > Instances User Guide
+<!-- pre-align:aligned sig=9ea7ab483acb -->
+
+<a id="infrastructure-compute-network-instances-user-guide"></a>
+## Infrastructure > Compute & Network > Instances User Guide { #infrastructure-compute-network-instances-user-guide }
 
 Infrastructure 서비스의 Compute & Network상품 중 기본이 되는 리소스로서 사용자의 필요에 따라 다양한 타입의 Instance를 사용할 수 있습니다.
 
@@ -8,7 +11,8 @@ Infrastructure 서비스의 Compute & Network상품 중 기본이 되는 리소�
 - Instance 정보 및 로그 보기
 - Instance 접속 안내
 
-## Instance 생성
+<a id="instance"></a>
+## Instance 생성 { #instance }
 
 [Infrastructure] > [Compute & Network] > [Instances] > [+ Instance 생성]버튼을 클릭합니다.
 
@@ -57,7 +61,8 @@ Instance에 접속할 때 사용할 Key-Pair와 Security Group을 지정합니�
 ![[그림 6 Instance 생성 확인]](http://static.toastoven.net/prod_infrastructure/compute/instances/006_170523_800px.PNG)
 <center>[그림 6 Instance 생성 확인]</center>
 
-## 외부 Network와 통신 설정
+<a id="network"></a>
+## 외부 Network와 통신 설정 { #network }
 
 외부 Network와 통신을 위해서는 Floating IP를 Instance에 연결하는 작업이 추가로 필요합니다. [그림 7]과 같이 Instance 목록에서 Floating IP를 부여할 Instance를 하나 선택합니다.
 
@@ -75,16 +80,19 @@ Instance에 접속할 때 사용할 Key-Pair와 Security Group을 지정합니�
 ![[그림 9 Floating IP 할당 확인]](http://static.toastoven.net/prod_infrastructure/compute/instances/009_170523_800px.PNG)
 <center>[그림 9 Floating IP 할당 확인]</center>
 
-## Instance 로그 확인
+<a id="instance-2"></a>
+## Instance 로그 확인 { #instance-2 }
 
 TOAST Cloud의 웹 콘솔은 각 Instance들의 로그 보기를 지원합니다. 부팅 과정에서 발생한 메시지로 Instance의 현재 상태를 확인할 수 있습니다.
 
 ![[그림 10 Instance의 로그 확인]](http://static.toastoven.net/prod_infrastructure/compute/img_257.png)
 <center>[그림 10 Instance의 로그 확인]</center>
 
-## Instance 접속
+<a id="instance-3"></a>
+## Instance 접속 { #instance-3 }
 
-### Linux
+<a id="linux"></a>
+### Linux { #linux }
 Linux 기반의 OS Image (= CentOS, Debian, Ubuntu)를 사용해 Instance를 생성한 경우 SSH를 사용하여 Instance에 접속합니다. Instance 목록에서 원하는 Instance를 선택하고 화면 하단에 [인스턴스 접속] 탭을 클릭하면 [그림 12]와 같은 Instance 접속 정보 화면을 볼 수 있습니다.
 
 ![[그림 11 Instance 접속방법 안내]](http://static.toastoven.net/prod_infrastructure/compute/instances/011_170523_800px.PNG)
@@ -92,7 +100,8 @@ Linux 기반의 OS Image (= CentOS, Debian, Ubuntu)를 사용해 Instance를 생
 
 [인스턴스 접속] 탭에서 제시한 ssh 명령어를 이용하여 Instance에 접속합니다. Security Group에 SSH 포트가 열려있지 않으면 접속이 불가능할 수 있습니다. 부팅중인 Instance는 부팅 완료 이후에 접속할 수 있습니다.
 
-### Windows
+<a id="windows"></a>
+### Windows { #windows }
 ```
 [Notice]
 공공클라우드 서비스는 해당 기능을 제공하지 않습니다.

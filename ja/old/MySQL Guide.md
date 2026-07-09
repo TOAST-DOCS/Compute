@@ -1,7 +1,11 @@
-## Infrastructure > Compute & Network > MySQL Guide
+<!-- pre-align:aligned sig=b3b500342da2 -->
+
+<a id="infrastructure-compute-network-mysql-guide"></a>
+## Infrastructure > Compute & Network > MySQL Guide { #infrastructure-compute-network-mysql-guide }
 # MySQL 이미지 상품 가이드
 
-## MySQL version
+<a id="mysql-version"></a>
+## MySQL version { #mysql-version }
 
 ##### NHN ENT 토스트 클라우드 MySQL version 은 아래와 같이 2가지로 분류 되어 제공 됩니다.
 
@@ -10,7 +14,8 @@
 * MySQL Community Server 5.7.20
     * mysql-community-server-5.7.20-1.el6.x86_64
 
-## MYSQL 시작/정지 방법
+<a id="mysql"></a>
+## MYSQL 시작/정지 방법 { #mysql }
 
 ```
 #mysql 서비스 시작
@@ -23,19 +28,24 @@ shell> service mysqld stop
 shell> service mysqld restart
 ```
 
-## MYSQL 접속
+<a id="mysql-2"></a>
+## MYSQL 접속 { #mysql-2 }
 
+<a id="mysql-2-1"></a>
 #### 이미지 생성 후 초기에는 아래와 같이 접속합니다.
 
 ```
 shell> mysql -uroot
 ```
 
-## MYSQL 이미지 생성 후 초기 설정
+<a id="mysql-3"></a>
+## MYSQL 이미지 생성 후 초기 설정 { #mysql-3 }
 
-### 1\. 패스워드 변경
+<a id="1"></a>
+### 1\. 패스워드 변경 { #1 }
 
-### 초기 설치 후 MYSQL ROOT 계정 패스워드는 지정 되어 있지 않습니다. 그러므로 설치 후 반드시 바로 패스워드 변경이 필요 합니다
+<a id="mysql-root"></a>
+### 초기 설치 후 MYSQL ROOT 계정 패스워드는 지정 되어 있지 않습니다. 그러므로 설치 후 반드시 바로 패스워드 변경이 필요 합니다 { #mysql-root }
 
 * MYSQL 5.6 버전 패스워드 변경
 
@@ -53,13 +63,16 @@ ALTER USER USER() IDENTIFIED BY 'auth_string';
 mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY '새로운비밀번호';
 ```
 
-### MYSQL 기본 validate\_password\_policy 는 아래와 같습니다\.
+<a id="mysql-validatepasswordpolicy"></a>
+### MYSQL 기본 validate\_password\_policy 는 아래와 같습니다\. { #mysql-validatepasswordpolicy }
 
 * validate\_password\_policy=MEDIUM
 * 기**본 8자 이상, 숫자,소문자,대문자,특수문자**를 포함해야 함.
 
-### 2\. PORT 변경
+<a id="2-port"></a>
+### 2\. PORT 변경 { #2-port }
 
+<a id="2-port-port-mysql-3306"></a>
 #### 제공되는 이미지 PORT 는 Mysql 기본 포트인 3306 입니다. 보안상 포트 변경을 권장 합니다.
 
 ```
@@ -86,7 +99,8 @@ shell> service mysqld restart
 shell> mysql -uroot -P[변경된포트번호]
 ```
 
-## my.cnf 설명
+<a id="mycnf"></a>
+## my.cnf 설명 { #mycnf }
 
 my.cnf 의 기본 경로는 /etc/my.cnf 이며, ToastCloud 권장 variable 이 설정 되어 있으며, 내용은 아래와 같습니다.
 
@@ -101,7 +115,8 @@ my.cnf 의 기본 경로는 /etc/my.cnf 이며, ToastCloud 권장 variable 이 �
 | slow\_query\_log | slow\_query log 옵션을 enable 합니다\. long\_query\_time 에 따른 기본 10초 이상의 쿼리는 slow\_query\_log 에 남게 됩니다\. |
 | sysdate-is-now | sysdate 의 경우 replication 에서 sysdate()사용된 SQL 문은 복제시 Master 와 Slave 간데 시간이 다르게 되는 문제점이 있어 sysdate() 와 now() 의 함수를 동일하게 적용합니다. |
 
-## MYSQL 디렉토리 설명
+<a id="mysql-4"></a>
+## MYSQL 디렉토리 설명 { #mysql-4 }
 
 MYSQL 디렉토리 및 파일 설명은 아래와 같습니다.
 

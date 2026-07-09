@@ -1,21 +1,29 @@
-## Infrastructure > Compute & Network > Developer's Guide
+<!-- pre-align:aligned sig=27f416d588bd -->
 
-## 사전 준비
+<a id="infrastructure-compute-network-developers-guide"></a>
+## Infrastructure > Compute & Network > Developer's Guide { #infrastructure-compute-network-developers-guide }
 
-### App Key 확인
+<a id="section-1"></a>
+## 사전 준비 { #section-1 }
+
+<a id="app-key"></a>
+### App Key 확인 { #app-key }
 
 1. [Infrastructure] > [Compute & Network] 메뉴 클릭
 2. 상단에 보이는 [URL & Appkey] 클릭
 3. 대화창에 기재 된 [Appkey] 값 복사 후 사용
 
-### API Password 설정
+<a id="api-password"></a>
+### API Password 설정 { #api-password }
 
 1. [Infrastructure] > [Compute & Network] 메뉴 클릭
 2. 상단에 보이는 [API Endpoint 설정] 버튼 클릭
 3. &lt;API Endpoint&gt; 대화창에서 원하는 API 비밀번호를 지정
 
-## 기본 정보
-### API Endpoint URL
+<a id="section-2"></a>
+## 기본 정보 { #section-2 }
+<a id="api-endpoint-url"></a>
+### API Endpoint URL { #api-endpoint-url }
 ```
 https://api-compute.cloud.toast.com/compute/v1.0/appkeys/{appkey}
 ```
@@ -24,7 +32,8 @@ https://api-compute.cloud.toast.com/compute/v1.0/appkeys/{appkey}
 | -- | -- | -- | -- |
 | appkey | Path Variable | String | 상품 이용시 발급받은 앱키 |
 
-### API Response
+<a id="api-response"></a>
+### API Response { #api-response }
 ##### Response HTTP Status Code
 모든 API 요청에 대해 200 OK로 응답하며, JSON 형태의 Response Body를 포함합니다.
 
@@ -67,9 +76,12 @@ API에 따라 "header" 외 추가적인 정보가 포함될 수 있습니다.
 | false | 40400~40499| Block Storage API 관련 에러 메시지 | resultCode의 뒤 세자리는 HTTP Status Code이며, resultMessage 내용에 따라 조치 후 재시도 가능 |
 | false | 50400~50499| Token API 관련 에러 메시지 | resultCode의 뒤 세자리는 HTTP Status Code이며, resultMessage 내용에 따라 조치 후 재시도 가능 |
 
-## Token
+<a id="token"></a>
+## Token { #token }
 **Token** 은 Compute & Network의 RESTful API 사용을 위해 발급받아야 하는 인증키이며, 이후 모든 API 요청 시 Request에 **X-Auth-Token** Header로 입력하여 요청해야 합니다.
-### Token API
+<a id="token-api"></a>
+### Token API { #token-api }
+<a id="token-api-token"></a>
 #### Token 발급
 ##### Method, URL
 ```
@@ -127,6 +139,7 @@ Content-Type: application/json;charset=UTF-8
 | User ID | Body | String | 토큰을 발급받은 사용자의 UUID |
 | Role name | Body | String | 토큰을 발급받은 사용자에게 부여된 Role |
 
+<a id="token-api-token-api-token"></a>
 #### Token 정보 조회
 ##### Method, URL
 ```
@@ -174,8 +187,11 @@ GET /v1.0/appkeys/{appkey}/tokens?id={tokenId}
 | User ID | Body | String | 토큰을 발급받은 사용자의 UUID | 
 | Role name | Body | String | 토큰을 발급받은 사용자에게 부여된 Role |
 
-## Availability Zone
-### Availability Zone API
+<a id="availability-zone"></a>
+## Availability Zone { #availability-zone }
+<a id="availability-zone-api"></a>
+### Availability Zone API { #availability-zone-api }
+<a id="availability-zone-api-availability-zone"></a>
 #### Availability Zone 조회
 Instance, Block Storage를 생성할 수 있는 Zone의 정보를 조회합니다.
 ##### Method, URL
@@ -215,10 +231,13 @@ X-Auth-Token: {tokenId}
 | Zone Name | Body | String | Availability Zone 이름 |
 | Available | Body | Boolean | Availability Zone 가용 여부 |
 
-## Instance
-### Instance API
+<a id="instance"></a>
+## Instance { #instance }
+<a id="instance-api"></a>
+### Instance API { #instance-api }
 Instance 생성, 삭제, 정보 조회 및 Block Storage 연결관리 기능을 제공합니다.
 
+<a id="instance-api-instance-status"></a>
 #### Instance Status
 Instance는 생성, 변경, 삭제, 운영 중 다음과 같은 Status를 갖습니다.
 ![[그림 1] Instance Status Diagram](http://static.toastoven.net/prod_infrastructure/compute/developersguide/img_001.png)
@@ -237,6 +256,7 @@ Instance는 생성, 변경, 삭제, 운영 중 다음과 같은 Status를 갖습
 | DELETING | Instance 삭제 중 |
 | ERROR | 오류 상태 |
 
+<a id="instance-api-instance"></a>
 #### Instance 정보 간략 조회
 생성되어 있는 Instance의 간략한 정보(ID, Name, Status)를 조회합니다.
 ##### Method, URL
@@ -277,6 +297,7 @@ X-Auth-Token: {tokenId}
 | Instance Name | Body | String | Instance 이름 |
 | Instance Status | Body | String | Instance의 상태 |
 
+<a id="instance-api-instance-api-instance"></a>
 #### Instance 상세 조회
 Instance의 상세한 정보를 조회합니다.
 ##### Method, URL
@@ -377,6 +398,7 @@ X-Auth-Token: {tokenId}
 | Created Time | Body | String | Instance 생성 시각. yyyy-mm-ddTHH:MM:ssZ의 형태. 예) 2017-05-16T02:17:50.166563 |
 | Updated Time | Body | String | Instance 수정 시각. yyyy-mm-ddTHH:MM:ssZ의 형태. 예) 2017-05-16T02:17:50.166563 |
 
+<a id="instance-api-instance-api-instance-2"></a>
 #### Instance 생성
 새로운 Instance를 생성합니다.
 
@@ -461,6 +483,7 @@ Content-Type: application/json;charset=UTF-8
 | Instance Name | body | String | Instance 이름 |
 | Instance Status | Body | String | Instance의 상태 |
 
+<a id="instance-api-instance-api-instance-3"></a>
 #### Instance 삭제
 특정 Instance를 삭제합니다.
 ##### Method, URL
@@ -474,6 +497,7 @@ X-Auth-Token: {tokenId}
 | tokenId | Header | String | - | Token ID |
 | instanceId | Query | String | - | 삭제할 Instance 식별자 |
 
+<a id="instance-api-block-storage"></a>
 #### Block Storage 연결
 Instance에 추가적인 [Block Strorage](#block-storage-api)를 연결합니다.
 
@@ -525,6 +549,7 @@ Content-Type: application/json;charset=UTF-8
 | Attachement ID | body | String | Attachment 식별자 |
 | Volume ID | body | String | Block Strorage 식별자, 연결 해제 시 필요 |
 
+<a id="instance-api-instance-api-block-storage"></a>
 #### Block Storage 연결 해제
 Instance에 연결되어 있는 추가적인 Block Strorage의 연결을 해제합니다.
 
@@ -555,7 +580,8 @@ X-Auth-Token: {tokenId}
 }
 ```
 
-### Instance Action API
+<a id="instance-action-api"></a>
+### Instance Action API { #instance-action-api }
 다음과 같은 Instance 제어 및 부가기능을 제공합니다.<br />
 - Instance 시작/정지/재시작<br />
 - Instance Flavor 변경(Resize)<br />
@@ -563,6 +589,7 @@ X-Auth-Token: {tokenId}
 - Floating IP 연결/해제<br />
 - Security Group 등록/해제<br />
 
+<a id="instance-action-api-1"></a>
 #### 공통
 모든 Instance Action API는 동일한 Method, URL로 호출하며, Request Body로 각 Action을 구분합니다.
 ##### Method, URL
@@ -591,6 +618,7 @@ Content-Type: application/json;charset=UTF-8
 | Action Name | Body | String | - | Instance에서 실행할 Action명 |
 | parameters | Body | Object| O | Action 수행에 필요한 Parameter. Action에 따라 필요한 값을 기재하거나 없을 수 있습니다. |
 
+<a id="instance-action-api-instance"></a>
 #### Instance 시작
 정지(STOP) 상태의 Instance를 시작합니다.
 ##### Request Body
@@ -611,6 +639,7 @@ Content-Type: application/json;charset=UTF-8
 }
 ```
 
+<a id="instance-action-api-instance-action-api-instance"></a>
 #### Instance 정지
 동작중(ACTIVE) 또는 오류(ERROR) 상태의 Instance를 정지합니다.
 ##### Request Body
@@ -632,6 +661,7 @@ Content-Type: application/json;charset=UTF-8
 }
 ```
 
+<a id="instance-action-api-instance-action-api-instance-2"></a>
 #### Instance 리부팅
 Instance를 리부팅합니다. 다음과 같은 리부팅 방식을 지정할 수 있습니다.<br />
  - SOFT - Graceful Shutdown 수행 후 Instance를 재시작합니다.<br />
@@ -663,6 +693,7 @@ Instance를 리부팅합니다. 다음과 같은 리부팅 방식을 지정할 �
 }
 ```
 
+<a id="instance-action-api-instance-resize"></a>
 #### Instance Resize
 Instance의 Flavor를 변경하여 Resize를 수행합니다.
 ##### Request Body
@@ -690,6 +721,7 @@ Instance의 Flavor를 변경하여 Resize를 수행합니다.
 }
 ```
 
+<a id="instance-action-api-image"></a>
 #### Image 생성
 지정한 Instance로 부터 Image를 생성합니다. 생성된 Image는 [Image API](#image-api)를 통해 조회할 수 있습니다.
 Image 생성 대상이 되는 Instance는 STOP 상태여야 합니다.
@@ -727,6 +759,7 @@ Image 생성 대상이 되는 Instance는 STOP 상태여야 합니다.
 | Created Image ID | body | String | 생성된 Image 식별자 |
 | Created Image Name | body | String | 생성된 Image 이름 |
 
+<a id="instance-action-api-floating-ip"></a>
 #### Floating IP 연결
 외부 네트워크에서 접근 가능한 [Floating IP](#floating-ip-api)를 Instance에 연결합니다.
 
@@ -758,6 +791,7 @@ Image 생성 대상이 되는 Instance는 STOP 상태여야 합니다.
 }
 ```
 
+<a id="instance-action-api-instance-action-api-floating-ip"></a>
 #### Floating IP 연결 해제
 Instance에 연결되어 있는 [Floating IP](#floating-ip-api)의 연결을 해제합니다.
 
@@ -788,6 +822,7 @@ Instance에 연결되어 있는 [Floating IP](#floating-ip-api)의 연결을 해
 }
 ```
 
+<a id="instance-action-api-security-group"></a>
 #### Security Group 등록
 Instance에 [Security Group](#security-group)을 추가 등록합니다.
 
@@ -817,6 +852,7 @@ Instance에 [Security Group](#security-group)을 추가 등록합니다.
 }
 ```
 
+<a id="instance-action-api-instance-action-api-security-group"></a>
 #### Security Group 해제
 Instance에 등록되어 있는 [Security Group](#security-group)을 제거합니다.
 
@@ -845,7 +881,9 @@ Instance에 등록되어 있는 [Security Group](#security-group)을 제거합�
 }
 ```
 
-### Flavor API
+<a id="flavor-api"></a>
+### Flavor API { #flavor-api }
+<a id="flavor-api-flavor"></a>
 #### Flavor 목록 조회
 Flavor의 목록 및 상세 정보를 조회합니다.
 
@@ -898,8 +936,10 @@ X-Auth-Token: {tokenID}
 | RAM | Body | Integer | Flavor가 갖는 RAM 총량. MB |
 | VCPUs | Body | Integer | Instance에 할당되는 가상 CPU 코어 개수 |
 
-### Keypair API
+<a id="keypair-api"></a>
+### Keypair API { #keypair-api }
 Instance 접근에 필요한 Keypair에 대한 생성, 삭제, 조회 기능을 제공합니다.
+<a id="keypair-api-keypair"></a>
 #### Keypair 조회
 계정에 속한 Keypair를 조회합니다.
 ##### Method, URL
@@ -943,6 +983,7 @@ X-Auth-Token: {tokenId}
 | Fingerprint Value | Body | String | Fingerprint 값 |
 | Created At | Body | DateTime | Keypair 생성 시간. "keypairName" 을 지정한 단건 조회 시에만 노출됩니다. |
 
+<a id="keypair-api-keypair-or"></a>
 #### Keypair 생성 or 업로드
 Keypair를 생성하거나, ssh로 생성한 Keypair를 업로드 합니다.
 
@@ -1003,6 +1044,7 @@ Content-Type: application/json;charset=UTF-8
 **생성된 Private Key Value는 다시 조회할 수 없으므로** 분실 또는 삭제되지 않도록 잘 보관해야 하며, 유출 방지를 위해 가급적 보조 저장매체(USB메모리)에 관리하는 것이 좋습니다.
 
 
+<a id="keypair-api-keypair-api-keypair"></a>
 #### Keypair 삭제
 지정한 Keypair를 삭제합니다.
 ##### Method, URL
@@ -1030,8 +1072,11 @@ X-Auth-Token: {tokenId}
 }
 ```
 
-## Image
-### Image API
+<a id="image"></a>
+## Image { #image }
+<a id="image-api"></a>
+### Image API { #image-api }
+<a id="image-api-image-status"></a>
 #### Image Status
 Image는 다음의 Status 값을 갖습니다.
 
@@ -1045,6 +1090,7 @@ Image는 다음의 Status 값을 갖습니다.
 | pending_delete | deleted 상태와 유사, Image가 회복 불가능한 상태 |
 | deactivated | Image 데이터가 사용 불가한 상태 |
 
+<a id="image-api-image"></a>
 #### Image 목록 조회
 Image의 목록 및 상세 정보를 조회합니다.
 ##### Method, URL
@@ -1104,9 +1150,12 @@ X-Auth-Token: {tokenId}
 | Image Status | Body | String | Image의 상태 |
 | Updated At | Body | String | Image가 업데이트 된 시간. yyyy-mm-ddTHH:MM:ssZ의 형태. 예) 2017-05-16T02:17:50.166563 |
 
-## Block Storage
-### Block Storage API
+<a id="block-storage"></a>
+## Block Storage { #block-storage }
+<a id="block-storage-api"></a>
+### Block Storage API { #block-storage-api }
 Block Stroage 생성/삭제 및 조회 기능을 제공합니다. Block Storage를 Instance에 연결/해제하는 기능은 [Instance API](#instance-api)를 통해 제공됩니다.
+<a id="block-storage-api-block-storage-status"></a>
 #### Block Storage Status
 Block Storage는 다음과 같은 Status 값을 갖습니다.
 
@@ -1127,6 +1176,7 @@ Block Storage는 다음과 같은 Status 값을 갖습니다.
 | downloading | Image 다운로드 중 |
 | uploading | Image로 업로드 중 |
 
+<a id="block-storage-api-block-storage"></a>
 #### Block Storage 조회
 Block Storage의 정보를 조회합니다.
 
@@ -1190,6 +1240,7 @@ X-Auth-Token: {tokenId}
 | Size | Body | Integer | Block Storage 크기. GB |
 | Status | Body | String | Block Storage 상태 |
 
+<a id="block-storage-api-block-storage-api-block-storage"></a>
 #### Block Storage 생성
 새로운 Block Storage를 생성합니다.
 
@@ -1264,6 +1315,7 @@ Content-Type: application/json;charset=UTF-8
 | Size | Body | Integer | Block Storage 크기. GB |
 | Status | Body | String | Block Storage 상태 |
 
+<a id="block-storage-api-block-storage-api-block-storage-2"></a>
 #### Block Storage 삭제
 Block Storage를 삭제합니다. Status가 "available" "in-use" "error" "error_restoring" 인 Block Storage만 삭제할 수 있습니다.
 
@@ -1290,10 +1342,13 @@ X-Auth-Token: {tokenId}
     }
 }
 ```
-## Security Group
-### Security Group API
+<a id="security-group"></a>
+## Security Group { #security-group }
+<a id="security-group-api"></a>
+### Security Group API { #security-group-api }
 Security Group 생성, 삭제, 조회 및 업데이트 기능을 제공합니다. Security Group을 Instance에 등록/해제하는 기능은 [Instance API](#instance-api)를 통해 제공됩니다.
 
+<a id="security-group-api-security-group"></a>
 #### Security Group 목록 조회
 접근 가능한 Security Group의 정보를 조회합니다.
 
@@ -1350,6 +1405,7 @@ X-Auth-Token: {tokenId}
 | Name | Body | String | Security Group 이름 |
 | securityGroupRules | Body | List | Security Group Rule 목록, [Security Group Rules API](#security-group-rules-api) 참조 |
 
+<a id="security-group-api-security-group-api-security-group"></a>
 #### Security Group 생성
 새로운 Security Group을 생성합니다.
 
@@ -1416,6 +1472,7 @@ Content-Type: application/json;charset=UTF-8
 | Name | Body | String | Security Group 이름 |
 | securityGroupRules | Body | List | Security Group Rule 목록, [Security Group Rules API](#security-group-rules-api) 참조 |
 
+<a id="security-group-api-security-group-api-security-group-2"></a>
 #### Security Group 업데이트
 Security Group의 이름, 설명을 변경합니다.
 
@@ -1468,6 +1525,7 @@ Content-Type: application/json;charset=UTF-8
 | Name | Body | String | Security Group 이름 |
 | Description | Body | String | Security Group 설명 |
 
+<a id="security-group-api-security-group-api-security-group-3"></a>
 #### Security Group 삭제
 지정한 Security Group을 삭제합니다.
 
@@ -1497,9 +1555,11 @@ X-Auth-Token: {tokenId}
 ```
 
 
-### Security Group Rules API
+<a id="security-group-rules-api"></a>
+### Security Group Rules API { #security-group-rules-api }
 Security Group Rule 추가/삭제 및 조회 기능을 제공합니다.
 
+<a id="security-group-rules-api-security-group-rule"></a>
 #### Security Group Rule 조회
 접근 가능한 모든 Security Group Rule의 정보를 조회합니다.
 ##### Method, URL
@@ -1552,6 +1612,7 @@ X-Auth-Token: {tokenId}
 | Remote IP Prefix | Body | String | Rule이 적용되는 Remote IP의 Prefix |
 | Security Group ID | Body | String | Rule이 적용되는 Security Group의 식별자 |
 
+<a id="security-group-rules-api-security-group-rules-api-security-group-rule"></a>
 #### Security Group Rule 생성
 새로운 Security Group Rule을 생성합니다.
 ##### Method, URL
@@ -1626,6 +1687,7 @@ Content-Type: application/json;charset=UTF-8
 | Remote IP Prefix | Body | String | Rule이 적용되는 Remote IP의 Prefix |
 | Security Group ID | Body | String | Rule이 적용되는 Security Group의 식별자 |
 
+<a id="security-group-rules-api-security-group-rules-api-security-group-rule-2"></a>
 #### Security Group Rule 삭제
 지정한 Security Group Rule을 삭제합니다.
 ##### Method, URL
@@ -1652,9 +1714,12 @@ X-Auth-Token: {tokenId}
 }
 ```
 
-## Network
-### Network API
+<a id="network"></a>
+## Network { #network }
+<a id="network-api"></a>
+### Network API { #network-api }
 Instance에서 연결할 수 있는 Network 정보 조회 기능을 제공합니다.
+<a id="network-api-network-status"></a>
 #### Network Status
 Network는 다음 Status 값을 같습니다.
 
@@ -1665,6 +1730,7 @@ Network는 다음 Status 값을 같습니다.
 | DOWN | Network 비활성화 상태 |
 | ERROR | 에러 발생 |
 
+<a id="network-api-network"></a>
 #### Network 조회
 접근 가능한 Network의 정보를 조회합니다.
 
@@ -1714,7 +1780,9 @@ X-Auth-Token: {tokenId}
 | Network Status | Body | String | 네트워크 상태. ACTIVE, DOWN, BUILD or ERROR |
 | Subnet ID | Body | String | Subnet 식별자 |
 
-### Subnet API
+<a id="subnet-api"></a>
+### Subnet API { #subnet-api }
+<a id="subnet-api-subnet"></a>
 #### Subnet 조회
 접근 가능한 Subnet의 정보를 조회합니다.
 ##### Method, URL
@@ -1770,9 +1838,11 @@ X-Auth-Token: {tokenId}
 | Subnet Name | Body | Integer | Subnet 이름 |
 | Network ID | Body | Integer | Subnet이 속한 네트워크 식별자 |
 
-### Floating IP API
+<a id="floating-ip-api"></a>
+### Floating IP API { #floating-ip-api }
 Floating IP 생성, 삭제, 정보 조회 기능을 제공합니다.
 
+<a id="floating-ip-api-floating-ip-status"></a>
 #### Floating IP Status
 Floating IP는 다음 상태값을 갖습니다.
 
@@ -1782,6 +1852,7 @@ Floating IP는 다음 상태값을 갖습니다.
 | DOWN | Floating IP가 연결되어 있지 않은 상태 |
 | ERROR | 에러 발생 |
 
+<a id="floating-ip-api-floating-ip-pool"></a>
 #### Floating IP Pool 조회
 Floating IP Pool 목록을 조회합니다.
 
@@ -1819,6 +1890,7 @@ X-Auth-Token: {tokenId}
 | Pool Name | Body | String | Floating IP Pool 이름 |
 
 
+<a id="floating-ip-api-floating-ip"></a>
 #### Floating IP 조회
 사용 가능한, 또는 사용 중인 Floating IP 정보를 조회합니다.
 ##### Method, URL
@@ -1871,6 +1943,7 @@ X-Auth-Token: {tokenId}
 | Pool Name | Body | String | Floating IP가 속한 Pool 이름 |
 | Status | Body | String | Floating IP의 상태 |
 
+<a id="floating-ip-api-floating-ip-api-floating-ip"></a>
 #### Floating IP 생성
 Floating IP를 생성합니다.
 ##### Method, URL
@@ -1923,6 +1996,7 @@ X-Auth-Token: {tokenId}
 | Pool Name | Body | String | Floating IP가 속한 Pool 이름 |
 | Status | Body | String | Floating IP의 상태 |
 
+<a id="floating-ip-api-floating-ip-api-floating-ip-2"></a>
 #### Floating IP 삭제
 지정한 Floating IP를 삭제합니다. 사용중(ACTIVE)인 Floating IP는 연결 해제 후 삭제할 수 있습니다.
 ##### Method, URL

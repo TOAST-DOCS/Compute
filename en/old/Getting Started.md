@@ -1,4 +1,7 @@
-## Infrastructure > Compute & Network > Getting Started
+<!-- pre-align:aligned sig=82c226ffd98d -->
+
+<a id="infrastructure-compute-network-getting-started"></a>
+## Infrastructure > Compute & Network > Getting Started { #infrastructure-compute-network-getting-started }
 
 Infrastructure > Compute & Network를 통해 사용자의 서비스를 위한 인프라를 제공합니다. 준비된 예제를 따라 하면 자신만의 서버 인프라를 구성할 수 있습니다.
 
@@ -11,7 +14,8 @@ Infrastructure > Compute & Network를 통해 사용자의 서비스를 위한 �
 - Image 생성
 - Load Balancer 생성
 
-## Infrastructure 상품 활성화
+<a id="infrastructure"></a>
+## Infrastructure 상품 활성화 { #infrastructure }
 
 Project List화면에서 권한이 있는 프로젝트의 목록을 확인하고 Infrastructure 상품을 추가할 프로젝트를 선택하여 [그림 1]의 프로젝트 상세 관리화면으로 이동합니다.
 
@@ -40,12 +44,14 @@ Project List화면에서 권한이 있는 프로젝트의 목록을 확인하고
 [+ Instance 생성] 클릭
 ```
 
-### Image 선택
+<a id="image"></a>
+### Image 선택 { #image }
 
 ![[그림 4] Public Image 선택](http://static.toastoven.net/prod_infrastructure/compute/img_251.png)
 <center>[그림 4] Public Image 선택</center>
 
-### 상세 정보 입력
+<a id="infrastructure-1"></a>
+### 상세 정보 입력 { #infrastructure-1 }
 
 ![[그림 5] 상세 정보 입력](http://static.toastoven.net/prod_infrastructure/compute/img_204.png)
 <center>[그림 5] 상세 정보 입력</center>
@@ -54,8 +60,10 @@ Project List화면에서 권한이 있는 프로젝트의 목록을 확인하고
 [이름]항목에서 서버 Instance명 입력
 ```
 
-### 접근 & 보안
+<a id="infrastructure-2"></a>
+### 접근 & 보안 { #infrastructure-2 }
 
+<a id="infrastructure-2-key-pair"></a>
 #### Key Pair 생성
 
 서버 Instance 에 접근하려면 ssh key Pair가 필요합니다. [그림 6]의 Key Pair 항목에 ‘가용 가능한 key pairs가 없습니다.’가 조회되면 다음의 순서로 Key Pair를 생성합니다.
@@ -87,14 +95,16 @@ Key Pair(.pem파일)를 다운로드 합니다.
 [Key Pair]항목에 생성한 Key Pair 확인
 ```
 
-### Security Group
+<a id="security-group"></a>
+### Security Group { #security-group }
 
 [그림 8]의 [Security Groups]항목에는 default가 기본으로 체크되어 있습니다. 지금은 default Security Group을 그대로 사용하겠습니다.
 
 >[참고]
 > default Security Group은 모든 외부 접속을 허용하고 있지 않습니다. 따라서 외부 접속을 위한 별도의 작업이 필요합니다.
 
-### Network
+<a id="network"></a>
+### Network { #network }
 
 ```
 "Default Network" 선택
@@ -109,7 +119,8 @@ Key Pair(.pem파일)를 다운로드 합니다.
 
 Instance 생성을 위한 입력을 마쳤으므로 잠시 기다리면 Instance 생성을 완료합니다.
 
-## Network Topology 확인
+<a id="network-topology"></a>
+## Network Topology 확인 { #network-topology }
 
 ![[그림 10] Instance IP 확인](http://static.toastoven.net/prod_infrastructure/compute/img_210.png)
 <center>[그림 10] Instance IP 확인</center>
@@ -125,7 +136,8 @@ Instance 생성을 위한 입력을 마쳤으므로 잠시 기다리면 Instance
 
 앞서 확인했다시피 현재 생성한 Instance는 IP는 192.168.0.4로 사설Network인 default network의 IP를 가지고 있습니다. 외부로부터의 접속을 가능하게 하려면 Public Network에 Floating IP를 부여하고 현재 Instance와 연결해야 합니다.
 
-## Floating IP 부여
+<a id="floating-ip"></a>
+## Floating IP 부여 { #floating-ip }
 
 ```
 [Infrastructure] > [Compute & Network] > [Instances] > Instance 선택 > [추가기능] > [Floating IP 연결] 클릭
@@ -156,7 +168,8 @@ Instance 생성을 위한 입력을 마쳤으므로 잠시 기다리면 Instance
 
 이제 외부에서 접속할 수 있는 준비를 마쳤습니다.
 
-## Security Group에 Rule 추가
+<a id="security-group-rule"></a>
+## Security Group에 Rule 추가 { #security-group-rule }
 
 아래 예제에서 133.186.132.47로 ping을 확인해보면 반응이 없습니다.
 
@@ -258,7 +271,8 @@ Last login: Fri Oct 10 14:38:36 2014
 ![[그림 19] 가상 Instance 구성도](http://static.toastoven.net/prod_infrastructure/compute/img_22.jpg)
 <center>[그림 19] 가상 Instance 구성도</center>
 
-## 웹 서버 구동
+<a id="section-1"></a>
+## 웹 서버 구동 { #section-1 }
 
 Instance를 간단한 웹서버로 사용해보겠습니다. 우선 Security Group에 HTTP 접속 허용을 추가합니다.
 
@@ -299,7 +313,8 @@ Serving HTTP on 0.0.0.0 port 80 ..
 103.243.200.42 - - [11/Nov/2015 17:03:15] "GET / HTTP/1.1" 200 -
 ```
 
-## Block Storage 생성하기
+<a id="block-storage"></a>
+## Block Storage 생성하기 { #block-storage }
 
 Instance에 접속하여 Disk 용량을 확인해보겠습니다.
 
@@ -313,7 +328,8 @@ tmpfs                 499M     0  499M   0% /dev/shm
 
 현재 Instance는 16G정도의 여유공간이 있습니다. 좀더 많은 Disk 공간을 확보하고 싶으면 Block Storage를 추가하면 됩니다. 우선 Block Storage를 생성해보겠습니다.
 
-### Block Storage 생성
+<a id="block-storage-2"></a>
+### Block Storage 생성 { #block-storage-2 }
 
 ![[그림 21] Block Storage 생성](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img001.png)
 <center>[그림 21] Block Storage 생성</center>
@@ -354,7 +370,8 @@ Instance에 Block Storage가 연결되었는지 리스트의 ‘연결 정보’
 ![[그림 25] 연결 정보 확인](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img007.png)
 <center>[그림 25] 연결 정보 확인</center>
 
-### Instance 접속 및 Block Storage 마운트
+<a id="instance-block-storage"></a>
+### Instance 접속 및 Block Storage 마운트 { #instance-block-storage }
 
 물리적인 연결은 마쳤으므로 Instance에 접속하여 파일시스템 생성 및 마운트를 해보겠습니다. Instance에 접속하여 파일시스템을 생성합니다.
 
@@ -403,7 +420,8 @@ tmpfs           499M     0  499M   0% /dev/shm
 
 위 예에서는 /dev/vdb가 /root/external과 연결되어 있고 사용 가능용량은 9.2G입니다.
 
-### Block Storage 해제하기
+<a id="block-storage-3"></a>
+### Block Storage 해제하기 { #block-storage-3 }
 
 사용중인 Block Storage를 반납할 경우 다음 순서로 진행합니다.
 
@@ -449,7 +467,8 @@ Block Storage 연결 해제를 마쳤습니다. [그림 29]의 Block Storage 리
 ![[그림 28] Block Storage 연결 해제 확인](http://static.toastoven.net/prod_infrastructure/compute/blockstorage/img011.png)
 <center>[그림 28] Block Storage 연결 해제 확인</center>
 
-## Image 생성하기
+<a id="image-2"></a>
+## Image 생성하기 { #image-2 }
 
 기존 Instance를 Image로 만들고 재사용 해보겠습니다. Image를 생성하려면 Instance를 정지해야 합니다.
 
@@ -491,7 +510,8 @@ Image를 생성할 Instance를 선택
 ![[그림 32] Image 생성 확인](http://static.toastoven.net/prod_infrastructure/compute/img_233.png)
 <center>[그림 32] Image 생성 확인</center>
 
-## Image로 Instance 생성
+<a id="image-instance"></a>
+## Image로 Instance 생성 { #image-instance }
 
 방금 생성한 Image로 Instance를 2개 생성해 보겠습니다.
 
@@ -538,7 +558,8 @@ Instance 생성에 사용할 Private Image를 선택하고 나머지 Instance �
 ![[그림 36] Instance 2개 Floating IP 확인](http://static.toastoven.net/prod_infrastructure/compute/img_238.png)
 <center>[그림 36] Instance 2개 Floating IP 확인</center>
 
-## Load Balancer 붙이기
+<a id="load-balancer"></a>
+## Load Balancer 붙이기 { #load-balancer }
 
 2대의 웹서버에 부하를 분산할 수 있도록 Load Balancer를 붙여보겠습니다.
 
@@ -659,27 +680,33 @@ Load Balancer에 할당된 Floating IP로 접속합니다. 새로 고침 하면�
 ![[그림 46] Load Balancer 연동 구성도](http://static.toastoven.net/prod_infrastructure/compute/img_248.png)
 <center>[그림 46] Load Balancer 연동 구성도</center>
 
-## 맺음말
+<a id="section-2"></a>
+## 맺음말 { #section-2 }
 
 TOAST Cloud > Infrastructure 서비스에서 제공하는 가상 인프라 사용법에 대하여 알아보았습니다. 지금까지의 내용을 요약해 보았습니다.
 
-### 가상 Instance
+<a id="instance"></a>
+### 가상 Instance { #instance }
 
 - 처음 생성시 내부 사설IP만 할당되어 있습니다. 외부에서 접속을 하고자 하는 경우에는 Floating IP를 할당해야 합니다.
 
-### 기본 Security Group
+<a id="section-2-security-group"></a>
+### 기본 Security Group { #section-2-security-group }
 
 - 초기 기본 Security Group은 외부접속을 모두 허용하지 않습니다. 따라서 외부 접속을 허용할 IP, PORT에 대한 룰을 추가해야 합니다.
 
-### Block Storage
+<a id="section-2-block-storage"></a>
+### Block Storage { #section-2-block-storage }
 
 - Image로 제공하는 Disk 용량이 모자랄 경우 Block Storage를 사용합니다.
 - Block Storage를 생성한 후에는 Instance 연결, 파일시스템 생성, 마운트 과정을 거치면 사용 가능합니다.
 - Block Storage를 반납 할 때는 언마운트, 연결해제 순으로 진행합니다.
 
-### Image
+<a id="section-2-image"></a>
+### Image { #section-2-image }
 - Instance를 Shutdown 시킨 후에 Private Image를 생성할 수 있습니다.
 - Private Image로 원하는 만큼 Instance를 생성할 수 있습니다.
 
-### Load Balancer
+<a id="section-2-load-balancer"></a>
+### Load Balancer { #section-2-load-balancer }
 - 서비스 부하가 증가하는 경우 Private Image로 Instance를 생성한 후 Load Balancer에 연결하면 부하가 분산됩니다.
