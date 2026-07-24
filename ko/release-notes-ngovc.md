@@ -1,6 +1,10 @@
 <a id="compute-release-notes"></a>
 ## Compute > 릴리스 노트
 
+<a id="july-24-2026"></a>
+### 2026. 07. 24.
+* 인스턴스 누적 중지 기간 90일 초과 여부 정보 제공
+
 <a id="november-28-2025"></a>
 ### 2025. 11. 28.
 #### Instance
