@@ -1,6 +1,29 @@
 <a id="compute-release-notes"></a>
 ## Compute > 릴리스 노트
 
+<a id="august-20-2026"></a>
+### 2026. 08. 20.
+#### Image
+
+* GPU 관련(Linux)
+    * NVIDIA 드라이버 업데이트: 580.105.08 → 580.173.02
+    * NVIDIA 서버 드라이버 패키지 적용
+    * CUDA toolkit 추가: 12.6
+    * DCGM: 4.5.0 → 4.6.0
+    * DCGM-Exporter: 4.6.0 → 4.8.3
+    * MIG Manager: 0.13.1 → 0.14.4
+
+* 신규 이미지 추가
+    * Ubuntu Server 22.04.5 LTS with NVIDIA (2026.08.20.)
+    * Ubuntu Server 24.04.4 LTS with NVIDIA (2026.08.20.)
+    * PentaSecurity WAPPLES SA 7.0.104.2-hatfix3 (2026.08.20.)
+
+* 이미지 지원 종료
+    * Ubuntu Server 22.04.5 LTS with Redis 7.2.4 (2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS with NVIDIA (2026.03.10.)
+    * PentaSecurity WAPPLES SA 6.0.6 (2024.04.15.)
+
+
 <a id="may-27-2026"></a>
 ## 2026. 05. 27.
 ### Instance
