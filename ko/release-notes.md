@@ -14,6 +14,7 @@
     * DCGM: 4.5.0 → 4.6.0
     * DCGM-Exporter: 4.6.0 → 4.8.3
         * PROF 지표 수집을 위해 none-root가 아닌 root로 구동
+        * GPU에 따라 음수 카운터 발생 이슈로 LOW_UTIL_VIOLATION 지표 수집 제외 처리
         * Exporter 데이터를 외부에서 수집이 가능하도록 listen address 및 port를 0.0.0.0:9400으로 수정
     * MIG Manager: 0.13.1 → 0.14.4
 
