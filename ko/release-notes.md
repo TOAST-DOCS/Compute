@@ -4,7 +4,7 @@
 ## Compute > 릴리스 노트 { #compute-release-notes }
 
 <a id="agust-20-2026"></a>
-### 2026. 08. 20.
+## 2026. 08. 20.
 #### Image
 
 * GPU 관련(Linux)
