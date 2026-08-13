@@ -10,7 +10,7 @@
 * GPU 관련(Linux)
     * NVIDIA 드라이버 업데이트: 580.105.08 → 580.173.02
     * NVIDIA 서버 드라이버 패키지 적용
-    * CUDA toolkit 추가: 12.6
+    * CUDA 툴킷 추가: 12.6
     * DCGM: 4.5.0 → 4.6.0
     * DCGM-Exporter: 4.6.0 → 4.8.3
         * PROF 지표 수집을 위해 none-root가 아닌 root로 구동
