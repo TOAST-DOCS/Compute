@@ -2,7 +2,7 @@
 ## Compute > 릴리스 노트
 
 <a id="september-1-2026"></a>
-### 2026. 09. 01.
+## 2026. 09. 01.
 #### Image
 
 * GPU 관련(Linux)
