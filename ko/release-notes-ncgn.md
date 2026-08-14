@@ -36,8 +36,8 @@
 * 이미지 목록 조회 API의 limit 파라미터 기본값(default) 100개, 최댓값(max) 1,000개로 조정
 
 <a id="april-28-2026"></a>
-### 2026. 04. 28.
-#### Image
+## 2026. 04. 28.
+### Image
 
 * 신규 이미지 추가
     * Rocky Linux 8.10 with Tibero 7 Enterprise 294582(2026.04.28.)
