@@ -3,6 +3,31 @@
 <a id="compute-release-notes"></a>
 ## Compute > 릴리스 노트 { #compute-release-notes }
 
+<a id="agust-20-2026"></a>
+## 2026. 08. 20.
+### Image
+
+* GPU 관련(Linux)
+    * NVIDIA 드라이버 업데이트: 580.105.08 → 580.173.02
+    * NVIDIA 서버 드라이버 패키지 적용
+    * CUDA 툴킷 추가: 12.6
+    * DCGM: 4.5.0 → 4.6.0
+    * DCGM-Exporter: 4.6.0 → 4.8.3
+        * PROF 지표 수집을 위해 none-root가 아닌 root로 구동
+        * GPU에 따라 음수 카운터 발생 이슈로 LOW_UTIL_VIOLATION 지표 수집 제외 처리
+        * Exporter 데이터를 외부에서 수집이 가능하도록 listen address 및 port를 0.0.0.0:9400으로 수정
+    * MIG Manager: 0.13.1 → 0.14.4
+
+* 신규 이미지 추가
+    * Ubuntu Server 22.04.5 LTS with NVIDIA (2026.08.20.)
+    * Ubuntu Server 24.04.4 LTS with NVIDIA (2026.08.20.)
+    * PentaSecurity WAPPLES SA 7.0.104.2-hatfix3 (2026.08.20.)
+
+* 이미지 지원 종료
+    * Ubuntu Server 22.04.5 LTS with Redis 7.2.4 (2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS with NVIDIA (2026.03.10.)
+    * PentaSecurity WAPPLES SA 6.0.6 (2024.04.15.)
+
 <a id="may-27-2026"></a>
 ## 2026. 05. 27. { #may-27-2026 }
 <a id="instance"></a>
@@ -15,9 +40,9 @@
 * 이미지 목록 조회 API의 limit 파라미터 기본값(default) 100개, 최댓값(max) 1,000개로 조정
 
 <a id="april-28-2026"></a>
-### 2026. 04. 28. { #april-28-2026 }
+## 2026. 04. 28. { #april-28-2026 }
 <a id="april-28-2026-image"></a>
-#### Image
+### Image
 
 * 신규 이미지 추가
     * Ubuntu Server 22.04.5 LTS for Deep Learning v8.0.0(2026.04.28.)
