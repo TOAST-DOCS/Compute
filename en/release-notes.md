@@ -3,6 +3,31 @@
 <a id="compute-release-notes"></a>
 ## Compute > Release Notes { #compute-release-notes }
 
+<a id="agust-20-2026"></a>
+## August 20, 2026
+### Image
+
+* GPU-related (Linux)
+    * Updated the NVIDIA driver: 580.105.08 → 580.173.02
+    * Applied the NVIDIA server driver package
+    * Added CUDA toolkit: 12.6
+    * DCGM: 4.5.0 → 4.6.0
+    * DCGM-Exporter: 4.6.0 → 4.8.3
+        * Changed to run as root instead of non-root to collect PROF metrics
+        * Excluded the LOW_UTIL_VIOLATION metric from collection due to negative counter issues on certain GPUs
+        * Changed the listen address and port to 0.0.0.0:9400 so that Exporter data can be collected externally
+    * MIG Manager: 0.13.1 → 0.14.4
+
+* 	Added New Images
+    * Ubuntu Server 22.04.5 LTS with NVIDIA (August 20, 2026)
+    * Ubuntu Server 24.04.4 LTS with NVIDIA (August 20, 2026)
+    * PentaSecurity WAPPLES SA 7.0.104.2-hatfix3 (August 20, 2026)
+
+* Ended Image Support
+    * Ubuntu Server 22.04.5 LTS with Redis 7.2.4 (July 15, 2025)
+    * Ubuntu Server 22.04.5 LTS with NVIDIA (March 10, 2026)
+    * PentaSecurity WAPPLES SA 6.0.6 (April 15, 2024)
+
 <a id="may-27-2026"></a>
 ## May 27, 2026 { #may-27-2026 }
 <a id="instance"></a>
@@ -15,9 +40,9 @@
 * Adjusted the default value of the `limit` parameter in the List Images API to 100, and the maximum value to 1,000
 
 <a id="april-28-2026"></a>
-### April 28, 2026 { #april-28-2026 }
+## April 28, 2026 { #april-28-2026 }
 <a id="april-28-2026-image"></a>
-#### Image
+### Image
 
 * Added new images
     * Ubuntu Server 22.04.5 LTS for Deep Learning v8.0.0(2026.04.28.)
