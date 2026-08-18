@@ -3,8 +3,8 @@
 <a id="compute-release-notes"></a>
 ## Compute > リリースノート { #compute-release-notes }
 
-<a id="september-1-2026"></a>
-## 2026. 09. 01.
+<a id="agust-20-2026"></a>
+## 2026. 08. 20.
 ### Image
 
 * GPU関連(Linux)
