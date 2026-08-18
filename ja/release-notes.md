@@ -3,6 +3,31 @@
 <a id="compute-release-notes"></a>
 ## Compute > リリースノート { #compute-release-notes }
 
+<a id="september-1-2026"></a>
+## 2026. 09. 01.
+### Image
+
+* GPU関連(Linux)
+    * NVIDIAドライバーのアップデート: 580.105.08 → 580.173.02
+    * NVIDIAサーバードライバーパッケージの適用
+    * CUDAツールキットの追加: 12.6
+    * DCGM: 4.5.0 → 4.6.0
+    * DCGM-Exporter: 4.6.0 → 4.8.3
+        * PROF指標の収集のため、non-rootではなくrootで実行
+        * GPUによって負のカウンターが発生する問題により、LOW_UTIL_VIOLATION指標の収集を除外処理
+        * Exporterデータを外部から収集できるように、リッスンアドレス及びポートを0.0.0.0:9400に修正
+    * MIG Manager: 0.13.1 → 0.14.4
+
+* 新規イメージの追加
+    * Ubuntu Server 22.04.5 LTS with NVIDIA (2026.08.20.)
+    * Ubuntu Server 24.04.4 LTS with NVIDIA (2026.08.20.)
+    * PentaSecurity WAPPLES SA 7.0.104.2-hatfix3 (2026.08.20.)
+
+* イメージのサポート終了
+    * Ubuntu Server 22.04.5 LTS with Redis 7.2.4 (2025.07.15.)
+    * Ubuntu Server 22.04.5 LTS with NVIDIA (2026.03.10.)
+    * PentaSecurity WAPPLES SA 6.0.6 (2024.04.15.)
+
 <a id="may-27-2026"></a>
 ## 2026. 05. 27. { #may-27-2026 }
 <a id="instance"></a>
@@ -15,9 +40,9 @@
 * イメージ一覧照会 API の limit パラメータのデフォルト値 (default) を 100 件、最大値 (max) を 1,000 件に調整
 
 <a id="april-28-2026"></a>
-### 2026. 04. 28. { #april-28-2026 }
+## 2026. 04. 28. { #april-28-2026 }
 <a id="april-28-2026-image"></a>
-#### Image
+### Image
 
 * 新規イメージ追加
     * Ubuntu Server 22.04.5 LTS for Deep Learning v8.0.0(2026.04.28.)
@@ -292,7 +317,7 @@
 ## 2025. 05. 27. { #may-27-2025 }
 <a id="may-27-2025-instance"></a>
 ### Instance { #may-27-2025-instance }
-* 배치ポリシー機能追加
+* 配置ポリシー機能の追加
 * ネットワークインターフェイス切断時の削除設定機能追加
 * インスタンス作成またはブロックストレージ接続時のブロックストレージ削除ポリシー設定機能追加
 * コンソールからインスタンス削除時の接続リソース削除ポリシーの改定
@@ -1762,7 +1787,7 @@
 <a id="june-29-2021-image"></a>
 ### Image { #june-29-2021-image }
 
-* Prometheus 호換 exporter
+* Prometheus互換Exporter
     * Advanced Monitoring サポートのため、インスタンス作成時に該当ツールが自動的にインストールされます。
 
 * CentOS 7.8(2021. 06. 22.)
