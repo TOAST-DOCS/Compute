@@ -3,7 +3,7 @@
 <a id="compute-release-notes"></a>
 ## Compute > Release Notes { #compute-release-notes }
 
-<a id="agust-20-2026"></a>
+<a id="august-20-2026"></a>
 ## August 20, 2026
 ### Image
 

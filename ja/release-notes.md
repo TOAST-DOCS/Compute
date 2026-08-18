@@ -3,7 +3,7 @@
 <a id="compute-release-notes"></a>
 ## Compute > リリースノート { #compute-release-notes }
 
-<a id="agust-20-2026"></a>
+<a id="august-20-2026"></a>
 ## 2026. 08. 20.
 ### Image
 
