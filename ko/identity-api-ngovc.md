@@ -133,7 +133,7 @@ POST /v2.0/tokens
         "endpoints": [
           {
             "region": "KR4",
-            "publicURL": "https://kr4-api-instance-infrastructure.ngovc.go.kr/v2/f5073eaa26b64cffbee89411df94ce01"
+            "publicURL": "https://kr4-api-instance-infrastructure.ngovc.com/v2/f5073eaa26b64cffbee89411df94ce01"
           }
         ],
         "type": "compute",
@@ -143,7 +143,7 @@ POST /v2.0/tokens
         "endpoints": [
           {
             "region": "KR4",
-            "publicURL": "https://kr4-api-image-infrastructure.ngovc.go.kr"
+            "publicURL": "https://kr4-api-image-infrastructure.ngovc.com"
           }
         ],
         "type": "image",
@@ -153,7 +153,7 @@ POST /v2.0/tokens
         "endpoints": [
           {
             "region": "KR4",
-            "publicURL": "https://api-identity-infrastructure.ngovc.go.kr/v2.0"
+            "publicURL": "https://api-identity-infrastructure.ngovc.com/v2.0"
           }
         ],
         "type": "identity",
@@ -163,7 +163,7 @@ POST /v2.0/tokens
         "endpoints": [
           {
             "region": "KR4",
-            "publicURL": "https://kr4-api-block-storage-infrastructure.ngovc.go.kr/v2/f5073eaa26b64cffbee89411df94ce01"
+            "publicURL": "https://kr4-api-block-storage-infrastructure.ngovc.com/v2/f5073eaa26b64cffbee89411df94ce01"
           }
         ],
         "type": "volumev2",
@@ -173,7 +173,7 @@ POST /v2.0/tokens
         "endpoints": [
           {
             "region": "KR4",
-            "publicURL": "https://kr4-api-network-infrastructure.ngovc.go.kr"
+            "publicURL": "https://kr4-api-network-infrastructure.ngovc.com"
           }
         ],
         "type": "network",
