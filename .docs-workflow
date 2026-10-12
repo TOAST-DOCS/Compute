@@ -1,4 +1,3 @@
 # 문서 파이프라인(한글 검수 · 번역 · 문서 정비) 제외 목록
-# 형식: https://github.nhnent.com/TOASTCloud/cloud-translate — shared/workflow_ignore.py
 ignore:
   - ko/identity-api.md   # 번역 대상 아님 (ko 전용 문서)
