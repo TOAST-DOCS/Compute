@@ -4,8 +4,9 @@
 ## Compute > 릴리스 노트 { #compute-release-notes }
 
 <a id="october-27-2026"></a>
-## 2026. 10. 27.
-### Instance
+## 2026. 10. 27. { #october-27-2026 }
+<a id="october-27-2026-instance"></a>
+### Instance { #october-27-2026-instance }
 
 * 인스턴스 API v2.1 제공
     * OpenStack Nova API v2.1 규격을 따릅니다.
