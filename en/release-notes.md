@@ -1,7 +1,18 @@
+<!-- machine_translated: true -->
+
 <!-- pre-align:aligned sig=d0f1264b890b -->
 
 <a id="compute-release-notes"></a>
 ## Compute > Release Notes { #compute-release-notes }
+
+<a id="october-27-2026"></a>
+## October 27, 2026
+### Instance
+
+* Provides Instance API v2.1
+    * Follows the OpenStack Nova API v2.1 specification.
+    * The existing API v2 can still be used.
+    * See the [Instance API v2.1 Guide](/Compute/Instance/en/public-api-v2-1/).
 
 <a id="august-20-2026"></a>
 ## August 20, 2026 { #august-20-2026 }
