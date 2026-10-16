@@ -6,8 +6,9 @@
 ## Compute > リリースノート { #compute-release-notes }
 
 <a id="october-27-2026"></a>
-## 2026. 10. 27.
-### Instance
+## 2026. 10. 27. { #october-27-2026 }
+<a id="october-27-2026-instance"></a>
+### Instance { #october-27-2026-instance }
 
 * インスタンスAPI v2.1を提供
     * OpenStack Nova API v2.1規格に準拠します。
