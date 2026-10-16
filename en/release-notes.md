@@ -6,8 +6,9 @@
 ## Compute > Release Notes { #compute-release-notes }
 
 <a id="october-27-2026"></a>
-## October 27, 2026
-### Instance
+## October 27, 2026 { #october-27-2026 }
+<a id="october-27-2026-instance"></a>
+### Instance { #october-27-2026-instance }
 
 * Provides Instance API v2.1
     * Follows the OpenStack Nova API v2.1 specification.
