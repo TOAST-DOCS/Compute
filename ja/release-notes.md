@@ -1,7 +1,18 @@
+<!-- machine_translated: true -->
+
 <!-- pre-align:aligned sig=d0f1264b890b -->
 
 <a id="compute-release-notes"></a>
 ## Compute > リリースノート { #compute-release-notes }
+
+<a id="october-27-2026"></a>
+## 2026. 10. 27.
+### Instance
+
+* インスタンスAPI v2.1を提供
+    * OpenStack Nova API v2.1規格に準拠します。
+    * 既存のAPI v2も引き続き使用できます。
+    * [インスタンスAPI v2.1ガイド](/Compute/Instance/ja/public-api-v2-1/)を参照してください。
 
 <a id="august-20-2026"></a>
 ## 2026. 08. 20. { #august-20-2026 }
