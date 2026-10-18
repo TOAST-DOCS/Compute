@@ -3,6 +3,13 @@
 <a id="compute-release-notes"></a>
 ## Compute > 릴리스 노트 { #compute-release-notes }
 
+<a id="november-24-2026"></a>
+## 2026. 11. 24.
+### Instance
+
+* 프로젝트 단위 인스턴스 즐겨찾기를 사용자별로 관리하도록 변경
+    * 기존 즐겨찾기는 프로젝트 내 사용자의 즐겨찾기로 옮겨졌습니다.
+
 <a id="october-27-2026"></a>
 ## 2026. 10. 27.
 ### Instance
