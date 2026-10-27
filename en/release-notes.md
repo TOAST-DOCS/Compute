@@ -1,25 +1,27 @@
 <!-- machine_translated: true -->
 
-<!-- pre-align:aligned sig=a7c849900bed -->
+<!-- pre-align:aligned sig=e406e1f1041d -->
 
 <a id="compute-release-notes"></a>
 ## Compute > Release Notes { #compute-release-notes }
 
 <a id="november-24-2026"></a>
-## November 24, 2026
-### Instance
+## November 24, 2026 { #november-24-2026 }
+<a id="november-24-2026-instance"></a>
+### Instance { #november-24-2026-instance }
 
 * Changed instance favorites management from project-level to per-user
     * Existing favorites have been migrated to each user's favorites within the project.
 
 <a id="october-27-2026"></a>
 ## October 27, 2026 { #october-27-2026 }
-### Instance
+<a id="october-27-2026-instance"></a>
+### Instance { #october-27-2026-instance }
 
-* Added Instance API v2.1.
+* Provides Instance API v2.1
     * Follows the OpenStack Nova API v2.1 specification.
     * The existing API v2 can still be used.
-    * For more information, see [Instance API v2.1 Guide](/Compute/Instance/en/public-api-v2-1/).
+    * See the [Instance API v2.1 Guide](/Compute/Instance/en/public-api-v2-1/).
 
 <a id="august-20-2026"></a>
 ## August 20, 2026 { #august-20-2026 }
