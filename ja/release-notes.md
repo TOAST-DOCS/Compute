@@ -5,13 +5,19 @@
 <a id="compute-release-notes"></a>
 ## Compute > リリースノート { #compute-release-notes }
 
+<a id="november-24-2026"></a>
+## 2026. 11. 24.
+### Instance
+
+* プロジェクト単位のインスタンスお気に入りをユーザーごとに管理するように変更
+    * 既存のお気に入りはプロジェクト内ユーザーのお気に入りに移行されました。
+
 <a id="october-27-2026"></a>
 ## 2026. 10. 27. { #october-27-2026 }
-<a id="october-27-2026-instance"></a>
-### Instance { #october-27-2026-instance }
+### Instance
 
-* インスタンスAPI v2.1を提供
-    * OpenStack Nova API v2.1規格に準拠します。
+* インスタンスAPI v2.1の提供
+    * OpenStack Nova API v2.1の仕様に準拠しています。
     * 既存のAPI v2も引き続き使用できます。
     * [インスタンスAPI v2.1ガイド](/Compute/Instance/ja/public-api-v2-1/)を参照してください。
 
