@@ -1,4 +1,4 @@
-<!-- pre-align:aligned sig=d0f1264b890b -->
+<!-- pre-align:aligned sig=cdd6e07f0442 -->
 
 <a id="compute-release-notes"></a>
 ## Compute > 릴리스 노트 { #compute-release-notes }
@@ -11,8 +11,9 @@
     * 기존 즐겨찾기는 프로젝트 내 사용자의 즐겨찾기로 옮겨졌습니다.
 
 <a id="october-27-2026"></a>
-## 2026. 10. 27.
-### Instance
+## 2026. 10. 27. { #october-27-2026 }
+<a id="october-27-2026-instance"></a>
+### Instance { #october-27-2026-instance }
 
 * 인스턴스 API v2.1 제공
     * OpenStack Nova API v2.1 규격을 따릅니다.
