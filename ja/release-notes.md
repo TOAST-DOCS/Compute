@@ -1,6 +1,6 @@
 <!-- machine_translated: true -->
 
-<!-- pre-align:aligned sig=cdd6e07f0442 -->
+<!-- pre-align:aligned sig=a7c849900bed -->
 
 <a id="compute-release-notes"></a>
 ## Compute > リリースノート { #compute-release-notes }
