@@ -1,9 +1,17 @@
 <!-- machine_translated: true -->
 
-<!-- pre-align:aligned sig=cdd6e07f0442 -->
+<!-- pre-align:aligned sig=e406e1f1041d -->
 
 <a id="compute-release-notes"></a>
 ## Compute > Release Notes { #compute-release-notes }
+
+<a id="november-24-2026"></a>
+## November 24, 2026 { #november-24-2026 }
+<a id="november-24-2026-instance"></a>
+### Instance { #november-24-2026-instance }
+
+* Changed instance favorites management from project-level to per-user
+    * Existing favorites have been migrated to each user's favorites within the project.
 
 <a id="october-27-2026"></a>
 ## October 27, 2026 { #october-27-2026 }

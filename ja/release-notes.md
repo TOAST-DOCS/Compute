@@ -1,9 +1,17 @@
 <!-- machine_translated: true -->
 
-<!-- pre-align:aligned sig=cdd6e07f0442 -->
+<!-- pre-align:aligned sig=e406e1f1041d -->
 
 <a id="compute-release-notes"></a>
 ## Compute > リリースノート { #compute-release-notes }
+
+<a id="november-24-2026"></a>
+## 2026. 11. 24. { #november-24-2026 }
+<a id="november-24-2026-instance"></a>
+### Instance { #november-24-2026-instance }
+
+* プロジェクト単位のインスタンスお気に入りをユーザーごとに管理するように変更
+    * 既存のお気に入りはプロジェクト内ユーザーのお気に入りに移行されました。
 
 <a id="october-27-2026"></a>
 ## 2026. 10. 27. { #october-27-2026 }
